@@ -1,0 +1,1725 @@
+{
+  "detail": {
+    "conclusion": "Graph expansion and lexical retrieval tie on answer MRR@10.",
+    "graph_expanded": {
+      "answer_mrr_at_10": 0.5238095238095238,
+      "queries": [
+        {
+          "id": "concurrent-resume",
+          "judgments": [
+            {
+              "node_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+              "rank": 2,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "answer"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+              "rank": 1,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/gate.py::RunStore.lock",
+              "rank": 20,
+              "relevance": 2,
+              "retrieved_at_10": false,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            }
+          ],
+          "missed_at_10": [
+            "symbol:src/implicit_decision_gate/gate.py::RunStore.lock"
+          ],
+          "missed_at_20": [],
+          "query": "What prevents two concurrent resume commands from executing attempt two twice?",
+          "recall_at_10": 0.6666666666666666,
+          "recall_at_20": 1.0,
+          "reciprocal_answer_rank_at_10": 0.5,
+          "supporting_recall_at_10": 0.5
+        },
+        {
+          "id": "clean-worktree",
+          "judgments": [
+            {
+              "node_id": "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager.create",
+              "rank": 4,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "answer"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt",
+              "rank": null,
+              "relevance": 3,
+              "retrieved_at_10": false,
+              "retrieved_at_20": false,
+              "role": "supporting"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager.current_commit",
+              "rank": null,
+              "relevance": 2,
+              "retrieved_at_10": false,
+              "retrieved_at_20": false,
+              "role": "supporting"
+            }
+          ],
+          "missed_at_10": [
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt",
+            "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager.current_commit"
+          ],
+          "missed_at_20": [
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt",
+            "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager.current_commit"
+          ],
+          "query": "Where is each coding attempt placed in a clean detached worktree at the pinned commit?",
+          "recall_at_10": 0.3333333333333333,
+          "recall_at_20": 0.3333333333333333,
+          "reciprocal_answer_rank_at_10": 0.25,
+          "supporting_recall_at_10": 0.0
+        },
+        {
+          "id": "owner-pause-resume",
+          "judgments": [
+            {
+              "node_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+              "rank": 2,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "answer"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.answer",
+              "rank": 3,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            },
+            {
+              "node_id": "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work",
+              "rank": null,
+              "relevance": 2,
+              "retrieved_at_10": false,
+              "retrieved_at_20": false,
+              "role": "supporting"
+            }
+          ],
+          "missed_at_10": [
+            "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work"
+          ],
+          "missed_at_20": [
+            "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work"
+          ],
+          "query": "How does an owner answer advance a paused run so it can resume?",
+          "recall_at_10": 0.6666666666666666,
+          "recall_at_20": 0.6666666666666666,
+          "reciprocal_answer_rank_at_10": 0.5,
+          "supporting_recall_at_10": 0.5
+        },
+        {
+          "id": "prompt-context-isolation",
+          "judgments": [
+            {
+              "node_id": "symbol:src/implicit_decision_gate/agent.py::build_coding_prompt",
+              "rank": 2,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "answer"
+            },
+            {
+              "node_id": "symbol:tests/test_context.py::test_attempt_two_prompt_contains_only_allowed_fresh_context",
+              "rank": 13,
+              "relevance": 3,
+              "retrieved_at_10": false,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt",
+              "rank": 8,
+              "relevance": 2,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            }
+          ],
+          "missed_at_10": [
+            "symbol:tests/test_context.py::test_attempt_two_prompt_contains_only_allowed_fresh_context"
+          ],
+          "missed_at_20": [],
+          "query": "How is the second coding prompt limited to declared context and owner decisions?",
+          "recall_at_10": 0.6666666666666666,
+          "recall_at_20": 1.0,
+          "reciprocal_answer_rank_at_10": 0.5,
+          "supporting_recall_at_10": 0.5
+        },
+        {
+          "id": "coverage-gap-routing",
+          "judgments": [
+            {
+              "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+              "rank": null,
+              "relevance": 3,
+              "retrieved_at_10": false,
+              "retrieved_at_20": false,
+              "role": "answer"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads",
+              "rank": 4,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            },
+            {
+              "node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+              "rank": 1,
+              "relevance": 2,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            }
+          ],
+          "missed_at_10": [
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt"
+          ],
+          "missed_at_20": [
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt"
+          ],
+          "query": "What routes an unmodeled observation to platform coverage review instead of evidence review?",
+          "recall_at_10": 0.6666666666666666,
+          "recall_at_20": 0.6666666666666666,
+          "reciprocal_answer_rank_at_10": 0.0,
+          "supporting_recall_at_10": 1.0
+        },
+        {
+          "id": "review-policy-classification",
+          "judgments": [
+            {
+              "node_id": "symbol:src/implicit_decision_gate/gate.py::state_after_reviews",
+              "rank": 1,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "answer"
+            },
+            {
+              "node_id": "symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated",
+              "rank": 4,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+              "rank": 7,
+              "relevance": 2,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            }
+          ],
+          "missed_at_10": [],
+          "missed_at_20": [],
+          "query": "How are independent evidence classifications combined into the next gate state?",
+          "recall_at_10": 1.0,
+          "recall_at_20": 1.0,
+          "reciprocal_answer_rank_at_10": 1.0,
+          "supporting_recall_at_10": 1.0
+        },
+        {
+          "id": "authorization-normalization",
+          "judgments": [
+            {
+              "node_id": "symbol:src/implicit_decision_gate/api_probe.py::normalize_authorization",
+              "rank": 4,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "answer"
+            },
+            {
+              "node_id": "symbol:tests/test_api_probe.py::test_normalize_authorization",
+              "rank": null,
+              "relevance": 3,
+              "retrieved_at_10": false,
+              "retrieved_at_20": false,
+              "role": "supporting"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+              "rank": null,
+              "relevance": 2,
+              "retrieved_at_10": false,
+              "retrieved_at_20": false,
+              "role": "supporting"
+            }
+          ],
+          "missed_at_10": [
+            "symbol:tests/test_api_probe.py::test_normalize_authorization",
+            "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+          ],
+          "missed_at_20": [
+            "symbol:tests/test_api_probe.py::test_normalize_authorization",
+            "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+          ],
+          "query": "Where are observed authorization status codes and job counts normalized into policy options?",
+          "recall_at_10": 0.3333333333333333,
+          "recall_at_20": 0.3333333333333333,
+          "reciprocal_answer_rank_at_10": 0.25,
+          "supporting_recall_at_10": 0.0
+        },
+        {
+          "id": "postgres-normalization",
+          "judgments": [
+            {
+              "node_id": "symbol:src/implicit_decision_gate/probe.py::normalize_observation",
+              "rank": null,
+              "relevance": 3,
+              "retrieved_at_10": false,
+              "retrieved_at_20": false,
+              "role": "answer"
+            },
+            {
+              "node_id": "symbol:tests/test_probe.py::test_normalize_maps_both_reference_behaviors",
+              "rank": 13,
+              "relevance": 3,
+              "retrieved_at_10": false,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+              "rank": null,
+              "relevance": 2,
+              "retrieved_at_10": false,
+              "retrieved_at_20": false,
+              "role": "supporting"
+            }
+          ],
+          "missed_at_10": [
+            "symbol:src/implicit_decision_gate/probe.py::normalize_observation",
+            "symbol:tests/test_probe.py::test_normalize_maps_both_reference_behaviors",
+            "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute"
+          ],
+          "missed_at_20": [
+            "symbol:src/implicit_decision_gate/probe.py::normalize_observation",
+            "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute"
+          ],
+          "query": "How are PostgreSQL facts normalized into preserve-existing or expire-existing rollout behavior?",
+          "recall_at_10": 0.0,
+          "recall_at_20": 0.3333333333333333,
+          "reciprocal_answer_rank_at_10": 0.0,
+          "supporting_recall_at_10": 0.0
+        },
+        {
+          "id": "reviewer-evidence",
+          "judgments": [
+            {
+              "node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+              "rank": 1,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "answer"
+            },
+            {
+              "node_id": "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain",
+              "rank": 10,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+              "rank": 3,
+              "relevance": 2,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            }
+          ],
+          "missed_at_10": [],
+          "missed_at_20": [],
+          "query": "How are reviewer classifications checked against literal evidence from the brief?",
+          "recall_at_10": 1.0,
+          "recall_at_20": 1.0,
+          "reciprocal_answer_rank_at_10": 1.0,
+          "supporting_recall_at_10": 1.0
+        },
+        {
+          "id": "cli-lifecycle",
+          "judgments": [
+            {
+              "node_id": "symbol:src/implicit_decision_gate/cli.py::main",
+              "rank": 3,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "answer"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/cli.py::_parser",
+              "rank": 1,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            },
+            {
+              "node_id": "symbol:tests/test_cli.py::test_cli_pauses_inspects_answers_and_resumes",
+              "rank": 12,
+              "relevance": 2,
+              "retrieved_at_10": false,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            }
+          ],
+          "missed_at_10": [
+            "symbol:tests/test_cli.py::test_cli_pauses_inspects_answers_and_resumes"
+          ],
+          "missed_at_20": [],
+          "query": "Which CLI entry point implements start, show, answer, and resume?",
+          "recall_at_10": 0.6666666666666666,
+          "recall_at_20": 1.0,
+          "reciprocal_answer_rank_at_10": 0.3333333333333333,
+          "supporting_recall_at_10": 0.5
+        },
+        {
+          "id": "fresh-reviewer-process",
+          "judgments": [
+            {
+              "node_id": "symbol:src/implicit_decision_gate/codex_client.py::CodexCLIModelClient.review_evidence",
+              "rank": 1,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "answer"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/codex_client.py::CodexCLIModelClient._execute",
+              "rank": 8,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            },
+            {
+              "node_id": "symbol:tests/test_codex_client.py::test_codex_reviewer_uses_fresh_non_repo_process",
+              "rank": 3,
+              "relevance": 2,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            }
+          ],
+          "missed_at_10": [],
+          "missed_at_20": [],
+          "query": "Where does evidence review run through a fresh non-repository Codex process?",
+          "recall_at_10": 1.0,
+          "recall_at_20": 1.0,
+          "reciprocal_answer_rank_at_10": 1.0,
+          "supporting_recall_at_10": 1.0
+        },
+        {
+          "id": "catalog-effects",
+          "judgments": [
+            {
+              "node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+              "rank": 1,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "answer"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::capture_catalog",
+              "rank": 3,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            },
+            {
+              "node_id": "symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic",
+              "rank": 11,
+              "relevance": 2,
+              "retrieved_at_10": false,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            }
+          ],
+          "missed_at_10": [
+            "symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic"
+          ],
+          "missed_at_20": [],
+          "query": "How are PostgreSQL catalog snapshots converted into deterministic structural effects?",
+          "recall_at_10": 0.6666666666666666,
+          "recall_at_20": 1.0,
+          "reciprocal_answer_rank_at_10": 1.0,
+          "supporting_recall_at_10": 0.5
+        },
+        {
+          "id": "decision-request-payload",
+          "judgments": [
+            {
+              "node_id": "symbol:src/implicit_decision_gate/gate.py::decision_request_payloads",
+              "rank": 1,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "answer"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/gate.py::decision_requires_owner",
+              "rank": 10,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/gate.py::show_payload",
+              "rank": 3,
+              "relevance": 2,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            }
+          ],
+          "missed_at_10": [],
+          "missed_at_20": [],
+          "query": "Where are unanswered owner decisions turned into stable CLI request payloads?",
+          "recall_at_10": 1.0,
+          "recall_at_20": 1.0,
+          "reciprocal_answer_rank_at_10": 1.0,
+          "supporting_recall_at_10": 1.0
+        },
+        {
+          "id": "static-walkthrough-assets",
+          "judgments": [
+            {
+              "node_id": "file:web/public/app.js",
+              "rank": 12,
+              "relevance": 3,
+              "retrieved_at_10": false,
+              "retrieved_at_20": true,
+              "role": "answer"
+            },
+            {
+              "node_id": "file:web/public/index.html",
+              "rank": 2,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            },
+            {
+              "node_id": "file:web/public/styles.css",
+              "rank": 9,
+              "relevance": 2,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            }
+          ],
+          "missed_at_10": [
+            "file:web/public/app.js"
+          ],
+          "missed_at_20": [],
+          "query": "Which committed static assets implement the interactive browser walkthrough?",
+          "recall_at_10": 0.6666666666666666,
+          "recall_at_20": 1.0,
+          "reciprocal_answer_rank_at_10": 0.0,
+          "supporting_recall_at_10": 1.0
+        }
+      ],
+      "recall_at_10": 0.6666666666666666,
+      "recall_at_20": 0.8095238095238095,
+      "strategy": "graph_expanded",
+      "supporting_recall_at_10": 0.6071428571428571
+    },
+    "lexical": {
+      "answer_mrr_at_10": 0.5238095238095238,
+      "queries": [
+        {
+          "id": "concurrent-resume",
+          "judgments": [
+            {
+              "node_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+              "rank": 2,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "answer"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+              "rank": 1,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/gate.py::RunStore.lock",
+              "rank": null,
+              "relevance": 2,
+              "retrieved_at_10": false,
+              "retrieved_at_20": false,
+              "role": "supporting"
+            }
+          ],
+          "missed_at_10": [
+            "symbol:src/implicit_decision_gate/gate.py::RunStore.lock"
+          ],
+          "missed_at_20": [
+            "symbol:src/implicit_decision_gate/gate.py::RunStore.lock"
+          ],
+          "query": "What prevents two concurrent resume commands from executing attempt two twice?",
+          "recall_at_10": 0.6666666666666666,
+          "recall_at_20": 0.6666666666666666,
+          "reciprocal_answer_rank_at_10": 0.5,
+          "supporting_recall_at_10": 0.5
+        },
+        {
+          "id": "clean-worktree",
+          "judgments": [
+            {
+              "node_id": "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager.create",
+              "rank": 4,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "answer"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt",
+              "rank": 18,
+              "relevance": 3,
+              "retrieved_at_10": false,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager.current_commit",
+              "rank": 9,
+              "relevance": 2,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            }
+          ],
+          "missed_at_10": [
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt"
+          ],
+          "missed_at_20": [],
+          "query": "Where is each coding attempt placed in a clean detached worktree at the pinned commit?",
+          "recall_at_10": 0.6666666666666666,
+          "recall_at_20": 1.0,
+          "reciprocal_answer_rank_at_10": 0.25,
+          "supporting_recall_at_10": 0.5
+        },
+        {
+          "id": "owner-pause-resume",
+          "judgments": [
+            {
+              "node_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+              "rank": 2,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "answer"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.answer",
+              "rank": 3,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            },
+            {
+              "node_id": "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work",
+              "rank": null,
+              "relevance": 2,
+              "retrieved_at_10": false,
+              "retrieved_at_20": false,
+              "role": "supporting"
+            }
+          ],
+          "missed_at_10": [
+            "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work"
+          ],
+          "missed_at_20": [
+            "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work"
+          ],
+          "query": "How does an owner answer advance a paused run so it can resume?",
+          "recall_at_10": 0.6666666666666666,
+          "recall_at_20": 0.6666666666666666,
+          "reciprocal_answer_rank_at_10": 0.5,
+          "supporting_recall_at_10": 0.5
+        },
+        {
+          "id": "prompt-context-isolation",
+          "judgments": [
+            {
+              "node_id": "symbol:src/implicit_decision_gate/agent.py::build_coding_prompt",
+              "rank": 2,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "answer"
+            },
+            {
+              "node_id": "symbol:tests/test_context.py::test_attempt_two_prompt_contains_only_allowed_fresh_context",
+              "rank": 11,
+              "relevance": 3,
+              "retrieved_at_10": false,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt",
+              "rank": null,
+              "relevance": 2,
+              "retrieved_at_10": false,
+              "retrieved_at_20": false,
+              "role": "supporting"
+            }
+          ],
+          "missed_at_10": [
+            "symbol:tests/test_context.py::test_attempt_two_prompt_contains_only_allowed_fresh_context",
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt"
+          ],
+          "missed_at_20": [
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt"
+          ],
+          "query": "How is the second coding prompt limited to declared context and owner decisions?",
+          "recall_at_10": 0.3333333333333333,
+          "recall_at_20": 0.6666666666666666,
+          "reciprocal_answer_rank_at_10": 0.5,
+          "supporting_recall_at_10": 0.0
+        },
+        {
+          "id": "coverage-gap-routing",
+          "judgments": [
+            {
+              "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+              "rank": null,
+              "relevance": 3,
+              "retrieved_at_10": false,
+              "retrieved_at_20": false,
+              "role": "answer"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads",
+              "rank": 4,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            },
+            {
+              "node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+              "rank": 1,
+              "relevance": 2,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            }
+          ],
+          "missed_at_10": [
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt"
+          ],
+          "missed_at_20": [
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt"
+          ],
+          "query": "What routes an unmodeled observation to platform coverage review instead of evidence review?",
+          "recall_at_10": 0.6666666666666666,
+          "recall_at_20": 0.6666666666666666,
+          "reciprocal_answer_rank_at_10": 0.0,
+          "supporting_recall_at_10": 1.0
+        },
+        {
+          "id": "review-policy-classification",
+          "judgments": [
+            {
+              "node_id": "symbol:src/implicit_decision_gate/gate.py::state_after_reviews",
+              "rank": 1,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "answer"
+            },
+            {
+              "node_id": "symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated",
+              "rank": 4,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+              "rank": null,
+              "relevance": 2,
+              "retrieved_at_10": false,
+              "retrieved_at_20": false,
+              "role": "supporting"
+            }
+          ],
+          "missed_at_10": [
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt"
+          ],
+          "missed_at_20": [
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt"
+          ],
+          "query": "How are independent evidence classifications combined into the next gate state?",
+          "recall_at_10": 0.6666666666666666,
+          "recall_at_20": 0.6666666666666666,
+          "reciprocal_answer_rank_at_10": 1.0,
+          "supporting_recall_at_10": 0.5
+        },
+        {
+          "id": "authorization-normalization",
+          "judgments": [
+            {
+              "node_id": "symbol:src/implicit_decision_gate/api_probe.py::normalize_authorization",
+              "rank": 4,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "answer"
+            },
+            {
+              "node_id": "symbol:tests/test_api_probe.py::test_normalize_authorization",
+              "rank": 16,
+              "relevance": 3,
+              "retrieved_at_10": false,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+              "rank": 11,
+              "relevance": 2,
+              "retrieved_at_10": false,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            }
+          ],
+          "missed_at_10": [
+            "symbol:tests/test_api_probe.py::test_normalize_authorization",
+            "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+          ],
+          "missed_at_20": [],
+          "query": "Where are observed authorization status codes and job counts normalized into policy options?",
+          "recall_at_10": 0.3333333333333333,
+          "recall_at_20": 1.0,
+          "reciprocal_answer_rank_at_10": 0.25,
+          "supporting_recall_at_10": 0.0
+        },
+        {
+          "id": "postgres-normalization",
+          "judgments": [
+            {
+              "node_id": "symbol:src/implicit_decision_gate/probe.py::normalize_observation",
+              "rank": null,
+              "relevance": 3,
+              "retrieved_at_10": false,
+              "retrieved_at_20": false,
+              "role": "answer"
+            },
+            {
+              "node_id": "symbol:tests/test_probe.py::test_normalize_maps_both_reference_behaviors",
+              "rank": null,
+              "relevance": 3,
+              "retrieved_at_10": false,
+              "retrieved_at_20": false,
+              "role": "supporting"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+              "rank": null,
+              "relevance": 2,
+              "retrieved_at_10": false,
+              "retrieved_at_20": false,
+              "role": "supporting"
+            }
+          ],
+          "missed_at_10": [
+            "symbol:src/implicit_decision_gate/probe.py::normalize_observation",
+            "symbol:tests/test_probe.py::test_normalize_maps_both_reference_behaviors",
+            "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute"
+          ],
+          "missed_at_20": [
+            "symbol:src/implicit_decision_gate/probe.py::normalize_observation",
+            "symbol:tests/test_probe.py::test_normalize_maps_both_reference_behaviors",
+            "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute"
+          ],
+          "query": "How are PostgreSQL facts normalized into preserve-existing or expire-existing rollout behavior?",
+          "recall_at_10": 0.0,
+          "recall_at_20": 0.0,
+          "reciprocal_answer_rank_at_10": 0.0,
+          "supporting_recall_at_10": 0.0
+        },
+        {
+          "id": "reviewer-evidence",
+          "judgments": [
+            {
+              "node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+              "rank": 1,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "answer"
+            },
+            {
+              "node_id": "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain",
+              "rank": 14,
+              "relevance": 3,
+              "retrieved_at_10": false,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+              "rank": 3,
+              "relevance": 2,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            }
+          ],
+          "missed_at_10": [
+            "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain"
+          ],
+          "missed_at_20": [],
+          "query": "How are reviewer classifications checked against literal evidence from the brief?",
+          "recall_at_10": 0.6666666666666666,
+          "recall_at_20": 1.0,
+          "reciprocal_answer_rank_at_10": 1.0,
+          "supporting_recall_at_10": 0.5
+        },
+        {
+          "id": "cli-lifecycle",
+          "judgments": [
+            {
+              "node_id": "symbol:src/implicit_decision_gate/cli.py::main",
+              "rank": 3,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "answer"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/cli.py::_parser",
+              "rank": 1,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            },
+            {
+              "node_id": "symbol:tests/test_cli.py::test_cli_pauses_inspects_answers_and_resumes",
+              "rank": 7,
+              "relevance": 2,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            }
+          ],
+          "missed_at_10": [],
+          "missed_at_20": [],
+          "query": "Which CLI entry point implements start, show, answer, and resume?",
+          "recall_at_10": 1.0,
+          "recall_at_20": 1.0,
+          "reciprocal_answer_rank_at_10": 0.3333333333333333,
+          "supporting_recall_at_10": 1.0
+        },
+        {
+          "id": "fresh-reviewer-process",
+          "judgments": [
+            {
+              "node_id": "symbol:src/implicit_decision_gate/codex_client.py::CodexCLIModelClient.review_evidence",
+              "rank": 1,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "answer"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/codex_client.py::CodexCLIModelClient._execute",
+              "rank": null,
+              "relevance": 3,
+              "retrieved_at_10": false,
+              "retrieved_at_20": false,
+              "role": "supporting"
+            },
+            {
+              "node_id": "symbol:tests/test_codex_client.py::test_codex_reviewer_uses_fresh_non_repo_process",
+              "rank": 3,
+              "relevance": 2,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            }
+          ],
+          "missed_at_10": [
+            "symbol:src/implicit_decision_gate/codex_client.py::CodexCLIModelClient._execute"
+          ],
+          "missed_at_20": [
+            "symbol:src/implicit_decision_gate/codex_client.py::CodexCLIModelClient._execute"
+          ],
+          "query": "Where does evidence review run through a fresh non-repository Codex process?",
+          "recall_at_10": 0.6666666666666666,
+          "recall_at_20": 0.6666666666666666,
+          "reciprocal_answer_rank_at_10": 1.0,
+          "supporting_recall_at_10": 0.5
+        },
+        {
+          "id": "catalog-effects",
+          "judgments": [
+            {
+              "node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+              "rank": 1,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "answer"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::capture_catalog",
+              "rank": 3,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            },
+            {
+              "node_id": "symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic",
+              "rank": 19,
+              "relevance": 2,
+              "retrieved_at_10": false,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            }
+          ],
+          "missed_at_10": [
+            "symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic"
+          ],
+          "missed_at_20": [],
+          "query": "How are PostgreSQL catalog snapshots converted into deterministic structural effects?",
+          "recall_at_10": 0.6666666666666666,
+          "recall_at_20": 1.0,
+          "reciprocal_answer_rank_at_10": 1.0,
+          "supporting_recall_at_10": 0.5
+        },
+        {
+          "id": "decision-request-payload",
+          "judgments": [
+            {
+              "node_id": "symbol:src/implicit_decision_gate/gate.py::decision_request_payloads",
+              "rank": 1,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "answer"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/gate.py::decision_requires_owner",
+              "rank": null,
+              "relevance": 3,
+              "retrieved_at_10": false,
+              "retrieved_at_20": false,
+              "role": "supporting"
+            },
+            {
+              "node_id": "symbol:src/implicit_decision_gate/gate.py::show_payload",
+              "rank": 3,
+              "relevance": 2,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            }
+          ],
+          "missed_at_10": [
+            "symbol:src/implicit_decision_gate/gate.py::decision_requires_owner"
+          ],
+          "missed_at_20": [
+            "symbol:src/implicit_decision_gate/gate.py::decision_requires_owner"
+          ],
+          "query": "Where are unanswered owner decisions turned into stable CLI request payloads?",
+          "recall_at_10": 0.6666666666666666,
+          "recall_at_20": 0.6666666666666666,
+          "reciprocal_answer_rank_at_10": 1.0,
+          "supporting_recall_at_10": 0.5
+        },
+        {
+          "id": "static-walkthrough-assets",
+          "judgments": [
+            {
+              "node_id": "file:web/public/app.js",
+              "rank": null,
+              "relevance": 3,
+              "retrieved_at_10": false,
+              "retrieved_at_20": false,
+              "role": "answer"
+            },
+            {
+              "node_id": "file:web/public/index.html",
+              "rank": 2,
+              "relevance": 3,
+              "retrieved_at_10": true,
+              "retrieved_at_20": true,
+              "role": "supporting"
+            },
+            {
+              "node_id": "file:web/public/styles.css",
+              "rank": null,
+              "relevance": 2,
+              "retrieved_at_10": false,
+              "retrieved_at_20": false,
+              "role": "supporting"
+            }
+          ],
+          "missed_at_10": [
+            "file:web/public/app.js",
+            "file:web/public/styles.css"
+          ],
+          "missed_at_20": [
+            "file:web/public/app.js",
+            "file:web/public/styles.css"
+          ],
+          "query": "Which committed static assets implement the interactive browser walkthrough?",
+          "recall_at_10": 0.3333333333333333,
+          "recall_at_20": 0.3333333333333333,
+          "reciprocal_answer_rank_at_10": 0.0,
+          "supporting_recall_at_10": 0.5
+        }
+      ],
+      "recall_at_10": 0.5714285714285714,
+      "recall_at_20": 0.7142857142857143,
+      "strategy": "lexical",
+      "supporting_recall_at_10": 0.4642857142857143
+    },
+    "metric_definition": "Unweighted macro mean across reviewed queries; answer MRR uses the best-ranked answer judgment and recall treats all reviewed judgments equally.",
+    "queries": [
+      {
+        "answer_rank_change": 0,
+        "id": "concurrent-resume",
+        "newly_missed_at_10": [],
+        "newly_retrieved_at_10": [],
+        "regression": false
+      },
+      {
+        "answer_rank_change": 0,
+        "id": "clean-worktree",
+        "newly_missed_at_10": [
+          "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager.current_commit"
+        ],
+        "newly_retrieved_at_10": [],
+        "regression": true
+      },
+      {
+        "answer_rank_change": 0,
+        "id": "owner-pause-resume",
+        "newly_missed_at_10": [],
+        "newly_retrieved_at_10": [],
+        "regression": false
+      },
+      {
+        "answer_rank_change": 0,
+        "id": "prompt-context-isolation",
+        "newly_missed_at_10": [],
+        "newly_retrieved_at_10": [
+          "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt"
+        ],
+        "regression": false
+      },
+      {
+        "answer_rank_change": null,
+        "id": "coverage-gap-routing",
+        "newly_missed_at_10": [],
+        "newly_retrieved_at_10": [],
+        "regression": false
+      },
+      {
+        "answer_rank_change": 0,
+        "id": "review-policy-classification",
+        "newly_missed_at_10": [],
+        "newly_retrieved_at_10": [
+          "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt"
+        ],
+        "regression": false
+      },
+      {
+        "answer_rank_change": 0,
+        "id": "authorization-normalization",
+        "newly_missed_at_10": [],
+        "newly_retrieved_at_10": [],
+        "regression": false
+      },
+      {
+        "answer_rank_change": null,
+        "id": "postgres-normalization",
+        "newly_missed_at_10": [],
+        "newly_retrieved_at_10": [],
+        "regression": false
+      },
+      {
+        "answer_rank_change": 0,
+        "id": "reviewer-evidence",
+        "newly_missed_at_10": [],
+        "newly_retrieved_at_10": [
+          "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain"
+        ],
+        "regression": false
+      },
+      {
+        "answer_rank_change": 0,
+        "id": "cli-lifecycle",
+        "newly_missed_at_10": [
+          "symbol:tests/test_cli.py::test_cli_pauses_inspects_answers_and_resumes"
+        ],
+        "newly_retrieved_at_10": [],
+        "regression": true
+      },
+      {
+        "answer_rank_change": 0,
+        "id": "fresh-reviewer-process",
+        "newly_missed_at_10": [],
+        "newly_retrieved_at_10": [
+          "symbol:src/implicit_decision_gate/codex_client.py::CodexCLIModelClient._execute"
+        ],
+        "regression": false
+      },
+      {
+        "answer_rank_change": 0,
+        "id": "catalog-effects",
+        "newly_missed_at_10": [],
+        "newly_retrieved_at_10": [],
+        "regression": false
+      },
+      {
+        "answer_rank_change": 0,
+        "id": "decision-request-payload",
+        "newly_missed_at_10": [],
+        "newly_retrieved_at_10": [
+          "symbol:src/implicit_decision_gate/gate.py::decision_requires_owner"
+        ],
+        "regression": false
+      },
+      {
+        "answer_rank_change": null,
+        "id": "static-walkthrough-assets",
+        "newly_missed_at_10": [],
+        "newly_retrieved_at_10": [
+          "file:web/public/styles.css"
+        ],
+        "regression": false
+      }
+    ],
+    "ranking_budget": 20,
+    "repository": {
+      "commit": "2fdbb3deab2967a545d8a898a17a380974e6bb17",
+      "name": "implicit-decision-gate",
+      "url": "https://github.com/genesobolev/implicit-decision-gate"
+    },
+    "schema_version": 1
+  },
+  "metric_definition": "Unweighted macro mean across reviewed queries; answer MRR uses the best-ranked answer judgment and recall treats all reviewed judgments equally.",
+  "misses": [
+    {
+      "graph_missed_at_10": [
+        "symbol:src/implicit_decision_gate/gate.py::RunStore.lock"
+      ],
+      "id": "concurrent-resume",
+      "lexical_missed_at_10": [
+        "symbol:src/implicit_decision_gate/gate.py::RunStore.lock"
+      ],
+      "newly_missed_at_10": [],
+      "newly_retrieved_at_10": [],
+      "query": "What prevents two concurrent resume commands from executing attempt two twice?",
+      "reason": "Lexical missed 1 and graph-expanded missed 1 reviewed judgments at rank 10.",
+      "regression": false
+    },
+    {
+      "graph_missed_at_10": [
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt",
+        "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager.current_commit"
+      ],
+      "id": "clean-worktree",
+      "lexical_missed_at_10": [
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt"
+      ],
+      "newly_missed_at_10": [
+        "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager.current_commit"
+      ],
+      "newly_retrieved_at_10": [],
+      "query": "Where is each coding attempt placed in a clean detached worktree at the pinned commit?",
+      "reason": "Regression: Lexical missed 1 and graph-expanded missed 2 reviewed judgments at rank 10.",
+      "regression": true
+    },
+    {
+      "graph_missed_at_10": [
+        "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work"
+      ],
+      "id": "owner-pause-resume",
+      "lexical_missed_at_10": [
+        "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work"
+      ],
+      "newly_missed_at_10": [],
+      "newly_retrieved_at_10": [],
+      "query": "How does an owner answer advance a paused run so it can resume?",
+      "reason": "Lexical missed 1 and graph-expanded missed 1 reviewed judgments at rank 10.",
+      "regression": false
+    },
+    {
+      "graph_missed_at_10": [
+        "symbol:tests/test_context.py::test_attempt_two_prompt_contains_only_allowed_fresh_context"
+      ],
+      "id": "prompt-context-isolation",
+      "lexical_missed_at_10": [
+        "symbol:tests/test_context.py::test_attempt_two_prompt_contains_only_allowed_fresh_context",
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt"
+      ],
+      "newly_missed_at_10": [],
+      "newly_retrieved_at_10": [
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt"
+      ],
+      "query": "How is the second coding prompt limited to declared context and owner decisions?",
+      "reason": "Lexical missed 2 and graph-expanded missed 1 reviewed judgments at rank 10.",
+      "regression": false
+    },
+    {
+      "graph_missed_at_10": [
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt"
+      ],
+      "id": "coverage-gap-routing",
+      "lexical_missed_at_10": [
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt"
+      ],
+      "newly_missed_at_10": [],
+      "newly_retrieved_at_10": [],
+      "query": "What routes an unmodeled observation to platform coverage review instead of evidence review?",
+      "reason": "Lexical missed 1 and graph-expanded missed 1 reviewed judgments at rank 10.",
+      "regression": false
+    },
+    {
+      "graph_missed_at_10": [],
+      "id": "review-policy-classification",
+      "lexical_missed_at_10": [
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt"
+      ],
+      "newly_missed_at_10": [],
+      "newly_retrieved_at_10": [
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt"
+      ],
+      "query": "How are independent evidence classifications combined into the next gate state?",
+      "reason": "Lexical missed 1 and graph-expanded missed 0 reviewed judgments at rank 10.",
+      "regression": false
+    },
+    {
+      "graph_missed_at_10": [
+        "symbol:tests/test_api_probe.py::test_normalize_authorization",
+        "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+      ],
+      "id": "authorization-normalization",
+      "lexical_missed_at_10": [
+        "symbol:tests/test_api_probe.py::test_normalize_authorization",
+        "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+      ],
+      "newly_missed_at_10": [],
+      "newly_retrieved_at_10": [],
+      "query": "Where are observed authorization status codes and job counts normalized into policy options?",
+      "reason": "Lexical missed 2 and graph-expanded missed 2 reviewed judgments at rank 10.",
+      "regression": false
+    },
+    {
+      "graph_missed_at_10": [
+        "symbol:src/implicit_decision_gate/probe.py::normalize_observation",
+        "symbol:tests/test_probe.py::test_normalize_maps_both_reference_behaviors",
+        "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute"
+      ],
+      "id": "postgres-normalization",
+      "lexical_missed_at_10": [
+        "symbol:src/implicit_decision_gate/probe.py::normalize_observation",
+        "symbol:tests/test_probe.py::test_normalize_maps_both_reference_behaviors",
+        "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute"
+      ],
+      "newly_missed_at_10": [],
+      "newly_retrieved_at_10": [],
+      "query": "How are PostgreSQL facts normalized into preserve-existing or expire-existing rollout behavior?",
+      "reason": "Lexical missed 3 and graph-expanded missed 3 reviewed judgments at rank 10.",
+      "regression": false
+    },
+    {
+      "graph_missed_at_10": [],
+      "id": "reviewer-evidence",
+      "lexical_missed_at_10": [
+        "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain"
+      ],
+      "newly_missed_at_10": [],
+      "newly_retrieved_at_10": [
+        "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain"
+      ],
+      "query": "How are reviewer classifications checked against literal evidence from the brief?",
+      "reason": "Lexical missed 1 and graph-expanded missed 0 reviewed judgments at rank 10.",
+      "regression": false
+    },
+    {
+      "graph_missed_at_10": [
+        "symbol:tests/test_cli.py::test_cli_pauses_inspects_answers_and_resumes"
+      ],
+      "id": "cli-lifecycle",
+      "lexical_missed_at_10": [],
+      "newly_missed_at_10": [
+        "symbol:tests/test_cli.py::test_cli_pauses_inspects_answers_and_resumes"
+      ],
+      "newly_retrieved_at_10": [],
+      "query": "Which CLI entry point implements start, show, answer, and resume?",
+      "reason": "Regression: Lexical missed 0 and graph-expanded missed 1 reviewed judgments at rank 10.",
+      "regression": true
+    },
+    {
+      "graph_missed_at_10": [],
+      "id": "fresh-reviewer-process",
+      "lexical_missed_at_10": [
+        "symbol:src/implicit_decision_gate/codex_client.py::CodexCLIModelClient._execute"
+      ],
+      "newly_missed_at_10": [],
+      "newly_retrieved_at_10": [
+        "symbol:src/implicit_decision_gate/codex_client.py::CodexCLIModelClient._execute"
+      ],
+      "query": "Where does evidence review run through a fresh non-repository Codex process?",
+      "reason": "Lexical missed 1 and graph-expanded missed 0 reviewed judgments at rank 10.",
+      "regression": false
+    },
+    {
+      "graph_missed_at_10": [
+        "symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic"
+      ],
+      "id": "catalog-effects",
+      "lexical_missed_at_10": [
+        "symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic"
+      ],
+      "newly_missed_at_10": [],
+      "newly_retrieved_at_10": [],
+      "query": "How are PostgreSQL catalog snapshots converted into deterministic structural effects?",
+      "reason": "Lexical missed 1 and graph-expanded missed 1 reviewed judgments at rank 10.",
+      "regression": false
+    },
+    {
+      "graph_missed_at_10": [],
+      "id": "decision-request-payload",
+      "lexical_missed_at_10": [
+        "symbol:src/implicit_decision_gate/gate.py::decision_requires_owner"
+      ],
+      "newly_missed_at_10": [],
+      "newly_retrieved_at_10": [
+        "symbol:src/implicit_decision_gate/gate.py::decision_requires_owner"
+      ],
+      "query": "Where are unanswered owner decisions turned into stable CLI request payloads?",
+      "reason": "Lexical missed 1 and graph-expanded missed 0 reviewed judgments at rank 10.",
+      "regression": false
+    },
+    {
+      "graph_missed_at_10": [
+        "file:web/public/app.js"
+      ],
+      "id": "static-walkthrough-assets",
+      "lexical_missed_at_10": [
+        "file:web/public/app.js",
+        "file:web/public/styles.css"
+      ],
+      "newly_missed_at_10": [],
+      "newly_retrieved_at_10": [
+        "file:web/public/styles.css"
+      ],
+      "query": "Which committed static assets implement the interactive browser walkthrough?",
+      "reason": "Lexical missed 2 and graph-expanded missed 1 reviewed judgments at rank 10.",
+      "regression": false
+    }
+  ],
+  "provenance": {
+    "branch": null,
+    "clean": true,
+    "commit": "2fdbb3deab2967a545d8a898a17a380974e6bb17",
+    "detached": true,
+    "extractor_version": "1.0.0",
+    "indexed_source_sha256": "054eb9ddb72433574992ca595bcf95e2a7747c9fa4a4515fd42681b55d706618",
+    "repository": "implicit-decision-gate",
+    "schema_version": "1.0.0",
+    "shallow": false,
+    "tree": "045114ac474171e8044ae179e9808ae4357a5296"
+  },
+  "queries": [
+    {
+      "graph": {
+        "score": 0.5
+      },
+      "graph_recall_at_10": 0.6666666666666666,
+      "id": "concurrent-resume",
+      "lexical": {
+        "score": 0.5
+      },
+      "lexical_recall_at_10": 0.6666666666666666,
+      "newly_missed_at_10": [],
+      "newly_retrieved_at_10": [],
+      "query": "What prevents two concurrent resume commands from executing attempt two twice?",
+      "regression": false
+    },
+    {
+      "graph": {
+        "score": 0.25
+      },
+      "graph_recall_at_10": 0.3333333333333333,
+      "id": "clean-worktree",
+      "lexical": {
+        "score": 0.25
+      },
+      "lexical_recall_at_10": 0.6666666666666666,
+      "newly_missed_at_10": [
+        "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager.current_commit"
+      ],
+      "newly_retrieved_at_10": [],
+      "query": "Where is each coding attempt placed in a clean detached worktree at the pinned commit?",
+      "regression": true
+    },
+    {
+      "graph": {
+        "score": 0.5
+      },
+      "graph_recall_at_10": 0.6666666666666666,
+      "id": "owner-pause-resume",
+      "lexical": {
+        "score": 0.5
+      },
+      "lexical_recall_at_10": 0.6666666666666666,
+      "newly_missed_at_10": [],
+      "newly_retrieved_at_10": [],
+      "query": "How does an owner answer advance a paused run so it can resume?",
+      "regression": false
+    },
+    {
+      "graph": {
+        "score": 0.5
+      },
+      "graph_recall_at_10": 0.6666666666666666,
+      "id": "prompt-context-isolation",
+      "lexical": {
+        "score": 0.5
+      },
+      "lexical_recall_at_10": 0.3333333333333333,
+      "newly_missed_at_10": [],
+      "newly_retrieved_at_10": [
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt"
+      ],
+      "query": "How is the second coding prompt limited to declared context and owner decisions?",
+      "regression": false
+    },
+    {
+      "graph": {
+        "score": 0.0
+      },
+      "graph_recall_at_10": 0.6666666666666666,
+      "id": "coverage-gap-routing",
+      "lexical": {
+        "score": 0.0
+      },
+      "lexical_recall_at_10": 0.6666666666666666,
+      "newly_missed_at_10": [],
+      "newly_retrieved_at_10": [],
+      "query": "What routes an unmodeled observation to platform coverage review instead of evidence review?",
+      "regression": false
+    },
+    {
+      "graph": {
+        "score": 1.0
+      },
+      "graph_recall_at_10": 1.0,
+      "id": "review-policy-classification",
+      "lexical": {
+        "score": 1.0
+      },
+      "lexical_recall_at_10": 0.6666666666666666,
+      "newly_missed_at_10": [],
+      "newly_retrieved_at_10": [
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt"
+      ],
+      "query": "How are independent evidence classifications combined into the next gate state?",
+      "regression": false
+    },
+    {
+      "graph": {
+        "score": 0.25
+      },
+      "graph_recall_at_10": 0.3333333333333333,
+      "id": "authorization-normalization",
+      "lexical": {
+        "score": 0.25
+      },
+      "lexical_recall_at_10": 0.3333333333333333,
+      "newly_missed_at_10": [],
+      "newly_retrieved_at_10": [],
+      "query": "Where are observed authorization status codes and job counts normalized into policy options?",
+      "regression": false
+    },
+    {
+      "graph": {
+        "score": 0.0
+      },
+      "graph_recall_at_10": 0.0,
+      "id": "postgres-normalization",
+      "lexical": {
+        "score": 0.0
+      },
+      "lexical_recall_at_10": 0.0,
+      "newly_missed_at_10": [],
+      "newly_retrieved_at_10": [],
+      "query": "How are PostgreSQL facts normalized into preserve-existing or expire-existing rollout behavior?",
+      "regression": false
+    },
+    {
+      "graph": {
+        "score": 1.0
+      },
+      "graph_recall_at_10": 1.0,
+      "id": "reviewer-evidence",
+      "lexical": {
+        "score": 1.0
+      },
+      "lexical_recall_at_10": 0.6666666666666666,
+      "newly_missed_at_10": [],
+      "newly_retrieved_at_10": [
+        "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain"
+      ],
+      "query": "How are reviewer classifications checked against literal evidence from the brief?",
+      "regression": false
+    },
+    {
+      "graph": {
+        "score": 0.3333333333333333
+      },
+      "graph_recall_at_10": 0.6666666666666666,
+      "id": "cli-lifecycle",
+      "lexical": {
+        "score": 0.3333333333333333
+      },
+      "lexical_recall_at_10": 1.0,
+      "newly_missed_at_10": [
+        "symbol:tests/test_cli.py::test_cli_pauses_inspects_answers_and_resumes"
+      ],
+      "newly_retrieved_at_10": [],
+      "query": "Which CLI entry point implements start, show, answer, and resume?",
+      "regression": true
+    },
+    {
+      "graph": {
+        "score": 1.0
+      },
+      "graph_recall_at_10": 1.0,
+      "id": "fresh-reviewer-process",
+      "lexical": {
+        "score": 1.0
+      },
+      "lexical_recall_at_10": 0.6666666666666666,
+      "newly_missed_at_10": [],
+      "newly_retrieved_at_10": [
+        "symbol:src/implicit_decision_gate/codex_client.py::CodexCLIModelClient._execute"
+      ],
+      "query": "Where does evidence review run through a fresh non-repository Codex process?",
+      "regression": false
+    },
+    {
+      "graph": {
+        "score": 1.0
+      },
+      "graph_recall_at_10": 0.6666666666666666,
+      "id": "catalog-effects",
+      "lexical": {
+        "score": 1.0
+      },
+      "lexical_recall_at_10": 0.6666666666666666,
+      "newly_missed_at_10": [],
+      "newly_retrieved_at_10": [],
+      "query": "How are PostgreSQL catalog snapshots converted into deterministic structural effects?",
+      "regression": false
+    },
+    {
+      "graph": {
+        "score": 1.0
+      },
+      "graph_recall_at_10": 1.0,
+      "id": "decision-request-payload",
+      "lexical": {
+        "score": 1.0
+      },
+      "lexical_recall_at_10": 0.6666666666666666,
+      "newly_missed_at_10": [],
+      "newly_retrieved_at_10": [
+        "symbol:src/implicit_decision_gate/gate.py::decision_requires_owner"
+      ],
+      "query": "Where are unanswered owner decisions turned into stable CLI request payloads?",
+      "regression": false
+    },
+    {
+      "graph": {
+        "score": 0.0
+      },
+      "graph_recall_at_10": 0.6666666666666666,
+      "id": "static-walkthrough-assets",
+      "lexical": {
+        "score": 0.0
+      },
+      "lexical_recall_at_10": 0.3333333333333333,
+      "newly_missed_at_10": [],
+      "newly_retrieved_at_10": [
+        "file:web/public/styles.css"
+      ],
+      "query": "Which committed static assets implement the interactive browser walkthrough?",
+      "regression": false
+    }
+  ],
+  "ranking_budget": 20,
+  "schema_version": 1,
+  "summary": {
+    "conclusion": "Graph expansion and lexical retrieval tie on answer MRR@10.",
+    "graph": {
+      "score": 0.5238095238095238
+    },
+    "graph_metrics": {
+      "answer_mrr_at_10": 0.5238095238095238,
+      "queries": [],
+      "recall_at_10": 0.6666666666666666,
+      "recall_at_20": 0.8095238095238095,
+      "strategy": "graph_expanded",
+      "supporting_recall_at_10": 0.6071428571428571
+    },
+    "lexical": {
+      "score": 0.5238095238095238
+    },
+    "lexical_metrics": {
+      "answer_mrr_at_10": 0.5238095238095238,
+      "queries": [],
+      "recall_at_10": 0.5714285714285714,
+      "recall_at_20": 0.7142857142857143,
+      "strategy": "lexical",
+      "supporting_recall_at_10": 0.4642857142857143
+    }
+  }
+}

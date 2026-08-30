@@ -1,0 +1,101 @@
+{
+  "evaluation": "evaluation.json",
+  "provenance": {
+    "branch": null,
+    "clean": true,
+    "commit": "2fdbb3deab2967a545d8a898a17a380974e6bb17",
+    "detached": true,
+    "extractor_version": "1.0.0",
+    "indexed_source_sha256": "054eb9ddb72433574992ca595bcf95e2a7747c9fa4a4515fd42681b55d706618",
+    "repository": "implicit-decision-gate",
+    "retrieval": {
+      "hop_decay": 0.85,
+      "hops": 2,
+      "related_count": 25,
+      "seed_count": 6
+    },
+    "schema_version": "1.0.0",
+    "shallow": false,
+    "tree": "045114ac474171e8044ae179e9808ae4357a5296"
+  },
+  "queries": [
+    {
+      "file": "queries/concurrent-resume.json",
+      "id": "concurrent-resume",
+      "label": "Concurrent Resume"
+    },
+    {
+      "file": "queries/clean-worktree.json",
+      "id": "clean-worktree",
+      "label": "Clean Worktree"
+    },
+    {
+      "file": "queries/owner-pause-resume.json",
+      "id": "owner-pause-resume",
+      "label": "Owner Pause Resume"
+    },
+    {
+      "file": "queries/prompt-context-isolation.json",
+      "id": "prompt-context-isolation",
+      "label": "Prompt Context Isolation"
+    },
+    {
+      "file": "queries/coverage-gap-routing.json",
+      "id": "coverage-gap-routing",
+      "label": "Coverage Gap Routing"
+    },
+    {
+      "file": "queries/review-policy-classification.json",
+      "id": "review-policy-classification",
+      "label": "Review Policy Classification"
+    },
+    {
+      "file": "queries/authorization-normalization.json",
+      "id": "authorization-normalization",
+      "label": "Authorization Normalization"
+    },
+    {
+      "file": "queries/postgres-normalization.json",
+      "id": "postgres-normalization",
+      "label": "Postgres Normalization"
+    },
+    {
+      "file": "queries/reviewer-evidence.json",
+      "id": "reviewer-evidence",
+      "label": "Reviewer Evidence"
+    },
+    {
+      "file": "queries/cli-lifecycle.json",
+      "id": "cli-lifecycle",
+      "label": "Cli Lifecycle"
+    },
+    {
+      "file": "queries/fresh-reviewer-process.json",
+      "id": "fresh-reviewer-process",
+      "label": "Fresh Reviewer Process"
+    },
+    {
+      "file": "queries/catalog-effects.json",
+      "id": "catalog-effects",
+      "label": "Catalog Effects"
+    },
+    {
+      "file": "queries/decision-request-payload.json",
+      "id": "decision-request-payload",
+      "label": "Decision Request Payload"
+    },
+    {
+      "file": "queries/static-walkthrough-assets.json",
+      "id": "static-walkthrough-assets",
+      "label": "Static Walkthrough Assets"
+    }
+  ],
+  "repositories": [
+    {
+      "file": "repository.json",
+      "id": "implicit-decision-gate",
+      "label": "Implicit Decision Gate"
+    }
+  ],
+  "schema_version": 1
+}

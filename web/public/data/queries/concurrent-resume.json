@@ -1,0 +1,3499 @@
+{
+  "context": {
+    "json": {
+      "anchors": [
+        {
+          "direct_score": 0.1991734992983448,
+          "node": {
+            "kind": "method",
+            "language": "python",
+            "location": {
+              "end_line": 99,
+              "path": "src/implicit_decision_gate/orchestrator.py",
+              "start_line": 92
+            },
+            "name": "resume",
+            "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+            "qualified_name": "Orchestrator.resume"
+          },
+          "pagerank_score": 0.054182975511077265,
+          "rank": 1,
+          "relationship_score": 0.0
+        },
+        {
+          "direct_score": 0.1611606357419213,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 236,
+              "path": "tests/test_orchestrator.py",
+              "start_line": 189
+            },
+            "name": "test_concurrent_resumes_execute_attempt_two_once",
+            "node_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+            "qualified_name": "test_concurrent_resumes_execute_attempt_two_once"
+          },
+          "pagerank_score": 0.0481079009656889,
+          "rank": 2,
+          "relationship_score": 0.0
+        },
+        {
+          "direct_score": 0.09876773747462704,
+          "node": {
+            "kind": "method",
+            "language": "python",
+            "location": {
+              "end_line": 307,
+              "path": "src/implicit_decision_gate/orchestrator.py",
+              "start_line": 267
+            },
+            "name": "_finish_second_attempt",
+            "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_second_attempt",
+            "qualified_name": "Orchestrator._finish_second_attempt"
+          },
+          "pagerank_score": 0.027436211635704602,
+          "rank": 3,
+          "relationship_score": 0.0
+        },
+        {
+          "direct_score": 0.09257442065057155,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 84,
+              "path": "tests/test_context.py",
+              "start_line": 65
+            },
+            "name": "test_attempt_two_prompt_contains_only_allowed_fresh_context",
+            "node_id": "symbol:tests/test_context.py::test_attempt_two_prompt_contains_only_allowed_fresh_context",
+            "qualified_name": "test_attempt_two_prompt_contains_only_allowed_fresh_context"
+          },
+          "pagerank_score": 0.02664516648012573,
+          "rank": 4,
+          "relationship_score": 0.0
+        },
+        {
+          "direct_score": 0.07112896138752764,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 344,
+              "path": "src/implicit_decision_gate/orchestrator.py",
+              "start_line": 1
+            },
+            "name": "orchestrator.py",
+            "node_id": "file:src/implicit_decision_gate/orchestrator.py",
+            "qualified_name": "implicit_decision_gate.orchestrator"
+          },
+          "pagerank_score": 0.023823956042969538,
+          "rank": 5,
+          "relationship_score": 0.0
+        },
+        {
+          "direct_score": 0.07103192747111918,
+          "node": {
+            "kind": "class",
+            "language": "python",
+            "location": {
+              "end_line": 344,
+              "path": "src/implicit_decision_gate/orchestrator.py",
+              "start_line": 42
+            },
+            "name": "Orchestrator",
+            "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+            "qualified_name": "Orchestrator"
+          },
+          "pagerank_score": 0.0445827816731771,
+          "rank": 6,
+          "relationship_score": 0.0
+        }
+      ],
+      "query": "What prevents two concurrent resume commands from executing attempt two twice?",
+      "related_nodes": [
+        {
+          "direct_score": 0.020641640100681327,
+          "node": {
+            "kind": "method",
+            "language": "python",
+            "location": {
+              "end_line": 116,
+              "path": "src/implicit_decision_gate/orchestrator.py",
+              "start_line": 107
+            },
+            "name": "_execute_or_fail",
+            "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_or_fail",
+            "qualified_name": "Orchestrator._execute_or_fail"
+          },
+          "pagerank_score": 0.009771808202179452,
+          "rank": 1,
+          "relationship_score": 0.5252908607493324
+        },
+        {
+          "direct_score": 0.008956085408148936,
+          "node": {
+            "kind": "class",
+            "language": "python",
+            "location": {
+              "end_line": 133,
+              "path": "src/implicit_decision_gate/gate.py",
+              "start_line": 132
+            },
+            "name": "GateError",
+            "node_id": "symbol:src/implicit_decision_gate/gate.py::GateError",
+            "qualified_name": "GateError"
+          },
+          "pagerank_score": 0.025425123330918627,
+          "rank": 2,
+          "relationship_score": 0.47800704960201407
+        },
+        {
+          "direct_score": 0.01079919877325892,
+          "node": {
+            "kind": "class",
+            "language": "python",
+            "location": {
+              "end_line": 218,
+              "path": "tests/conftest.py",
+              "start_line": 173
+            },
+            "name": "ScriptMarkerProbe",
+            "node_id": "symbol:tests/conftest.py::ScriptMarkerProbe",
+            "qualified_name": "ScriptMarkerProbe"
+          },
+          "pagerank_score": 0.013838742068401334,
+          "rank": 3,
+          "relationship_score": 0.44103567657613063
+        },
+        {
+          "direct_score": 0.002264646029181297,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 107,
+              "path": "tests/test_orchestrator.py",
+              "start_line": 92
+            },
+            "name": "orchestrator",
+            "node_id": "symbol:tests/test_orchestrator.py::orchestrator",
+            "qualified_name": "orchestrator"
+          },
+          "pagerank_score": 0.014693110703177945,
+          "rank": 4,
+          "relationship_score": 0.42503751435815135
+        },
+        {
+          "direct_score": 0.0034496205451692553,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 78,
+              "path": "tests/test_orchestrator.py",
+              "start_line": 72
+            },
+            "name": "not_evidenced",
+            "node_id": "symbol:tests/test_orchestrator.py::not_evidenced",
+            "qualified_name": "not_evidenced"
+          },
+          "pagerank_score": 0.010617893787737287,
+          "rank": 5,
+          "relationship_score": 0.42503751435815135
+        },
+        {
+          "direct_score": 0.0004691592826666955,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 224,
+              "path": "tests/conftest.py",
+              "start_line": 221
+            },
+            "name": "scripted_scenarios",
+            "node_id": "symbol:tests/conftest.py::scripted_scenarios",
+            "qualified_name": "scripted_scenarios"
+          },
+          "pagerank_score": 0.00848910108459463,
+          "rank": 6,
+          "relationship_score": 0.42503751435815135
+        },
+        {
+          "direct_score": 0.0014566825274455822,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 121,
+              "path": "tests/test_orchestrator.py",
+              "start_line": 110
+            },
+            "name": "wait_for_processes",
+            "node_id": "symbol:tests/test_orchestrator.py::wait_for_processes",
+            "qualified_name": "wait_for_processes"
+          },
+          "pagerank_score": 0.003966059457289586,
+          "rank": 7,
+          "relationship_score": 0.42503751435815135
+        },
+        {
+          "direct_score": 0.007133572652018451,
+          "node": {
+            "kind": "class",
+            "language": "python",
+            "location": {
+              "end_line": 91,
+              "path": "tests/conftest.py",
+              "start_line": 61
+            },
+            "name": "ScriptedCodingClient",
+            "node_id": "symbol:tests/conftest.py::ScriptedCodingClient",
+            "qualified_name": "ScriptedCodingClient"
+          },
+          "pagerank_score": 0.015029416312156568,
+          "rank": 8,
+          "relationship_score": 0.38677796129688674
+        },
+        {
+          "direct_score": 0.007384326751086881,
+          "node": {
+            "kind": "class",
+            "language": "python",
+            "location": {
+              "end_line": 124,
+              "path": "tests/conftest.py",
+              "start_line": 94
+            },
+            "name": "ScriptedReviewerClient",
+            "node_id": "symbol:tests/conftest.py::ScriptedReviewerClient",
+            "qualified_name": "ScriptedReviewerClient"
+          },
+          "pagerank_score": 0.015029416312156568,
+          "rank": 9,
+          "relationship_score": 0.38677796129688674
+        },
+        {
+          "direct_score": 0.019448182990685747,
+          "node": {
+            "kind": "class",
+            "language": "python",
+            "location": {
+              "end_line": 218,
+              "path": "src/implicit_decision_gate/gate.py",
+              "start_line": 136
+            },
+            "name": "RunStore",
+            "node_id": "symbol:src/implicit_decision_gate/gate.py::RunStore",
+            "qualified_name": "RunStore"
+          },
+          "pagerank_score": 0.012062384817219692,
+          "rank": 10,
+          "relationship_score": 0.38677796129688674
+        },
+        {
+          "direct_score": 0.03531938727002308,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 373,
+              "path": "tests/test_orchestrator.py",
+              "start_line": 316
+            },
+            "name": "test_two_decisions_are_answered_before_one_clean_retry",
+            "node_id": "symbol:tests/test_orchestrator.py::test_two_decisions_are_answered_before_one_clean_retry",
+            "qualified_name": "test_two_decisions_are_answered_before_one_clean_retry"
+          },
+          "pagerank_score": 0.009585610547269797,
+          "rank": 11,
+          "relationship_score": 0.3496496540319131
+        },
+        {
+          "direct_score": 0.025207501479224757,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 112,
+              "path": "src/implicit_decision_gate/cli.py",
+              "start_line": 80
+            },
+            "name": "main",
+            "node_id": "symbol:src/implicit_decision_gate/cli.py::main",
+            "qualified_name": "main"
+          },
+          "pagerank_score": 0.011378135797174112,
+          "rank": 12,
+          "relationship_score": 0.3317626488943152
+        },
+        {
+          "direct_score": 0.009908563122507855,
+          "node": {
+            "kind": "method",
+            "language": "python",
+            "location": {
+              "end_line": 197,
+              "path": "src/implicit_decision_gate/gate.py",
+              "start_line": 190
+            },
+            "name": "load",
+            "node_id": "symbol:src/implicit_decision_gate/gate.py::RunStore.load",
+            "qualified_name": "RunStore.load"
+          },
+          "pagerank_score": 0.010606336736977147,
+          "rank": 13,
+          "relationship_score": 0.3317626488943152
+        },
+        {
+          "direct_score": 0.0018698024428031096,
+          "node": {
+            "kind": "method",
+            "language": "python",
+            "location": {
+              "end_line": 169,
+              "path": "src/implicit_decision_gate/gate.py",
+              "start_line": 158
+            },
+            "name": "lock",
+            "node_id": "symbol:src/implicit_decision_gate/gate.py::RunStore.lock",
+            "qualified_name": "RunStore.lock"
+          },
+          "pagerank_score": 0.008647375857104626,
+          "rank": 14,
+          "relationship_score": 0.3317626488943152
+        },
+        {
+          "direct_score": 0.0034908139587351257,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 294,
+              "path": "src/implicit_decision_gate/gate.py",
+              "start_line": 265
+            },
+            "name": "answer_owner",
+            "node_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+            "qualified_name": "answer_owner"
+          },
+          "pagerank_score": 0.0055302119436518365,
+          "rank": 15,
+          "relationship_score": 0.31533864529378824
+        },
+        {
+          "direct_score": 0.03532610042573382,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 632,
+              "path": "tests/test_orchestrator.py",
+              "start_line": 1
+            },
+            "name": "test_orchestrator.py",
+            "node_id": "file:tests/test_orchestrator.py",
+            "qualified_name": "tests.test_orchestrator"
+          },
+          "pagerank_score": 0.020072891674367873,
+          "rank": 16,
+          "relationship_score": 0.3094987204043022
+        },
+        {
+          "direct_score": 0.022051472499884015,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 313,
+              "path": "tests/test_orchestrator.py",
+              "start_line": 239
+            },
+            "name": "test_owner_decision_regenerates_in_a_clean_context",
+            "node_id": "symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context",
+            "qualified_name": "test_owner_decision_regenerates_in_a_clean_context"
+          },
+          "pagerank_score": 0.014758351535198586,
+          "rank": 17,
+          "relationship_score": 0.3006003459680869
+        },
+        {
+          "direct_score": 0.02814749168648016,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 471,
+              "path": "tests/test_orchestrator.py",
+              "start_line": 428
+            },
+            "name": "test_second_attempt_mismatch_or_unmodeled_fails",
+            "node_id": "symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails",
+            "qualified_name": "test_second_attempt_mismatch_or_unmodeled_fails"
+          },
+          "pagerank_score": 0.012491344003050298,
+          "rank": 18,
+          "relationship_score": 0.3006003459680869
+        },
+        {
+          "direct_score": 0.006830700649661179,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 166,
+              "path": "tests/test_orchestrator.py",
+              "start_line": 124
+            },
+            "name": "test_awaiting_owner_is_durable_and_blocks_more_model_work",
+            "node_id": "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work",
+            "qualified_name": "test_awaiting_owner_is_durable_and_blocks_more_model_work"
+          },
+          "pagerank_score": 0.01048843465247855,
+          "rank": 19,
+          "relationship_score": 0.3006003459680869
+        },
+        {
+          "direct_score": 0.004134295544869134,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 167,
+              "path": "tests/test_evaluation.py",
+              "start_line": 131
+            },
+            "name": "test_adversarial_gate_matrix",
+            "node_id": "symbol:tests/test_evaluation.py::test_adversarial_gate_matrix",
+            "qualified_name": "test_adversarial_gate_matrix"
+          },
+          "pagerank_score": 0.00980205403319957,
+          "rank": 20,
+          "relationship_score": 0.3006003459680869
+        },
+        {
+          "direct_score": 0.0050986245518330475,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 421,
+              "path": "tests/test_orchestrator.py",
+              "start_line": 383
+            },
+            "name": "test_retry_verifies_supported_outcome_while_honoring_owner_answer",
+            "node_id": "symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer",
+            "qualified_name": "test_retry_verifies_supported_outcome_while_honoring_owner_answer"
+          },
+          "pagerank_score": 0.00935395326607179,
+          "rank": 21,
+          "relationship_score": 0.3006003459680869
+        },
+        {
+          "direct_score": 0.0370465001073585,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 524,
+              "path": "tests/test_orchestrator.py",
+              "start_line": 474
+            },
+            "name": "test_unmodeled_first_attempt_records_coverage_gap_without_review",
+            "node_id": "symbol:tests/test_orchestrator.py::test_unmodeled_first_attempt_records_coverage_gap_without_review",
+            "qualified_name": "test_unmodeled_first_attempt_records_coverage_gap_without_review"
+          },
+          "pagerank_score": 0.00830133915448126,
+          "rank": 22,
+          "relationship_score": 0.3006003459680869
+        },
+        {
+          "direct_score": 0.027193722865835972,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 99,
+              "path": "tests/test_live.py",
+              "start_line": 65
+            },
+            "name": "test_live_model_can_pause_and_complete_second_attempt",
+            "node_id": "symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt",
+            "qualified_name": "test_live_model_can_pause_and_complete_second_attempt"
+          },
+          "pagerank_score": 0.006948643184217367,
+          "rank": 23,
+          "relationship_score": 0.3006003459680869
+        },
+        {
+          "direct_score": 0.030969164172839413,
+          "node": {
+            "kind": "method",
+            "language": "python",
+            "location": {
+              "end_line": 190,
+              "path": "src/implicit_decision_gate/orchestrator.py",
+              "start_line": 118
+            },
+            "name": "_execute_attempt",
+            "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt",
+            "qualified_name": "Orchestrator._execute_attempt"
+          },
+          "pagerank_score": 0.01921413173375395,
+          "rank": 24,
+          "relationship_score": 0.2832856672893128
+        },
+        {
+          "direct_score": 0.03430671909679854,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 373,
+              "path": "src/implicit_decision_gate/gate.py",
+              "start_line": 340
+            },
+            "name": "coverage_gap_payloads",
+            "node_id": "symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads",
+            "qualified_name": "coverage_gap_payloads"
+          },
+          "pagerank_score": 0.0027688689162422018,
+          "rank": 25,
+          "relationship_score": 0.2832856672893128
+        }
+      ],
+      "repository": {
+        "branch": null,
+        "clean": true,
+        "commit_sha": "2fdbb3deab2967a545d8a898a17a380974e6bb17",
+        "detached": true,
+        "extractor_version": "1.0.0",
+        "graph_schema_version": "1.0.0",
+        "indexed_source_sha256": "054eb9ddb72433574992ca595bcf95e2a7747c9fa4a4515fd42681b55d706618",
+        "name": "implicit-decision-gate",
+        "remote_url": "https://github.com/genesobolev/implicit-decision-gate.git",
+        "shallow": false,
+        "tree_sha": "045114ac474171e8044ae179e9808ae4357a5296"
+      },
+      "retrieval": {
+        "hop_decay": 0.85,
+        "hops": 2,
+        "related_count": 25,
+        "seed_count": 6
+      },
+      "schema_version": 1,
+      "selected_edges": [
+        {
+          "confidence": 0.6,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:src/implicit_decision_gate/cli.py::main->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "evidence": [
+            "src/implicit_decision_gate/cli.py:106"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:src/implicit_decision_gate/cli.py::main",
+          "strength": 0.3903089986991944,
+          "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume"
+        },
+        {
+          "confidence": 0.6,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume->symbol:src/implicit_decision_gate/gate.py::RunStore.load",
+          "evidence": [
+            "src/implicit_decision_gate/orchestrator.py:96"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "strength": 0.3903089986991944,
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::RunStore.load"
+        },
+        {
+          "confidence": 0.6,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume->symbol:src/implicit_decision_gate/gate.py::RunStore.lock",
+          "evidence": [
+            "src/implicit_decision_gate/orchestrator.py:95"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "strength": 0.3903089986991944,
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::RunStore.lock"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_or_fail",
+          "evidence": [
+            "src/implicit_decision_gate/orchestrator.py:99"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_or_fail"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/conftest.py::scripted_scenarios",
+          "evidence": [
+            "tests/test_orchestrator.py:203"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:tests/conftest.py::scripted_scenarios"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/test_orchestrator.py::not_evidenced",
+          "evidence": [
+            "tests/test_orchestrator.py:197"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:tests/test_orchestrator.py::not_evidenced"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/test_orchestrator.py::orchestrator",
+          "evidence": [
+            "tests/test_orchestrator.py:193"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:tests/test_orchestrator.py::orchestrator"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/test_orchestrator.py::wait_for_processes",
+          "evidence": [
+            "tests/test_orchestrator.py:230"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:tests/test_orchestrator.py::wait_for_processes"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CONTAINS:file:tests/test_orchestrator.py->symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+          "evidence": [
+            "tests/test_orchestrator.py:189"
+          ],
+          "kind": "CONTAINS",
+          "source_id": "file:tests/test_orchestrator.py",
+          "strength": 0.45,
+          "target_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once"
+        },
+        {
+          "confidence": 0.95,
+          "count": 5,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/gate.py::GateError",
+          "evidence": [
+            "src/implicit_decision_gate/gate.py:274",
+            "src/implicit_decision_gate/gate.py:277",
+            "src/implicit_decision_gate/gate.py:279",
+            "src/implicit_decision_gate/gate.py:285",
+            "src/implicit_decision_gate/gate.py:287"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+          "strength": 0.7761112348258989,
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+        },
+        {
+          "confidence": 0.9499999999999998,
+          "count": 3,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads->symbol:src/implicit_decision_gate/gate.py::GateError",
+          "evidence": [
+            "src/implicit_decision_gate/gate.py:350",
+            "src/implicit_decision_gate/gate.py:353",
+            "src/implicit_decision_gate/gate.py:356"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads",
+          "strength": 0.6972224696517979,
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+        },
+        {
+          "confidence": 0.9499999999999998,
+          "count": 3,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt->symbol:src/implicit_decision_gate/gate.py::GateError",
+          "evidence": [
+            "src/implicit_decision_gate/orchestrator.py:121",
+            "src/implicit_decision_gate/orchestrator.py:125",
+            "src/implicit_decision_gate/orchestrator.py:141"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt",
+          "strength": 0.6972224696517979,
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume->symbol:src/implicit_decision_gate/gate.py::GateError",
+          "evidence": [
+            "src/implicit_decision_gate/orchestrator.py:98"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "strength": 0.562361234825899,
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:src/implicit_decision_gate/gate.py::RunStore",
+          "evidence": [
+            "tests/test_orchestrator.py:209"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+          "strength": 0.562361234825899,
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::RunStore"
+        },
+        {
+          "confidence": 0.95,
+          "count": 2,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/conftest.py::ScriptMarkerProbe",
+          "evidence": [
+            "tests/test_orchestrator.py:198",
+            "tests/test_orchestrator.py:200"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+          "strength": 0.64125,
+          "target_id": "symbol:tests/conftest.py::ScriptMarkerProbe"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/conftest.py::ScriptedCodingClient",
+          "evidence": [
+            "tests/test_orchestrator.py:196"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+          "strength": 0.562361234825899,
+          "target_id": "symbol:tests/conftest.py::ScriptedCodingClient"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/conftest.py::ScriptedReviewerClient",
+          "evidence": [
+            "tests/test_orchestrator.py:197"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+          "strength": 0.562361234825899,
+          "target_id": "symbol:tests/conftest.py::ScriptedReviewerClient"
+        },
+        {
+          "confidence": 0.6,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "TESTS:symbol:tests/test_evaluation.py::test_adversarial_gate_matrix->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "evidence": [
+            "tests/test_evaluation.py:160"
+          ],
+          "kind": "TESTS",
+          "source_id": "symbol:tests/test_evaluation.py::test_adversarial_gate_matrix",
+          "strength": 0.3536474658448081,
+          "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume"
+        },
+        {
+          "confidence": 0.6,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "TESTS:symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "evidence": [
+            "tests/test_live.py:89"
+          ],
+          "kind": "TESTS",
+          "source_id": "symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt",
+          "strength": 0.3536474658448081,
+          "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume"
+        },
+        {
+          "confidence": 0.6,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "evidence": [
+            "tests/test_orchestrator.py:162"
+          ],
+          "kind": "TESTS",
+          "source_id": "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work",
+          "strength": 0.3536474658448081,
+          "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume"
+        },
+        {
+          "confidence": 0.6,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "evidence": [
+            "tests/test_orchestrator.py:268"
+          ],
+          "kind": "TESTS",
+          "source_id": "symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context",
+          "strength": 0.3536474658448081,
+          "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume"
+        },
+        {
+          "confidence": 0.6,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "evidence": [
+            "tests/test_orchestrator.py:417"
+          ],
+          "kind": "TESTS",
+          "source_id": "symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer",
+          "strength": 0.3536474658448081,
+          "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume"
+        },
+        {
+          "confidence": 0.6,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "evidence": [
+            "tests/test_orchestrator.py:451"
+          ],
+          "kind": "TESTS",
+          "source_id": "symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails",
+          "strength": 0.3536474658448081,
+          "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume"
+        },
+        {
+          "confidence": 0.6,
+          "count": 2,
+          "direction": "directed",
+          "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_two_decisions_are_answered_before_one_clean_retry->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "evidence": [
+            "tests/test_orchestrator.py:349",
+            "tests/test_orchestrator.py:353"
+          ],
+          "kind": "TESTS",
+          "source_id": "symbol:tests/test_orchestrator.py::test_two_decisions_are_answered_before_one_clean_retry",
+          "strength": 0.4113525341551919,
+          "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume"
+        },
+        {
+          "confidence": 0.6,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_unmodeled_first_attempt_records_coverage_gap_without_review->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "evidence": [
+            "tests/test_orchestrator.py:522"
+          ],
+          "kind": "TESTS",
+          "source_id": "symbol:tests/test_orchestrator.py::test_unmodeled_first_attempt_records_coverage_gap_without_review",
+          "strength": 0.3536474658448081,
+          "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume"
+        }
+      ],
+      "source_snippets": [
+        {
+          "location": {
+            "end_line": 236,
+            "path": "tests/test_orchestrator.py",
+            "start_line": 189
+          },
+          "node_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+          "reviewed": true,
+          "text": "def test_concurrent_resumes_execute_attempt_two_once(\n    reference_repo: Path,\n    tmp_path: Path,\n) -> None:\n    run = orchestrator(\n        reference_repo,\n        tmp_path / \"first-worktree\",\n        ScriptedCodingClient([\"-- EXPIRE_EXISTING\"]),\n        ScriptedReviewerClient([not_evidenced()]),\n        ScriptMarkerProbe(),\n    ).start()\n    observer = ScriptMarkerProbe()\n    Orchestrator(\n        repo_path=reference_repo,\n        scenarios=scripted_scenarios(observer),\n    ).answer(\n        run.run_id,\n        EXISTING_LINK_ROLLOUT,\n        PRESERVE_EXISTING,\n    )\n    store = RunStore(reference_repo)\n    command = [\n        sys.executable,\n        \"-c\",\n        RESUME_SCRIPT,\n        str(reference_repo),\n        run.run_id,\n        str(tmp_path / \"second-worktrees\"),\n    ]\n\n    with\u2026"
+        }
+      ],
+      "strongest_paths": [
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_or_fail"
+          ],
+          "relationship_score": 0.5252908607493324,
+          "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "steps": [
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_or_fail",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+              "to_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_or_fail"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_or_fail"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+            "symbol:src/implicit_decision_gate/gate.py::GateError"
+          ],
+          "relationship_score": 0.47800704960201407,
+          "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "steps": [
+            {
+              "combined_strength": 0.562361234825899,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume->symbol:src/implicit_decision_gate/gate.py::GateError",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.562361234825899,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+              "to_node_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+            "symbol:tests/conftest.py::ScriptMarkerProbe"
+          ],
+          "relationship_score": 0.44103567657613063,
+          "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+          "steps": [
+            {
+              "combined_strength": 0.64125,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/conftest.py::ScriptMarkerProbe",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.64125,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+              "to_node_id": "symbol:tests/conftest.py::ScriptMarkerProbe"
+            }
+          ],
+          "target_id": "symbol:tests/conftest.py::ScriptMarkerProbe"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+            "symbol:tests/test_orchestrator.py::orchestrator"
+          ],
+          "relationship_score": 0.42503751435815135,
+          "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+          "steps": [
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/test_orchestrator.py::orchestrator",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+              "to_node_id": "symbol:tests/test_orchestrator.py::orchestrator"
+            }
+          ],
+          "target_id": "symbol:tests/test_orchestrator.py::orchestrator"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+            "symbol:tests/test_orchestrator.py::not_evidenced"
+          ],
+          "relationship_score": 0.42503751435815135,
+          "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+          "steps": [
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/test_orchestrator.py::not_evidenced",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+              "to_node_id": "symbol:tests/test_orchestrator.py::not_evidenced"
+            }
+          ],
+          "target_id": "symbol:tests/test_orchestrator.py::not_evidenced"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+            "symbol:tests/conftest.py::scripted_scenarios"
+          ],
+          "relationship_score": 0.42503751435815135,
+          "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+          "steps": [
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/conftest.py::scripted_scenarios",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+              "to_node_id": "symbol:tests/conftest.py::scripted_scenarios"
+            }
+          ],
+          "target_id": "symbol:tests/conftest.py::scripted_scenarios"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+            "symbol:tests/test_orchestrator.py::wait_for_processes"
+          ],
+          "relationship_score": 0.42503751435815135,
+          "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+          "steps": [
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/test_orchestrator.py::wait_for_processes",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+              "to_node_id": "symbol:tests/test_orchestrator.py::wait_for_processes"
+            }
+          ],
+          "target_id": "symbol:tests/test_orchestrator.py::wait_for_processes"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+            "symbol:tests/conftest.py::ScriptedCodingClient"
+          ],
+          "relationship_score": 0.38677796129688674,
+          "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+          "steps": [
+            {
+              "combined_strength": 0.562361234825899,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/conftest.py::ScriptedCodingClient",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.562361234825899,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+              "to_node_id": "symbol:tests/conftest.py::ScriptedCodingClient"
+            }
+          ],
+          "target_id": "symbol:tests/conftest.py::ScriptedCodingClient"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+            "symbol:tests/conftest.py::ScriptedReviewerClient"
+          ],
+          "relationship_score": 0.38677796129688674,
+          "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+          "steps": [
+            {
+              "combined_strength": 0.562361234825899,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/conftest.py::ScriptedReviewerClient",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.562361234825899,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+              "to_node_id": "symbol:tests/conftest.py::ScriptedReviewerClient"
+            }
+          ],
+          "target_id": "symbol:tests/conftest.py::ScriptedReviewerClient"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+            "symbol:src/implicit_decision_gate/gate.py::RunStore"
+          ],
+          "relationship_score": 0.38677796129688674,
+          "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+          "steps": [
+            {
+              "combined_strength": 0.562361234825899,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:src/implicit_decision_gate/gate.py::RunStore",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.562361234825899,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+              "to_node_id": "symbol:src/implicit_decision_gate/gate.py::RunStore"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::RunStore"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+            "symbol:tests/test_orchestrator.py::test_two_decisions_are_answered_before_one_clean_retry"
+          ],
+          "relationship_score": 0.3496496540319131,
+          "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "steps": [
+            {
+              "combined_strength": 0.4113525341551919,
+              "contributions": [
+                {
+                  "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_two_decisions_are_answered_before_one_clean_retry->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+                  "kind": "TESTS",
+                  "strength": 0.4113525341551919,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+              "to_node_id": "symbol:tests/test_orchestrator.py::test_two_decisions_are_answered_before_one_clean_retry"
+            }
+          ],
+          "target_id": "symbol:tests/test_orchestrator.py::test_two_decisions_are_answered_before_one_clean_retry"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+            "symbol:src/implicit_decision_gate/cli.py::main"
+          ],
+          "relationship_score": 0.3317626488943152,
+          "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "steps": [
+            {
+              "combined_strength": 0.39030899869919433,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:src/implicit_decision_gate/cli.py::main->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+                  "kind": "CALLS",
+                  "strength": 0.3903089986991944,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+              "to_node_id": "symbol:src/implicit_decision_gate/cli.py::main"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/cli.py::main"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+            "symbol:src/implicit_decision_gate/gate.py::RunStore.load"
+          ],
+          "relationship_score": 0.3317626488943152,
+          "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "steps": [
+            {
+              "combined_strength": 0.39030899869919433,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume->symbol:src/implicit_decision_gate/gate.py::RunStore.load",
+                  "kind": "CALLS",
+                  "strength": 0.3903089986991944,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+              "to_node_id": "symbol:src/implicit_decision_gate/gate.py::RunStore.load"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::RunStore.load"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+            "symbol:src/implicit_decision_gate/gate.py::RunStore.lock"
+          ],
+          "relationship_score": 0.3317626488943152,
+          "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "steps": [
+            {
+              "combined_strength": 0.39030899869919433,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume->symbol:src/implicit_decision_gate/gate.py::RunStore.lock",
+                  "kind": "CALLS",
+                  "strength": 0.3903089986991944,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+              "to_node_id": "symbol:src/implicit_decision_gate/gate.py::RunStore.lock"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::RunStore.lock"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+            "symbol:src/implicit_decision_gate/gate.py::GateError",
+            "symbol:src/implicit_decision_gate/gate.py::answer_owner"
+          ],
+          "relationship_score": 0.31533864529378824,
+          "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "steps": [
+            {
+              "combined_strength": 0.562361234825899,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume->symbol:src/implicit_decision_gate/gate.py::GateError",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.562361234825899,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+              "to_node_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+            },
+            {
+              "combined_strength": 0.7761112348258989,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/gate.py::GateError",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.7761112348258989,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::GateError",
+              "to_node_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+            "file:tests/test_orchestrator.py"
+          ],
+          "relationship_score": 0.3094987204043022,
+          "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+          "steps": [
+            {
+              "combined_strength": 0.44999999999999996,
+              "contributions": [
+                {
+                  "edge_id": "CONTAINS:file:tests/test_orchestrator.py->symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+                  "kind": "CONTAINS",
+                  "strength": 0.45,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+              "to_node_id": "file:tests/test_orchestrator.py"
+            }
+          ],
+          "target_id": "file:tests/test_orchestrator.py"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+            "symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context"
+          ],
+          "relationship_score": 0.3006003459680869,
+          "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "steps": [
+            {
+              "combined_strength": 0.3536474658448081,
+              "contributions": [
+                {
+                  "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+                  "kind": "TESTS",
+                  "strength": 0.3536474658448081,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+              "to_node_id": "symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context"
+            }
+          ],
+          "target_id": "symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+            "symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails"
+          ],
+          "relationship_score": 0.3006003459680869,
+          "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "steps": [
+            {
+              "combined_strength": 0.3536474658448081,
+              "contributions": [
+                {
+                  "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+                  "kind": "TESTS",
+                  "strength": 0.3536474658448081,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+              "to_node_id": "symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails"
+            }
+          ],
+          "target_id": "symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+            "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work"
+          ],
+          "relationship_score": 0.3006003459680869,
+          "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "steps": [
+            {
+              "combined_strength": 0.3536474658448081,
+              "contributions": [
+                {
+                  "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+                  "kind": "TESTS",
+                  "strength": 0.3536474658448081,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+              "to_node_id": "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work"
+            }
+          ],
+          "target_id": "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+            "symbol:tests/test_evaluation.py::test_adversarial_gate_matrix"
+          ],
+          "relationship_score": 0.3006003459680869,
+          "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "steps": [
+            {
+              "combined_strength": 0.3536474658448081,
+              "contributions": [
+                {
+                  "edge_id": "TESTS:symbol:tests/test_evaluation.py::test_adversarial_gate_matrix->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+                  "kind": "TESTS",
+                  "strength": 0.3536474658448081,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+              "to_node_id": "symbol:tests/test_evaluation.py::test_adversarial_gate_matrix"
+            }
+          ],
+          "target_id": "symbol:tests/test_evaluation.py::test_adversarial_gate_matrix"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+            "symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer"
+          ],
+          "relationship_score": 0.3006003459680869,
+          "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "steps": [
+            {
+              "combined_strength": 0.3536474658448081,
+              "contributions": [
+                {
+                  "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+                  "kind": "TESTS",
+                  "strength": 0.3536474658448081,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+              "to_node_id": "symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer"
+            }
+          ],
+          "target_id": "symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+            "symbol:tests/test_orchestrator.py::test_unmodeled_first_attempt_records_coverage_gap_without_review"
+          ],
+          "relationship_score": 0.3006003459680869,
+          "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "steps": [
+            {
+              "combined_strength": 0.3536474658448081,
+              "contributions": [
+                {
+                  "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_unmodeled_first_attempt_records_coverage_gap_without_review->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+                  "kind": "TESTS",
+                  "strength": 0.3536474658448081,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+              "to_node_id": "symbol:tests/test_orchestrator.py::test_unmodeled_first_attempt_records_coverage_gap_without_review"
+            }
+          ],
+          "target_id": "symbol:tests/test_orchestrator.py::test_unmodeled_first_attempt_records_coverage_gap_without_review"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+            "symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt"
+          ],
+          "relationship_score": 0.3006003459680869,
+          "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "steps": [
+            {
+              "combined_strength": 0.3536474658448081,
+              "contributions": [
+                {
+                  "edge_id": "TESTS:symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+                  "kind": "TESTS",
+                  "strength": 0.3536474658448081,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+              "to_node_id": "symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt"
+            }
+          ],
+          "target_id": "symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+            "symbol:src/implicit_decision_gate/gate.py::GateError",
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt"
+          ],
+          "relationship_score": 0.2832856672893128,
+          "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "steps": [
+            {
+              "combined_strength": 0.562361234825899,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume->symbol:src/implicit_decision_gate/gate.py::GateError",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.562361234825899,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+              "to_node_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+            },
+            {
+              "combined_strength": 0.6972224696517979,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt->symbol:src/implicit_decision_gate/gate.py::GateError",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.6972224696517979,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::GateError",
+              "to_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+            "symbol:src/implicit_decision_gate/gate.py::GateError",
+            "symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads"
+          ],
+          "relationship_score": 0.2832856672893128,
+          "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "steps": [
+            {
+              "combined_strength": 0.562361234825899,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume->symbol:src/implicit_decision_gate/gate.py::GateError",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.562361234825899,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+              "to_node_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+            },
+            {
+              "combined_strength": 0.6972224696517979,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads->symbol:src/implicit_decision_gate/gate.py::GateError",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.6972224696517979,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::GateError",
+              "to_node_id": "symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads"
+        }
+      ]
+    },
+    "markdown": "# Code context\n\nQuery: What prevents two concurrent resume commands from executing attempt two twice?\n\nRepository: `implicit-decision-gate` at `2fdbb3deab2967a545d8a898a17a380974e6bb17`.\n\n## Ranked anchors\n\n- 1. `Orchestrator.resume` at `src/implicit_decision_gate/orchestrator.py:92` with direct score 0.1992\n- 2. `test_concurrent_resumes_execute_attempt_two_once` at `tests/test_orchestrator.py:189` with direct score 0.1612\n- 3. `Orchestrator._finish_second_attempt` at `src/implicit_decision_gate/orchestrator.py:267` with direct score 0.0988\n- 4. `test_attempt_two_prompt_contains_only_allowed_fresh_context` at `tests/test_context.py:65` with direct score 0.0926\n- 5. `implicit_decision_gate.orchestrator` at `src/implicit_decision_gate/orchestrator.py:1` with direct score 0.0711\n- 6. `Orchestrator` at `src/implicit_decision_gate/orchestrator.py:42` with direct score 0.0710\n\n## Related nodes\n\n- 1. `Orchestrator._execute_or_fail` at `src/implicit_decision_gate/orchestrator.py:107` with relationship score 0.5253\n- 2. `GateError` at `src/implicit_decision_gate/gate.py:132` with relationship score 0.4780\n- 3. `ScriptMarkerProbe` at `tests/conftest.py:173` with relationship score 0.4410\n- 4. `orchestrator` at `tests/test_orchestrator.py:92` with relationship score 0.4250\n- 5. `not_evidenced` at `tests/test_orchestrator.py:72` with relationship score 0.4250\n- 6. `scripted_scenarios` at `tests/conftest.py:221` with relationship score 0.4250\n- 7. `wait_for_processes` at `tests/test_orchestrator.py:110` with relationship score 0.4250\n- 8. `ScriptedCodingClient` at `tests/conftest.py:61` with relationship score 0.3868\n- 9. `ScriptedReviewerClient` at `tests/conftest.py:94` with relationship score 0.3868\n- 10. `RunStore` at `src/implicit_decision_gate/gate.py:136` with relationship score 0.3868\n- 11. `test_two_decisions_are_answered_before_one_clean_retry` at `tests/test_orchestrator.py:316` with relationship score 0.3496\n- 12. `main` at `src/implicit_decision_gate/cli.py:80` with relationship score 0.3318\n- 13. `RunStore.load` at `src/implicit_decision_gate/gate.py:190` with relationship score 0.3318\n- 14. `RunStore.lock` at `src/implicit_decision_gate/gate.py:158` with relationship score 0.3318\n- 15. `answer_owner` at `src/implicit_decision_gate/gate.py:265` with relationship score 0.3153\n- 16. `tests.test_orchestrator` at `tests/test_orchestrator.py:1` with relationship score 0.3095\n- 17. `test_owner_decision_regenerates_in_a_clean_context` at `tests/test_orchestrator.py:239` with relationship score 0.3006\n- 18. `test_second_attempt_mismatch_or_unmodeled_fails` at `tests/test_orchestrator.py:428` with relationship score 0.3006\n- 19. `test_awaiting_owner_is_durable_and_blocks_more_model_work` at `tests/test_orchestrator.py:124` with relationship score 0.3006\n- 20. `test_adversarial_gate_matrix` at `tests/test_evaluation.py:131` with relationship score 0.3006\n- 21. `test_retry_verifies_supported_outcome_while_honoring_owner_answer` at `tests/test_orchestrator.py:383` with relationship score 0.3006\n- 22. `test_unmodeled_first_attempt_records_coverage_gap_without_review` at `tests/test_orchestrator.py:474` with relationship score 0.3006\n- 23. `test_live_model_can_pause_and_complete_second_attempt` at `tests/test_live.py:65` with relationship score 0.3006\n- 24. `Orchestrator._execute_attempt` at `src/implicit_decision_gate/orchestrator.py:118` with relationship score 0.2833\n- 25. `coverage_gap_payloads` at `src/implicit_decision_gate/gate.py:340` with relationship score 0.2833\n\n## Strongest paths\n\n- symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume -[combined 0.6180 from `CALLS` forward 0.6180]-> symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_or_fail with relationship score 0.5253\n- symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume -[combined 0.5624 from `INSTANTIATES` forward 0.5624]-> symbol:src/implicit_decision_gate/gate.py::GateError with relationship score 0.4780\n- symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once -[combined 0.6412 from `INSTANTIATES` forward 0.6412]-> symbol:tests/conftest.py::ScriptMarkerProbe with relationship score 0.4410\n- symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once -[combined 0.6180 from `CALLS` forward 0.6180]-> symbol:tests/test_orchestrator.py::orchestrator with relationship score 0.4250\n- symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once -[combined 0.6180 from `CALLS` forward 0.6180]-> symbol:tests/test_orchestrator.py::not_evidenced with relationship score 0.4250\n- symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once -[combined 0.6180 from `CALLS` forward 0.6180]-> symbol:tests/conftest.py::scripted_scenarios with relationship score 0.4250\n- symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once -[combined 0.6180 from `CALLS` forward 0.6180]-> symbol:tests/test_orchestrator.py::wait_for_processes with relationship score 0.4250\n- symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once -[combined 0.5624 from `INSTANTIATES` forward 0.5624]-> symbol:tests/conftest.py::ScriptedCodingClient with relationship score 0.3868\n- symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once -[combined 0.5624 from `INSTANTIATES` forward 0.5624]-> symbol:tests/conftest.py::ScriptedReviewerClient with relationship score 0.3868\n- symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once -[combined 0.5624 from `INSTANTIATES` forward 0.5624]-> symbol:src/implicit_decision_gate/gate.py::RunStore with relationship score 0.3868\n- symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume -[combined 0.4114 from `TESTS` reverse 0.4114]-> symbol:tests/test_orchestrator.py::test_two_decisions_are_answered_before_one_clean_retry with relationship score 0.3496\n- symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume -[combined 0.3903 from `CALLS` reverse 0.3903]-> symbol:src/implicit_decision_gate/cli.py::main with relationship score 0.3318\n- symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume -[combined 0.3903 from `CALLS` forward 0.3903]-> symbol:src/implicit_decision_gate/gate.py::RunStore.load with relationship score 0.3318\n- symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume -[combined 0.3903 from `CALLS` forward 0.3903]-> symbol:src/implicit_decision_gate/gate.py::RunStore.lock with relationship score 0.3318\n- symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume -[combined 0.5624 from `INSTANTIATES` forward 0.5624]-> symbol:src/implicit_decision_gate/gate.py::GateError -[combined 0.7761 from `INSTANTIATES` reverse 0.7761]-> symbol:src/implicit_decision_gate/gate.py::answer_owner with relationship score 0.3153\n- symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once -[combined 0.4500 from `CONTAINS` reverse 0.4500]-> file:tests/test_orchestrator.py with relationship score 0.3095\n- symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume -[combined 0.3536 from `TESTS` reverse 0.3536]-> symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context with relationship score 0.3006\n- symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume -[combined 0.3536 from `TESTS` reverse 0.3536]-> symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails with relationship score 0.3006\n- symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume -[combined 0.3536 from `TESTS` reverse 0.3536]-> symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work with relationship score 0.3006\n- symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume -[combined 0.3536 from `TESTS` reverse 0.3536]-> symbol:tests/test_evaluation.py::test_adversarial_gate_matrix with relationship score 0.3006\n- symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume -[combined 0.3536 from `TESTS` reverse 0.3536]-> symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer with relationship score 0.3006\n- symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume -[combined 0.3536 from `TESTS` reverse 0.3536]-> symbol:tests/test_orchestrator.py::test_unmodeled_first_attempt_records_coverage_gap_without_review with relationship score 0.3006\n- symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume -[combined 0.3536 from `TESTS` reverse 0.3536]-> symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt with relationship score 0.3006\n- symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume -[combined 0.5624 from `INSTANTIATES` forward 0.5624]-> symbol:src/implicit_decision_gate/gate.py::GateError -[combined 0.6972 from `INSTANTIATES` reverse 0.6972]-> symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt with relationship score 0.2833\n- symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume -[combined 0.5624 from `INSTANTIATES` forward 0.5624]-> symbol:src/implicit_decision_gate/gate.py::GateError -[combined 0.6972 from `INSTANTIATES` reverse 0.6972]-> symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads with relationship score 0.2833\n\n## Reviewed source snippets\n\n### symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once\n\nLocation: `tests/test_orchestrator.py:189`\n\n```\ndef test_concurrent_resumes_execute_attempt_two_once(\n    reference_repo: Path,\n    tmp_path: Path,\n) -> None:\n    run = orchestrator(\n        reference_repo,\n        tmp_path / \"first-worktree\",\n        ScriptedCodingClient([\"-- EXPIRE_EXISTING\"]),\n        ScriptedReviewerClient([not_evidenced()]),\n        ScriptMarkerProbe(),\n    ).start()\n    observer = ScriptMarkerProbe()\n    Orchestrator(\n        repo_path=reference_repo,\n        scenarios=scripted_scenarios(observer),\n    ).answer(\n        run.run_id,\n        EXISTING_LINK_ROLLOUT,\n        PRESERVE_EXISTING,\n    )\n    store = RunStore(reference_repo)\n    command = [\n        sys.executable,\n        \"-c\",\n        RESUME_SCRIPT,\n        str(reference_repo),\n        run.run_id,\n        str(tmp_path / \"second-worktrees\"),\n    ]\n\n    with\u2026\n```\n"
+  },
+  "description": "Recorded retrieval for a manually reviewed benchmark question with answer and supporting-context judgments.",
+  "edges": [
+    {
+      "confidence": 0.6,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:src/implicit_decision_gate/cli.py::main->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "evidence": [
+        "src/implicit_decision_gate/cli.py:106"
+      ],
+      "id": "CALLS:symbol:src/implicit_decision_gate/cli.py::main->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "kind": "CALLS",
+      "source_id": "symbol:src/implicit_decision_gate/cli.py::main",
+      "strength": 0.3903089986991944,
+      "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.6,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume->symbol:src/implicit_decision_gate/gate.py::RunStore.load",
+      "evidence": [
+        "src/implicit_decision_gate/orchestrator.py:96"
+      ],
+      "id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume->symbol:src/implicit_decision_gate/gate.py::RunStore.load",
+      "kind": "CALLS",
+      "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "strength": 0.3903089986991944,
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::RunStore.load",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.6,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume->symbol:src/implicit_decision_gate/gate.py::RunStore.lock",
+      "evidence": [
+        "src/implicit_decision_gate/orchestrator.py:95"
+      ],
+      "id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume->symbol:src/implicit_decision_gate/gate.py::RunStore.lock",
+      "kind": "CALLS",
+      "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "strength": 0.3903089986991944,
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::RunStore.lock",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_or_fail",
+      "evidence": [
+        "src/implicit_decision_gate/orchestrator.py:99"
+      ],
+      "id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_or_fail",
+      "kind": "CALLS",
+      "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_or_fail",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/conftest.py::scripted_scenarios",
+      "evidence": [
+        "tests/test_orchestrator.py:203"
+      ],
+      "id": "CALLS:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/conftest.py::scripted_scenarios",
+      "kind": "CALLS",
+      "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:tests/conftest.py::scripted_scenarios",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/test_orchestrator.py::not_evidenced",
+      "evidence": [
+        "tests/test_orchestrator.py:197"
+      ],
+      "id": "CALLS:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/test_orchestrator.py::not_evidenced",
+      "kind": "CALLS",
+      "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:tests/test_orchestrator.py::not_evidenced",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/test_orchestrator.py::orchestrator",
+      "evidence": [
+        "tests/test_orchestrator.py:193"
+      ],
+      "id": "CALLS:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/test_orchestrator.py::orchestrator",
+      "kind": "CALLS",
+      "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:tests/test_orchestrator.py::orchestrator",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/test_orchestrator.py::wait_for_processes",
+      "evidence": [
+        "tests/test_orchestrator.py:230"
+      ],
+      "id": "CALLS:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/test_orchestrator.py::wait_for_processes",
+      "kind": "CALLS",
+      "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:tests/test_orchestrator.py::wait_for_processes",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CONTAINS:file:tests/test_orchestrator.py->symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+      "evidence": [
+        "tests/test_orchestrator.py:189"
+      ],
+      "id": "CONTAINS:file:tests/test_orchestrator.py->symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+      "kind": "CONTAINS",
+      "source_id": "file:tests/test_orchestrator.py",
+      "strength": 0.45,
+      "target_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+      "type": "CONTAINS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 5,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/gate.py::GateError",
+      "evidence": [
+        "src/implicit_decision_gate/gate.py:274",
+        "src/implicit_decision_gate/gate.py:277",
+        "src/implicit_decision_gate/gate.py:279",
+        "src/implicit_decision_gate/gate.py:285",
+        "src/implicit_decision_gate/gate.py:287"
+      ],
+      "id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/gate.py::GateError",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+      "strength": 0.7761112348258989,
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::GateError",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.9499999999999998,
+      "count": 3,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads->symbol:src/implicit_decision_gate/gate.py::GateError",
+      "evidence": [
+        "src/implicit_decision_gate/gate.py:350",
+        "src/implicit_decision_gate/gate.py:353",
+        "src/implicit_decision_gate/gate.py:356"
+      ],
+      "id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads->symbol:src/implicit_decision_gate/gate.py::GateError",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads",
+      "strength": 0.6972224696517979,
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::GateError",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.9499999999999998,
+      "count": 3,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt->symbol:src/implicit_decision_gate/gate.py::GateError",
+      "evidence": [
+        "src/implicit_decision_gate/orchestrator.py:121",
+        "src/implicit_decision_gate/orchestrator.py:125",
+        "src/implicit_decision_gate/orchestrator.py:141"
+      ],
+      "id": "INSTANTIATES:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt->symbol:src/implicit_decision_gate/gate.py::GateError",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt",
+      "strength": 0.6972224696517979,
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::GateError",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume->symbol:src/implicit_decision_gate/gate.py::GateError",
+      "evidence": [
+        "src/implicit_decision_gate/orchestrator.py:98"
+      ],
+      "id": "INSTANTIATES:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume->symbol:src/implicit_decision_gate/gate.py::GateError",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "strength": 0.562361234825899,
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::GateError",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:src/implicit_decision_gate/gate.py::RunStore",
+      "evidence": [
+        "tests/test_orchestrator.py:209"
+      ],
+      "id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:src/implicit_decision_gate/gate.py::RunStore",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+      "strength": 0.562361234825899,
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::RunStore",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.95,
+      "count": 2,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/conftest.py::ScriptMarkerProbe",
+      "evidence": [
+        "tests/test_orchestrator.py:198",
+        "tests/test_orchestrator.py:200"
+      ],
+      "id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/conftest.py::ScriptMarkerProbe",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+      "strength": 0.64125,
+      "target_id": "symbol:tests/conftest.py::ScriptMarkerProbe",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/conftest.py::ScriptedCodingClient",
+      "evidence": [
+        "tests/test_orchestrator.py:196"
+      ],
+      "id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/conftest.py::ScriptedCodingClient",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+      "strength": 0.562361234825899,
+      "target_id": "symbol:tests/conftest.py::ScriptedCodingClient",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/conftest.py::ScriptedReviewerClient",
+      "evidence": [
+        "tests/test_orchestrator.py:197"
+      ],
+      "id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/conftest.py::ScriptedReviewerClient",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+      "strength": 0.562361234825899,
+      "target_id": "symbol:tests/conftest.py::ScriptedReviewerClient",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.6,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "TESTS:symbol:tests/test_evaluation.py::test_adversarial_gate_matrix->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "evidence": [
+        "tests/test_evaluation.py:160"
+      ],
+      "id": "TESTS:symbol:tests/test_evaluation.py::test_adversarial_gate_matrix->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "kind": "TESTS",
+      "source_id": "symbol:tests/test_evaluation.py::test_adversarial_gate_matrix",
+      "strength": 0.3536474658448081,
+      "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "type": "TESTS"
+    },
+    {
+      "confidence": 0.6,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "TESTS:symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "evidence": [
+        "tests/test_live.py:89"
+      ],
+      "id": "TESTS:symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "kind": "TESTS",
+      "source_id": "symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt",
+      "strength": 0.3536474658448081,
+      "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "type": "TESTS"
+    },
+    {
+      "confidence": 0.6,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "evidence": [
+        "tests/test_orchestrator.py:162"
+      ],
+      "id": "TESTS:symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "kind": "TESTS",
+      "source_id": "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work",
+      "strength": 0.3536474658448081,
+      "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "type": "TESTS"
+    },
+    {
+      "confidence": 0.6,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "evidence": [
+        "tests/test_orchestrator.py:268"
+      ],
+      "id": "TESTS:symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "kind": "TESTS",
+      "source_id": "symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context",
+      "strength": 0.3536474658448081,
+      "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "type": "TESTS"
+    },
+    {
+      "confidence": 0.6,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "evidence": [
+        "tests/test_orchestrator.py:417"
+      ],
+      "id": "TESTS:symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "kind": "TESTS",
+      "source_id": "symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer",
+      "strength": 0.3536474658448081,
+      "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "type": "TESTS"
+    },
+    {
+      "confidence": 0.6,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "evidence": [
+        "tests/test_orchestrator.py:451"
+      ],
+      "id": "TESTS:symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "kind": "TESTS",
+      "source_id": "symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails",
+      "strength": 0.3536474658448081,
+      "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "type": "TESTS"
+    },
+    {
+      "confidence": 0.6,
+      "count": 2,
+      "direction": "directed",
+      "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_two_decisions_are_answered_before_one_clean_retry->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "evidence": [
+        "tests/test_orchestrator.py:349",
+        "tests/test_orchestrator.py:353"
+      ],
+      "id": "TESTS:symbol:tests/test_orchestrator.py::test_two_decisions_are_answered_before_one_clean_retry->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "kind": "TESTS",
+      "source_id": "symbol:tests/test_orchestrator.py::test_two_decisions_are_answered_before_one_clean_retry",
+      "strength": 0.4113525341551919,
+      "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "type": "TESTS"
+    },
+    {
+      "confidence": 0.6,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_unmodeled_first_attempt_records_coverage_gap_without_review->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "evidence": [
+        "tests/test_orchestrator.py:522"
+      ],
+      "id": "TESTS:symbol:tests/test_orchestrator.py::test_unmodeled_first_attempt_records_coverage_gap_without_review->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "kind": "TESTS",
+      "source_id": "symbol:tests/test_orchestrator.py::test_unmodeled_first_attempt_records_coverage_gap_without_review",
+      "strength": 0.3536474658448081,
+      "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "type": "TESTS"
+    }
+  ],
+  "id": "concurrent-resume",
+  "label": "Concurrent Resume",
+  "nodes": [
+    {
+      "direct_score": 0.1991734992983448,
+      "end_line": 99,
+      "id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "kind": "method",
+      "label": "Orchestrator.resume",
+      "language": "python",
+      "pagerank_score": 0.054182975511077265,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank_group": "anchor",
+      "relationship_score": 0.0,
+      "score": 0.1991734992983448,
+      "start_line": 92,
+      "x": 480.881,
+      "y": 309.218
+    },
+    {
+      "direct_score": 0.1611606357419213,
+      "end_line": 236,
+      "id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+      "kind": "test",
+      "label": "test_concurrent_resumes_execute_attempt_two_once",
+      "language": "python",
+      "pagerank_score": 0.0481079009656889,
+      "path": "tests/test_orchestrator.py",
+      "rank_group": "anchor",
+      "relationship_score": 0.0,
+      "score": 0.1611606357419213,
+      "start_line": 189,
+      "x": 510.464,
+      "y": 314.18
+    },
+    {
+      "direct_score": 0.09876773747462704,
+      "end_line": 307,
+      "id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_second_attempt",
+      "kind": "method",
+      "label": "Orchestrator._finish_second_attempt",
+      "language": "python",
+      "pagerank_score": 0.027436211635704602,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank_group": "anchor",
+      "relationship_score": 0.0,
+      "score": 0.09876773747462704,
+      "start_line": 267,
+      "x": 425.156,
+      "y": 302.631
+    },
+    {
+      "direct_score": 0.09257442065057155,
+      "end_line": 84,
+      "id": "symbol:tests/test_context.py::test_attempt_two_prompt_contains_only_allowed_fresh_context",
+      "kind": "test",
+      "label": "test_attempt_two_prompt_contains_only_allowed_fresh_context",
+      "language": "python",
+      "pagerank_score": 0.02664516648012573,
+      "path": "tests/test_context.py",
+      "rank_group": "anchor",
+      "relationship_score": 0.0,
+      "score": 0.09257442065057155,
+      "start_line": 65,
+      "x": 777.848,
+      "y": 60.0
+    },
+    {
+      "direct_score": 0.07112896138752764,
+      "end_line": 344,
+      "id": "file:src/implicit_decision_gate/orchestrator.py",
+      "kind": "file",
+      "label": "implicit_decision_gate.orchestrator",
+      "language": "python",
+      "pagerank_score": 0.023823956042969538,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank_group": "anchor",
+      "relationship_score": 0.0,
+      "score": 0.07112896138752764,
+      "start_line": 1,
+      "x": 521.463,
+      "y": 275.853
+    },
+    {
+      "direct_score": 0.07103192747111918,
+      "end_line": 344,
+      "id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+      "kind": "class",
+      "label": "Orchestrator",
+      "language": "python",
+      "pagerank_score": 0.0445827816731771,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank_group": "anchor",
+      "relationship_score": 0.0,
+      "score": 0.07103192747111918,
+      "start_line": 42,
+      "x": 480.74,
+      "y": 294.155
+    },
+    {
+      "direct_score": 0.020641640100681327,
+      "end_line": 116,
+      "id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_or_fail",
+      "kind": "method",
+      "label": "Orchestrator._execute_or_fail",
+      "language": "python",
+      "pagerank_score": 0.009771808202179452,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.5252908607493324,
+      "score": 0.5252908607493324,
+      "start_line": 107,
+      "x": 450.703,
+      "y": 292.978
+    },
+    {
+      "direct_score": 0.008956085408148936,
+      "end_line": 133,
+      "id": "symbol:src/implicit_decision_gate/gate.py::GateError",
+      "kind": "class",
+      "label": "GateError",
+      "language": "python",
+      "pagerank_score": 0.025425123330918627,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank_group": "related",
+      "relationship_score": 0.47800704960201407,
+      "score": 0.47800704960201407,
+      "start_line": 132,
+      "x": 427.296,
+      "y": 318.728
+    },
+    {
+      "direct_score": 0.01079919877325892,
+      "end_line": 218,
+      "id": "symbol:tests/conftest.py::ScriptMarkerProbe",
+      "kind": "class",
+      "label": "ScriptMarkerProbe",
+      "language": "python",
+      "pagerank_score": 0.013838742068401334,
+      "path": "tests/conftest.py",
+      "rank_group": "related",
+      "relationship_score": 0.44103567657613063,
+      "score": 0.44103567657613063,
+      "start_line": 173,
+      "x": 529.7,
+      "y": 310.497
+    },
+    {
+      "direct_score": 0.002264646029181297,
+      "end_line": 107,
+      "id": "symbol:tests/test_orchestrator.py::orchestrator",
+      "kind": "function",
+      "label": "orchestrator",
+      "language": "python",
+      "pagerank_score": 0.014693110703177945,
+      "path": "tests/test_orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.42503751435815135,
+      "score": 0.42503751435815135,
+      "start_line": 92,
+      "x": 520.385,
+      "y": 302.397
+    },
+    {
+      "direct_score": 0.0034496205451692553,
+      "end_line": 78,
+      "id": "symbol:tests/test_orchestrator.py::not_evidenced",
+      "kind": "function",
+      "label": "not_evidenced",
+      "language": "python",
+      "pagerank_score": 0.010617893787737287,
+      "path": "tests/test_orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.42503751435815135,
+      "score": 0.42503751435815135,
+      "start_line": 72,
+      "x": 541.483,
+      "y": 301.766
+    },
+    {
+      "direct_score": 0.0004691592826666955,
+      "end_line": 224,
+      "id": "symbol:tests/conftest.py::scripted_scenarios",
+      "kind": "function",
+      "label": "scripted_scenarios",
+      "language": "python",
+      "pagerank_score": 0.00848910108459463,
+      "path": "tests/conftest.py",
+      "rank_group": "related",
+      "relationship_score": 0.42503751435815135,
+      "score": 0.42503751435815135,
+      "start_line": 221,
+      "x": 520.088,
+      "y": 288.196
+    },
+    {
+      "direct_score": 0.0014566825274455822,
+      "end_line": 121,
+      "id": "symbol:tests/test_orchestrator.py::wait_for_processes",
+      "kind": "function",
+      "label": "wait_for_processes",
+      "language": "python",
+      "pagerank_score": 0.003966059457289586,
+      "path": "tests/test_orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.42503751435815135,
+      "score": 0.42503751435815135,
+      "start_line": 110,
+      "x": 545.524,
+      "y": 328.756
+    },
+    {
+      "direct_score": 0.007133572652018451,
+      "end_line": 91,
+      "id": "symbol:tests/conftest.py::ScriptedCodingClient",
+      "kind": "class",
+      "label": "ScriptedCodingClient",
+      "language": "python",
+      "pagerank_score": 0.015029416312156568,
+      "path": "tests/conftest.py",
+      "rank_group": "related",
+      "relationship_score": 0.38677796129688674,
+      "score": 0.38677796129688674,
+      "start_line": 61,
+      "x": 522.296,
+      "y": 312.755
+    },
+    {
+      "direct_score": 0.007384326751086881,
+      "end_line": 124,
+      "id": "symbol:tests/conftest.py::ScriptedReviewerClient",
+      "kind": "class",
+      "label": "ScriptedReviewerClient",
+      "language": "python",
+      "pagerank_score": 0.015029416312156568,
+      "path": "tests/conftest.py",
+      "rank_group": "related",
+      "relationship_score": 0.38677796129688674,
+      "score": 0.38677796129688674,
+      "start_line": 94,
+      "x": 530.013,
+      "y": 305.102
+    },
+    {
+      "direct_score": 0.019448182990685747,
+      "end_line": 218,
+      "id": "symbol:src/implicit_decision_gate/gate.py::RunStore",
+      "kind": "class",
+      "label": "RunStore",
+      "language": "python",
+      "pagerank_score": 0.012062384817219692,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank_group": "related",
+      "relationship_score": 0.38677796129688674,
+      "score": 0.38677796129688674,
+      "start_line": 136,
+      "x": 491.164,
+      "y": 325.562
+    },
+    {
+      "direct_score": 0.03531938727002308,
+      "end_line": 373,
+      "id": "symbol:tests/test_orchestrator.py::test_two_decisions_are_answered_before_one_clean_retry",
+      "kind": "test",
+      "label": "test_two_decisions_are_answered_before_one_clean_retry",
+      "language": "python",
+      "pagerank_score": 0.009585610547269797,
+      "path": "tests/test_orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.3496496540319131,
+      "score": 0.3496496540319131,
+      "start_line": 316,
+      "x": 545.239,
+      "y": 307.711
+    },
+    {
+      "direct_score": 0.025207501479224757,
+      "end_line": 112,
+      "id": "symbol:src/implicit_decision_gate/cli.py::main",
+      "kind": "function",
+      "label": "main",
+      "language": "python",
+      "pagerank_score": 0.011378135797174112,
+      "path": "src/implicit_decision_gate/cli.py",
+      "rank_group": "related",
+      "relationship_score": 0.3317626488943152,
+      "score": 0.3317626488943152,
+      "start_line": 80,
+      "x": 435.381,
+      "y": 331.181
+    },
+    {
+      "direct_score": 0.009908563122507855,
+      "end_line": 197,
+      "id": "symbol:src/implicit_decision_gate/gate.py::RunStore.load",
+      "kind": "method",
+      "label": "RunStore.load",
+      "language": "python",
+      "pagerank_score": 0.010606336736977147,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank_group": "related",
+      "relationship_score": 0.3317626488943152,
+      "score": 0.3317626488943152,
+      "start_line": 190,
+      "x": 467.036,
+      "y": 320.777
+    },
+    {
+      "direct_score": 0.0018698024428031096,
+      "end_line": 169,
+      "id": "symbol:src/implicit_decision_gate/gate.py::RunStore.lock",
+      "kind": "method",
+      "label": "RunStore.lock",
+      "language": "python",
+      "pagerank_score": 0.008647375857104626,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank_group": "related",
+      "relationship_score": 0.3317626488943152,
+      "score": 0.3317626488943152,
+      "start_line": 158,
+      "x": 463.024,
+      "y": 329.142
+    },
+    {
+      "direct_score": 0.0034908139587351257,
+      "end_line": 294,
+      "id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+      "kind": "function",
+      "label": "answer_owner",
+      "language": "python",
+      "pagerank_score": 0.0055302119436518365,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank_group": "related",
+      "relationship_score": 0.31533864529378824,
+      "score": 0.31533864529378824,
+      "start_line": 265,
+      "x": 386.409,
+      "y": 320.162
+    },
+    {
+      "direct_score": 0.03532610042573382,
+      "end_line": 632,
+      "id": "file:tests/test_orchestrator.py",
+      "kind": "file",
+      "label": "tests.test_orchestrator",
+      "language": "python",
+      "pagerank_score": 0.020072891674367873,
+      "path": "tests/test_orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.3094987204043022,
+      "score": 0.3094987204043022,
+      "start_line": 1,
+      "x": 535.056,
+      "y": 298.327
+    },
+    {
+      "direct_score": 0.022051472499884015,
+      "end_line": 313,
+      "id": "symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context",
+      "kind": "test",
+      "label": "test_owner_decision_regenerates_in_a_clean_context",
+      "language": "python",
+      "pagerank_score": 0.014758351535198586,
+      "path": "tests/test_orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.3006003459680869,
+      "score": 0.3006003459680869,
+      "start_line": 239,
+      "x": 508.745,
+      "y": 303.543
+    },
+    {
+      "direct_score": 0.02814749168648016,
+      "end_line": 471,
+      "id": "symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails",
+      "kind": "test",
+      "label": "test_second_attempt_mismatch_or_unmodeled_fails",
+      "language": "python",
+      "pagerank_score": 0.012491344003050298,
+      "path": "tests/test_orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.3006003459680869,
+      "score": 0.3006003459680869,
+      "start_line": 428,
+      "x": 516.962,
+      "y": 295.646
+    },
+    {
+      "direct_score": 0.006830700649661179,
+      "end_line": 166,
+      "id": "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work",
+      "kind": "test",
+      "label": "test_awaiting_owner_is_durable_and_blocks_more_model_work",
+      "language": "python",
+      "pagerank_score": 0.01048843465247855,
+      "path": "tests/test_orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.3006003459680869,
+      "score": 0.3006003459680869,
+      "start_line": 124,
+      "x": 507.729,
+      "y": 310.675
+    },
+    {
+      "direct_score": 0.004134295544869134,
+      "end_line": 167,
+      "id": "symbol:tests/test_evaluation.py::test_adversarial_gate_matrix",
+      "kind": "test",
+      "label": "test_adversarial_gate_matrix",
+      "language": "python",
+      "pagerank_score": 0.00980205403319957,
+      "path": "tests/test_evaluation.py",
+      "rank_group": "related",
+      "relationship_score": 0.3006003459680869,
+      "score": 0.3006003459680869,
+      "start_line": 131,
+      "x": 504.204,
+      "y": 294.97
+    },
+    {
+      "direct_score": 0.0050986245518330475,
+      "end_line": 421,
+      "id": "symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer",
+      "kind": "test",
+      "label": "test_retry_verifies_supported_outcome_while_honoring_owner_answer",
+      "language": "python",
+      "pagerank_score": 0.00935395326607179,
+      "path": "tests/test_orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.3006003459680869,
+      "score": 0.3006003459680869,
+      "start_line": 383,
+      "x": 541.886,
+      "y": 314.278
+    },
+    {
+      "direct_score": 0.0370465001073585,
+      "end_line": 524,
+      "id": "symbol:tests/test_orchestrator.py::test_unmodeled_first_attempt_records_coverage_gap_without_review",
+      "kind": "test",
+      "label": "test_unmodeled_first_attempt_records_coverage_gap_without_review",
+      "language": "python",
+      "pagerank_score": 0.00830133915448126,
+      "path": "tests/test_orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.3006003459680869,
+      "score": 0.3006003459680869,
+      "start_line": 474,
+      "x": 527.116,
+      "y": 320.709
+    },
+    {
+      "direct_score": 0.027193722865835972,
+      "end_line": 99,
+      "id": "symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt",
+      "kind": "test",
+      "label": "test_live_model_can_pause_and_complete_second_attempt",
+      "language": "python",
+      "pagerank_score": 0.006948643184217367,
+      "path": "tests/test_live.py",
+      "rank_group": "related",
+      "relationship_score": 0.3006003459680869,
+      "score": 0.3006003459680869,
+      "start_line": 65,
+      "x": 462.453,
+      "y": 279.48
+    },
+    {
+      "direct_score": 0.030969164172839413,
+      "end_line": 190,
+      "id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt",
+      "kind": "method",
+      "label": "Orchestrator._execute_attempt",
+      "language": "python",
+      "pagerank_score": 0.01921413173375395,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.2832856672893128,
+      "score": 0.2832856672893128,
+      "start_line": 118,
+      "x": 432.006,
+      "y": 296.991
+    },
+    {
+      "direct_score": 0.03430671909679854,
+      "end_line": 373,
+      "id": "symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads",
+      "kind": "function",
+      "label": "coverage_gap_payloads",
+      "language": "python",
+      "pagerank_score": 0.0027688689162422018,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank_group": "related",
+      "relationship_score": 0.2832856672893128,
+      "score": 0.2832856672893128,
+      "start_line": 340,
+      "x": 391.549,
+      "y": 333.634
+    }
+  ],
+  "paths": [
+    {
+      "id": "path-1",
+      "label": "Orchestrator.resume \u2192 Orchestrator._execute_or_fail",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_or_fail"
+      ],
+      "score": 0.5252908607493324,
+      "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "steps": [
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_or_fail",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "to_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_or_fail"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_or_fail"
+    },
+    {
+      "id": "path-2",
+      "label": "Orchestrator.resume \u2192 GateError",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+        "symbol:src/implicit_decision_gate/gate.py::GateError"
+      ],
+      "score": 0.47800704960201407,
+      "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "steps": [
+        {
+          "combined_strength": 0.562361234825899,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume->symbol:src/implicit_decision_gate/gate.py::GateError",
+              "kind": "INSTANTIATES",
+              "strength": 0.562361234825899,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "to_node_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+    },
+    {
+      "id": "path-3",
+      "label": "test_concurrent_resumes_execute_attempt_two_once \u2192 ScriptMarkerProbe",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+        "symbol:tests/conftest.py::ScriptMarkerProbe"
+      ],
+      "score": 0.44103567657613063,
+      "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+      "steps": [
+        {
+          "combined_strength": 0.64125,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/conftest.py::ScriptMarkerProbe",
+              "kind": "INSTANTIATES",
+              "strength": 0.64125,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+          "to_node_id": "symbol:tests/conftest.py::ScriptMarkerProbe"
+        }
+      ],
+      "target_id": "symbol:tests/conftest.py::ScriptMarkerProbe"
+    },
+    {
+      "id": "path-4",
+      "label": "test_concurrent_resumes_execute_attempt_two_once \u2192 orchestrator",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+        "symbol:tests/test_orchestrator.py::orchestrator"
+      ],
+      "score": 0.42503751435815135,
+      "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+      "steps": [
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/test_orchestrator.py::orchestrator",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+          "to_node_id": "symbol:tests/test_orchestrator.py::orchestrator"
+        }
+      ],
+      "target_id": "symbol:tests/test_orchestrator.py::orchestrator"
+    },
+    {
+      "id": "path-5",
+      "label": "test_concurrent_resumes_execute_attempt_two_once \u2192 not_evidenced",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+        "symbol:tests/test_orchestrator.py::not_evidenced"
+      ],
+      "score": 0.42503751435815135,
+      "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+      "steps": [
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/test_orchestrator.py::not_evidenced",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+          "to_node_id": "symbol:tests/test_orchestrator.py::not_evidenced"
+        }
+      ],
+      "target_id": "symbol:tests/test_orchestrator.py::not_evidenced"
+    },
+    {
+      "id": "path-6",
+      "label": "test_concurrent_resumes_execute_attempt_two_once \u2192 scripted_scenarios",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+        "symbol:tests/conftest.py::scripted_scenarios"
+      ],
+      "score": 0.42503751435815135,
+      "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+      "steps": [
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/conftest.py::scripted_scenarios",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+          "to_node_id": "symbol:tests/conftest.py::scripted_scenarios"
+        }
+      ],
+      "target_id": "symbol:tests/conftest.py::scripted_scenarios"
+    },
+    {
+      "id": "path-7",
+      "label": "test_concurrent_resumes_execute_attempt_two_once \u2192 wait_for_processes",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+        "symbol:tests/test_orchestrator.py::wait_for_processes"
+      ],
+      "score": 0.42503751435815135,
+      "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+      "steps": [
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/test_orchestrator.py::wait_for_processes",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+          "to_node_id": "symbol:tests/test_orchestrator.py::wait_for_processes"
+        }
+      ],
+      "target_id": "symbol:tests/test_orchestrator.py::wait_for_processes"
+    },
+    {
+      "id": "path-8",
+      "label": "test_concurrent_resumes_execute_attempt_two_once \u2192 ScriptedCodingClient",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+        "symbol:tests/conftest.py::ScriptedCodingClient"
+      ],
+      "score": 0.38677796129688674,
+      "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+      "steps": [
+        {
+          "combined_strength": 0.562361234825899,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/conftest.py::ScriptedCodingClient",
+              "kind": "INSTANTIATES",
+              "strength": 0.562361234825899,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+          "to_node_id": "symbol:tests/conftest.py::ScriptedCodingClient"
+        }
+      ],
+      "target_id": "symbol:tests/conftest.py::ScriptedCodingClient"
+    },
+    {
+      "id": "path-9",
+      "label": "test_concurrent_resumes_execute_attempt_two_once \u2192 ScriptedReviewerClient",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+        "symbol:tests/conftest.py::ScriptedReviewerClient"
+      ],
+      "score": 0.38677796129688674,
+      "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+      "steps": [
+        {
+          "combined_strength": 0.562361234825899,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:tests/conftest.py::ScriptedReviewerClient",
+              "kind": "INSTANTIATES",
+              "strength": 0.562361234825899,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+          "to_node_id": "symbol:tests/conftest.py::ScriptedReviewerClient"
+        }
+      ],
+      "target_id": "symbol:tests/conftest.py::ScriptedReviewerClient"
+    },
+    {
+      "id": "path-10",
+      "label": "test_concurrent_resumes_execute_attempt_two_once \u2192 RunStore",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+        "symbol:src/implicit_decision_gate/gate.py::RunStore"
+      ],
+      "score": 0.38677796129688674,
+      "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+      "steps": [
+        {
+          "combined_strength": 0.562361234825899,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once->symbol:src/implicit_decision_gate/gate.py::RunStore",
+              "kind": "INSTANTIATES",
+              "strength": 0.562361234825899,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+          "to_node_id": "symbol:src/implicit_decision_gate/gate.py::RunStore"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::RunStore"
+    },
+    {
+      "id": "path-11",
+      "label": "Orchestrator.resume \u2192 test_two_decisions_are_answered_before_one_clean_retry",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+        "symbol:tests/test_orchestrator.py::test_two_decisions_are_answered_before_one_clean_retry"
+      ],
+      "score": 0.3496496540319131,
+      "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "steps": [
+        {
+          "combined_strength": 0.4113525341551919,
+          "contributions": [
+            {
+              "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_two_decisions_are_answered_before_one_clean_retry->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+              "kind": "TESTS",
+              "strength": 0.4113525341551919,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "to_node_id": "symbol:tests/test_orchestrator.py::test_two_decisions_are_answered_before_one_clean_retry"
+        }
+      ],
+      "target_id": "symbol:tests/test_orchestrator.py::test_two_decisions_are_answered_before_one_clean_retry"
+    },
+    {
+      "id": "path-12",
+      "label": "Orchestrator.resume \u2192 main",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+        "symbol:src/implicit_decision_gate/cli.py::main"
+      ],
+      "score": 0.3317626488943152,
+      "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "steps": [
+        {
+          "combined_strength": 0.39030899869919433,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:src/implicit_decision_gate/cli.py::main->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+              "kind": "CALLS",
+              "strength": 0.3903089986991944,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "to_node_id": "symbol:src/implicit_decision_gate/cli.py::main"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/cli.py::main"
+    },
+    {
+      "id": "path-13",
+      "label": "Orchestrator.resume \u2192 RunStore.load",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+        "symbol:src/implicit_decision_gate/gate.py::RunStore.load"
+      ],
+      "score": 0.3317626488943152,
+      "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "steps": [
+        {
+          "combined_strength": 0.39030899869919433,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume->symbol:src/implicit_decision_gate/gate.py::RunStore.load",
+              "kind": "CALLS",
+              "strength": 0.3903089986991944,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "to_node_id": "symbol:src/implicit_decision_gate/gate.py::RunStore.load"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::RunStore.load"
+    },
+    {
+      "id": "path-14",
+      "label": "Orchestrator.resume \u2192 RunStore.lock",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+        "symbol:src/implicit_decision_gate/gate.py::RunStore.lock"
+      ],
+      "score": 0.3317626488943152,
+      "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "steps": [
+        {
+          "combined_strength": 0.39030899869919433,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume->symbol:src/implicit_decision_gate/gate.py::RunStore.lock",
+              "kind": "CALLS",
+              "strength": 0.3903089986991944,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "to_node_id": "symbol:src/implicit_decision_gate/gate.py::RunStore.lock"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::RunStore.lock"
+    },
+    {
+      "id": "path-15",
+      "label": "Orchestrator.resume \u2192 answer_owner",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+        "symbol:src/implicit_decision_gate/gate.py::GateError",
+        "symbol:src/implicit_decision_gate/gate.py::answer_owner"
+      ],
+      "score": 0.31533864529378824,
+      "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "steps": [
+        {
+          "combined_strength": 0.562361234825899,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume->symbol:src/implicit_decision_gate/gate.py::GateError",
+              "kind": "INSTANTIATES",
+              "strength": 0.562361234825899,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "to_node_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+        },
+        {
+          "combined_strength": 0.7761112348258989,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/gate.py::GateError",
+              "kind": "INSTANTIATES",
+              "strength": 0.7761112348258989,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::GateError",
+          "to_node_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner"
+    },
+    {
+      "id": "path-16",
+      "label": "test_concurrent_resumes_execute_attempt_two_once \u2192 tests.test_orchestrator",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+        "file:tests/test_orchestrator.py"
+      ],
+      "score": 0.3094987204043022,
+      "source_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+      "steps": [
+        {
+          "combined_strength": 0.44999999999999996,
+          "contributions": [
+            {
+              "edge_id": "CONTAINS:file:tests/test_orchestrator.py->symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+              "kind": "CONTAINS",
+              "strength": 0.45,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+          "to_node_id": "file:tests/test_orchestrator.py"
+        }
+      ],
+      "target_id": "file:tests/test_orchestrator.py"
+    },
+    {
+      "id": "path-17",
+      "label": "Orchestrator.resume \u2192 test_owner_decision_regenerates_in_a_clean_context",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+        "symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context"
+      ],
+      "score": 0.3006003459680869,
+      "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "steps": [
+        {
+          "combined_strength": 0.3536474658448081,
+          "contributions": [
+            {
+              "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+              "kind": "TESTS",
+              "strength": 0.3536474658448081,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "to_node_id": "symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context"
+        }
+      ],
+      "target_id": "symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context"
+    },
+    {
+      "id": "path-18",
+      "label": "Orchestrator.resume \u2192 test_second_attempt_mismatch_or_unmodeled_fails",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+        "symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails"
+      ],
+      "score": 0.3006003459680869,
+      "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "steps": [
+        {
+          "combined_strength": 0.3536474658448081,
+          "contributions": [
+            {
+              "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+              "kind": "TESTS",
+              "strength": 0.3536474658448081,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "to_node_id": "symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails"
+        }
+      ],
+      "target_id": "symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails"
+    },
+    {
+      "id": "path-19",
+      "label": "Orchestrator.resume \u2192 test_awaiting_owner_is_durable_and_blocks_more_model_work",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+        "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work"
+      ],
+      "score": 0.3006003459680869,
+      "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "steps": [
+        {
+          "combined_strength": 0.3536474658448081,
+          "contributions": [
+            {
+              "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+              "kind": "TESTS",
+              "strength": 0.3536474658448081,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "to_node_id": "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work"
+        }
+      ],
+      "target_id": "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work"
+    },
+    {
+      "id": "path-20",
+      "label": "Orchestrator.resume \u2192 test_adversarial_gate_matrix",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+        "symbol:tests/test_evaluation.py::test_adversarial_gate_matrix"
+      ],
+      "score": 0.3006003459680869,
+      "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "steps": [
+        {
+          "combined_strength": 0.3536474658448081,
+          "contributions": [
+            {
+              "edge_id": "TESTS:symbol:tests/test_evaluation.py::test_adversarial_gate_matrix->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+              "kind": "TESTS",
+              "strength": 0.3536474658448081,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "to_node_id": "symbol:tests/test_evaluation.py::test_adversarial_gate_matrix"
+        }
+      ],
+      "target_id": "symbol:tests/test_evaluation.py::test_adversarial_gate_matrix"
+    },
+    {
+      "id": "path-21",
+      "label": "Orchestrator.resume \u2192 test_retry_verifies_supported_outcome_while_honoring_owner_answer",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+        "symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer"
+      ],
+      "score": 0.3006003459680869,
+      "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "steps": [
+        {
+          "combined_strength": 0.3536474658448081,
+          "contributions": [
+            {
+              "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+              "kind": "TESTS",
+              "strength": 0.3536474658448081,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "to_node_id": "symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer"
+        }
+      ],
+      "target_id": "symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer"
+    },
+    {
+      "id": "path-22",
+      "label": "Orchestrator.resume \u2192 test_unmodeled_first_attempt_records_coverage_gap_without_review",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+        "symbol:tests/test_orchestrator.py::test_unmodeled_first_attempt_records_coverage_gap_without_review"
+      ],
+      "score": 0.3006003459680869,
+      "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "steps": [
+        {
+          "combined_strength": 0.3536474658448081,
+          "contributions": [
+            {
+              "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_unmodeled_first_attempt_records_coverage_gap_without_review->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+              "kind": "TESTS",
+              "strength": 0.3536474658448081,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "to_node_id": "symbol:tests/test_orchestrator.py::test_unmodeled_first_attempt_records_coverage_gap_without_review"
+        }
+      ],
+      "target_id": "symbol:tests/test_orchestrator.py::test_unmodeled_first_attempt_records_coverage_gap_without_review"
+    },
+    {
+      "id": "path-23",
+      "label": "Orchestrator.resume \u2192 test_live_model_can_pause_and_complete_second_attempt",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+        "symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt"
+      ],
+      "score": 0.3006003459680869,
+      "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "steps": [
+        {
+          "combined_strength": 0.3536474658448081,
+          "contributions": [
+            {
+              "edge_id": "TESTS:symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+              "kind": "TESTS",
+              "strength": 0.3536474658448081,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "to_node_id": "symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt"
+        }
+      ],
+      "target_id": "symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt"
+    },
+    {
+      "id": "path-24",
+      "label": "Orchestrator.resume \u2192 Orchestrator._execute_attempt",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+        "symbol:src/implicit_decision_gate/gate.py::GateError",
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt"
+      ],
+      "score": 0.2832856672893128,
+      "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "steps": [
+        {
+          "combined_strength": 0.562361234825899,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume->symbol:src/implicit_decision_gate/gate.py::GateError",
+              "kind": "INSTANTIATES",
+              "strength": 0.562361234825899,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "to_node_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+        },
+        {
+          "combined_strength": 0.6972224696517979,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt->symbol:src/implicit_decision_gate/gate.py::GateError",
+              "kind": "INSTANTIATES",
+              "strength": 0.6972224696517979,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::GateError",
+          "to_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt"
+    },
+    {
+      "id": "path-25",
+      "label": "Orchestrator.resume \u2192 coverage_gap_payloads",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+        "symbol:src/implicit_decision_gate/gate.py::GateError",
+        "symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads"
+      ],
+      "score": 0.2832856672893128,
+      "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "steps": [
+        {
+          "combined_strength": 0.562361234825899,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume->symbol:src/implicit_decision_gate/gate.py::GateError",
+              "kind": "INSTANTIATES",
+              "strength": 0.562361234825899,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "to_node_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+        },
+        {
+          "combined_strength": 0.6972224696517979,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads->symbol:src/implicit_decision_gate/gate.py::GateError",
+              "kind": "INSTANTIATES",
+              "strength": 0.6972224696517979,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::GateError",
+          "to_node_id": "symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads"
+    }
+  ],
+  "provenance": {
+    "branch": null,
+    "clean": true,
+    "commit": "2fdbb3deab2967a545d8a898a17a380974e6bb17",
+    "detached": true,
+    "extractor_version": "1.0.0",
+    "indexed_source_sha256": "054eb9ddb72433574992ca595bcf95e2a7747c9fa4a4515fd42681b55d706618",
+    "repository": "implicit-decision-gate",
+    "retrieval": {
+      "hop_decay": 0.85,
+      "hops": 2,
+      "related_count": 25,
+      "seed_count": 6
+    },
+    "schema_version": "1.0.0",
+    "shallow": false,
+    "tree": "045114ac474171e8044ae179e9808ae4357a5296"
+  },
+  "query": "What prevents two concurrent resume commands from executing attempt two twice?",
+  "related": [
+    {
+      "direct_score": 0.020641640100681327,
+      "label": "Orchestrator._execute_or_fail",
+      "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_or_fail",
+      "pagerank_score": 0.009771808202179452,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank": 1,
+      "relationship_score": 0.5252908607493324,
+      "score": 0.5252908607493324
+    },
+    {
+      "direct_score": 0.008956085408148936,
+      "label": "GateError",
+      "node_id": "symbol:src/implicit_decision_gate/gate.py::GateError",
+      "pagerank_score": 0.025425123330918627,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank": 2,
+      "relationship_score": 0.47800704960201407,
+      "score": 0.47800704960201407
+    },
+    {
+      "direct_score": 0.01079919877325892,
+      "label": "ScriptMarkerProbe",
+      "node_id": "symbol:tests/conftest.py::ScriptMarkerProbe",
+      "pagerank_score": 0.013838742068401334,
+      "path": "tests/conftest.py",
+      "rank": 3,
+      "relationship_score": 0.44103567657613063,
+      "score": 0.44103567657613063
+    },
+    {
+      "direct_score": 0.002264646029181297,
+      "label": "orchestrator",
+      "node_id": "symbol:tests/test_orchestrator.py::orchestrator",
+      "pagerank_score": 0.014693110703177945,
+      "path": "tests/test_orchestrator.py",
+      "rank": 4,
+      "relationship_score": 0.42503751435815135,
+      "score": 0.42503751435815135
+    },
+    {
+      "direct_score": 0.0034496205451692553,
+      "label": "not_evidenced",
+      "node_id": "symbol:tests/test_orchestrator.py::not_evidenced",
+      "pagerank_score": 0.010617893787737287,
+      "path": "tests/test_orchestrator.py",
+      "rank": 5,
+      "relationship_score": 0.42503751435815135,
+      "score": 0.42503751435815135
+    },
+    {
+      "direct_score": 0.0004691592826666955,
+      "label": "scripted_scenarios",
+      "node_id": "symbol:tests/conftest.py::scripted_scenarios",
+      "pagerank_score": 0.00848910108459463,
+      "path": "tests/conftest.py",
+      "rank": 6,
+      "relationship_score": 0.42503751435815135,
+      "score": 0.42503751435815135
+    },
+    {
+      "direct_score": 0.0014566825274455822,
+      "label": "wait_for_processes",
+      "node_id": "symbol:tests/test_orchestrator.py::wait_for_processes",
+      "pagerank_score": 0.003966059457289586,
+      "path": "tests/test_orchestrator.py",
+      "rank": 7,
+      "relationship_score": 0.42503751435815135,
+      "score": 0.42503751435815135
+    },
+    {
+      "direct_score": 0.007133572652018451,
+      "label": "ScriptedCodingClient",
+      "node_id": "symbol:tests/conftest.py::ScriptedCodingClient",
+      "pagerank_score": 0.015029416312156568,
+      "path": "tests/conftest.py",
+      "rank": 8,
+      "relationship_score": 0.38677796129688674,
+      "score": 0.38677796129688674
+    },
+    {
+      "direct_score": 0.007384326751086881,
+      "label": "ScriptedReviewerClient",
+      "node_id": "symbol:tests/conftest.py::ScriptedReviewerClient",
+      "pagerank_score": 0.015029416312156568,
+      "path": "tests/conftest.py",
+      "rank": 9,
+      "relationship_score": 0.38677796129688674,
+      "score": 0.38677796129688674
+    },
+    {
+      "direct_score": 0.019448182990685747,
+      "label": "RunStore",
+      "node_id": "symbol:src/implicit_decision_gate/gate.py::RunStore",
+      "pagerank_score": 0.012062384817219692,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank": 10,
+      "relationship_score": 0.38677796129688674,
+      "score": 0.38677796129688674
+    },
+    {
+      "direct_score": 0.03531938727002308,
+      "label": "test_two_decisions_are_answered_before_one_clean_retry",
+      "node_id": "symbol:tests/test_orchestrator.py::test_two_decisions_are_answered_before_one_clean_retry",
+      "pagerank_score": 0.009585610547269797,
+      "path": "tests/test_orchestrator.py",
+      "rank": 11,
+      "relationship_score": 0.3496496540319131,
+      "score": 0.3496496540319131
+    },
+    {
+      "direct_score": 0.025207501479224757,
+      "label": "main",
+      "node_id": "symbol:src/implicit_decision_gate/cli.py::main",
+      "pagerank_score": 0.011378135797174112,
+      "path": "src/implicit_decision_gate/cli.py",
+      "rank": 12,
+      "relationship_score": 0.3317626488943152,
+      "score": 0.3317626488943152
+    },
+    {
+      "direct_score": 0.009908563122507855,
+      "label": "RunStore.load",
+      "node_id": "symbol:src/implicit_decision_gate/gate.py::RunStore.load",
+      "pagerank_score": 0.010606336736977147,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank": 13,
+      "relationship_score": 0.3317626488943152,
+      "score": 0.3317626488943152
+    },
+    {
+      "direct_score": 0.0018698024428031096,
+      "label": "RunStore.lock",
+      "node_id": "symbol:src/implicit_decision_gate/gate.py::RunStore.lock",
+      "pagerank_score": 0.008647375857104626,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank": 14,
+      "relationship_score": 0.3317626488943152,
+      "score": 0.3317626488943152
+    },
+    {
+      "direct_score": 0.0034908139587351257,
+      "label": "answer_owner",
+      "node_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+      "pagerank_score": 0.0055302119436518365,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank": 15,
+      "relationship_score": 0.31533864529378824,
+      "score": 0.31533864529378824
+    },
+    {
+      "direct_score": 0.03532610042573382,
+      "label": "tests.test_orchestrator",
+      "node_id": "file:tests/test_orchestrator.py",
+      "pagerank_score": 0.020072891674367873,
+      "path": "tests/test_orchestrator.py",
+      "rank": 16,
+      "relationship_score": 0.3094987204043022,
+      "score": 0.3094987204043022
+    },
+    {
+      "direct_score": 0.022051472499884015,
+      "label": "test_owner_decision_regenerates_in_a_clean_context",
+      "node_id": "symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context",
+      "pagerank_score": 0.014758351535198586,
+      "path": "tests/test_orchestrator.py",
+      "rank": 17,
+      "relationship_score": 0.3006003459680869,
+      "score": 0.3006003459680869
+    },
+    {
+      "direct_score": 0.02814749168648016,
+      "label": "test_second_attempt_mismatch_or_unmodeled_fails",
+      "node_id": "symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails",
+      "pagerank_score": 0.012491344003050298,
+      "path": "tests/test_orchestrator.py",
+      "rank": 18,
+      "relationship_score": 0.3006003459680869,
+      "score": 0.3006003459680869
+    },
+    {
+      "direct_score": 0.006830700649661179,
+      "label": "test_awaiting_owner_is_durable_and_blocks_more_model_work",
+      "node_id": "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work",
+      "pagerank_score": 0.01048843465247855,
+      "path": "tests/test_orchestrator.py",
+      "rank": 19,
+      "relationship_score": 0.3006003459680869,
+      "score": 0.3006003459680869
+    },
+    {
+      "direct_score": 0.004134295544869134,
+      "label": "test_adversarial_gate_matrix",
+      "node_id": "symbol:tests/test_evaluation.py::test_adversarial_gate_matrix",
+      "pagerank_score": 0.00980205403319957,
+      "path": "tests/test_evaluation.py",
+      "rank": 20,
+      "relationship_score": 0.3006003459680869,
+      "score": 0.3006003459680869
+    },
+    {
+      "direct_score": 0.0050986245518330475,
+      "label": "test_retry_verifies_supported_outcome_while_honoring_owner_answer",
+      "node_id": "symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer",
+      "pagerank_score": 0.00935395326607179,
+      "path": "tests/test_orchestrator.py",
+      "rank": 21,
+      "relationship_score": 0.3006003459680869,
+      "score": 0.3006003459680869
+    },
+    {
+      "direct_score": 0.0370465001073585,
+      "label": "test_unmodeled_first_attempt_records_coverage_gap_without_review",
+      "node_id": "symbol:tests/test_orchestrator.py::test_unmodeled_first_attempt_records_coverage_gap_without_review",
+      "pagerank_score": 0.00830133915448126,
+      "path": "tests/test_orchestrator.py",
+      "rank": 22,
+      "relationship_score": 0.3006003459680869,
+      "score": 0.3006003459680869
+    },
+    {
+      "direct_score": 0.027193722865835972,
+      "label": "test_live_model_can_pause_and_complete_second_attempt",
+      "node_id": "symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt",
+      "pagerank_score": 0.006948643184217367,
+      "path": "tests/test_live.py",
+      "rank": 23,
+      "relationship_score": 0.3006003459680869,
+      "score": 0.3006003459680869
+    },
+    {
+      "direct_score": 0.030969164172839413,
+      "label": "Orchestrator._execute_attempt",
+      "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt",
+      "pagerank_score": 0.01921413173375395,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank": 24,
+      "relationship_score": 0.2832856672893128,
+      "score": 0.2832856672893128
+    },
+    {
+      "direct_score": 0.03430671909679854,
+      "label": "coverage_gap_payloads",
+      "node_id": "symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads",
+      "pagerank_score": 0.0027688689162422018,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank": 25,
+      "relationship_score": 0.2832856672893128,
+      "score": 0.2832856672893128
+    }
+  ],
+  "relevant": [
+    {
+      "direct_score": 0.1991734992983448,
+      "label": "Orchestrator.resume",
+      "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+      "pagerank_score": 0.054182975511077265,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank": 1,
+      "relationship_score": 0.0,
+      "score": 0.1991734992983448
+    },
+    {
+      "direct_score": 0.1611606357419213,
+      "label": "test_concurrent_resumes_execute_attempt_two_once",
+      "node_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+      "pagerank_score": 0.0481079009656889,
+      "path": "tests/test_orchestrator.py",
+      "rank": 2,
+      "relationship_score": 0.0,
+      "score": 0.1611606357419213
+    },
+    {
+      "direct_score": 0.09876773747462704,
+      "label": "Orchestrator._finish_second_attempt",
+      "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_second_attempt",
+      "pagerank_score": 0.027436211635704602,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank": 3,
+      "relationship_score": 0.0,
+      "score": 0.09876773747462704
+    },
+    {
+      "direct_score": 0.09257442065057155,
+      "label": "test_attempt_two_prompt_contains_only_allowed_fresh_context",
+      "node_id": "symbol:tests/test_context.py::test_attempt_two_prompt_contains_only_allowed_fresh_context",
+      "pagerank_score": 0.02664516648012573,
+      "path": "tests/test_context.py",
+      "rank": 4,
+      "relationship_score": 0.0,
+      "score": 0.09257442065057155
+    },
+    {
+      "direct_score": 0.07112896138752764,
+      "label": "implicit_decision_gate.orchestrator",
+      "node_id": "file:src/implicit_decision_gate/orchestrator.py",
+      "pagerank_score": 0.023823956042969538,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank": 5,
+      "relationship_score": 0.0,
+      "score": 0.07112896138752764
+    },
+    {
+      "direct_score": 0.07103192747111918,
+      "label": "Orchestrator",
+      "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+      "pagerank_score": 0.0445827816731771,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank": 6,
+      "relationship_score": 0.0,
+      "score": 0.07103192747111918
+    }
+  ],
+  "schema_version": 1
+}

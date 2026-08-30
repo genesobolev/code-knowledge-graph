@@ -1,0 +1,4183 @@
+{
+  "context": {
+    "json": {
+      "anchors": [
+        {
+          "direct_score": 0.16989253158656592,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 212,
+              "path": "src/implicit_decision_gate/postgres_surface.py",
+              "start_line": 176
+            },
+            "name": "diff_catalogs",
+            "node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+            "qualified_name": "diff_catalogs"
+          },
+          "pagerank_score": 0.07673865120472331,
+          "rank": 1,
+          "relationship_score": 0.0
+        },
+        {
+          "direct_score": 0.11908306703009276,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 212,
+              "path": "src/implicit_decision_gate/postgres_surface.py",
+              "start_line": 1
+            },
+            "name": "postgres_surface.py",
+            "node_id": "file:src/implicit_decision_gate/postgres_surface.py",
+            "qualified_name": "implicit_decision_gate.postgres_surface"
+          },
+          "pagerank_score": 0.06359967941640114,
+          "rank": 2,
+          "relationship_score": 0.0
+        },
+        {
+          "direct_score": 0.09598677016464714,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 173,
+              "path": "src/implicit_decision_gate/postgres_surface.py",
+              "start_line": 155
+            },
+            "name": "capture_catalog",
+            "node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::capture_catalog",
+            "qualified_name": "capture_catalog"
+          },
+          "pagerank_score": 0.0634407727110163,
+          "rank": 3,
+          "relationship_score": 0.0
+        },
+        {
+          "direct_score": 0.07890736167528874,
+          "node": {
+            "kind": "class",
+            "language": "python",
+            "location": {
+              "end_line": 149,
+              "path": "src/implicit_decision_gate/postgres_surface.py",
+              "start_line": 143
+            },
+            "name": "CatalogFact",
+            "node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::CatalogFact",
+            "qualified_name": "CatalogFact"
+          },
+          "pagerank_score": 0.0436499129011209,
+          "rank": 4,
+          "relationship_score": 0.0
+        },
+        {
+          "direct_score": 0.06334630088097824,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 42,
+              "path": "tests/test_probe.py",
+              "start_line": 35
+            },
+            "name": "postgres_available",
+            "node_id": "symbol:tests/test_probe.py::postgres_available",
+            "qualified_name": "postgres_available"
+          },
+          "pagerank_score": 0.029386466338542715,
+          "rank": 5,
+          "relationship_score": 0.0
+        },
+        {
+          "direct_score": 0.05878114636181773,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 185,
+              "path": "tests/test_postgres_surface.py",
+              "start_line": 1
+            },
+            "name": "test_postgres_surface.py",
+            "node_id": "file:tests/test_postgres_surface.py",
+            "qualified_name": "tests.test_postgres_surface"
+          },
+          "pagerank_score": 0.04668325384274629,
+          "rank": 6,
+          "relationship_score": 0.0
+        }
+      ],
+      "query": "How are PostgreSQL catalog snapshots converted into deterministic structural effects?",
+      "related_nodes": [
+        {
+          "direct_score": 0.04176754511137515,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 49,
+              "path": "tests/test_postgres_surface.py",
+              "start_line": 39
+            },
+            "name": "_observe_effects",
+            "node_id": "symbol:tests/test_postgres_surface.py::_observe_effects",
+            "qualified_name": "_observe_effects"
+          },
+          "pagerank_score": 0.03400533003032889,
+          "rank": 1,
+          "relationship_score": 0.5252908607493324
+        },
+        {
+          "direct_score": 0.021350400533620993,
+          "node": {
+            "kind": "method",
+            "language": "python",
+            "location": {
+              "end_line": 216,
+              "path": "src/implicit_decision_gate/probe.py",
+              "start_line": 185
+            },
+            "name": "_execute",
+            "node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+            "qualified_name": "PostgresProbe._execute"
+          },
+          "pagerank_score": 0.032378998042878075,
+          "rank": 2,
+          "relationship_score": 0.5252908607493324
+        },
+        {
+          "direct_score": 0.02862722122023556,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 516,
+              "path": "notebooks/walkthrough_helpers.py",
+              "start_line": 465
+            },
+            "name": "postgres_structure_examples",
+            "node_id": "symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples",
+            "qualified_name": "postgres_structure_examples"
+          },
+          "pagerank_score": 0.027754048684311524,
+          "rank": 3,
+          "relationship_score": 0.5252908607493324
+        },
+        {
+          "direct_score": 0.009850308621444434,
+          "node": {
+            "kind": "class",
+            "language": "python",
+            "location": {
+              "end_line": 26,
+              "path": "src/implicit_decision_gate/scenario.py",
+              "start_line": 17
+            },
+            "name": "ObservedEffect",
+            "node_id": "symbol:src/implicit_decision_gate/scenario.py::ObservedEffect",
+            "qualified_name": "ObservedEffect"
+          },
+          "pagerank_score": 0.011457100963399225,
+          "rank": 4,
+          "relationship_score": 0.47800704960201407
+        },
+        {
+          "direct_score": 0.040228145781116616,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 79,
+              "path": "tests/test_postgres_surface.py",
+              "start_line": 52
+            },
+            "name": "test_diff_catalogs_is_exact_and_deterministic",
+            "node_id": "symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic",
+            "qualified_name": "test_diff_catalogs_is_exact_and_deterministic"
+          },
+          "pagerank_score": 0.03452240540982614,
+          "rank": 5,
+          "relationship_score": 0.4759505477828042
+        },
+        {
+          "direct_score": 0.008316685434720028,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 579,
+              "path": "notebooks/walkthrough_helpers.py",
+              "start_line": 575
+            },
+            "name": "_effect_label",
+            "node_id": "symbol:notebooks/walkthrough_helpers.py::_effect_label",
+            "qualified_name": "_effect_label"
+          },
+          "pagerank_score": 0.008943155581273746,
+          "rank": 6,
+          "relationship_score": 0.4241723700550859
+        },
+        {
+          "direct_score": 0.023890048592241347,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 87,
+              "path": "src/implicit_decision_gate/scenario.py",
+              "start_line": 1
+            },
+            "name": "scenario.py",
+            "node_id": "file:src/implicit_decision_gate/scenario.py",
+            "qualified_name": "implicit_decision_gate.scenario"
+          },
+          "pagerank_score": 0.027870586396878824,
+          "rank": 7,
+          "relationship_score": 0.3872647839178399
+        },
+        {
+          "direct_score": 0.020681766564173577,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 579,
+              "path": "notebooks/walkthrough_helpers.py",
+              "start_line": 1
+            },
+            "name": "walkthrough_helpers.py",
+            "node_id": "file:notebooks/walkthrough_helpers.py",
+            "qualified_name": "notebooks.walkthrough_helpers"
+          },
+          "pagerank_score": 0.0265748603855608,
+          "rank": 8,
+          "relationship_score": 0.3872647839178399
+        },
+        {
+          "direct_score": 0.04139904838193754,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 283,
+              "path": "src/implicit_decision_gate/probe.py",
+              "start_line": 1
+            },
+            "name": "probe.py",
+            "node_id": "file:src/implicit_decision_gate/probe.py",
+            "qualified_name": "implicit_decision_gate.probe"
+          },
+          "pagerank_score": 0.02622054136687559,
+          "rank": 9,
+          "relationship_score": 0.3872647839178399
+        },
+        {
+          "direct_score": 0.0005321738854749434,
+          "node": {
+            "kind": "class",
+            "language": "python",
+            "location": {
+              "end_line": 36,
+              "path": "src/implicit_decision_gate/probe.py",
+              "start_line": 35
+            },
+            "name": "ProbeError",
+            "node_id": "symbol:src/implicit_decision_gate/probe.py::ProbeError",
+            "qualified_name": "ProbeError"
+          },
+          "pagerank_score": 0.007752666995530264,
+          "rank": 10,
+          "relationship_score": 0.31130790253459295
+        },
+        {
+          "direct_score": 0.05423738090223801,
+          "node": {
+            "kind": "method",
+            "language": "python",
+            "location": {
+              "end_line": 283,
+              "path": "src/implicit_decision_gate/probe.py",
+              "start_line": 278
+            },
+            "name": "_rollback_verified",
+            "node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._rollback_verified",
+            "qualified_name": "PostgresProbe._rollback_verified"
+          },
+          "pagerank_score": 0.013058937255361691,
+          "rank": 11,
+          "relationship_score": 0.296781575090278
+        },
+        {
+          "direct_score": 0.03684033419658073,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 97,
+              "path": "tests/test_probe.py",
+              "start_line": 1
+            },
+            "name": "test_probe.py",
+            "node_id": "file:tests/test_probe.py",
+            "qualified_name": "tests.test_probe"
+          },
+          "pagerank_score": 0.014551894218254055,
+          "rank": 12,
+          "relationship_score": 0.28676736760721017
+        },
+        {
+          "direct_score": 0.016868103368804944,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 147,
+              "path": "tests/test_postgres_surface.py",
+              "start_line": 83
+            },
+            "name": "test_surface_captures_added_and_removed_structures",
+            "node_id": "symbol:tests/test_postgres_surface.py::test_surface_captures_added_and_removed_structures",
+            "qualified_name": "test_surface_captures_added_and_removed_structures"
+          },
+          "pagerank_score": 0.018490879033284054,
+          "rank": 13,
+          "relationship_score": 0.27593048838677453
+        },
+        {
+          "direct_score": 0.024531010861892945,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 185,
+              "path": "tests/test_postgres_surface.py",
+              "start_line": 151
+            },
+            "name": "test_surface_captures_changed_structures",
+            "node_id": "symbol:tests/test_postgres_surface.py::test_surface_captures_changed_structures",
+            "qualified_name": "test_surface_captures_changed_structures"
+          },
+          "pagerank_score": 0.018490879033284054,
+          "rank": 14,
+          "relationship_score": 0.27593048838677453
+        },
+        {
+          "direct_score": 0.015273215264583114,
+          "node": {
+            "kind": "method",
+            "language": "python",
+            "location": {
+              "end_line": 136,
+              "path": "src/implicit_decision_gate/probe.py",
+              "start_line": 121
+            },
+            "name": "observe",
+            "node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe.observe",
+            "qualified_name": "PostgresProbe.observe"
+          },
+          "pagerank_score": 0.008536753302520374,
+          "rank": 15,
+          "relationship_score": 0.27593048838677453
+        },
+        {
+          "direct_score": 0.009057852518917409,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 112,
+              "path": "src/implicit_decision_gate/probe.py",
+              "start_line": 63
+            },
+            "name": "normalize_observation",
+            "node_id": "symbol:src/implicit_decision_gate/probe.py::normalize_observation",
+            "qualified_name": "normalize_observation"
+          },
+          "pagerank_score": 0.006655799411910301,
+          "rank": 16,
+          "relationship_score": 0.27593048838677453
+        },
+        {
+          "direct_score": 0.019040376039878553,
+          "node": {
+            "kind": "method",
+            "language": "python",
+            "location": {
+              "end_line": 276,
+              "path": "src/implicit_decision_gate/probe.py",
+              "start_line": 218
+            },
+            "name": "_observe",
+            "node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._observe",
+            "qualified_name": "PostgresProbe._observe"
+          },
+          "pagerank_score": 0.005231453733165619,
+          "rank": 17,
+          "relationship_score": 0.27593048838677453
+        },
+        {
+          "direct_score": 0.0488682323984455,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 36,
+              "path": "tests/test_postgres_surface.py",
+              "start_line": 22
+            },
+            "name": "_effect_lines",
+            "node_id": "symbol:tests/test_postgres_surface.py::_effect_lines",
+            "qualified_name": "_effect_lines"
+          },
+          "pagerank_score": 0.01976783935698206,
+          "rank": 18,
+          "relationship_score": 0.2500124729189455
+        },
+        {
+          "direct_score": 0.008922748433652011,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 192,
+              "path": "src/implicit_decision_gate/api_probe.py",
+              "start_line": 1
+            },
+            "name": "api_probe.py",
+            "node_id": "file:src/implicit_decision_gate/api_probe.py",
+            "qualified_name": "implicit_decision_gate.api_probe"
+          },
+          "pagerank_score": 0.008281377245054612,
+          "rank": 19,
+          "relationship_score": 0.24197057759948232
+        },
+        {
+          "direct_score": 0.015220522525768295,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 164,
+              "path": "src/implicit_decision_gate/scenarios.py",
+              "start_line": 1
+            },
+            "name": "scenarios.py",
+            "node_id": "file:src/implicit_decision_gate/scenarios.py",
+            "qualified_name": "implicit_decision_gate.scenarios"
+          },
+          "pagerank_score": 0.008258285990454651,
+          "rank": 20,
+          "relationship_score": 0.24197057759948232
+        },
+        {
+          "direct_score": 0.01715376529917444,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 147,
+              "path": "tests/test_api_probe.py",
+              "start_line": 1
+            },
+            "name": "test_api_probe.py",
+            "node_id": "file:tests/test_api_probe.py",
+            "qualified_name": "tests.test_api_probe"
+          },
+          "pagerank_score": 0.003936896574742971,
+          "rank": 21,
+          "relationship_score": 0.24197057759948232
+        },
+        {
+          "direct_score": 0.04752444938808612,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 99,
+              "path": "tests/test_live.py",
+              "start_line": 1
+            },
+            "name": "test_live.py",
+            "node_id": "file:tests/test_live.py",
+            "qualified_name": "tests.test_live"
+          },
+          "pagerank_score": 0.009709222882961976,
+          "rank": 22,
+          "relationship_score": 0.24022635001298648
+        },
+        {
+          "direct_score": 0.004908020403448077,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 116,
+              "path": "src/implicit_decision_gate/cli.py",
+              "start_line": 1
+            },
+            "name": "cli.py",
+            "node_id": "file:src/implicit_decision_gate/cli.py",
+            "qualified_name": "implicit_decision_gate.cli"
+          },
+          "pagerank_score": 0.006684807667801457,
+          "rank": 23,
+          "relationship_score": 0.24022635001298648
+        },
+        {
+          "direct_score": 0.005332455806776822,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 107,
+              "path": "tests/test_reviewer.py",
+              "start_line": 1
+            },
+            "name": "test_reviewer.py",
+            "node_id": "file:tests/test_reviewer.py",
+            "qualified_name": "tests.test_reviewer"
+          },
+          "pagerank_score": 0.008675779342985222,
+          "rank": 24,
+          "relationship_score": 0.23786732568549
+        },
+        {
+          "direct_score": 0.017065574700148856,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 278,
+              "path": "tests/test_cli.py",
+              "start_line": 1
+            },
+            "name": "test_cli.py",
+            "node_id": "file:tests/test_cli.py",
+            "qualified_name": "tests.test_cli"
+          },
+          "pagerank_score": 0.006332057280682802,
+          "rank": 25,
+          "relationship_score": 0.2358492571965898
+        }
+      ],
+      "repository": {
+        "branch": null,
+        "clean": true,
+        "commit_sha": "2fdbb3deab2967a545d8a898a17a380974e6bb17",
+        "detached": true,
+        "extractor_version": "1.0.0",
+        "graph_schema_version": "1.0.0",
+        "indexed_source_sha256": "054eb9ddb72433574992ca595bcf95e2a7747c9fa4a4515fd42681b55d706618",
+        "name": "implicit-decision-gate",
+        "remote_url": "https://github.com/genesobolev/implicit-decision-gate.git",
+        "shallow": false,
+        "tree_sha": "045114ac474171e8044ae179e9808ae4357a5296"
+      },
+      "retrieval": {
+        "hop_decay": 0.85,
+        "hops": 2,
+        "related_count": 25,
+        "seed_count": 6
+      },
+      "schema_version": 1,
+      "selected_edges": [
+        {
+          "confidence": 0.9500000000000001,
+          "count": 9,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples->symbol:notebooks/walkthrough_helpers.py::_effect_label",
+          "evidence": [
+            "notebooks/walkthrough_helpers.py:500",
+            "notebooks/walkthrough_helpers.py:501",
+            "notebooks/walkthrough_helpers.py:502",
+            "notebooks/walkthrough_helpers.py:506",
+            "notebooks/walkthrough_helpers.py:507",
+            "notebooks/walkthrough_helpers.py:508",
+            "notebooks/walkthrough_helpers.py:512",
+            "notebooks/walkthrough_helpers.py:513",
+            "notebooks/walkthrough_helpers.py:514"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples",
+          "strength": 0.9500000000000001,
+          "target_id": "symbol:notebooks/walkthrough_helpers.py::_effect_label"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "evidence": [
+            "notebooks/walkthrough_helpers.py:477"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "evidence": [
+            "src/implicit_decision_gate/probe.py:205"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute->symbol:src/implicit_decision_gate/probe.py::PostgresProbe._observe",
+          "evidence": [
+            "src/implicit_decision_gate/probe.py:203"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._observe"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute->symbol:src/implicit_decision_gate/probe.py::normalize_observation",
+          "evidence": [
+            "src/implicit_decision_gate/probe.py:204"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:src/implicit_decision_gate/probe.py::normalize_observation"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._rollback_verified->symbol:src/implicit_decision_gate/postgres_surface.py::capture_catalog",
+          "evidence": [
+            "src/implicit_decision_gate/probe.py:283"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._rollback_verified",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:src/implicit_decision_gate/postgres_surface.py::capture_catalog"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe.observe->symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+          "evidence": [
+            "src/implicit_decision_gate/probe.py:133"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe.observe",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:tests/test_postgres_surface.py::_observe_effects->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "evidence": [
+            "tests/test_postgres_surface.py:49"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:tests/test_postgres_surface.py::_observe_effects",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic->symbol:tests/test_postgres_surface.py::_effect_lines",
+          "evidence": [
+            "tests/test_postgres_surface.py:73"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:tests/test_postgres_surface.py::_effect_lines"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:tests/test_postgres_surface.py::test_surface_captures_added_and_removed_structures->symbol:tests/test_postgres_surface.py::_observe_effects",
+          "evidence": [
+            "tests/test_postgres_surface.py:84"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:tests/test_postgres_surface.py::test_surface_captures_added_and_removed_structures",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:tests/test_postgres_surface.py::_observe_effects"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:tests/test_postgres_surface.py::test_surface_captures_changed_structures->symbol:tests/test_postgres_surface.py::_observe_effects",
+          "evidence": [
+            "tests/test_postgres_surface.py:152"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:tests/test_postgres_surface.py::test_surface_captures_changed_structures",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:tests/test_postgres_surface.py::_observe_effects"
+        },
+        {
+          "confidence": 0.4214137058857051,
+          "count": 2,
+          "direction": "undirected",
+          "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/api_probe.py->file:src/implicit_decision_gate/scenario.py",
+          "evidence": [
+            "2 non-merge commits; Jaccard=0.667; commits=b12be241, 295f5b6f"
+          ],
+          "kind": "CO_CHANGES",
+          "source_id": "file:src/implicit_decision_gate/api_probe.py",
+          "strength": 0.2430906603425501,
+          "target_id": "file:src/implicit_decision_gate/scenario.py"
+        },
+        {
+          "confidence": 0.34586588670535495,
+          "count": 4,
+          "direction": "undirected",
+          "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/probe.py",
+          "evidence": [
+            "4 non-merge commits; Jaccard=0.400; commits=b12be241, 295f5b6f, 43c97f53, 10c641b5"
+          ],
+          "kind": "CO_CHANGES",
+          "source_id": "file:src/implicit_decision_gate/cli.py",
+          "strength": 0.22795127738275547,
+          "target_id": "file:src/implicit_decision_gate/probe.py"
+        },
+        {
+          "confidence": 0.28822157225446243,
+          "count": 4,
+          "direction": "undirected",
+          "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/probe.py->file:tests/test_cli.py",
+          "evidence": [
+            "4 non-merge commits; Jaccard=0.333; commits=b12be241, 295f5b6f, 43c97f53, 10c641b5"
+          ],
+          "kind": "CO_CHANGES",
+          "source_id": "file:src/implicit_decision_gate/probe.py",
+          "strength": 0.18995939781896287,
+          "target_id": "file:tests/test_cli.py"
+        },
+        {
+          "confidence": 0.34586588670535495,
+          "count": 4,
+          "direction": "undirected",
+          "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/probe.py->file:tests/test_live.py",
+          "evidence": [
+            "4 non-merge commits; Jaccard=0.400; commits=b12be241, 295f5b6f, 43c97f53, 10c641b5"
+          ],
+          "kind": "CO_CHANGES",
+          "source_id": "file:src/implicit_decision_gate/probe.py",
+          "strength": 0.22795127738275547,
+          "target_id": "file:tests/test_live.py"
+        },
+        {
+          "confidence": 0.9179150013761012,
+          "count": 5,
+          "direction": "undirected",
+          "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/probe.py->file:tests/test_probe.py",
+          "evidence": [
+            "5 non-merge commits; Jaccard=1.000; commits=b12be241, b0997111, 295f5b6f, 43c97f53, 10c641b5"
+          ],
+          "kind": "CO_CHANGES",
+          "source_id": "file:src/implicit_decision_gate/probe.py",
+          "strength": 0.6319136353643967,
+          "target_id": "file:tests/test_probe.py"
+        },
+        {
+          "confidence": 0.3329442170792444,
+          "count": 3,
+          "direction": "undirected",
+          "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/probe.py->file:tests/test_reviewer.py",
+          "evidence": [
+            "3 non-merge commits; Jaccard=0.429; commits=b12be241, 295f5b6f, 10c641b5"
+          ],
+          "kind": "CO_CHANGES",
+          "source_id": "file:src/implicit_decision_gate/probe.py",
+          "strength": 0.20747563935137267,
+          "target_id": "file:tests/test_reviewer.py"
+        },
+        {
+          "confidence": 0.4214137058857051,
+          "count": 2,
+          "direction": "undirected",
+          "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/scenario.py->file:src/implicit_decision_gate/scenarios.py",
+          "evidence": [
+            "2 non-merge commits; Jaccard=0.667; commits=b12be241, 295f5b6f"
+          ],
+          "kind": "CO_CHANGES",
+          "source_id": "file:src/implicit_decision_gate/scenario.py",
+          "strength": 0.2430906603425501,
+          "target_id": "file:src/implicit_decision_gate/scenarios.py"
+        },
+        {
+          "confidence": 0.4214137058857051,
+          "count": 2,
+          "direction": "undirected",
+          "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/scenario.py->file:tests/test_api_probe.py",
+          "evidence": [
+            "2 non-merge commits; Jaccard=0.667; commits=b12be241, 295f5b6f"
+          ],
+          "kind": "CO_CHANGES",
+          "source_id": "file:src/implicit_decision_gate/scenario.py",
+          "strength": 0.2430906603425501,
+          "target_id": "file:tests/test_api_probe.py"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "IMPORTS:file:notebooks/walkthrough_helpers.py->file:src/implicit_decision_gate/postgres_surface.py",
+          "evidence": [
+            "notebooks/walkthrough_helpers.py:26"
+          ],
+          "kind": "IMPORTS",
+          "source_id": "file:notebooks/walkthrough_helpers.py",
+          "strength": 0.65,
+          "target_id": "file:src/implicit_decision_gate/postgres_surface.py"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "IMPORTS:file:src/implicit_decision_gate/api_probe.py->file:src/implicit_decision_gate/scenario.py",
+          "evidence": [
+            "src/implicit_decision_gate/api_probe.py:12"
+          ],
+          "kind": "IMPORTS",
+          "source_id": "file:src/implicit_decision_gate/api_probe.py",
+          "strength": 0.65,
+          "target_id": "file:src/implicit_decision_gate/scenario.py"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/probe.py",
+          "evidence": [
+            "src/implicit_decision_gate/cli.py:15"
+          ],
+          "kind": "IMPORTS",
+          "source_id": "file:src/implicit_decision_gate/cli.py",
+          "strength": 0.65,
+          "target_id": "file:src/implicit_decision_gate/probe.py"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "IMPORTS:file:src/implicit_decision_gate/postgres_surface.py->file:src/implicit_decision_gate/scenario.py",
+          "evidence": [
+            "src/implicit_decision_gate/postgres_surface.py:10"
+          ],
+          "kind": "IMPORTS",
+          "source_id": "file:src/implicit_decision_gate/postgres_surface.py",
+          "strength": 0.65,
+          "target_id": "file:src/implicit_decision_gate/scenario.py"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "IMPORTS:file:src/implicit_decision_gate/probe.py->file:src/implicit_decision_gate/postgres_surface.py",
+          "evidence": [
+            "src/implicit_decision_gate/probe.py:16"
+          ],
+          "kind": "IMPORTS",
+          "source_id": "file:src/implicit_decision_gate/probe.py",
+          "strength": 0.65,
+          "target_id": "file:src/implicit_decision_gate/postgres_surface.py"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "IMPORTS:file:src/implicit_decision_gate/scenarios.py->file:src/implicit_decision_gate/scenario.py",
+          "evidence": [
+            "src/implicit_decision_gate/scenarios.py:20"
+          ],
+          "kind": "IMPORTS",
+          "source_id": "file:src/implicit_decision_gate/scenarios.py",
+          "strength": 0.65,
+          "target_id": "file:src/implicit_decision_gate/scenario.py"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "IMPORTS:file:tests/test_api_probe.py->file:src/implicit_decision_gate/scenario.py",
+          "evidence": [
+            "tests/test_api_probe.py:26"
+          ],
+          "kind": "IMPORTS",
+          "source_id": "file:tests/test_api_probe.py",
+          "strength": 0.65,
+          "target_id": "file:src/implicit_decision_gate/scenario.py"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "IMPORTS:file:tests/test_cli.py->file:src/implicit_decision_gate/probe.py",
+          "evidence": [
+            "tests/test_cli.py:25"
+          ],
+          "kind": "IMPORTS",
+          "source_id": "file:tests/test_cli.py",
+          "strength": 0.65,
+          "target_id": "file:src/implicit_decision_gate/probe.py"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "IMPORTS:file:tests/test_live.py->file:src/implicit_decision_gate/probe.py",
+          "evidence": [
+            "tests/test_live.py:20"
+          ],
+          "kind": "IMPORTS",
+          "source_id": "file:tests/test_live.py",
+          "strength": 0.65,
+          "target_id": "file:src/implicit_decision_gate/probe.py"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "IMPORTS:file:tests/test_probe.py->file:src/implicit_decision_gate/probe.py",
+          "evidence": [
+            "tests/test_probe.py:10"
+          ],
+          "kind": "IMPORTS",
+          "source_id": "file:tests/test_probe.py",
+          "strength": 0.65,
+          "target_id": "file:src/implicit_decision_gate/probe.py"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "IMPORTS:file:tests/test_reviewer.py->file:src/implicit_decision_gate/probe.py",
+          "evidence": [
+            "tests/test_reviewer.py:16"
+          ],
+          "kind": "IMPORTS",
+          "source_id": "file:tests/test_reviewer.py",
+          "strength": 0.65,
+          "target_id": "file:src/implicit_decision_gate/probe.py"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs->symbol:src/implicit_decision_gate/scenario.py::ObservedEffect",
+          "evidence": [
+            "src/implicit_decision_gate/postgres_surface.py:202"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "strength": 0.562361234825899,
+          "target_id": "symbol:src/implicit_decision_gate/scenario.py::ObservedEffect"
+        },
+        {
+          "confidence": 0.9499999999999998,
+          "count": 3,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute->symbol:src/implicit_decision_gate/probe.py::ProbeError",
+          "evidence": [
+            "src/implicit_decision_gate/probe.py:199",
+            "src/implicit_decision_gate/probe.py:211",
+            "src/implicit_decision_gate/probe.py:216"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+          "strength": 0.6972224696517979,
+          "target_id": "symbol:src/implicit_decision_gate/probe.py::ProbeError"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "TESTS:symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "evidence": [
+            "tests/test_postgres_surface.py:73"
+          ],
+          "kind": "TESTS",
+          "source_id": "symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic",
+          "strength": 0.5599418209209461,
+          "target_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs"
+        }
+      ],
+      "source_snippets": [
+        {
+          "location": {
+            "end_line": 212,
+            "path": "src/implicit_decision_gate/postgres_surface.py",
+            "start_line": 176
+          },
+          "node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "reviewed": true,
+          "text": "def diff_catalogs(\n    before: CatalogSnapshot,\n    after: CatalogSnapshot,\n) -> list[ObservedEffect]:\n    \"\"\"Return a deterministic attribute-level diff between two catalog snapshots.\"\"\"\n\n    effects: list[ObservedEffect] = []\n    for fact in sorted(before.keys() | after.keys()):\n        change: EffectChange\n        before_value: FactValue\n        after_value: FactValue\n        if fact not in before:\n            change = \"ADDED\"\n            before_value = None\n            after_value = after[fact]\n        elif fact not in after:\n            change = \"REMOVED\"\n            before_value = before[fact]\n            after_value = None\n        elif before[fact] != after[fact]:\n            change = \"CHANGED\"\n            before_value = before[fact]\n            after_value = after[fact]\n        el\u2026"
+        }
+      ],
+      "strongest_paths": [
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+            "symbol:tests/test_postgres_surface.py::_observe_effects"
+          ],
+          "relationship_score": 0.5252908607493324,
+          "source_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "steps": [
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:tests/test_postgres_surface.py::_observe_effects->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+              "to_node_id": "symbol:tests/test_postgres_surface.py::_observe_effects"
+            }
+          ],
+          "target_id": "symbol:tests/test_postgres_surface.py::_observe_effects"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+            "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute"
+          ],
+          "relationship_score": 0.5252908607493324,
+          "source_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "steps": [
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+              "to_node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+            "symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples"
+          ],
+          "relationship_score": 0.5252908607493324,
+          "source_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "steps": [
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+              "to_node_id": "symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples"
+            }
+          ],
+          "target_id": "symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+            "symbol:src/implicit_decision_gate/scenario.py::ObservedEffect"
+          ],
+          "relationship_score": 0.47800704960201407,
+          "source_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "steps": [
+            {
+              "combined_strength": 0.562361234825899,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs->symbol:src/implicit_decision_gate/scenario.py::ObservedEffect",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.562361234825899,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+              "to_node_id": "symbol:src/implicit_decision_gate/scenario.py::ObservedEffect"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/scenario.py::ObservedEffect"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+            "symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic"
+          ],
+          "relationship_score": 0.4759505477828042,
+          "source_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "steps": [
+            {
+              "combined_strength": 0.5599418209209461,
+              "contributions": [
+                {
+                  "edge_id": "TESTS:symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+                  "kind": "TESTS",
+                  "strength": 0.5599418209209461,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+              "to_node_id": "symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic"
+            }
+          ],
+          "target_id": "symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+            "symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples",
+            "symbol:notebooks/walkthrough_helpers.py::_effect_label"
+          ],
+          "relationship_score": 0.4241723700550859,
+          "source_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "steps": [
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+              "to_node_id": "symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples"
+            },
+            {
+              "combined_strength": 0.9500000000000001,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples->symbol:notebooks/walkthrough_helpers.py::_effect_label",
+                  "kind": "CALLS",
+                  "strength": 0.9500000000000001,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples",
+              "to_node_id": "symbol:notebooks/walkthrough_helpers.py::_effect_label"
+            }
+          ],
+          "target_id": "symbol:notebooks/walkthrough_helpers.py::_effect_label"
+        },
+        {
+          "node_ids": [
+            "file:src/implicit_decision_gate/postgres_surface.py",
+            "file:src/implicit_decision_gate/scenario.py"
+          ],
+          "relationship_score": 0.3872647839178399,
+          "source_id": "file:src/implicit_decision_gate/postgres_surface.py",
+          "steps": [
+            {
+              "combined_strength": 0.65,
+              "contributions": [
+                {
+                  "edge_id": "IMPORTS:file:src/implicit_decision_gate/postgres_surface.py->file:src/implicit_decision_gate/scenario.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/postgres_surface.py",
+              "to_node_id": "file:src/implicit_decision_gate/scenario.py"
+            }
+          ],
+          "target_id": "file:src/implicit_decision_gate/scenario.py"
+        },
+        {
+          "node_ids": [
+            "file:src/implicit_decision_gate/postgres_surface.py",
+            "file:notebooks/walkthrough_helpers.py"
+          ],
+          "relationship_score": 0.3872647839178399,
+          "source_id": "file:src/implicit_decision_gate/postgres_surface.py",
+          "steps": [
+            {
+              "combined_strength": 0.65,
+              "contributions": [
+                {
+                  "edge_id": "IMPORTS:file:notebooks/walkthrough_helpers.py->file:src/implicit_decision_gate/postgres_surface.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/postgres_surface.py",
+              "to_node_id": "file:notebooks/walkthrough_helpers.py"
+            }
+          ],
+          "target_id": "file:notebooks/walkthrough_helpers.py"
+        },
+        {
+          "node_ids": [
+            "file:src/implicit_decision_gate/postgres_surface.py",
+            "file:src/implicit_decision_gate/probe.py"
+          ],
+          "relationship_score": 0.3872647839178399,
+          "source_id": "file:src/implicit_decision_gate/postgres_surface.py",
+          "steps": [
+            {
+              "combined_strength": 0.65,
+              "contributions": [
+                {
+                  "edge_id": "IMPORTS:file:src/implicit_decision_gate/probe.py->file:src/implicit_decision_gate/postgres_surface.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/postgres_surface.py",
+              "to_node_id": "file:src/implicit_decision_gate/probe.py"
+            }
+          ],
+          "target_id": "file:src/implicit_decision_gate/probe.py"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+            "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+            "symbol:src/implicit_decision_gate/probe.py::ProbeError"
+          ],
+          "relationship_score": 0.31130790253459295,
+          "source_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "steps": [
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+              "to_node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute"
+            },
+            {
+              "combined_strength": 0.6972224696517979,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute->symbol:src/implicit_decision_gate/probe.py::ProbeError",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.6972224696517979,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+              "to_node_id": "symbol:src/implicit_decision_gate/probe.py::ProbeError"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/probe.py::ProbeError"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/postgres_surface.py::capture_catalog",
+            "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._rollback_verified"
+          ],
+          "relationship_score": 0.296781575090278,
+          "source_id": "symbol:src/implicit_decision_gate/postgres_surface.py::capture_catalog",
+          "steps": [
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._rollback_verified->symbol:src/implicit_decision_gate/postgres_surface.py::capture_catalog",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::capture_catalog",
+              "to_node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._rollback_verified"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._rollback_verified"
+        },
+        {
+          "node_ids": [
+            "file:src/implicit_decision_gate/postgres_surface.py",
+            "file:src/implicit_decision_gate/probe.py",
+            "file:tests/test_probe.py"
+          ],
+          "relationship_score": 0.28676736760721017,
+          "source_id": "file:src/implicit_decision_gate/postgres_surface.py",
+          "steps": [
+            {
+              "combined_strength": 0.65,
+              "contributions": [
+                {
+                  "edge_id": "IMPORTS:file:src/implicit_decision_gate/probe.py->file:src/implicit_decision_gate/postgres_surface.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/postgres_surface.py",
+              "to_node_id": "file:src/implicit_decision_gate/probe.py"
+            },
+            {
+              "combined_strength": 0.8711697723775389,
+              "contributions": [
+                {
+                  "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/probe.py->file:tests/test_probe.py",
+                  "kind": "CO_CHANGES",
+                  "strength": 0.6319136353643967,
+                  "traversal_direction": "undirected"
+                },
+                {
+                  "edge_id": "IMPORTS:file:tests/test_probe.py->file:src/implicit_decision_gate/probe.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/probe.py",
+              "to_node_id": "file:tests/test_probe.py"
+            }
+          ],
+          "target_id": "file:tests/test_probe.py"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+            "symbol:tests/test_postgres_surface.py::_observe_effects",
+            "symbol:tests/test_postgres_surface.py::test_surface_captures_added_and_removed_structures"
+          ],
+          "relationship_score": 0.27593048838677453,
+          "source_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "steps": [
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:tests/test_postgres_surface.py::_observe_effects->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+              "to_node_id": "symbol:tests/test_postgres_surface.py::_observe_effects"
+            },
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:tests/test_postgres_surface.py::test_surface_captures_added_and_removed_structures->symbol:tests/test_postgres_surface.py::_observe_effects",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_postgres_surface.py::_observe_effects",
+              "to_node_id": "symbol:tests/test_postgres_surface.py::test_surface_captures_added_and_removed_structures"
+            }
+          ],
+          "target_id": "symbol:tests/test_postgres_surface.py::test_surface_captures_added_and_removed_structures"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+            "symbol:tests/test_postgres_surface.py::_observe_effects",
+            "symbol:tests/test_postgres_surface.py::test_surface_captures_changed_structures"
+          ],
+          "relationship_score": 0.27593048838677453,
+          "source_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "steps": [
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:tests/test_postgres_surface.py::_observe_effects->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+              "to_node_id": "symbol:tests/test_postgres_surface.py::_observe_effects"
+            },
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:tests/test_postgres_surface.py::test_surface_captures_changed_structures->symbol:tests/test_postgres_surface.py::_observe_effects",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_postgres_surface.py::_observe_effects",
+              "to_node_id": "symbol:tests/test_postgres_surface.py::test_surface_captures_changed_structures"
+            }
+          ],
+          "target_id": "symbol:tests/test_postgres_surface.py::test_surface_captures_changed_structures"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+            "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+            "symbol:src/implicit_decision_gate/probe.py::PostgresProbe.observe"
+          ],
+          "relationship_score": 0.27593048838677453,
+          "source_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "steps": [
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+              "to_node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute"
+            },
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe.observe->symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+              "to_node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe.observe"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe.observe"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+            "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+            "symbol:src/implicit_decision_gate/probe.py::normalize_observation"
+          ],
+          "relationship_score": 0.27593048838677453,
+          "source_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "steps": [
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+              "to_node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute"
+            },
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute->symbol:src/implicit_decision_gate/probe.py::normalize_observation",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+              "to_node_id": "symbol:src/implicit_decision_gate/probe.py::normalize_observation"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/probe.py::normalize_observation"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+            "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+            "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._observe"
+          ],
+          "relationship_score": 0.27593048838677453,
+          "source_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "steps": [
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+              "to_node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute"
+            },
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute->symbol:src/implicit_decision_gate/probe.py::PostgresProbe._observe",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+              "to_node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._observe"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._observe"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+            "symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic",
+            "symbol:tests/test_postgres_surface.py::_effect_lines"
+          ],
+          "relationship_score": 0.2500124729189455,
+          "source_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "steps": [
+            {
+              "combined_strength": 0.5599418209209461,
+              "contributions": [
+                {
+                  "edge_id": "TESTS:symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+                  "kind": "TESTS",
+                  "strength": 0.5599418209209461,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+              "to_node_id": "symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic"
+            },
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic->symbol:tests/test_postgres_surface.py::_effect_lines",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic",
+              "to_node_id": "symbol:tests/test_postgres_surface.py::_effect_lines"
+            }
+          ],
+          "target_id": "symbol:tests/test_postgres_surface.py::_effect_lines"
+        },
+        {
+          "node_ids": [
+            "file:src/implicit_decision_gate/postgres_surface.py",
+            "file:src/implicit_decision_gate/scenario.py",
+            "file:src/implicit_decision_gate/api_probe.py"
+          ],
+          "relationship_score": 0.24197057759948232,
+          "source_id": "file:src/implicit_decision_gate/postgres_surface.py",
+          "steps": [
+            {
+              "combined_strength": 0.65,
+              "contributions": [
+                {
+                  "edge_id": "IMPORTS:file:src/implicit_decision_gate/postgres_surface.py->file:src/implicit_decision_gate/scenario.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/postgres_surface.py",
+              "to_node_id": "file:src/implicit_decision_gate/scenario.py"
+            },
+            {
+              "combined_strength": 0.7350817311198925,
+              "contributions": [
+                {
+                  "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/api_probe.py->file:src/implicit_decision_gate/scenario.py",
+                  "kind": "CO_CHANGES",
+                  "strength": 0.2430906603425501,
+                  "traversal_direction": "undirected"
+                },
+                {
+                  "edge_id": "IMPORTS:file:src/implicit_decision_gate/api_probe.py->file:src/implicit_decision_gate/scenario.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/scenario.py",
+              "to_node_id": "file:src/implicit_decision_gate/api_probe.py"
+            }
+          ],
+          "target_id": "file:src/implicit_decision_gate/api_probe.py"
+        },
+        {
+          "node_ids": [
+            "file:src/implicit_decision_gate/postgres_surface.py",
+            "file:src/implicit_decision_gate/scenario.py",
+            "file:src/implicit_decision_gate/scenarios.py"
+          ],
+          "relationship_score": 0.24197057759948232,
+          "source_id": "file:src/implicit_decision_gate/postgres_surface.py",
+          "steps": [
+            {
+              "combined_strength": 0.65,
+              "contributions": [
+                {
+                  "edge_id": "IMPORTS:file:src/implicit_decision_gate/postgres_surface.py->file:src/implicit_decision_gate/scenario.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/postgres_surface.py",
+              "to_node_id": "file:src/implicit_decision_gate/scenario.py"
+            },
+            {
+              "combined_strength": 0.7350817311198925,
+              "contributions": [
+                {
+                  "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/scenario.py->file:src/implicit_decision_gate/scenarios.py",
+                  "kind": "CO_CHANGES",
+                  "strength": 0.2430906603425501,
+                  "traversal_direction": "undirected"
+                },
+                {
+                  "edge_id": "IMPORTS:file:src/implicit_decision_gate/scenarios.py->file:src/implicit_decision_gate/scenario.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/scenario.py",
+              "to_node_id": "file:src/implicit_decision_gate/scenarios.py"
+            }
+          ],
+          "target_id": "file:src/implicit_decision_gate/scenarios.py"
+        },
+        {
+          "node_ids": [
+            "file:src/implicit_decision_gate/postgres_surface.py",
+            "file:src/implicit_decision_gate/scenario.py",
+            "file:tests/test_api_probe.py"
+          ],
+          "relationship_score": 0.24197057759948232,
+          "source_id": "file:src/implicit_decision_gate/postgres_surface.py",
+          "steps": [
+            {
+              "combined_strength": 0.65,
+              "contributions": [
+                {
+                  "edge_id": "IMPORTS:file:src/implicit_decision_gate/postgres_surface.py->file:src/implicit_decision_gate/scenario.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/postgres_surface.py",
+              "to_node_id": "file:src/implicit_decision_gate/scenario.py"
+            },
+            {
+              "combined_strength": 0.7350817311198925,
+              "contributions": [
+                {
+                  "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/scenario.py->file:tests/test_api_probe.py",
+                  "kind": "CO_CHANGES",
+                  "strength": 0.2430906603425501,
+                  "traversal_direction": "undirected"
+                },
+                {
+                  "edge_id": "IMPORTS:file:tests/test_api_probe.py->file:src/implicit_decision_gate/scenario.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/scenario.py",
+              "to_node_id": "file:tests/test_api_probe.py"
+            }
+          ],
+          "target_id": "file:tests/test_api_probe.py"
+        },
+        {
+          "node_ids": [
+            "file:src/implicit_decision_gate/postgres_surface.py",
+            "file:src/implicit_decision_gate/probe.py",
+            "file:tests/test_live.py"
+          ],
+          "relationship_score": 0.24022635001298648,
+          "source_id": "file:src/implicit_decision_gate/postgres_surface.py",
+          "steps": [
+            {
+              "combined_strength": 0.65,
+              "contributions": [
+                {
+                  "edge_id": "IMPORTS:file:src/implicit_decision_gate/probe.py->file:src/implicit_decision_gate/postgres_surface.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/postgres_surface.py",
+              "to_node_id": "file:src/implicit_decision_gate/probe.py"
+            },
+            {
+              "combined_strength": 0.7297829470839644,
+              "contributions": [
+                {
+                  "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/probe.py->file:tests/test_live.py",
+                  "kind": "CO_CHANGES",
+                  "strength": 0.22795127738275547,
+                  "traversal_direction": "undirected"
+                },
+                {
+                  "edge_id": "IMPORTS:file:tests/test_live.py->file:src/implicit_decision_gate/probe.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/probe.py",
+              "to_node_id": "file:tests/test_live.py"
+            }
+          ],
+          "target_id": "file:tests/test_live.py"
+        },
+        {
+          "node_ids": [
+            "file:src/implicit_decision_gate/postgres_surface.py",
+            "file:src/implicit_decision_gate/probe.py",
+            "file:src/implicit_decision_gate/cli.py"
+          ],
+          "relationship_score": 0.24022635001298648,
+          "source_id": "file:src/implicit_decision_gate/postgres_surface.py",
+          "steps": [
+            {
+              "combined_strength": 0.65,
+              "contributions": [
+                {
+                  "edge_id": "IMPORTS:file:src/implicit_decision_gate/probe.py->file:src/implicit_decision_gate/postgres_surface.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/postgres_surface.py",
+              "to_node_id": "file:src/implicit_decision_gate/probe.py"
+            },
+            {
+              "combined_strength": 0.7297829470839644,
+              "contributions": [
+                {
+                  "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/probe.py",
+                  "kind": "CO_CHANGES",
+                  "strength": 0.22795127738275547,
+                  "traversal_direction": "undirected"
+                },
+                {
+                  "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/probe.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/probe.py",
+              "to_node_id": "file:src/implicit_decision_gate/cli.py"
+            }
+          ],
+          "target_id": "file:src/implicit_decision_gate/cli.py"
+        },
+        {
+          "node_ids": [
+            "file:src/implicit_decision_gate/postgres_surface.py",
+            "file:src/implicit_decision_gate/probe.py",
+            "file:tests/test_reviewer.py"
+          ],
+          "relationship_score": 0.23786732568549,
+          "source_id": "file:src/implicit_decision_gate/postgres_surface.py",
+          "steps": [
+            {
+              "combined_strength": 0.65,
+              "contributions": [
+                {
+                  "edge_id": "IMPORTS:file:src/implicit_decision_gate/probe.py->file:src/implicit_decision_gate/postgres_surface.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/postgres_surface.py",
+              "to_node_id": "file:src/implicit_decision_gate/probe.py"
+            },
+            {
+              "combined_strength": 0.7226164737729804,
+              "contributions": [
+                {
+                  "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/probe.py->file:tests/test_reviewer.py",
+                  "kind": "CO_CHANGES",
+                  "strength": 0.20747563935137267,
+                  "traversal_direction": "undirected"
+                },
+                {
+                  "edge_id": "IMPORTS:file:tests/test_reviewer.py->file:src/implicit_decision_gate/probe.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/probe.py",
+              "to_node_id": "file:tests/test_reviewer.py"
+            }
+          ],
+          "target_id": "file:tests/test_reviewer.py"
+        },
+        {
+          "node_ids": [
+            "file:src/implicit_decision_gate/postgres_surface.py",
+            "file:src/implicit_decision_gate/probe.py",
+            "file:tests/test_cli.py"
+          ],
+          "relationship_score": 0.2358492571965898,
+          "source_id": "file:src/implicit_decision_gate/postgres_surface.py",
+          "steps": [
+            {
+              "combined_strength": 0.65,
+              "contributions": [
+                {
+                  "edge_id": "IMPORTS:file:src/implicit_decision_gate/probe.py->file:src/implicit_decision_gate/postgres_surface.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/postgres_surface.py",
+              "to_node_id": "file:src/implicit_decision_gate/probe.py"
+            },
+            {
+              "combined_strength": 0.716485789236637,
+              "contributions": [
+                {
+                  "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/probe.py->file:tests/test_cli.py",
+                  "kind": "CO_CHANGES",
+                  "strength": 0.18995939781896287,
+                  "traversal_direction": "undirected"
+                },
+                {
+                  "edge_id": "IMPORTS:file:tests/test_cli.py->file:src/implicit_decision_gate/probe.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/probe.py",
+              "to_node_id": "file:tests/test_cli.py"
+            }
+          ],
+          "target_id": "file:tests/test_cli.py"
+        }
+      ]
+    },
+    "markdown": "# Code context\n\nQuery: How are PostgreSQL catalog snapshots converted into deterministic structural effects?\n\nRepository: `implicit-decision-gate` at `2fdbb3deab2967a545d8a898a17a380974e6bb17`.\n\n## Ranked anchors\n\n- 1. `diff_catalogs` at `src/implicit_decision_gate/postgres_surface.py:176` with direct score 0.1699\n- 2. `implicit_decision_gate.postgres_surface` at `src/implicit_decision_gate/postgres_surface.py:1` with direct score 0.1191\n- 3. `capture_catalog` at `src/implicit_decision_gate/postgres_surface.py:155` with direct score 0.0960\n- 4. `CatalogFact` at `src/implicit_decision_gate/postgres_surface.py:143` with direct score 0.0789\n- 5. `postgres_available` at `tests/test_probe.py:35` with direct score 0.0633\n- 6. `tests.test_postgres_surface` at `tests/test_postgres_surface.py:1` with direct score 0.0588\n\n## Related nodes\n\n- 1. `_observe_effects` at `tests/test_postgres_surface.py:39` with relationship score 0.5253\n- 2. `PostgresProbe._execute` at `src/implicit_decision_gate/probe.py:185` with relationship score 0.5253\n- 3. `postgres_structure_examples` at `notebooks/walkthrough_helpers.py:465` with relationship score 0.5253\n- 4. `ObservedEffect` at `src/implicit_decision_gate/scenario.py:17` with relationship score 0.4780\n- 5. `test_diff_catalogs_is_exact_and_deterministic` at `tests/test_postgres_surface.py:52` with relationship score 0.4760\n- 6. `_effect_label` at `notebooks/walkthrough_helpers.py:575` with relationship score 0.4242\n- 7. `implicit_decision_gate.scenario` at `src/implicit_decision_gate/scenario.py:1` with relationship score 0.3873\n- 8. `notebooks.walkthrough_helpers` at `notebooks/walkthrough_helpers.py:1` with relationship score 0.3873\n- 9. `implicit_decision_gate.probe` at `src/implicit_decision_gate/probe.py:1` with relationship score 0.3873\n- 10. `ProbeError` at `src/implicit_decision_gate/probe.py:35` with relationship score 0.3113\n- 11. `PostgresProbe._rollback_verified` at `src/implicit_decision_gate/probe.py:278` with relationship score 0.2968\n- 12. `tests.test_probe` at `tests/test_probe.py:1` with relationship score 0.2868\n- 13. `test_surface_captures_added_and_removed_structures` at `tests/test_postgres_surface.py:83` with relationship score 0.2759\n- 14. `test_surface_captures_changed_structures` at `tests/test_postgres_surface.py:151` with relationship score 0.2759\n- 15. `PostgresProbe.observe` at `src/implicit_decision_gate/probe.py:121` with relationship score 0.2759\n- 16. `normalize_observation` at `src/implicit_decision_gate/probe.py:63` with relationship score 0.2759\n- 17. `PostgresProbe._observe` at `src/implicit_decision_gate/probe.py:218` with relationship score 0.2759\n- 18. `_effect_lines` at `tests/test_postgres_surface.py:22` with relationship score 0.2500\n- 19. `implicit_decision_gate.api_probe` at `src/implicit_decision_gate/api_probe.py:1` with relationship score 0.2420\n- 20. `implicit_decision_gate.scenarios` at `src/implicit_decision_gate/scenarios.py:1` with relationship score 0.2420\n- 21. `tests.test_api_probe` at `tests/test_api_probe.py:1` with relationship score 0.2420\n- 22. `tests.test_live` at `tests/test_live.py:1` with relationship score 0.2402\n- 23. `implicit_decision_gate.cli` at `src/implicit_decision_gate/cli.py:1` with relationship score 0.2402\n- 24. `tests.test_reviewer` at `tests/test_reviewer.py:1` with relationship score 0.2379\n- 25. `tests.test_cli` at `tests/test_cli.py:1` with relationship score 0.2358\n\n## Strongest paths\n\n- symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs -[combined 0.6180 from `CALLS` reverse 0.6180]-> symbol:tests/test_postgres_surface.py::_observe_effects with relationship score 0.5253\n- symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs -[combined 0.6180 from `CALLS` reverse 0.6180]-> symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute with relationship score 0.5253\n- symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs -[combined 0.6180 from `CALLS` reverse 0.6180]-> symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples with relationship score 0.5253\n- symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs -[combined 0.5624 from `INSTANTIATES` forward 0.5624]-> symbol:src/implicit_decision_gate/scenario.py::ObservedEffect with relationship score 0.4780\n- symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs -[combined 0.5599 from `TESTS` reverse 0.5599]-> symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic with relationship score 0.4760\n- symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs -[combined 0.6180 from `CALLS` reverse 0.6180]-> symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples -[combined 0.9500 from `CALLS` forward 0.9500]-> symbol:notebooks/walkthrough_helpers.py::_effect_label with relationship score 0.4242\n- file:src/implicit_decision_gate/postgres_surface.py -[combined 0.6500 from `IMPORTS` forward 0.6500]-> file:src/implicit_decision_gate/scenario.py with relationship score 0.3873\n- file:src/implicit_decision_gate/postgres_surface.py -[combined 0.6500 from `IMPORTS` reverse 0.6500]-> file:notebooks/walkthrough_helpers.py with relationship score 0.3873\n- file:src/implicit_decision_gate/postgres_surface.py -[combined 0.6500 from `IMPORTS` reverse 0.6500]-> file:src/implicit_decision_gate/probe.py with relationship score 0.3873\n- symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs -[combined 0.6180 from `CALLS` reverse 0.6180]-> symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute -[combined 0.6972 from `INSTANTIATES` forward 0.6972]-> symbol:src/implicit_decision_gate/probe.py::ProbeError with relationship score 0.3113\n- symbol:src/implicit_decision_gate/postgres_surface.py::capture_catalog -[combined 0.6180 from `CALLS` reverse 0.6180]-> symbol:src/implicit_decision_gate/probe.py::PostgresProbe._rollback_verified with relationship score 0.2968\n- file:src/implicit_decision_gate/postgres_surface.py -[combined 0.6500 from `IMPORTS` reverse 0.6500]-> file:src/implicit_decision_gate/probe.py -[combined 0.8712 from `CO_CHANGES` undirected 0.6319, `IMPORTS` reverse 0.6500]-> file:tests/test_probe.py with relationship score 0.2868\n- symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs -[combined 0.6180 from `CALLS` reverse 0.6180]-> symbol:tests/test_postgres_surface.py::_observe_effects -[combined 0.6180 from `CALLS` reverse 0.6180]-> symbol:tests/test_postgres_surface.py::test_surface_captures_added_and_removed_structures with relationship score 0.2759\n- symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs -[combined 0.6180 from `CALLS` reverse 0.6180]-> symbol:tests/test_postgres_surface.py::_observe_effects -[combined 0.6180 from `CALLS` reverse 0.6180]-> symbol:tests/test_postgres_surface.py::test_surface_captures_changed_structures with relationship score 0.2759\n- symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs -[combined 0.6180 from `CALLS` reverse 0.6180]-> symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute -[combined 0.6180 from `CALLS` reverse 0.6180]-> symbol:src/implicit_decision_gate/probe.py::PostgresProbe.observe with relationship score 0.2759\n- symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs -[combined 0.6180 from `CALLS` reverse 0.6180]-> symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute -[combined 0.6180 from `CALLS` forward 0.6180]-> symbol:src/implicit_decision_gate/probe.py::normalize_observation with relationship score 0.2759\n- symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs -[combined 0.6180 from `CALLS` reverse 0.6180]-> symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute -[combined 0.6180 from `CALLS` forward 0.6180]-> symbol:src/implicit_decision_gate/probe.py::PostgresProbe._observe with relationship score 0.2759\n- symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs -[combined 0.5599 from `TESTS` reverse 0.5599]-> symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic -[combined 0.6180 from `CALLS` forward 0.6180]-> symbol:tests/test_postgres_surface.py::_effect_lines with relationship score 0.2500\n- file:src/implicit_decision_gate/postgres_surface.py -[combined 0.6500 from `IMPORTS` forward 0.6500]-> file:src/implicit_decision_gate/scenario.py -[combined 0.7351 from `CO_CHANGES` undirected 0.2431, `IMPORTS` reverse 0.6500]-> file:src/implicit_decision_gate/api_probe.py with relationship score 0.2420\n- file:src/implicit_decision_gate/postgres_surface.py -[combined 0.6500 from `IMPORTS` forward 0.6500]-> file:src/implicit_decision_gate/scenario.py -[combined 0.7351 from `CO_CHANGES` undirected 0.2431, `IMPORTS` reverse 0.6500]-> file:src/implicit_decision_gate/scenarios.py with relationship score 0.2420\n- file:src/implicit_decision_gate/postgres_surface.py -[combined 0.6500 from `IMPORTS` forward 0.6500]-> file:src/implicit_decision_gate/scenario.py -[combined 0.7351 from `CO_CHANGES` undirected 0.2431, `IMPORTS` reverse 0.6500]-> file:tests/test_api_probe.py with relationship score 0.2420\n- file:src/implicit_decision_gate/postgres_surface.py -[combined 0.6500 from `IMPORTS` reverse 0.6500]-> file:src/implicit_decision_gate/probe.py -[combined 0.7298 from `CO_CHANGES` undirected 0.2280, `IMPORTS` reverse 0.6500]-> file:tests/test_live.py with relationship score 0.2402\n- file:src/implicit_decision_gate/postgres_surface.py -[combined 0.6500 from `IMPORTS` reverse 0.6500]-> file:src/implicit_decision_gate/probe.py -[combined 0.7298 from `CO_CHANGES` undirected 0.2280, `IMPORTS` reverse 0.6500]-> file:src/implicit_decision_gate/cli.py with relationship score 0.2402\n- file:src/implicit_decision_gate/postgres_surface.py -[combined 0.6500 from `IMPORTS` reverse 0.6500]-> file:src/implicit_decision_gate/probe.py -[combined 0.7226 from `CO_CHANGES` undirected 0.2075, `IMPORTS` reverse 0.6500]-> file:tests/test_reviewer.py with relationship score 0.2379\n- file:src/implicit_decision_gate/postgres_surface.py -[combined 0.6500 from `IMPORTS` reverse 0.6500]-> file:src/implicit_decision_gate/probe.py -[combined 0.7165 from `CO_CHANGES` undirected 0.1900, `IMPORTS` reverse 0.6500]-> file:tests/test_cli.py with relationship score 0.2358\n\n## Reviewed source snippets\n\n### symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs\n\nLocation: `src/implicit_decision_gate/postgres_surface.py:176`\n\n```\ndef diff_catalogs(\n    before: CatalogSnapshot,\n    after: CatalogSnapshot,\n) -> list[ObservedEffect]:\n    \"\"\"Return a deterministic attribute-level diff between two catalog snapshots.\"\"\"\n\n    effects: list[ObservedEffect] = []\n    for fact in sorted(before.keys() | after.keys()):\n        change: EffectChange\n        before_value: FactValue\n        after_value: FactValue\n        if fact not in before:\n            change = \"ADDED\"\n            before_value = None\n            after_value = after[fact]\n        elif fact not in after:\n            change = \"REMOVED\"\n            before_value = before[fact]\n            after_value = None\n        elif before[fact] != after[fact]:\n            change = \"CHANGED\"\n            before_value = before[fact]\n            after_value = after[fact]\n        el\u2026\n```\n"
+  },
+  "description": "Recorded retrieval for a manually reviewed benchmark question with answer and supporting-context judgments.",
+  "edges": [
+    {
+      "confidence": 0.9500000000000001,
+      "count": 9,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples->symbol:notebooks/walkthrough_helpers.py::_effect_label",
+      "evidence": [
+        "notebooks/walkthrough_helpers.py:500",
+        "notebooks/walkthrough_helpers.py:501",
+        "notebooks/walkthrough_helpers.py:502",
+        "notebooks/walkthrough_helpers.py:506",
+        "notebooks/walkthrough_helpers.py:507",
+        "notebooks/walkthrough_helpers.py:508",
+        "notebooks/walkthrough_helpers.py:512",
+        "notebooks/walkthrough_helpers.py:513",
+        "notebooks/walkthrough_helpers.py:514"
+      ],
+      "id": "CALLS:symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples->symbol:notebooks/walkthrough_helpers.py::_effect_label",
+      "kind": "CALLS",
+      "source_id": "symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples",
+      "strength": 0.9500000000000001,
+      "target_id": "symbol:notebooks/walkthrough_helpers.py::_effect_label",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+      "evidence": [
+        "notebooks/walkthrough_helpers.py:477"
+      ],
+      "id": "CALLS:symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+      "kind": "CALLS",
+      "source_id": "symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+      "evidence": [
+        "src/implicit_decision_gate/probe.py:205"
+      ],
+      "id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+      "kind": "CALLS",
+      "source_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute->symbol:src/implicit_decision_gate/probe.py::PostgresProbe._observe",
+      "evidence": [
+        "src/implicit_decision_gate/probe.py:203"
+      ],
+      "id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute->symbol:src/implicit_decision_gate/probe.py::PostgresProbe._observe",
+      "kind": "CALLS",
+      "source_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._observe",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute->symbol:src/implicit_decision_gate/probe.py::normalize_observation",
+      "evidence": [
+        "src/implicit_decision_gate/probe.py:204"
+      ],
+      "id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute->symbol:src/implicit_decision_gate/probe.py::normalize_observation",
+      "kind": "CALLS",
+      "source_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:src/implicit_decision_gate/probe.py::normalize_observation",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._rollback_verified->symbol:src/implicit_decision_gate/postgres_surface.py::capture_catalog",
+      "evidence": [
+        "src/implicit_decision_gate/probe.py:283"
+      ],
+      "id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._rollback_verified->symbol:src/implicit_decision_gate/postgres_surface.py::capture_catalog",
+      "kind": "CALLS",
+      "source_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._rollback_verified",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:src/implicit_decision_gate/postgres_surface.py::capture_catalog",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe.observe->symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+      "evidence": [
+        "src/implicit_decision_gate/probe.py:133"
+      ],
+      "id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe.observe->symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+      "kind": "CALLS",
+      "source_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe.observe",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:tests/test_postgres_surface.py::_observe_effects->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+      "evidence": [
+        "tests/test_postgres_surface.py:49"
+      ],
+      "id": "CALLS:symbol:tests/test_postgres_surface.py::_observe_effects->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+      "kind": "CALLS",
+      "source_id": "symbol:tests/test_postgres_surface.py::_observe_effects",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic->symbol:tests/test_postgres_surface.py::_effect_lines",
+      "evidence": [
+        "tests/test_postgres_surface.py:73"
+      ],
+      "id": "CALLS:symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic->symbol:tests/test_postgres_surface.py::_effect_lines",
+      "kind": "CALLS",
+      "source_id": "symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:tests/test_postgres_surface.py::_effect_lines",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:tests/test_postgres_surface.py::test_surface_captures_added_and_removed_structures->symbol:tests/test_postgres_surface.py::_observe_effects",
+      "evidence": [
+        "tests/test_postgres_surface.py:84"
+      ],
+      "id": "CALLS:symbol:tests/test_postgres_surface.py::test_surface_captures_added_and_removed_structures->symbol:tests/test_postgres_surface.py::_observe_effects",
+      "kind": "CALLS",
+      "source_id": "symbol:tests/test_postgres_surface.py::test_surface_captures_added_and_removed_structures",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:tests/test_postgres_surface.py::_observe_effects",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:tests/test_postgres_surface.py::test_surface_captures_changed_structures->symbol:tests/test_postgres_surface.py::_observe_effects",
+      "evidence": [
+        "tests/test_postgres_surface.py:152"
+      ],
+      "id": "CALLS:symbol:tests/test_postgres_surface.py::test_surface_captures_changed_structures->symbol:tests/test_postgres_surface.py::_observe_effects",
+      "kind": "CALLS",
+      "source_id": "symbol:tests/test_postgres_surface.py::test_surface_captures_changed_structures",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:tests/test_postgres_surface.py::_observe_effects",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.4214137058857051,
+      "count": 2,
+      "direction": "undirected",
+      "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/api_probe.py->file:src/implicit_decision_gate/scenario.py",
+      "evidence": [
+        "2 non-merge commits; Jaccard=0.667; commits=b12be241, 295f5b6f"
+      ],
+      "id": "CO_CHANGES:file:src/implicit_decision_gate/api_probe.py->file:src/implicit_decision_gate/scenario.py",
+      "kind": "CO_CHANGES",
+      "source_id": "file:src/implicit_decision_gate/api_probe.py",
+      "strength": 0.2430906603425501,
+      "target_id": "file:src/implicit_decision_gate/scenario.py",
+      "type": "CO_CHANGES"
+    },
+    {
+      "confidence": 0.34586588670535495,
+      "count": 4,
+      "direction": "undirected",
+      "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/probe.py",
+      "evidence": [
+        "4 non-merge commits; Jaccard=0.400; commits=b12be241, 295f5b6f, 43c97f53, 10c641b5"
+      ],
+      "id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/probe.py",
+      "kind": "CO_CHANGES",
+      "source_id": "file:src/implicit_decision_gate/cli.py",
+      "strength": 0.22795127738275547,
+      "target_id": "file:src/implicit_decision_gate/probe.py",
+      "type": "CO_CHANGES"
+    },
+    {
+      "confidence": 0.28822157225446243,
+      "count": 4,
+      "direction": "undirected",
+      "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/probe.py->file:tests/test_cli.py",
+      "evidence": [
+        "4 non-merge commits; Jaccard=0.333; commits=b12be241, 295f5b6f, 43c97f53, 10c641b5"
+      ],
+      "id": "CO_CHANGES:file:src/implicit_decision_gate/probe.py->file:tests/test_cli.py",
+      "kind": "CO_CHANGES",
+      "source_id": "file:src/implicit_decision_gate/probe.py",
+      "strength": 0.18995939781896287,
+      "target_id": "file:tests/test_cli.py",
+      "type": "CO_CHANGES"
+    },
+    {
+      "confidence": 0.34586588670535495,
+      "count": 4,
+      "direction": "undirected",
+      "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/probe.py->file:tests/test_live.py",
+      "evidence": [
+        "4 non-merge commits; Jaccard=0.400; commits=b12be241, 295f5b6f, 43c97f53, 10c641b5"
+      ],
+      "id": "CO_CHANGES:file:src/implicit_decision_gate/probe.py->file:tests/test_live.py",
+      "kind": "CO_CHANGES",
+      "source_id": "file:src/implicit_decision_gate/probe.py",
+      "strength": 0.22795127738275547,
+      "target_id": "file:tests/test_live.py",
+      "type": "CO_CHANGES"
+    },
+    {
+      "confidence": 0.9179150013761012,
+      "count": 5,
+      "direction": "undirected",
+      "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/probe.py->file:tests/test_probe.py",
+      "evidence": [
+        "5 non-merge commits; Jaccard=1.000; commits=b12be241, b0997111, 295f5b6f, 43c97f53, 10c641b5"
+      ],
+      "id": "CO_CHANGES:file:src/implicit_decision_gate/probe.py->file:tests/test_probe.py",
+      "kind": "CO_CHANGES",
+      "source_id": "file:src/implicit_decision_gate/probe.py",
+      "strength": 0.6319136353643967,
+      "target_id": "file:tests/test_probe.py",
+      "type": "CO_CHANGES"
+    },
+    {
+      "confidence": 0.3329442170792444,
+      "count": 3,
+      "direction": "undirected",
+      "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/probe.py->file:tests/test_reviewer.py",
+      "evidence": [
+        "3 non-merge commits; Jaccard=0.429; commits=b12be241, 295f5b6f, 10c641b5"
+      ],
+      "id": "CO_CHANGES:file:src/implicit_decision_gate/probe.py->file:tests/test_reviewer.py",
+      "kind": "CO_CHANGES",
+      "source_id": "file:src/implicit_decision_gate/probe.py",
+      "strength": 0.20747563935137267,
+      "target_id": "file:tests/test_reviewer.py",
+      "type": "CO_CHANGES"
+    },
+    {
+      "confidence": 0.4214137058857051,
+      "count": 2,
+      "direction": "undirected",
+      "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/scenario.py->file:src/implicit_decision_gate/scenarios.py",
+      "evidence": [
+        "2 non-merge commits; Jaccard=0.667; commits=b12be241, 295f5b6f"
+      ],
+      "id": "CO_CHANGES:file:src/implicit_decision_gate/scenario.py->file:src/implicit_decision_gate/scenarios.py",
+      "kind": "CO_CHANGES",
+      "source_id": "file:src/implicit_decision_gate/scenario.py",
+      "strength": 0.2430906603425501,
+      "target_id": "file:src/implicit_decision_gate/scenarios.py",
+      "type": "CO_CHANGES"
+    },
+    {
+      "confidence": 0.4214137058857051,
+      "count": 2,
+      "direction": "undirected",
+      "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/scenario.py->file:tests/test_api_probe.py",
+      "evidence": [
+        "2 non-merge commits; Jaccard=0.667; commits=b12be241, 295f5b6f"
+      ],
+      "id": "CO_CHANGES:file:src/implicit_decision_gate/scenario.py->file:tests/test_api_probe.py",
+      "kind": "CO_CHANGES",
+      "source_id": "file:src/implicit_decision_gate/scenario.py",
+      "strength": 0.2430906603425501,
+      "target_id": "file:tests/test_api_probe.py",
+      "type": "CO_CHANGES"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "IMPORTS:file:notebooks/walkthrough_helpers.py->file:src/implicit_decision_gate/postgres_surface.py",
+      "evidence": [
+        "notebooks/walkthrough_helpers.py:26"
+      ],
+      "id": "IMPORTS:file:notebooks/walkthrough_helpers.py->file:src/implicit_decision_gate/postgres_surface.py",
+      "kind": "IMPORTS",
+      "source_id": "file:notebooks/walkthrough_helpers.py",
+      "strength": 0.65,
+      "target_id": "file:src/implicit_decision_gate/postgres_surface.py",
+      "type": "IMPORTS"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "IMPORTS:file:src/implicit_decision_gate/api_probe.py->file:src/implicit_decision_gate/scenario.py",
+      "evidence": [
+        "src/implicit_decision_gate/api_probe.py:12"
+      ],
+      "id": "IMPORTS:file:src/implicit_decision_gate/api_probe.py->file:src/implicit_decision_gate/scenario.py",
+      "kind": "IMPORTS",
+      "source_id": "file:src/implicit_decision_gate/api_probe.py",
+      "strength": 0.65,
+      "target_id": "file:src/implicit_decision_gate/scenario.py",
+      "type": "IMPORTS"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/probe.py",
+      "evidence": [
+        "src/implicit_decision_gate/cli.py:15"
+      ],
+      "id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/probe.py",
+      "kind": "IMPORTS",
+      "source_id": "file:src/implicit_decision_gate/cli.py",
+      "strength": 0.65,
+      "target_id": "file:src/implicit_decision_gate/probe.py",
+      "type": "IMPORTS"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "IMPORTS:file:src/implicit_decision_gate/postgres_surface.py->file:src/implicit_decision_gate/scenario.py",
+      "evidence": [
+        "src/implicit_decision_gate/postgres_surface.py:10"
+      ],
+      "id": "IMPORTS:file:src/implicit_decision_gate/postgres_surface.py->file:src/implicit_decision_gate/scenario.py",
+      "kind": "IMPORTS",
+      "source_id": "file:src/implicit_decision_gate/postgres_surface.py",
+      "strength": 0.65,
+      "target_id": "file:src/implicit_decision_gate/scenario.py",
+      "type": "IMPORTS"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "IMPORTS:file:src/implicit_decision_gate/probe.py->file:src/implicit_decision_gate/postgres_surface.py",
+      "evidence": [
+        "src/implicit_decision_gate/probe.py:16"
+      ],
+      "id": "IMPORTS:file:src/implicit_decision_gate/probe.py->file:src/implicit_decision_gate/postgres_surface.py",
+      "kind": "IMPORTS",
+      "source_id": "file:src/implicit_decision_gate/probe.py",
+      "strength": 0.65,
+      "target_id": "file:src/implicit_decision_gate/postgres_surface.py",
+      "type": "IMPORTS"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "IMPORTS:file:src/implicit_decision_gate/scenarios.py->file:src/implicit_decision_gate/scenario.py",
+      "evidence": [
+        "src/implicit_decision_gate/scenarios.py:20"
+      ],
+      "id": "IMPORTS:file:src/implicit_decision_gate/scenarios.py->file:src/implicit_decision_gate/scenario.py",
+      "kind": "IMPORTS",
+      "source_id": "file:src/implicit_decision_gate/scenarios.py",
+      "strength": 0.65,
+      "target_id": "file:src/implicit_decision_gate/scenario.py",
+      "type": "IMPORTS"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "IMPORTS:file:tests/test_api_probe.py->file:src/implicit_decision_gate/scenario.py",
+      "evidence": [
+        "tests/test_api_probe.py:26"
+      ],
+      "id": "IMPORTS:file:tests/test_api_probe.py->file:src/implicit_decision_gate/scenario.py",
+      "kind": "IMPORTS",
+      "source_id": "file:tests/test_api_probe.py",
+      "strength": 0.65,
+      "target_id": "file:src/implicit_decision_gate/scenario.py",
+      "type": "IMPORTS"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "IMPORTS:file:tests/test_cli.py->file:src/implicit_decision_gate/probe.py",
+      "evidence": [
+        "tests/test_cli.py:25"
+      ],
+      "id": "IMPORTS:file:tests/test_cli.py->file:src/implicit_decision_gate/probe.py",
+      "kind": "IMPORTS",
+      "source_id": "file:tests/test_cli.py",
+      "strength": 0.65,
+      "target_id": "file:src/implicit_decision_gate/probe.py",
+      "type": "IMPORTS"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "IMPORTS:file:tests/test_live.py->file:src/implicit_decision_gate/probe.py",
+      "evidence": [
+        "tests/test_live.py:20"
+      ],
+      "id": "IMPORTS:file:tests/test_live.py->file:src/implicit_decision_gate/probe.py",
+      "kind": "IMPORTS",
+      "source_id": "file:tests/test_live.py",
+      "strength": 0.65,
+      "target_id": "file:src/implicit_decision_gate/probe.py",
+      "type": "IMPORTS"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "IMPORTS:file:tests/test_probe.py->file:src/implicit_decision_gate/probe.py",
+      "evidence": [
+        "tests/test_probe.py:10"
+      ],
+      "id": "IMPORTS:file:tests/test_probe.py->file:src/implicit_decision_gate/probe.py",
+      "kind": "IMPORTS",
+      "source_id": "file:tests/test_probe.py",
+      "strength": 0.65,
+      "target_id": "file:src/implicit_decision_gate/probe.py",
+      "type": "IMPORTS"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "IMPORTS:file:tests/test_reviewer.py->file:src/implicit_decision_gate/probe.py",
+      "evidence": [
+        "tests/test_reviewer.py:16"
+      ],
+      "id": "IMPORTS:file:tests/test_reviewer.py->file:src/implicit_decision_gate/probe.py",
+      "kind": "IMPORTS",
+      "source_id": "file:tests/test_reviewer.py",
+      "strength": 0.65,
+      "target_id": "file:src/implicit_decision_gate/probe.py",
+      "type": "IMPORTS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs->symbol:src/implicit_decision_gate/scenario.py::ObservedEffect",
+      "evidence": [
+        "src/implicit_decision_gate/postgres_surface.py:202"
+      ],
+      "id": "INSTANTIATES:symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs->symbol:src/implicit_decision_gate/scenario.py::ObservedEffect",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+      "strength": 0.562361234825899,
+      "target_id": "symbol:src/implicit_decision_gate/scenario.py::ObservedEffect",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.9499999999999998,
+      "count": 3,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute->symbol:src/implicit_decision_gate/probe.py::ProbeError",
+      "evidence": [
+        "src/implicit_decision_gate/probe.py:199",
+        "src/implicit_decision_gate/probe.py:211",
+        "src/implicit_decision_gate/probe.py:216"
+      ],
+      "id": "INSTANTIATES:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute->symbol:src/implicit_decision_gate/probe.py::ProbeError",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+      "strength": 0.6972224696517979,
+      "target_id": "symbol:src/implicit_decision_gate/probe.py::ProbeError",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "TESTS:symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+      "evidence": [
+        "tests/test_postgres_surface.py:73"
+      ],
+      "id": "TESTS:symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+      "kind": "TESTS",
+      "source_id": "symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic",
+      "strength": 0.5599418209209461,
+      "target_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+      "type": "TESTS"
+    }
+  ],
+  "id": "catalog-effects",
+  "label": "Catalog Effects",
+  "nodes": [
+    {
+      "direct_score": 0.16989253158656592,
+      "end_line": 212,
+      "id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+      "kind": "function",
+      "label": "diff_catalogs",
+      "language": "python",
+      "pagerank_score": 0.07673865120472331,
+      "path": "src/implicit_decision_gate/postgres_surface.py",
+      "rank_group": "anchor",
+      "relationship_score": 0.0,
+      "score": 0.16989253158656592,
+      "start_line": 176,
+      "x": 490.126,
+      "y": 209.142
+    },
+    {
+      "direct_score": 0.11908306703009276,
+      "end_line": 212,
+      "id": "file:src/implicit_decision_gate/postgres_surface.py",
+      "kind": "file",
+      "label": "implicit_decision_gate.postgres_surface",
+      "language": "python",
+      "pagerank_score": 0.06359967941640114,
+      "path": "src/implicit_decision_gate/postgres_surface.py",
+      "rank_group": "anchor",
+      "relationship_score": 0.0,
+      "score": 0.11908306703009276,
+      "start_line": 1,
+      "x": 454.855,
+      "y": 282.337
+    },
+    {
+      "direct_score": 0.09598677016464714,
+      "end_line": 173,
+      "id": "symbol:src/implicit_decision_gate/postgres_surface.py::capture_catalog",
+      "kind": "function",
+      "label": "capture_catalog",
+      "language": "python",
+      "pagerank_score": 0.0634407727110163,
+      "path": "src/implicit_decision_gate/postgres_surface.py",
+      "rank_group": "anchor",
+      "relationship_score": 0.0,
+      "score": 0.09598677016464714,
+      "start_line": 155,
+      "x": 526.981,
+      "y": 179.069
+    },
+    {
+      "direct_score": 0.07890736167528874,
+      "end_line": 149,
+      "id": "symbol:src/implicit_decision_gate/postgres_surface.py::CatalogFact",
+      "kind": "class",
+      "label": "CatalogFact",
+      "language": "python",
+      "pagerank_score": 0.0436499129011209,
+      "path": "src/implicit_decision_gate/postgres_surface.py",
+      "rank_group": "anchor",
+      "relationship_score": 0.0,
+      "score": 0.07890736167528874,
+      "start_line": 143,
+      "x": 369.053,
+      "y": 162.348
+    },
+    {
+      "direct_score": 0.06334630088097824,
+      "end_line": 42,
+      "id": "symbol:tests/test_probe.py::postgres_available",
+      "kind": "function",
+      "label": "postgres_available",
+      "language": "python",
+      "pagerank_score": 0.029386466338542715,
+      "path": "tests/test_probe.py",
+      "rank_group": "anchor",
+      "relationship_score": 0.0,
+      "score": 0.06334630088097824,
+      "start_line": 35,
+      "x": 164.339,
+      "y": 389.551
+    },
+    {
+      "direct_score": 0.05878114636181773,
+      "end_line": 185,
+      "id": "file:tests/test_postgres_surface.py",
+      "kind": "file",
+      "label": "tests.test_postgres_surface",
+      "language": "python",
+      "pagerank_score": 0.04668325384274629,
+      "path": "tests/test_postgres_surface.py",
+      "rank_group": "anchor",
+      "relationship_score": 0.0,
+      "score": 0.05878114636181773,
+      "start_line": 1,
+      "x": 336.64,
+      "y": 324.139
+    },
+    {
+      "direct_score": 0.04176754511137515,
+      "end_line": 49,
+      "id": "symbol:tests/test_postgres_surface.py::_observe_effects",
+      "kind": "function",
+      "label": "_observe_effects",
+      "language": "python",
+      "pagerank_score": 0.03400533003032889,
+      "path": "tests/test_postgres_surface.py",
+      "rank_group": "related",
+      "relationship_score": 0.5252908607493324,
+      "score": 0.5252908607493324,
+      "start_line": 39,
+      "x": 324.602,
+      "y": 244.901
+    },
+    {
+      "direct_score": 0.021350400533620993,
+      "end_line": 216,
+      "id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+      "kind": "method",
+      "label": "PostgresProbe._execute",
+      "language": "python",
+      "pagerank_score": 0.032378998042878075,
+      "path": "src/implicit_decision_gate/probe.py",
+      "rank_group": "related",
+      "relationship_score": 0.5252908607493324,
+      "score": 0.5252908607493324,
+      "start_line": 185,
+      "x": 727.774,
+      "y": 183.685
+    },
+    {
+      "direct_score": 0.02862722122023556,
+      "end_line": 516,
+      "id": "symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples",
+      "kind": "function",
+      "label": "postgres_structure_examples",
+      "language": "python",
+      "pagerank_score": 0.027754048684311524,
+      "path": "notebooks/walkthrough_helpers.py",
+      "rank_group": "related",
+      "relationship_score": 0.5252908607493324,
+      "score": 0.5252908607493324,
+      "start_line": 465,
+      "x": 561.117,
+      "y": 159.645
+    },
+    {
+      "direct_score": 0.009850308621444434,
+      "end_line": 26,
+      "id": "symbol:src/implicit_decision_gate/scenario.py::ObservedEffect",
+      "kind": "class",
+      "label": "ObservedEffect",
+      "language": "python",
+      "pagerank_score": 0.011457100963399225,
+      "path": "src/implicit_decision_gate/scenario.py",
+      "rank_group": "related",
+      "relationship_score": 0.47800704960201407,
+      "score": 0.47800704960201407,
+      "start_line": 17,
+      "x": 586.292,
+      "y": 275.527
+    },
+    {
+      "direct_score": 0.040228145781116616,
+      "end_line": 79,
+      "id": "symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic",
+      "kind": "test",
+      "label": "test_diff_catalogs_is_exact_and_deterministic",
+      "language": "python",
+      "pagerank_score": 0.03452240540982614,
+      "path": "tests/test_postgres_surface.py",
+      "rank_group": "related",
+      "relationship_score": 0.4759505477828042,
+      "score": 0.4759505477828042,
+      "start_line": 52,
+      "x": 283.23,
+      "y": 204.139
+    },
+    {
+      "direct_score": 0.008316685434720028,
+      "end_line": 579,
+      "id": "symbol:notebooks/walkthrough_helpers.py::_effect_label",
+      "kind": "function",
+      "label": "_effect_label",
+      "language": "python",
+      "pagerank_score": 0.008943155581273746,
+      "path": "notebooks/walkthrough_helpers.py",
+      "rank_group": "related",
+      "relationship_score": 0.4241723700550859,
+      "score": 0.4241723700550859,
+      "start_line": 575,
+      "x": 494.336,
+      "y": 143.551
+    },
+    {
+      "direct_score": 0.023890048592241347,
+      "end_line": 87,
+      "id": "file:src/implicit_decision_gate/scenario.py",
+      "kind": "file",
+      "label": "implicit_decision_gate.scenario",
+      "language": "python",
+      "pagerank_score": 0.027870586396878824,
+      "path": "src/implicit_decision_gate/scenario.py",
+      "rank_group": "related",
+      "relationship_score": 0.3872647839178399,
+      "score": 0.3872647839178399,
+      "start_line": 1,
+      "x": 478.832,
+      "y": 379.263
+    },
+    {
+      "direct_score": 0.020681766564173577,
+      "end_line": 579,
+      "id": "file:notebooks/walkthrough_helpers.py",
+      "kind": "file",
+      "label": "notebooks.walkthrough_helpers",
+      "language": "python",
+      "pagerank_score": 0.0265748603855608,
+      "path": "notebooks/walkthrough_helpers.py",
+      "rank_group": "related",
+      "relationship_score": 0.3872647839178399,
+      "score": 0.3872647839178399,
+      "start_line": 1,
+      "x": 529.116,
+      "y": 310.689
+    },
+    {
+      "direct_score": 0.04139904838193754,
+      "end_line": 283,
+      "id": "file:src/implicit_decision_gate/probe.py",
+      "kind": "file",
+      "label": "implicit_decision_gate.probe",
+      "language": "python",
+      "pagerank_score": 0.02622054136687559,
+      "path": "src/implicit_decision_gate/probe.py",
+      "rank_group": "related",
+      "relationship_score": 0.3872647839178399,
+      "score": 0.3872647839178399,
+      "start_line": 1,
+      "x": 549.159,
+      "y": 381.189
+    },
+    {
+      "direct_score": 0.0005321738854749434,
+      "end_line": 36,
+      "id": "symbol:src/implicit_decision_gate/probe.py::ProbeError",
+      "kind": "class",
+      "label": "ProbeError",
+      "language": "python",
+      "pagerank_score": 0.007752666995530264,
+      "path": "src/implicit_decision_gate/probe.py",
+      "rank_group": "related",
+      "relationship_score": 0.31130790253459295,
+      "score": 0.31130790253459295,
+      "start_line": 35,
+      "x": 787.813,
+      "y": 264.937
+    },
+    {
+      "direct_score": 0.05423738090223801,
+      "end_line": 283,
+      "id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._rollback_verified",
+      "kind": "method",
+      "label": "PostgresProbe._rollback_verified",
+      "language": "python",
+      "pagerank_score": 0.013058937255361691,
+      "path": "src/implicit_decision_gate/probe.py",
+      "rank_group": "related",
+      "relationship_score": 0.296781575090278,
+      "score": 0.296781575090278,
+      "start_line": 278,
+      "x": 676.405,
+      "y": 102.243
+    },
+    {
+      "direct_score": 0.03684033419658073,
+      "end_line": 97,
+      "id": "file:tests/test_probe.py",
+      "kind": "file",
+      "label": "tests.test_probe",
+      "language": "python",
+      "pagerank_score": 0.014551894218254055,
+      "path": "tests/test_probe.py",
+      "rank_group": "related",
+      "relationship_score": 0.28676736760721017,
+      "score": 0.28676736760721017,
+      "start_line": 1,
+      "x": 401.361,
+      "y": 422.069
+    },
+    {
+      "direct_score": 0.016868103368804944,
+      "end_line": 147,
+      "id": "symbol:tests/test_postgres_surface.py::test_surface_captures_added_and_removed_structures",
+      "kind": "test",
+      "label": "test_surface_captures_added_and_removed_structures",
+      "language": "python",
+      "pagerank_score": 0.018490879033284054,
+      "path": "tests/test_postgres_surface.py",
+      "rank_group": "related",
+      "relationship_score": 0.27593048838677453,
+      "score": 0.27593048838677453,
+      "start_line": 83,
+      "x": 194.27,
+      "y": 313.743
+    },
+    {
+      "direct_score": 0.024531010861892945,
+      "end_line": 185,
+      "id": "symbol:tests/test_postgres_surface.py::test_surface_captures_changed_structures",
+      "kind": "test",
+      "label": "test_surface_captures_changed_structures",
+      "language": "python",
+      "pagerank_score": 0.018490879033284054,
+      "path": "tests/test_postgres_surface.py",
+      "rank_group": "related",
+      "relationship_score": 0.27593048838677453,
+      "score": 0.27593048838677453,
+      "start_line": 151,
+      "x": 151.533,
+      "y": 302.551
+    },
+    {
+      "direct_score": 0.015273215264583114,
+      "end_line": 136,
+      "id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe.observe",
+      "kind": "method",
+      "label": "PostgresProbe.observe",
+      "language": "python",
+      "pagerank_score": 0.008536753302520374,
+      "path": "src/implicit_decision_gate/probe.py",
+      "rank_group": "related",
+      "relationship_score": 0.27593048838677453,
+      "score": 0.27593048838677453,
+      "start_line": 121,
+      "x": 900.0,
+      "y": 199.65
+    },
+    {
+      "direct_score": 0.009057852518917409,
+      "end_line": 112,
+      "id": "symbol:src/implicit_decision_gate/probe.py::normalize_observation",
+      "kind": "function",
+      "label": "normalize_observation",
+      "language": "python",
+      "pagerank_score": 0.006655799411910301,
+      "path": "src/implicit_decision_gate/probe.py",
+      "rank_group": "related",
+      "relationship_score": 0.27593048838677453,
+      "score": 0.27593048838677453,
+      "start_line": 63,
+      "x": 745.11,
+      "y": 298.333
+    },
+    {
+      "direct_score": 0.019040376039878553,
+      "end_line": 276,
+      "id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._observe",
+      "kind": "method",
+      "label": "PostgresProbe._observe",
+      "language": "python",
+      "pagerank_score": 0.005231453733165619,
+      "path": "src/implicit_decision_gate/probe.py",
+      "rank_group": "related",
+      "relationship_score": 0.27593048838677453,
+      "score": 0.27593048838677453,
+      "start_line": 218,
+      "x": 889.879,
+      "y": 100.808
+    },
+    {
+      "direct_score": 0.0488682323984455,
+      "end_line": 36,
+      "id": "symbol:tests/test_postgres_surface.py::_effect_lines",
+      "kind": "function",
+      "label": "_effect_lines",
+      "language": "python",
+      "pagerank_score": 0.01976783935698206,
+      "path": "tests/test_postgres_surface.py",
+      "rank_group": "related",
+      "relationship_score": 0.2500124729189455,
+      "score": 0.2500124729189455,
+      "start_line": 22,
+      "x": 159.135,
+      "y": 253.05
+    },
+    {
+      "direct_score": 0.008922748433652011,
+      "end_line": 192,
+      "id": "file:src/implicit_decision_gate/api_probe.py",
+      "kind": "file",
+      "label": "implicit_decision_gate.api_probe",
+      "language": "python",
+      "pagerank_score": 0.008281377245054612,
+      "path": "src/implicit_decision_gate/api_probe.py",
+      "rank_group": "related",
+      "relationship_score": 0.24197057759948232,
+      "score": 0.24197057759948232,
+      "start_line": 1,
+      "x": 506.647,
+      "y": 430.971
+    },
+    {
+      "direct_score": 0.015220522525768295,
+      "end_line": 164,
+      "id": "file:src/implicit_decision_gate/scenarios.py",
+      "kind": "file",
+      "label": "implicit_decision_gate.scenarios",
+      "language": "python",
+      "pagerank_score": 0.008258285990454651,
+      "path": "src/implicit_decision_gate/scenarios.py",
+      "rank_group": "related",
+      "relationship_score": 0.24197057759948232,
+      "score": 0.24197057759948232,
+      "start_line": 1,
+      "x": 559.389,
+      "y": 422.843
+    },
+    {
+      "direct_score": 0.01715376529917444,
+      "end_line": 147,
+      "id": "file:tests/test_api_probe.py",
+      "kind": "file",
+      "label": "tests.test_api_probe",
+      "language": "python",
+      "pagerank_score": 0.003936896574742971,
+      "path": "tests/test_api_probe.py",
+      "rank_group": "related",
+      "relationship_score": 0.24197057759948232,
+      "score": 0.24197057759948232,
+      "start_line": 1,
+      "x": 438.085,
+      "y": 474.013
+    },
+    {
+      "direct_score": 0.04752444938808612,
+      "end_line": 99,
+      "id": "file:tests/test_live.py",
+      "kind": "file",
+      "label": "tests.test_live",
+      "language": "python",
+      "pagerank_score": 0.009709222882961976,
+      "path": "tests/test_live.py",
+      "rank_group": "related",
+      "relationship_score": 0.24022635001298648,
+      "score": 0.24022635001298648,
+      "start_line": 1,
+      "x": 499.648,
+      "y": 477.611
+    },
+    {
+      "direct_score": 0.004908020403448077,
+      "end_line": 116,
+      "id": "file:src/implicit_decision_gate/cli.py",
+      "kind": "file",
+      "label": "implicit_decision_gate.cli",
+      "language": "python",
+      "pagerank_score": 0.006684807667801457,
+      "path": "src/implicit_decision_gate/cli.py",
+      "rank_group": "related",
+      "relationship_score": 0.24022635001298648,
+      "score": 0.24022635001298648,
+      "start_line": 1,
+      "x": 564.479,
+      "y": 486.77
+    },
+    {
+      "direct_score": 0.005332455806776822,
+      "end_line": 107,
+      "id": "file:tests/test_reviewer.py",
+      "kind": "file",
+      "label": "tests.test_reviewer",
+      "language": "python",
+      "pagerank_score": 0.008675779342985222,
+      "path": "tests/test_reviewer.py",
+      "rank_group": "related",
+      "relationship_score": 0.23786732568549,
+      "score": 0.23786732568549,
+      "start_line": 1,
+      "x": 542.42,
+      "y": 455.378
+    },
+    {
+      "direct_score": 0.017065574700148856,
+      "end_line": 278,
+      "id": "file:tests/test_cli.py",
+      "kind": "file",
+      "label": "tests.test_cli",
+      "language": "python",
+      "pagerank_score": 0.006332057280682802,
+      "path": "tests/test_cli.py",
+      "rank_group": "related",
+      "relationship_score": 0.2358492571965898,
+      "score": 0.2358492571965898,
+      "start_line": 1,
+      "x": 607.375,
+      "y": 465.855
+    }
+  ],
+  "paths": [
+    {
+      "id": "path-1",
+      "label": "diff_catalogs \u2192 _observe_effects",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+        "symbol:tests/test_postgres_surface.py::_observe_effects"
+      ],
+      "score": 0.5252908607493324,
+      "source_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+      "steps": [
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:tests/test_postgres_surface.py::_observe_effects->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "to_node_id": "symbol:tests/test_postgres_surface.py::_observe_effects"
+        }
+      ],
+      "target_id": "symbol:tests/test_postgres_surface.py::_observe_effects"
+    },
+    {
+      "id": "path-2",
+      "label": "diff_catalogs \u2192 PostgresProbe._execute",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+        "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute"
+      ],
+      "score": 0.5252908607493324,
+      "source_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+      "steps": [
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "to_node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute"
+    },
+    {
+      "id": "path-3",
+      "label": "diff_catalogs \u2192 postgres_structure_examples",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+        "symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples"
+      ],
+      "score": 0.5252908607493324,
+      "source_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+      "steps": [
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "to_node_id": "symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples"
+        }
+      ],
+      "target_id": "symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples"
+    },
+    {
+      "id": "path-4",
+      "label": "diff_catalogs \u2192 ObservedEffect",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+        "symbol:src/implicit_decision_gate/scenario.py::ObservedEffect"
+      ],
+      "score": 0.47800704960201407,
+      "source_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+      "steps": [
+        {
+          "combined_strength": 0.562361234825899,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs->symbol:src/implicit_decision_gate/scenario.py::ObservedEffect",
+              "kind": "INSTANTIATES",
+              "strength": 0.562361234825899,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "to_node_id": "symbol:src/implicit_decision_gate/scenario.py::ObservedEffect"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/scenario.py::ObservedEffect"
+    },
+    {
+      "id": "path-5",
+      "label": "diff_catalogs \u2192 test_diff_catalogs_is_exact_and_deterministic",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+        "symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic"
+      ],
+      "score": 0.4759505477828042,
+      "source_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+      "steps": [
+        {
+          "combined_strength": 0.5599418209209461,
+          "contributions": [
+            {
+              "edge_id": "TESTS:symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+              "kind": "TESTS",
+              "strength": 0.5599418209209461,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "to_node_id": "symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic"
+        }
+      ],
+      "target_id": "symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic"
+    },
+    {
+      "id": "path-6",
+      "label": "diff_catalogs \u2192 _effect_label",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+        "symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples",
+        "symbol:notebooks/walkthrough_helpers.py::_effect_label"
+      ],
+      "score": 0.4241723700550859,
+      "source_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+      "steps": [
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "to_node_id": "symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples"
+        },
+        {
+          "combined_strength": 0.9500000000000001,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples->symbol:notebooks/walkthrough_helpers.py::_effect_label",
+              "kind": "CALLS",
+              "strength": 0.9500000000000001,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples",
+          "to_node_id": "symbol:notebooks/walkthrough_helpers.py::_effect_label"
+        }
+      ],
+      "target_id": "symbol:notebooks/walkthrough_helpers.py::_effect_label"
+    },
+    {
+      "id": "path-7",
+      "label": "implicit_decision_gate.postgres_surface \u2192 implicit_decision_gate.scenario",
+      "nodes": [
+        "file:src/implicit_decision_gate/postgres_surface.py",
+        "file:src/implicit_decision_gate/scenario.py"
+      ],
+      "score": 0.3872647839178399,
+      "source_id": "file:src/implicit_decision_gate/postgres_surface.py",
+      "steps": [
+        {
+          "combined_strength": 0.65,
+          "contributions": [
+            {
+              "edge_id": "IMPORTS:file:src/implicit_decision_gate/postgres_surface.py->file:src/implicit_decision_gate/scenario.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/postgres_surface.py",
+          "to_node_id": "file:src/implicit_decision_gate/scenario.py"
+        }
+      ],
+      "target_id": "file:src/implicit_decision_gate/scenario.py"
+    },
+    {
+      "id": "path-8",
+      "label": "implicit_decision_gate.postgres_surface \u2192 notebooks.walkthrough_helpers",
+      "nodes": [
+        "file:src/implicit_decision_gate/postgres_surface.py",
+        "file:notebooks/walkthrough_helpers.py"
+      ],
+      "score": 0.3872647839178399,
+      "source_id": "file:src/implicit_decision_gate/postgres_surface.py",
+      "steps": [
+        {
+          "combined_strength": 0.65,
+          "contributions": [
+            {
+              "edge_id": "IMPORTS:file:notebooks/walkthrough_helpers.py->file:src/implicit_decision_gate/postgres_surface.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/postgres_surface.py",
+          "to_node_id": "file:notebooks/walkthrough_helpers.py"
+        }
+      ],
+      "target_id": "file:notebooks/walkthrough_helpers.py"
+    },
+    {
+      "id": "path-9",
+      "label": "implicit_decision_gate.postgres_surface \u2192 implicit_decision_gate.probe",
+      "nodes": [
+        "file:src/implicit_decision_gate/postgres_surface.py",
+        "file:src/implicit_decision_gate/probe.py"
+      ],
+      "score": 0.3872647839178399,
+      "source_id": "file:src/implicit_decision_gate/postgres_surface.py",
+      "steps": [
+        {
+          "combined_strength": 0.65,
+          "contributions": [
+            {
+              "edge_id": "IMPORTS:file:src/implicit_decision_gate/probe.py->file:src/implicit_decision_gate/postgres_surface.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/postgres_surface.py",
+          "to_node_id": "file:src/implicit_decision_gate/probe.py"
+        }
+      ],
+      "target_id": "file:src/implicit_decision_gate/probe.py"
+    },
+    {
+      "id": "path-10",
+      "label": "diff_catalogs \u2192 ProbeError",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+        "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+        "symbol:src/implicit_decision_gate/probe.py::ProbeError"
+      ],
+      "score": 0.31130790253459295,
+      "source_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+      "steps": [
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "to_node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute"
+        },
+        {
+          "combined_strength": 0.6972224696517979,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute->symbol:src/implicit_decision_gate/probe.py::ProbeError",
+              "kind": "INSTANTIATES",
+              "strength": 0.6972224696517979,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+          "to_node_id": "symbol:src/implicit_decision_gate/probe.py::ProbeError"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/probe.py::ProbeError"
+    },
+    {
+      "id": "path-11",
+      "label": "capture_catalog \u2192 PostgresProbe._rollback_verified",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/postgres_surface.py::capture_catalog",
+        "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._rollback_verified"
+      ],
+      "score": 0.296781575090278,
+      "source_id": "symbol:src/implicit_decision_gate/postgres_surface.py::capture_catalog",
+      "steps": [
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._rollback_verified->symbol:src/implicit_decision_gate/postgres_surface.py::capture_catalog",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::capture_catalog",
+          "to_node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._rollback_verified"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._rollback_verified"
+    },
+    {
+      "id": "path-12",
+      "label": "implicit_decision_gate.postgres_surface \u2192 tests.test_probe",
+      "nodes": [
+        "file:src/implicit_decision_gate/postgres_surface.py",
+        "file:src/implicit_decision_gate/probe.py",
+        "file:tests/test_probe.py"
+      ],
+      "score": 0.28676736760721017,
+      "source_id": "file:src/implicit_decision_gate/postgres_surface.py",
+      "steps": [
+        {
+          "combined_strength": 0.65,
+          "contributions": [
+            {
+              "edge_id": "IMPORTS:file:src/implicit_decision_gate/probe.py->file:src/implicit_decision_gate/postgres_surface.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/postgres_surface.py",
+          "to_node_id": "file:src/implicit_decision_gate/probe.py"
+        },
+        {
+          "combined_strength": 0.8711697723775389,
+          "contributions": [
+            {
+              "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/probe.py->file:tests/test_probe.py",
+              "kind": "CO_CHANGES",
+              "strength": 0.6319136353643967,
+              "traversal_direction": "undirected"
+            },
+            {
+              "edge_id": "IMPORTS:file:tests/test_probe.py->file:src/implicit_decision_gate/probe.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/probe.py",
+          "to_node_id": "file:tests/test_probe.py"
+        }
+      ],
+      "target_id": "file:tests/test_probe.py"
+    },
+    {
+      "id": "path-13",
+      "label": "diff_catalogs \u2192 test_surface_captures_added_and_removed_structures",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+        "symbol:tests/test_postgres_surface.py::_observe_effects",
+        "symbol:tests/test_postgres_surface.py::test_surface_captures_added_and_removed_structures"
+      ],
+      "score": 0.27593048838677453,
+      "source_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+      "steps": [
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:tests/test_postgres_surface.py::_observe_effects->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "to_node_id": "symbol:tests/test_postgres_surface.py::_observe_effects"
+        },
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:tests/test_postgres_surface.py::test_surface_captures_added_and_removed_structures->symbol:tests/test_postgres_surface.py::_observe_effects",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_postgres_surface.py::_observe_effects",
+          "to_node_id": "symbol:tests/test_postgres_surface.py::test_surface_captures_added_and_removed_structures"
+        }
+      ],
+      "target_id": "symbol:tests/test_postgres_surface.py::test_surface_captures_added_and_removed_structures"
+    },
+    {
+      "id": "path-14",
+      "label": "diff_catalogs \u2192 test_surface_captures_changed_structures",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+        "symbol:tests/test_postgres_surface.py::_observe_effects",
+        "symbol:tests/test_postgres_surface.py::test_surface_captures_changed_structures"
+      ],
+      "score": 0.27593048838677453,
+      "source_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+      "steps": [
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:tests/test_postgres_surface.py::_observe_effects->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "to_node_id": "symbol:tests/test_postgres_surface.py::_observe_effects"
+        },
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:tests/test_postgres_surface.py::test_surface_captures_changed_structures->symbol:tests/test_postgres_surface.py::_observe_effects",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_postgres_surface.py::_observe_effects",
+          "to_node_id": "symbol:tests/test_postgres_surface.py::test_surface_captures_changed_structures"
+        }
+      ],
+      "target_id": "symbol:tests/test_postgres_surface.py::test_surface_captures_changed_structures"
+    },
+    {
+      "id": "path-15",
+      "label": "diff_catalogs \u2192 PostgresProbe.observe",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+        "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+        "symbol:src/implicit_decision_gate/probe.py::PostgresProbe.observe"
+      ],
+      "score": 0.27593048838677453,
+      "source_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+      "steps": [
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "to_node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute"
+        },
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe.observe->symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+          "to_node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe.observe"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe.observe"
+    },
+    {
+      "id": "path-16",
+      "label": "diff_catalogs \u2192 normalize_observation",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+        "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+        "symbol:src/implicit_decision_gate/probe.py::normalize_observation"
+      ],
+      "score": 0.27593048838677453,
+      "source_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+      "steps": [
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "to_node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute"
+        },
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute->symbol:src/implicit_decision_gate/probe.py::normalize_observation",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+          "to_node_id": "symbol:src/implicit_decision_gate/probe.py::normalize_observation"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/probe.py::normalize_observation"
+    },
+    {
+      "id": "path-17",
+      "label": "diff_catalogs \u2192 PostgresProbe._observe",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+        "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+        "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._observe"
+      ],
+      "score": 0.27593048838677453,
+      "source_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+      "steps": [
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "to_node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute"
+        },
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute->symbol:src/implicit_decision_gate/probe.py::PostgresProbe._observe",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+          "to_node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._observe"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._observe"
+    },
+    {
+      "id": "path-18",
+      "label": "diff_catalogs \u2192 _effect_lines",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+        "symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic",
+        "symbol:tests/test_postgres_surface.py::_effect_lines"
+      ],
+      "score": 0.2500124729189455,
+      "source_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+      "steps": [
+        {
+          "combined_strength": 0.5599418209209461,
+          "contributions": [
+            {
+              "edge_id": "TESTS:symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic->symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+              "kind": "TESTS",
+              "strength": 0.5599418209209461,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "to_node_id": "symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic"
+        },
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic->symbol:tests/test_postgres_surface.py::_effect_lines",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic",
+          "to_node_id": "symbol:tests/test_postgres_surface.py::_effect_lines"
+        }
+      ],
+      "target_id": "symbol:tests/test_postgres_surface.py::_effect_lines"
+    },
+    {
+      "id": "path-19",
+      "label": "implicit_decision_gate.postgres_surface \u2192 implicit_decision_gate.api_probe",
+      "nodes": [
+        "file:src/implicit_decision_gate/postgres_surface.py",
+        "file:src/implicit_decision_gate/scenario.py",
+        "file:src/implicit_decision_gate/api_probe.py"
+      ],
+      "score": 0.24197057759948232,
+      "source_id": "file:src/implicit_decision_gate/postgres_surface.py",
+      "steps": [
+        {
+          "combined_strength": 0.65,
+          "contributions": [
+            {
+              "edge_id": "IMPORTS:file:src/implicit_decision_gate/postgres_surface.py->file:src/implicit_decision_gate/scenario.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/postgres_surface.py",
+          "to_node_id": "file:src/implicit_decision_gate/scenario.py"
+        },
+        {
+          "combined_strength": 0.7350817311198925,
+          "contributions": [
+            {
+              "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/api_probe.py->file:src/implicit_decision_gate/scenario.py",
+              "kind": "CO_CHANGES",
+              "strength": 0.2430906603425501,
+              "traversal_direction": "undirected"
+            },
+            {
+              "edge_id": "IMPORTS:file:src/implicit_decision_gate/api_probe.py->file:src/implicit_decision_gate/scenario.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/scenario.py",
+          "to_node_id": "file:src/implicit_decision_gate/api_probe.py"
+        }
+      ],
+      "target_id": "file:src/implicit_decision_gate/api_probe.py"
+    },
+    {
+      "id": "path-20",
+      "label": "implicit_decision_gate.postgres_surface \u2192 implicit_decision_gate.scenarios",
+      "nodes": [
+        "file:src/implicit_decision_gate/postgres_surface.py",
+        "file:src/implicit_decision_gate/scenario.py",
+        "file:src/implicit_decision_gate/scenarios.py"
+      ],
+      "score": 0.24197057759948232,
+      "source_id": "file:src/implicit_decision_gate/postgres_surface.py",
+      "steps": [
+        {
+          "combined_strength": 0.65,
+          "contributions": [
+            {
+              "edge_id": "IMPORTS:file:src/implicit_decision_gate/postgres_surface.py->file:src/implicit_decision_gate/scenario.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/postgres_surface.py",
+          "to_node_id": "file:src/implicit_decision_gate/scenario.py"
+        },
+        {
+          "combined_strength": 0.7350817311198925,
+          "contributions": [
+            {
+              "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/scenario.py->file:src/implicit_decision_gate/scenarios.py",
+              "kind": "CO_CHANGES",
+              "strength": 0.2430906603425501,
+              "traversal_direction": "undirected"
+            },
+            {
+              "edge_id": "IMPORTS:file:src/implicit_decision_gate/scenarios.py->file:src/implicit_decision_gate/scenario.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/scenario.py",
+          "to_node_id": "file:src/implicit_decision_gate/scenarios.py"
+        }
+      ],
+      "target_id": "file:src/implicit_decision_gate/scenarios.py"
+    },
+    {
+      "id": "path-21",
+      "label": "implicit_decision_gate.postgres_surface \u2192 tests.test_api_probe",
+      "nodes": [
+        "file:src/implicit_decision_gate/postgres_surface.py",
+        "file:src/implicit_decision_gate/scenario.py",
+        "file:tests/test_api_probe.py"
+      ],
+      "score": 0.24197057759948232,
+      "source_id": "file:src/implicit_decision_gate/postgres_surface.py",
+      "steps": [
+        {
+          "combined_strength": 0.65,
+          "contributions": [
+            {
+              "edge_id": "IMPORTS:file:src/implicit_decision_gate/postgres_surface.py->file:src/implicit_decision_gate/scenario.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/postgres_surface.py",
+          "to_node_id": "file:src/implicit_decision_gate/scenario.py"
+        },
+        {
+          "combined_strength": 0.7350817311198925,
+          "contributions": [
+            {
+              "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/scenario.py->file:tests/test_api_probe.py",
+              "kind": "CO_CHANGES",
+              "strength": 0.2430906603425501,
+              "traversal_direction": "undirected"
+            },
+            {
+              "edge_id": "IMPORTS:file:tests/test_api_probe.py->file:src/implicit_decision_gate/scenario.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/scenario.py",
+          "to_node_id": "file:tests/test_api_probe.py"
+        }
+      ],
+      "target_id": "file:tests/test_api_probe.py"
+    },
+    {
+      "id": "path-22",
+      "label": "implicit_decision_gate.postgres_surface \u2192 tests.test_live",
+      "nodes": [
+        "file:src/implicit_decision_gate/postgres_surface.py",
+        "file:src/implicit_decision_gate/probe.py",
+        "file:tests/test_live.py"
+      ],
+      "score": 0.24022635001298648,
+      "source_id": "file:src/implicit_decision_gate/postgres_surface.py",
+      "steps": [
+        {
+          "combined_strength": 0.65,
+          "contributions": [
+            {
+              "edge_id": "IMPORTS:file:src/implicit_decision_gate/probe.py->file:src/implicit_decision_gate/postgres_surface.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/postgres_surface.py",
+          "to_node_id": "file:src/implicit_decision_gate/probe.py"
+        },
+        {
+          "combined_strength": 0.7297829470839644,
+          "contributions": [
+            {
+              "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/probe.py->file:tests/test_live.py",
+              "kind": "CO_CHANGES",
+              "strength": 0.22795127738275547,
+              "traversal_direction": "undirected"
+            },
+            {
+              "edge_id": "IMPORTS:file:tests/test_live.py->file:src/implicit_decision_gate/probe.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/probe.py",
+          "to_node_id": "file:tests/test_live.py"
+        }
+      ],
+      "target_id": "file:tests/test_live.py"
+    },
+    {
+      "id": "path-23",
+      "label": "implicit_decision_gate.postgres_surface \u2192 implicit_decision_gate.cli",
+      "nodes": [
+        "file:src/implicit_decision_gate/postgres_surface.py",
+        "file:src/implicit_decision_gate/probe.py",
+        "file:src/implicit_decision_gate/cli.py"
+      ],
+      "score": 0.24022635001298648,
+      "source_id": "file:src/implicit_decision_gate/postgres_surface.py",
+      "steps": [
+        {
+          "combined_strength": 0.65,
+          "contributions": [
+            {
+              "edge_id": "IMPORTS:file:src/implicit_decision_gate/probe.py->file:src/implicit_decision_gate/postgres_surface.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/postgres_surface.py",
+          "to_node_id": "file:src/implicit_decision_gate/probe.py"
+        },
+        {
+          "combined_strength": 0.7297829470839644,
+          "contributions": [
+            {
+              "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/probe.py",
+              "kind": "CO_CHANGES",
+              "strength": 0.22795127738275547,
+              "traversal_direction": "undirected"
+            },
+            {
+              "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/probe.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/probe.py",
+          "to_node_id": "file:src/implicit_decision_gate/cli.py"
+        }
+      ],
+      "target_id": "file:src/implicit_decision_gate/cli.py"
+    },
+    {
+      "id": "path-24",
+      "label": "implicit_decision_gate.postgres_surface \u2192 tests.test_reviewer",
+      "nodes": [
+        "file:src/implicit_decision_gate/postgres_surface.py",
+        "file:src/implicit_decision_gate/probe.py",
+        "file:tests/test_reviewer.py"
+      ],
+      "score": 0.23786732568549,
+      "source_id": "file:src/implicit_decision_gate/postgres_surface.py",
+      "steps": [
+        {
+          "combined_strength": 0.65,
+          "contributions": [
+            {
+              "edge_id": "IMPORTS:file:src/implicit_decision_gate/probe.py->file:src/implicit_decision_gate/postgres_surface.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/postgres_surface.py",
+          "to_node_id": "file:src/implicit_decision_gate/probe.py"
+        },
+        {
+          "combined_strength": 0.7226164737729804,
+          "contributions": [
+            {
+              "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/probe.py->file:tests/test_reviewer.py",
+              "kind": "CO_CHANGES",
+              "strength": 0.20747563935137267,
+              "traversal_direction": "undirected"
+            },
+            {
+              "edge_id": "IMPORTS:file:tests/test_reviewer.py->file:src/implicit_decision_gate/probe.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/probe.py",
+          "to_node_id": "file:tests/test_reviewer.py"
+        }
+      ],
+      "target_id": "file:tests/test_reviewer.py"
+    },
+    {
+      "id": "path-25",
+      "label": "implicit_decision_gate.postgres_surface \u2192 tests.test_cli",
+      "nodes": [
+        "file:src/implicit_decision_gate/postgres_surface.py",
+        "file:src/implicit_decision_gate/probe.py",
+        "file:tests/test_cli.py"
+      ],
+      "score": 0.2358492571965898,
+      "source_id": "file:src/implicit_decision_gate/postgres_surface.py",
+      "steps": [
+        {
+          "combined_strength": 0.65,
+          "contributions": [
+            {
+              "edge_id": "IMPORTS:file:src/implicit_decision_gate/probe.py->file:src/implicit_decision_gate/postgres_surface.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/postgres_surface.py",
+          "to_node_id": "file:src/implicit_decision_gate/probe.py"
+        },
+        {
+          "combined_strength": 0.716485789236637,
+          "contributions": [
+            {
+              "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/probe.py->file:tests/test_cli.py",
+              "kind": "CO_CHANGES",
+              "strength": 0.18995939781896287,
+              "traversal_direction": "undirected"
+            },
+            {
+              "edge_id": "IMPORTS:file:tests/test_cli.py->file:src/implicit_decision_gate/probe.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/probe.py",
+          "to_node_id": "file:tests/test_cli.py"
+        }
+      ],
+      "target_id": "file:tests/test_cli.py"
+    }
+  ],
+  "provenance": {
+    "branch": null,
+    "clean": true,
+    "commit": "2fdbb3deab2967a545d8a898a17a380974e6bb17",
+    "detached": true,
+    "extractor_version": "1.0.0",
+    "indexed_source_sha256": "054eb9ddb72433574992ca595bcf95e2a7747c9fa4a4515fd42681b55d706618",
+    "repository": "implicit-decision-gate",
+    "retrieval": {
+      "hop_decay": 0.85,
+      "hops": 2,
+      "related_count": 25,
+      "seed_count": 6
+    },
+    "schema_version": "1.0.0",
+    "shallow": false,
+    "tree": "045114ac474171e8044ae179e9808ae4357a5296"
+  },
+  "query": "How are PostgreSQL catalog snapshots converted into deterministic structural effects?",
+  "related": [
+    {
+      "direct_score": 0.04176754511137515,
+      "label": "_observe_effects",
+      "node_id": "symbol:tests/test_postgres_surface.py::_observe_effects",
+      "pagerank_score": 0.03400533003032889,
+      "path": "tests/test_postgres_surface.py",
+      "rank": 1,
+      "relationship_score": 0.5252908607493324,
+      "score": 0.5252908607493324
+    },
+    {
+      "direct_score": 0.021350400533620993,
+      "label": "PostgresProbe._execute",
+      "node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+      "pagerank_score": 0.032378998042878075,
+      "path": "src/implicit_decision_gate/probe.py",
+      "rank": 2,
+      "relationship_score": 0.5252908607493324,
+      "score": 0.5252908607493324
+    },
+    {
+      "direct_score": 0.02862722122023556,
+      "label": "postgres_structure_examples",
+      "node_id": "symbol:notebooks/walkthrough_helpers.py::postgres_structure_examples",
+      "pagerank_score": 0.027754048684311524,
+      "path": "notebooks/walkthrough_helpers.py",
+      "rank": 3,
+      "relationship_score": 0.5252908607493324,
+      "score": 0.5252908607493324
+    },
+    {
+      "direct_score": 0.009850308621444434,
+      "label": "ObservedEffect",
+      "node_id": "symbol:src/implicit_decision_gate/scenario.py::ObservedEffect",
+      "pagerank_score": 0.011457100963399225,
+      "path": "src/implicit_decision_gate/scenario.py",
+      "rank": 4,
+      "relationship_score": 0.47800704960201407,
+      "score": 0.47800704960201407
+    },
+    {
+      "direct_score": 0.040228145781116616,
+      "label": "test_diff_catalogs_is_exact_and_deterministic",
+      "node_id": "symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic",
+      "pagerank_score": 0.03452240540982614,
+      "path": "tests/test_postgres_surface.py",
+      "rank": 5,
+      "relationship_score": 0.4759505477828042,
+      "score": 0.4759505477828042
+    },
+    {
+      "direct_score": 0.008316685434720028,
+      "label": "_effect_label",
+      "node_id": "symbol:notebooks/walkthrough_helpers.py::_effect_label",
+      "pagerank_score": 0.008943155581273746,
+      "path": "notebooks/walkthrough_helpers.py",
+      "rank": 6,
+      "relationship_score": 0.4241723700550859,
+      "score": 0.4241723700550859
+    },
+    {
+      "direct_score": 0.023890048592241347,
+      "label": "implicit_decision_gate.scenario",
+      "node_id": "file:src/implicit_decision_gate/scenario.py",
+      "pagerank_score": 0.027870586396878824,
+      "path": "src/implicit_decision_gate/scenario.py",
+      "rank": 7,
+      "relationship_score": 0.3872647839178399,
+      "score": 0.3872647839178399
+    },
+    {
+      "direct_score": 0.020681766564173577,
+      "label": "notebooks.walkthrough_helpers",
+      "node_id": "file:notebooks/walkthrough_helpers.py",
+      "pagerank_score": 0.0265748603855608,
+      "path": "notebooks/walkthrough_helpers.py",
+      "rank": 8,
+      "relationship_score": 0.3872647839178399,
+      "score": 0.3872647839178399
+    },
+    {
+      "direct_score": 0.04139904838193754,
+      "label": "implicit_decision_gate.probe",
+      "node_id": "file:src/implicit_decision_gate/probe.py",
+      "pagerank_score": 0.02622054136687559,
+      "path": "src/implicit_decision_gate/probe.py",
+      "rank": 9,
+      "relationship_score": 0.3872647839178399,
+      "score": 0.3872647839178399
+    },
+    {
+      "direct_score": 0.0005321738854749434,
+      "label": "ProbeError",
+      "node_id": "symbol:src/implicit_decision_gate/probe.py::ProbeError",
+      "pagerank_score": 0.007752666995530264,
+      "path": "src/implicit_decision_gate/probe.py",
+      "rank": 10,
+      "relationship_score": 0.31130790253459295,
+      "score": 0.31130790253459295
+    },
+    {
+      "direct_score": 0.05423738090223801,
+      "label": "PostgresProbe._rollback_verified",
+      "node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._rollback_verified",
+      "pagerank_score": 0.013058937255361691,
+      "path": "src/implicit_decision_gate/probe.py",
+      "rank": 11,
+      "relationship_score": 0.296781575090278,
+      "score": 0.296781575090278
+    },
+    {
+      "direct_score": 0.03684033419658073,
+      "label": "tests.test_probe",
+      "node_id": "file:tests/test_probe.py",
+      "pagerank_score": 0.014551894218254055,
+      "path": "tests/test_probe.py",
+      "rank": 12,
+      "relationship_score": 0.28676736760721017,
+      "score": 0.28676736760721017
+    },
+    {
+      "direct_score": 0.016868103368804944,
+      "label": "test_surface_captures_added_and_removed_structures",
+      "node_id": "symbol:tests/test_postgres_surface.py::test_surface_captures_added_and_removed_structures",
+      "pagerank_score": 0.018490879033284054,
+      "path": "tests/test_postgres_surface.py",
+      "rank": 13,
+      "relationship_score": 0.27593048838677453,
+      "score": 0.27593048838677453
+    },
+    {
+      "direct_score": 0.024531010861892945,
+      "label": "test_surface_captures_changed_structures",
+      "node_id": "symbol:tests/test_postgres_surface.py::test_surface_captures_changed_structures",
+      "pagerank_score": 0.018490879033284054,
+      "path": "tests/test_postgres_surface.py",
+      "rank": 14,
+      "relationship_score": 0.27593048838677453,
+      "score": 0.27593048838677453
+    },
+    {
+      "direct_score": 0.015273215264583114,
+      "label": "PostgresProbe.observe",
+      "node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe.observe",
+      "pagerank_score": 0.008536753302520374,
+      "path": "src/implicit_decision_gate/probe.py",
+      "rank": 15,
+      "relationship_score": 0.27593048838677453,
+      "score": 0.27593048838677453
+    },
+    {
+      "direct_score": 0.009057852518917409,
+      "label": "normalize_observation",
+      "node_id": "symbol:src/implicit_decision_gate/probe.py::normalize_observation",
+      "pagerank_score": 0.006655799411910301,
+      "path": "src/implicit_decision_gate/probe.py",
+      "rank": 16,
+      "relationship_score": 0.27593048838677453,
+      "score": 0.27593048838677453
+    },
+    {
+      "direct_score": 0.019040376039878553,
+      "label": "PostgresProbe._observe",
+      "node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._observe",
+      "pagerank_score": 0.005231453733165619,
+      "path": "src/implicit_decision_gate/probe.py",
+      "rank": 17,
+      "relationship_score": 0.27593048838677453,
+      "score": 0.27593048838677453
+    },
+    {
+      "direct_score": 0.0488682323984455,
+      "label": "_effect_lines",
+      "node_id": "symbol:tests/test_postgres_surface.py::_effect_lines",
+      "pagerank_score": 0.01976783935698206,
+      "path": "tests/test_postgres_surface.py",
+      "rank": 18,
+      "relationship_score": 0.2500124729189455,
+      "score": 0.2500124729189455
+    },
+    {
+      "direct_score": 0.008922748433652011,
+      "label": "implicit_decision_gate.api_probe",
+      "node_id": "file:src/implicit_decision_gate/api_probe.py",
+      "pagerank_score": 0.008281377245054612,
+      "path": "src/implicit_decision_gate/api_probe.py",
+      "rank": 19,
+      "relationship_score": 0.24197057759948232,
+      "score": 0.24197057759948232
+    },
+    {
+      "direct_score": 0.015220522525768295,
+      "label": "implicit_decision_gate.scenarios",
+      "node_id": "file:src/implicit_decision_gate/scenarios.py",
+      "pagerank_score": 0.008258285990454651,
+      "path": "src/implicit_decision_gate/scenarios.py",
+      "rank": 20,
+      "relationship_score": 0.24197057759948232,
+      "score": 0.24197057759948232
+    },
+    {
+      "direct_score": 0.01715376529917444,
+      "label": "tests.test_api_probe",
+      "node_id": "file:tests/test_api_probe.py",
+      "pagerank_score": 0.003936896574742971,
+      "path": "tests/test_api_probe.py",
+      "rank": 21,
+      "relationship_score": 0.24197057759948232,
+      "score": 0.24197057759948232
+    },
+    {
+      "direct_score": 0.04752444938808612,
+      "label": "tests.test_live",
+      "node_id": "file:tests/test_live.py",
+      "pagerank_score": 0.009709222882961976,
+      "path": "tests/test_live.py",
+      "rank": 22,
+      "relationship_score": 0.24022635001298648,
+      "score": 0.24022635001298648
+    },
+    {
+      "direct_score": 0.004908020403448077,
+      "label": "implicit_decision_gate.cli",
+      "node_id": "file:src/implicit_decision_gate/cli.py",
+      "pagerank_score": 0.006684807667801457,
+      "path": "src/implicit_decision_gate/cli.py",
+      "rank": 23,
+      "relationship_score": 0.24022635001298648,
+      "score": 0.24022635001298648
+    },
+    {
+      "direct_score": 0.005332455806776822,
+      "label": "tests.test_reviewer",
+      "node_id": "file:tests/test_reviewer.py",
+      "pagerank_score": 0.008675779342985222,
+      "path": "tests/test_reviewer.py",
+      "rank": 24,
+      "relationship_score": 0.23786732568549,
+      "score": 0.23786732568549
+    },
+    {
+      "direct_score": 0.017065574700148856,
+      "label": "tests.test_cli",
+      "node_id": "file:tests/test_cli.py",
+      "pagerank_score": 0.006332057280682802,
+      "path": "tests/test_cli.py",
+      "rank": 25,
+      "relationship_score": 0.2358492571965898,
+      "score": 0.2358492571965898
+    }
+  ],
+  "relevant": [
+    {
+      "direct_score": 0.16989253158656592,
+      "label": "diff_catalogs",
+      "node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+      "pagerank_score": 0.07673865120472331,
+      "path": "src/implicit_decision_gate/postgres_surface.py",
+      "rank": 1,
+      "relationship_score": 0.0,
+      "score": 0.16989253158656592
+    },
+    {
+      "direct_score": 0.11908306703009276,
+      "label": "implicit_decision_gate.postgres_surface",
+      "node_id": "file:src/implicit_decision_gate/postgres_surface.py",
+      "pagerank_score": 0.06359967941640114,
+      "path": "src/implicit_decision_gate/postgres_surface.py",
+      "rank": 2,
+      "relationship_score": 0.0,
+      "score": 0.11908306703009276
+    },
+    {
+      "direct_score": 0.09598677016464714,
+      "label": "capture_catalog",
+      "node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::capture_catalog",
+      "pagerank_score": 0.0634407727110163,
+      "path": "src/implicit_decision_gate/postgres_surface.py",
+      "rank": 3,
+      "relationship_score": 0.0,
+      "score": 0.09598677016464714
+    },
+    {
+      "direct_score": 0.07890736167528874,
+      "label": "CatalogFact",
+      "node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::CatalogFact",
+      "pagerank_score": 0.0436499129011209,
+      "path": "src/implicit_decision_gate/postgres_surface.py",
+      "rank": 4,
+      "relationship_score": 0.0,
+      "score": 0.07890736167528874
+    },
+    {
+      "direct_score": 0.06334630088097824,
+      "label": "postgres_available",
+      "node_id": "symbol:tests/test_probe.py::postgres_available",
+      "pagerank_score": 0.029386466338542715,
+      "path": "tests/test_probe.py",
+      "rank": 5,
+      "relationship_score": 0.0,
+      "score": 0.06334630088097824
+    },
+    {
+      "direct_score": 0.05878114636181773,
+      "label": "tests.test_postgres_surface",
+      "node_id": "file:tests/test_postgres_surface.py",
+      "pagerank_score": 0.04668325384274629,
+      "path": "tests/test_postgres_surface.py",
+      "rank": 6,
+      "relationship_score": 0.0,
+      "score": 0.05878114636181773
+    }
+  ],
+  "schema_version": 1
+}

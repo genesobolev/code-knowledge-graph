@@ -1,0 +1,3839 @@
+{
+  "context": {
+    "json": {
+      "anchors": [
+        {
+          "direct_score": 0.15177999443065207,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 240,
+              "path": "src/implicit_decision_gate/gate.py",
+              "start_line": 221
+            },
+            "name": "validate_reviewer_result",
+            "node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+            "qualified_name": "validate_reviewer_result"
+          },
+          "pagerank_score": 0.039584110483033084,
+          "rank": 1,
+          "relationship_score": 0.0
+        },
+        {
+          "direct_score": 0.13464401403717408,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 92,
+              "path": "tests/test_reviewer.py",
+              "start_line": 80
+            },
+            "name": "test_review_classifications_are_aggregated",
+            "node_id": "symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated",
+            "qualified_name": "test_review_classifications_are_aggregated"
+          },
+          "pagerank_score": 0.03346487454635987,
+          "rank": 2,
+          "relationship_score": 0.0
+        },
+        {
+          "direct_score": 0.13244383880481378,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 106,
+              "path": "src/implicit_decision_gate/agent.py",
+              "start_line": 95
+            },
+            "name": "build_reviewer_prompt",
+            "node_id": "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+            "qualified_name": "build_reviewer_prompt"
+          },
+          "pagerank_score": 0.03626804960468416,
+          "rank": 3,
+          "relationship_score": 0.0
+        },
+        {
+          "direct_score": 0.11760568469647942,
+          "node": {
+            "kind": "class",
+            "language": "python",
+            "location": {
+              "end_line": 43,
+              "path": "src/implicit_decision_gate/gate.py",
+              "start_line": 37
+            },
+            "name": "EvidenceClassification",
+            "node_id": "symbol:src/implicit_decision_gate/gate.py::EvidenceClassification",
+            "qualified_name": "EvidenceClassification"
+          },
+          "pagerank_score": 0.024556396740878134,
+          "rank": 4,
+          "relationship_score": 0.0
+        },
+        {
+          "direct_score": 0.11472273386391334,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 186,
+              "path": "tests/test_orchestrator.py",
+              "start_line": 169
+            },
+            "name": "test_start_reads_the_brief_from_the_pinned_commit",
+            "node_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+            "qualified_name": "test_start_reads_the_brief_from_the_pinned_commit"
+          },
+          "pagerank_score": 0.026804060873087468,
+          "rank": 5,
+          "relationship_score": 0.0
+        },
+        {
+          "direct_score": 0.09705836076656268,
+          "node": {
+            "kind": "method",
+            "language": "python",
+            "location": {
+              "end_line": 50,
+              "path": "src/implicit_decision_gate/agent.py",
+              "start_line": 49
+            },
+            "name": "review_evidence",
+            "node_id": "symbol:src/implicit_decision_gate/agent.py::ReviewerClient.review_evidence",
+            "qualified_name": "ReviewerClient.review_evidence"
+          },
+          "pagerank_score": 0.028973869525444024,
+          "rank": 6,
+          "relationship_score": 0.0
+        }
+      ],
+      "query": "How are reviewer classifications checked against literal evidence from the brief?",
+      "related_nodes": [
+        {
+          "direct_score": 0.08170407210731466,
+          "node": {
+            "kind": "class",
+            "language": "python",
+            "location": {
+              "end_line": 69,
+              "path": "src/implicit_decision_gate/gate.py",
+              "start_line": 65
+            },
+            "name": "ReviewerResult",
+            "node_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+            "qualified_name": "ReviewerResult"
+          },
+          "pagerank_score": 0.017421402547465305,
+          "rank": 1,
+          "relationship_score": 0.5450625
+        },
+        {
+          "direct_score": 0.04553741929715873,
+          "node": {
+            "kind": "method",
+            "language": "python",
+            "location": {
+              "end_line": 264,
+              "path": "src/implicit_decision_gate/orchestrator.py",
+              "start_line": 192
+            },
+            "name": "_finish_first_attempt",
+            "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+            "qualified_name": "Orchestrator._finish_first_attempt"
+          },
+          "pagerank_score": 0.02952886877760822,
+          "rank": 2,
+          "relationship_score": 0.5252908607493324
+        },
+        {
+          "direct_score": 0.09218091161184895,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 253,
+              "path": "src/implicit_decision_gate/gate.py",
+              "start_line": 243
+            },
+            "name": "state_after_reviews",
+            "node_id": "symbol:src/implicit_decision_gate/gate.py::state_after_reviews",
+            "qualified_name": "state_after_reviews"
+          },
+          "pagerank_score": 0.0229368034813721,
+          "rank": 3,
+          "relationship_score": 0.4911090934288896
+        },
+        {
+          "direct_score": 0.07244146119517673,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 107,
+              "path": "tests/test_reviewer.py",
+              "start_line": 95
+            },
+            "name": "test_fabricated_evidence_quote_becomes_uncertain",
+            "node_id": "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain",
+            "qualified_name": "test_fabricated_evidence_quote_becomes_uncertain"
+          },
+          "pagerank_score": 0.011589172514865641,
+          "rank": 4,
+          "relationship_score": 0.4759505477828042
+        },
+        {
+          "direct_score": 0.03290542092895006,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 84,
+              "path": "tests/test_context.py",
+              "start_line": 65
+            },
+            "name": "test_attempt_two_prompt_contains_only_allowed_fresh_context",
+            "node_id": "symbol:tests/test_context.py::test_attempt_two_prompt_contains_only_allowed_fresh_context",
+            "qualified_name": "test_attempt_two_prompt_contains_only_allowed_fresh_context"
+          },
+          "pagerank_score": 0.010330955775485493,
+          "rank": 5,
+          "relationship_score": 0.4153163785917114
+        },
+        {
+          "direct_score": 0.0655789078744945,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 44,
+              "path": "tests/test_reviewer.py",
+              "start_line": 37
+            },
+            "name": "test_reviewer_prompt_contains_brief_and_observed_policy",
+            "node_id": "symbol:tests/test_reviewer.py::test_reviewer_prompt_contains_brief_and_observed_policy",
+            "qualified_name": "test_reviewer_prompt_contains_brief_and_observed_policy"
+          },
+          "pagerank_score": 0.008791852547829434,
+          "rank": 6,
+          "relationship_score": 0.4153163785917114
+        },
+        {
+          "direct_score": 0.08064762108311246,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 78,
+              "path": "tests/test_orchestrator.py",
+              "start_line": 72
+            },
+            "name": "not_evidenced",
+            "node_id": "symbol:tests/test_orchestrator.py::not_evidenced",
+            "qualified_name": "not_evidenced"
+          },
+          "pagerank_score": 0.009432961704851634,
+          "rank": 7,
+          "relationship_score": 0.39704049169948785
+        },
+        {
+          "direct_score": 0.021804734385327325,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 107,
+              "path": "tests/test_orchestrator.py",
+              "start_line": 92
+            },
+            "name": "orchestrator",
+            "node_id": "symbol:tests/test_orchestrator.py::orchestrator",
+            "qualified_name": "orchestrator"
+          },
+          "pagerank_score": 0.009123132963358177,
+          "rank": 8,
+          "relationship_score": 0.39704049169948785
+        },
+        {
+          "direct_score": 0.05456318293987973,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 416,
+              "path": "src/implicit_decision_gate/gate.py",
+              "start_line": 1
+            },
+            "name": "gate.py",
+            "node_id": "file:src/implicit_decision_gate/gate.py",
+            "qualified_name": "implicit_decision_gate.gate"
+          },
+          "pagerank_score": 0.053062047804942114,
+          "rank": 9,
+          "relationship_score": 0.3825
+        },
+        {
+          "direct_score": 0.012938134821742771,
+          "node": {
+            "kind": "class",
+            "language": "python",
+            "location": {
+              "end_line": 91,
+              "path": "tests/conftest.py",
+              "start_line": 61
+            },
+            "name": "ScriptedCodingClient",
+            "node_id": "symbol:tests/conftest.py::ScriptedCodingClient",
+            "qualified_name": "ScriptedCodingClient"
+          },
+          "pagerank_score": 0.010122098271468203,
+          "rank": 10,
+          "relationship_score": 0.3613010775383957
+        },
+        {
+          "direct_score": 0.04357374688354775,
+          "node": {
+            "kind": "class",
+            "language": "python",
+            "location": {
+              "end_line": 124,
+              "path": "tests/conftest.py",
+              "start_line": 94
+            },
+            "name": "ScriptedReviewerClient",
+            "node_id": "symbol:tests/conftest.py::ScriptedReviewerClient",
+            "qualified_name": "ScriptedReviewerClient"
+          },
+          "pagerank_score": 0.010122098271468203,
+          "rank": 11,
+          "relationship_score": 0.3613010775383957
+        },
+        {
+          "direct_score": 0.006142166777082165,
+          "node": {
+            "kind": "class",
+            "language": "python",
+            "location": {
+              "end_line": 218,
+              "path": "tests/conftest.py",
+              "start_line": 173
+            },
+            "name": "ScriptMarkerProbe",
+            "node_id": "symbol:tests/conftest.py::ScriptMarkerProbe",
+            "qualified_name": "ScriptMarkerProbe"
+          },
+          "pagerank_score": 0.009210012457557355,
+          "rank": 12,
+          "relationship_score": 0.3613010775383957
+        },
+        {
+          "direct_score": 0.07168701647755028,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 107,
+              "path": "tests/test_reviewer.py",
+              "start_line": 1
+            },
+            "name": "test_reviewer.py",
+            "node_id": "file:tests/test_reviewer.py",
+            "qualified_name": "tests.test_reviewer"
+          },
+          "pagerank_score": 0.030158177768876544,
+          "rank": 13,
+          "relationship_score": 0.339315702062105
+        },
+        {
+          "direct_score": 0.08627003427631748,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 106,
+              "path": "src/implicit_decision_gate/agent.py",
+              "start_line": 1
+            },
+            "name": "agent.py",
+            "node_id": "file:src/implicit_decision_gate/agent.py",
+            "qualified_name": "implicit_decision_gate.agent"
+          },
+          "pagerank_score": 0.026897784701186613,
+          "rank": 14,
+          "relationship_score": 0.3337710515333271
+        },
+        {
+          "direct_score": 0.03128085480772679,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 632,
+              "path": "tests/test_orchestrator.py",
+              "start_line": 1
+            },
+            "name": "test_orchestrator.py",
+            "node_id": "file:tests/test_orchestrator.py",
+            "qualified_name": "tests.test_orchestrator"
+          },
+          "pagerank_score": 0.017341705830539195,
+          "rank": 15,
+          "relationship_score": 0.28911218416862033
+        },
+        {
+          "direct_score": 0.04054549113150071,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 344,
+              "path": "src/implicit_decision_gate/orchestrator.py",
+              "start_line": 1
+            },
+            "name": "orchestrator.py",
+            "node_id": "file:src/implicit_decision_gate/orchestrator.py",
+            "qualified_name": "implicit_decision_gate.orchestrator"
+          },
+          "pagerank_score": 0.010681296957293217,
+          "rank": 16,
+          "relationship_score": 0.2822848786499116
+        },
+        {
+          "direct_score": 0.026425882975547658,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 278,
+              "path": "tests/test_cli.py",
+              "start_line": 1
+            },
+            "name": "test_cli.py",
+            "node_id": "file:tests/test_cli.py",
+            "qualified_name": "tests.test_cli"
+          },
+          "pagerank_score": 0.010488091339301496,
+          "rank": 17,
+          "relationship_score": 0.27637207626241894
+        },
+        {
+          "direct_score": 0.0177157817674736,
+          "node": {
+            "kind": "method",
+            "language": "python",
+            "location": {
+              "end_line": 190,
+              "path": "src/implicit_decision_gate/orchestrator.py",
+              "start_line": 118
+            },
+            "name": "_execute_attempt",
+            "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt",
+            "qualified_name": "Orchestrator._execute_attempt"
+          },
+          "pagerank_score": 0.008736749549969768,
+          "rank": 18,
+          "relationship_score": 0.27593048838677453
+        },
+        {
+          "direct_score": 0.004308766836278663,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 87,
+              "path": "src/implicit_decision_gate/scenario.py",
+              "start_line": 84
+            },
+            "name": "option_by_id",
+            "node_id": "symbol:src/implicit_decision_gate/scenario.py::option_by_id",
+            "qualified_name": "option_by_id"
+          },
+          "pagerank_score": 0.00460920376026152,
+          "rank": 19,
+          "relationship_score": 0.27593048838677453
+        },
+        {
+          "direct_score": 0.057293323892307464,
+          "node": {
+            "kind": "method",
+            "language": "python",
+            "location": {
+              "end_line": 344,
+              "path": "src/implicit_decision_gate/orchestrator.py",
+              "start_line": 341
+            },
+            "name": "_reviewer_client",
+            "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._reviewer_client",
+            "qualified_name": "Orchestrator._reviewer_client"
+          },
+          "pagerank_score": 0.00327295378886472,
+          "rank": 20,
+          "relationship_score": 0.27593048838677453
+        },
+        {
+          "direct_score": 0.01782259308488122,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 421,
+              "path": "tests/test_orchestrator.py",
+              "start_line": 383
+            },
+            "name": "test_retry_verifies_supported_outcome_while_honoring_owner_answer",
+            "node_id": "symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer",
+            "qualified_name": "test_retry_verifies_supported_outcome_while_honoring_owner_answer"
+          },
+          "pagerank_score": 0.006342315453600153,
+          "rank": 21,
+          "relationship_score": 0.2605437174736978
+        },
+        {
+          "direct_score": 0.015332796127964498,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 167,
+              "path": "tests/test_evaluation.py",
+              "start_line": 131
+            },
+            "name": "test_adversarial_gate_matrix",
+            "node_id": "symbol:tests/test_evaluation.py::test_adversarial_gate_matrix",
+            "qualified_name": "test_adversarial_gate_matrix"
+          },
+          "pagerank_score": 0.005561480096629834,
+          "rank": 22,
+          "relationship_score": 0.2605437174736978
+        },
+        {
+          "direct_score": 0.07794793170627506,
+          "node": {
+            "kind": "method",
+            "language": "python",
+            "location": {
+              "end_line": 63,
+              "path": "tests/test_cli.py",
+              "start_line": 58
+            },
+            "name": "review_evidence",
+            "node_id": "symbol:tests/test_cli.py::DeterministicCodexClient.review_evidence",
+            "qualified_name": "DeterministicCodexClient.review_evidence"
+          },
+          "pagerank_score": 0.0024228999863833297,
+          "rank": 23,
+          "relationship_score": 0.2605437174736978
+        },
+        {
+          "direct_score": 0.04720030047669746,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 99,
+              "path": "tests/test_live.py",
+              "start_line": 1
+            },
+            "name": "test_live.py",
+            "node_id": "file:tests/test_live.py",
+            "qualified_name": "tests.test_live"
+          },
+          "pagerank_score": 0.011469813746327226,
+          "rank": 24,
+          "relationship_score": 0.25862973554875474
+        },
+        {
+          "direct_score": 0.01942005268668453,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 116,
+              "path": "src/implicit_decision_gate/cli.py",
+              "start_line": 1
+            },
+            "name": "cli.py",
+            "node_id": "file:src/implicit_decision_gate/cli.py",
+            "qualified_name": "implicit_decision_gate.cli"
+          },
+          "pagerank_score": 0.010504009022982368,
+          "rank": 25,
+          "relationship_score": 0.25862973554875474
+        }
+      ],
+      "repository": {
+        "branch": null,
+        "clean": true,
+        "commit_sha": "2fdbb3deab2967a545d8a898a17a380974e6bb17",
+        "detached": true,
+        "extractor_version": "1.0.0",
+        "graph_schema_version": "1.0.0",
+        "indexed_source_sha256": "054eb9ddb72433574992ca595bcf95e2a7747c9fa4a4515fd42681b55d706618",
+        "name": "implicit-decision-gate",
+        "remote_url": "https://github.com/genesobolev/implicit-decision-gate.git",
+        "shallow": false,
+        "tree_sha": "045114ac474171e8044ae179e9808ae4357a5296"
+      },
+      "retrieval": {
+        "hop_decay": 0.85,
+        "hops": 2,
+        "related_count": 25,
+        "seed_count": 6
+      },
+      "schema_version": 1,
+      "selected_edges": [
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+          "evidence": [
+            "src/implicit_decision_gate/orchestrator.py:187"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt->symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "evidence": [
+            "src/implicit_decision_gate/orchestrator.py:249"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._reviewer_client",
+          "evidence": [
+            "src/implicit_decision_gate/orchestrator.py:229"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._reviewer_client"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt->symbol:src/implicit_decision_gate/scenario.py::option_by_id",
+          "evidence": [
+            "src/implicit_decision_gate/orchestrator.py:205"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:src/implicit_decision_gate/scenario.py::option_by_id"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit->symbol:tests/test_orchestrator.py::not_evidenced",
+          "evidence": [
+            "tests/test_orchestrator.py:181"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:tests/test_orchestrator.py::not_evidenced"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit->symbol:tests/test_orchestrator.py::orchestrator",
+          "evidence": [
+            "tests/test_orchestrator.py:177"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:tests/test_orchestrator.py::orchestrator"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CONTAINS:file:src/implicit_decision_gate/agent.py->symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+          "evidence": [
+            "src/implicit_decision_gate/agent.py:95"
+          ],
+          "kind": "CONTAINS",
+          "source_id": "file:src/implicit_decision_gate/agent.py",
+          "strength": 0.45,
+          "target_id": "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CONTAINS:file:src/implicit_decision_gate/gate.py->symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "evidence": [
+            "src/implicit_decision_gate/gate.py:221"
+          ],
+          "kind": "CONTAINS",
+          "source_id": "file:src/implicit_decision_gate/gate.py",
+          "strength": 0.45,
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CONTAINS:file:tests/test_orchestrator.py->symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+          "evidence": [
+            "tests/test_orchestrator.py:169"
+          ],
+          "kind": "CONTAINS",
+          "source_id": "file:tests/test_orchestrator.py",
+          "strength": 0.45,
+          "target_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CONTAINS:file:tests/test_reviewer.py->symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated",
+          "evidence": [
+            "tests/test_reviewer.py:80"
+          ],
+          "kind": "CONTAINS",
+          "source_id": "file:tests/test_reviewer.py",
+          "strength": 0.45,
+          "target_id": "symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated"
+        },
+        {
+          "confidence": 0.5657181930036476,
+          "count": 7,
+          "direction": "undirected",
+          "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/gate.py",
+          "evidence": [
+            "7 non-merge commits; Jaccard=0.583; commits=b12be241, 295f5b6f, 518e2570, ea18151b, 625d771e, f05fa645, 10c641b5"
+          ],
+          "kind": "CO_CHANGES",
+          "source_id": "file:src/implicit_decision_gate/cli.py",
+          "strength": 0.41565099619930523,
+          "target_id": "file:src/implicit_decision_gate/gate.py"
+        },
+        {
+          "confidence": 0.8090926391959836,
+          "count": 9,
+          "direction": "undirected",
+          "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/gate.py->file:src/implicit_decision_gate/orchestrator.py",
+          "evidence": [
+            "9 non-merge commits; Jaccard=0.818; commits=1f83830a, b12be241, 295f5b6f, ab65e7b1, ea18151b, 625d771e, f05fa645, d69ddee8, 10c641b5"
+          ],
+          "kind": "CO_CHANGES",
+          "source_id": "file:src/implicit_decision_gate/gate.py",
+          "strength": 0.6235283453608971,
+          "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+        },
+        {
+          "confidence": 0.7416682525963183,
+          "count": 9,
+          "direction": "undirected",
+          "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/gate.py->file:tests/test_cli.py",
+          "evidence": [
+            "9 non-merge commits; Jaccard=0.750; commits=1f83830a, b12be241, 295f5b6f, ab65e7b1, 518e2570, ea18151b, 625d771e, f05fa645, 10c641b5"
+          ],
+          "kind": "CO_CHANGES",
+          "source_id": "file:src/implicit_decision_gate/gate.py",
+          "strength": 0.5715676499141557,
+          "target_id": "file:tests/test_cli.py"
+        },
+        {
+          "confidence": 0.5657181930036476,
+          "count": 7,
+          "direction": "undirected",
+          "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/gate.py->file:tests/test_live.py",
+          "evidence": [
+            "7 non-merge commits; Jaccard=0.583; commits=b12be241, 295f5b6f, ab65e7b1, ea18151b, 625d771e, f05fa645, 10c641b5"
+          ],
+          "kind": "CO_CHANGES",
+          "source_id": "file:src/implicit_decision_gate/gate.py",
+          "strength": 0.41565099619930523,
+          "target_id": "file:tests/test_live.py"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/gate.py",
+          "evidence": [
+            "src/implicit_decision_gate/cli.py:13"
+          ],
+          "kind": "IMPORTS",
+          "source_id": "file:src/implicit_decision_gate/cli.py",
+          "strength": 0.65,
+          "target_id": "file:src/implicit_decision_gate/gate.py"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "IMPORTS:file:src/implicit_decision_gate/orchestrator.py->file:src/implicit_decision_gate/gate.py",
+          "evidence": [
+            "src/implicit_decision_gate/orchestrator.py:15"
+          ],
+          "kind": "IMPORTS",
+          "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+          "strength": 0.65,
+          "target_id": "file:src/implicit_decision_gate/gate.py"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "IMPORTS:file:tests/test_cli.py->file:src/implicit_decision_gate/gate.py",
+          "evidence": [
+            "tests/test_cli.py:19"
+          ],
+          "kind": "IMPORTS",
+          "source_id": "file:tests/test_cli.py",
+          "strength": 0.65,
+          "target_id": "file:src/implicit_decision_gate/gate.py"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "IMPORTS:file:tests/test_live.py->file:src/implicit_decision_gate/gate.py",
+          "evidence": [
+            "tests/test_live.py:18"
+          ],
+          "kind": "IMPORTS",
+          "source_id": "file:tests/test_live.py",
+          "strength": 0.65,
+          "target_id": "file:src/implicit_decision_gate/gate.py"
+        },
+        {
+          "confidence": 0.95,
+          "count": 2,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+          "evidence": [
+            "src/implicit_decision_gate/gate.py:228",
+            "src/implicit_decision_gate/gate.py:236"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "strength": 0.64125,
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:tests/test_cli.py::DeterministicCodexClient.review_evidence->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+          "evidence": [
+            "tests/test_cli.py:60"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:tests/test_cli.py::DeterministicCodexClient.review_evidence",
+          "strength": 0.562361234825899,
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:tests/test_evaluation.py::test_adversarial_gate_matrix->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+          "evidence": [
+            "tests/test_evaluation.py:145"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:tests/test_evaluation.py::test_adversarial_gate_matrix",
+          "strength": 0.562361234825899,
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+          "evidence": [
+            "tests/test_orchestrator.py:401"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer",
+          "strength": 0.562361234825899,
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit->symbol:tests/conftest.py::ScriptMarkerProbe",
+          "evidence": [
+            "tests/test_orchestrator.py:182"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+          "strength": 0.562361234825899,
+          "target_id": "symbol:tests/conftest.py::ScriptMarkerProbe"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit->symbol:tests/conftest.py::ScriptedCodingClient",
+          "evidence": [
+            "tests/test_orchestrator.py:175"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+          "strength": 0.562361234825899,
+          "target_id": "symbol:tests/conftest.py::ScriptedCodingClient"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit->symbol:tests/conftest.py::ScriptedReviewerClient",
+          "evidence": [
+            "tests/test_orchestrator.py:181"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+          "strength": 0.562361234825899,
+          "target_id": "symbol:tests/conftest.py::ScriptedReviewerClient"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "TESTS:symbol:tests/test_context.py::test_attempt_two_prompt_contains_only_allowed_fresh_context->symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+          "evidence": [
+            "tests/test_context.py:66"
+          ],
+          "kind": "TESTS",
+          "source_id": "symbol:tests/test_context.py::test_attempt_two_prompt_contains_only_allowed_fresh_context",
+          "strength": 0.5599418209209461,
+          "target_id": "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "TESTS:symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain->symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "evidence": [
+            "tests/test_reviewer.py:96"
+          ],
+          "kind": "TESTS",
+          "source_id": "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain",
+          "strength": 0.5599418209209461,
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result"
+        },
+        {
+          "confidence": 0.95,
+          "count": 2,
+          "direction": "directed",
+          "edge_id": "TESTS:symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated->symbol:src/implicit_decision_gate/gate.py::state_after_reviews",
+          "evidence": [
+            "tests/test_reviewer.py:82",
+            "tests/test_reviewer.py:88"
+          ],
+          "kind": "TESTS",
+          "source_id": "symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated",
+          "strength": 0.6513081790790538,
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::state_after_reviews"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "TESTS:symbol:tests/test_reviewer.py::test_reviewer_prompt_contains_brief_and_observed_policy->symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+          "evidence": [
+            "tests/test_reviewer.py:40"
+          ],
+          "kind": "TESTS",
+          "source_id": "symbol:tests/test_reviewer.py::test_reviewer_prompt_contains_brief_and_observed_policy",
+          "strength": 0.5599418209209461,
+          "target_id": "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt"
+        }
+      ],
+      "source_snippets": [
+        {
+          "location": {
+            "end_line": 240,
+            "path": "src/implicit_decision_gate/gate.py",
+            "start_line": 221
+          },
+          "node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "reviewed": true,
+          "text": "def validate_reviewer_result(brief: str, result: ReviewerResult) -> ReviewerResult:\n    \"\"\"Validate required evidence quotes as literal brief substrings.\"\"\"\n\n    if result.classification in (\n        EvidenceClassification.SUPPORTED,\n        EvidenceClassification.CONTRADICTED,\n    ) and (not result.evidence_quote or result.evidence_quote not in brief):\n        return ReviewerResult(\n            classification=EvidenceClassification.UNCERTAIN,\n            evidence_quote=None,\n        )\n    if result.classification in (\n        EvidenceClassification.NOT_EVIDENCED,\n        EvidenceClassification.UNCERTAIN,\n    ):\n        return ReviewerResult(\n            classification=result.classification,\n            evidence_quote=None,\n        )\n    return result"
+        }
+      ],
+      "strongest_paths": [
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+            "symbol:src/implicit_decision_gate/gate.py::ReviewerResult"
+          ],
+          "relationship_score": 0.5450625,
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "steps": [
+            {
+              "combined_strength": 0.64125,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.64125,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+              "to_node_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt"
+          ],
+          "relationship_score": 0.5252908607493324,
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "steps": [
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt->symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+              "to_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated",
+            "symbol:src/implicit_decision_gate/gate.py::state_after_reviews"
+          ],
+          "relationship_score": 0.4911090934288896,
+          "source_id": "symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated",
+          "steps": [
+            {
+              "combined_strength": 0.6513081790790538,
+              "contributions": [
+                {
+                  "edge_id": "TESTS:symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated->symbol:src/implicit_decision_gate/gate.py::state_after_reviews",
+                  "kind": "TESTS",
+                  "strength": 0.6513081790790538,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated",
+              "to_node_id": "symbol:src/implicit_decision_gate/gate.py::state_after_reviews"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::state_after_reviews"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+            "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain"
+          ],
+          "relationship_score": 0.4759505477828042,
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "steps": [
+            {
+              "combined_strength": 0.5599418209209461,
+              "contributions": [
+                {
+                  "edge_id": "TESTS:symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain->symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+                  "kind": "TESTS",
+                  "strength": 0.5599418209209461,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+              "to_node_id": "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain"
+            }
+          ],
+          "target_id": "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+            "symbol:tests/test_context.py::test_attempt_two_prompt_contains_only_allowed_fresh_context"
+          ],
+          "relationship_score": 0.4153163785917114,
+          "source_id": "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+          "steps": [
+            {
+              "combined_strength": 0.5599418209209461,
+              "contributions": [
+                {
+                  "edge_id": "TESTS:symbol:tests/test_context.py::test_attempt_two_prompt_contains_only_allowed_fresh_context->symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+                  "kind": "TESTS",
+                  "strength": 0.5599418209209461,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+              "to_node_id": "symbol:tests/test_context.py::test_attempt_two_prompt_contains_only_allowed_fresh_context"
+            }
+          ],
+          "target_id": "symbol:tests/test_context.py::test_attempt_two_prompt_contains_only_allowed_fresh_context"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+            "symbol:tests/test_reviewer.py::test_reviewer_prompt_contains_brief_and_observed_policy"
+          ],
+          "relationship_score": 0.4153163785917114,
+          "source_id": "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+          "steps": [
+            {
+              "combined_strength": 0.5599418209209461,
+              "contributions": [
+                {
+                  "edge_id": "TESTS:symbol:tests/test_reviewer.py::test_reviewer_prompt_contains_brief_and_observed_policy->symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+                  "kind": "TESTS",
+                  "strength": 0.5599418209209461,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+              "to_node_id": "symbol:tests/test_reviewer.py::test_reviewer_prompt_contains_brief_and_observed_policy"
+            }
+          ],
+          "target_id": "symbol:tests/test_reviewer.py::test_reviewer_prompt_contains_brief_and_observed_policy"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+            "symbol:tests/test_orchestrator.py::not_evidenced"
+          ],
+          "relationship_score": 0.39704049169948785,
+          "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+          "steps": [
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit->symbol:tests/test_orchestrator.py::not_evidenced",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+              "to_node_id": "symbol:tests/test_orchestrator.py::not_evidenced"
+            }
+          ],
+          "target_id": "symbol:tests/test_orchestrator.py::not_evidenced"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+            "symbol:tests/test_orchestrator.py::orchestrator"
+          ],
+          "relationship_score": 0.39704049169948785,
+          "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+          "steps": [
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit->symbol:tests/test_orchestrator.py::orchestrator",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+              "to_node_id": "symbol:tests/test_orchestrator.py::orchestrator"
+            }
+          ],
+          "target_id": "symbol:tests/test_orchestrator.py::orchestrator"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+            "file:src/implicit_decision_gate/gate.py"
+          ],
+          "relationship_score": 0.3825,
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "steps": [
+            {
+              "combined_strength": 0.44999999999999996,
+              "contributions": [
+                {
+                  "edge_id": "CONTAINS:file:src/implicit_decision_gate/gate.py->symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+                  "kind": "CONTAINS",
+                  "strength": 0.45,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+              "to_node_id": "file:src/implicit_decision_gate/gate.py"
+            }
+          ],
+          "target_id": "file:src/implicit_decision_gate/gate.py"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+            "symbol:tests/conftest.py::ScriptedCodingClient"
+          ],
+          "relationship_score": 0.3613010775383957,
+          "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+          "steps": [
+            {
+              "combined_strength": 0.562361234825899,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit->symbol:tests/conftest.py::ScriptedCodingClient",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.562361234825899,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+              "to_node_id": "symbol:tests/conftest.py::ScriptedCodingClient"
+            }
+          ],
+          "target_id": "symbol:tests/conftest.py::ScriptedCodingClient"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+            "symbol:tests/conftest.py::ScriptedReviewerClient"
+          ],
+          "relationship_score": 0.3613010775383957,
+          "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+          "steps": [
+            {
+              "combined_strength": 0.562361234825899,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit->symbol:tests/conftest.py::ScriptedReviewerClient",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.562361234825899,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+              "to_node_id": "symbol:tests/conftest.py::ScriptedReviewerClient"
+            }
+          ],
+          "target_id": "symbol:tests/conftest.py::ScriptedReviewerClient"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+            "symbol:tests/conftest.py::ScriptMarkerProbe"
+          ],
+          "relationship_score": 0.3613010775383957,
+          "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+          "steps": [
+            {
+              "combined_strength": 0.562361234825899,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit->symbol:tests/conftest.py::ScriptMarkerProbe",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.562361234825899,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+              "to_node_id": "symbol:tests/conftest.py::ScriptMarkerProbe"
+            }
+          ],
+          "target_id": "symbol:tests/conftest.py::ScriptMarkerProbe"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated",
+            "file:tests/test_reviewer.py"
+          ],
+          "relationship_score": 0.339315702062105,
+          "source_id": "symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated",
+          "steps": [
+            {
+              "combined_strength": 0.44999999999999996,
+              "contributions": [
+                {
+                  "edge_id": "CONTAINS:file:tests/test_reviewer.py->symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated",
+                  "kind": "CONTAINS",
+                  "strength": 0.45,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated",
+              "to_node_id": "file:tests/test_reviewer.py"
+            }
+          ],
+          "target_id": "file:tests/test_reviewer.py"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+            "file:src/implicit_decision_gate/agent.py"
+          ],
+          "relationship_score": 0.3337710515333271,
+          "source_id": "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+          "steps": [
+            {
+              "combined_strength": 0.44999999999999996,
+              "contributions": [
+                {
+                  "edge_id": "CONTAINS:file:src/implicit_decision_gate/agent.py->symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+                  "kind": "CONTAINS",
+                  "strength": 0.45,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+              "to_node_id": "file:src/implicit_decision_gate/agent.py"
+            }
+          ],
+          "target_id": "file:src/implicit_decision_gate/agent.py"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+            "file:tests/test_orchestrator.py"
+          ],
+          "relationship_score": 0.28911218416862033,
+          "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+          "steps": [
+            {
+              "combined_strength": 0.44999999999999996,
+              "contributions": [
+                {
+                  "edge_id": "CONTAINS:file:tests/test_orchestrator.py->symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+                  "kind": "CONTAINS",
+                  "strength": 0.45,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+              "to_node_id": "file:tests/test_orchestrator.py"
+            }
+          ],
+          "target_id": "file:tests/test_orchestrator.py"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+            "file:src/implicit_decision_gate/gate.py",
+            "file:src/implicit_decision_gate/orchestrator.py"
+          ],
+          "relationship_score": 0.2822848786499116,
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "steps": [
+            {
+              "combined_strength": 0.44999999999999996,
+              "contributions": [
+                {
+                  "edge_id": "CONTAINS:file:src/implicit_decision_gate/gate.py->symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+                  "kind": "CONTAINS",
+                  "strength": 0.45,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+              "to_node_id": "file:src/implicit_decision_gate/gate.py"
+            },
+            {
+              "combined_strength": 0.868234920876314,
+              "contributions": [
+                {
+                  "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/gate.py->file:src/implicit_decision_gate/orchestrator.py",
+                  "kind": "CO_CHANGES",
+                  "strength": 0.6235283453608971,
+                  "traversal_direction": "undirected"
+                },
+                {
+                  "edge_id": "IMPORTS:file:src/implicit_decision_gate/orchestrator.py->file:src/implicit_decision_gate/gate.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/gate.py",
+              "to_node_id": "file:src/implicit_decision_gate/orchestrator.py"
+            }
+          ],
+          "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+            "file:src/implicit_decision_gate/gate.py",
+            "file:tests/test_cli.py"
+          ],
+          "relationship_score": 0.27637207626241894,
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "steps": [
+            {
+              "combined_strength": 0.44999999999999996,
+              "contributions": [
+                {
+                  "edge_id": "CONTAINS:file:src/implicit_decision_gate/gate.py->symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+                  "kind": "CONTAINS",
+                  "strength": 0.45,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+              "to_node_id": "file:src/implicit_decision_gate/gate.py"
+            },
+            {
+              "combined_strength": 0.8500486774699545,
+              "contributions": [
+                {
+                  "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/gate.py->file:tests/test_cli.py",
+                  "kind": "CO_CHANGES",
+                  "strength": 0.5715676499141557,
+                  "traversal_direction": "undirected"
+                },
+                {
+                  "edge_id": "IMPORTS:file:tests/test_cli.py->file:src/implicit_decision_gate/gate.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/gate.py",
+              "to_node_id": "file:tests/test_cli.py"
+            }
+          ],
+          "target_id": "file:tests/test_cli.py"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt"
+          ],
+          "relationship_score": 0.27593048838677453,
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "steps": [
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt->symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+              "to_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt"
+            },
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+              "to_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+            "symbol:src/implicit_decision_gate/scenario.py::option_by_id"
+          ],
+          "relationship_score": 0.27593048838677453,
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "steps": [
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt->symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+              "to_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt"
+            },
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt->symbol:src/implicit_decision_gate/scenario.py::option_by_id",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+              "to_node_id": "symbol:src/implicit_decision_gate/scenario.py::option_by_id"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/scenario.py::option_by_id"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._reviewer_client"
+          ],
+          "relationship_score": 0.27593048838677453,
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "steps": [
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt->symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+              "to_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt"
+            },
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._reviewer_client",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+              "to_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._reviewer_client"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._reviewer_client"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+            "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+            "symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer"
+          ],
+          "relationship_score": 0.2605437174736978,
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "steps": [
+            {
+              "combined_strength": 0.64125,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.64125,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+              "to_node_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult"
+            },
+            {
+              "combined_strength": 0.562361234825899,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.562361234825899,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+              "to_node_id": "symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer"
+            }
+          ],
+          "target_id": "symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+            "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+            "symbol:tests/test_evaluation.py::test_adversarial_gate_matrix"
+          ],
+          "relationship_score": 0.2605437174736978,
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "steps": [
+            {
+              "combined_strength": 0.64125,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.64125,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+              "to_node_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult"
+            },
+            {
+              "combined_strength": 0.562361234825899,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:tests/test_evaluation.py::test_adversarial_gate_matrix->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.562361234825899,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+              "to_node_id": "symbol:tests/test_evaluation.py::test_adversarial_gate_matrix"
+            }
+          ],
+          "target_id": "symbol:tests/test_evaluation.py::test_adversarial_gate_matrix"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+            "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+            "symbol:tests/test_cli.py::DeterministicCodexClient.review_evidence"
+          ],
+          "relationship_score": 0.2605437174736978,
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "steps": [
+            {
+              "combined_strength": 0.64125,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.64125,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+              "to_node_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult"
+            },
+            {
+              "combined_strength": 0.562361234825899,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:tests/test_cli.py::DeterministicCodexClient.review_evidence->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.562361234825899,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+              "to_node_id": "symbol:tests/test_cli.py::DeterministicCodexClient.review_evidence"
+            }
+          ],
+          "target_id": "symbol:tests/test_cli.py::DeterministicCodexClient.review_evidence"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+            "file:src/implicit_decision_gate/gate.py",
+            "file:tests/test_live.py"
+          ],
+          "relationship_score": 0.25862973554875474,
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "steps": [
+            {
+              "combined_strength": 0.44999999999999996,
+              "contributions": [
+                {
+                  "edge_id": "CONTAINS:file:src/implicit_decision_gate/gate.py->symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+                  "kind": "CONTAINS",
+                  "strength": 0.45,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+              "to_node_id": "file:src/implicit_decision_gate/gate.py"
+            },
+            {
+              "combined_strength": 0.7954778486697569,
+              "contributions": [
+                {
+                  "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/gate.py->file:tests/test_live.py",
+                  "kind": "CO_CHANGES",
+                  "strength": 0.41565099619930523,
+                  "traversal_direction": "undirected"
+                },
+                {
+                  "edge_id": "IMPORTS:file:tests/test_live.py->file:src/implicit_decision_gate/gate.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/gate.py",
+              "to_node_id": "file:tests/test_live.py"
+            }
+          ],
+          "target_id": "file:tests/test_live.py"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+            "file:src/implicit_decision_gate/gate.py",
+            "file:src/implicit_decision_gate/cli.py"
+          ],
+          "relationship_score": 0.25862973554875474,
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "steps": [
+            {
+              "combined_strength": 0.44999999999999996,
+              "contributions": [
+                {
+                  "edge_id": "CONTAINS:file:src/implicit_decision_gate/gate.py->symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+                  "kind": "CONTAINS",
+                  "strength": 0.45,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+              "to_node_id": "file:src/implicit_decision_gate/gate.py"
+            },
+            {
+              "combined_strength": 0.7954778486697569,
+              "contributions": [
+                {
+                  "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/gate.py",
+                  "kind": "CO_CHANGES",
+                  "strength": 0.41565099619930523,
+                  "traversal_direction": "undirected"
+                },
+                {
+                  "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/gate.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/gate.py",
+              "to_node_id": "file:src/implicit_decision_gate/cli.py"
+            }
+          ],
+          "target_id": "file:src/implicit_decision_gate/cli.py"
+        }
+      ]
+    },
+    "markdown": "# Code context\n\nQuery: How are reviewer classifications checked against literal evidence from the brief?\n\nRepository: `implicit-decision-gate` at `2fdbb3deab2967a545d8a898a17a380974e6bb17`.\n\n## Ranked anchors\n\n- 1. `validate_reviewer_result` at `src/implicit_decision_gate/gate.py:221` with direct score 0.1518\n- 2. `test_review_classifications_are_aggregated` at `tests/test_reviewer.py:80` with direct score 0.1346\n- 3. `build_reviewer_prompt` at `src/implicit_decision_gate/agent.py:95` with direct score 0.1324\n- 4. `EvidenceClassification` at `src/implicit_decision_gate/gate.py:37` with direct score 0.1176\n- 5. `test_start_reads_the_brief_from_the_pinned_commit` at `tests/test_orchestrator.py:169` with direct score 0.1147\n- 6. `ReviewerClient.review_evidence` at `src/implicit_decision_gate/agent.py:49` with direct score 0.0971\n\n## Related nodes\n\n- 1. `ReviewerResult` at `src/implicit_decision_gate/gate.py:65` with relationship score 0.5451\n- 2. `Orchestrator._finish_first_attempt` at `src/implicit_decision_gate/orchestrator.py:192` with relationship score 0.5253\n- 3. `state_after_reviews` at `src/implicit_decision_gate/gate.py:243` with relationship score 0.4911\n- 4. `test_fabricated_evidence_quote_becomes_uncertain` at `tests/test_reviewer.py:95` with relationship score 0.4760\n- 5. `test_attempt_two_prompt_contains_only_allowed_fresh_context` at `tests/test_context.py:65` with relationship score 0.4153\n- 6. `test_reviewer_prompt_contains_brief_and_observed_policy` at `tests/test_reviewer.py:37` with relationship score 0.4153\n- 7. `not_evidenced` at `tests/test_orchestrator.py:72` with relationship score 0.3970\n- 8. `orchestrator` at `tests/test_orchestrator.py:92` with relationship score 0.3970\n- 9. `implicit_decision_gate.gate` at `src/implicit_decision_gate/gate.py:1` with relationship score 0.3825\n- 10. `ScriptedCodingClient` at `tests/conftest.py:61` with relationship score 0.3613\n- 11. `ScriptedReviewerClient` at `tests/conftest.py:94` with relationship score 0.3613\n- 12. `ScriptMarkerProbe` at `tests/conftest.py:173` with relationship score 0.3613\n- 13. `tests.test_reviewer` at `tests/test_reviewer.py:1` with relationship score 0.3393\n- 14. `implicit_decision_gate.agent` at `src/implicit_decision_gate/agent.py:1` with relationship score 0.3338\n- 15. `tests.test_orchestrator` at `tests/test_orchestrator.py:1` with relationship score 0.2891\n- 16. `implicit_decision_gate.orchestrator` at `src/implicit_decision_gate/orchestrator.py:1` with relationship score 0.2823\n- 17. `tests.test_cli` at `tests/test_cli.py:1` with relationship score 0.2764\n- 18. `Orchestrator._execute_attempt` at `src/implicit_decision_gate/orchestrator.py:118` with relationship score 0.2759\n- 19. `option_by_id` at `src/implicit_decision_gate/scenario.py:84` with relationship score 0.2759\n- 20. `Orchestrator._reviewer_client` at `src/implicit_decision_gate/orchestrator.py:341` with relationship score 0.2759\n- 21. `test_retry_verifies_supported_outcome_while_honoring_owner_answer` at `tests/test_orchestrator.py:383` with relationship score 0.2605\n- 22. `test_adversarial_gate_matrix` at `tests/test_evaluation.py:131` with relationship score 0.2605\n- 23. `DeterministicCodexClient.review_evidence` at `tests/test_cli.py:58` with relationship score 0.2605\n- 24. `tests.test_live` at `tests/test_live.py:1` with relationship score 0.2586\n- 25. `implicit_decision_gate.cli` at `src/implicit_decision_gate/cli.py:1` with relationship score 0.2586\n\n## Strongest paths\n\n- symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result -[combined 0.6412 from `INSTANTIATES` forward 0.6412]-> symbol:src/implicit_decision_gate/gate.py::ReviewerResult with relationship score 0.5451\n- symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result -[combined 0.6180 from `CALLS` reverse 0.6180]-> symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt with relationship score 0.5253\n- symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated -[combined 0.6513 from `TESTS` forward 0.6513]-> symbol:src/implicit_decision_gate/gate.py::state_after_reviews with relationship score 0.4911\n- symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result -[combined 0.5599 from `TESTS` reverse 0.5599]-> symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain with relationship score 0.4760\n- symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt -[combined 0.5599 from `TESTS` reverse 0.5599]-> symbol:tests/test_context.py::test_attempt_two_prompt_contains_only_allowed_fresh_context with relationship score 0.4153\n- symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt -[combined 0.5599 from `TESTS` reverse 0.5599]-> symbol:tests/test_reviewer.py::test_reviewer_prompt_contains_brief_and_observed_policy with relationship score 0.4153\n- symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit -[combined 0.6180 from `CALLS` forward 0.6180]-> symbol:tests/test_orchestrator.py::not_evidenced with relationship score 0.3970\n- symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit -[combined 0.6180 from `CALLS` forward 0.6180]-> symbol:tests/test_orchestrator.py::orchestrator with relationship score 0.3970\n- symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result -[combined 0.4500 from `CONTAINS` reverse 0.4500]-> file:src/implicit_decision_gate/gate.py with relationship score 0.3825\n- symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit -[combined 0.5624 from `INSTANTIATES` forward 0.5624]-> symbol:tests/conftest.py::ScriptedCodingClient with relationship score 0.3613\n- symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit -[combined 0.5624 from `INSTANTIATES` forward 0.5624]-> symbol:tests/conftest.py::ScriptedReviewerClient with relationship score 0.3613\n- symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit -[combined 0.5624 from `INSTANTIATES` forward 0.5624]-> symbol:tests/conftest.py::ScriptMarkerProbe with relationship score 0.3613\n- symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated -[combined 0.4500 from `CONTAINS` reverse 0.4500]-> file:tests/test_reviewer.py with relationship score 0.3393\n- symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt -[combined 0.4500 from `CONTAINS` reverse 0.4500]-> file:src/implicit_decision_gate/agent.py with relationship score 0.3338\n- symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit -[combined 0.4500 from `CONTAINS` reverse 0.4500]-> file:tests/test_orchestrator.py with relationship score 0.2891\n- symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result -[combined 0.4500 from `CONTAINS` reverse 0.4500]-> file:src/implicit_decision_gate/gate.py -[combined 0.8682 from `CO_CHANGES` undirected 0.6235, `IMPORTS` reverse 0.6500]-> file:src/implicit_decision_gate/orchestrator.py with relationship score 0.2823\n- symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result -[combined 0.4500 from `CONTAINS` reverse 0.4500]-> file:src/implicit_decision_gate/gate.py -[combined 0.8500 from `CO_CHANGES` undirected 0.5716, `IMPORTS` reverse 0.6500]-> file:tests/test_cli.py with relationship score 0.2764\n- symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result -[combined 0.6180 from `CALLS` reverse 0.6180]-> symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt -[combined 0.6180 from `CALLS` reverse 0.6180]-> symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt with relationship score 0.2759\n- symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result -[combined 0.6180 from `CALLS` reverse 0.6180]-> symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt -[combined 0.6180 from `CALLS` forward 0.6180]-> symbol:src/implicit_decision_gate/scenario.py::option_by_id with relationship score 0.2759\n- symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result -[combined 0.6180 from `CALLS` reverse 0.6180]-> symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt -[combined 0.6180 from `CALLS` forward 0.6180]-> symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._reviewer_client with relationship score 0.2759\n- symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result -[combined 0.6412 from `INSTANTIATES` forward 0.6412]-> symbol:src/implicit_decision_gate/gate.py::ReviewerResult -[combined 0.5624 from `INSTANTIATES` reverse 0.5624]-> symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer with relationship score 0.2605\n- symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result -[combined 0.6412 from `INSTANTIATES` forward 0.6412]-> symbol:src/implicit_decision_gate/gate.py::ReviewerResult -[combined 0.5624 from `INSTANTIATES` reverse 0.5624]-> symbol:tests/test_evaluation.py::test_adversarial_gate_matrix with relationship score 0.2605\n- symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result -[combined 0.6412 from `INSTANTIATES` forward 0.6412]-> symbol:src/implicit_decision_gate/gate.py::ReviewerResult -[combined 0.5624 from `INSTANTIATES` reverse 0.5624]-> symbol:tests/test_cli.py::DeterministicCodexClient.review_evidence with relationship score 0.2605\n- symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result -[combined 0.4500 from `CONTAINS` reverse 0.4500]-> file:src/implicit_decision_gate/gate.py -[combined 0.7955 from `CO_CHANGES` undirected 0.4157, `IMPORTS` reverse 0.6500]-> file:tests/test_live.py with relationship score 0.2586\n- symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result -[combined 0.4500 from `CONTAINS` reverse 0.4500]-> file:src/implicit_decision_gate/gate.py -[combined 0.7955 from `CO_CHANGES` undirected 0.4157, `IMPORTS` reverse 0.6500]-> file:src/implicit_decision_gate/cli.py with relationship score 0.2586\n\n## Reviewed source snippets\n\n### symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result\n\nLocation: `src/implicit_decision_gate/gate.py:221`\n\n```\ndef validate_reviewer_result(brief: str, result: ReviewerResult) -> ReviewerResult:\n    \"\"\"Validate required evidence quotes as literal brief substrings.\"\"\"\n\n    if result.classification in (\n        EvidenceClassification.SUPPORTED,\n        EvidenceClassification.CONTRADICTED,\n    ) and (not result.evidence_quote or result.evidence_quote not in brief):\n        return ReviewerResult(\n            classification=EvidenceClassification.UNCERTAIN,\n            evidence_quote=None,\n        )\n    if result.classification in (\n        EvidenceClassification.NOT_EVIDENCED,\n        EvidenceClassification.UNCERTAIN,\n    ):\n        return ReviewerResult(\n            classification=result.classification,\n            evidence_quote=None,\n        )\n    return result\n```\n"
+  },
+  "description": "Recorded retrieval for a manually reviewed benchmark question with answer and supporting-context judgments.",
+  "edges": [
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+      "evidence": [
+        "src/implicit_decision_gate/orchestrator.py:187"
+      ],
+      "id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+      "kind": "CALLS",
+      "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt->symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+      "evidence": [
+        "src/implicit_decision_gate/orchestrator.py:249"
+      ],
+      "id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt->symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+      "kind": "CALLS",
+      "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._reviewer_client",
+      "evidence": [
+        "src/implicit_decision_gate/orchestrator.py:229"
+      ],
+      "id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._reviewer_client",
+      "kind": "CALLS",
+      "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._reviewer_client",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt->symbol:src/implicit_decision_gate/scenario.py::option_by_id",
+      "evidence": [
+        "src/implicit_decision_gate/orchestrator.py:205"
+      ],
+      "id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt->symbol:src/implicit_decision_gate/scenario.py::option_by_id",
+      "kind": "CALLS",
+      "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:src/implicit_decision_gate/scenario.py::option_by_id",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit->symbol:tests/test_orchestrator.py::not_evidenced",
+      "evidence": [
+        "tests/test_orchestrator.py:181"
+      ],
+      "id": "CALLS:symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit->symbol:tests/test_orchestrator.py::not_evidenced",
+      "kind": "CALLS",
+      "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:tests/test_orchestrator.py::not_evidenced",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit->symbol:tests/test_orchestrator.py::orchestrator",
+      "evidence": [
+        "tests/test_orchestrator.py:177"
+      ],
+      "id": "CALLS:symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit->symbol:tests/test_orchestrator.py::orchestrator",
+      "kind": "CALLS",
+      "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:tests/test_orchestrator.py::orchestrator",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CONTAINS:file:src/implicit_decision_gate/agent.py->symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+      "evidence": [
+        "src/implicit_decision_gate/agent.py:95"
+      ],
+      "id": "CONTAINS:file:src/implicit_decision_gate/agent.py->symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+      "kind": "CONTAINS",
+      "source_id": "file:src/implicit_decision_gate/agent.py",
+      "strength": 0.45,
+      "target_id": "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+      "type": "CONTAINS"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CONTAINS:file:src/implicit_decision_gate/gate.py->symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+      "evidence": [
+        "src/implicit_decision_gate/gate.py:221"
+      ],
+      "id": "CONTAINS:file:src/implicit_decision_gate/gate.py->symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+      "kind": "CONTAINS",
+      "source_id": "file:src/implicit_decision_gate/gate.py",
+      "strength": 0.45,
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+      "type": "CONTAINS"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CONTAINS:file:tests/test_orchestrator.py->symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+      "evidence": [
+        "tests/test_orchestrator.py:169"
+      ],
+      "id": "CONTAINS:file:tests/test_orchestrator.py->symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+      "kind": "CONTAINS",
+      "source_id": "file:tests/test_orchestrator.py",
+      "strength": 0.45,
+      "target_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+      "type": "CONTAINS"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CONTAINS:file:tests/test_reviewer.py->symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated",
+      "evidence": [
+        "tests/test_reviewer.py:80"
+      ],
+      "id": "CONTAINS:file:tests/test_reviewer.py->symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated",
+      "kind": "CONTAINS",
+      "source_id": "file:tests/test_reviewer.py",
+      "strength": 0.45,
+      "target_id": "symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated",
+      "type": "CONTAINS"
+    },
+    {
+      "confidence": 0.5657181930036476,
+      "count": 7,
+      "direction": "undirected",
+      "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/gate.py",
+      "evidence": [
+        "7 non-merge commits; Jaccard=0.583; commits=b12be241, 295f5b6f, 518e2570, ea18151b, 625d771e, f05fa645, 10c641b5"
+      ],
+      "id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/gate.py",
+      "kind": "CO_CHANGES",
+      "source_id": "file:src/implicit_decision_gate/cli.py",
+      "strength": 0.41565099619930523,
+      "target_id": "file:src/implicit_decision_gate/gate.py",
+      "type": "CO_CHANGES"
+    },
+    {
+      "confidence": 0.8090926391959836,
+      "count": 9,
+      "direction": "undirected",
+      "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/gate.py->file:src/implicit_decision_gate/orchestrator.py",
+      "evidence": [
+        "9 non-merge commits; Jaccard=0.818; commits=1f83830a, b12be241, 295f5b6f, ab65e7b1, ea18151b, 625d771e, f05fa645, d69ddee8, 10c641b5"
+      ],
+      "id": "CO_CHANGES:file:src/implicit_decision_gate/gate.py->file:src/implicit_decision_gate/orchestrator.py",
+      "kind": "CO_CHANGES",
+      "source_id": "file:src/implicit_decision_gate/gate.py",
+      "strength": 0.6235283453608971,
+      "target_id": "file:src/implicit_decision_gate/orchestrator.py",
+      "type": "CO_CHANGES"
+    },
+    {
+      "confidence": 0.7416682525963183,
+      "count": 9,
+      "direction": "undirected",
+      "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/gate.py->file:tests/test_cli.py",
+      "evidence": [
+        "9 non-merge commits; Jaccard=0.750; commits=1f83830a, b12be241, 295f5b6f, ab65e7b1, 518e2570, ea18151b, 625d771e, f05fa645, 10c641b5"
+      ],
+      "id": "CO_CHANGES:file:src/implicit_decision_gate/gate.py->file:tests/test_cli.py",
+      "kind": "CO_CHANGES",
+      "source_id": "file:src/implicit_decision_gate/gate.py",
+      "strength": 0.5715676499141557,
+      "target_id": "file:tests/test_cli.py",
+      "type": "CO_CHANGES"
+    },
+    {
+      "confidence": 0.5657181930036476,
+      "count": 7,
+      "direction": "undirected",
+      "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/gate.py->file:tests/test_live.py",
+      "evidence": [
+        "7 non-merge commits; Jaccard=0.583; commits=b12be241, 295f5b6f, ab65e7b1, ea18151b, 625d771e, f05fa645, 10c641b5"
+      ],
+      "id": "CO_CHANGES:file:src/implicit_decision_gate/gate.py->file:tests/test_live.py",
+      "kind": "CO_CHANGES",
+      "source_id": "file:src/implicit_decision_gate/gate.py",
+      "strength": 0.41565099619930523,
+      "target_id": "file:tests/test_live.py",
+      "type": "CO_CHANGES"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/gate.py",
+      "evidence": [
+        "src/implicit_decision_gate/cli.py:13"
+      ],
+      "id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/gate.py",
+      "kind": "IMPORTS",
+      "source_id": "file:src/implicit_decision_gate/cli.py",
+      "strength": 0.65,
+      "target_id": "file:src/implicit_decision_gate/gate.py",
+      "type": "IMPORTS"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "IMPORTS:file:src/implicit_decision_gate/orchestrator.py->file:src/implicit_decision_gate/gate.py",
+      "evidence": [
+        "src/implicit_decision_gate/orchestrator.py:15"
+      ],
+      "id": "IMPORTS:file:src/implicit_decision_gate/orchestrator.py->file:src/implicit_decision_gate/gate.py",
+      "kind": "IMPORTS",
+      "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+      "strength": 0.65,
+      "target_id": "file:src/implicit_decision_gate/gate.py",
+      "type": "IMPORTS"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "IMPORTS:file:tests/test_cli.py->file:src/implicit_decision_gate/gate.py",
+      "evidence": [
+        "tests/test_cli.py:19"
+      ],
+      "id": "IMPORTS:file:tests/test_cli.py->file:src/implicit_decision_gate/gate.py",
+      "kind": "IMPORTS",
+      "source_id": "file:tests/test_cli.py",
+      "strength": 0.65,
+      "target_id": "file:src/implicit_decision_gate/gate.py",
+      "type": "IMPORTS"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "IMPORTS:file:tests/test_live.py->file:src/implicit_decision_gate/gate.py",
+      "evidence": [
+        "tests/test_live.py:18"
+      ],
+      "id": "IMPORTS:file:tests/test_live.py->file:src/implicit_decision_gate/gate.py",
+      "kind": "IMPORTS",
+      "source_id": "file:tests/test_live.py",
+      "strength": 0.65,
+      "target_id": "file:src/implicit_decision_gate/gate.py",
+      "type": "IMPORTS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 2,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+      "evidence": [
+        "src/implicit_decision_gate/gate.py:228",
+        "src/implicit_decision_gate/gate.py:236"
+      ],
+      "id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+      "strength": 0.64125,
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:tests/test_cli.py::DeterministicCodexClient.review_evidence->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+      "evidence": [
+        "tests/test_cli.py:60"
+      ],
+      "id": "INSTANTIATES:symbol:tests/test_cli.py::DeterministicCodexClient.review_evidence->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:tests/test_cli.py::DeterministicCodexClient.review_evidence",
+      "strength": 0.562361234825899,
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:tests/test_evaluation.py::test_adversarial_gate_matrix->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+      "evidence": [
+        "tests/test_evaluation.py:145"
+      ],
+      "id": "INSTANTIATES:symbol:tests/test_evaluation.py::test_adversarial_gate_matrix->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:tests/test_evaluation.py::test_adversarial_gate_matrix",
+      "strength": 0.562361234825899,
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+      "evidence": [
+        "tests/test_orchestrator.py:401"
+      ],
+      "id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer",
+      "strength": 0.562361234825899,
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit->symbol:tests/conftest.py::ScriptMarkerProbe",
+      "evidence": [
+        "tests/test_orchestrator.py:182"
+      ],
+      "id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit->symbol:tests/conftest.py::ScriptMarkerProbe",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+      "strength": 0.562361234825899,
+      "target_id": "symbol:tests/conftest.py::ScriptMarkerProbe",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit->symbol:tests/conftest.py::ScriptedCodingClient",
+      "evidence": [
+        "tests/test_orchestrator.py:175"
+      ],
+      "id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit->symbol:tests/conftest.py::ScriptedCodingClient",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+      "strength": 0.562361234825899,
+      "target_id": "symbol:tests/conftest.py::ScriptedCodingClient",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit->symbol:tests/conftest.py::ScriptedReviewerClient",
+      "evidence": [
+        "tests/test_orchestrator.py:181"
+      ],
+      "id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit->symbol:tests/conftest.py::ScriptedReviewerClient",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+      "strength": 0.562361234825899,
+      "target_id": "symbol:tests/conftest.py::ScriptedReviewerClient",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "TESTS:symbol:tests/test_context.py::test_attempt_two_prompt_contains_only_allowed_fresh_context->symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+      "evidence": [
+        "tests/test_context.py:66"
+      ],
+      "id": "TESTS:symbol:tests/test_context.py::test_attempt_two_prompt_contains_only_allowed_fresh_context->symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+      "kind": "TESTS",
+      "source_id": "symbol:tests/test_context.py::test_attempt_two_prompt_contains_only_allowed_fresh_context",
+      "strength": 0.5599418209209461,
+      "target_id": "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+      "type": "TESTS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "TESTS:symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain->symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+      "evidence": [
+        "tests/test_reviewer.py:96"
+      ],
+      "id": "TESTS:symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain->symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+      "kind": "TESTS",
+      "source_id": "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain",
+      "strength": 0.5599418209209461,
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+      "type": "TESTS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 2,
+      "direction": "directed",
+      "edge_id": "TESTS:symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated->symbol:src/implicit_decision_gate/gate.py::state_after_reviews",
+      "evidence": [
+        "tests/test_reviewer.py:82",
+        "tests/test_reviewer.py:88"
+      ],
+      "id": "TESTS:symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated->symbol:src/implicit_decision_gate/gate.py::state_after_reviews",
+      "kind": "TESTS",
+      "source_id": "symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated",
+      "strength": 0.6513081790790538,
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::state_after_reviews",
+      "type": "TESTS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "TESTS:symbol:tests/test_reviewer.py::test_reviewer_prompt_contains_brief_and_observed_policy->symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+      "evidence": [
+        "tests/test_reviewer.py:40"
+      ],
+      "id": "TESTS:symbol:tests/test_reviewer.py::test_reviewer_prompt_contains_brief_and_observed_policy->symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+      "kind": "TESTS",
+      "source_id": "symbol:tests/test_reviewer.py::test_reviewer_prompt_contains_brief_and_observed_policy",
+      "strength": 0.5599418209209461,
+      "target_id": "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+      "type": "TESTS"
+    }
+  ],
+  "id": "reviewer-evidence",
+  "label": "Reviewer Evidence",
+  "nodes": [
+    {
+      "direct_score": 0.15177999443065207,
+      "end_line": 240,
+      "id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+      "kind": "function",
+      "label": "validate_reviewer_result",
+      "language": "python",
+      "pagerank_score": 0.039584110483033084,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank_group": "anchor",
+      "relationship_score": 0.0,
+      "score": 0.15177999443065207,
+      "start_line": 221,
+      "x": 481.799,
+      "y": 304.619
+    },
+    {
+      "direct_score": 0.13464401403717408,
+      "end_line": 92,
+      "id": "symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated",
+      "kind": "test",
+      "label": "test_review_classifications_are_aggregated",
+      "language": "python",
+      "pagerank_score": 0.03346487454635987,
+      "path": "tests/test_reviewer.py",
+      "rank_group": "anchor",
+      "relationship_score": 0.0,
+      "score": 0.13464401403717408,
+      "start_line": 80,
+      "x": 441.076,
+      "y": 279.857
+    },
+    {
+      "direct_score": 0.13244383880481378,
+      "end_line": 106,
+      "id": "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+      "kind": "function",
+      "label": "build_reviewer_prompt",
+      "language": "python",
+      "pagerank_score": 0.03626804960468416,
+      "path": "src/implicit_decision_gate/agent.py",
+      "rank_group": "anchor",
+      "relationship_score": 0.0,
+      "score": 0.13244383880481378,
+      "start_line": 95,
+      "x": 445.911,
+      "y": 311.396
+    },
+    {
+      "direct_score": 0.11760568469647942,
+      "end_line": 43,
+      "id": "symbol:src/implicit_decision_gate/gate.py::EvidenceClassification",
+      "kind": "class",
+      "label": "EvidenceClassification",
+      "language": "python",
+      "pagerank_score": 0.024556396740878134,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank_group": "anchor",
+      "relationship_score": 0.0,
+      "score": 0.11760568469647942,
+      "start_line": 37,
+      "x": 475.208,
+      "y": 253.934
+    },
+    {
+      "direct_score": 0.11472273386391334,
+      "end_line": 186,
+      "id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+      "kind": "test",
+      "label": "test_start_reads_the_brief_from_the_pinned_commit",
+      "language": "python",
+      "pagerank_score": 0.026804060873087468,
+      "path": "tests/test_orchestrator.py",
+      "rank_group": "anchor",
+      "relationship_score": 0.0,
+      "score": 0.11472273386391334,
+      "start_line": 169,
+      "x": 572.977,
+      "y": 278.213
+    },
+    {
+      "direct_score": 0.09705836076656268,
+      "end_line": 50,
+      "id": "symbol:src/implicit_decision_gate/agent.py::ReviewerClient.review_evidence",
+      "kind": "method",
+      "label": "ReviewerClient.review_evidence",
+      "language": "python",
+      "pagerank_score": 0.028973869525444024,
+      "path": "src/implicit_decision_gate/agent.py",
+      "rank_group": "anchor",
+      "relationship_score": 0.0,
+      "score": 0.09705836076656268,
+      "start_line": 49,
+      "x": 559.066,
+      "y": 540.0
+    },
+    {
+      "direct_score": 0.08170407210731466,
+      "end_line": 69,
+      "id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+      "kind": "class",
+      "label": "ReviewerResult",
+      "language": "python",
+      "pagerank_score": 0.017421402547465305,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank_group": "related",
+      "relationship_score": 0.5450625,
+      "score": 0.5450625,
+      "start_line": 65,
+      "x": 532.913,
+      "y": 299.41
+    },
+    {
+      "direct_score": 0.04553741929715873,
+      "end_line": 264,
+      "id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+      "kind": "method",
+      "label": "Orchestrator._finish_first_attempt",
+      "language": "python",
+      "pagerank_score": 0.02952886877760822,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.5252908607493324,
+      "score": 0.5252908607493324,
+      "start_line": 192,
+      "x": 423.363,
+      "y": 309.512
+    },
+    {
+      "direct_score": 0.09218091161184895,
+      "end_line": 253,
+      "id": "symbol:src/implicit_decision_gate/gate.py::state_after_reviews",
+      "kind": "function",
+      "label": "state_after_reviews",
+      "language": "python",
+      "pagerank_score": 0.0229368034813721,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank_group": "related",
+      "relationship_score": 0.4911090934288896,
+      "score": 0.4911090934288896,
+      "start_line": 243,
+      "x": 442.587,
+      "y": 291.448
+    },
+    {
+      "direct_score": 0.07244146119517673,
+      "end_line": 107,
+      "id": "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain",
+      "kind": "test",
+      "label": "test_fabricated_evidence_quote_becomes_uncertain",
+      "language": "python",
+      "pagerank_score": 0.011589172514865641,
+      "path": "tests/test_reviewer.py",
+      "rank_group": "related",
+      "relationship_score": 0.4759505477828042,
+      "score": 0.4759505477828042,
+      "start_line": 95,
+      "x": 505.877,
+      "y": 305.994
+    },
+    {
+      "direct_score": 0.03290542092895006,
+      "end_line": 84,
+      "id": "symbol:tests/test_context.py::test_attempt_two_prompt_contains_only_allowed_fresh_context",
+      "kind": "test",
+      "label": "test_attempt_two_prompt_contains_only_allowed_fresh_context",
+      "language": "python",
+      "pagerank_score": 0.010330955775485493,
+      "path": "tests/test_context.py",
+      "rank_group": "related",
+      "relationship_score": 0.4153163785917114,
+      "score": 0.4153163785917114,
+      "start_line": 65,
+      "x": 431.982,
+      "y": 333.098
+    },
+    {
+      "direct_score": 0.0655789078744945,
+      "end_line": 44,
+      "id": "symbol:tests/test_reviewer.py::test_reviewer_prompt_contains_brief_and_observed_policy",
+      "kind": "test",
+      "label": "test_reviewer_prompt_contains_brief_and_observed_policy",
+      "language": "python",
+      "pagerank_score": 0.008791852547829434,
+      "path": "tests/test_reviewer.py",
+      "rank_group": "related",
+      "relationship_score": 0.4153163785917114,
+      "score": 0.4153163785917114,
+      "start_line": 37,
+      "x": 462.737,
+      "y": 310.459
+    },
+    {
+      "direct_score": 0.08064762108311246,
+      "end_line": 78,
+      "id": "symbol:tests/test_orchestrator.py::not_evidenced",
+      "kind": "function",
+      "label": "not_evidenced",
+      "language": "python",
+      "pagerank_score": 0.009432961704851634,
+      "path": "tests/test_orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.39704049169948785,
+      "score": 0.39704049169948785,
+      "start_line": 72,
+      "x": 550.918,
+      "y": 285.913
+    },
+    {
+      "direct_score": 0.021804734385327325,
+      "end_line": 107,
+      "id": "symbol:tests/test_orchestrator.py::orchestrator",
+      "kind": "function",
+      "label": "orchestrator",
+      "language": "python",
+      "pagerank_score": 0.009123132963358177,
+      "path": "tests/test_orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.39704049169948785,
+      "score": 0.39704049169948785,
+      "start_line": 92,
+      "x": 559.203,
+      "y": 269.607
+    },
+    {
+      "direct_score": 0.05456318293987973,
+      "end_line": 416,
+      "id": "file:src/implicit_decision_gate/gate.py",
+      "kind": "file",
+      "label": "implicit_decision_gate.gate",
+      "language": "python",
+      "pagerank_score": 0.053062047804942114,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank_group": "related",
+      "relationship_score": 0.3825,
+      "score": 0.3825,
+      "start_line": 1,
+      "x": 492.128,
+      "y": 281.941
+    },
+    {
+      "direct_score": 0.012938134821742771,
+      "end_line": 91,
+      "id": "symbol:tests/conftest.py::ScriptedCodingClient",
+      "kind": "class",
+      "label": "ScriptedCodingClient",
+      "language": "python",
+      "pagerank_score": 0.010122098271468203,
+      "path": "tests/conftest.py",
+      "rank_group": "related",
+      "relationship_score": 0.3613010775383957,
+      "score": 0.3613010775383957,
+      "start_line": 61,
+      "x": 595.402,
+      "y": 291.405
+    },
+    {
+      "direct_score": 0.04357374688354775,
+      "end_line": 124,
+      "id": "symbol:tests/conftest.py::ScriptedReviewerClient",
+      "kind": "class",
+      "label": "ScriptedReviewerClient",
+      "language": "python",
+      "pagerank_score": 0.010122098271468203,
+      "path": "tests/conftest.py",
+      "rank_group": "related",
+      "relationship_score": 0.3613010775383957,
+      "score": 0.3613010775383957,
+      "start_line": 94,
+      "x": 593.75,
+      "y": 278.359
+    },
+    {
+      "direct_score": 0.006142166777082165,
+      "end_line": 218,
+      "id": "symbol:tests/conftest.py::ScriptMarkerProbe",
+      "kind": "class",
+      "label": "ScriptMarkerProbe",
+      "language": "python",
+      "pagerank_score": 0.009210012457557355,
+      "path": "tests/conftest.py",
+      "rank_group": "related",
+      "relationship_score": 0.3613010775383957,
+      "score": 0.3613010775383957,
+      "start_line": 173,
+      "x": 598.397,
+      "y": 284.674
+    },
+    {
+      "direct_score": 0.07168701647755028,
+      "end_line": 107,
+      "id": "file:tests/test_reviewer.py",
+      "kind": "file",
+      "label": "tests.test_reviewer",
+      "language": "python",
+      "pagerank_score": 0.030158177768876544,
+      "path": "tests/test_reviewer.py",
+      "rank_group": "related",
+      "relationship_score": 0.339315702062105,
+      "score": 0.339315702062105,
+      "start_line": 1,
+      "x": 481.717,
+      "y": 288.739
+    },
+    {
+      "direct_score": 0.08627003427631748,
+      "end_line": 106,
+      "id": "file:src/implicit_decision_gate/agent.py",
+      "kind": "file",
+      "label": "implicit_decision_gate.agent",
+      "language": "python",
+      "pagerank_score": 0.026897784701186613,
+      "path": "src/implicit_decision_gate/agent.py",
+      "rank_group": "related",
+      "relationship_score": 0.3337710515333271,
+      "score": 0.3337710515333271,
+      "start_line": 1,
+      "x": 481.444,
+      "y": 283.252
+    },
+    {
+      "direct_score": 0.03128085480772679,
+      "end_line": 632,
+      "id": "file:tests/test_orchestrator.py",
+      "kind": "file",
+      "label": "tests.test_orchestrator",
+      "language": "python",
+      "pagerank_score": 0.017341705830539195,
+      "path": "tests/test_orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.28911218416862033,
+      "score": 0.28911218416862033,
+      "start_line": 1,
+      "x": 521.878,
+      "y": 278.132
+    },
+    {
+      "direct_score": 0.04054549113150071,
+      "end_line": 344,
+      "id": "file:src/implicit_decision_gate/orchestrator.py",
+      "kind": "file",
+      "label": "implicit_decision_gate.orchestrator",
+      "language": "python",
+      "pagerank_score": 0.010681296957293217,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.2822848786499116,
+      "score": 0.2822848786499116,
+      "start_line": 1,
+      "x": 501.109,
+      "y": 277.273
+    },
+    {
+      "direct_score": 0.026425882975547658,
+      "end_line": 278,
+      "id": "file:tests/test_cli.py",
+      "kind": "file",
+      "label": "tests.test_cli",
+      "language": "python",
+      "pagerank_score": 0.010488091339301496,
+      "path": "tests/test_cli.py",
+      "rank_group": "related",
+      "relationship_score": 0.27637207626241894,
+      "score": 0.27637207626241894,
+      "start_line": 1,
+      "x": 500.485,
+      "y": 271.179
+    },
+    {
+      "direct_score": 0.0177157817674736,
+      "end_line": 190,
+      "id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt",
+      "kind": "method",
+      "label": "Orchestrator._execute_attempt",
+      "language": "python",
+      "pagerank_score": 0.008736749549969768,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.27593048838677453,
+      "score": 0.27593048838677453,
+      "start_line": 118,
+      "x": 397.758,
+      "y": 325.657
+    },
+    {
+      "direct_score": 0.004308766836278663,
+      "end_line": 87,
+      "id": "symbol:src/implicit_decision_gate/scenario.py::option_by_id",
+      "kind": "function",
+      "label": "option_by_id",
+      "language": "python",
+      "pagerank_score": 0.00460920376026152,
+      "path": "src/implicit_decision_gate/scenario.py",
+      "rank_group": "related",
+      "relationship_score": 0.27593048838677453,
+      "score": 0.27593048838677453,
+      "start_line": 84,
+      "x": 387.248,
+      "y": 305.087
+    },
+    {
+      "direct_score": 0.057293323892307464,
+      "end_line": 344,
+      "id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._reviewer_client",
+      "kind": "method",
+      "label": "Orchestrator._reviewer_client",
+      "language": "python",
+      "pagerank_score": 0.00327295378886472,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.27593048838677453,
+      "score": 0.27593048838677453,
+      "start_line": 341,
+      "x": 387.363,
+      "y": 316.352
+    },
+    {
+      "direct_score": 0.01782259308488122,
+      "end_line": 421,
+      "id": "symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer",
+      "kind": "test",
+      "label": "test_retry_verifies_supported_outcome_while_honoring_owner_answer",
+      "language": "python",
+      "pagerank_score": 0.006342315453600153,
+      "path": "tests/test_orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.2605437174736978,
+      "score": 0.2605437174736978,
+      "start_line": 383,
+      "x": 566.469,
+      "y": 285.036
+    },
+    {
+      "direct_score": 0.015332796127964498,
+      "end_line": 167,
+      "id": "symbol:tests/test_evaluation.py::test_adversarial_gate_matrix",
+      "kind": "test",
+      "label": "test_adversarial_gate_matrix",
+      "language": "python",
+      "pagerank_score": 0.005561480096629834,
+      "path": "tests/test_evaluation.py",
+      "rank_group": "related",
+      "relationship_score": 0.2605437174736978,
+      "score": 0.2605437174736978,
+      "start_line": 131,
+      "x": 579.921,
+      "y": 295.275
+    },
+    {
+      "direct_score": 0.07794793170627506,
+      "end_line": 63,
+      "id": "symbol:tests/test_cli.py::DeterministicCodexClient.review_evidence",
+      "kind": "method",
+      "label": "DeterministicCodexClient.review_evidence",
+      "language": "python",
+      "pagerank_score": 0.0024228999863833297,
+      "path": "tests/test_cli.py",
+      "rank_group": "related",
+      "relationship_score": 0.2605437174736978,
+      "score": 0.2605437174736978,
+      "start_line": 58,
+      "x": 552.247,
+      "y": 320.113
+    },
+    {
+      "direct_score": 0.04720030047669746,
+      "end_line": 99,
+      "id": "file:tests/test_live.py",
+      "kind": "file",
+      "label": "tests.test_live",
+      "language": "python",
+      "pagerank_score": 0.011469813746327226,
+      "path": "tests/test_live.py",
+      "rank_group": "related",
+      "relationship_score": 0.25862973554875474,
+      "score": 0.25862973554875474,
+      "start_line": 1,
+      "x": 486.862,
+      "y": 274.511
+    },
+    {
+      "direct_score": 0.01942005268668453,
+      "end_line": 116,
+      "id": "file:src/implicit_decision_gate/cli.py",
+      "kind": "file",
+      "label": "implicit_decision_gate.cli",
+      "language": "python",
+      "pagerank_score": 0.010504009022982368,
+      "path": "src/implicit_decision_gate/cli.py",
+      "rank_group": "related",
+      "relationship_score": 0.25862973554875474,
+      "score": 0.25862973554875474,
+      "start_line": 1,
+      "x": 490.207,
+      "y": 269.554
+    }
+  ],
+  "paths": [
+    {
+      "id": "path-1",
+      "label": "validate_reviewer_result \u2192 ReviewerResult",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+        "symbol:src/implicit_decision_gate/gate.py::ReviewerResult"
+      ],
+      "score": 0.5450625,
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+      "steps": [
+        {
+          "combined_strength": 0.64125,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+              "kind": "INSTANTIATES",
+              "strength": 0.64125,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "to_node_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult"
+    },
+    {
+      "id": "path-2",
+      "label": "validate_reviewer_result \u2192 Orchestrator._finish_first_attempt",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt"
+      ],
+      "score": 0.5252908607493324,
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+      "steps": [
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt->symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "to_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt"
+    },
+    {
+      "id": "path-3",
+      "label": "test_review_classifications_are_aggregated \u2192 state_after_reviews",
+      "nodes": [
+        "symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated",
+        "symbol:src/implicit_decision_gate/gate.py::state_after_reviews"
+      ],
+      "score": 0.4911090934288896,
+      "source_id": "symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated",
+      "steps": [
+        {
+          "combined_strength": 0.6513081790790538,
+          "contributions": [
+            {
+              "edge_id": "TESTS:symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated->symbol:src/implicit_decision_gate/gate.py::state_after_reviews",
+              "kind": "TESTS",
+              "strength": 0.6513081790790538,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated",
+          "to_node_id": "symbol:src/implicit_decision_gate/gate.py::state_after_reviews"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::state_after_reviews"
+    },
+    {
+      "id": "path-4",
+      "label": "validate_reviewer_result \u2192 test_fabricated_evidence_quote_becomes_uncertain",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+        "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain"
+      ],
+      "score": 0.4759505477828042,
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+      "steps": [
+        {
+          "combined_strength": 0.5599418209209461,
+          "contributions": [
+            {
+              "edge_id": "TESTS:symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain->symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+              "kind": "TESTS",
+              "strength": 0.5599418209209461,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "to_node_id": "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain"
+        }
+      ],
+      "target_id": "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain"
+    },
+    {
+      "id": "path-5",
+      "label": "build_reviewer_prompt \u2192 test_attempt_two_prompt_contains_only_allowed_fresh_context",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+        "symbol:tests/test_context.py::test_attempt_two_prompt_contains_only_allowed_fresh_context"
+      ],
+      "score": 0.4153163785917114,
+      "source_id": "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+      "steps": [
+        {
+          "combined_strength": 0.5599418209209461,
+          "contributions": [
+            {
+              "edge_id": "TESTS:symbol:tests/test_context.py::test_attempt_two_prompt_contains_only_allowed_fresh_context->symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+              "kind": "TESTS",
+              "strength": 0.5599418209209461,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+          "to_node_id": "symbol:tests/test_context.py::test_attempt_two_prompt_contains_only_allowed_fresh_context"
+        }
+      ],
+      "target_id": "symbol:tests/test_context.py::test_attempt_two_prompt_contains_only_allowed_fresh_context"
+    },
+    {
+      "id": "path-6",
+      "label": "build_reviewer_prompt \u2192 test_reviewer_prompt_contains_brief_and_observed_policy",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+        "symbol:tests/test_reviewer.py::test_reviewer_prompt_contains_brief_and_observed_policy"
+      ],
+      "score": 0.4153163785917114,
+      "source_id": "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+      "steps": [
+        {
+          "combined_strength": 0.5599418209209461,
+          "contributions": [
+            {
+              "edge_id": "TESTS:symbol:tests/test_reviewer.py::test_reviewer_prompt_contains_brief_and_observed_policy->symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+              "kind": "TESTS",
+              "strength": 0.5599418209209461,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+          "to_node_id": "symbol:tests/test_reviewer.py::test_reviewer_prompt_contains_brief_and_observed_policy"
+        }
+      ],
+      "target_id": "symbol:tests/test_reviewer.py::test_reviewer_prompt_contains_brief_and_observed_policy"
+    },
+    {
+      "id": "path-7",
+      "label": "test_start_reads_the_brief_from_the_pinned_commit \u2192 not_evidenced",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+        "symbol:tests/test_orchestrator.py::not_evidenced"
+      ],
+      "score": 0.39704049169948785,
+      "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+      "steps": [
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit->symbol:tests/test_orchestrator.py::not_evidenced",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+          "to_node_id": "symbol:tests/test_orchestrator.py::not_evidenced"
+        }
+      ],
+      "target_id": "symbol:tests/test_orchestrator.py::not_evidenced"
+    },
+    {
+      "id": "path-8",
+      "label": "test_start_reads_the_brief_from_the_pinned_commit \u2192 orchestrator",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+        "symbol:tests/test_orchestrator.py::orchestrator"
+      ],
+      "score": 0.39704049169948785,
+      "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+      "steps": [
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit->symbol:tests/test_orchestrator.py::orchestrator",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+          "to_node_id": "symbol:tests/test_orchestrator.py::orchestrator"
+        }
+      ],
+      "target_id": "symbol:tests/test_orchestrator.py::orchestrator"
+    },
+    {
+      "id": "path-9",
+      "label": "validate_reviewer_result \u2192 implicit_decision_gate.gate",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+        "file:src/implicit_decision_gate/gate.py"
+      ],
+      "score": 0.3825,
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+      "steps": [
+        {
+          "combined_strength": 0.44999999999999996,
+          "contributions": [
+            {
+              "edge_id": "CONTAINS:file:src/implicit_decision_gate/gate.py->symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+              "kind": "CONTAINS",
+              "strength": 0.45,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "to_node_id": "file:src/implicit_decision_gate/gate.py"
+        }
+      ],
+      "target_id": "file:src/implicit_decision_gate/gate.py"
+    },
+    {
+      "id": "path-10",
+      "label": "test_start_reads_the_brief_from_the_pinned_commit \u2192 ScriptedCodingClient",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+        "symbol:tests/conftest.py::ScriptedCodingClient"
+      ],
+      "score": 0.3613010775383957,
+      "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+      "steps": [
+        {
+          "combined_strength": 0.562361234825899,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit->symbol:tests/conftest.py::ScriptedCodingClient",
+              "kind": "INSTANTIATES",
+              "strength": 0.562361234825899,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+          "to_node_id": "symbol:tests/conftest.py::ScriptedCodingClient"
+        }
+      ],
+      "target_id": "symbol:tests/conftest.py::ScriptedCodingClient"
+    },
+    {
+      "id": "path-11",
+      "label": "test_start_reads_the_brief_from_the_pinned_commit \u2192 ScriptedReviewerClient",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+        "symbol:tests/conftest.py::ScriptedReviewerClient"
+      ],
+      "score": 0.3613010775383957,
+      "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+      "steps": [
+        {
+          "combined_strength": 0.562361234825899,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit->symbol:tests/conftest.py::ScriptedReviewerClient",
+              "kind": "INSTANTIATES",
+              "strength": 0.562361234825899,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+          "to_node_id": "symbol:tests/conftest.py::ScriptedReviewerClient"
+        }
+      ],
+      "target_id": "symbol:tests/conftest.py::ScriptedReviewerClient"
+    },
+    {
+      "id": "path-12",
+      "label": "test_start_reads_the_brief_from_the_pinned_commit \u2192 ScriptMarkerProbe",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+        "symbol:tests/conftest.py::ScriptMarkerProbe"
+      ],
+      "score": 0.3613010775383957,
+      "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+      "steps": [
+        {
+          "combined_strength": 0.562361234825899,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit->symbol:tests/conftest.py::ScriptMarkerProbe",
+              "kind": "INSTANTIATES",
+              "strength": 0.562361234825899,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+          "to_node_id": "symbol:tests/conftest.py::ScriptMarkerProbe"
+        }
+      ],
+      "target_id": "symbol:tests/conftest.py::ScriptMarkerProbe"
+    },
+    {
+      "id": "path-13",
+      "label": "test_review_classifications_are_aggregated \u2192 tests.test_reviewer",
+      "nodes": [
+        "symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated",
+        "file:tests/test_reviewer.py"
+      ],
+      "score": 0.339315702062105,
+      "source_id": "symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated",
+      "steps": [
+        {
+          "combined_strength": 0.44999999999999996,
+          "contributions": [
+            {
+              "edge_id": "CONTAINS:file:tests/test_reviewer.py->symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated",
+              "kind": "CONTAINS",
+              "strength": 0.45,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated",
+          "to_node_id": "file:tests/test_reviewer.py"
+        }
+      ],
+      "target_id": "file:tests/test_reviewer.py"
+    },
+    {
+      "id": "path-14",
+      "label": "build_reviewer_prompt \u2192 implicit_decision_gate.agent",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+        "file:src/implicit_decision_gate/agent.py"
+      ],
+      "score": 0.3337710515333271,
+      "source_id": "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+      "steps": [
+        {
+          "combined_strength": 0.44999999999999996,
+          "contributions": [
+            {
+              "edge_id": "CONTAINS:file:src/implicit_decision_gate/agent.py->symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+              "kind": "CONTAINS",
+              "strength": 0.45,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+          "to_node_id": "file:src/implicit_decision_gate/agent.py"
+        }
+      ],
+      "target_id": "file:src/implicit_decision_gate/agent.py"
+    },
+    {
+      "id": "path-15",
+      "label": "test_start_reads_the_brief_from_the_pinned_commit \u2192 tests.test_orchestrator",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+        "file:tests/test_orchestrator.py"
+      ],
+      "score": 0.28911218416862033,
+      "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+      "steps": [
+        {
+          "combined_strength": 0.44999999999999996,
+          "contributions": [
+            {
+              "edge_id": "CONTAINS:file:tests/test_orchestrator.py->symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+              "kind": "CONTAINS",
+              "strength": 0.45,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+          "to_node_id": "file:tests/test_orchestrator.py"
+        }
+      ],
+      "target_id": "file:tests/test_orchestrator.py"
+    },
+    {
+      "id": "path-16",
+      "label": "validate_reviewer_result \u2192 implicit_decision_gate.orchestrator",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+        "file:src/implicit_decision_gate/gate.py",
+        "file:src/implicit_decision_gate/orchestrator.py"
+      ],
+      "score": 0.2822848786499116,
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+      "steps": [
+        {
+          "combined_strength": 0.44999999999999996,
+          "contributions": [
+            {
+              "edge_id": "CONTAINS:file:src/implicit_decision_gate/gate.py->symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+              "kind": "CONTAINS",
+              "strength": 0.45,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "to_node_id": "file:src/implicit_decision_gate/gate.py"
+        },
+        {
+          "combined_strength": 0.868234920876314,
+          "contributions": [
+            {
+              "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/gate.py->file:src/implicit_decision_gate/orchestrator.py",
+              "kind": "CO_CHANGES",
+              "strength": 0.6235283453608971,
+              "traversal_direction": "undirected"
+            },
+            {
+              "edge_id": "IMPORTS:file:src/implicit_decision_gate/orchestrator.py->file:src/implicit_decision_gate/gate.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/gate.py",
+          "to_node_id": "file:src/implicit_decision_gate/orchestrator.py"
+        }
+      ],
+      "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+    },
+    {
+      "id": "path-17",
+      "label": "validate_reviewer_result \u2192 tests.test_cli",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+        "file:src/implicit_decision_gate/gate.py",
+        "file:tests/test_cli.py"
+      ],
+      "score": 0.27637207626241894,
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+      "steps": [
+        {
+          "combined_strength": 0.44999999999999996,
+          "contributions": [
+            {
+              "edge_id": "CONTAINS:file:src/implicit_decision_gate/gate.py->symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+              "kind": "CONTAINS",
+              "strength": 0.45,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "to_node_id": "file:src/implicit_decision_gate/gate.py"
+        },
+        {
+          "combined_strength": 0.8500486774699545,
+          "contributions": [
+            {
+              "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/gate.py->file:tests/test_cli.py",
+              "kind": "CO_CHANGES",
+              "strength": 0.5715676499141557,
+              "traversal_direction": "undirected"
+            },
+            {
+              "edge_id": "IMPORTS:file:tests/test_cli.py->file:src/implicit_decision_gate/gate.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/gate.py",
+          "to_node_id": "file:tests/test_cli.py"
+        }
+      ],
+      "target_id": "file:tests/test_cli.py"
+    },
+    {
+      "id": "path-18",
+      "label": "validate_reviewer_result \u2192 Orchestrator._execute_attempt",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt"
+      ],
+      "score": 0.27593048838677453,
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+      "steps": [
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt->symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "to_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt"
+        },
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+          "to_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt"
+    },
+    {
+      "id": "path-19",
+      "label": "validate_reviewer_result \u2192 option_by_id",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+        "symbol:src/implicit_decision_gate/scenario.py::option_by_id"
+      ],
+      "score": 0.27593048838677453,
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+      "steps": [
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt->symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "to_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt"
+        },
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt->symbol:src/implicit_decision_gate/scenario.py::option_by_id",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+          "to_node_id": "symbol:src/implicit_decision_gate/scenario.py::option_by_id"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/scenario.py::option_by_id"
+    },
+    {
+      "id": "path-20",
+      "label": "validate_reviewer_result \u2192 Orchestrator._reviewer_client",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._reviewer_client"
+      ],
+      "score": 0.27593048838677453,
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+      "steps": [
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt->symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "to_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt"
+        },
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._reviewer_client",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+          "to_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._reviewer_client"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._reviewer_client"
+    },
+    {
+      "id": "path-21",
+      "label": "validate_reviewer_result \u2192 test_retry_verifies_supported_outcome_while_honoring_owner_answer",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+        "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+        "symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer"
+      ],
+      "score": 0.2605437174736978,
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+      "steps": [
+        {
+          "combined_strength": 0.64125,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+              "kind": "INSTANTIATES",
+              "strength": 0.64125,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "to_node_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult"
+        },
+        {
+          "combined_strength": 0.562361234825899,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+              "kind": "INSTANTIATES",
+              "strength": 0.562361234825899,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+          "to_node_id": "symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer"
+        }
+      ],
+      "target_id": "symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer"
+    },
+    {
+      "id": "path-22",
+      "label": "validate_reviewer_result \u2192 test_adversarial_gate_matrix",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+        "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+        "symbol:tests/test_evaluation.py::test_adversarial_gate_matrix"
+      ],
+      "score": 0.2605437174736978,
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+      "steps": [
+        {
+          "combined_strength": 0.64125,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+              "kind": "INSTANTIATES",
+              "strength": 0.64125,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "to_node_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult"
+        },
+        {
+          "combined_strength": 0.562361234825899,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:tests/test_evaluation.py::test_adversarial_gate_matrix->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+              "kind": "INSTANTIATES",
+              "strength": 0.562361234825899,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+          "to_node_id": "symbol:tests/test_evaluation.py::test_adversarial_gate_matrix"
+        }
+      ],
+      "target_id": "symbol:tests/test_evaluation.py::test_adversarial_gate_matrix"
+    },
+    {
+      "id": "path-23",
+      "label": "validate_reviewer_result \u2192 DeterministicCodexClient.review_evidence",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+        "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+        "symbol:tests/test_cli.py::DeterministicCodexClient.review_evidence"
+      ],
+      "score": 0.2605437174736978,
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+      "steps": [
+        {
+          "combined_strength": 0.64125,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+              "kind": "INSTANTIATES",
+              "strength": 0.64125,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "to_node_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult"
+        },
+        {
+          "combined_strength": 0.562361234825899,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:tests/test_cli.py::DeterministicCodexClient.review_evidence->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+              "kind": "INSTANTIATES",
+              "strength": 0.562361234825899,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+          "to_node_id": "symbol:tests/test_cli.py::DeterministicCodexClient.review_evidence"
+        }
+      ],
+      "target_id": "symbol:tests/test_cli.py::DeterministicCodexClient.review_evidence"
+    },
+    {
+      "id": "path-24",
+      "label": "validate_reviewer_result \u2192 tests.test_live",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+        "file:src/implicit_decision_gate/gate.py",
+        "file:tests/test_live.py"
+      ],
+      "score": 0.25862973554875474,
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+      "steps": [
+        {
+          "combined_strength": 0.44999999999999996,
+          "contributions": [
+            {
+              "edge_id": "CONTAINS:file:src/implicit_decision_gate/gate.py->symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+              "kind": "CONTAINS",
+              "strength": 0.45,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "to_node_id": "file:src/implicit_decision_gate/gate.py"
+        },
+        {
+          "combined_strength": 0.7954778486697569,
+          "contributions": [
+            {
+              "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/gate.py->file:tests/test_live.py",
+              "kind": "CO_CHANGES",
+              "strength": 0.41565099619930523,
+              "traversal_direction": "undirected"
+            },
+            {
+              "edge_id": "IMPORTS:file:tests/test_live.py->file:src/implicit_decision_gate/gate.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/gate.py",
+          "to_node_id": "file:tests/test_live.py"
+        }
+      ],
+      "target_id": "file:tests/test_live.py"
+    },
+    {
+      "id": "path-25",
+      "label": "validate_reviewer_result \u2192 implicit_decision_gate.cli",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+        "file:src/implicit_decision_gate/gate.py",
+        "file:src/implicit_decision_gate/cli.py"
+      ],
+      "score": 0.25862973554875474,
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+      "steps": [
+        {
+          "combined_strength": 0.44999999999999996,
+          "contributions": [
+            {
+              "edge_id": "CONTAINS:file:src/implicit_decision_gate/gate.py->symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+              "kind": "CONTAINS",
+              "strength": 0.45,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "to_node_id": "file:src/implicit_decision_gate/gate.py"
+        },
+        {
+          "combined_strength": 0.7954778486697569,
+          "contributions": [
+            {
+              "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/gate.py",
+              "kind": "CO_CHANGES",
+              "strength": 0.41565099619930523,
+              "traversal_direction": "undirected"
+            },
+            {
+              "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/gate.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/gate.py",
+          "to_node_id": "file:src/implicit_decision_gate/cli.py"
+        }
+      ],
+      "target_id": "file:src/implicit_decision_gate/cli.py"
+    }
+  ],
+  "provenance": {
+    "branch": null,
+    "clean": true,
+    "commit": "2fdbb3deab2967a545d8a898a17a380974e6bb17",
+    "detached": true,
+    "extractor_version": "1.0.0",
+    "indexed_source_sha256": "054eb9ddb72433574992ca595bcf95e2a7747c9fa4a4515fd42681b55d706618",
+    "repository": "implicit-decision-gate",
+    "retrieval": {
+      "hop_decay": 0.85,
+      "hops": 2,
+      "related_count": 25,
+      "seed_count": 6
+    },
+    "schema_version": "1.0.0",
+    "shallow": false,
+    "tree": "045114ac474171e8044ae179e9808ae4357a5296"
+  },
+  "query": "How are reviewer classifications checked against literal evidence from the brief?",
+  "related": [
+    {
+      "direct_score": 0.08170407210731466,
+      "label": "ReviewerResult",
+      "node_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+      "pagerank_score": 0.017421402547465305,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank": 1,
+      "relationship_score": 0.5450625,
+      "score": 0.5450625
+    },
+    {
+      "direct_score": 0.04553741929715873,
+      "label": "Orchestrator._finish_first_attempt",
+      "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+      "pagerank_score": 0.02952886877760822,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank": 2,
+      "relationship_score": 0.5252908607493324,
+      "score": 0.5252908607493324
+    },
+    {
+      "direct_score": 0.09218091161184895,
+      "label": "state_after_reviews",
+      "node_id": "symbol:src/implicit_decision_gate/gate.py::state_after_reviews",
+      "pagerank_score": 0.0229368034813721,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank": 3,
+      "relationship_score": 0.4911090934288896,
+      "score": 0.4911090934288896
+    },
+    {
+      "direct_score": 0.07244146119517673,
+      "label": "test_fabricated_evidence_quote_becomes_uncertain",
+      "node_id": "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain",
+      "pagerank_score": 0.011589172514865641,
+      "path": "tests/test_reviewer.py",
+      "rank": 4,
+      "relationship_score": 0.4759505477828042,
+      "score": 0.4759505477828042
+    },
+    {
+      "direct_score": 0.03290542092895006,
+      "label": "test_attempt_two_prompt_contains_only_allowed_fresh_context",
+      "node_id": "symbol:tests/test_context.py::test_attempt_two_prompt_contains_only_allowed_fresh_context",
+      "pagerank_score": 0.010330955775485493,
+      "path": "tests/test_context.py",
+      "rank": 5,
+      "relationship_score": 0.4153163785917114,
+      "score": 0.4153163785917114
+    },
+    {
+      "direct_score": 0.0655789078744945,
+      "label": "test_reviewer_prompt_contains_brief_and_observed_policy",
+      "node_id": "symbol:tests/test_reviewer.py::test_reviewer_prompt_contains_brief_and_observed_policy",
+      "pagerank_score": 0.008791852547829434,
+      "path": "tests/test_reviewer.py",
+      "rank": 6,
+      "relationship_score": 0.4153163785917114,
+      "score": 0.4153163785917114
+    },
+    {
+      "direct_score": 0.08064762108311246,
+      "label": "not_evidenced",
+      "node_id": "symbol:tests/test_orchestrator.py::not_evidenced",
+      "pagerank_score": 0.009432961704851634,
+      "path": "tests/test_orchestrator.py",
+      "rank": 7,
+      "relationship_score": 0.39704049169948785,
+      "score": 0.39704049169948785
+    },
+    {
+      "direct_score": 0.021804734385327325,
+      "label": "orchestrator",
+      "node_id": "symbol:tests/test_orchestrator.py::orchestrator",
+      "pagerank_score": 0.009123132963358177,
+      "path": "tests/test_orchestrator.py",
+      "rank": 8,
+      "relationship_score": 0.39704049169948785,
+      "score": 0.39704049169948785
+    },
+    {
+      "direct_score": 0.05456318293987973,
+      "label": "implicit_decision_gate.gate",
+      "node_id": "file:src/implicit_decision_gate/gate.py",
+      "pagerank_score": 0.053062047804942114,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank": 9,
+      "relationship_score": 0.3825,
+      "score": 0.3825
+    },
+    {
+      "direct_score": 0.012938134821742771,
+      "label": "ScriptedCodingClient",
+      "node_id": "symbol:tests/conftest.py::ScriptedCodingClient",
+      "pagerank_score": 0.010122098271468203,
+      "path": "tests/conftest.py",
+      "rank": 10,
+      "relationship_score": 0.3613010775383957,
+      "score": 0.3613010775383957
+    },
+    {
+      "direct_score": 0.04357374688354775,
+      "label": "ScriptedReviewerClient",
+      "node_id": "symbol:tests/conftest.py::ScriptedReviewerClient",
+      "pagerank_score": 0.010122098271468203,
+      "path": "tests/conftest.py",
+      "rank": 11,
+      "relationship_score": 0.3613010775383957,
+      "score": 0.3613010775383957
+    },
+    {
+      "direct_score": 0.006142166777082165,
+      "label": "ScriptMarkerProbe",
+      "node_id": "symbol:tests/conftest.py::ScriptMarkerProbe",
+      "pagerank_score": 0.009210012457557355,
+      "path": "tests/conftest.py",
+      "rank": 12,
+      "relationship_score": 0.3613010775383957,
+      "score": 0.3613010775383957
+    },
+    {
+      "direct_score": 0.07168701647755028,
+      "label": "tests.test_reviewer",
+      "node_id": "file:tests/test_reviewer.py",
+      "pagerank_score": 0.030158177768876544,
+      "path": "tests/test_reviewer.py",
+      "rank": 13,
+      "relationship_score": 0.339315702062105,
+      "score": 0.339315702062105
+    },
+    {
+      "direct_score": 0.08627003427631748,
+      "label": "implicit_decision_gate.agent",
+      "node_id": "file:src/implicit_decision_gate/agent.py",
+      "pagerank_score": 0.026897784701186613,
+      "path": "src/implicit_decision_gate/agent.py",
+      "rank": 14,
+      "relationship_score": 0.3337710515333271,
+      "score": 0.3337710515333271
+    },
+    {
+      "direct_score": 0.03128085480772679,
+      "label": "tests.test_orchestrator",
+      "node_id": "file:tests/test_orchestrator.py",
+      "pagerank_score": 0.017341705830539195,
+      "path": "tests/test_orchestrator.py",
+      "rank": 15,
+      "relationship_score": 0.28911218416862033,
+      "score": 0.28911218416862033
+    },
+    {
+      "direct_score": 0.04054549113150071,
+      "label": "implicit_decision_gate.orchestrator",
+      "node_id": "file:src/implicit_decision_gate/orchestrator.py",
+      "pagerank_score": 0.010681296957293217,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank": 16,
+      "relationship_score": 0.2822848786499116,
+      "score": 0.2822848786499116
+    },
+    {
+      "direct_score": 0.026425882975547658,
+      "label": "tests.test_cli",
+      "node_id": "file:tests/test_cli.py",
+      "pagerank_score": 0.010488091339301496,
+      "path": "tests/test_cli.py",
+      "rank": 17,
+      "relationship_score": 0.27637207626241894,
+      "score": 0.27637207626241894
+    },
+    {
+      "direct_score": 0.0177157817674736,
+      "label": "Orchestrator._execute_attempt",
+      "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt",
+      "pagerank_score": 0.008736749549969768,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank": 18,
+      "relationship_score": 0.27593048838677453,
+      "score": 0.27593048838677453
+    },
+    {
+      "direct_score": 0.004308766836278663,
+      "label": "option_by_id",
+      "node_id": "symbol:src/implicit_decision_gate/scenario.py::option_by_id",
+      "pagerank_score": 0.00460920376026152,
+      "path": "src/implicit_decision_gate/scenario.py",
+      "rank": 19,
+      "relationship_score": 0.27593048838677453,
+      "score": 0.27593048838677453
+    },
+    {
+      "direct_score": 0.057293323892307464,
+      "label": "Orchestrator._reviewer_client",
+      "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._reviewer_client",
+      "pagerank_score": 0.00327295378886472,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank": 20,
+      "relationship_score": 0.27593048838677453,
+      "score": 0.27593048838677453
+    },
+    {
+      "direct_score": 0.01782259308488122,
+      "label": "test_retry_verifies_supported_outcome_while_honoring_owner_answer",
+      "node_id": "symbol:tests/test_orchestrator.py::test_retry_verifies_supported_outcome_while_honoring_owner_answer",
+      "pagerank_score": 0.006342315453600153,
+      "path": "tests/test_orchestrator.py",
+      "rank": 21,
+      "relationship_score": 0.2605437174736978,
+      "score": 0.2605437174736978
+    },
+    {
+      "direct_score": 0.015332796127964498,
+      "label": "test_adversarial_gate_matrix",
+      "node_id": "symbol:tests/test_evaluation.py::test_adversarial_gate_matrix",
+      "pagerank_score": 0.005561480096629834,
+      "path": "tests/test_evaluation.py",
+      "rank": 22,
+      "relationship_score": 0.2605437174736978,
+      "score": 0.2605437174736978
+    },
+    {
+      "direct_score": 0.07794793170627506,
+      "label": "DeterministicCodexClient.review_evidence",
+      "node_id": "symbol:tests/test_cli.py::DeterministicCodexClient.review_evidence",
+      "pagerank_score": 0.0024228999863833297,
+      "path": "tests/test_cli.py",
+      "rank": 23,
+      "relationship_score": 0.2605437174736978,
+      "score": 0.2605437174736978
+    },
+    {
+      "direct_score": 0.04720030047669746,
+      "label": "tests.test_live",
+      "node_id": "file:tests/test_live.py",
+      "pagerank_score": 0.011469813746327226,
+      "path": "tests/test_live.py",
+      "rank": 24,
+      "relationship_score": 0.25862973554875474,
+      "score": 0.25862973554875474
+    },
+    {
+      "direct_score": 0.01942005268668453,
+      "label": "implicit_decision_gate.cli",
+      "node_id": "file:src/implicit_decision_gate/cli.py",
+      "pagerank_score": 0.010504009022982368,
+      "path": "src/implicit_decision_gate/cli.py",
+      "rank": 25,
+      "relationship_score": 0.25862973554875474,
+      "score": 0.25862973554875474
+    }
+  ],
+  "relevant": [
+    {
+      "direct_score": 0.15177999443065207,
+      "label": "validate_reviewer_result",
+      "node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+      "pagerank_score": 0.039584110483033084,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank": 1,
+      "relationship_score": 0.0,
+      "score": 0.15177999443065207
+    },
+    {
+      "direct_score": 0.13464401403717408,
+      "label": "test_review_classifications_are_aggregated",
+      "node_id": "symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated",
+      "pagerank_score": 0.03346487454635987,
+      "path": "tests/test_reviewer.py",
+      "rank": 2,
+      "relationship_score": 0.0,
+      "score": 0.13464401403717408
+    },
+    {
+      "direct_score": 0.13244383880481378,
+      "label": "build_reviewer_prompt",
+      "node_id": "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+      "pagerank_score": 0.03626804960468416,
+      "path": "src/implicit_decision_gate/agent.py",
+      "rank": 3,
+      "relationship_score": 0.0,
+      "score": 0.13244383880481378
+    },
+    {
+      "direct_score": 0.11760568469647942,
+      "label": "EvidenceClassification",
+      "node_id": "symbol:src/implicit_decision_gate/gate.py::EvidenceClassification",
+      "pagerank_score": 0.024556396740878134,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank": 4,
+      "relationship_score": 0.0,
+      "score": 0.11760568469647942
+    },
+    {
+      "direct_score": 0.11472273386391334,
+      "label": "test_start_reads_the_brief_from_the_pinned_commit",
+      "node_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+      "pagerank_score": 0.026804060873087468,
+      "path": "tests/test_orchestrator.py",
+      "rank": 5,
+      "relationship_score": 0.0,
+      "score": 0.11472273386391334
+    },
+    {
+      "direct_score": 0.09705836076656268,
+      "label": "ReviewerClient.review_evidence",
+      "node_id": "symbol:src/implicit_decision_gate/agent.py::ReviewerClient.review_evidence",
+      "pagerank_score": 0.028973869525444024,
+      "path": "src/implicit_decision_gate/agent.py",
+      "rank": 6,
+      "relationship_score": 0.0,
+      "score": 0.09705836076656268
+    }
+  ],
+  "schema_version": 1
+}

@@ -1,0 +1,305 @@
+{
+  "schema_version": 1,
+  "repository": {
+    "name": "implicit-decision-gate",
+    "url": "https://github.com/genesobolev/implicit-decision-gate",
+    "commit": "2fdbb3deab2967a545d8a898a17a380974e6bb17"
+  },
+  "review_status": "Illustrative benchmark with manually reviewed answer and supporting judgments.",
+  "queries": [
+    {
+      "id": "concurrent-resume",
+      "query": "What prevents two concurrent resume commands from executing attempt two twice?",
+      "judgments": [
+        {
+          "node_id": "symbol:tests/test_orchestrator.py::test_concurrent_resumes_execute_attempt_two_once",
+          "role": "answer",
+          "relevance": 3
+        },
+        {
+          "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.resume",
+          "role": "supporting",
+          "relevance": 3
+        },
+        {
+          "node_id": "symbol:src/implicit_decision_gate/gate.py::RunStore.lock",
+          "role": "supporting",
+          "relevance": 2
+        }
+      ]
+    },
+    {
+      "id": "clean-worktree",
+      "query": "Where is each coding attempt placed in a clean detached worktree at the pinned commit?",
+      "judgments": [
+        {
+          "node_id": "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager.create",
+          "role": "answer",
+          "relevance": 3
+        },
+        {
+          "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt",
+          "role": "supporting",
+          "relevance": 3
+        },
+        {
+          "node_id": "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager.current_commit",
+          "role": "supporting",
+          "relevance": 2
+        }
+      ]
+    },
+    {
+      "id": "owner-pause-resume",
+      "query": "How does an owner answer advance a paused run so it can resume?",
+      "judgments": [
+        {
+          "node_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+          "role": "answer",
+          "relevance": 3
+        },
+        {
+          "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.answer",
+          "role": "supporting",
+          "relevance": 3
+        },
+        {
+          "node_id": "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work",
+          "role": "supporting",
+          "relevance": 2
+        }
+      ]
+    },
+    {
+      "id": "prompt-context-isolation",
+      "query": "How is the second coding prompt limited to declared context and owner decisions?",
+      "judgments": [
+        {
+          "node_id": "symbol:src/implicit_decision_gate/agent.py::build_coding_prompt",
+          "role": "answer",
+          "relevance": 3
+        },
+        {
+          "node_id": "symbol:tests/test_context.py::test_attempt_two_prompt_contains_only_allowed_fresh_context",
+          "role": "supporting",
+          "relevance": 3
+        },
+        {
+          "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt",
+          "role": "supporting",
+          "relevance": 2
+        }
+      ]
+    },
+    {
+      "id": "coverage-gap-routing",
+      "query": "What routes an unmodeled observation to platform coverage review instead of evidence review?",
+      "judgments": [
+        {
+          "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+          "role": "answer",
+          "relevance": 3
+        },
+        {
+          "node_id": "symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads",
+          "role": "supporting",
+          "relevance": 3
+        },
+        {
+          "node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "role": "supporting",
+          "relevance": 2
+        }
+      ]
+    },
+    {
+      "id": "review-policy-classification",
+      "query": "How are independent evidence classifications combined into the next gate state?",
+      "judgments": [
+        {
+          "node_id": "symbol:src/implicit_decision_gate/gate.py::state_after_reviews",
+          "role": "answer",
+          "relevance": 3
+        },
+        {
+          "node_id": "symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated",
+          "role": "supporting",
+          "relevance": 3
+        },
+        {
+          "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+          "role": "supporting",
+          "relevance": 2
+        }
+      ]
+    },
+    {
+      "id": "authorization-normalization",
+      "query": "Where are observed authorization status codes and job counts normalized into policy options?",
+      "judgments": [
+        {
+          "node_id": "symbol:src/implicit_decision_gate/api_probe.py::normalize_authorization",
+          "role": "answer",
+          "relevance": 3
+        },
+        {
+          "node_id": "symbol:tests/test_api_probe.py::test_normalize_authorization",
+          "role": "supporting",
+          "relevance": 3
+        },
+        {
+          "node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+          "role": "supporting",
+          "relevance": 2
+        }
+      ]
+    },
+    {
+      "id": "postgres-normalization",
+      "query": "How are PostgreSQL facts normalized into preserve-existing or expire-existing rollout behavior?",
+      "judgments": [
+        {
+          "node_id": "symbol:src/implicit_decision_gate/probe.py::normalize_observation",
+          "role": "answer",
+          "relevance": 3
+        },
+        {
+          "node_id": "symbol:tests/test_probe.py::test_normalize_maps_both_reference_behaviors",
+          "role": "supporting",
+          "relevance": 3
+        },
+        {
+          "node_id": "symbol:src/implicit_decision_gate/probe.py::PostgresProbe._execute",
+          "role": "supporting",
+          "relevance": 2
+        }
+      ]
+    },
+    {
+      "id": "reviewer-evidence",
+      "query": "How are reviewer classifications checked against literal evidence from the brief?",
+      "judgments": [
+        {
+          "node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "role": "answer",
+          "relevance": 3
+        },
+        {
+          "node_id": "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain",
+          "role": "supporting",
+          "relevance": 3
+        },
+        {
+          "node_id": "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+          "role": "supporting",
+          "relevance": 2
+        }
+      ]
+    },
+    {
+      "id": "cli-lifecycle",
+      "query": "Which CLI entry point implements start, show, answer, and resume?",
+      "judgments": [
+        {
+          "node_id": "symbol:src/implicit_decision_gate/cli.py::main",
+          "role": "answer",
+          "relevance": 3
+        },
+        {
+          "node_id": "symbol:src/implicit_decision_gate/cli.py::_parser",
+          "role": "supporting",
+          "relevance": 3
+        },
+        {
+          "node_id": "symbol:tests/test_cli.py::test_cli_pauses_inspects_answers_and_resumes",
+          "role": "supporting",
+          "relevance": 2
+        }
+      ]
+    },
+    {
+      "id": "fresh-reviewer-process",
+      "query": "Where does evidence review run through a fresh non-repository Codex process?",
+      "judgments": [
+        {
+          "node_id": "symbol:src/implicit_decision_gate/codex_client.py::CodexCLIModelClient.review_evidence",
+          "role": "answer",
+          "relevance": 3
+        },
+        {
+          "node_id": "symbol:src/implicit_decision_gate/codex_client.py::CodexCLIModelClient._execute",
+          "role": "supporting",
+          "relevance": 3
+        },
+        {
+          "node_id": "symbol:tests/test_codex_client.py::test_codex_reviewer_uses_fresh_non_repo_process",
+          "role": "supporting",
+          "relevance": 2
+        }
+      ]
+    },
+    {
+      "id": "catalog-effects",
+      "query": "How are PostgreSQL catalog snapshots converted into deterministic structural effects?",
+      "judgments": [
+        {
+          "node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::diff_catalogs",
+          "role": "answer",
+          "relevance": 3
+        },
+        {
+          "node_id": "symbol:src/implicit_decision_gate/postgres_surface.py::capture_catalog",
+          "role": "supporting",
+          "relevance": 3
+        },
+        {
+          "node_id": "symbol:tests/test_postgres_surface.py::test_diff_catalogs_is_exact_and_deterministic",
+          "role": "supporting",
+          "relevance": 2
+        }
+      ]
+    },
+    {
+      "id": "decision-request-payload",
+      "query": "Where are unanswered owner decisions turned into stable CLI request payloads?",
+      "judgments": [
+        {
+          "node_id": "symbol:src/implicit_decision_gate/gate.py::decision_request_payloads",
+          "role": "answer",
+          "relevance": 3
+        },
+        {
+          "node_id": "symbol:src/implicit_decision_gate/gate.py::decision_requires_owner",
+          "role": "supporting",
+          "relevance": 3
+        },
+        {
+          "node_id": "symbol:src/implicit_decision_gate/gate.py::show_payload",
+          "role": "supporting",
+          "relevance": 2
+        }
+      ]
+    },
+    {
+      "id": "static-walkthrough-assets",
+      "query": "Which committed static assets implement the interactive browser walkthrough?",
+      "judgments": [
+        {
+          "node_id": "file:web/public/app.js",
+          "role": "answer",
+          "relevance": 3
+        },
+        {
+          "node_id": "file:web/public/index.html",
+          "role": "supporting",
+          "relevance": 3
+        },
+        {
+          "node_id": "file:web/public/styles.css",
+          "role": "supporting",
+          "relevance": 2
+        }
+      ]
+    }
+  ]
+}

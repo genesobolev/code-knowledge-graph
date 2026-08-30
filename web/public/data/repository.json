@@ -1,0 +1,58 @@
+{
+  "commit": "2fdbb3deab2967a545d8a898a17a380974e6bb17",
+  "counts": {
+    "edges": {
+      "CALLS": 157,
+      "CONTAINS": 208,
+      "CO_CHANGES": 212,
+      "IMPORTS": 88,
+      "INHERITS": 1,
+      "INSTANTIATES": 156,
+      "TESTS": 57
+    },
+    "nodes": {
+      "class": 41,
+      "file": 34,
+      "fixture": 1,
+      "function": 66,
+      "method": 59,
+      "test": 41
+    }
+  },
+  "id": "implicit-decision-gate",
+  "name": "implicit-decision-gate",
+  "provenance": {
+    "branch": null,
+    "clean": true,
+    "commit": "2fdbb3deab2967a545d8a898a17a380974e6bb17",
+    "detached": true,
+    "extractor_version": "1.0.0",
+    "indexed_source_sha256": "054eb9ddb72433574992ca595bcf95e2a7747c9fa4a4515fd42681b55d706618",
+    "repository": "implicit-decision-gate",
+    "retrieval": {
+      "hop_decay": 0.85,
+      "hops": 2,
+      "related_count": 25,
+      "seed_count": 6
+    },
+    "schema_version": "1.0.0",
+    "shallow": false,
+    "tree": "045114ac474171e8044ae179e9808ae4357a5296"
+  },
+  "schema_version": 1,
+  "summary": {
+    "edge_count": 879,
+    "issue_count": 0,
+    "node_count": 242,
+    "resolution_counts": {
+      "external_imports": 122,
+      "resolved_calls": 203,
+      "resolved_imports": 88,
+      "resolved_inherits": 1,
+      "resolved_instantiates": 241,
+      "resolved_tests": 70,
+      "unresolved_calls": 564,
+      "unresolved_inherits": 19
+    }
+  }
+}

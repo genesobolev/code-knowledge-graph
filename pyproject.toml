@@ -1,7 +1,8 @@
 [project]
-name = "code-knowledge-graph-notebook"
+name = "code-knowledge-graph"
 version = "0.1.0"
-description = "A local, interactive code knowledge graph notebook"
+description = "Explainable, reproducible code context retrieval for developers and AI agents"
+readme = "README.md"
 requires-python = ">=3.12,<3.13"
 dependencies = [
     "ipython>=8.30,<10",
@@ -12,8 +13,15 @@ dependencies = [
     "scikit-learn>=1.6,<2",
 ]
 
+[project.scripts]
+code-knowledge-graph = "code_knowledge_graph.cli:main"
+
+[project.urls]
+Repository = "https://github.com/genesobolev/code-knowledge-graph"
+
 [dependency-groups]
 dev = [
+    "jsonschema>=4.23,<5",
     "mypy>=1.15,<2",
     "pandas-stubs>=2.2,<3",
     "pytest>=8.3,<10",
@@ -22,12 +30,16 @@ dev = [
 ]
 
 [tool.uv]
-package = false
+package = true
+
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
 
 [tool.mypy]
 python_version = "3.12"
 strict = true
-files = ["tests"]
+files = ["src", "tests"]
 
 [tool.pytest.ini_options]
 addopts = "-ra"

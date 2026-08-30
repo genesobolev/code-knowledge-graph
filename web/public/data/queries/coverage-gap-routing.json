@@ -1,0 +1,3942 @@
+{
+  "context": {
+    "json": {
+      "anchors": [
+        {
+          "direct_score": 0.22501828570177465,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 551,
+              "path": "tests/test_orchestrator.py",
+              "start_line": 527
+            },
+            "name": "test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+            "node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+            "qualified_name": "test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage"
+          },
+          "pagerank_score": 0.05321798640340265,
+          "rank": 1,
+          "relationship_score": 0.0
+        },
+        {
+          "direct_score": 0.11582096963942566,
+          "node": {
+            "kind": "class",
+            "language": "python",
+            "location": {
+              "end_line": 43,
+              "path": "src/implicit_decision_gate/gate.py",
+              "start_line": 37
+            },
+            "name": "EvidenceClassification",
+            "node_id": "symbol:src/implicit_decision_gate/gate.py::EvidenceClassification",
+            "qualified_name": "EvidenceClassification"
+          },
+          "pagerank_score": 0.024968046103348185,
+          "rank": 2,
+          "relationship_score": 0.0
+        },
+        {
+          "direct_score": 0.10774978456390079,
+          "node": {
+            "kind": "class",
+            "language": "python",
+            "location": {
+              "end_line": 69,
+              "path": "src/implicit_decision_gate/gate.py",
+              "start_line": 65
+            },
+            "name": "ReviewerResult",
+            "node_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+            "qualified_name": "ReviewerResult"
+          },
+          "pagerank_score": 0.03207505461411511,
+          "rank": 3,
+          "relationship_score": 0.0
+        },
+        {
+          "direct_score": 0.09459696927307132,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 373,
+              "path": "src/implicit_decision_gate/gate.py",
+              "start_line": 340
+            },
+            "name": "coverage_gap_payloads",
+            "node_id": "symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads",
+            "qualified_name": "coverage_gap_payloads"
+          },
+          "pagerank_score": 0.02514784699921692,
+          "rank": 4,
+          "relationship_score": 0.0
+        },
+        {
+          "direct_score": 0.09078289427954983,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 524,
+              "path": "tests/test_orchestrator.py",
+              "start_line": 474
+            },
+            "name": "test_unmodeled_first_attempt_records_coverage_gap_without_review",
+            "node_id": "symbol:tests/test_orchestrator.py::test_unmodeled_first_attempt_records_coverage_gap_without_review",
+            "qualified_name": "test_unmodeled_first_attempt_records_coverage_gap_without_review"
+          },
+          "pagerank_score": 0.0248265372280099,
+          "rank": 5,
+          "relationship_score": 0.0
+        },
+        {
+          "direct_score": 0.08781871757425024,
+          "node": {
+            "kind": "method",
+            "language": "python",
+            "location": {
+              "end_line": 50,
+              "path": "src/implicit_decision_gate/agent.py",
+              "start_line": 49
+            },
+            "name": "review_evidence",
+            "node_id": "symbol:src/implicit_decision_gate/agent.py::ReviewerClient.review_evidence",
+            "qualified_name": "ReviewerClient.review_evidence"
+          },
+          "pagerank_score": 0.02704694831799688,
+          "rank": 6,
+          "relationship_score": 0.0
+        }
+      ],
+      "query": "What routes an unmodeled observation to platform coverage review instead of evidence review?",
+      "related_nodes": [
+        {
+          "direct_score": 0.03631019253363249,
+          "node": {
+            "kind": "class",
+            "language": "python",
+            "location": {
+              "end_line": 344,
+              "path": "src/implicit_decision_gate/orchestrator.py",
+              "start_line": 42
+            },
+            "name": "Orchestrator",
+            "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+            "qualified_name": "Orchestrator"
+          },
+          "pagerank_score": 0.02048222743985593,
+          "rank": 1,
+          "relationship_score": 0.47800704960201407
+        },
+        {
+          "direct_score": 0.004592852569471707,
+          "node": {
+            "kind": "class",
+            "language": "python",
+            "location": {
+              "end_line": 91,
+              "path": "tests/conftest.py",
+              "start_line": 61
+            },
+            "name": "ScriptedCodingClient",
+            "node_id": "symbol:tests/conftest.py::ScriptedCodingClient",
+            "qualified_name": "ScriptedCodingClient"
+          },
+          "pagerank_score": 0.020313697148764694,
+          "rank": 2,
+          "relationship_score": 0.47800704960201407
+        },
+        {
+          "direct_score": 0.013074373825856963,
+          "node": {
+            "kind": "class",
+            "language": "python",
+            "location": {
+              "end_line": 124,
+              "path": "tests/conftest.py",
+              "start_line": 94
+            },
+            "name": "ScriptedReviewerClient",
+            "node_id": "symbol:tests/conftest.py::ScriptedReviewerClient",
+            "qualified_name": "ScriptedReviewerClient"
+          },
+          "pagerank_score": 0.020313697148764694,
+          "rank": 3,
+          "relationship_score": 0.47800704960201407
+        },
+        {
+          "direct_score": 0.008125049026317936,
+          "node": {
+            "kind": "class",
+            "language": "python",
+            "location": {
+              "end_line": 89,
+              "path": "tests/test_orchestrator.py",
+              "start_line": 81
+            },
+            "name": "FixedOutcomeProbe",
+            "node_id": "symbol:tests/test_orchestrator.py::FixedOutcomeProbe",
+            "qualified_name": "FixedOutcomeProbe"
+          },
+          "pagerank_score": 0.011174213882548252,
+          "rank": 4,
+          "relationship_score": 0.47800704960201407
+        },
+        {
+          "direct_score": 0.02795931782811606,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 164,
+              "path": "src/implicit_decision_gate/scenarios.py",
+              "start_line": 31
+            },
+            "name": "scenario_registry",
+            "node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+            "qualified_name": "scenario_registry"
+          },
+          "pagerank_score": 0.0142442448085296,
+          "rank": 5,
+          "relationship_score": 0.4759505477828042
+        },
+        {
+          "direct_score": 0.027558481861786673,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 632,
+              "path": "tests/test_orchestrator.py",
+              "start_line": 1
+            },
+            "name": "test_orchestrator.py",
+            "node_id": "file:tests/test_orchestrator.py",
+            "qualified_name": "tests.test_orchestrator"
+          },
+          "pagerank_score": 0.024383465555882076,
+          "rank": 6,
+          "relationship_score": 0.3825
+        },
+        {
+          "direct_score": 0.0020171991119465383,
+          "node": {
+            "kind": "class",
+            "language": "python",
+            "location": {
+              "end_line": 50,
+              "path": "src/implicit_decision_gate/scenario.py",
+              "start_line": 45
+            },
+            "name": "DecisionOption",
+            "node_id": "symbol:src/implicit_decision_gate/scenario.py::DecisionOption",
+            "qualified_name": "DecisionOption"
+          },
+          "pagerank_score": 0.0014418540790999371,
+          "rank": 7,
+          "relationship_score": 0.32611553191135195
+        },
+        {
+          "direct_score": 0.0014204975352593802,
+          "node": {
+            "kind": "method",
+            "language": "python",
+            "location": {
+              "end_line": 76,
+              "path": "src/implicit_decision_gate/orchestrator.py",
+              "start_line": 62
+            },
+            "name": "start",
+            "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.start",
+            "qualified_name": "Orchestrator.start"
+          },
+          "pagerank_score": 0.015227320972689884,
+          "rank": 8,
+          "relationship_score": 0.3006003459680869
+        },
+        {
+          "direct_score": 0.017746628690594696,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 99,
+              "path": "tests/test_live.py",
+              "start_line": 65
+            },
+            "name": "test_live_model_can_pause_and_complete_second_attempt",
+            "node_id": "symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt",
+            "qualified_name": "test_live_model_can_pause_and_complete_second_attempt"
+          },
+          "pagerank_score": 0.003062786767644925,
+          "rank": 9,
+          "relationship_score": 0.2832856672893128
+        },
+        {
+          "direct_score": 0.05437083036591892,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 416,
+              "path": "src/implicit_decision_gate/gate.py",
+              "start_line": 1
+            },
+            "name": "gate.py",
+            "node_id": "file:src/implicit_decision_gate/gate.py",
+            "qualified_name": "implicit_decision_gate.gate"
+          },
+          "pagerank_score": 0.048626456269707324,
+          "rank": 10,
+          "relationship_score": 0.2822848786499116
+        },
+        {
+          "direct_score": 0.04111883004165173,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 344,
+              "path": "src/implicit_decision_gate/orchestrator.py",
+              "start_line": 1
+            },
+            "name": "orchestrator.py",
+            "node_id": "file:src/implicit_decision_gate/orchestrator.py",
+            "qualified_name": "implicit_decision_gate.orchestrator"
+          },
+          "pagerank_score": 0.009483360502711516,
+          "rank": 11,
+          "relationship_score": 0.2822848786499116
+        },
+        {
+          "direct_score": 0.0010831110089489818,
+          "node": {
+            "kind": "class",
+            "language": "python",
+            "location": {
+              "end_line": 60,
+              "path": "src/implicit_decision_gate/scenario.py",
+              "start_line": 54
+            },
+            "name": "DecisionSpec",
+            "node_id": "symbol:src/implicit_decision_gate/scenario.py::DecisionSpec",
+            "qualified_name": "DecisionSpec"
+          },
+          "pagerank_score": 0.0012885770610858581,
+          "rank": 12,
+          "relationship_score": 0.2820669039036649
+        },
+        {
+          "direct_score": 0.03192384562636701,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 240,
+              "path": "src/implicit_decision_gate/gate.py",
+              "start_line": 221
+            },
+            "name": "validate_reviewer_result",
+            "node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+            "qualified_name": "validate_reviewer_result"
+          },
+          "pagerank_score": 0.007738439374064126,
+          "rank": 13,
+          "relationship_score": 0.2610026414773187
+        },
+        {
+          "direct_score": 0.032025688629050676,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 107,
+              "path": "tests/test_reviewer.py",
+              "start_line": 95
+            },
+            "name": "test_fabricated_evidence_quote_becomes_uncertain",
+            "node_id": "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain",
+            "qualified_name": "test_fabricated_evidence_quote_becomes_uncertain"
+          },
+          "pagerank_score": 0.006353592074458356,
+          "rank": 14,
+          "relationship_score": 0.2610026414773187
+        },
+        {
+          "direct_score": 0.008256956240856782,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 313,
+              "path": "tests/test_orchestrator.py",
+              "start_line": 239
+            },
+            "name": "test_owner_decision_regenerates_in_a_clean_context",
+            "node_id": "symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context",
+            "qualified_name": "test_owner_decision_regenerates_in_a_clean_context"
+          },
+          "pagerank_score": 0.01026350475287927,
+          "rank": 15,
+          "relationship_score": 0.26054371747369776
+        },
+        {
+          "direct_score": 0.04411656557077711,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 471,
+              "path": "tests/test_orchestrator.py",
+              "start_line": 428
+            },
+            "name": "test_second_attempt_mismatch_or_unmodeled_fails",
+            "node_id": "symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails",
+            "qualified_name": "test_second_attempt_mismatch_or_unmodeled_fails"
+          },
+          "pagerank_score": 0.008624325009208782,
+          "rank": 16,
+          "relationship_score": 0.26054371747369776
+        },
+        {
+          "direct_score": 0.010362721997359487,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 166,
+              "path": "tests/test_orchestrator.py",
+              "start_line": 124
+            },
+            "name": "test_awaiting_owner_is_durable_and_blocks_more_model_work",
+            "node_id": "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work",
+            "qualified_name": "test_awaiting_owner_is_durable_and_blocks_more_model_work"
+          },
+          "pagerank_score": 0.007437523939773326,
+          "rank": 17,
+          "relationship_score": 0.26054371747369776
+        },
+        {
+          "direct_score": 0.0037634277551787205,
+          "node": {
+            "kind": "class",
+            "language": "python",
+            "location": {
+              "end_line": 75,
+              "path": "src/implicit_decision_gate/scenario.py",
+              "start_line": 64
+            },
+            "name": "Scenario",
+            "node_id": "symbol:src/implicit_decision_gate/scenario.py::Scenario",
+            "qualified_name": "Scenario"
+          },
+          "pagerank_score": 0.0012097818391636928,
+          "rank": 18,
+          "relationship_score": 0.2594227954508647
+        },
+        {
+          "direct_score": 0.050577726474148224,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 107,
+              "path": "tests/test_reviewer.py",
+              "start_line": 1
+            },
+            "name": "test_reviewer.py",
+            "node_id": "file:tests/test_reviewer.py",
+            "qualified_name": "tests.test_reviewer"
+          },
+          "pagerank_score": 0.011372175252877221,
+          "rank": 19,
+          "relationship_score": 0.2500124729189455
+        },
+        {
+          "direct_score": 0.02791550547166386,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 99,
+              "path": "tests/test_live.py",
+              "start_line": 1
+            },
+            "name": "test_live.py",
+            "node_id": "file:tests/test_live.py",
+            "qualified_name": "tests.test_live"
+          },
+          "pagerank_score": 0.010091250085798491,
+          "rank": 20,
+          "relationship_score": 0.2500124729189455
+        },
+        {
+          "direct_score": 0.005776848265630737,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 97,
+              "path": "tests/test_context.py",
+              "start_line": 1
+            },
+            "name": "test_context.py",
+            "node_id": "file:tests/test_context.py",
+            "qualified_name": "tests.test_context"
+          },
+          "pagerank_score": 0.009144070213410764,
+          "rank": 21,
+          "relationship_score": 0.2500124729189455
+        },
+        {
+          "direct_score": 0.005552501642074789,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 224,
+              "path": "tests/conftest.py",
+              "start_line": 221
+            },
+            "name": "scripted_scenarios",
+            "node_id": "symbol:tests/conftest.py::scripted_scenarios",
+            "qualified_name": "scripted_scenarios"
+          },
+          "pagerank_score": 0.005198445779095407,
+          "rank": 22,
+          "relationship_score": 0.2500124729189455
+        },
+        {
+          "direct_score": 0.004191228611813832,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 61,
+              "path": "src/implicit_decision_gate/cli.py",
+              "start_line": 48
+            },
+            "name": "_execution_orchestrator",
+            "node_id": "symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator",
+            "qualified_name": "_execution_orchestrator"
+          },
+          "pagerank_score": 0.003106814333320626,
+          "rank": 23,
+          "relationship_score": 0.2500124729189455
+        },
+        {
+          "direct_score": 0.06557530832381611,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 426,
+              "path": "notebooks/walkthrough_helpers.py",
+              "start_line": 379
+            },
+            "name": "workspace_export_coverage_gap",
+            "node_id": "symbol:notebooks/walkthrough_helpers.py::workspace_export_coverage_gap",
+            "qualified_name": "workspace_export_coverage_gap"
+          },
+          "pagerank_score": 0.003034002162458109,
+          "rank": 24,
+          "relationship_score": 0.2500124729189455
+        },
+        {
+          "direct_score": 0.0012395610567797217,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 71,
+              "path": "src/implicit_decision_gate/cli.py",
+              "start_line": 64
+            },
+            "name": "_state_orchestrator",
+            "node_id": "symbol:src/implicit_decision_gate/cli.py::_state_orchestrator",
+            "qualified_name": "_state_orchestrator"
+          },
+          "pagerank_score": 0.002883406976613939,
+          "rank": 25,
+          "relationship_score": 0.2500124729189455
+        }
+      ],
+      "repository": {
+        "branch": null,
+        "clean": true,
+        "commit_sha": "2fdbb3deab2967a545d8a898a17a380974e6bb17",
+        "detached": true,
+        "extractor_version": "1.0.0",
+        "graph_schema_version": "1.0.0",
+        "indexed_source_sha256": "054eb9ddb72433574992ca595bcf95e2a7747c9fa4a4515fd42681b55d706618",
+        "name": "implicit-decision-gate",
+        "remote_url": "https://github.com/genesobolev/implicit-decision-gate.git",
+        "shallow": false,
+        "tree_sha": "045114ac474171e8044ae179e9808ae4357a5296"
+      },
+      "retrieval": {
+        "hop_decay": 0.85,
+        "hops": 2,
+        "related_count": 25,
+        "seed_count": 6
+      },
+      "schema_version": 1,
+      "selected_edges": [
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:file:tests/test_context.py->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+          "evidence": [
+            "tests/test_context.py:23"
+          ],
+          "kind": "CALLS",
+          "source_id": "file:tests/test_context.py",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:file:tests/test_live.py->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+          "evidence": [
+            "tests/test_live.py:35"
+          ],
+          "kind": "CALLS",
+          "source_id": "file:tests/test_live.py",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:file:tests/test_reviewer.py->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+          "evidence": [
+            "tests/test_reviewer.py:25"
+          ],
+          "kind": "CALLS",
+          "source_id": "file:tests/test_reviewer.py",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:notebooks/walkthrough_helpers.py::workspace_export_coverage_gap->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+          "evidence": [
+            "notebooks/walkthrough_helpers.py:393"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:notebooks/walkthrough_helpers.py::workspace_export_coverage_gap",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+          "evidence": [
+            "src/implicit_decision_gate/cli.py:54"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:src/implicit_decision_gate/cli.py::_state_orchestrator->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+          "evidence": [
+            "src/implicit_decision_gate/cli.py:67"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:src/implicit_decision_gate/cli.py::_state_orchestrator",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:tests/conftest.py::scripted_scenarios->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+          "evidence": [
+            "tests/conftest.py:224"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:tests/conftest.py::scripted_scenarios",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CONTAINS:file:tests/test_orchestrator.py->symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "evidence": [
+            "tests/test_orchestrator.py:527"
+          ],
+          "kind": "CONTAINS",
+          "source_id": "file:tests/test_orchestrator.py",
+          "strength": 0.45,
+          "target_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage"
+        },
+        {
+          "confidence": 0.8090926391959836,
+          "count": 9,
+          "direction": "undirected",
+          "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/gate.py->file:tests/test_orchestrator.py",
+          "evidence": [
+            "9 non-merge commits; Jaccard=0.818; commits=1f83830a, b12be241, 295f5b6f, ab65e7b1, ea18151b, 625d771e, f05fa645, d69ddee8, 10c641b5"
+          ],
+          "kind": "CO_CHANGES",
+          "source_id": "file:src/implicit_decision_gate/gate.py",
+          "strength": 0.6235283453608971,
+          "target_id": "file:tests/test_orchestrator.py"
+        },
+        {
+          "confidence": 0.8090926391959836,
+          "count": 9,
+          "direction": "undirected",
+          "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/orchestrator.py->file:tests/test_orchestrator.py",
+          "evidence": [
+            "9 non-merge commits; Jaccard=0.818; commits=1f83830a, b12be241, 295f5b6f, ab65e7b1, ea18151b, 625d771e, f05fa645, d69ddee8, 10c641b5"
+          ],
+          "kind": "CO_CHANGES",
+          "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+          "strength": 0.6235283453608971,
+          "target_id": "file:tests/test_orchestrator.py"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "IMPORTS:file:tests/test_orchestrator.py->file:src/implicit_decision_gate/gate.py",
+          "evidence": [
+            "tests/test_orchestrator.py:21"
+          ],
+          "kind": "IMPORTS",
+          "source_id": "file:tests/test_orchestrator.py",
+          "strength": 0.65,
+          "target_id": "file:src/implicit_decision_gate/gate.py"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "IMPORTS:file:tests/test_orchestrator.py->file:src/implicit_decision_gate/orchestrator.py",
+          "evidence": [
+            "tests/test_orchestrator.py:30"
+          ],
+          "kind": "IMPORTS",
+          "source_id": "file:tests/test_orchestrator.py",
+          "strength": 0.65,
+          "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+        },
+        {
+          "confidence": 0.95,
+          "count": 2,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+          "evidence": [
+            "src/implicit_decision_gate/gate.py:228",
+            "src/implicit_decision_gate/gate.py:236"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+          "strength": 0.64125,
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult"
+        },
+        {
+          "confidence": 0.9500000000000001,
+          "count": 6,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/scenarios.py::scenario_registry->symbol:src/implicit_decision_gate/scenario.py::DecisionOption",
+          "evidence": [
+            "src/implicit_decision_gate/scenarios.py:109",
+            "src/implicit_decision_gate/scenarios.py:118",
+            "src/implicit_decision_gate/scenarios.py:139",
+            "src/implicit_decision_gate/scenarios.py:147",
+            "src/implicit_decision_gate/scenarios.py:60",
+            "src/implicit_decision_gate/scenarios.py:71"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+          "strength": 0.8061033513832541,
+          "target_id": "symbol:src/implicit_decision_gate/scenario.py::DecisionOption"
+        },
+        {
+          "confidence": 0.9499999999999998,
+          "count": 3,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/scenarios.py::scenario_registry->symbol:src/implicit_decision_gate/scenario.py::DecisionSpec",
+          "evidence": [
+            "src/implicit_decision_gate/scenarios.py:101",
+            "src/implicit_decision_gate/scenarios.py:129",
+            "src/implicit_decision_gate/scenarios.py:52"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+          "strength": 0.6972224696517979,
+          "target_id": "symbol:src/implicit_decision_gate/scenario.py::DecisionSpec"
+        },
+        {
+          "confidence": 0.95,
+          "count": 2,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/scenarios.py::scenario_registry->symbol:src/implicit_decision_gate/scenario.py::Scenario",
+          "evidence": [
+            "src/implicit_decision_gate/scenarios.py:37",
+            "src/implicit_decision_gate/scenarios.py:87"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+          "strength": 0.64125,
+          "target_id": "symbol:src/implicit_decision_gate/scenario.py::Scenario"
+        },
+        {
+          "confidence": 0.9499999999999998,
+          "count": 3,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+          "evidence": [
+            "tests/test_live.py:69",
+            "tests/test_live.py:84",
+            "tests/test_live.py:89"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt",
+          "strength": 0.6972224696517979,
+          "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator"
+        },
+        {
+          "confidence": 0.95,
+          "count": 2,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work->symbol:tests/conftest.py::ScriptedCodingClient",
+          "evidence": [
+            "tests/test_orchestrator.py:128",
+            "tests/test_orchestrator.py:153"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work",
+          "strength": 0.64125,
+          "target_id": "symbol:tests/conftest.py::ScriptedCodingClient"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+          "evidence": [
+            "tests/test_orchestrator.py:538"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "strength": 0.562361234825899,
+          "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:tests/conftest.py::ScriptedCodingClient",
+          "evidence": [
+            "tests/test_orchestrator.py:541"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "strength": 0.562361234825899,
+          "target_id": "symbol:tests/conftest.py::ScriptedCodingClient"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:tests/conftest.py::ScriptedReviewerClient",
+          "evidence": [
+            "tests/test_orchestrator.py:531"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "strength": 0.562361234825899,
+          "target_id": "symbol:tests/conftest.py::ScriptedReviewerClient"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:tests/test_orchestrator.py::FixedOutcomeProbe",
+          "evidence": [
+            "tests/test_orchestrator.py:532"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "strength": 0.562361234825899,
+          "target_id": "symbol:tests/test_orchestrator.py::FixedOutcomeProbe"
+        },
+        {
+          "confidence": 0.95,
+          "count": 2,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context->symbol:tests/conftest.py::ScriptedCodingClient",
+          "evidence": [
+            "tests/test_orchestrator.py:245",
+            "tests/test_orchestrator.py:267"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context",
+          "strength": 0.64125,
+          "target_id": "symbol:tests/conftest.py::ScriptedCodingClient"
+        },
+        {
+          "confidence": 0.95,
+          "count": 2,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+          "evidence": [
+            "tests/test_orchestrator.py:442",
+            "tests/test_orchestrator.py:464"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails",
+          "strength": 0.64125,
+          "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator"
+        },
+        {
+          "confidence": 0.95,
+          "count": 2,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+          "evidence": [
+            "tests/test_reviewer.py:104",
+            "tests/test_reviewer.py:98"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain",
+          "strength": 0.64125,
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult"
+        },
+        {
+          "confidence": 0.6,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.start",
+          "evidence": [
+            "tests/test_orchestrator.py:546"
+          ],
+          "kind": "TESTS",
+          "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "strength": 0.3536474658448081,
+          "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.start"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+          "evidence": [
+            "tests/test_orchestrator.py:540"
+          ],
+          "kind": "TESTS",
+          "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "strength": 0.5599418209209461,
+          "target_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+        }
+      ],
+      "source_snippets": [],
+      "strongest_paths": [
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator"
+          ],
+          "relationship_score": 0.47800704960201407,
+          "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "steps": [
+            {
+              "combined_strength": 0.562361234825899,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.562361234825899,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+              "to_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+            "symbol:tests/conftest.py::ScriptedCodingClient"
+          ],
+          "relationship_score": 0.47800704960201407,
+          "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "steps": [
+            {
+              "combined_strength": 0.562361234825899,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:tests/conftest.py::ScriptedCodingClient",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.562361234825899,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+              "to_node_id": "symbol:tests/conftest.py::ScriptedCodingClient"
+            }
+          ],
+          "target_id": "symbol:tests/conftest.py::ScriptedCodingClient"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+            "symbol:tests/conftest.py::ScriptedReviewerClient"
+          ],
+          "relationship_score": 0.47800704960201407,
+          "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "steps": [
+            {
+              "combined_strength": 0.562361234825899,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:tests/conftest.py::ScriptedReviewerClient",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.562361234825899,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+              "to_node_id": "symbol:tests/conftest.py::ScriptedReviewerClient"
+            }
+          ],
+          "target_id": "symbol:tests/conftest.py::ScriptedReviewerClient"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+            "symbol:tests/test_orchestrator.py::FixedOutcomeProbe"
+          ],
+          "relationship_score": 0.47800704960201407,
+          "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "steps": [
+            {
+              "combined_strength": 0.562361234825899,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:tests/test_orchestrator.py::FixedOutcomeProbe",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.562361234825899,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+              "to_node_id": "symbol:tests/test_orchestrator.py::FixedOutcomeProbe"
+            }
+          ],
+          "target_id": "symbol:tests/test_orchestrator.py::FixedOutcomeProbe"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+            "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+          ],
+          "relationship_score": 0.4759505477828042,
+          "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "steps": [
+            {
+              "combined_strength": 0.5599418209209461,
+              "contributions": [
+                {
+                  "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+                  "kind": "TESTS",
+                  "strength": 0.5599418209209461,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+              "to_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+            "file:tests/test_orchestrator.py"
+          ],
+          "relationship_score": 0.3825,
+          "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "steps": [
+            {
+              "combined_strength": 0.44999999999999996,
+              "contributions": [
+                {
+                  "edge_id": "CONTAINS:file:tests/test_orchestrator.py->symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+                  "kind": "CONTAINS",
+                  "strength": 0.45,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+              "to_node_id": "file:tests/test_orchestrator.py"
+            }
+          ],
+          "target_id": "file:tests/test_orchestrator.py"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+            "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+            "symbol:src/implicit_decision_gate/scenario.py::DecisionOption"
+          ],
+          "relationship_score": 0.32611553191135195,
+          "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "steps": [
+            {
+              "combined_strength": 0.5599418209209461,
+              "contributions": [
+                {
+                  "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+                  "kind": "TESTS",
+                  "strength": 0.5599418209209461,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+              "to_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+            },
+            {
+              "combined_strength": 0.8061033513832541,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/scenarios.py::scenario_registry->symbol:src/implicit_decision_gate/scenario.py::DecisionOption",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.8061033513832541,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+              "to_node_id": "symbol:src/implicit_decision_gate/scenario.py::DecisionOption"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/scenario.py::DecisionOption"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.start"
+          ],
+          "relationship_score": 0.3006003459680869,
+          "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "steps": [
+            {
+              "combined_strength": 0.3536474658448081,
+              "contributions": [
+                {
+                  "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.start",
+                  "kind": "TESTS",
+                  "strength": 0.3536474658448081,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+              "to_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.start"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.start"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+            "symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt"
+          ],
+          "relationship_score": 0.2832856672893128,
+          "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "steps": [
+            {
+              "combined_strength": 0.562361234825899,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.562361234825899,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+              "to_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator"
+            },
+            {
+              "combined_strength": 0.6972224696517979,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.6972224696517979,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+              "to_node_id": "symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt"
+            }
+          ],
+          "target_id": "symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+            "file:tests/test_orchestrator.py",
+            "file:src/implicit_decision_gate/gate.py"
+          ],
+          "relationship_score": 0.2822848786499116,
+          "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "steps": [
+            {
+              "combined_strength": 0.44999999999999996,
+              "contributions": [
+                {
+                  "edge_id": "CONTAINS:file:tests/test_orchestrator.py->symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+                  "kind": "CONTAINS",
+                  "strength": 0.45,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+              "to_node_id": "file:tests/test_orchestrator.py"
+            },
+            {
+              "combined_strength": 0.868234920876314,
+              "contributions": [
+                {
+                  "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/gate.py->file:tests/test_orchestrator.py",
+                  "kind": "CO_CHANGES",
+                  "strength": 0.6235283453608971,
+                  "traversal_direction": "undirected"
+                },
+                {
+                  "edge_id": "IMPORTS:file:tests/test_orchestrator.py->file:src/implicit_decision_gate/gate.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "file:tests/test_orchestrator.py",
+              "to_node_id": "file:src/implicit_decision_gate/gate.py"
+            }
+          ],
+          "target_id": "file:src/implicit_decision_gate/gate.py"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+            "file:tests/test_orchestrator.py",
+            "file:src/implicit_decision_gate/orchestrator.py"
+          ],
+          "relationship_score": 0.2822848786499116,
+          "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "steps": [
+            {
+              "combined_strength": 0.44999999999999996,
+              "contributions": [
+                {
+                  "edge_id": "CONTAINS:file:tests/test_orchestrator.py->symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+                  "kind": "CONTAINS",
+                  "strength": 0.45,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+              "to_node_id": "file:tests/test_orchestrator.py"
+            },
+            {
+              "combined_strength": 0.868234920876314,
+              "contributions": [
+                {
+                  "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/orchestrator.py->file:tests/test_orchestrator.py",
+                  "kind": "CO_CHANGES",
+                  "strength": 0.6235283453608971,
+                  "traversal_direction": "undirected"
+                },
+                {
+                  "edge_id": "IMPORTS:file:tests/test_orchestrator.py->file:src/implicit_decision_gate/orchestrator.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "file:tests/test_orchestrator.py",
+              "to_node_id": "file:src/implicit_decision_gate/orchestrator.py"
+            }
+          ],
+          "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+            "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+            "symbol:src/implicit_decision_gate/scenario.py::DecisionSpec"
+          ],
+          "relationship_score": 0.2820669039036649,
+          "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "steps": [
+            {
+              "combined_strength": 0.5599418209209461,
+              "contributions": [
+                {
+                  "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+                  "kind": "TESTS",
+                  "strength": 0.5599418209209461,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+              "to_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+            },
+            {
+              "combined_strength": 0.6972224696517979,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/scenarios.py::scenario_registry->symbol:src/implicit_decision_gate/scenario.py::DecisionSpec",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.6972224696517979,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+              "to_node_id": "symbol:src/implicit_decision_gate/scenario.py::DecisionSpec"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/scenario.py::DecisionSpec"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+            "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result"
+          ],
+          "relationship_score": 0.2610026414773187,
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+          "steps": [
+            {
+              "combined_strength": 0.64125,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.64125,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+              "to_node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+            "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain"
+          ],
+          "relationship_score": 0.2610026414773187,
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+          "steps": [
+            {
+              "combined_strength": 0.64125,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.64125,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+              "to_node_id": "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain"
+            }
+          ],
+          "target_id": "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+            "symbol:tests/conftest.py::ScriptedCodingClient",
+            "symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context"
+          ],
+          "relationship_score": 0.26054371747369776,
+          "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "steps": [
+            {
+              "combined_strength": 0.562361234825899,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:tests/conftest.py::ScriptedCodingClient",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.562361234825899,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+              "to_node_id": "symbol:tests/conftest.py::ScriptedCodingClient"
+            },
+            {
+              "combined_strength": 0.64125,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context->symbol:tests/conftest.py::ScriptedCodingClient",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.64125,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:tests/conftest.py::ScriptedCodingClient",
+              "to_node_id": "symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context"
+            }
+          ],
+          "target_id": "symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+            "symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails"
+          ],
+          "relationship_score": 0.26054371747369776,
+          "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "steps": [
+            {
+              "combined_strength": 0.562361234825899,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.562361234825899,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+              "to_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator"
+            },
+            {
+              "combined_strength": 0.64125,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.64125,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+              "to_node_id": "symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails"
+            }
+          ],
+          "target_id": "symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+            "symbol:tests/conftest.py::ScriptedCodingClient",
+            "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work"
+          ],
+          "relationship_score": 0.26054371747369776,
+          "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "steps": [
+            {
+              "combined_strength": 0.562361234825899,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:tests/conftest.py::ScriptedCodingClient",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.562361234825899,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+              "to_node_id": "symbol:tests/conftest.py::ScriptedCodingClient"
+            },
+            {
+              "combined_strength": 0.64125,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work->symbol:tests/conftest.py::ScriptedCodingClient",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.64125,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:tests/conftest.py::ScriptedCodingClient",
+              "to_node_id": "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work"
+            }
+          ],
+          "target_id": "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+            "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+            "symbol:src/implicit_decision_gate/scenario.py::Scenario"
+          ],
+          "relationship_score": 0.2594227954508647,
+          "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "steps": [
+            {
+              "combined_strength": 0.5599418209209461,
+              "contributions": [
+                {
+                  "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+                  "kind": "TESTS",
+                  "strength": 0.5599418209209461,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+              "to_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+            },
+            {
+              "combined_strength": 0.64125,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/scenarios.py::scenario_registry->symbol:src/implicit_decision_gate/scenario.py::Scenario",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.64125,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+              "to_node_id": "symbol:src/implicit_decision_gate/scenario.py::Scenario"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/scenario.py::Scenario"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+            "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+            "file:tests/test_reviewer.py"
+          ],
+          "relationship_score": 0.2500124729189455,
+          "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "steps": [
+            {
+              "combined_strength": 0.5599418209209461,
+              "contributions": [
+                {
+                  "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+                  "kind": "TESTS",
+                  "strength": 0.5599418209209461,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+              "to_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+            },
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:file:tests/test_reviewer.py->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+              "to_node_id": "file:tests/test_reviewer.py"
+            }
+          ],
+          "target_id": "file:tests/test_reviewer.py"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+            "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+            "file:tests/test_live.py"
+          ],
+          "relationship_score": 0.2500124729189455,
+          "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "steps": [
+            {
+              "combined_strength": 0.5599418209209461,
+              "contributions": [
+                {
+                  "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+                  "kind": "TESTS",
+                  "strength": 0.5599418209209461,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+              "to_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+            },
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:file:tests/test_live.py->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+              "to_node_id": "file:tests/test_live.py"
+            }
+          ],
+          "target_id": "file:tests/test_live.py"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+            "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+            "file:tests/test_context.py"
+          ],
+          "relationship_score": 0.2500124729189455,
+          "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "steps": [
+            {
+              "combined_strength": 0.5599418209209461,
+              "contributions": [
+                {
+                  "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+                  "kind": "TESTS",
+                  "strength": 0.5599418209209461,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+              "to_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+            },
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:file:tests/test_context.py->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+              "to_node_id": "file:tests/test_context.py"
+            }
+          ],
+          "target_id": "file:tests/test_context.py"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+            "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+            "symbol:tests/conftest.py::scripted_scenarios"
+          ],
+          "relationship_score": 0.2500124729189455,
+          "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "steps": [
+            {
+              "combined_strength": 0.5599418209209461,
+              "contributions": [
+                {
+                  "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+                  "kind": "TESTS",
+                  "strength": 0.5599418209209461,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+              "to_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+            },
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:tests/conftest.py::scripted_scenarios->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+              "to_node_id": "symbol:tests/conftest.py::scripted_scenarios"
+            }
+          ],
+          "target_id": "symbol:tests/conftest.py::scripted_scenarios"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+            "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+            "symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator"
+          ],
+          "relationship_score": 0.2500124729189455,
+          "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "steps": [
+            {
+              "combined_strength": 0.5599418209209461,
+              "contributions": [
+                {
+                  "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+                  "kind": "TESTS",
+                  "strength": 0.5599418209209461,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+              "to_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+            },
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+              "to_node_id": "symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+            "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+            "symbol:notebooks/walkthrough_helpers.py::workspace_export_coverage_gap"
+          ],
+          "relationship_score": 0.2500124729189455,
+          "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "steps": [
+            {
+              "combined_strength": 0.5599418209209461,
+              "contributions": [
+                {
+                  "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+                  "kind": "TESTS",
+                  "strength": 0.5599418209209461,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+              "to_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+            },
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:notebooks/walkthrough_helpers.py::workspace_export_coverage_gap->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+              "to_node_id": "symbol:notebooks/walkthrough_helpers.py::workspace_export_coverage_gap"
+            }
+          ],
+          "target_id": "symbol:notebooks/walkthrough_helpers.py::workspace_export_coverage_gap"
+        },
+        {
+          "node_ids": [
+            "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+            "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+            "symbol:src/implicit_decision_gate/cli.py::_state_orchestrator"
+          ],
+          "relationship_score": 0.2500124729189455,
+          "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "steps": [
+            {
+              "combined_strength": 0.5599418209209461,
+              "contributions": [
+                {
+                  "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+                  "kind": "TESTS",
+                  "strength": 0.5599418209209461,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+              "to_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+            },
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:src/implicit_decision_gate/cli.py::_state_orchestrator->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+              "to_node_id": "symbol:src/implicit_decision_gate/cli.py::_state_orchestrator"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/cli.py::_state_orchestrator"
+        }
+      ]
+    },
+    "markdown": "# Code context\n\nQuery: What routes an unmodeled observation to platform coverage review instead of evidence review?\n\nRepository: `implicit-decision-gate` at `2fdbb3deab2967a545d8a898a17a380974e6bb17`.\n\n## Ranked anchors\n\n- 1. `test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage` at `tests/test_orchestrator.py:527` with direct score 0.2250\n- 2. `EvidenceClassification` at `src/implicit_decision_gate/gate.py:37` with direct score 0.1158\n- 3. `ReviewerResult` at `src/implicit_decision_gate/gate.py:65` with direct score 0.1077\n- 4. `coverage_gap_payloads` at `src/implicit_decision_gate/gate.py:340` with direct score 0.0946\n- 5. `test_unmodeled_first_attempt_records_coverage_gap_without_review` at `tests/test_orchestrator.py:474` with direct score 0.0908\n- 6. `ReviewerClient.review_evidence` at `src/implicit_decision_gate/agent.py:49` with direct score 0.0878\n\n## Related nodes\n\n- 1. `Orchestrator` at `src/implicit_decision_gate/orchestrator.py:42` with relationship score 0.4780\n- 2. `ScriptedCodingClient` at `tests/conftest.py:61` with relationship score 0.4780\n- 3. `ScriptedReviewerClient` at `tests/conftest.py:94` with relationship score 0.4780\n- 4. `FixedOutcomeProbe` at `tests/test_orchestrator.py:81` with relationship score 0.4780\n- 5. `scenario_registry` at `src/implicit_decision_gate/scenarios.py:31` with relationship score 0.4760\n- 6. `tests.test_orchestrator` at `tests/test_orchestrator.py:1` with relationship score 0.3825\n- 7. `DecisionOption` at `src/implicit_decision_gate/scenario.py:45` with relationship score 0.3261\n- 8. `Orchestrator.start` at `src/implicit_decision_gate/orchestrator.py:62` with relationship score 0.3006\n- 9. `test_live_model_can_pause_and_complete_second_attempt` at `tests/test_live.py:65` with relationship score 0.2833\n- 10. `implicit_decision_gate.gate` at `src/implicit_decision_gate/gate.py:1` with relationship score 0.2823\n- 11. `implicit_decision_gate.orchestrator` at `src/implicit_decision_gate/orchestrator.py:1` with relationship score 0.2823\n- 12. `DecisionSpec` at `src/implicit_decision_gate/scenario.py:54` with relationship score 0.2821\n- 13. `validate_reviewer_result` at `src/implicit_decision_gate/gate.py:221` with relationship score 0.2610\n- 14. `test_fabricated_evidence_quote_becomes_uncertain` at `tests/test_reviewer.py:95` with relationship score 0.2610\n- 15. `test_owner_decision_regenerates_in_a_clean_context` at `tests/test_orchestrator.py:239` with relationship score 0.2605\n- 16. `test_second_attempt_mismatch_or_unmodeled_fails` at `tests/test_orchestrator.py:428` with relationship score 0.2605\n- 17. `test_awaiting_owner_is_durable_and_blocks_more_model_work` at `tests/test_orchestrator.py:124` with relationship score 0.2605\n- 18. `Scenario` at `src/implicit_decision_gate/scenario.py:64` with relationship score 0.2594\n- 19. `tests.test_reviewer` at `tests/test_reviewer.py:1` with relationship score 0.2500\n- 20. `tests.test_live` at `tests/test_live.py:1` with relationship score 0.2500\n- 21. `tests.test_context` at `tests/test_context.py:1` with relationship score 0.2500\n- 22. `scripted_scenarios` at `tests/conftest.py:221` with relationship score 0.2500\n- 23. `_execution_orchestrator` at `src/implicit_decision_gate/cli.py:48` with relationship score 0.2500\n- 24. `workspace_export_coverage_gap` at `notebooks/walkthrough_helpers.py:379` with relationship score 0.2500\n- 25. `_state_orchestrator` at `src/implicit_decision_gate/cli.py:64` with relationship score 0.2500\n\n## Strongest paths\n\n- symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage -[combined 0.5624 from `INSTANTIATES` forward 0.5624]-> symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator with relationship score 0.4780\n- symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage -[combined 0.5624 from `INSTANTIATES` forward 0.5624]-> symbol:tests/conftest.py::ScriptedCodingClient with relationship score 0.4780\n- symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage -[combined 0.5624 from `INSTANTIATES` forward 0.5624]-> symbol:tests/conftest.py::ScriptedReviewerClient with relationship score 0.4780\n- symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage -[combined 0.5624 from `INSTANTIATES` forward 0.5624]-> symbol:tests/test_orchestrator.py::FixedOutcomeProbe with relationship score 0.4780\n- symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage -[combined 0.5599 from `TESTS` forward 0.5599]-> symbol:src/implicit_decision_gate/scenarios.py::scenario_registry with relationship score 0.4760\n- symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage -[combined 0.4500 from `CONTAINS` reverse 0.4500]-> file:tests/test_orchestrator.py with relationship score 0.3825\n- symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage -[combined 0.5599 from `TESTS` forward 0.5599]-> symbol:src/implicit_decision_gate/scenarios.py::scenario_registry -[combined 0.8061 from `INSTANTIATES` forward 0.8061]-> symbol:src/implicit_decision_gate/scenario.py::DecisionOption with relationship score 0.3261\n- symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage -[combined 0.3536 from `TESTS` forward 0.3536]-> symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.start with relationship score 0.3006\n- symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage -[combined 0.5624 from `INSTANTIATES` forward 0.5624]-> symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator -[combined 0.6972 from `INSTANTIATES` reverse 0.6972]-> symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt with relationship score 0.2833\n- symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage -[combined 0.4500 from `CONTAINS` reverse 0.4500]-> file:tests/test_orchestrator.py -[combined 0.8682 from `CO_CHANGES` undirected 0.6235, `IMPORTS` forward 0.6500]-> file:src/implicit_decision_gate/gate.py with relationship score 0.2823\n- symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage -[combined 0.4500 from `CONTAINS` reverse 0.4500]-> file:tests/test_orchestrator.py -[combined 0.8682 from `CO_CHANGES` undirected 0.6235, `IMPORTS` forward 0.6500]-> file:src/implicit_decision_gate/orchestrator.py with relationship score 0.2823\n- symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage -[combined 0.5599 from `TESTS` forward 0.5599]-> symbol:src/implicit_decision_gate/scenarios.py::scenario_registry -[combined 0.6972 from `INSTANTIATES` forward 0.6972]-> symbol:src/implicit_decision_gate/scenario.py::DecisionSpec with relationship score 0.2821\n- symbol:src/implicit_decision_gate/gate.py::ReviewerResult -[combined 0.6412 from `INSTANTIATES` reverse 0.6412]-> symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result with relationship score 0.2610\n- symbol:src/implicit_decision_gate/gate.py::ReviewerResult -[combined 0.6412 from `INSTANTIATES` reverse 0.6412]-> symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain with relationship score 0.2610\n- symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage -[combined 0.5624 from `INSTANTIATES` forward 0.5624]-> symbol:tests/conftest.py::ScriptedCodingClient -[combined 0.6412 from `INSTANTIATES` reverse 0.6412]-> symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context with relationship score 0.2605\n- symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage -[combined 0.5624 from `INSTANTIATES` forward 0.5624]-> symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator -[combined 0.6412 from `INSTANTIATES` reverse 0.6412]-> symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails with relationship score 0.2605\n- symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage -[combined 0.5624 from `INSTANTIATES` forward 0.5624]-> symbol:tests/conftest.py::ScriptedCodingClient -[combined 0.6412 from `INSTANTIATES` reverse 0.6412]-> symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work with relationship score 0.2605\n- symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage -[combined 0.5599 from `TESTS` forward 0.5599]-> symbol:src/implicit_decision_gate/scenarios.py::scenario_registry -[combined 0.6412 from `INSTANTIATES` forward 0.6412]-> symbol:src/implicit_decision_gate/scenario.py::Scenario with relationship score 0.2594\n- symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage -[combined 0.5599 from `TESTS` forward 0.5599]-> symbol:src/implicit_decision_gate/scenarios.py::scenario_registry -[combined 0.6180 from `CALLS` reverse 0.6180]-> file:tests/test_reviewer.py with relationship score 0.2500\n- symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage -[combined 0.5599 from `TESTS` forward 0.5599]-> symbol:src/implicit_decision_gate/scenarios.py::scenario_registry -[combined 0.6180 from `CALLS` reverse 0.6180]-> file:tests/test_live.py with relationship score 0.2500\n- symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage -[combined 0.5599 from `TESTS` forward 0.5599]-> symbol:src/implicit_decision_gate/scenarios.py::scenario_registry -[combined 0.6180 from `CALLS` reverse 0.6180]-> file:tests/test_context.py with relationship score 0.2500\n- symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage -[combined 0.5599 from `TESTS` forward 0.5599]-> symbol:src/implicit_decision_gate/scenarios.py::scenario_registry -[combined 0.6180 from `CALLS` reverse 0.6180]-> symbol:tests/conftest.py::scripted_scenarios with relationship score 0.2500\n- symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage -[combined 0.5599 from `TESTS` forward 0.5599]-> symbol:src/implicit_decision_gate/scenarios.py::scenario_registry -[combined 0.6180 from `CALLS` reverse 0.6180]-> symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator with relationship score 0.2500\n- symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage -[combined 0.5599 from `TESTS` forward 0.5599]-> symbol:src/implicit_decision_gate/scenarios.py::scenario_registry -[combined 0.6180 from `CALLS` reverse 0.6180]-> symbol:notebooks/walkthrough_helpers.py::workspace_export_coverage_gap with relationship score 0.2500\n- symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage -[combined 0.5599 from `TESTS` forward 0.5599]-> symbol:src/implicit_decision_gate/scenarios.py::scenario_registry -[combined 0.6180 from `CALLS` reverse 0.6180]-> symbol:src/implicit_decision_gate/cli.py::_state_orchestrator with relationship score 0.2500\n"
+  },
+  "description": "Recorded retrieval for a manually reviewed benchmark question with answer and supporting-context judgments.",
+  "edges": [
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:file:tests/test_context.py->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+      "evidence": [
+        "tests/test_context.py:23"
+      ],
+      "id": "CALLS:file:tests/test_context.py->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+      "kind": "CALLS",
+      "source_id": "file:tests/test_context.py",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:file:tests/test_live.py->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+      "evidence": [
+        "tests/test_live.py:35"
+      ],
+      "id": "CALLS:file:tests/test_live.py->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+      "kind": "CALLS",
+      "source_id": "file:tests/test_live.py",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:file:tests/test_reviewer.py->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+      "evidence": [
+        "tests/test_reviewer.py:25"
+      ],
+      "id": "CALLS:file:tests/test_reviewer.py->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+      "kind": "CALLS",
+      "source_id": "file:tests/test_reviewer.py",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:notebooks/walkthrough_helpers.py::workspace_export_coverage_gap->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+      "evidence": [
+        "notebooks/walkthrough_helpers.py:393"
+      ],
+      "id": "CALLS:symbol:notebooks/walkthrough_helpers.py::workspace_export_coverage_gap->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+      "kind": "CALLS",
+      "source_id": "symbol:notebooks/walkthrough_helpers.py::workspace_export_coverage_gap",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+      "evidence": [
+        "src/implicit_decision_gate/cli.py:54"
+      ],
+      "id": "CALLS:symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+      "kind": "CALLS",
+      "source_id": "symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:src/implicit_decision_gate/cli.py::_state_orchestrator->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+      "evidence": [
+        "src/implicit_decision_gate/cli.py:67"
+      ],
+      "id": "CALLS:symbol:src/implicit_decision_gate/cli.py::_state_orchestrator->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+      "kind": "CALLS",
+      "source_id": "symbol:src/implicit_decision_gate/cli.py::_state_orchestrator",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:tests/conftest.py::scripted_scenarios->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+      "evidence": [
+        "tests/conftest.py:224"
+      ],
+      "id": "CALLS:symbol:tests/conftest.py::scripted_scenarios->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+      "kind": "CALLS",
+      "source_id": "symbol:tests/conftest.py::scripted_scenarios",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CONTAINS:file:tests/test_orchestrator.py->symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "evidence": [
+        "tests/test_orchestrator.py:527"
+      ],
+      "id": "CONTAINS:file:tests/test_orchestrator.py->symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "kind": "CONTAINS",
+      "source_id": "file:tests/test_orchestrator.py",
+      "strength": 0.45,
+      "target_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "type": "CONTAINS"
+    },
+    {
+      "confidence": 0.8090926391959836,
+      "count": 9,
+      "direction": "undirected",
+      "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/gate.py->file:tests/test_orchestrator.py",
+      "evidence": [
+        "9 non-merge commits; Jaccard=0.818; commits=1f83830a, b12be241, 295f5b6f, ab65e7b1, ea18151b, 625d771e, f05fa645, d69ddee8, 10c641b5"
+      ],
+      "id": "CO_CHANGES:file:src/implicit_decision_gate/gate.py->file:tests/test_orchestrator.py",
+      "kind": "CO_CHANGES",
+      "source_id": "file:src/implicit_decision_gate/gate.py",
+      "strength": 0.6235283453608971,
+      "target_id": "file:tests/test_orchestrator.py",
+      "type": "CO_CHANGES"
+    },
+    {
+      "confidence": 0.8090926391959836,
+      "count": 9,
+      "direction": "undirected",
+      "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/orchestrator.py->file:tests/test_orchestrator.py",
+      "evidence": [
+        "9 non-merge commits; Jaccard=0.818; commits=1f83830a, b12be241, 295f5b6f, ab65e7b1, ea18151b, 625d771e, f05fa645, d69ddee8, 10c641b5"
+      ],
+      "id": "CO_CHANGES:file:src/implicit_decision_gate/orchestrator.py->file:tests/test_orchestrator.py",
+      "kind": "CO_CHANGES",
+      "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+      "strength": 0.6235283453608971,
+      "target_id": "file:tests/test_orchestrator.py",
+      "type": "CO_CHANGES"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "IMPORTS:file:tests/test_orchestrator.py->file:src/implicit_decision_gate/gate.py",
+      "evidence": [
+        "tests/test_orchestrator.py:21"
+      ],
+      "id": "IMPORTS:file:tests/test_orchestrator.py->file:src/implicit_decision_gate/gate.py",
+      "kind": "IMPORTS",
+      "source_id": "file:tests/test_orchestrator.py",
+      "strength": 0.65,
+      "target_id": "file:src/implicit_decision_gate/gate.py",
+      "type": "IMPORTS"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "IMPORTS:file:tests/test_orchestrator.py->file:src/implicit_decision_gate/orchestrator.py",
+      "evidence": [
+        "tests/test_orchestrator.py:30"
+      ],
+      "id": "IMPORTS:file:tests/test_orchestrator.py->file:src/implicit_decision_gate/orchestrator.py",
+      "kind": "IMPORTS",
+      "source_id": "file:tests/test_orchestrator.py",
+      "strength": 0.65,
+      "target_id": "file:src/implicit_decision_gate/orchestrator.py",
+      "type": "IMPORTS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 2,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+      "evidence": [
+        "src/implicit_decision_gate/gate.py:228",
+        "src/implicit_decision_gate/gate.py:236"
+      ],
+      "id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+      "strength": 0.64125,
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.9500000000000001,
+      "count": 6,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/scenarios.py::scenario_registry->symbol:src/implicit_decision_gate/scenario.py::DecisionOption",
+      "evidence": [
+        "src/implicit_decision_gate/scenarios.py:109",
+        "src/implicit_decision_gate/scenarios.py:118",
+        "src/implicit_decision_gate/scenarios.py:139",
+        "src/implicit_decision_gate/scenarios.py:147",
+        "src/implicit_decision_gate/scenarios.py:60",
+        "src/implicit_decision_gate/scenarios.py:71"
+      ],
+      "id": "INSTANTIATES:symbol:src/implicit_decision_gate/scenarios.py::scenario_registry->symbol:src/implicit_decision_gate/scenario.py::DecisionOption",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+      "strength": 0.8061033513832541,
+      "target_id": "symbol:src/implicit_decision_gate/scenario.py::DecisionOption",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.9499999999999998,
+      "count": 3,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/scenarios.py::scenario_registry->symbol:src/implicit_decision_gate/scenario.py::DecisionSpec",
+      "evidence": [
+        "src/implicit_decision_gate/scenarios.py:101",
+        "src/implicit_decision_gate/scenarios.py:129",
+        "src/implicit_decision_gate/scenarios.py:52"
+      ],
+      "id": "INSTANTIATES:symbol:src/implicit_decision_gate/scenarios.py::scenario_registry->symbol:src/implicit_decision_gate/scenario.py::DecisionSpec",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+      "strength": 0.6972224696517979,
+      "target_id": "symbol:src/implicit_decision_gate/scenario.py::DecisionSpec",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.95,
+      "count": 2,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/scenarios.py::scenario_registry->symbol:src/implicit_decision_gate/scenario.py::Scenario",
+      "evidence": [
+        "src/implicit_decision_gate/scenarios.py:37",
+        "src/implicit_decision_gate/scenarios.py:87"
+      ],
+      "id": "INSTANTIATES:symbol:src/implicit_decision_gate/scenarios.py::scenario_registry->symbol:src/implicit_decision_gate/scenario.py::Scenario",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+      "strength": 0.64125,
+      "target_id": "symbol:src/implicit_decision_gate/scenario.py::Scenario",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.9499999999999998,
+      "count": 3,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+      "evidence": [
+        "tests/test_live.py:69",
+        "tests/test_live.py:84",
+        "tests/test_live.py:89"
+      ],
+      "id": "INSTANTIATES:symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt",
+      "strength": 0.6972224696517979,
+      "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.95,
+      "count": 2,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work->symbol:tests/conftest.py::ScriptedCodingClient",
+      "evidence": [
+        "tests/test_orchestrator.py:128",
+        "tests/test_orchestrator.py:153"
+      ],
+      "id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work->symbol:tests/conftest.py::ScriptedCodingClient",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work",
+      "strength": 0.64125,
+      "target_id": "symbol:tests/conftest.py::ScriptedCodingClient",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+      "evidence": [
+        "tests/test_orchestrator.py:538"
+      ],
+      "id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "strength": 0.562361234825899,
+      "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:tests/conftest.py::ScriptedCodingClient",
+      "evidence": [
+        "tests/test_orchestrator.py:541"
+      ],
+      "id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:tests/conftest.py::ScriptedCodingClient",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "strength": 0.562361234825899,
+      "target_id": "symbol:tests/conftest.py::ScriptedCodingClient",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:tests/conftest.py::ScriptedReviewerClient",
+      "evidence": [
+        "tests/test_orchestrator.py:531"
+      ],
+      "id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:tests/conftest.py::ScriptedReviewerClient",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "strength": 0.562361234825899,
+      "target_id": "symbol:tests/conftest.py::ScriptedReviewerClient",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:tests/test_orchestrator.py::FixedOutcomeProbe",
+      "evidence": [
+        "tests/test_orchestrator.py:532"
+      ],
+      "id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:tests/test_orchestrator.py::FixedOutcomeProbe",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "strength": 0.562361234825899,
+      "target_id": "symbol:tests/test_orchestrator.py::FixedOutcomeProbe",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.95,
+      "count": 2,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context->symbol:tests/conftest.py::ScriptedCodingClient",
+      "evidence": [
+        "tests/test_orchestrator.py:245",
+        "tests/test_orchestrator.py:267"
+      ],
+      "id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context->symbol:tests/conftest.py::ScriptedCodingClient",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context",
+      "strength": 0.64125,
+      "target_id": "symbol:tests/conftest.py::ScriptedCodingClient",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.95,
+      "count": 2,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+      "evidence": [
+        "tests/test_orchestrator.py:442",
+        "tests/test_orchestrator.py:464"
+      ],
+      "id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails",
+      "strength": 0.64125,
+      "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.95,
+      "count": 2,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+      "evidence": [
+        "tests/test_reviewer.py:104",
+        "tests/test_reviewer.py:98"
+      ],
+      "id": "INSTANTIATES:symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain",
+      "strength": 0.64125,
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.6,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.start",
+      "evidence": [
+        "tests/test_orchestrator.py:546"
+      ],
+      "id": "TESTS:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.start",
+      "kind": "TESTS",
+      "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "strength": 0.3536474658448081,
+      "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.start",
+      "type": "TESTS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+      "evidence": [
+        "tests/test_orchestrator.py:540"
+      ],
+      "id": "TESTS:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+      "kind": "TESTS",
+      "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "strength": 0.5599418209209461,
+      "target_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+      "type": "TESTS"
+    }
+  ],
+  "id": "coverage-gap-routing",
+  "label": "Coverage Gap Routing",
+  "nodes": [
+    {
+      "direct_score": 0.22501828570177465,
+      "end_line": 551,
+      "id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "kind": "test",
+      "label": "test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "language": "python",
+      "pagerank_score": 0.05321798640340265,
+      "path": "tests/test_orchestrator.py",
+      "rank_group": "anchor",
+      "relationship_score": 0.0,
+      "score": 0.22501828570177465,
+      "start_line": 527,
+      "x": 524.348,
+      "y": 312.308
+    },
+    {
+      "direct_score": 0.11582096963942566,
+      "end_line": 43,
+      "id": "symbol:src/implicit_decision_gate/gate.py::EvidenceClassification",
+      "kind": "class",
+      "label": "EvidenceClassification",
+      "language": "python",
+      "pagerank_score": 0.024968046103348185,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank_group": "anchor",
+      "relationship_score": 0.0,
+      "score": 0.11582096963942566,
+      "start_line": 37,
+      "x": 434.894,
+      "y": 263.996
+    },
+    {
+      "direct_score": 0.10774978456390079,
+      "end_line": 69,
+      "id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+      "kind": "class",
+      "label": "ReviewerResult",
+      "language": "python",
+      "pagerank_score": 0.03207505461411511,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank_group": "anchor",
+      "relationship_score": 0.0,
+      "score": 0.10774978456390079,
+      "start_line": 65,
+      "x": 429.186,
+      "y": 285.242
+    },
+    {
+      "direct_score": 0.09459696927307132,
+      "end_line": 373,
+      "id": "symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads",
+      "kind": "function",
+      "label": "coverage_gap_payloads",
+      "language": "python",
+      "pagerank_score": 0.02514784699921692,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank_group": "anchor",
+      "relationship_score": 0.0,
+      "score": 0.09459696927307132,
+      "start_line": 340,
+      "x": 454.093,
+      "y": 257.98
+    },
+    {
+      "direct_score": 0.09078289427954983,
+      "end_line": 524,
+      "id": "symbol:tests/test_orchestrator.py::test_unmodeled_first_attempt_records_coverage_gap_without_review",
+      "kind": "test",
+      "label": "test_unmodeled_first_attempt_records_coverage_gap_without_review",
+      "language": "python",
+      "pagerank_score": 0.0248265372280099,
+      "path": "tests/test_orchestrator.py",
+      "rank_group": "anchor",
+      "relationship_score": 0.0,
+      "score": 0.09078289427954983,
+      "start_line": 474,
+      "x": 502.097,
+      "y": 332.445
+    },
+    {
+      "direct_score": 0.08781871757425024,
+      "end_line": 50,
+      "id": "symbol:src/implicit_decision_gate/agent.py::ReviewerClient.review_evidence",
+      "kind": "method",
+      "label": "ReviewerClient.review_evidence",
+      "language": "python",
+      "pagerank_score": 0.02704694831799688,
+      "path": "src/implicit_decision_gate/agent.py",
+      "rank_group": "anchor",
+      "relationship_score": 0.0,
+      "score": 0.08781871757425024,
+      "start_line": 49,
+      "x": 100.0,
+      "y": 416.962
+    },
+    {
+      "direct_score": 0.03631019253363249,
+      "end_line": 344,
+      "id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+      "kind": "class",
+      "label": "Orchestrator",
+      "language": "python",
+      "pagerank_score": 0.02048222743985593,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.47800704960201407,
+      "score": 0.47800704960201407,
+      "start_line": 42,
+      "x": 541.582,
+      "y": 302.415
+    },
+    {
+      "direct_score": 0.004592852569471707,
+      "end_line": 91,
+      "id": "symbol:tests/conftest.py::ScriptedCodingClient",
+      "kind": "class",
+      "label": "ScriptedCodingClient",
+      "language": "python",
+      "pagerank_score": 0.020313697148764694,
+      "path": "tests/conftest.py",
+      "rank_group": "related",
+      "relationship_score": 0.47800704960201407,
+      "score": 0.47800704960201407,
+      "start_line": 61,
+      "x": 516.502,
+      "y": 332.154
+    },
+    {
+      "direct_score": 0.013074373825856963,
+      "end_line": 124,
+      "id": "symbol:tests/conftest.py::ScriptedReviewerClient",
+      "kind": "class",
+      "label": "ScriptedReviewerClient",
+      "language": "python",
+      "pagerank_score": 0.020313697148764694,
+      "path": "tests/conftest.py",
+      "rank_group": "related",
+      "relationship_score": 0.47800704960201407,
+      "score": 0.47800704960201407,
+      "start_line": 94,
+      "x": 525.635,
+      "y": 334.021
+    },
+    {
+      "direct_score": 0.008125049026317936,
+      "end_line": 89,
+      "id": "symbol:tests/test_orchestrator.py::FixedOutcomeProbe",
+      "kind": "class",
+      "label": "FixedOutcomeProbe",
+      "language": "python",
+      "pagerank_score": 0.011174213882548252,
+      "path": "tests/test_orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.47800704960201407,
+      "score": 0.47800704960201407,
+      "start_line": 81,
+      "x": 521.535,
+      "y": 326.347
+    },
+    {
+      "direct_score": 0.02795931782811606,
+      "end_line": 164,
+      "id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+      "kind": "function",
+      "label": "scenario_registry",
+      "language": "python",
+      "pagerank_score": 0.0142442448085296,
+      "path": "src/implicit_decision_gate/scenarios.py",
+      "rank_group": "related",
+      "relationship_score": 0.4759505477828042,
+      "score": 0.4759505477828042,
+      "start_line": 31,
+      "x": 541.358,
+      "y": 284.144
+    },
+    {
+      "direct_score": 0.027558481861786673,
+      "end_line": 632,
+      "id": "file:tests/test_orchestrator.py",
+      "kind": "file",
+      "label": "tests.test_orchestrator",
+      "language": "python",
+      "pagerank_score": 0.024383465555882076,
+      "path": "tests/test_orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.3825,
+      "score": 0.3825,
+      "start_line": 1,
+      "x": 500.36,
+      "y": 305.609
+    },
+    {
+      "direct_score": 0.0020171991119465383,
+      "end_line": 50,
+      "id": "symbol:src/implicit_decision_gate/scenario.py::DecisionOption",
+      "kind": "class",
+      "label": "DecisionOption",
+      "language": "python",
+      "pagerank_score": 0.0014418540790999371,
+      "path": "src/implicit_decision_gate/scenario.py",
+      "rank_group": "related",
+      "relationship_score": 0.32611553191135195,
+      "score": 0.32611553191135195,
+      "start_line": 45,
+      "x": 560.041,
+      "y": 266.191
+    },
+    {
+      "direct_score": 0.0014204975352593802,
+      "end_line": 76,
+      "id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.start",
+      "kind": "method",
+      "label": "Orchestrator.start",
+      "language": "python",
+      "pagerank_score": 0.015227320972689884,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.3006003459680869,
+      "score": 0.3006003459680869,
+      "start_line": 62,
+      "x": 536.915,
+      "y": 315.299
+    },
+    {
+      "direct_score": 0.017746628690594696,
+      "end_line": 99,
+      "id": "symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt",
+      "kind": "test",
+      "label": "test_live_model_can_pause_and_complete_second_attempt",
+      "language": "python",
+      "pagerank_score": 0.003062786767644925,
+      "path": "tests/test_live.py",
+      "rank_group": "related",
+      "relationship_score": 0.2832856672893128,
+      "score": 0.2832856672893128,
+      "start_line": 65,
+      "x": 527.518,
+      "y": 295.384
+    },
+    {
+      "direct_score": 0.05437083036591892,
+      "end_line": 416,
+      "id": "file:src/implicit_decision_gate/gate.py",
+      "kind": "file",
+      "label": "implicit_decision_gate.gate",
+      "language": "python",
+      "pagerank_score": 0.048626456269707324,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank_group": "related",
+      "relationship_score": 0.2822848786499116,
+      "score": 0.2822848786499116,
+      "start_line": 1,
+      "x": 470.378,
+      "y": 283.52
+    },
+    {
+      "direct_score": 0.04111883004165173,
+      "end_line": 344,
+      "id": "file:src/implicit_decision_gate/orchestrator.py",
+      "kind": "file",
+      "label": "implicit_decision_gate.orchestrator",
+      "language": "python",
+      "pagerank_score": 0.009483360502711516,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.2822848786499116,
+      "score": 0.2822848786499116,
+      "start_line": 1,
+      "x": 494.308,
+      "y": 293.532
+    },
+    {
+      "direct_score": 0.0010831110089489818,
+      "end_line": 60,
+      "id": "symbol:src/implicit_decision_gate/scenario.py::DecisionSpec",
+      "kind": "class",
+      "label": "DecisionSpec",
+      "language": "python",
+      "pagerank_score": 0.0012885770610858581,
+      "path": "src/implicit_decision_gate/scenario.py",
+      "rank_group": "related",
+      "relationship_score": 0.2820669039036649,
+      "score": 0.2820669039036649,
+      "start_line": 54,
+      "x": 545.715,
+      "y": 260.837
+    },
+    {
+      "direct_score": 0.03192384562636701,
+      "end_line": 240,
+      "id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+      "kind": "function",
+      "label": "validate_reviewer_result",
+      "language": "python",
+      "pagerank_score": 0.007738439374064126,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank_group": "related",
+      "relationship_score": 0.2610026414773187,
+      "score": 0.2610026414773187,
+      "start_line": 221,
+      "x": 427.387,
+      "y": 277.22
+    },
+    {
+      "direct_score": 0.032025688629050676,
+      "end_line": 107,
+      "id": "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain",
+      "kind": "test",
+      "label": "test_fabricated_evidence_quote_becomes_uncertain",
+      "language": "python",
+      "pagerank_score": 0.006353592074458356,
+      "path": "tests/test_reviewer.py",
+      "rank_group": "related",
+      "relationship_score": 0.2610026414773187,
+      "score": 0.2610026414773187,
+      "start_line": 95,
+      "x": 445.522,
+      "y": 278.303
+    },
+    {
+      "direct_score": 0.008256956240856782,
+      "end_line": 313,
+      "id": "symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context",
+      "kind": "test",
+      "label": "test_owner_decision_regenerates_in_a_clean_context",
+      "language": "python",
+      "pagerank_score": 0.01026350475287927,
+      "path": "tests/test_orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.26054371747369776,
+      "score": 0.26054371747369776,
+      "start_line": 239,
+      "x": 537.963,
+      "y": 322.743
+    },
+    {
+      "direct_score": 0.04411656557077711,
+      "end_line": 471,
+      "id": "symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails",
+      "kind": "test",
+      "label": "test_second_attempt_mismatch_or_unmodeled_fails",
+      "language": "python",
+      "pagerank_score": 0.008624325009208782,
+      "path": "tests/test_orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.26054371747369776,
+      "score": 0.26054371747369776,
+      "start_line": 428,
+      "x": 528.742,
+      "y": 319.4
+    },
+    {
+      "direct_score": 0.010362721997359487,
+      "end_line": 166,
+      "id": "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work",
+      "kind": "test",
+      "label": "test_awaiting_owner_is_durable_and_blocks_more_model_work",
+      "language": "python",
+      "pagerank_score": 0.007437523939773326,
+      "path": "tests/test_orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.26054371747369776,
+      "score": 0.26054371747369776,
+      "start_line": 124,
+      "x": 503.052,
+      "y": 326.216
+    },
+    {
+      "direct_score": 0.0037634277551787205,
+      "end_line": 75,
+      "id": "symbol:src/implicit_decision_gate/scenario.py::Scenario",
+      "kind": "class",
+      "label": "Scenario",
+      "language": "python",
+      "pagerank_score": 0.0012097818391636928,
+      "path": "src/implicit_decision_gate/scenario.py",
+      "rank_group": "related",
+      "relationship_score": 0.2594227954508647,
+      "score": 0.2594227954508647,
+      "start_line": 64,
+      "x": 577.071,
+      "y": 269.691
+    },
+    {
+      "direct_score": 0.050577726474148224,
+      "end_line": 107,
+      "id": "file:tests/test_reviewer.py",
+      "kind": "file",
+      "label": "tests.test_reviewer",
+      "language": "python",
+      "pagerank_score": 0.011372175252877221,
+      "path": "tests/test_reviewer.py",
+      "rank_group": "related",
+      "relationship_score": 0.2500124729189455,
+      "score": 0.2500124729189455,
+      "start_line": 1,
+      "x": 491.034,
+      "y": 281.355
+    },
+    {
+      "direct_score": 0.02791550547166386,
+      "end_line": 99,
+      "id": "file:tests/test_live.py",
+      "kind": "file",
+      "label": "tests.test_live",
+      "language": "python",
+      "pagerank_score": 0.010091250085798491,
+      "path": "tests/test_live.py",
+      "rank_group": "related",
+      "relationship_score": 0.2500124729189455,
+      "score": 0.2500124729189455,
+      "start_line": 1,
+      "x": 501.284,
+      "y": 285.456
+    },
+    {
+      "direct_score": 0.005776848265630737,
+      "end_line": 97,
+      "id": "file:tests/test_context.py",
+      "kind": "file",
+      "label": "tests.test_context",
+      "language": "python",
+      "pagerank_score": 0.009144070213410764,
+      "path": "tests/test_context.py",
+      "rank_group": "related",
+      "relationship_score": 0.2500124729189455,
+      "score": 0.2500124729189455,
+      "start_line": 1,
+      "x": 508.831,
+      "y": 285.598
+    },
+    {
+      "direct_score": 0.005552501642074789,
+      "end_line": 224,
+      "id": "symbol:tests/conftest.py::scripted_scenarios",
+      "kind": "function",
+      "label": "scripted_scenarios",
+      "language": "python",
+      "pagerank_score": 0.005198445779095407,
+      "path": "tests/conftest.py",
+      "rank_group": "related",
+      "relationship_score": 0.2500124729189455,
+      "score": 0.2500124729189455,
+      "start_line": 221,
+      "x": 553.456,
+      "y": 309.549
+    },
+    {
+      "direct_score": 0.004191228611813832,
+      "end_line": 61,
+      "id": "symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator",
+      "kind": "function",
+      "label": "_execution_orchestrator",
+      "language": "python",
+      "pagerank_score": 0.003106814333320626,
+      "path": "src/implicit_decision_gate/cli.py",
+      "rank_group": "related",
+      "relationship_score": 0.2500124729189455,
+      "score": 0.2500124729189455,
+      "start_line": 48,
+      "x": 572.624,
+      "y": 291.397
+    },
+    {
+      "direct_score": 0.06557530832381611,
+      "end_line": 426,
+      "id": "symbol:notebooks/walkthrough_helpers.py::workspace_export_coverage_gap",
+      "kind": "function",
+      "label": "workspace_export_coverage_gap",
+      "language": "python",
+      "pagerank_score": 0.003034002162458109,
+      "path": "notebooks/walkthrough_helpers.py",
+      "rank_group": "related",
+      "relationship_score": 0.2500124729189455,
+      "score": 0.2500124729189455,
+      "start_line": 379,
+      "x": 562.591,
+      "y": 299.652
+    },
+    {
+      "direct_score": 0.0012395610567797217,
+      "end_line": 71,
+      "id": "symbol:src/implicit_decision_gate/cli.py::_state_orchestrator",
+      "kind": "function",
+      "label": "_state_orchestrator",
+      "language": "python",
+      "pagerank_score": 0.002883406976613939,
+      "path": "src/implicit_decision_gate/cli.py",
+      "rank_group": "related",
+      "relationship_score": 0.2500124729189455,
+      "score": 0.2500124729189455,
+      "start_line": 64,
+      "x": 563.979,
+      "y": 285.032
+    }
+  ],
+  "paths": [
+    {
+      "id": "path-1",
+      "label": "test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage \u2192 Orchestrator",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator"
+      ],
+      "score": 0.47800704960201407,
+      "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "steps": [
+        {
+          "combined_strength": 0.562361234825899,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+              "kind": "INSTANTIATES",
+              "strength": 0.562361234825899,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "to_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator"
+    },
+    {
+      "id": "path-2",
+      "label": "test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage \u2192 ScriptedCodingClient",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+        "symbol:tests/conftest.py::ScriptedCodingClient"
+      ],
+      "score": 0.47800704960201407,
+      "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "steps": [
+        {
+          "combined_strength": 0.562361234825899,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:tests/conftest.py::ScriptedCodingClient",
+              "kind": "INSTANTIATES",
+              "strength": 0.562361234825899,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "to_node_id": "symbol:tests/conftest.py::ScriptedCodingClient"
+        }
+      ],
+      "target_id": "symbol:tests/conftest.py::ScriptedCodingClient"
+    },
+    {
+      "id": "path-3",
+      "label": "test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage \u2192 ScriptedReviewerClient",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+        "symbol:tests/conftest.py::ScriptedReviewerClient"
+      ],
+      "score": 0.47800704960201407,
+      "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "steps": [
+        {
+          "combined_strength": 0.562361234825899,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:tests/conftest.py::ScriptedReviewerClient",
+              "kind": "INSTANTIATES",
+              "strength": 0.562361234825899,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "to_node_id": "symbol:tests/conftest.py::ScriptedReviewerClient"
+        }
+      ],
+      "target_id": "symbol:tests/conftest.py::ScriptedReviewerClient"
+    },
+    {
+      "id": "path-4",
+      "label": "test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage \u2192 FixedOutcomeProbe",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+        "symbol:tests/test_orchestrator.py::FixedOutcomeProbe"
+      ],
+      "score": 0.47800704960201407,
+      "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "steps": [
+        {
+          "combined_strength": 0.562361234825899,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:tests/test_orchestrator.py::FixedOutcomeProbe",
+              "kind": "INSTANTIATES",
+              "strength": 0.562361234825899,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "to_node_id": "symbol:tests/test_orchestrator.py::FixedOutcomeProbe"
+        }
+      ],
+      "target_id": "symbol:tests/test_orchestrator.py::FixedOutcomeProbe"
+    },
+    {
+      "id": "path-5",
+      "label": "test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage \u2192 scenario_registry",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+        "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+      ],
+      "score": 0.4759505477828042,
+      "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "steps": [
+        {
+          "combined_strength": 0.5599418209209461,
+          "contributions": [
+            {
+              "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+              "kind": "TESTS",
+              "strength": 0.5599418209209461,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "to_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+    },
+    {
+      "id": "path-6",
+      "label": "test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage \u2192 tests.test_orchestrator",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+        "file:tests/test_orchestrator.py"
+      ],
+      "score": 0.3825,
+      "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "steps": [
+        {
+          "combined_strength": 0.44999999999999996,
+          "contributions": [
+            {
+              "edge_id": "CONTAINS:file:tests/test_orchestrator.py->symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+              "kind": "CONTAINS",
+              "strength": 0.45,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "to_node_id": "file:tests/test_orchestrator.py"
+        }
+      ],
+      "target_id": "file:tests/test_orchestrator.py"
+    },
+    {
+      "id": "path-7",
+      "label": "test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage \u2192 DecisionOption",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+        "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+        "symbol:src/implicit_decision_gate/scenario.py::DecisionOption"
+      ],
+      "score": 0.32611553191135195,
+      "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "steps": [
+        {
+          "combined_strength": 0.5599418209209461,
+          "contributions": [
+            {
+              "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+              "kind": "TESTS",
+              "strength": 0.5599418209209461,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "to_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+        },
+        {
+          "combined_strength": 0.8061033513832541,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/scenarios.py::scenario_registry->symbol:src/implicit_decision_gate/scenario.py::DecisionOption",
+              "kind": "INSTANTIATES",
+              "strength": 0.8061033513832541,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+          "to_node_id": "symbol:src/implicit_decision_gate/scenario.py::DecisionOption"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/scenario.py::DecisionOption"
+    },
+    {
+      "id": "path-8",
+      "label": "test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage \u2192 Orchestrator.start",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.start"
+      ],
+      "score": 0.3006003459680869,
+      "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "steps": [
+        {
+          "combined_strength": 0.3536474658448081,
+          "contributions": [
+            {
+              "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.start",
+              "kind": "TESTS",
+              "strength": 0.3536474658448081,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "to_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.start"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.start"
+    },
+    {
+      "id": "path-9",
+      "label": "test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage \u2192 test_live_model_can_pause_and_complete_second_attempt",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+        "symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt"
+      ],
+      "score": 0.2832856672893128,
+      "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "steps": [
+        {
+          "combined_strength": 0.562361234825899,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+              "kind": "INSTANTIATES",
+              "strength": 0.562361234825899,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "to_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator"
+        },
+        {
+          "combined_strength": 0.6972224696517979,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+              "kind": "INSTANTIATES",
+              "strength": 0.6972224696517979,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+          "to_node_id": "symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt"
+        }
+      ],
+      "target_id": "symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt"
+    },
+    {
+      "id": "path-10",
+      "label": "test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage \u2192 implicit_decision_gate.gate",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+        "file:tests/test_orchestrator.py",
+        "file:src/implicit_decision_gate/gate.py"
+      ],
+      "score": 0.2822848786499116,
+      "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "steps": [
+        {
+          "combined_strength": 0.44999999999999996,
+          "contributions": [
+            {
+              "edge_id": "CONTAINS:file:tests/test_orchestrator.py->symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+              "kind": "CONTAINS",
+              "strength": 0.45,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "to_node_id": "file:tests/test_orchestrator.py"
+        },
+        {
+          "combined_strength": 0.868234920876314,
+          "contributions": [
+            {
+              "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/gate.py->file:tests/test_orchestrator.py",
+              "kind": "CO_CHANGES",
+              "strength": 0.6235283453608971,
+              "traversal_direction": "undirected"
+            },
+            {
+              "edge_id": "IMPORTS:file:tests/test_orchestrator.py->file:src/implicit_decision_gate/gate.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "file:tests/test_orchestrator.py",
+          "to_node_id": "file:src/implicit_decision_gate/gate.py"
+        }
+      ],
+      "target_id": "file:src/implicit_decision_gate/gate.py"
+    },
+    {
+      "id": "path-11",
+      "label": "test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage \u2192 implicit_decision_gate.orchestrator",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+        "file:tests/test_orchestrator.py",
+        "file:src/implicit_decision_gate/orchestrator.py"
+      ],
+      "score": 0.2822848786499116,
+      "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "steps": [
+        {
+          "combined_strength": 0.44999999999999996,
+          "contributions": [
+            {
+              "edge_id": "CONTAINS:file:tests/test_orchestrator.py->symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+              "kind": "CONTAINS",
+              "strength": 0.45,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "to_node_id": "file:tests/test_orchestrator.py"
+        },
+        {
+          "combined_strength": 0.868234920876314,
+          "contributions": [
+            {
+              "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/orchestrator.py->file:tests/test_orchestrator.py",
+              "kind": "CO_CHANGES",
+              "strength": 0.6235283453608971,
+              "traversal_direction": "undirected"
+            },
+            {
+              "edge_id": "IMPORTS:file:tests/test_orchestrator.py->file:src/implicit_decision_gate/orchestrator.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "file:tests/test_orchestrator.py",
+          "to_node_id": "file:src/implicit_decision_gate/orchestrator.py"
+        }
+      ],
+      "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+    },
+    {
+      "id": "path-12",
+      "label": "test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage \u2192 DecisionSpec",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+        "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+        "symbol:src/implicit_decision_gate/scenario.py::DecisionSpec"
+      ],
+      "score": 0.2820669039036649,
+      "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "steps": [
+        {
+          "combined_strength": 0.5599418209209461,
+          "contributions": [
+            {
+              "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+              "kind": "TESTS",
+              "strength": 0.5599418209209461,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "to_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+        },
+        {
+          "combined_strength": 0.6972224696517979,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/scenarios.py::scenario_registry->symbol:src/implicit_decision_gate/scenario.py::DecisionSpec",
+              "kind": "INSTANTIATES",
+              "strength": 0.6972224696517979,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+          "to_node_id": "symbol:src/implicit_decision_gate/scenario.py::DecisionSpec"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/scenario.py::DecisionSpec"
+    },
+    {
+      "id": "path-13",
+      "label": "ReviewerResult \u2192 validate_reviewer_result",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+        "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result"
+      ],
+      "score": 0.2610026414773187,
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+      "steps": [
+        {
+          "combined_strength": 0.64125,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+              "kind": "INSTANTIATES",
+              "strength": 0.64125,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+          "to_node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result"
+    },
+    {
+      "id": "path-14",
+      "label": "ReviewerResult \u2192 test_fabricated_evidence_quote_becomes_uncertain",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+        "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain"
+      ],
+      "score": 0.2610026414773187,
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+      "steps": [
+        {
+          "combined_strength": 0.64125,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain->symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+              "kind": "INSTANTIATES",
+              "strength": 0.64125,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+          "to_node_id": "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain"
+        }
+      ],
+      "target_id": "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain"
+    },
+    {
+      "id": "path-15",
+      "label": "test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage \u2192 test_owner_decision_regenerates_in_a_clean_context",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+        "symbol:tests/conftest.py::ScriptedCodingClient",
+        "symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context"
+      ],
+      "score": 0.26054371747369776,
+      "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "steps": [
+        {
+          "combined_strength": 0.562361234825899,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:tests/conftest.py::ScriptedCodingClient",
+              "kind": "INSTANTIATES",
+              "strength": 0.562361234825899,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "to_node_id": "symbol:tests/conftest.py::ScriptedCodingClient"
+        },
+        {
+          "combined_strength": 0.64125,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context->symbol:tests/conftest.py::ScriptedCodingClient",
+              "kind": "INSTANTIATES",
+              "strength": 0.64125,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:tests/conftest.py::ScriptedCodingClient",
+          "to_node_id": "symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context"
+        }
+      ],
+      "target_id": "symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context"
+    },
+    {
+      "id": "path-16",
+      "label": "test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage \u2192 test_second_attempt_mismatch_or_unmodeled_fails",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+        "symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails"
+      ],
+      "score": 0.26054371747369776,
+      "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "steps": [
+        {
+          "combined_strength": 0.562361234825899,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+              "kind": "INSTANTIATES",
+              "strength": 0.562361234825899,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "to_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator"
+        },
+        {
+          "combined_strength": 0.64125,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails->symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+              "kind": "INSTANTIATES",
+              "strength": 0.64125,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+          "to_node_id": "symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails"
+        }
+      ],
+      "target_id": "symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails"
+    },
+    {
+      "id": "path-17",
+      "label": "test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage \u2192 test_awaiting_owner_is_durable_and_blocks_more_model_work",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+        "symbol:tests/conftest.py::ScriptedCodingClient",
+        "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work"
+      ],
+      "score": 0.26054371747369776,
+      "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "steps": [
+        {
+          "combined_strength": 0.562361234825899,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:tests/conftest.py::ScriptedCodingClient",
+              "kind": "INSTANTIATES",
+              "strength": 0.562361234825899,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "to_node_id": "symbol:tests/conftest.py::ScriptedCodingClient"
+        },
+        {
+          "combined_strength": 0.64125,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work->symbol:tests/conftest.py::ScriptedCodingClient",
+              "kind": "INSTANTIATES",
+              "strength": 0.64125,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:tests/conftest.py::ScriptedCodingClient",
+          "to_node_id": "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work"
+        }
+      ],
+      "target_id": "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work"
+    },
+    {
+      "id": "path-18",
+      "label": "test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage \u2192 Scenario",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+        "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+        "symbol:src/implicit_decision_gate/scenario.py::Scenario"
+      ],
+      "score": 0.2594227954508647,
+      "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "steps": [
+        {
+          "combined_strength": 0.5599418209209461,
+          "contributions": [
+            {
+              "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+              "kind": "TESTS",
+              "strength": 0.5599418209209461,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "to_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+        },
+        {
+          "combined_strength": 0.64125,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/scenarios.py::scenario_registry->symbol:src/implicit_decision_gate/scenario.py::Scenario",
+              "kind": "INSTANTIATES",
+              "strength": 0.64125,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+          "to_node_id": "symbol:src/implicit_decision_gate/scenario.py::Scenario"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/scenario.py::Scenario"
+    },
+    {
+      "id": "path-19",
+      "label": "test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage \u2192 tests.test_reviewer",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+        "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+        "file:tests/test_reviewer.py"
+      ],
+      "score": 0.2500124729189455,
+      "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "steps": [
+        {
+          "combined_strength": 0.5599418209209461,
+          "contributions": [
+            {
+              "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+              "kind": "TESTS",
+              "strength": 0.5599418209209461,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "to_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+        },
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:file:tests/test_reviewer.py->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+          "to_node_id": "file:tests/test_reviewer.py"
+        }
+      ],
+      "target_id": "file:tests/test_reviewer.py"
+    },
+    {
+      "id": "path-20",
+      "label": "test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage \u2192 tests.test_live",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+        "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+        "file:tests/test_live.py"
+      ],
+      "score": 0.2500124729189455,
+      "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "steps": [
+        {
+          "combined_strength": 0.5599418209209461,
+          "contributions": [
+            {
+              "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+              "kind": "TESTS",
+              "strength": 0.5599418209209461,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "to_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+        },
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:file:tests/test_live.py->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+          "to_node_id": "file:tests/test_live.py"
+        }
+      ],
+      "target_id": "file:tests/test_live.py"
+    },
+    {
+      "id": "path-21",
+      "label": "test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage \u2192 tests.test_context",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+        "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+        "file:tests/test_context.py"
+      ],
+      "score": 0.2500124729189455,
+      "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "steps": [
+        {
+          "combined_strength": 0.5599418209209461,
+          "contributions": [
+            {
+              "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+              "kind": "TESTS",
+              "strength": 0.5599418209209461,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "to_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+        },
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:file:tests/test_context.py->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+          "to_node_id": "file:tests/test_context.py"
+        }
+      ],
+      "target_id": "file:tests/test_context.py"
+    },
+    {
+      "id": "path-22",
+      "label": "test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage \u2192 scripted_scenarios",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+        "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+        "symbol:tests/conftest.py::scripted_scenarios"
+      ],
+      "score": 0.2500124729189455,
+      "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "steps": [
+        {
+          "combined_strength": 0.5599418209209461,
+          "contributions": [
+            {
+              "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+              "kind": "TESTS",
+              "strength": 0.5599418209209461,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "to_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+        },
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:tests/conftest.py::scripted_scenarios->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+          "to_node_id": "symbol:tests/conftest.py::scripted_scenarios"
+        }
+      ],
+      "target_id": "symbol:tests/conftest.py::scripted_scenarios"
+    },
+    {
+      "id": "path-23",
+      "label": "test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage \u2192 _execution_orchestrator",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+        "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+        "symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator"
+      ],
+      "score": 0.2500124729189455,
+      "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "steps": [
+        {
+          "combined_strength": 0.5599418209209461,
+          "contributions": [
+            {
+              "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+              "kind": "TESTS",
+              "strength": 0.5599418209209461,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "to_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+        },
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+          "to_node_id": "symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator"
+    },
+    {
+      "id": "path-24",
+      "label": "test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage \u2192 workspace_export_coverage_gap",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+        "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+        "symbol:notebooks/walkthrough_helpers.py::workspace_export_coverage_gap"
+      ],
+      "score": 0.2500124729189455,
+      "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "steps": [
+        {
+          "combined_strength": 0.5599418209209461,
+          "contributions": [
+            {
+              "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+              "kind": "TESTS",
+              "strength": 0.5599418209209461,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "to_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+        },
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:notebooks/walkthrough_helpers.py::workspace_export_coverage_gap->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+          "to_node_id": "symbol:notebooks/walkthrough_helpers.py::workspace_export_coverage_gap"
+        }
+      ],
+      "target_id": "symbol:notebooks/walkthrough_helpers.py::workspace_export_coverage_gap"
+    },
+    {
+      "id": "path-25",
+      "label": "test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage \u2192 _state_orchestrator",
+      "nodes": [
+        "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+        "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+        "symbol:src/implicit_decision_gate/cli.py::_state_orchestrator"
+      ],
+      "score": 0.2500124729189455,
+      "source_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "steps": [
+        {
+          "combined_strength": 0.5599418209209461,
+          "contributions": [
+            {
+              "edge_id": "TESTS:symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+              "kind": "TESTS",
+              "strength": 0.5599418209209461,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+          "to_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry"
+        },
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:src/implicit_decision_gate/cli.py::_state_orchestrator->symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+          "to_node_id": "symbol:src/implicit_decision_gate/cli.py::_state_orchestrator"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/cli.py::_state_orchestrator"
+    }
+  ],
+  "provenance": {
+    "branch": null,
+    "clean": true,
+    "commit": "2fdbb3deab2967a545d8a898a17a380974e6bb17",
+    "detached": true,
+    "extractor_version": "1.0.0",
+    "indexed_source_sha256": "054eb9ddb72433574992ca595bcf95e2a7747c9fa4a4515fd42681b55d706618",
+    "repository": "implicit-decision-gate",
+    "retrieval": {
+      "hop_decay": 0.85,
+      "hops": 2,
+      "related_count": 25,
+      "seed_count": 6
+    },
+    "schema_version": "1.0.0",
+    "shallow": false,
+    "tree": "045114ac474171e8044ae179e9808ae4357a5296"
+  },
+  "query": "What routes an unmodeled observation to platform coverage review instead of evidence review?",
+  "related": [
+    {
+      "direct_score": 0.03631019253363249,
+      "label": "Orchestrator",
+      "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator",
+      "pagerank_score": 0.02048222743985593,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank": 1,
+      "relationship_score": 0.47800704960201407,
+      "score": 0.47800704960201407
+    },
+    {
+      "direct_score": 0.004592852569471707,
+      "label": "ScriptedCodingClient",
+      "node_id": "symbol:tests/conftest.py::ScriptedCodingClient",
+      "pagerank_score": 0.020313697148764694,
+      "path": "tests/conftest.py",
+      "rank": 2,
+      "relationship_score": 0.47800704960201407,
+      "score": 0.47800704960201407
+    },
+    {
+      "direct_score": 0.013074373825856963,
+      "label": "ScriptedReviewerClient",
+      "node_id": "symbol:tests/conftest.py::ScriptedReviewerClient",
+      "pagerank_score": 0.020313697148764694,
+      "path": "tests/conftest.py",
+      "rank": 3,
+      "relationship_score": 0.47800704960201407,
+      "score": 0.47800704960201407
+    },
+    {
+      "direct_score": 0.008125049026317936,
+      "label": "FixedOutcomeProbe",
+      "node_id": "symbol:tests/test_orchestrator.py::FixedOutcomeProbe",
+      "pagerank_score": 0.011174213882548252,
+      "path": "tests/test_orchestrator.py",
+      "rank": 4,
+      "relationship_score": 0.47800704960201407,
+      "score": 0.47800704960201407
+    },
+    {
+      "direct_score": 0.02795931782811606,
+      "label": "scenario_registry",
+      "node_id": "symbol:src/implicit_decision_gate/scenarios.py::scenario_registry",
+      "pagerank_score": 0.0142442448085296,
+      "path": "src/implicit_decision_gate/scenarios.py",
+      "rank": 5,
+      "relationship_score": 0.4759505477828042,
+      "score": 0.4759505477828042
+    },
+    {
+      "direct_score": 0.027558481861786673,
+      "label": "tests.test_orchestrator",
+      "node_id": "file:tests/test_orchestrator.py",
+      "pagerank_score": 0.024383465555882076,
+      "path": "tests/test_orchestrator.py",
+      "rank": 6,
+      "relationship_score": 0.3825,
+      "score": 0.3825
+    },
+    {
+      "direct_score": 0.0020171991119465383,
+      "label": "DecisionOption",
+      "node_id": "symbol:src/implicit_decision_gate/scenario.py::DecisionOption",
+      "pagerank_score": 0.0014418540790999371,
+      "path": "src/implicit_decision_gate/scenario.py",
+      "rank": 7,
+      "relationship_score": 0.32611553191135195,
+      "score": 0.32611553191135195
+    },
+    {
+      "direct_score": 0.0014204975352593802,
+      "label": "Orchestrator.start",
+      "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.start",
+      "pagerank_score": 0.015227320972689884,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank": 8,
+      "relationship_score": 0.3006003459680869,
+      "score": 0.3006003459680869
+    },
+    {
+      "direct_score": 0.017746628690594696,
+      "label": "test_live_model_can_pause_and_complete_second_attempt",
+      "node_id": "symbol:tests/test_live.py::test_live_model_can_pause_and_complete_second_attempt",
+      "pagerank_score": 0.003062786767644925,
+      "path": "tests/test_live.py",
+      "rank": 9,
+      "relationship_score": 0.2832856672893128,
+      "score": 0.2832856672893128
+    },
+    {
+      "direct_score": 0.05437083036591892,
+      "label": "implicit_decision_gate.gate",
+      "node_id": "file:src/implicit_decision_gate/gate.py",
+      "pagerank_score": 0.048626456269707324,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank": 10,
+      "relationship_score": 0.2822848786499116,
+      "score": 0.2822848786499116
+    },
+    {
+      "direct_score": 0.04111883004165173,
+      "label": "implicit_decision_gate.orchestrator",
+      "node_id": "file:src/implicit_decision_gate/orchestrator.py",
+      "pagerank_score": 0.009483360502711516,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank": 11,
+      "relationship_score": 0.2822848786499116,
+      "score": 0.2822848786499116
+    },
+    {
+      "direct_score": 0.0010831110089489818,
+      "label": "DecisionSpec",
+      "node_id": "symbol:src/implicit_decision_gate/scenario.py::DecisionSpec",
+      "pagerank_score": 0.0012885770610858581,
+      "path": "src/implicit_decision_gate/scenario.py",
+      "rank": 12,
+      "relationship_score": 0.2820669039036649,
+      "score": 0.2820669039036649
+    },
+    {
+      "direct_score": 0.03192384562636701,
+      "label": "validate_reviewer_result",
+      "node_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+      "pagerank_score": 0.007738439374064126,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank": 13,
+      "relationship_score": 0.2610026414773187,
+      "score": 0.2610026414773187
+    },
+    {
+      "direct_score": 0.032025688629050676,
+      "label": "test_fabricated_evidence_quote_becomes_uncertain",
+      "node_id": "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain",
+      "pagerank_score": 0.006353592074458356,
+      "path": "tests/test_reviewer.py",
+      "rank": 14,
+      "relationship_score": 0.2610026414773187,
+      "score": 0.2610026414773187
+    },
+    {
+      "direct_score": 0.008256956240856782,
+      "label": "test_owner_decision_regenerates_in_a_clean_context",
+      "node_id": "symbol:tests/test_orchestrator.py::test_owner_decision_regenerates_in_a_clean_context",
+      "pagerank_score": 0.01026350475287927,
+      "path": "tests/test_orchestrator.py",
+      "rank": 15,
+      "relationship_score": 0.26054371747369776,
+      "score": 0.26054371747369776
+    },
+    {
+      "direct_score": 0.04411656557077711,
+      "label": "test_second_attempt_mismatch_or_unmodeled_fails",
+      "node_id": "symbol:tests/test_orchestrator.py::test_second_attempt_mismatch_or_unmodeled_fails",
+      "pagerank_score": 0.008624325009208782,
+      "path": "tests/test_orchestrator.py",
+      "rank": 16,
+      "relationship_score": 0.26054371747369776,
+      "score": 0.26054371747369776
+    },
+    {
+      "direct_score": 0.010362721997359487,
+      "label": "test_awaiting_owner_is_durable_and_blocks_more_model_work",
+      "node_id": "symbol:tests/test_orchestrator.py::test_awaiting_owner_is_durable_and_blocks_more_model_work",
+      "pagerank_score": 0.007437523939773326,
+      "path": "tests/test_orchestrator.py",
+      "rank": 17,
+      "relationship_score": 0.26054371747369776,
+      "score": 0.26054371747369776
+    },
+    {
+      "direct_score": 0.0037634277551787205,
+      "label": "Scenario",
+      "node_id": "symbol:src/implicit_decision_gate/scenario.py::Scenario",
+      "pagerank_score": 0.0012097818391636928,
+      "path": "src/implicit_decision_gate/scenario.py",
+      "rank": 18,
+      "relationship_score": 0.2594227954508647,
+      "score": 0.2594227954508647
+    },
+    {
+      "direct_score": 0.050577726474148224,
+      "label": "tests.test_reviewer",
+      "node_id": "file:tests/test_reviewer.py",
+      "pagerank_score": 0.011372175252877221,
+      "path": "tests/test_reviewer.py",
+      "rank": 19,
+      "relationship_score": 0.2500124729189455,
+      "score": 0.2500124729189455
+    },
+    {
+      "direct_score": 0.02791550547166386,
+      "label": "tests.test_live",
+      "node_id": "file:tests/test_live.py",
+      "pagerank_score": 0.010091250085798491,
+      "path": "tests/test_live.py",
+      "rank": 20,
+      "relationship_score": 0.2500124729189455,
+      "score": 0.2500124729189455
+    },
+    {
+      "direct_score": 0.005776848265630737,
+      "label": "tests.test_context",
+      "node_id": "file:tests/test_context.py",
+      "pagerank_score": 0.009144070213410764,
+      "path": "tests/test_context.py",
+      "rank": 21,
+      "relationship_score": 0.2500124729189455,
+      "score": 0.2500124729189455
+    },
+    {
+      "direct_score": 0.005552501642074789,
+      "label": "scripted_scenarios",
+      "node_id": "symbol:tests/conftest.py::scripted_scenarios",
+      "pagerank_score": 0.005198445779095407,
+      "path": "tests/conftest.py",
+      "rank": 22,
+      "relationship_score": 0.2500124729189455,
+      "score": 0.2500124729189455
+    },
+    {
+      "direct_score": 0.004191228611813832,
+      "label": "_execution_orchestrator",
+      "node_id": "symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator",
+      "pagerank_score": 0.003106814333320626,
+      "path": "src/implicit_decision_gate/cli.py",
+      "rank": 23,
+      "relationship_score": 0.2500124729189455,
+      "score": 0.2500124729189455
+    },
+    {
+      "direct_score": 0.06557530832381611,
+      "label": "workspace_export_coverage_gap",
+      "node_id": "symbol:notebooks/walkthrough_helpers.py::workspace_export_coverage_gap",
+      "pagerank_score": 0.003034002162458109,
+      "path": "notebooks/walkthrough_helpers.py",
+      "rank": 24,
+      "relationship_score": 0.2500124729189455,
+      "score": 0.2500124729189455
+    },
+    {
+      "direct_score": 0.0012395610567797217,
+      "label": "_state_orchestrator",
+      "node_id": "symbol:src/implicit_decision_gate/cli.py::_state_orchestrator",
+      "pagerank_score": 0.002883406976613939,
+      "path": "src/implicit_decision_gate/cli.py",
+      "rank": 25,
+      "relationship_score": 0.2500124729189455,
+      "score": 0.2500124729189455
+    }
+  ],
+  "relevant": [
+    {
+      "direct_score": 0.22501828570177465,
+      "label": "test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "node_id": "symbol:tests/test_orchestrator.py::test_one_unmodeled_outcome_routes_the_whole_attempt_to_platform_coverage",
+      "pagerank_score": 0.05321798640340265,
+      "path": "tests/test_orchestrator.py",
+      "rank": 1,
+      "relationship_score": 0.0,
+      "score": 0.22501828570177465
+    },
+    {
+      "direct_score": 0.11582096963942566,
+      "label": "EvidenceClassification",
+      "node_id": "symbol:src/implicit_decision_gate/gate.py::EvidenceClassification",
+      "pagerank_score": 0.024968046103348185,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank": 2,
+      "relationship_score": 0.0,
+      "score": 0.11582096963942566
+    },
+    {
+      "direct_score": 0.10774978456390079,
+      "label": "ReviewerResult",
+      "node_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+      "pagerank_score": 0.03207505461411511,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank": 3,
+      "relationship_score": 0.0,
+      "score": 0.10774978456390079
+    },
+    {
+      "direct_score": 0.09459696927307132,
+      "label": "coverage_gap_payloads",
+      "node_id": "symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads",
+      "pagerank_score": 0.02514784699921692,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank": 4,
+      "relationship_score": 0.0,
+      "score": 0.09459696927307132
+    },
+    {
+      "direct_score": 0.09078289427954983,
+      "label": "test_unmodeled_first_attempt_records_coverage_gap_without_review",
+      "node_id": "symbol:tests/test_orchestrator.py::test_unmodeled_first_attempt_records_coverage_gap_without_review",
+      "pagerank_score": 0.0248265372280099,
+      "path": "tests/test_orchestrator.py",
+      "rank": 5,
+      "relationship_score": 0.0,
+      "score": 0.09078289427954983
+    },
+    {
+      "direct_score": 0.08781871757425024,
+      "label": "ReviewerClient.review_evidence",
+      "node_id": "symbol:src/implicit_decision_gate/agent.py::ReviewerClient.review_evidence",
+      "pagerank_score": 0.02704694831799688,
+      "path": "src/implicit_decision_gate/agent.py",
+      "rank": 6,
+      "relationship_score": 0.0,
+      "score": 0.08781871757425024
+    }
+  ],
+  "schema_version": 1
+}

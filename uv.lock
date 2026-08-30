@@ -210,9 +210,9 @@ wheels = [
 ]
 
 [[package]]
-name = "code-knowledge-graph-notebook"
+name = "code-knowledge-graph"
 version = "0.1.0"
-source = { virtual = "." }
+source = { editable = "." }
 dependencies = [
     { name = "ipython" },
     { name = "jupyterlab" },
@@ -224,6 +224,7 @@ dependencies = [
 
 [package.dev-dependencies]
 dev = [
+    { name = "jsonschema" },
     { name = "mypy" },
     { name = "pandas-stubs" },
     { name = "pytest" },
@@ -243,6 +244,7 @@ requires-dist = [
 
 [package.metadata.requires-dev]
 dev = [
+    { name = "jsonschema", specifier = ">=4.23,<5" },
     { name = "mypy", specifier = ">=1.15,<2" },
     { name = "pandas-stubs", specifier = ">=2.2,<3" },
     { name = "pytest", specifier = ">=8.3,<10" },

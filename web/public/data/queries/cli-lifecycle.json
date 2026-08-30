@@ -1,0 +1,3995 @@
+{
+  "context": {
+    "json": {
+      "anchors": [
+        {
+          "direct_score": 0.09128652829983663,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 45,
+              "path": "src/implicit_decision_gate/cli.py",
+              "start_line": 24
+            },
+            "name": "_parser",
+            "node_id": "symbol:src/implicit_decision_gate/cli.py::_parser",
+            "qualified_name": "_parser"
+          },
+          "pagerank_score": 0.03875080314919893,
+          "rank": 1,
+          "relationship_score": 0.0
+        },
+        {
+          "direct_score": 0.0850683944747679,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 294,
+              "path": "src/implicit_decision_gate/gate.py",
+              "start_line": 265
+            },
+            "name": "answer_owner",
+            "node_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+            "qualified_name": "answer_owner"
+          },
+          "pagerank_score": 0.03938373383458436,
+          "rank": 2,
+          "relationship_score": 0.0
+        },
+        {
+          "direct_score": 0.07262917699239876,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 112,
+              "path": "src/implicit_decision_gate/cli.py",
+              "start_line": 80
+            },
+            "name": "main",
+            "node_id": "symbol:src/implicit_decision_gate/cli.py::main",
+            "qualified_name": "main"
+          },
+          "pagerank_score": 0.08175062520791206,
+          "rank": 3,
+          "relationship_score": 0.0
+        },
+        {
+          "direct_score": 0.07032014415404796,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 116,
+              "path": "src/implicit_decision_gate/cli.py",
+              "start_line": 1
+            },
+            "name": "cli.py",
+            "node_id": "file:src/implicit_decision_gate/cli.py",
+            "qualified_name": "implicit_decision_gate.cli"
+          },
+          "pagerank_score": 0.058689964523612886,
+          "rank": 4,
+          "relationship_score": 0.0
+        },
+        {
+          "direct_score": 0.05886377675399038,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 233,
+              "path": "tests/test_cli.py",
+              "start_line": 160
+            },
+            "name": "test_cli_collects_two_answers_before_one_retry",
+            "node_id": "symbol:tests/test_cli.py::test_cli_collects_two_answers_before_one_retry",
+            "qualified_name": "test_cli_collects_two_answers_before_one_retry"
+          },
+          "pagerank_score": 0.02798821017980817,
+          "rank": 5,
+          "relationship_score": 0.0
+        },
+        {
+          "direct_score": 0.0534623751134177,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 416,
+              "path": "src/implicit_decision_gate/gate.py",
+              "start_line": 413
+            },
+            "name": "render_show",
+            "node_id": "symbol:src/implicit_decision_gate/gate.py::render_show",
+            "qualified_name": "render_show"
+          },
+          "pagerank_score": 0.026987795319844292,
+          "rank": 6,
+          "relationship_score": 0.0
+        }
+      ],
+      "query": "Which CLI entry point implements start, show, answer, and resume?",
+      "related_nodes": [
+        {
+          "direct_score": 0.0039845977146514095,
+          "node": {
+            "kind": "class",
+            "language": "python",
+            "location": {
+              "end_line": 133,
+              "path": "src/implicit_decision_gate/gate.py",
+              "start_line": 132
+            },
+            "name": "GateError",
+            "node_id": "symbol:src/implicit_decision_gate/gate.py::GateError",
+            "qualified_name": "GateError"
+          },
+          "pagerank_score": 0.02145185470873371,
+          "rank": 1,
+          "relationship_score": 0.614758357269009
+        },
+        {
+          "direct_score": 0.03824385271896597,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 262,
+              "path": "src/implicit_decision_gate/gate.py",
+              "start_line": 256
+            },
+            "name": "decision_requires_owner",
+            "node_id": "symbol:src/implicit_decision_gate/gate.py::decision_requires_owner",
+            "qualified_name": "decision_requires_owner"
+          },
+          "pagerank_score": 0.007275376300628746,
+          "rank": 2,
+          "relationship_score": 0.55576376524828
+        },
+        {
+          "direct_score": 0.051519392749413064,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 278,
+              "path": "tests/test_cli.py",
+              "start_line": 1
+            },
+            "name": "test_cli.py",
+            "node_id": "file:tests/test_cli.py",
+            "qualified_name": "tests.test_cli"
+          },
+          "pagerank_score": 0.02506930663124209,
+          "rank": 3,
+          "relationship_score": 0.5386441682265166
+        },
+        {
+          "direct_score": 0.033859931295490656,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 416,
+              "path": "src/implicit_decision_gate/gate.py",
+              "start_line": 1
+            },
+            "name": "gate.py",
+            "node_id": "file:src/implicit_decision_gate/gate.py",
+            "qualified_name": "implicit_decision_gate.gate"
+          },
+          "pagerank_score": 0.0323290409650875,
+          "rank": 4,
+          "relationship_score": 0.5208588860468577
+        },
+        {
+          "direct_score": 0.039752059767294574,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 344,
+              "path": "src/implicit_decision_gate/orchestrator.py",
+              "start_line": 1
+            },
+            "name": "orchestrator.py",
+            "node_id": "file:src/implicit_decision_gate/orchestrator.py",
+            "qualified_name": "implicit_decision_gate.orchestrator"
+          },
+          "pagerank_score": 0.012433654522257434,
+          "rank": 5,
+          "relationship_score": 0.5208588860468577
+        },
+        {
+          "direct_score": 0.05333380734414078,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 157,
+              "path": "tests/test_cli.py",
+              "start_line": 74
+            },
+            "name": "test_cli_pauses_inspects_answers_and_resumes",
+            "node_id": "symbol:tests/test_cli.py::test_cli_pauses_inspects_answers_and_resumes",
+            "qualified_name": "test_cli_pauses_inspects_answers_and_resumes"
+          },
+          "pagerank_score": 0.008055058246778837,
+          "rank": 6,
+          "relationship_score": 0.5183081297602967
+        },
+        {
+          "direct_score": 0.004111194605113595,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 77,
+              "path": "src/implicit_decision_gate/cli.py",
+              "start_line": 74
+            },
+            "name": "_render",
+            "node_id": "symbol:src/implicit_decision_gate/cli.py::_render",
+            "qualified_name": "_render"
+          },
+          "pagerank_score": 0.01493023966198597,
+          "rank": 7,
+          "relationship_score": 0.514630761624753
+        },
+        {
+          "direct_score": 0.038991406530171926,
+          "node": {
+            "kind": "method",
+            "language": "python",
+            "location": {
+              "end_line": 90,
+              "path": "src/implicit_decision_gate/orchestrator.py",
+              "start_line": 78
+            },
+            "name": "answer",
+            "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.answer",
+            "qualified_name": "Orchestrator.answer"
+          },
+          "pagerank_score": 0.012557577473228547,
+          "rank": 8,
+          "relationship_score": 0.4895097994026195
+        },
+        {
+          "direct_score": 0.001762178626064931,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 81,
+              "path": "src/implicit_decision_gate/scenario.py",
+              "start_line": 78
+            },
+            "name": "decision_by_id",
+            "node_id": "symbol:src/implicit_decision_gate/scenario.py::decision_by_id",
+            "qualified_name": "decision_by_id"
+          },
+          "pagerank_score": 0.007622441659299748,
+          "rank": 9,
+          "relationship_score": 0.4895097994026195
+        },
+        {
+          "direct_score": 0.001566601379977439,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 87,
+              "path": "src/implicit_decision_gate/scenario.py",
+              "start_line": 84
+            },
+            "name": "option_by_id",
+            "node_id": "symbol:src/implicit_decision_gate/scenario.py::option_by_id",
+            "qualified_name": "option_by_id"
+          },
+          "pagerank_score": 0.007338993818820628,
+          "rank": 10,
+          "relationship_score": 0.4895097994026195
+        },
+        {
+          "direct_score": 0.0019248028493458796,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 56,
+              "path": "src/implicit_decision_gate/gate.py",
+              "start_line": 53
+            },
+            "name": "utc_now",
+            "node_id": "symbol:src/implicit_decision_gate/gate.py::utc_now",
+            "qualified_name": "utc_now"
+          },
+          "pagerank_score": 0.007079293619700525,
+          "rank": 11,
+          "relationship_score": 0.4895097994026195
+        },
+        {
+          "direct_score": 0.014665592939416777,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 283,
+              "path": "src/implicit_decision_gate/probe.py",
+              "start_line": 1
+            },
+            "name": "probe.py",
+            "node_id": "file:src/implicit_decision_gate/probe.py",
+            "qualified_name": "implicit_decision_gate.probe"
+          },
+          "pagerank_score": 0.01201996859760856,
+          "rank": 12,
+          "relationship_score": 0.4778435169625334
+        },
+        {
+          "direct_score": 0.029937684323599216,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 193,
+              "path": "src/implicit_decision_gate/codex_client.py",
+              "start_line": 1
+            },
+            "name": "codex_client.py",
+            "node_id": "file:src/implicit_decision_gate/codex_client.py",
+            "qualified_name": "implicit_decision_gate.codex_client"
+          },
+          "pagerank_score": 0.008319885642071447,
+          "rank": 13,
+          "relationship_score": 0.4778435169625334
+        },
+        {
+          "direct_score": 0.0036000047240290394,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 61,
+              "path": "src/implicit_decision_gate/cli.py",
+              "start_line": 48
+            },
+            "name": "_execution_orchestrator",
+            "node_id": "symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator",
+            "qualified_name": "_execution_orchestrator"
+          },
+          "pagerank_score": 0.00979211404249415,
+          "rank": 14,
+          "relationship_score": 0.4744966108905679
+        },
+        {
+          "direct_score": 0.004078276163805176,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 71,
+              "path": "src/implicit_decision_gate/cli.py",
+              "start_line": 64
+            },
+            "name": "_state_orchestrator",
+            "node_id": "symbol:src/implicit_decision_gate/cli.py::_state_orchestrator",
+            "qualified_name": "_state_orchestrator"
+          },
+          "pagerank_score": 0.00948880417067954,
+          "rank": 15,
+          "relationship_score": 0.4744966108905679
+        },
+        {
+          "direct_score": 0.013164352008756312,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 192,
+              "path": "src/implicit_decision_gate/api_probe.py",
+              "start_line": 1
+            },
+            "name": "api_probe.py",
+            "node_id": "file:src/implicit_decision_gate/api_probe.py",
+            "qualified_name": "implicit_decision_gate.api_probe"
+          },
+          "pagerank_score": 0.011647150774689906,
+          "rank": 16,
+          "relationship_score": 0.44417344252388424
+        },
+        {
+          "direct_score": 0.01592098210909716,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 164,
+              "path": "src/implicit_decision_gate/scenarios.py",
+              "start_line": 1
+            },
+            "name": "scenarios.py",
+            "node_id": "file:src/implicit_decision_gate/scenarios.py",
+            "qualified_name": "implicit_decision_gate.scenarios"
+          },
+          "pagerank_score": 0.011115725230489638,
+          "rank": 17,
+          "relationship_score": 0.44417344252388424
+        },
+        {
+          "direct_score": 0.012324708871783942,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 88,
+              "path": "src/implicit_decision_gate/worktree.py",
+              "start_line": 1
+            },
+            "name": "worktree.py",
+            "node_id": "file:src/implicit_decision_gate/worktree.py",
+            "qualified_name": "implicit_decision_gate.worktree"
+          },
+          "pagerank_score": 0.0057741233368904295,
+          "rank": 18,
+          "relationship_score": 0.44417344252388424
+        },
+        {
+          "direct_score": 0.029505517417881332,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 632,
+              "path": "tests/test_orchestrator.py",
+              "start_line": 1
+            },
+            "name": "test_orchestrator.py",
+            "node_id": "file:tests/test_orchestrator.py",
+            "qualified_name": "tests.test_orchestrator"
+          },
+          "pagerank_score": 0.014133636804912452,
+          "rank": 19,
+          "relationship_score": 0.3843936926574258
+        },
+        {
+          "direct_score": 0.025595547290252364,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 268,
+              "path": "tests/test_cli.py",
+              "start_line": 236
+            },
+            "name": "test_cli_reports_coverage_gap_without_an_execution_error",
+            "node_id": "symbol:tests/test_cli.py::test_cli_reports_coverage_gap_without_an_execution_error",
+            "qualified_name": "test_cli_reports_coverage_gap_without_an_execution_error"
+          },
+          "pagerank_score": 0.005918238305498627,
+          "rank": 20,
+          "relationship_score": 0.3786746765196929
+        },
+        {
+          "direct_score": 0.03698387957878263,
+          "node": {
+            "kind": "test",
+            "language": "python",
+            "location": {
+              "end_line": 278,
+              "path": "tests/test_cli.py",
+              "start_line": 271
+            },
+            "name": "test_start_rejects_the_removed_backend_selector",
+            "node_id": "symbol:tests/test_cli.py::test_start_rejects_the_removed_backend_selector",
+            "qualified_name": "test_start_rejects_the_removed_backend_selector"
+          },
+          "pagerank_score": 0.005481485517867214,
+          "rank": 21,
+          "relationship_score": 0.3786746765196929
+        },
+        {
+          "direct_score": 0.004787019443067063,
+          "node": {
+            "kind": "method",
+            "language": "python",
+            "location": {
+              "end_line": 190,
+              "path": "src/implicit_decision_gate/orchestrator.py",
+              "start_line": 118
+            },
+            "name": "_execute_attempt",
+            "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt",
+            "qualified_name": "Orchestrator._execute_attempt"
+          },
+          "pagerank_score": 0.008895354980132851,
+          "rank": 22,
+          "relationship_score": 0.3643298390800536
+        },
+        {
+          "direct_score": 0.004140004099084678,
+          "node": {
+            "kind": "function",
+            "language": "python",
+            "location": {
+              "end_line": 373,
+              "path": "src/implicit_decision_gate/gate.py",
+              "start_line": 340
+            },
+            "name": "coverage_gap_payloads",
+            "node_id": "symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads",
+            "qualified_name": "coverage_gap_payloads"
+          },
+          "pagerank_score": 0.005709593508879624,
+          "rank": 23,
+          "relationship_score": 0.3643298390800536
+        },
+        {
+          "direct_score": 0.010714151902818629,
+          "node": {
+            "kind": "method",
+            "language": "python",
+            "location": {
+              "end_line": 307,
+              "path": "src/implicit_decision_gate/orchestrator.py",
+              "start_line": 267
+            },
+            "name": "_finish_second_attempt",
+            "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_second_attempt",
+            "qualified_name": "Orchestrator._finish_second_attempt"
+          },
+          "pagerank_score": 0.0027164405379921006,
+          "rank": 24,
+          "relationship_score": 0.3643298390800536
+        },
+        {
+          "direct_score": 0.01200937352368095,
+          "node": {
+            "kind": "file",
+            "language": "python",
+            "location": {
+              "end_line": 106,
+              "path": "src/implicit_decision_gate/agent.py",
+              "start_line": 1
+            },
+            "name": "agent.py",
+            "node_id": "file:src/implicit_decision_gate/agent.py",
+            "qualified_name": "implicit_decision_gate.agent"
+          },
+          "pagerank_score": 0.012040519773472907,
+          "rank": 25,
+          "relationship_score": 0.3642075785184391
+        }
+      ],
+      "repository": {
+        "branch": null,
+        "clean": true,
+        "commit_sha": "2fdbb3deab2967a545d8a898a17a380974e6bb17",
+        "detached": true,
+        "extractor_version": "1.0.0",
+        "graph_schema_version": "1.0.0",
+        "indexed_source_sha256": "054eb9ddb72433574992ca595bcf95e2a7747c9fa4a4515fd42681b55d706618",
+        "name": "implicit-decision-gate",
+        "remote_url": "https://github.com/genesobolev/implicit-decision-gate.git",
+        "shallow": false,
+        "tree_sha": "045114ac474171e8044ae179e9808ae4357a5296"
+      },
+      "retrieval": {
+        "hop_decay": 0.85,
+        "hops": 2,
+        "related_count": 25,
+        "seed_count": 6
+      },
+      "schema_version": 1,
+      "selected_edges": [
+        {
+          "confidence": 0.95,
+          "count": 2,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:src/implicit_decision_gate/cli.py::main->symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator",
+          "evidence": [
+            "src/implicit_decision_gate/cli.py:105",
+            "src/implicit_decision_gate/cli.py:87"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:src/implicit_decision_gate/cli.py::main",
+          "strength": 0.7016325959918396,
+          "target_id": "symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator"
+        },
+        {
+          "confidence": 0.9499999999999998,
+          "count": 3,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:src/implicit_decision_gate/cli.py::main->symbol:src/implicit_decision_gate/cli.py::_render",
+          "evidence": [
+            "src/implicit_decision_gate/cli.py:102",
+            "src/implicit_decision_gate/cli.py:107",
+            "src/implicit_decision_gate/cli.py:89"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:src/implicit_decision_gate/cli.py::main",
+          "strength": 0.7609784958807819,
+          "target_id": "symbol:src/implicit_decision_gate/cli.py::_render"
+        },
+        {
+          "confidence": 0.95,
+          "count": 2,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:src/implicit_decision_gate/cli.py::main->symbol:src/implicit_decision_gate/cli.py::_state_orchestrator",
+          "evidence": [
+            "src/implicit_decision_gate/cli.py:93",
+            "src/implicit_decision_gate/cli.py:96"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:src/implicit_decision_gate/cli.py::main",
+          "strength": 0.7016325959918396,
+          "target_id": "symbol:src/implicit_decision_gate/cli.py::_state_orchestrator"
+        },
+        {
+          "confidence": 0.95,
+          "count": 2,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/gate.py::decision_requires_owner",
+          "evidence": [
+            "src/implicit_decision_gate/gate.py:284",
+            "src/implicit_decision_gate/gate.py:291"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+          "strength": 0.7016325959918396,
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::decision_requires_owner"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/gate.py::utc_now",
+          "evidence": [
+            "src/implicit_decision_gate/gate.py:289"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::utc_now"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/scenario.py::decision_by_id",
+          "evidence": [
+            "src/implicit_decision_gate/gate.py:275"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:src/implicit_decision_gate/scenario.py::decision_by_id"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/scenario.py::option_by_id",
+          "evidence": [
+            "src/implicit_decision_gate/gate.py:278"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:src/implicit_decision_gate/scenario.py::option_by_id"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.answer->symbol:src/implicit_decision_gate/gate.py::answer_owner",
+          "evidence": [
+            "src/implicit_decision_gate/orchestrator.py:83"
+          ],
+          "kind": "CALLS",
+          "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.answer",
+          "strength": 0.6179892479403911,
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner"
+        },
+        {
+          "confidence": 0.6544562407408439,
+          "count": 8,
+          "direction": "undirected",
+          "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/agent.py->file:src/implicit_decision_gate/gate.py",
+          "evidence": [
+            "8 non-merge commits; Jaccard=0.667; commits=b12be241, 295f5b6f, ab65e7b1, 518e2570, ea18151b, 625d771e, f05fa645, 10c641b5"
+          ],
+          "kind": "CO_CHANGES",
+          "source_id": "file:src/implicit_decision_gate/agent.py",
+          "strength": 0.4932579663417871,
+          "target_id": "file:src/implicit_decision_gate/gate.py"
+        },
+        {
+          "confidence": 0.14047123529523503,
+          "count": 2,
+          "direction": "undirected",
+          "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/api_probe.py->file:src/implicit_decision_gate/cli.py",
+          "evidence": [
+            "2 non-merge commits; Jaccard=0.222; commits=b12be241, 295f5b6f"
+          ],
+          "kind": "CO_CHANGES",
+          "source_id": "file:src/implicit_decision_gate/api_probe.py",
+          "strength": 0.08103022011418337,
+          "target_id": "file:src/implicit_decision_gate/cli.py"
+        },
+        {
+          "confidence": 0.34586588670535495,
+          "count": 4,
+          "direction": "undirected",
+          "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/codex_client.py",
+          "evidence": [
+            "4 non-merge commits; Jaccard=0.400; commits=295f5b6f, ea18151b, 625d771e, f05fa645"
+          ],
+          "kind": "CO_CHANGES",
+          "source_id": "file:src/implicit_decision_gate/cli.py",
+          "strength": 0.22795127738275547,
+          "target_id": "file:src/implicit_decision_gate/codex_client.py"
+        },
+        {
+          "confidence": 0.5657181930036476,
+          "count": 7,
+          "direction": "undirected",
+          "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/gate.py",
+          "evidence": [
+            "7 non-merge commits; Jaccard=0.583; commits=b12be241, 295f5b6f, 518e2570, ea18151b, 625d771e, f05fa645, 10c641b5"
+          ],
+          "kind": "CO_CHANGES",
+          "source_id": "file:src/implicit_decision_gate/cli.py",
+          "strength": 0.41565099619930523,
+          "target_id": "file:src/implicit_decision_gate/gate.py"
+        },
+        {
+          "confidence": 0.5657181930036476,
+          "count": 7,
+          "direction": "undirected",
+          "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/orchestrator.py",
+          "evidence": [
+            "7 non-merge commits; Jaccard=0.583; commits=b12be241, 295f5b6f, ea18151b, 171c5863, 625d771e, f05fa645, 10c641b5"
+          ],
+          "kind": "CO_CHANGES",
+          "source_id": "file:src/implicit_decision_gate/cli.py",
+          "strength": 0.41565099619930523,
+          "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+        },
+        {
+          "confidence": 0.34586588670535495,
+          "count": 4,
+          "direction": "undirected",
+          "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/probe.py",
+          "evidence": [
+            "4 non-merge commits; Jaccard=0.400; commits=b12be241, 295f5b6f, 43c97f53, 10c641b5"
+          ],
+          "kind": "CO_CHANGES",
+          "source_id": "file:src/implicit_decision_gate/cli.py",
+          "strength": 0.22795127738275547,
+          "target_id": "file:src/implicit_decision_gate/probe.py"
+        },
+        {
+          "confidence": 0.14047123529523503,
+          "count": 2,
+          "direction": "undirected",
+          "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/scenarios.py",
+          "evidence": [
+            "2 non-merge commits; Jaccard=0.222; commits=b12be241, 295f5b6f"
+          ],
+          "kind": "CO_CHANGES",
+          "source_id": "file:src/implicit_decision_gate/cli.py",
+          "strength": 0.08103022011418337,
+          "target_id": "file:src/implicit_decision_gate/scenarios.py"
+        },
+        {
+          "confidence": 0.14047123529523503,
+          "count": 2,
+          "direction": "undirected",
+          "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/worktree.py",
+          "evidence": [
+            "2 non-merge commits; Jaccard=0.222; commits=625d771e, 10c641b5"
+          ],
+          "kind": "CO_CHANGES",
+          "source_id": "file:src/implicit_decision_gate/cli.py",
+          "strength": 0.08103022011418337,
+          "target_id": "file:src/implicit_decision_gate/worktree.py"
+        },
+        {
+          "confidence": 0.6544562407408439,
+          "count": 8,
+          "direction": "undirected",
+          "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:tests/test_cli.py",
+          "evidence": [
+            "8 non-merge commits; Jaccard=0.667; commits=b12be241, 295f5b6f, 43c97f53, 518e2570, ea18151b, 625d771e, f05fa645, 10c641b5"
+          ],
+          "kind": "CO_CHANGES",
+          "source_id": "file:src/implicit_decision_gate/cli.py",
+          "strength": 0.4932579663417871,
+          "target_id": "file:tests/test_cli.py"
+        },
+        {
+          "confidence": 0.8090926391959836,
+          "count": 9,
+          "direction": "undirected",
+          "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/gate.py->file:tests/test_orchestrator.py",
+          "evidence": [
+            "9 non-merge commits; Jaccard=0.818; commits=1f83830a, b12be241, 295f5b6f, ab65e7b1, ea18151b, 625d771e, f05fa645, d69ddee8, 10c641b5"
+          ],
+          "kind": "CO_CHANGES",
+          "source_id": "file:src/implicit_decision_gate/gate.py",
+          "strength": 0.6235283453608971,
+          "target_id": "file:tests/test_orchestrator.py"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "IMPORTS:file:src/implicit_decision_gate/agent.py->file:src/implicit_decision_gate/gate.py",
+          "evidence": [
+            "src/implicit_decision_gate/agent.py:7"
+          ],
+          "kind": "IMPORTS",
+          "source_id": "file:src/implicit_decision_gate/agent.py",
+          "strength": 0.65,
+          "target_id": "file:src/implicit_decision_gate/gate.py"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/api_probe.py",
+          "evidence": [
+            "src/implicit_decision_gate/cli.py:11"
+          ],
+          "kind": "IMPORTS",
+          "source_id": "file:src/implicit_decision_gate/cli.py",
+          "strength": 0.65,
+          "target_id": "file:src/implicit_decision_gate/api_probe.py"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/codex_client.py",
+          "evidence": [
+            "src/implicit_decision_gate/cli.py:12"
+          ],
+          "kind": "IMPORTS",
+          "source_id": "file:src/implicit_decision_gate/cli.py",
+          "strength": 0.65,
+          "target_id": "file:src/implicit_decision_gate/codex_client.py"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/gate.py",
+          "evidence": [
+            "src/implicit_decision_gate/cli.py:13"
+          ],
+          "kind": "IMPORTS",
+          "source_id": "file:src/implicit_decision_gate/cli.py",
+          "strength": 0.65,
+          "target_id": "file:src/implicit_decision_gate/gate.py"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/orchestrator.py",
+          "evidence": [
+            "src/implicit_decision_gate/cli.py:14"
+          ],
+          "kind": "IMPORTS",
+          "source_id": "file:src/implicit_decision_gate/cli.py",
+          "strength": 0.65,
+          "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/probe.py",
+          "evidence": [
+            "src/implicit_decision_gate/cli.py:15"
+          ],
+          "kind": "IMPORTS",
+          "source_id": "file:src/implicit_decision_gate/cli.py",
+          "strength": 0.65,
+          "target_id": "file:src/implicit_decision_gate/probe.py"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/scenarios.py",
+          "evidence": [
+            "src/implicit_decision_gate/cli.py:16"
+          ],
+          "kind": "IMPORTS",
+          "source_id": "file:src/implicit_decision_gate/cli.py",
+          "strength": 0.65,
+          "target_id": "file:src/implicit_decision_gate/scenarios.py"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/worktree.py",
+          "evidence": [
+            "src/implicit_decision_gate/cli.py:21"
+          ],
+          "kind": "IMPORTS",
+          "source_id": "file:src/implicit_decision_gate/cli.py",
+          "strength": 0.65,
+          "target_id": "file:src/implicit_decision_gate/worktree.py"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "IMPORTS:file:tests/test_cli.py->file:src/implicit_decision_gate/cli.py",
+          "evidence": [
+            "tests/test_cli.py:18"
+          ],
+          "kind": "IMPORTS",
+          "source_id": "file:tests/test_cli.py",
+          "strength": 0.65,
+          "target_id": "file:src/implicit_decision_gate/cli.py"
+        },
+        {
+          "confidence": 1.0,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "IMPORTS:file:tests/test_orchestrator.py->file:src/implicit_decision_gate/gate.py",
+          "evidence": [
+            "tests/test_orchestrator.py:21"
+          ],
+          "kind": "IMPORTS",
+          "source_id": "file:tests/test_orchestrator.py",
+          "strength": 0.65,
+          "target_id": "file:src/implicit_decision_gate/gate.py"
+        },
+        {
+          "confidence": 0.95,
+          "count": 5,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/gate.py::GateError",
+          "evidence": [
+            "src/implicit_decision_gate/gate.py:274",
+            "src/implicit_decision_gate/gate.py:277",
+            "src/implicit_decision_gate/gate.py:279",
+            "src/implicit_decision_gate/gate.py:285",
+            "src/implicit_decision_gate/gate.py:287"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+          "strength": 0.7761112348258989,
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+        },
+        {
+          "confidence": 0.9499999999999998,
+          "count": 3,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads->symbol:src/implicit_decision_gate/gate.py::GateError",
+          "evidence": [
+            "src/implicit_decision_gate/gate.py:350",
+            "src/implicit_decision_gate/gate.py:353",
+            "src/implicit_decision_gate/gate.py:356"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads",
+          "strength": 0.6972224696517979,
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+        },
+        {
+          "confidence": 0.9499999999999998,
+          "count": 3,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt->symbol:src/implicit_decision_gate/gate.py::GateError",
+          "evidence": [
+            "src/implicit_decision_gate/orchestrator.py:121",
+            "src/implicit_decision_gate/orchestrator.py:125",
+            "src/implicit_decision_gate/orchestrator.py:141"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt",
+          "strength": 0.6972224696517979,
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+        },
+        {
+          "confidence": 0.9499999999999998,
+          "count": 3,
+          "direction": "directed",
+          "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_second_attempt->symbol:src/implicit_decision_gate/gate.py::GateError",
+          "evidence": [
+            "src/implicit_decision_gate/orchestrator.py:270",
+            "src/implicit_decision_gate/orchestrator.py:276",
+            "src/implicit_decision_gate/orchestrator.py:282"
+          ],
+          "kind": "INSTANTIATES",
+          "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_second_attempt",
+          "strength": 0.6972224696517979,
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+        },
+        {
+          "confidence": 0.95,
+          "count": 4,
+          "direction": "directed",
+          "edge_id": "TESTS:symbol:tests/test_cli.py::test_cli_pauses_inspects_answers_and_resumes->symbol:src/implicit_decision_gate/cli.py::main",
+          "evidence": [
+            "tests/test_cli.py:110",
+            "tests/test_cli.py:130",
+            "tests/test_cli.py:147",
+            "tests/test_cli.py:97"
+          ],
+          "kind": "TESTS",
+          "source_id": "symbol:tests/test_cli.py::test_cli_pauses_inspects_answers_and_resumes",
+          "strength": 0.7664161771879605,
+          "target_id": "symbol:src/implicit_decision_gate/cli.py::main"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "TESTS:symbol:tests/test_cli.py::test_cli_reports_coverage_gap_without_an_execution_error->symbol:src/implicit_decision_gate/cli.py::main",
+          "evidence": [
+            "tests/test_cli.py:251"
+          ],
+          "kind": "TESTS",
+          "source_id": "symbol:tests/test_cli.py::test_cli_reports_coverage_gap_without_an_execution_error",
+          "strength": 0.5599418209209461,
+          "target_id": "symbol:src/implicit_decision_gate/cli.py::main"
+        },
+        {
+          "confidence": 0.95,
+          "count": 1,
+          "direction": "directed",
+          "edge_id": "TESTS:symbol:tests/test_cli.py::test_start_rejects_the_removed_backend_selector->symbol:src/implicit_decision_gate/cli.py::main",
+          "evidence": [
+            "tests/test_cli.py:275"
+          ],
+          "kind": "TESTS",
+          "source_id": "symbol:tests/test_cli.py::test_start_rejects_the_removed_backend_selector",
+          "strength": 0.5599418209209461,
+          "target_id": "symbol:src/implicit_decision_gate/cli.py::main"
+        }
+      ],
+      "source_snippets": [
+        {
+          "location": {
+            "end_line": 112,
+            "path": "src/implicit_decision_gate/cli.py",
+            "start_line": 80
+          },
+          "node_id": "symbol:src/implicit_decision_gate/cli.py::main",
+          "reviewed": true,
+          "text": "def main(argv: Sequence[str] | None = None) -> int:\n    \"\"\"Execute one CLI command and return its process status.\"\"\"\n\n    arguments = _parser().parse_args(argv)\n    try:\n        repo_path = Path.cwd()\n        if arguments.command == \"start\":\n            orchestrator = _execution_orchestrator(repo_path)\n            run = orchestrator.start(arguments.scenario)\n            print(_render(orchestrator, run.run_id))\n            return 1 if run.state is RunState.FAILED else 0\n\n        if arguments.command == \"show\":\n            print(_state_orchestrator(repo_path).show(arguments.run_id))\n            return 0\n        if arguments.command == \"answer\":\n            orchestrator = _state_orchestrator(repo_path)\n            run = orchestrator.answer(\n                arguments.run_id,\n                a\u2026"
+        }
+      ],
+      "strongest_paths": [
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+            "symbol:src/implicit_decision_gate/gate.py::GateError"
+          ],
+          "relationship_score": 0.614758357269009,
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+          "steps": [
+            {
+              "combined_strength": 0.7761112348258989,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/gate.py::GateError",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.7761112348258989,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+              "to_node_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+            "symbol:src/implicit_decision_gate/gate.py::decision_requires_owner"
+          ],
+          "relationship_score": 0.55576376524828,
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+          "steps": [
+            {
+              "combined_strength": 0.7016325959918396,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/gate.py::decision_requires_owner",
+                  "kind": "CALLS",
+                  "strength": 0.7016325959918396,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+              "to_node_id": "symbol:src/implicit_decision_gate/gate.py::decision_requires_owner"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::decision_requires_owner"
+        },
+        {
+          "node_ids": [
+            "file:src/implicit_decision_gate/cli.py",
+            "file:tests/test_cli.py"
+          ],
+          "relationship_score": 0.5386441682265166,
+          "source_id": "file:src/implicit_decision_gate/cli.py",
+          "steps": [
+            {
+              "combined_strength": 0.8226402882196255,
+              "contributions": [
+                {
+                  "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:tests/test_cli.py",
+                  "kind": "CO_CHANGES",
+                  "strength": 0.4932579663417871,
+                  "traversal_direction": "undirected"
+                },
+                {
+                  "edge_id": "IMPORTS:file:tests/test_cli.py->file:src/implicit_decision_gate/cli.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/cli.py",
+              "to_node_id": "file:tests/test_cli.py"
+            }
+          ],
+          "target_id": "file:tests/test_cli.py"
+        },
+        {
+          "node_ids": [
+            "file:src/implicit_decision_gate/cli.py",
+            "file:src/implicit_decision_gate/gate.py"
+          ],
+          "relationship_score": 0.5208588860468577,
+          "source_id": "file:src/implicit_decision_gate/cli.py",
+          "steps": [
+            {
+              "combined_strength": 0.7954778486697569,
+              "contributions": [
+                {
+                  "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/gate.py",
+                  "kind": "CO_CHANGES",
+                  "strength": 0.41565099619930523,
+                  "traversal_direction": "undirected"
+                },
+                {
+                  "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/gate.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/cli.py",
+              "to_node_id": "file:src/implicit_decision_gate/gate.py"
+            }
+          ],
+          "target_id": "file:src/implicit_decision_gate/gate.py"
+        },
+        {
+          "node_ids": [
+            "file:src/implicit_decision_gate/cli.py",
+            "file:src/implicit_decision_gate/orchestrator.py"
+          ],
+          "relationship_score": 0.5208588860468577,
+          "source_id": "file:src/implicit_decision_gate/cli.py",
+          "steps": [
+            {
+              "combined_strength": 0.7954778486697569,
+              "contributions": [
+                {
+                  "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/orchestrator.py",
+                  "kind": "CO_CHANGES",
+                  "strength": 0.41565099619930523,
+                  "traversal_direction": "undirected"
+                },
+                {
+                  "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/orchestrator.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/cli.py",
+              "to_node_id": "file:src/implicit_decision_gate/orchestrator.py"
+            }
+          ],
+          "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/cli.py::main",
+            "symbol:tests/test_cli.py::test_cli_pauses_inspects_answers_and_resumes"
+          ],
+          "relationship_score": 0.5183081297602967,
+          "source_id": "symbol:src/implicit_decision_gate/cli.py::main",
+          "steps": [
+            {
+              "combined_strength": 0.7664161771879605,
+              "contributions": [
+                {
+                  "edge_id": "TESTS:symbol:tests/test_cli.py::test_cli_pauses_inspects_answers_and_resumes->symbol:src/implicit_decision_gate/cli.py::main",
+                  "kind": "TESTS",
+                  "strength": 0.7664161771879605,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/cli.py::main",
+              "to_node_id": "symbol:tests/test_cli.py::test_cli_pauses_inspects_answers_and_resumes"
+            }
+          ],
+          "target_id": "symbol:tests/test_cli.py::test_cli_pauses_inspects_answers_and_resumes"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/cli.py::main",
+            "symbol:src/implicit_decision_gate/cli.py::_render"
+          ],
+          "relationship_score": 0.514630761624753,
+          "source_id": "symbol:src/implicit_decision_gate/cli.py::main",
+          "steps": [
+            {
+              "combined_strength": 0.7609784958807819,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:src/implicit_decision_gate/cli.py::main->symbol:src/implicit_decision_gate/cli.py::_render",
+                  "kind": "CALLS",
+                  "strength": 0.7609784958807819,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/cli.py::main",
+              "to_node_id": "symbol:src/implicit_decision_gate/cli.py::_render"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/cli.py::_render"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.answer"
+          ],
+          "relationship_score": 0.4895097994026195,
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+          "steps": [
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.answer->symbol:src/implicit_decision_gate/gate.py::answer_owner",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+              "to_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.answer"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.answer"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+            "symbol:src/implicit_decision_gate/scenario.py::decision_by_id"
+          ],
+          "relationship_score": 0.4895097994026195,
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+          "steps": [
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/scenario.py::decision_by_id",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+              "to_node_id": "symbol:src/implicit_decision_gate/scenario.py::decision_by_id"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/scenario.py::decision_by_id"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+            "symbol:src/implicit_decision_gate/scenario.py::option_by_id"
+          ],
+          "relationship_score": 0.4895097994026195,
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+          "steps": [
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/scenario.py::option_by_id",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+              "to_node_id": "symbol:src/implicit_decision_gate/scenario.py::option_by_id"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/scenario.py::option_by_id"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+            "symbol:src/implicit_decision_gate/gate.py::utc_now"
+          ],
+          "relationship_score": 0.4895097994026195,
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+          "steps": [
+            {
+              "combined_strength": 0.6179892479403911,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/gate.py::utc_now",
+                  "kind": "CALLS",
+                  "strength": 0.6179892479403911,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+              "to_node_id": "symbol:src/implicit_decision_gate/gate.py::utc_now"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::utc_now"
+        },
+        {
+          "node_ids": [
+            "file:src/implicit_decision_gate/cli.py",
+            "file:src/implicit_decision_gate/probe.py"
+          ],
+          "relationship_score": 0.4778435169625334,
+          "source_id": "file:src/implicit_decision_gate/cli.py",
+          "steps": [
+            {
+              "combined_strength": 0.7297829470839644,
+              "contributions": [
+                {
+                  "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/probe.py",
+                  "kind": "CO_CHANGES",
+                  "strength": 0.22795127738275547,
+                  "traversal_direction": "undirected"
+                },
+                {
+                  "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/probe.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/cli.py",
+              "to_node_id": "file:src/implicit_decision_gate/probe.py"
+            }
+          ],
+          "target_id": "file:src/implicit_decision_gate/probe.py"
+        },
+        {
+          "node_ids": [
+            "file:src/implicit_decision_gate/cli.py",
+            "file:src/implicit_decision_gate/codex_client.py"
+          ],
+          "relationship_score": 0.4778435169625334,
+          "source_id": "file:src/implicit_decision_gate/cli.py",
+          "steps": [
+            {
+              "combined_strength": 0.7297829470839644,
+              "contributions": [
+                {
+                  "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/codex_client.py",
+                  "kind": "CO_CHANGES",
+                  "strength": 0.22795127738275547,
+                  "traversal_direction": "undirected"
+                },
+                {
+                  "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/codex_client.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/cli.py",
+              "to_node_id": "file:src/implicit_decision_gate/codex_client.py"
+            }
+          ],
+          "target_id": "file:src/implicit_decision_gate/codex_client.py"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/cli.py::main",
+            "symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator"
+          ],
+          "relationship_score": 0.4744966108905679,
+          "source_id": "symbol:src/implicit_decision_gate/cli.py::main",
+          "steps": [
+            {
+              "combined_strength": 0.7016325959918396,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:src/implicit_decision_gate/cli.py::main->symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator",
+                  "kind": "CALLS",
+                  "strength": 0.7016325959918396,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/cli.py::main",
+              "to_node_id": "symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/cli.py::main",
+            "symbol:src/implicit_decision_gate/cli.py::_state_orchestrator"
+          ],
+          "relationship_score": 0.4744966108905679,
+          "source_id": "symbol:src/implicit_decision_gate/cli.py::main",
+          "steps": [
+            {
+              "combined_strength": 0.7016325959918396,
+              "contributions": [
+                {
+                  "edge_id": "CALLS:symbol:src/implicit_decision_gate/cli.py::main->symbol:src/implicit_decision_gate/cli.py::_state_orchestrator",
+                  "kind": "CALLS",
+                  "strength": 0.7016325959918396,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/cli.py::main",
+              "to_node_id": "symbol:src/implicit_decision_gate/cli.py::_state_orchestrator"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/cli.py::_state_orchestrator"
+        },
+        {
+          "node_ids": [
+            "file:src/implicit_decision_gate/cli.py",
+            "file:src/implicit_decision_gate/api_probe.py"
+          ],
+          "relationship_score": 0.44417344252388424,
+          "source_id": "file:src/implicit_decision_gate/cli.py",
+          "steps": [
+            {
+              "combined_strength": 0.6783605770399642,
+              "contributions": [
+                {
+                  "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/api_probe.py->file:src/implicit_decision_gate/cli.py",
+                  "kind": "CO_CHANGES",
+                  "strength": 0.08103022011418337,
+                  "traversal_direction": "undirected"
+                },
+                {
+                  "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/api_probe.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/cli.py",
+              "to_node_id": "file:src/implicit_decision_gate/api_probe.py"
+            }
+          ],
+          "target_id": "file:src/implicit_decision_gate/api_probe.py"
+        },
+        {
+          "node_ids": [
+            "file:src/implicit_decision_gate/cli.py",
+            "file:src/implicit_decision_gate/scenarios.py"
+          ],
+          "relationship_score": 0.44417344252388424,
+          "source_id": "file:src/implicit_decision_gate/cli.py",
+          "steps": [
+            {
+              "combined_strength": 0.6783605770399642,
+              "contributions": [
+                {
+                  "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/scenarios.py",
+                  "kind": "CO_CHANGES",
+                  "strength": 0.08103022011418337,
+                  "traversal_direction": "undirected"
+                },
+                {
+                  "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/scenarios.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/cli.py",
+              "to_node_id": "file:src/implicit_decision_gate/scenarios.py"
+            }
+          ],
+          "target_id": "file:src/implicit_decision_gate/scenarios.py"
+        },
+        {
+          "node_ids": [
+            "file:src/implicit_decision_gate/cli.py",
+            "file:src/implicit_decision_gate/worktree.py"
+          ],
+          "relationship_score": 0.44417344252388424,
+          "source_id": "file:src/implicit_decision_gate/cli.py",
+          "steps": [
+            {
+              "combined_strength": 0.6783605770399642,
+              "contributions": [
+                {
+                  "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/worktree.py",
+                  "kind": "CO_CHANGES",
+                  "strength": 0.08103022011418337,
+                  "traversal_direction": "undirected"
+                },
+                {
+                  "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/worktree.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/cli.py",
+              "to_node_id": "file:src/implicit_decision_gate/worktree.py"
+            }
+          ],
+          "target_id": "file:src/implicit_decision_gate/worktree.py"
+        },
+        {
+          "node_ids": [
+            "file:src/implicit_decision_gate/cli.py",
+            "file:src/implicit_decision_gate/gate.py",
+            "file:tests/test_orchestrator.py"
+          ],
+          "relationship_score": 0.3843936926574258,
+          "source_id": "file:src/implicit_decision_gate/cli.py",
+          "steps": [
+            {
+              "combined_strength": 0.7954778486697569,
+              "contributions": [
+                {
+                  "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/gate.py",
+                  "kind": "CO_CHANGES",
+                  "strength": 0.41565099619930523,
+                  "traversal_direction": "undirected"
+                },
+                {
+                  "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/gate.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/cli.py",
+              "to_node_id": "file:src/implicit_decision_gate/gate.py"
+            },
+            {
+              "combined_strength": 0.868234920876314,
+              "contributions": [
+                {
+                  "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/gate.py->file:tests/test_orchestrator.py",
+                  "kind": "CO_CHANGES",
+                  "strength": 0.6235283453608971,
+                  "traversal_direction": "undirected"
+                },
+                {
+                  "edge_id": "IMPORTS:file:tests/test_orchestrator.py->file:src/implicit_decision_gate/gate.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/gate.py",
+              "to_node_id": "file:tests/test_orchestrator.py"
+            }
+          ],
+          "target_id": "file:tests/test_orchestrator.py"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/cli.py::main",
+            "symbol:tests/test_cli.py::test_cli_reports_coverage_gap_without_an_execution_error"
+          ],
+          "relationship_score": 0.3786746765196929,
+          "source_id": "symbol:src/implicit_decision_gate/cli.py::main",
+          "steps": [
+            {
+              "combined_strength": 0.5599418209209461,
+              "contributions": [
+                {
+                  "edge_id": "TESTS:symbol:tests/test_cli.py::test_cli_reports_coverage_gap_without_an_execution_error->symbol:src/implicit_decision_gate/cli.py::main",
+                  "kind": "TESTS",
+                  "strength": 0.5599418209209461,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/cli.py::main",
+              "to_node_id": "symbol:tests/test_cli.py::test_cli_reports_coverage_gap_without_an_execution_error"
+            }
+          ],
+          "target_id": "symbol:tests/test_cli.py::test_cli_reports_coverage_gap_without_an_execution_error"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/cli.py::main",
+            "symbol:tests/test_cli.py::test_start_rejects_the_removed_backend_selector"
+          ],
+          "relationship_score": 0.3786746765196929,
+          "source_id": "symbol:src/implicit_decision_gate/cli.py::main",
+          "steps": [
+            {
+              "combined_strength": 0.5599418209209461,
+              "contributions": [
+                {
+                  "edge_id": "TESTS:symbol:tests/test_cli.py::test_start_rejects_the_removed_backend_selector->symbol:src/implicit_decision_gate/cli.py::main",
+                  "kind": "TESTS",
+                  "strength": 0.5599418209209461,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/cli.py::main",
+              "to_node_id": "symbol:tests/test_cli.py::test_start_rejects_the_removed_backend_selector"
+            }
+          ],
+          "target_id": "symbol:tests/test_cli.py::test_start_rejects_the_removed_backend_selector"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+            "symbol:src/implicit_decision_gate/gate.py::GateError",
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt"
+          ],
+          "relationship_score": 0.3643298390800536,
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+          "steps": [
+            {
+              "combined_strength": 0.7761112348258989,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/gate.py::GateError",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.7761112348258989,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+              "to_node_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+            },
+            {
+              "combined_strength": 0.6972224696517979,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt->symbol:src/implicit_decision_gate/gate.py::GateError",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.6972224696517979,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::GateError",
+              "to_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+            "symbol:src/implicit_decision_gate/gate.py::GateError",
+            "symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads"
+          ],
+          "relationship_score": 0.3643298390800536,
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+          "steps": [
+            {
+              "combined_strength": 0.7761112348258989,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/gate.py::GateError",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.7761112348258989,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+              "to_node_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+            },
+            {
+              "combined_strength": 0.6972224696517979,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads->symbol:src/implicit_decision_gate/gate.py::GateError",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.6972224696517979,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::GateError",
+              "to_node_id": "symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads"
+        },
+        {
+          "node_ids": [
+            "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+            "symbol:src/implicit_decision_gate/gate.py::GateError",
+            "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_second_attempt"
+          ],
+          "relationship_score": 0.3643298390800536,
+          "source_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+          "steps": [
+            {
+              "combined_strength": 0.7761112348258989,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/gate.py::GateError",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.7761112348258989,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+              "to_node_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+            },
+            {
+              "combined_strength": 0.6972224696517979,
+              "contributions": [
+                {
+                  "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_second_attempt->symbol:src/implicit_decision_gate/gate.py::GateError",
+                  "kind": "INSTANTIATES",
+                  "strength": 0.6972224696517979,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "symbol:src/implicit_decision_gate/gate.py::GateError",
+              "to_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_second_attempt"
+            }
+          ],
+          "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_second_attempt"
+        },
+        {
+          "node_ids": [
+            "file:src/implicit_decision_gate/cli.py",
+            "file:src/implicit_decision_gate/gate.py",
+            "file:src/implicit_decision_gate/agent.py"
+          ],
+          "relationship_score": 0.3642075785184391,
+          "source_id": "file:src/implicit_decision_gate/cli.py",
+          "steps": [
+            {
+              "combined_strength": 0.7954778486697569,
+              "contributions": [
+                {
+                  "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/gate.py",
+                  "kind": "CO_CHANGES",
+                  "strength": 0.41565099619930523,
+                  "traversal_direction": "undirected"
+                },
+                {
+                  "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/gate.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "forward"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/cli.py",
+              "to_node_id": "file:src/implicit_decision_gate/gate.py"
+            },
+            {
+              "combined_strength": 0.8226402882196255,
+              "contributions": [
+                {
+                  "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/agent.py->file:src/implicit_decision_gate/gate.py",
+                  "kind": "CO_CHANGES",
+                  "strength": 0.4932579663417871,
+                  "traversal_direction": "undirected"
+                },
+                {
+                  "edge_id": "IMPORTS:file:src/implicit_decision_gate/agent.py->file:src/implicit_decision_gate/gate.py",
+                  "kind": "IMPORTS",
+                  "strength": 0.65,
+                  "traversal_direction": "reverse"
+                }
+              ],
+              "from_node_id": "file:src/implicit_decision_gate/gate.py",
+              "to_node_id": "file:src/implicit_decision_gate/agent.py"
+            }
+          ],
+          "target_id": "file:src/implicit_decision_gate/agent.py"
+        }
+      ]
+    },
+    "markdown": "# Code context\n\nQuery: Which CLI entry point implements start, show, answer, and resume?\n\nRepository: `implicit-decision-gate` at `2fdbb3deab2967a545d8a898a17a380974e6bb17`.\n\n## Ranked anchors\n\n- 1. `_parser` at `src/implicit_decision_gate/cli.py:24` with direct score 0.0913\n- 2. `answer_owner` at `src/implicit_decision_gate/gate.py:265` with direct score 0.0851\n- 3. `main` at `src/implicit_decision_gate/cli.py:80` with direct score 0.0726\n- 4. `implicit_decision_gate.cli` at `src/implicit_decision_gate/cli.py:1` with direct score 0.0703\n- 5. `test_cli_collects_two_answers_before_one_retry` at `tests/test_cli.py:160` with direct score 0.0589\n- 6. `render_show` at `src/implicit_decision_gate/gate.py:413` with direct score 0.0535\n\n## Related nodes\n\n- 1. `GateError` at `src/implicit_decision_gate/gate.py:132` with relationship score 0.6148\n- 2. `decision_requires_owner` at `src/implicit_decision_gate/gate.py:256` with relationship score 0.5558\n- 3. `tests.test_cli` at `tests/test_cli.py:1` with relationship score 0.5386\n- 4. `implicit_decision_gate.gate` at `src/implicit_decision_gate/gate.py:1` with relationship score 0.5209\n- 5. `implicit_decision_gate.orchestrator` at `src/implicit_decision_gate/orchestrator.py:1` with relationship score 0.5209\n- 6. `test_cli_pauses_inspects_answers_and_resumes` at `tests/test_cli.py:74` with relationship score 0.5183\n- 7. `_render` at `src/implicit_decision_gate/cli.py:74` with relationship score 0.5146\n- 8. `Orchestrator.answer` at `src/implicit_decision_gate/orchestrator.py:78` with relationship score 0.4895\n- 9. `decision_by_id` at `src/implicit_decision_gate/scenario.py:78` with relationship score 0.4895\n- 10. `option_by_id` at `src/implicit_decision_gate/scenario.py:84` with relationship score 0.4895\n- 11. `utc_now` at `src/implicit_decision_gate/gate.py:53` with relationship score 0.4895\n- 12. `implicit_decision_gate.probe` at `src/implicit_decision_gate/probe.py:1` with relationship score 0.4778\n- 13. `implicit_decision_gate.codex_client` at `src/implicit_decision_gate/codex_client.py:1` with relationship score 0.4778\n- 14. `_execution_orchestrator` at `src/implicit_decision_gate/cli.py:48` with relationship score 0.4745\n- 15. `_state_orchestrator` at `src/implicit_decision_gate/cli.py:64` with relationship score 0.4745\n- 16. `implicit_decision_gate.api_probe` at `src/implicit_decision_gate/api_probe.py:1` with relationship score 0.4442\n- 17. `implicit_decision_gate.scenarios` at `src/implicit_decision_gate/scenarios.py:1` with relationship score 0.4442\n- 18. `implicit_decision_gate.worktree` at `src/implicit_decision_gate/worktree.py:1` with relationship score 0.4442\n- 19. `tests.test_orchestrator` at `tests/test_orchestrator.py:1` with relationship score 0.3844\n- 20. `test_cli_reports_coverage_gap_without_an_execution_error` at `tests/test_cli.py:236` with relationship score 0.3787\n- 21. `test_start_rejects_the_removed_backend_selector` at `tests/test_cli.py:271` with relationship score 0.3787\n- 22. `Orchestrator._execute_attempt` at `src/implicit_decision_gate/orchestrator.py:118` with relationship score 0.3643\n- 23. `coverage_gap_payloads` at `src/implicit_decision_gate/gate.py:340` with relationship score 0.3643\n- 24. `Orchestrator._finish_second_attempt` at `src/implicit_decision_gate/orchestrator.py:267` with relationship score 0.3643\n- 25. `implicit_decision_gate.agent` at `src/implicit_decision_gate/agent.py:1` with relationship score 0.3642\n\n## Strongest paths\n\n- symbol:src/implicit_decision_gate/gate.py::answer_owner -[combined 0.7761 from `INSTANTIATES` forward 0.7761]-> symbol:src/implicit_decision_gate/gate.py::GateError with relationship score 0.6148\n- symbol:src/implicit_decision_gate/gate.py::answer_owner -[combined 0.7016 from `CALLS` forward 0.7016]-> symbol:src/implicit_decision_gate/gate.py::decision_requires_owner with relationship score 0.5558\n- file:src/implicit_decision_gate/cli.py -[combined 0.8226 from `CO_CHANGES` undirected 0.4933, `IMPORTS` reverse 0.6500]-> file:tests/test_cli.py with relationship score 0.5386\n- file:src/implicit_decision_gate/cli.py -[combined 0.7955 from `CO_CHANGES` undirected 0.4157, `IMPORTS` forward 0.6500]-> file:src/implicit_decision_gate/gate.py with relationship score 0.5209\n- file:src/implicit_decision_gate/cli.py -[combined 0.7955 from `CO_CHANGES` undirected 0.4157, `IMPORTS` forward 0.6500]-> file:src/implicit_decision_gate/orchestrator.py with relationship score 0.5209\n- symbol:src/implicit_decision_gate/cli.py::main -[combined 0.7664 from `TESTS` reverse 0.7664]-> symbol:tests/test_cli.py::test_cli_pauses_inspects_answers_and_resumes with relationship score 0.5183\n- symbol:src/implicit_decision_gate/cli.py::main -[combined 0.7610 from `CALLS` forward 0.7610]-> symbol:src/implicit_decision_gate/cli.py::_render with relationship score 0.5146\n- symbol:src/implicit_decision_gate/gate.py::answer_owner -[combined 0.6180 from `CALLS` reverse 0.6180]-> symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.answer with relationship score 0.4895\n- symbol:src/implicit_decision_gate/gate.py::answer_owner -[combined 0.6180 from `CALLS` forward 0.6180]-> symbol:src/implicit_decision_gate/scenario.py::decision_by_id with relationship score 0.4895\n- symbol:src/implicit_decision_gate/gate.py::answer_owner -[combined 0.6180 from `CALLS` forward 0.6180]-> symbol:src/implicit_decision_gate/scenario.py::option_by_id with relationship score 0.4895\n- symbol:src/implicit_decision_gate/gate.py::answer_owner -[combined 0.6180 from `CALLS` forward 0.6180]-> symbol:src/implicit_decision_gate/gate.py::utc_now with relationship score 0.4895\n- file:src/implicit_decision_gate/cli.py -[combined 0.7298 from `CO_CHANGES` undirected 0.2280, `IMPORTS` forward 0.6500]-> file:src/implicit_decision_gate/probe.py with relationship score 0.4778\n- file:src/implicit_decision_gate/cli.py -[combined 0.7298 from `CO_CHANGES` undirected 0.2280, `IMPORTS` forward 0.6500]-> file:src/implicit_decision_gate/codex_client.py with relationship score 0.4778\n- symbol:src/implicit_decision_gate/cli.py::main -[combined 0.7016 from `CALLS` forward 0.7016]-> symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator with relationship score 0.4745\n- symbol:src/implicit_decision_gate/cli.py::main -[combined 0.7016 from `CALLS` forward 0.7016]-> symbol:src/implicit_decision_gate/cli.py::_state_orchestrator with relationship score 0.4745\n- file:src/implicit_decision_gate/cli.py -[combined 0.6784 from `CO_CHANGES` undirected 0.0810, `IMPORTS` forward 0.6500]-> file:src/implicit_decision_gate/api_probe.py with relationship score 0.4442\n- file:src/implicit_decision_gate/cli.py -[combined 0.6784 from `CO_CHANGES` undirected 0.0810, `IMPORTS` forward 0.6500]-> file:src/implicit_decision_gate/scenarios.py with relationship score 0.4442\n- file:src/implicit_decision_gate/cli.py -[combined 0.6784 from `CO_CHANGES` undirected 0.0810, `IMPORTS` forward 0.6500]-> file:src/implicit_decision_gate/worktree.py with relationship score 0.4442\n- file:src/implicit_decision_gate/cli.py -[combined 0.7955 from `CO_CHANGES` undirected 0.4157, `IMPORTS` forward 0.6500]-> file:src/implicit_decision_gate/gate.py -[combined 0.8682 from `CO_CHANGES` undirected 0.6235, `IMPORTS` reverse 0.6500]-> file:tests/test_orchestrator.py with relationship score 0.3844\n- symbol:src/implicit_decision_gate/cli.py::main -[combined 0.5599 from `TESTS` reverse 0.5599]-> symbol:tests/test_cli.py::test_cli_reports_coverage_gap_without_an_execution_error with relationship score 0.3787\n- symbol:src/implicit_decision_gate/cli.py::main -[combined 0.5599 from `TESTS` reverse 0.5599]-> symbol:tests/test_cli.py::test_start_rejects_the_removed_backend_selector with relationship score 0.3787\n- symbol:src/implicit_decision_gate/gate.py::answer_owner -[combined 0.7761 from `INSTANTIATES` forward 0.7761]-> symbol:src/implicit_decision_gate/gate.py::GateError -[combined 0.6972 from `INSTANTIATES` reverse 0.6972]-> symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt with relationship score 0.3643\n- symbol:src/implicit_decision_gate/gate.py::answer_owner -[combined 0.7761 from `INSTANTIATES` forward 0.7761]-> symbol:src/implicit_decision_gate/gate.py::GateError -[combined 0.6972 from `INSTANTIATES` reverse 0.6972]-> symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads with relationship score 0.3643\n- symbol:src/implicit_decision_gate/gate.py::answer_owner -[combined 0.7761 from `INSTANTIATES` forward 0.7761]-> symbol:src/implicit_decision_gate/gate.py::GateError -[combined 0.6972 from `INSTANTIATES` reverse 0.6972]-> symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_second_attempt with relationship score 0.3643\n- file:src/implicit_decision_gate/cli.py -[combined 0.7955 from `CO_CHANGES` undirected 0.4157, `IMPORTS` forward 0.6500]-> file:src/implicit_decision_gate/gate.py -[combined 0.8226 from `CO_CHANGES` undirected 0.4933, `IMPORTS` reverse 0.6500]-> file:src/implicit_decision_gate/agent.py with relationship score 0.3642\n\n## Reviewed source snippets\n\n### symbol:src/implicit_decision_gate/cli.py::main\n\nLocation: `src/implicit_decision_gate/cli.py:80`\n\n```\ndef main(argv: Sequence[str] | None = None) -> int:\n    \"\"\"Execute one CLI command and return its process status.\"\"\"\n\n    arguments = _parser().parse_args(argv)\n    try:\n        repo_path = Path.cwd()\n        if arguments.command == \"start\":\n            orchestrator = _execution_orchestrator(repo_path)\n            run = orchestrator.start(arguments.scenario)\n            print(_render(orchestrator, run.run_id))\n            return 1 if run.state is RunState.FAILED else 0\n\n        if arguments.command == \"show\":\n            print(_state_orchestrator(repo_path).show(arguments.run_id))\n            return 0\n        if arguments.command == \"answer\":\n            orchestrator = _state_orchestrator(repo_path)\n            run = orchestrator.answer(\n                arguments.run_id,\n                a\u2026\n```\n"
+  },
+  "description": "Recorded retrieval for a manually reviewed benchmark question with answer and supporting-context judgments.",
+  "edges": [
+    {
+      "confidence": 0.95,
+      "count": 2,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:src/implicit_decision_gate/cli.py::main->symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator",
+      "evidence": [
+        "src/implicit_decision_gate/cli.py:105",
+        "src/implicit_decision_gate/cli.py:87"
+      ],
+      "id": "CALLS:symbol:src/implicit_decision_gate/cli.py::main->symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator",
+      "kind": "CALLS",
+      "source_id": "symbol:src/implicit_decision_gate/cli.py::main",
+      "strength": 0.7016325959918396,
+      "target_id": "symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.9499999999999998,
+      "count": 3,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:src/implicit_decision_gate/cli.py::main->symbol:src/implicit_decision_gate/cli.py::_render",
+      "evidence": [
+        "src/implicit_decision_gate/cli.py:102",
+        "src/implicit_decision_gate/cli.py:107",
+        "src/implicit_decision_gate/cli.py:89"
+      ],
+      "id": "CALLS:symbol:src/implicit_decision_gate/cli.py::main->symbol:src/implicit_decision_gate/cli.py::_render",
+      "kind": "CALLS",
+      "source_id": "symbol:src/implicit_decision_gate/cli.py::main",
+      "strength": 0.7609784958807819,
+      "target_id": "symbol:src/implicit_decision_gate/cli.py::_render",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 2,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:src/implicit_decision_gate/cli.py::main->symbol:src/implicit_decision_gate/cli.py::_state_orchestrator",
+      "evidence": [
+        "src/implicit_decision_gate/cli.py:93",
+        "src/implicit_decision_gate/cli.py:96"
+      ],
+      "id": "CALLS:symbol:src/implicit_decision_gate/cli.py::main->symbol:src/implicit_decision_gate/cli.py::_state_orchestrator",
+      "kind": "CALLS",
+      "source_id": "symbol:src/implicit_decision_gate/cli.py::main",
+      "strength": 0.7016325959918396,
+      "target_id": "symbol:src/implicit_decision_gate/cli.py::_state_orchestrator",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 2,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/gate.py::decision_requires_owner",
+      "evidence": [
+        "src/implicit_decision_gate/gate.py:284",
+        "src/implicit_decision_gate/gate.py:291"
+      ],
+      "id": "CALLS:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/gate.py::decision_requires_owner",
+      "kind": "CALLS",
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+      "strength": 0.7016325959918396,
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::decision_requires_owner",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/gate.py::utc_now",
+      "evidence": [
+        "src/implicit_decision_gate/gate.py:289"
+      ],
+      "id": "CALLS:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/gate.py::utc_now",
+      "kind": "CALLS",
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::utc_now",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/scenario.py::decision_by_id",
+      "evidence": [
+        "src/implicit_decision_gate/gate.py:275"
+      ],
+      "id": "CALLS:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/scenario.py::decision_by_id",
+      "kind": "CALLS",
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:src/implicit_decision_gate/scenario.py::decision_by_id",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/scenario.py::option_by_id",
+      "evidence": [
+        "src/implicit_decision_gate/gate.py:278"
+      ],
+      "id": "CALLS:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/scenario.py::option_by_id",
+      "kind": "CALLS",
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:src/implicit_decision_gate/scenario.py::option_by_id",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.answer->symbol:src/implicit_decision_gate/gate.py::answer_owner",
+      "evidence": [
+        "src/implicit_decision_gate/orchestrator.py:83"
+      ],
+      "id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.answer->symbol:src/implicit_decision_gate/gate.py::answer_owner",
+      "kind": "CALLS",
+      "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.answer",
+      "strength": 0.6179892479403911,
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+      "type": "CALLS"
+    },
+    {
+      "confidence": 0.6544562407408439,
+      "count": 8,
+      "direction": "undirected",
+      "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/agent.py->file:src/implicit_decision_gate/gate.py",
+      "evidence": [
+        "8 non-merge commits; Jaccard=0.667; commits=b12be241, 295f5b6f, ab65e7b1, 518e2570, ea18151b, 625d771e, f05fa645, 10c641b5"
+      ],
+      "id": "CO_CHANGES:file:src/implicit_decision_gate/agent.py->file:src/implicit_decision_gate/gate.py",
+      "kind": "CO_CHANGES",
+      "source_id": "file:src/implicit_decision_gate/agent.py",
+      "strength": 0.4932579663417871,
+      "target_id": "file:src/implicit_decision_gate/gate.py",
+      "type": "CO_CHANGES"
+    },
+    {
+      "confidence": 0.14047123529523503,
+      "count": 2,
+      "direction": "undirected",
+      "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/api_probe.py->file:src/implicit_decision_gate/cli.py",
+      "evidence": [
+        "2 non-merge commits; Jaccard=0.222; commits=b12be241, 295f5b6f"
+      ],
+      "id": "CO_CHANGES:file:src/implicit_decision_gate/api_probe.py->file:src/implicit_decision_gate/cli.py",
+      "kind": "CO_CHANGES",
+      "source_id": "file:src/implicit_decision_gate/api_probe.py",
+      "strength": 0.08103022011418337,
+      "target_id": "file:src/implicit_decision_gate/cli.py",
+      "type": "CO_CHANGES"
+    },
+    {
+      "confidence": 0.34586588670535495,
+      "count": 4,
+      "direction": "undirected",
+      "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/codex_client.py",
+      "evidence": [
+        "4 non-merge commits; Jaccard=0.400; commits=295f5b6f, ea18151b, 625d771e, f05fa645"
+      ],
+      "id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/codex_client.py",
+      "kind": "CO_CHANGES",
+      "source_id": "file:src/implicit_decision_gate/cli.py",
+      "strength": 0.22795127738275547,
+      "target_id": "file:src/implicit_decision_gate/codex_client.py",
+      "type": "CO_CHANGES"
+    },
+    {
+      "confidence": 0.5657181930036476,
+      "count": 7,
+      "direction": "undirected",
+      "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/gate.py",
+      "evidence": [
+        "7 non-merge commits; Jaccard=0.583; commits=b12be241, 295f5b6f, 518e2570, ea18151b, 625d771e, f05fa645, 10c641b5"
+      ],
+      "id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/gate.py",
+      "kind": "CO_CHANGES",
+      "source_id": "file:src/implicit_decision_gate/cli.py",
+      "strength": 0.41565099619930523,
+      "target_id": "file:src/implicit_decision_gate/gate.py",
+      "type": "CO_CHANGES"
+    },
+    {
+      "confidence": 0.5657181930036476,
+      "count": 7,
+      "direction": "undirected",
+      "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/orchestrator.py",
+      "evidence": [
+        "7 non-merge commits; Jaccard=0.583; commits=b12be241, 295f5b6f, ea18151b, 171c5863, 625d771e, f05fa645, 10c641b5"
+      ],
+      "id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/orchestrator.py",
+      "kind": "CO_CHANGES",
+      "source_id": "file:src/implicit_decision_gate/cli.py",
+      "strength": 0.41565099619930523,
+      "target_id": "file:src/implicit_decision_gate/orchestrator.py",
+      "type": "CO_CHANGES"
+    },
+    {
+      "confidence": 0.34586588670535495,
+      "count": 4,
+      "direction": "undirected",
+      "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/probe.py",
+      "evidence": [
+        "4 non-merge commits; Jaccard=0.400; commits=b12be241, 295f5b6f, 43c97f53, 10c641b5"
+      ],
+      "id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/probe.py",
+      "kind": "CO_CHANGES",
+      "source_id": "file:src/implicit_decision_gate/cli.py",
+      "strength": 0.22795127738275547,
+      "target_id": "file:src/implicit_decision_gate/probe.py",
+      "type": "CO_CHANGES"
+    },
+    {
+      "confidence": 0.14047123529523503,
+      "count": 2,
+      "direction": "undirected",
+      "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/scenarios.py",
+      "evidence": [
+        "2 non-merge commits; Jaccard=0.222; commits=b12be241, 295f5b6f"
+      ],
+      "id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/scenarios.py",
+      "kind": "CO_CHANGES",
+      "source_id": "file:src/implicit_decision_gate/cli.py",
+      "strength": 0.08103022011418337,
+      "target_id": "file:src/implicit_decision_gate/scenarios.py",
+      "type": "CO_CHANGES"
+    },
+    {
+      "confidence": 0.14047123529523503,
+      "count": 2,
+      "direction": "undirected",
+      "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/worktree.py",
+      "evidence": [
+        "2 non-merge commits; Jaccard=0.222; commits=625d771e, 10c641b5"
+      ],
+      "id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/worktree.py",
+      "kind": "CO_CHANGES",
+      "source_id": "file:src/implicit_decision_gate/cli.py",
+      "strength": 0.08103022011418337,
+      "target_id": "file:src/implicit_decision_gate/worktree.py",
+      "type": "CO_CHANGES"
+    },
+    {
+      "confidence": 0.6544562407408439,
+      "count": 8,
+      "direction": "undirected",
+      "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:tests/test_cli.py",
+      "evidence": [
+        "8 non-merge commits; Jaccard=0.667; commits=b12be241, 295f5b6f, 43c97f53, 518e2570, ea18151b, 625d771e, f05fa645, 10c641b5"
+      ],
+      "id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:tests/test_cli.py",
+      "kind": "CO_CHANGES",
+      "source_id": "file:src/implicit_decision_gate/cli.py",
+      "strength": 0.4932579663417871,
+      "target_id": "file:tests/test_cli.py",
+      "type": "CO_CHANGES"
+    },
+    {
+      "confidence": 0.8090926391959836,
+      "count": 9,
+      "direction": "undirected",
+      "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/gate.py->file:tests/test_orchestrator.py",
+      "evidence": [
+        "9 non-merge commits; Jaccard=0.818; commits=1f83830a, b12be241, 295f5b6f, ab65e7b1, ea18151b, 625d771e, f05fa645, d69ddee8, 10c641b5"
+      ],
+      "id": "CO_CHANGES:file:src/implicit_decision_gate/gate.py->file:tests/test_orchestrator.py",
+      "kind": "CO_CHANGES",
+      "source_id": "file:src/implicit_decision_gate/gate.py",
+      "strength": 0.6235283453608971,
+      "target_id": "file:tests/test_orchestrator.py",
+      "type": "CO_CHANGES"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "IMPORTS:file:src/implicit_decision_gate/agent.py->file:src/implicit_decision_gate/gate.py",
+      "evidence": [
+        "src/implicit_decision_gate/agent.py:7"
+      ],
+      "id": "IMPORTS:file:src/implicit_decision_gate/agent.py->file:src/implicit_decision_gate/gate.py",
+      "kind": "IMPORTS",
+      "source_id": "file:src/implicit_decision_gate/agent.py",
+      "strength": 0.65,
+      "target_id": "file:src/implicit_decision_gate/gate.py",
+      "type": "IMPORTS"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/api_probe.py",
+      "evidence": [
+        "src/implicit_decision_gate/cli.py:11"
+      ],
+      "id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/api_probe.py",
+      "kind": "IMPORTS",
+      "source_id": "file:src/implicit_decision_gate/cli.py",
+      "strength": 0.65,
+      "target_id": "file:src/implicit_decision_gate/api_probe.py",
+      "type": "IMPORTS"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/codex_client.py",
+      "evidence": [
+        "src/implicit_decision_gate/cli.py:12"
+      ],
+      "id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/codex_client.py",
+      "kind": "IMPORTS",
+      "source_id": "file:src/implicit_decision_gate/cli.py",
+      "strength": 0.65,
+      "target_id": "file:src/implicit_decision_gate/codex_client.py",
+      "type": "IMPORTS"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/gate.py",
+      "evidence": [
+        "src/implicit_decision_gate/cli.py:13"
+      ],
+      "id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/gate.py",
+      "kind": "IMPORTS",
+      "source_id": "file:src/implicit_decision_gate/cli.py",
+      "strength": 0.65,
+      "target_id": "file:src/implicit_decision_gate/gate.py",
+      "type": "IMPORTS"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/orchestrator.py",
+      "evidence": [
+        "src/implicit_decision_gate/cli.py:14"
+      ],
+      "id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/orchestrator.py",
+      "kind": "IMPORTS",
+      "source_id": "file:src/implicit_decision_gate/cli.py",
+      "strength": 0.65,
+      "target_id": "file:src/implicit_decision_gate/orchestrator.py",
+      "type": "IMPORTS"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/probe.py",
+      "evidence": [
+        "src/implicit_decision_gate/cli.py:15"
+      ],
+      "id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/probe.py",
+      "kind": "IMPORTS",
+      "source_id": "file:src/implicit_decision_gate/cli.py",
+      "strength": 0.65,
+      "target_id": "file:src/implicit_decision_gate/probe.py",
+      "type": "IMPORTS"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/scenarios.py",
+      "evidence": [
+        "src/implicit_decision_gate/cli.py:16"
+      ],
+      "id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/scenarios.py",
+      "kind": "IMPORTS",
+      "source_id": "file:src/implicit_decision_gate/cli.py",
+      "strength": 0.65,
+      "target_id": "file:src/implicit_decision_gate/scenarios.py",
+      "type": "IMPORTS"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/worktree.py",
+      "evidence": [
+        "src/implicit_decision_gate/cli.py:21"
+      ],
+      "id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/worktree.py",
+      "kind": "IMPORTS",
+      "source_id": "file:src/implicit_decision_gate/cli.py",
+      "strength": 0.65,
+      "target_id": "file:src/implicit_decision_gate/worktree.py",
+      "type": "IMPORTS"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "IMPORTS:file:tests/test_cli.py->file:src/implicit_decision_gate/cli.py",
+      "evidence": [
+        "tests/test_cli.py:18"
+      ],
+      "id": "IMPORTS:file:tests/test_cli.py->file:src/implicit_decision_gate/cli.py",
+      "kind": "IMPORTS",
+      "source_id": "file:tests/test_cli.py",
+      "strength": 0.65,
+      "target_id": "file:src/implicit_decision_gate/cli.py",
+      "type": "IMPORTS"
+    },
+    {
+      "confidence": 1.0,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "IMPORTS:file:tests/test_orchestrator.py->file:src/implicit_decision_gate/gate.py",
+      "evidence": [
+        "tests/test_orchestrator.py:21"
+      ],
+      "id": "IMPORTS:file:tests/test_orchestrator.py->file:src/implicit_decision_gate/gate.py",
+      "kind": "IMPORTS",
+      "source_id": "file:tests/test_orchestrator.py",
+      "strength": 0.65,
+      "target_id": "file:src/implicit_decision_gate/gate.py",
+      "type": "IMPORTS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 5,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/gate.py::GateError",
+      "evidence": [
+        "src/implicit_decision_gate/gate.py:274",
+        "src/implicit_decision_gate/gate.py:277",
+        "src/implicit_decision_gate/gate.py:279",
+        "src/implicit_decision_gate/gate.py:285",
+        "src/implicit_decision_gate/gate.py:287"
+      ],
+      "id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/gate.py::GateError",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+      "strength": 0.7761112348258989,
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::GateError",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.9499999999999998,
+      "count": 3,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads->symbol:src/implicit_decision_gate/gate.py::GateError",
+      "evidence": [
+        "src/implicit_decision_gate/gate.py:350",
+        "src/implicit_decision_gate/gate.py:353",
+        "src/implicit_decision_gate/gate.py:356"
+      ],
+      "id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads->symbol:src/implicit_decision_gate/gate.py::GateError",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads",
+      "strength": 0.6972224696517979,
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::GateError",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.9499999999999998,
+      "count": 3,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt->symbol:src/implicit_decision_gate/gate.py::GateError",
+      "evidence": [
+        "src/implicit_decision_gate/orchestrator.py:121",
+        "src/implicit_decision_gate/orchestrator.py:125",
+        "src/implicit_decision_gate/orchestrator.py:141"
+      ],
+      "id": "INSTANTIATES:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt->symbol:src/implicit_decision_gate/gate.py::GateError",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt",
+      "strength": 0.6972224696517979,
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::GateError",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.9499999999999998,
+      "count": 3,
+      "direction": "directed",
+      "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_second_attempt->symbol:src/implicit_decision_gate/gate.py::GateError",
+      "evidence": [
+        "src/implicit_decision_gate/orchestrator.py:270",
+        "src/implicit_decision_gate/orchestrator.py:276",
+        "src/implicit_decision_gate/orchestrator.py:282"
+      ],
+      "id": "INSTANTIATES:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_second_attempt->symbol:src/implicit_decision_gate/gate.py::GateError",
+      "kind": "INSTANTIATES",
+      "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_second_attempt",
+      "strength": 0.6972224696517979,
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::GateError",
+      "type": "INSTANTIATES"
+    },
+    {
+      "confidence": 0.95,
+      "count": 4,
+      "direction": "directed",
+      "edge_id": "TESTS:symbol:tests/test_cli.py::test_cli_pauses_inspects_answers_and_resumes->symbol:src/implicit_decision_gate/cli.py::main",
+      "evidence": [
+        "tests/test_cli.py:110",
+        "tests/test_cli.py:130",
+        "tests/test_cli.py:147",
+        "tests/test_cli.py:97"
+      ],
+      "id": "TESTS:symbol:tests/test_cli.py::test_cli_pauses_inspects_answers_and_resumes->symbol:src/implicit_decision_gate/cli.py::main",
+      "kind": "TESTS",
+      "source_id": "symbol:tests/test_cli.py::test_cli_pauses_inspects_answers_and_resumes",
+      "strength": 0.7664161771879605,
+      "target_id": "symbol:src/implicit_decision_gate/cli.py::main",
+      "type": "TESTS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "TESTS:symbol:tests/test_cli.py::test_cli_reports_coverage_gap_without_an_execution_error->symbol:src/implicit_decision_gate/cli.py::main",
+      "evidence": [
+        "tests/test_cli.py:251"
+      ],
+      "id": "TESTS:symbol:tests/test_cli.py::test_cli_reports_coverage_gap_without_an_execution_error->symbol:src/implicit_decision_gate/cli.py::main",
+      "kind": "TESTS",
+      "source_id": "symbol:tests/test_cli.py::test_cli_reports_coverage_gap_without_an_execution_error",
+      "strength": 0.5599418209209461,
+      "target_id": "symbol:src/implicit_decision_gate/cli.py::main",
+      "type": "TESTS"
+    },
+    {
+      "confidence": 0.95,
+      "count": 1,
+      "direction": "directed",
+      "edge_id": "TESTS:symbol:tests/test_cli.py::test_start_rejects_the_removed_backend_selector->symbol:src/implicit_decision_gate/cli.py::main",
+      "evidence": [
+        "tests/test_cli.py:275"
+      ],
+      "id": "TESTS:symbol:tests/test_cli.py::test_start_rejects_the_removed_backend_selector->symbol:src/implicit_decision_gate/cli.py::main",
+      "kind": "TESTS",
+      "source_id": "symbol:tests/test_cli.py::test_start_rejects_the_removed_backend_selector",
+      "strength": 0.5599418209209461,
+      "target_id": "symbol:src/implicit_decision_gate/cli.py::main",
+      "type": "TESTS"
+    }
+  ],
+  "id": "cli-lifecycle",
+  "label": "Cli Lifecycle",
+  "nodes": [
+    {
+      "direct_score": 0.09128652829983663,
+      "end_line": 45,
+      "id": "symbol:src/implicit_decision_gate/cli.py::_parser",
+      "kind": "function",
+      "label": "_parser",
+      "language": "python",
+      "pagerank_score": 0.03875080314919893,
+      "path": "src/implicit_decision_gate/cli.py",
+      "rank_group": "anchor",
+      "relationship_score": 0.0,
+      "score": 0.09128652829983663,
+      "start_line": 24,
+      "x": 259.278,
+      "y": 399.299
+    },
+    {
+      "direct_score": 0.0850683944747679,
+      "end_line": 294,
+      "id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+      "kind": "function",
+      "label": "answer_owner",
+      "language": "python",
+      "pagerank_score": 0.03938373383458436,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank_group": "anchor",
+      "relationship_score": 0.0,
+      "score": 0.0850683944747679,
+      "start_line": 265,
+      "x": 729.22,
+      "y": 193.743
+    },
+    {
+      "direct_score": 0.07262917699239876,
+      "end_line": 112,
+      "id": "symbol:src/implicit_decision_gate/cli.py::main",
+      "kind": "function",
+      "label": "main",
+      "language": "python",
+      "pagerank_score": 0.08175062520791206,
+      "path": "src/implicit_decision_gate/cli.py",
+      "rank_group": "anchor",
+      "relationship_score": 0.0,
+      "score": 0.07262917699239876,
+      "start_line": 80,
+      "x": 433.032,
+      "y": 391.258
+    },
+    {
+      "direct_score": 0.07032014415404796,
+      "end_line": 116,
+      "id": "file:src/implicit_decision_gate/cli.py",
+      "kind": "file",
+      "label": "implicit_decision_gate.cli",
+      "language": "python",
+      "pagerank_score": 0.058689964523612886,
+      "path": "src/implicit_decision_gate/cli.py",
+      "rank_group": "anchor",
+      "relationship_score": 0.0,
+      "score": 0.07032014415404796,
+      "start_line": 1,
+      "x": 393.286,
+      "y": 321.72
+    },
+    {
+      "direct_score": 0.05886377675399038,
+      "end_line": 233,
+      "id": "symbol:tests/test_cli.py::test_cli_collects_two_answers_before_one_retry",
+      "kind": "test",
+      "label": "test_cli_collects_two_answers_before_one_retry",
+      "language": "python",
+      "pagerank_score": 0.02798821017980817,
+      "path": "tests/test_cli.py",
+      "rank_group": "anchor",
+      "relationship_score": 0.0,
+      "score": 0.05886377675399038,
+      "start_line": 160,
+      "x": 410.46,
+      "y": 465.743
+    },
+    {
+      "direct_score": 0.0534623751134177,
+      "end_line": 416,
+      "id": "symbol:src/implicit_decision_gate/gate.py::render_show",
+      "kind": "function",
+      "label": "render_show",
+      "language": "python",
+      "pagerank_score": 0.026987795319844292,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank_group": "anchor",
+      "relationship_score": 0.0,
+      "score": 0.0534623751134177,
+      "start_line": 413,
+      "x": 267.404,
+      "y": 213.723
+    },
+    {
+      "direct_score": 0.0039845977146514095,
+      "end_line": 133,
+      "id": "symbol:src/implicit_decision_gate/gate.py::GateError",
+      "kind": "class",
+      "label": "GateError",
+      "language": "python",
+      "pagerank_score": 0.02145185470873371,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank_group": "related",
+      "relationship_score": 0.614758357269009,
+      "score": 0.614758357269009,
+      "start_line": 132,
+      "x": 694.465,
+      "y": 276.382
+    },
+    {
+      "direct_score": 0.03824385271896597,
+      "end_line": 262,
+      "id": "symbol:src/implicit_decision_gate/gate.py::decision_requires_owner",
+      "kind": "function",
+      "label": "decision_requires_owner",
+      "language": "python",
+      "pagerank_score": 0.007275376300628746,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank_group": "related",
+      "relationship_score": 0.55576376524828,
+      "score": 0.55576376524828,
+      "start_line": 256,
+      "x": 622.521,
+      "y": 135.564
+    },
+    {
+      "direct_score": 0.051519392749413064,
+      "end_line": 278,
+      "id": "file:tests/test_cli.py",
+      "kind": "file",
+      "label": "tests.test_cli",
+      "language": "python",
+      "pagerank_score": 0.02506930663124209,
+      "path": "tests/test_cli.py",
+      "rank_group": "related",
+      "relationship_score": 0.5386441682265166,
+      "score": 0.5386441682265166,
+      "start_line": 1,
+      "x": 379.095,
+      "y": 343.325
+    },
+    {
+      "direct_score": 0.033859931295490656,
+      "end_line": 416,
+      "id": "file:src/implicit_decision_gate/gate.py",
+      "kind": "file",
+      "label": "implicit_decision_gate.gate",
+      "language": "python",
+      "pagerank_score": 0.0323290409650875,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank_group": "related",
+      "relationship_score": 0.5208588860468577,
+      "score": 0.5208588860468577,
+      "start_line": 1,
+      "x": 507.557,
+      "y": 244.23
+    },
+    {
+      "direct_score": 0.039752059767294574,
+      "end_line": 344,
+      "id": "file:src/implicit_decision_gate/orchestrator.py",
+      "kind": "file",
+      "label": "implicit_decision_gate.orchestrator",
+      "language": "python",
+      "pagerank_score": 0.012433654522257434,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.5208588860468577,
+      "score": 0.5208588860468577,
+      "start_line": 1,
+      "x": 416.939,
+      "y": 279.64
+    },
+    {
+      "direct_score": 0.05333380734414078,
+      "end_line": 157,
+      "id": "symbol:tests/test_cli.py::test_cli_pauses_inspects_answers_and_resumes",
+      "kind": "test",
+      "label": "test_cli_pauses_inspects_answers_and_resumes",
+      "language": "python",
+      "pagerank_score": 0.008055058246778837,
+      "path": "tests/test_cli.py",
+      "rank_group": "related",
+      "relationship_score": 0.5183081297602967,
+      "score": 0.5183081297602967,
+      "start_line": 74,
+      "x": 346.126,
+      "y": 467.418
+    },
+    {
+      "direct_score": 0.004111194605113595,
+      "end_line": 77,
+      "id": "symbol:src/implicit_decision_gate/cli.py::_render",
+      "kind": "function",
+      "label": "_render",
+      "language": "python",
+      "pagerank_score": 0.01493023966198597,
+      "path": "src/implicit_decision_gate/cli.py",
+      "rank_group": "related",
+      "relationship_score": 0.514630761624753,
+      "score": 0.514630761624753,
+      "start_line": 74,
+      "x": 259.945,
+      "y": 330.378
+    },
+    {
+      "direct_score": 0.038991406530171926,
+      "end_line": 90,
+      "id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.answer",
+      "kind": "method",
+      "label": "Orchestrator.answer",
+      "language": "python",
+      "pagerank_score": 0.012557577473228547,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.4895097994026195,
+      "score": 0.4895097994026195,
+      "start_line": 78,
+      "x": 668.1,
+      "y": 314.149
+    },
+    {
+      "direct_score": 0.001762178626064931,
+      "end_line": 81,
+      "id": "symbol:src/implicit_decision_gate/scenario.py::decision_by_id",
+      "kind": "function",
+      "label": "decision_by_id",
+      "language": "python",
+      "pagerank_score": 0.007622441659299748,
+      "path": "src/implicit_decision_gate/scenario.py",
+      "rank_group": "related",
+      "relationship_score": 0.4895097994026195,
+      "score": 0.4895097994026195,
+      "start_line": 78,
+      "x": 777.509,
+      "y": 107.609
+    },
+    {
+      "direct_score": 0.001566601379977439,
+      "end_line": 87,
+      "id": "symbol:src/implicit_decision_gate/scenario.py::option_by_id",
+      "kind": "function",
+      "label": "option_by_id",
+      "language": "python",
+      "pagerank_score": 0.007338993818820628,
+      "path": "src/implicit_decision_gate/scenario.py",
+      "rank_group": "related",
+      "relationship_score": 0.4895097994026195,
+      "score": 0.4895097994026195,
+      "start_line": 84,
+      "x": 900.0,
+      "y": 122.779
+    },
+    {
+      "direct_score": 0.0019248028493458796,
+      "end_line": 56,
+      "id": "symbol:src/implicit_decision_gate/gate.py::utc_now",
+      "kind": "function",
+      "label": "utc_now",
+      "language": "python",
+      "pagerank_score": 0.007079293619700525,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank_group": "related",
+      "relationship_score": 0.4895097994026195,
+      "score": 0.4895097994026195,
+      "start_line": 53,
+      "x": 758.729,
+      "y": 231.532
+    },
+    {
+      "direct_score": 0.014665592939416777,
+      "end_line": 283,
+      "id": "file:src/implicit_decision_gate/probe.py",
+      "kind": "file",
+      "label": "implicit_decision_gate.probe",
+      "language": "python",
+      "pagerank_score": 0.01201996859760856,
+      "path": "src/implicit_decision_gate/probe.py",
+      "rank_group": "related",
+      "relationship_score": 0.4778435169625334,
+      "score": 0.4778435169625334,
+      "start_line": 1,
+      "x": 312.419,
+      "y": 299.421
+    },
+    {
+      "direct_score": 0.029937684323599216,
+      "end_line": 193,
+      "id": "file:src/implicit_decision_gate/codex_client.py",
+      "kind": "file",
+      "label": "implicit_decision_gate.codex_client",
+      "language": "python",
+      "pagerank_score": 0.008319885642071447,
+      "path": "src/implicit_decision_gate/codex_client.py",
+      "rank_group": "related",
+      "relationship_score": 0.4778435169625334,
+      "score": 0.4778435169625334,
+      "start_line": 1,
+      "x": 471.271,
+      "y": 271.782
+    },
+    {
+      "direct_score": 0.0036000047240290394,
+      "end_line": 61,
+      "id": "symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator",
+      "kind": "function",
+      "label": "_execution_orchestrator",
+      "language": "python",
+      "pagerank_score": 0.00979211404249415,
+      "path": "src/implicit_decision_gate/cli.py",
+      "rank_group": "related",
+      "relationship_score": 0.4744966108905679,
+      "score": 0.4744966108905679,
+      "start_line": 48,
+      "x": 337.792,
+      "y": 423.617
+    },
+    {
+      "direct_score": 0.004078276163805176,
+      "end_line": 71,
+      "id": "symbol:src/implicit_decision_gate/cli.py::_state_orchestrator",
+      "kind": "function",
+      "label": "_state_orchestrator",
+      "language": "python",
+      "pagerank_score": 0.00948880417067954,
+      "path": "src/implicit_decision_gate/cli.py",
+      "rank_group": "related",
+      "relationship_score": 0.4744966108905679,
+      "score": 0.4744966108905679,
+      "start_line": 64,
+      "x": 523.394,
+      "y": 423.471
+    },
+    {
+      "direct_score": 0.013164352008756312,
+      "end_line": 192,
+      "id": "file:src/implicit_decision_gate/api_probe.py",
+      "kind": "file",
+      "label": "implicit_decision_gate.api_probe",
+      "language": "python",
+      "pagerank_score": 0.011647150774689906,
+      "path": "src/implicit_decision_gate/api_probe.py",
+      "rank_group": "related",
+      "relationship_score": 0.44417344252388424,
+      "score": 0.44417344252388424,
+      "start_line": 1,
+      "x": 265.98,
+      "y": 282.086
+    },
+    {
+      "direct_score": 0.01592098210909716,
+      "end_line": 164,
+      "id": "file:src/implicit_decision_gate/scenarios.py",
+      "kind": "file",
+      "label": "implicit_decision_gate.scenarios",
+      "language": "python",
+      "pagerank_score": 0.011115725230489638,
+      "path": "src/implicit_decision_gate/scenarios.py",
+      "rank_group": "related",
+      "relationship_score": 0.44417344252388424,
+      "score": 0.44417344252388424,
+      "start_line": 1,
+      "x": 313.771,
+      "y": 267.42
+    },
+    {
+      "direct_score": 0.012324708871783942,
+      "end_line": 88,
+      "id": "file:src/implicit_decision_gate/worktree.py",
+      "kind": "file",
+      "label": "implicit_decision_gate.worktree",
+      "language": "python",
+      "pagerank_score": 0.0057741233368904295,
+      "path": "src/implicit_decision_gate/worktree.py",
+      "rank_group": "related",
+      "relationship_score": 0.44417344252388424,
+      "score": 0.44417344252388424,
+      "start_line": 1,
+      "x": 501.505,
+      "y": 324.527
+    },
+    {
+      "direct_score": 0.029505517417881332,
+      "end_line": 632,
+      "id": "file:tests/test_orchestrator.py",
+      "kind": "file",
+      "label": "tests.test_orchestrator",
+      "language": "python",
+      "pagerank_score": 0.014133636804912452,
+      "path": "tests/test_orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.3843936926574258,
+      "score": 0.3843936926574258,
+      "start_line": 1,
+      "x": 368.494,
+      "y": 256.57
+    },
+    {
+      "direct_score": 0.025595547290252364,
+      "end_line": 268,
+      "id": "symbol:tests/test_cli.py::test_cli_reports_coverage_gap_without_an_execution_error",
+      "kind": "test",
+      "label": "test_cli_reports_coverage_gap_without_an_execution_error",
+      "language": "python",
+      "pagerank_score": 0.005918238305498627,
+      "path": "tests/test_cli.py",
+      "rank_group": "related",
+      "relationship_score": 0.3786746765196929,
+      "score": 0.3786746765196929,
+      "start_line": 236,
+      "x": 266.822,
+      "y": 447.731
+    },
+    {
+      "direct_score": 0.03698387957878263,
+      "end_line": 278,
+      "id": "symbol:tests/test_cli.py::test_start_rejects_the_removed_backend_selector",
+      "kind": "test",
+      "label": "test_start_rejects_the_removed_backend_selector",
+      "language": "python",
+      "pagerank_score": 0.005481485517867214,
+      "path": "tests/test_cli.py",
+      "rank_group": "related",
+      "relationship_score": 0.3786746765196929,
+      "score": 0.3786746765196929,
+      "start_line": 271,
+      "x": 475.844,
+      "y": 468.933
+    },
+    {
+      "direct_score": 0.004787019443067063,
+      "end_line": 190,
+      "id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt",
+      "kind": "method",
+      "label": "Orchestrator._execute_attempt",
+      "language": "python",
+      "pagerank_score": 0.008895354980132851,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.3643298390800536,
+      "score": 0.3643298390800536,
+      "start_line": 118,
+      "x": 861.689,
+      "y": 264.395
+    },
+    {
+      "direct_score": 0.004140004099084678,
+      "end_line": 373,
+      "id": "symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads",
+      "kind": "function",
+      "label": "coverage_gap_payloads",
+      "language": "python",
+      "pagerank_score": 0.005709593508879624,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank_group": "related",
+      "relationship_score": 0.3643298390800536,
+      "score": 0.3643298390800536,
+      "start_line": 340,
+      "x": 680.752,
+      "y": 175.452
+    },
+    {
+      "direct_score": 0.010714151902818629,
+      "end_line": 307,
+      "id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_second_attempt",
+      "kind": "method",
+      "label": "Orchestrator._finish_second_attempt",
+      "language": "python",
+      "pagerank_score": 0.0027164405379921006,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank_group": "related",
+      "relationship_score": 0.3643298390800536,
+      "score": 0.3643298390800536,
+      "start_line": 267,
+      "x": 878.921,
+      "y": 309.889
+    },
+    {
+      "direct_score": 0.01200937352368095,
+      "end_line": 106,
+      "id": "file:src/implicit_decision_gate/agent.py",
+      "kind": "file",
+      "label": "implicit_decision_gate.agent",
+      "language": "python",
+      "pagerank_score": 0.012040519773472907,
+      "path": "src/implicit_decision_gate/agent.py",
+      "rank_group": "related",
+      "relationship_score": 0.3642075785184391,
+      "score": 0.3642075785184391,
+      "start_line": 1,
+      "x": 417.68,
+      "y": 246.212
+    }
+  ],
+  "paths": [
+    {
+      "id": "path-1",
+      "label": "answer_owner \u2192 GateError",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+        "symbol:src/implicit_decision_gate/gate.py::GateError"
+      ],
+      "score": 0.614758357269009,
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+      "steps": [
+        {
+          "combined_strength": 0.7761112348258989,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/gate.py::GateError",
+              "kind": "INSTANTIATES",
+              "strength": 0.7761112348258989,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+          "to_node_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+    },
+    {
+      "id": "path-2",
+      "label": "answer_owner \u2192 decision_requires_owner",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+        "symbol:src/implicit_decision_gate/gate.py::decision_requires_owner"
+      ],
+      "score": 0.55576376524828,
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+      "steps": [
+        {
+          "combined_strength": 0.7016325959918396,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/gate.py::decision_requires_owner",
+              "kind": "CALLS",
+              "strength": 0.7016325959918396,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+          "to_node_id": "symbol:src/implicit_decision_gate/gate.py::decision_requires_owner"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::decision_requires_owner"
+    },
+    {
+      "id": "path-3",
+      "label": "implicit_decision_gate.cli \u2192 tests.test_cli",
+      "nodes": [
+        "file:src/implicit_decision_gate/cli.py",
+        "file:tests/test_cli.py"
+      ],
+      "score": 0.5386441682265166,
+      "source_id": "file:src/implicit_decision_gate/cli.py",
+      "steps": [
+        {
+          "combined_strength": 0.8226402882196255,
+          "contributions": [
+            {
+              "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:tests/test_cli.py",
+              "kind": "CO_CHANGES",
+              "strength": 0.4932579663417871,
+              "traversal_direction": "undirected"
+            },
+            {
+              "edge_id": "IMPORTS:file:tests/test_cli.py->file:src/implicit_decision_gate/cli.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/cli.py",
+          "to_node_id": "file:tests/test_cli.py"
+        }
+      ],
+      "target_id": "file:tests/test_cli.py"
+    },
+    {
+      "id": "path-4",
+      "label": "implicit_decision_gate.cli \u2192 implicit_decision_gate.gate",
+      "nodes": [
+        "file:src/implicit_decision_gate/cli.py",
+        "file:src/implicit_decision_gate/gate.py"
+      ],
+      "score": 0.5208588860468577,
+      "source_id": "file:src/implicit_decision_gate/cli.py",
+      "steps": [
+        {
+          "combined_strength": 0.7954778486697569,
+          "contributions": [
+            {
+              "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/gate.py",
+              "kind": "CO_CHANGES",
+              "strength": 0.41565099619930523,
+              "traversal_direction": "undirected"
+            },
+            {
+              "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/gate.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/cli.py",
+          "to_node_id": "file:src/implicit_decision_gate/gate.py"
+        }
+      ],
+      "target_id": "file:src/implicit_decision_gate/gate.py"
+    },
+    {
+      "id": "path-5",
+      "label": "implicit_decision_gate.cli \u2192 implicit_decision_gate.orchestrator",
+      "nodes": [
+        "file:src/implicit_decision_gate/cli.py",
+        "file:src/implicit_decision_gate/orchestrator.py"
+      ],
+      "score": 0.5208588860468577,
+      "source_id": "file:src/implicit_decision_gate/cli.py",
+      "steps": [
+        {
+          "combined_strength": 0.7954778486697569,
+          "contributions": [
+            {
+              "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/orchestrator.py",
+              "kind": "CO_CHANGES",
+              "strength": 0.41565099619930523,
+              "traversal_direction": "undirected"
+            },
+            {
+              "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/orchestrator.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/cli.py",
+          "to_node_id": "file:src/implicit_decision_gate/orchestrator.py"
+        }
+      ],
+      "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+    },
+    {
+      "id": "path-6",
+      "label": "main \u2192 test_cli_pauses_inspects_answers_and_resumes",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/cli.py::main",
+        "symbol:tests/test_cli.py::test_cli_pauses_inspects_answers_and_resumes"
+      ],
+      "score": 0.5183081297602967,
+      "source_id": "symbol:src/implicit_decision_gate/cli.py::main",
+      "steps": [
+        {
+          "combined_strength": 0.7664161771879605,
+          "contributions": [
+            {
+              "edge_id": "TESTS:symbol:tests/test_cli.py::test_cli_pauses_inspects_answers_and_resumes->symbol:src/implicit_decision_gate/cli.py::main",
+              "kind": "TESTS",
+              "strength": 0.7664161771879605,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/cli.py::main",
+          "to_node_id": "symbol:tests/test_cli.py::test_cli_pauses_inspects_answers_and_resumes"
+        }
+      ],
+      "target_id": "symbol:tests/test_cli.py::test_cli_pauses_inspects_answers_and_resumes"
+    },
+    {
+      "id": "path-7",
+      "label": "main \u2192 _render",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/cli.py::main",
+        "symbol:src/implicit_decision_gate/cli.py::_render"
+      ],
+      "score": 0.514630761624753,
+      "source_id": "symbol:src/implicit_decision_gate/cli.py::main",
+      "steps": [
+        {
+          "combined_strength": 0.7609784958807819,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:src/implicit_decision_gate/cli.py::main->symbol:src/implicit_decision_gate/cli.py::_render",
+              "kind": "CALLS",
+              "strength": 0.7609784958807819,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/cli.py::main",
+          "to_node_id": "symbol:src/implicit_decision_gate/cli.py::_render"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/cli.py::_render"
+    },
+    {
+      "id": "path-8",
+      "label": "answer_owner \u2192 Orchestrator.answer",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.answer"
+      ],
+      "score": 0.4895097994026195,
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+      "steps": [
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.answer->symbol:src/implicit_decision_gate/gate.py::answer_owner",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+          "to_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.answer"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.answer"
+    },
+    {
+      "id": "path-9",
+      "label": "answer_owner \u2192 decision_by_id",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+        "symbol:src/implicit_decision_gate/scenario.py::decision_by_id"
+      ],
+      "score": 0.4895097994026195,
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+      "steps": [
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/scenario.py::decision_by_id",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+          "to_node_id": "symbol:src/implicit_decision_gate/scenario.py::decision_by_id"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/scenario.py::decision_by_id"
+    },
+    {
+      "id": "path-10",
+      "label": "answer_owner \u2192 option_by_id",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+        "symbol:src/implicit_decision_gate/scenario.py::option_by_id"
+      ],
+      "score": 0.4895097994026195,
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+      "steps": [
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/scenario.py::option_by_id",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+          "to_node_id": "symbol:src/implicit_decision_gate/scenario.py::option_by_id"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/scenario.py::option_by_id"
+    },
+    {
+      "id": "path-11",
+      "label": "answer_owner \u2192 utc_now",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+        "symbol:src/implicit_decision_gate/gate.py::utc_now"
+      ],
+      "score": 0.4895097994026195,
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+      "steps": [
+        {
+          "combined_strength": 0.6179892479403911,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/gate.py::utc_now",
+              "kind": "CALLS",
+              "strength": 0.6179892479403911,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+          "to_node_id": "symbol:src/implicit_decision_gate/gate.py::utc_now"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::utc_now"
+    },
+    {
+      "id": "path-12",
+      "label": "implicit_decision_gate.cli \u2192 implicit_decision_gate.probe",
+      "nodes": [
+        "file:src/implicit_decision_gate/cli.py",
+        "file:src/implicit_decision_gate/probe.py"
+      ],
+      "score": 0.4778435169625334,
+      "source_id": "file:src/implicit_decision_gate/cli.py",
+      "steps": [
+        {
+          "combined_strength": 0.7297829470839644,
+          "contributions": [
+            {
+              "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/probe.py",
+              "kind": "CO_CHANGES",
+              "strength": 0.22795127738275547,
+              "traversal_direction": "undirected"
+            },
+            {
+              "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/probe.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/cli.py",
+          "to_node_id": "file:src/implicit_decision_gate/probe.py"
+        }
+      ],
+      "target_id": "file:src/implicit_decision_gate/probe.py"
+    },
+    {
+      "id": "path-13",
+      "label": "implicit_decision_gate.cli \u2192 implicit_decision_gate.codex_client",
+      "nodes": [
+        "file:src/implicit_decision_gate/cli.py",
+        "file:src/implicit_decision_gate/codex_client.py"
+      ],
+      "score": 0.4778435169625334,
+      "source_id": "file:src/implicit_decision_gate/cli.py",
+      "steps": [
+        {
+          "combined_strength": 0.7297829470839644,
+          "contributions": [
+            {
+              "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/codex_client.py",
+              "kind": "CO_CHANGES",
+              "strength": 0.22795127738275547,
+              "traversal_direction": "undirected"
+            },
+            {
+              "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/codex_client.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/cli.py",
+          "to_node_id": "file:src/implicit_decision_gate/codex_client.py"
+        }
+      ],
+      "target_id": "file:src/implicit_decision_gate/codex_client.py"
+    },
+    {
+      "id": "path-14",
+      "label": "main \u2192 _execution_orchestrator",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/cli.py::main",
+        "symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator"
+      ],
+      "score": 0.4744966108905679,
+      "source_id": "symbol:src/implicit_decision_gate/cli.py::main",
+      "steps": [
+        {
+          "combined_strength": 0.7016325959918396,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:src/implicit_decision_gate/cli.py::main->symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator",
+              "kind": "CALLS",
+              "strength": 0.7016325959918396,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/cli.py::main",
+          "to_node_id": "symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator"
+    },
+    {
+      "id": "path-15",
+      "label": "main \u2192 _state_orchestrator",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/cli.py::main",
+        "symbol:src/implicit_decision_gate/cli.py::_state_orchestrator"
+      ],
+      "score": 0.4744966108905679,
+      "source_id": "symbol:src/implicit_decision_gate/cli.py::main",
+      "steps": [
+        {
+          "combined_strength": 0.7016325959918396,
+          "contributions": [
+            {
+              "edge_id": "CALLS:symbol:src/implicit_decision_gate/cli.py::main->symbol:src/implicit_decision_gate/cli.py::_state_orchestrator",
+              "kind": "CALLS",
+              "strength": 0.7016325959918396,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/cli.py::main",
+          "to_node_id": "symbol:src/implicit_decision_gate/cli.py::_state_orchestrator"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/cli.py::_state_orchestrator"
+    },
+    {
+      "id": "path-16",
+      "label": "implicit_decision_gate.cli \u2192 implicit_decision_gate.api_probe",
+      "nodes": [
+        "file:src/implicit_decision_gate/cli.py",
+        "file:src/implicit_decision_gate/api_probe.py"
+      ],
+      "score": 0.44417344252388424,
+      "source_id": "file:src/implicit_decision_gate/cli.py",
+      "steps": [
+        {
+          "combined_strength": 0.6783605770399642,
+          "contributions": [
+            {
+              "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/api_probe.py->file:src/implicit_decision_gate/cli.py",
+              "kind": "CO_CHANGES",
+              "strength": 0.08103022011418337,
+              "traversal_direction": "undirected"
+            },
+            {
+              "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/api_probe.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/cli.py",
+          "to_node_id": "file:src/implicit_decision_gate/api_probe.py"
+        }
+      ],
+      "target_id": "file:src/implicit_decision_gate/api_probe.py"
+    },
+    {
+      "id": "path-17",
+      "label": "implicit_decision_gate.cli \u2192 implicit_decision_gate.scenarios",
+      "nodes": [
+        "file:src/implicit_decision_gate/cli.py",
+        "file:src/implicit_decision_gate/scenarios.py"
+      ],
+      "score": 0.44417344252388424,
+      "source_id": "file:src/implicit_decision_gate/cli.py",
+      "steps": [
+        {
+          "combined_strength": 0.6783605770399642,
+          "contributions": [
+            {
+              "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/scenarios.py",
+              "kind": "CO_CHANGES",
+              "strength": 0.08103022011418337,
+              "traversal_direction": "undirected"
+            },
+            {
+              "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/scenarios.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/cli.py",
+          "to_node_id": "file:src/implicit_decision_gate/scenarios.py"
+        }
+      ],
+      "target_id": "file:src/implicit_decision_gate/scenarios.py"
+    },
+    {
+      "id": "path-18",
+      "label": "implicit_decision_gate.cli \u2192 implicit_decision_gate.worktree",
+      "nodes": [
+        "file:src/implicit_decision_gate/cli.py",
+        "file:src/implicit_decision_gate/worktree.py"
+      ],
+      "score": 0.44417344252388424,
+      "source_id": "file:src/implicit_decision_gate/cli.py",
+      "steps": [
+        {
+          "combined_strength": 0.6783605770399642,
+          "contributions": [
+            {
+              "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/worktree.py",
+              "kind": "CO_CHANGES",
+              "strength": 0.08103022011418337,
+              "traversal_direction": "undirected"
+            },
+            {
+              "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/worktree.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/cli.py",
+          "to_node_id": "file:src/implicit_decision_gate/worktree.py"
+        }
+      ],
+      "target_id": "file:src/implicit_decision_gate/worktree.py"
+    },
+    {
+      "id": "path-19",
+      "label": "implicit_decision_gate.cli \u2192 tests.test_orchestrator",
+      "nodes": [
+        "file:src/implicit_decision_gate/cli.py",
+        "file:src/implicit_decision_gate/gate.py",
+        "file:tests/test_orchestrator.py"
+      ],
+      "score": 0.3843936926574258,
+      "source_id": "file:src/implicit_decision_gate/cli.py",
+      "steps": [
+        {
+          "combined_strength": 0.7954778486697569,
+          "contributions": [
+            {
+              "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/gate.py",
+              "kind": "CO_CHANGES",
+              "strength": 0.41565099619930523,
+              "traversal_direction": "undirected"
+            },
+            {
+              "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/gate.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/cli.py",
+          "to_node_id": "file:src/implicit_decision_gate/gate.py"
+        },
+        {
+          "combined_strength": 0.868234920876314,
+          "contributions": [
+            {
+              "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/gate.py->file:tests/test_orchestrator.py",
+              "kind": "CO_CHANGES",
+              "strength": 0.6235283453608971,
+              "traversal_direction": "undirected"
+            },
+            {
+              "edge_id": "IMPORTS:file:tests/test_orchestrator.py->file:src/implicit_decision_gate/gate.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/gate.py",
+          "to_node_id": "file:tests/test_orchestrator.py"
+        }
+      ],
+      "target_id": "file:tests/test_orchestrator.py"
+    },
+    {
+      "id": "path-20",
+      "label": "main \u2192 test_cli_reports_coverage_gap_without_an_execution_error",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/cli.py::main",
+        "symbol:tests/test_cli.py::test_cli_reports_coverage_gap_without_an_execution_error"
+      ],
+      "score": 0.3786746765196929,
+      "source_id": "symbol:src/implicit_decision_gate/cli.py::main",
+      "steps": [
+        {
+          "combined_strength": 0.5599418209209461,
+          "contributions": [
+            {
+              "edge_id": "TESTS:symbol:tests/test_cli.py::test_cli_reports_coverage_gap_without_an_execution_error->symbol:src/implicit_decision_gate/cli.py::main",
+              "kind": "TESTS",
+              "strength": 0.5599418209209461,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/cli.py::main",
+          "to_node_id": "symbol:tests/test_cli.py::test_cli_reports_coverage_gap_without_an_execution_error"
+        }
+      ],
+      "target_id": "symbol:tests/test_cli.py::test_cli_reports_coverage_gap_without_an_execution_error"
+    },
+    {
+      "id": "path-21",
+      "label": "main \u2192 test_start_rejects_the_removed_backend_selector",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/cli.py::main",
+        "symbol:tests/test_cli.py::test_start_rejects_the_removed_backend_selector"
+      ],
+      "score": 0.3786746765196929,
+      "source_id": "symbol:src/implicit_decision_gate/cli.py::main",
+      "steps": [
+        {
+          "combined_strength": 0.5599418209209461,
+          "contributions": [
+            {
+              "edge_id": "TESTS:symbol:tests/test_cli.py::test_start_rejects_the_removed_backend_selector->symbol:src/implicit_decision_gate/cli.py::main",
+              "kind": "TESTS",
+              "strength": 0.5599418209209461,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/cli.py::main",
+          "to_node_id": "symbol:tests/test_cli.py::test_start_rejects_the_removed_backend_selector"
+        }
+      ],
+      "target_id": "symbol:tests/test_cli.py::test_start_rejects_the_removed_backend_selector"
+    },
+    {
+      "id": "path-22",
+      "label": "answer_owner \u2192 Orchestrator._execute_attempt",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+        "symbol:src/implicit_decision_gate/gate.py::GateError",
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt"
+      ],
+      "score": 0.3643298390800536,
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+      "steps": [
+        {
+          "combined_strength": 0.7761112348258989,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/gate.py::GateError",
+              "kind": "INSTANTIATES",
+              "strength": 0.7761112348258989,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+          "to_node_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+        },
+        {
+          "combined_strength": 0.6972224696517979,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt->symbol:src/implicit_decision_gate/gate.py::GateError",
+              "kind": "INSTANTIATES",
+              "strength": 0.6972224696517979,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::GateError",
+          "to_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt"
+    },
+    {
+      "id": "path-23",
+      "label": "answer_owner \u2192 coverage_gap_payloads",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+        "symbol:src/implicit_decision_gate/gate.py::GateError",
+        "symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads"
+      ],
+      "score": 0.3643298390800536,
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+      "steps": [
+        {
+          "combined_strength": 0.7761112348258989,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/gate.py::GateError",
+              "kind": "INSTANTIATES",
+              "strength": 0.7761112348258989,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+          "to_node_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+        },
+        {
+          "combined_strength": 0.6972224696517979,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads->symbol:src/implicit_decision_gate/gate.py::GateError",
+              "kind": "INSTANTIATES",
+              "strength": 0.6972224696517979,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::GateError",
+          "to_node_id": "symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads"
+    },
+    {
+      "id": "path-24",
+      "label": "answer_owner \u2192 Orchestrator._finish_second_attempt",
+      "nodes": [
+        "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+        "symbol:src/implicit_decision_gate/gate.py::GateError",
+        "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_second_attempt"
+      ],
+      "score": 0.3643298390800536,
+      "source_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+      "steps": [
+        {
+          "combined_strength": 0.7761112348258989,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/gate.py::answer_owner->symbol:src/implicit_decision_gate/gate.py::GateError",
+              "kind": "INSTANTIATES",
+              "strength": 0.7761112348258989,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+          "to_node_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+        },
+        {
+          "combined_strength": 0.6972224696517979,
+          "contributions": [
+            {
+              "edge_id": "INSTANTIATES:symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_second_attempt->symbol:src/implicit_decision_gate/gate.py::GateError",
+              "kind": "INSTANTIATES",
+              "strength": 0.6972224696517979,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "symbol:src/implicit_decision_gate/gate.py::GateError",
+          "to_node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_second_attempt"
+        }
+      ],
+      "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_second_attempt"
+    },
+    {
+      "id": "path-25",
+      "label": "implicit_decision_gate.cli \u2192 implicit_decision_gate.agent",
+      "nodes": [
+        "file:src/implicit_decision_gate/cli.py",
+        "file:src/implicit_decision_gate/gate.py",
+        "file:src/implicit_decision_gate/agent.py"
+      ],
+      "score": 0.3642075785184391,
+      "source_id": "file:src/implicit_decision_gate/cli.py",
+      "steps": [
+        {
+          "combined_strength": 0.7954778486697569,
+          "contributions": [
+            {
+              "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/gate.py",
+              "kind": "CO_CHANGES",
+              "strength": 0.41565099619930523,
+              "traversal_direction": "undirected"
+            },
+            {
+              "edge_id": "IMPORTS:file:src/implicit_decision_gate/cli.py->file:src/implicit_decision_gate/gate.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "forward"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/cli.py",
+          "to_node_id": "file:src/implicit_decision_gate/gate.py"
+        },
+        {
+          "combined_strength": 0.8226402882196255,
+          "contributions": [
+            {
+              "edge_id": "CO_CHANGES:file:src/implicit_decision_gate/agent.py->file:src/implicit_decision_gate/gate.py",
+              "kind": "CO_CHANGES",
+              "strength": 0.4932579663417871,
+              "traversal_direction": "undirected"
+            },
+            {
+              "edge_id": "IMPORTS:file:src/implicit_decision_gate/agent.py->file:src/implicit_decision_gate/gate.py",
+              "kind": "IMPORTS",
+              "strength": 0.65,
+              "traversal_direction": "reverse"
+            }
+          ],
+          "from_node_id": "file:src/implicit_decision_gate/gate.py",
+          "to_node_id": "file:src/implicit_decision_gate/agent.py"
+        }
+      ],
+      "target_id": "file:src/implicit_decision_gate/agent.py"
+    }
+  ],
+  "provenance": {
+    "branch": null,
+    "clean": true,
+    "commit": "2fdbb3deab2967a545d8a898a17a380974e6bb17",
+    "detached": true,
+    "extractor_version": "1.0.0",
+    "indexed_source_sha256": "054eb9ddb72433574992ca595bcf95e2a7747c9fa4a4515fd42681b55d706618",
+    "repository": "implicit-decision-gate",
+    "retrieval": {
+      "hop_decay": 0.85,
+      "hops": 2,
+      "related_count": 25,
+      "seed_count": 6
+    },
+    "schema_version": "1.0.0",
+    "shallow": false,
+    "tree": "045114ac474171e8044ae179e9808ae4357a5296"
+  },
+  "query": "Which CLI entry point implements start, show, answer, and resume?",
+  "related": [
+    {
+      "direct_score": 0.0039845977146514095,
+      "label": "GateError",
+      "node_id": "symbol:src/implicit_decision_gate/gate.py::GateError",
+      "pagerank_score": 0.02145185470873371,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank": 1,
+      "relationship_score": 0.614758357269009,
+      "score": 0.614758357269009
+    },
+    {
+      "direct_score": 0.03824385271896597,
+      "label": "decision_requires_owner",
+      "node_id": "symbol:src/implicit_decision_gate/gate.py::decision_requires_owner",
+      "pagerank_score": 0.007275376300628746,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank": 2,
+      "relationship_score": 0.55576376524828,
+      "score": 0.55576376524828
+    },
+    {
+      "direct_score": 0.051519392749413064,
+      "label": "tests.test_cli",
+      "node_id": "file:tests/test_cli.py",
+      "pagerank_score": 0.02506930663124209,
+      "path": "tests/test_cli.py",
+      "rank": 3,
+      "relationship_score": 0.5386441682265166,
+      "score": 0.5386441682265166
+    },
+    {
+      "direct_score": 0.033859931295490656,
+      "label": "implicit_decision_gate.gate",
+      "node_id": "file:src/implicit_decision_gate/gate.py",
+      "pagerank_score": 0.0323290409650875,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank": 4,
+      "relationship_score": 0.5208588860468577,
+      "score": 0.5208588860468577
+    },
+    {
+      "direct_score": 0.039752059767294574,
+      "label": "implicit_decision_gate.orchestrator",
+      "node_id": "file:src/implicit_decision_gate/orchestrator.py",
+      "pagerank_score": 0.012433654522257434,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank": 5,
+      "relationship_score": 0.5208588860468577,
+      "score": 0.5208588860468577
+    },
+    {
+      "direct_score": 0.05333380734414078,
+      "label": "test_cli_pauses_inspects_answers_and_resumes",
+      "node_id": "symbol:tests/test_cli.py::test_cli_pauses_inspects_answers_and_resumes",
+      "pagerank_score": 0.008055058246778837,
+      "path": "tests/test_cli.py",
+      "rank": 6,
+      "relationship_score": 0.5183081297602967,
+      "score": 0.5183081297602967
+    },
+    {
+      "direct_score": 0.004111194605113595,
+      "label": "_render",
+      "node_id": "symbol:src/implicit_decision_gate/cli.py::_render",
+      "pagerank_score": 0.01493023966198597,
+      "path": "src/implicit_decision_gate/cli.py",
+      "rank": 7,
+      "relationship_score": 0.514630761624753,
+      "score": 0.514630761624753
+    },
+    {
+      "direct_score": 0.038991406530171926,
+      "label": "Orchestrator.answer",
+      "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.answer",
+      "pagerank_score": 0.012557577473228547,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank": 8,
+      "relationship_score": 0.4895097994026195,
+      "score": 0.4895097994026195
+    },
+    {
+      "direct_score": 0.001762178626064931,
+      "label": "decision_by_id",
+      "node_id": "symbol:src/implicit_decision_gate/scenario.py::decision_by_id",
+      "pagerank_score": 0.007622441659299748,
+      "path": "src/implicit_decision_gate/scenario.py",
+      "rank": 9,
+      "relationship_score": 0.4895097994026195,
+      "score": 0.4895097994026195
+    },
+    {
+      "direct_score": 0.001566601379977439,
+      "label": "option_by_id",
+      "node_id": "symbol:src/implicit_decision_gate/scenario.py::option_by_id",
+      "pagerank_score": 0.007338993818820628,
+      "path": "src/implicit_decision_gate/scenario.py",
+      "rank": 10,
+      "relationship_score": 0.4895097994026195,
+      "score": 0.4895097994026195
+    },
+    {
+      "direct_score": 0.0019248028493458796,
+      "label": "utc_now",
+      "node_id": "symbol:src/implicit_decision_gate/gate.py::utc_now",
+      "pagerank_score": 0.007079293619700525,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank": 11,
+      "relationship_score": 0.4895097994026195,
+      "score": 0.4895097994026195
+    },
+    {
+      "direct_score": 0.014665592939416777,
+      "label": "implicit_decision_gate.probe",
+      "node_id": "file:src/implicit_decision_gate/probe.py",
+      "pagerank_score": 0.01201996859760856,
+      "path": "src/implicit_decision_gate/probe.py",
+      "rank": 12,
+      "relationship_score": 0.4778435169625334,
+      "score": 0.4778435169625334
+    },
+    {
+      "direct_score": 0.029937684323599216,
+      "label": "implicit_decision_gate.codex_client",
+      "node_id": "file:src/implicit_decision_gate/codex_client.py",
+      "pagerank_score": 0.008319885642071447,
+      "path": "src/implicit_decision_gate/codex_client.py",
+      "rank": 13,
+      "relationship_score": 0.4778435169625334,
+      "score": 0.4778435169625334
+    },
+    {
+      "direct_score": 0.0036000047240290394,
+      "label": "_execution_orchestrator",
+      "node_id": "symbol:src/implicit_decision_gate/cli.py::_execution_orchestrator",
+      "pagerank_score": 0.00979211404249415,
+      "path": "src/implicit_decision_gate/cli.py",
+      "rank": 14,
+      "relationship_score": 0.4744966108905679,
+      "score": 0.4744966108905679
+    },
+    {
+      "direct_score": 0.004078276163805176,
+      "label": "_state_orchestrator",
+      "node_id": "symbol:src/implicit_decision_gate/cli.py::_state_orchestrator",
+      "pagerank_score": 0.00948880417067954,
+      "path": "src/implicit_decision_gate/cli.py",
+      "rank": 15,
+      "relationship_score": 0.4744966108905679,
+      "score": 0.4744966108905679
+    },
+    {
+      "direct_score": 0.013164352008756312,
+      "label": "implicit_decision_gate.api_probe",
+      "node_id": "file:src/implicit_decision_gate/api_probe.py",
+      "pagerank_score": 0.011647150774689906,
+      "path": "src/implicit_decision_gate/api_probe.py",
+      "rank": 16,
+      "relationship_score": 0.44417344252388424,
+      "score": 0.44417344252388424
+    },
+    {
+      "direct_score": 0.01592098210909716,
+      "label": "implicit_decision_gate.scenarios",
+      "node_id": "file:src/implicit_decision_gate/scenarios.py",
+      "pagerank_score": 0.011115725230489638,
+      "path": "src/implicit_decision_gate/scenarios.py",
+      "rank": 17,
+      "relationship_score": 0.44417344252388424,
+      "score": 0.44417344252388424
+    },
+    {
+      "direct_score": 0.012324708871783942,
+      "label": "implicit_decision_gate.worktree",
+      "node_id": "file:src/implicit_decision_gate/worktree.py",
+      "pagerank_score": 0.0057741233368904295,
+      "path": "src/implicit_decision_gate/worktree.py",
+      "rank": 18,
+      "relationship_score": 0.44417344252388424,
+      "score": 0.44417344252388424
+    },
+    {
+      "direct_score": 0.029505517417881332,
+      "label": "tests.test_orchestrator",
+      "node_id": "file:tests/test_orchestrator.py",
+      "pagerank_score": 0.014133636804912452,
+      "path": "tests/test_orchestrator.py",
+      "rank": 19,
+      "relationship_score": 0.3843936926574258,
+      "score": 0.3843936926574258
+    },
+    {
+      "direct_score": 0.025595547290252364,
+      "label": "test_cli_reports_coverage_gap_without_an_execution_error",
+      "node_id": "symbol:tests/test_cli.py::test_cli_reports_coverage_gap_without_an_execution_error",
+      "pagerank_score": 0.005918238305498627,
+      "path": "tests/test_cli.py",
+      "rank": 20,
+      "relationship_score": 0.3786746765196929,
+      "score": 0.3786746765196929
+    },
+    {
+      "direct_score": 0.03698387957878263,
+      "label": "test_start_rejects_the_removed_backend_selector",
+      "node_id": "symbol:tests/test_cli.py::test_start_rejects_the_removed_backend_selector",
+      "pagerank_score": 0.005481485517867214,
+      "path": "tests/test_cli.py",
+      "rank": 21,
+      "relationship_score": 0.3786746765196929,
+      "score": 0.3786746765196929
+    },
+    {
+      "direct_score": 0.004787019443067063,
+      "label": "Orchestrator._execute_attempt",
+      "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt",
+      "pagerank_score": 0.008895354980132851,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank": 22,
+      "relationship_score": 0.3643298390800536,
+      "score": 0.3643298390800536
+    },
+    {
+      "direct_score": 0.004140004099084678,
+      "label": "coverage_gap_payloads",
+      "node_id": "symbol:src/implicit_decision_gate/gate.py::coverage_gap_payloads",
+      "pagerank_score": 0.005709593508879624,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank": 23,
+      "relationship_score": 0.3643298390800536,
+      "score": 0.3643298390800536
+    },
+    {
+      "direct_score": 0.010714151902818629,
+      "label": "Orchestrator._finish_second_attempt",
+      "node_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_second_attempt",
+      "pagerank_score": 0.0027164405379921006,
+      "path": "src/implicit_decision_gate/orchestrator.py",
+      "rank": 24,
+      "relationship_score": 0.3643298390800536,
+      "score": 0.3643298390800536
+    },
+    {
+      "direct_score": 0.01200937352368095,
+      "label": "implicit_decision_gate.agent",
+      "node_id": "file:src/implicit_decision_gate/agent.py",
+      "pagerank_score": 0.012040519773472907,
+      "path": "src/implicit_decision_gate/agent.py",
+      "rank": 25,
+      "relationship_score": 0.3642075785184391,
+      "score": 0.3642075785184391
+    }
+  ],
+  "relevant": [
+    {
+      "direct_score": 0.09128652829983663,
+      "label": "_parser",
+      "node_id": "symbol:src/implicit_decision_gate/cli.py::_parser",
+      "pagerank_score": 0.03875080314919893,
+      "path": "src/implicit_decision_gate/cli.py",
+      "rank": 1,
+      "relationship_score": 0.0,
+      "score": 0.09128652829983663
+    },
+    {
+      "direct_score": 0.0850683944747679,
+      "label": "answer_owner",
+      "node_id": "symbol:src/implicit_decision_gate/gate.py::answer_owner",
+      "pagerank_score": 0.03938373383458436,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank": 2,
+      "relationship_score": 0.0,
+      "score": 0.0850683944747679
+    },
+    {
+      "direct_score": 0.07262917699239876,
+      "label": "main",
+      "node_id": "symbol:src/implicit_decision_gate/cli.py::main",
+      "pagerank_score": 0.08175062520791206,
+      "path": "src/implicit_decision_gate/cli.py",
+      "rank": 3,
+      "relationship_score": 0.0,
+      "score": 0.07262917699239876
+    },
+    {
+      "direct_score": 0.07032014415404796,
+      "label": "implicit_decision_gate.cli",
+      "node_id": "file:src/implicit_decision_gate/cli.py",
+      "pagerank_score": 0.058689964523612886,
+      "path": "src/implicit_decision_gate/cli.py",
+      "rank": 4,
+      "relationship_score": 0.0,
+      "score": 0.07032014415404796
+    },
+    {
+      "direct_score": 0.05886377675399038,
+      "label": "test_cli_collects_two_answers_before_one_retry",
+      "node_id": "symbol:tests/test_cli.py::test_cli_collects_two_answers_before_one_retry",
+      "pagerank_score": 0.02798821017980817,
+      "path": "tests/test_cli.py",
+      "rank": 5,
+      "relationship_score": 0.0,
+      "score": 0.05886377675399038
+    },
+    {
+      "direct_score": 0.0534623751134177,
+      "label": "render_show",
+      "node_id": "symbol:src/implicit_decision_gate/gate.py::render_show",
+      "pagerank_score": 0.026987795319844292,
+      "path": "src/implicit_decision_gate/gate.py",
+      "rank": 6,
+      "relationship_score": 0.0,
+      "score": 0.0534623751134177
+    }
+  ],
+  "schema_version": 1
+}

@@ -1,0 +1,176 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/genesobolev/code-knowledge-graph/main/schemas/query-bundle-v1.schema.json",
+  "title": "Code knowledge graph query bundle v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "repository",
+    "query",
+    "retrieval",
+    "anchors",
+    "related_nodes",
+    "strongest_paths",
+    "selected_edges",
+    "source_snippets"
+  ],
+  "properties": {
+    "schema_version": { "const": 1 },
+    "repository": { "$ref": "#/$defs/repository" },
+    "query": { "type": "string", "minLength": 1 },
+    "retrieval": { "$ref": "#/$defs/retrieval" },
+    "anchors": { "type": "array", "items": { "$ref": "#/$defs/rankedNode" } },
+    "related_nodes": { "type": "array", "items": { "$ref": "#/$defs/rankedNode" } },
+    "strongest_paths": { "type": "array", "items": { "$ref": "#/$defs/path" } },
+    "selected_edges": { "type": "array", "items": { "$ref": "#/$defs/edge" } },
+    "source_snippets": {
+      "type": "array",
+      "maxItems": 8,
+      "items": { "$ref": "#/$defs/snippet" }
+    }
+  },
+  "$defs": {
+    "repository": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name",
+        "remote_url",
+        "commit_sha",
+        "tree_sha",
+        "branch",
+        "detached",
+        "clean",
+        "shallow",
+        "indexed_source_sha256",
+        "graph_schema_version",
+        "extractor_version"
+      ],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "remote_url": { "type": ["string", "null"] },
+        "commit_sha": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
+        "tree_sha": { "type": "string", "pattern": "^[0-9a-f]{40}$" },
+        "branch": { "type": ["string", "null"] },
+        "detached": { "type": "boolean" },
+        "clean": { "type": "boolean" },
+        "shallow": { "type": "boolean" },
+        "indexed_source_sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "graph_schema_version": { "type": "string" },
+        "extractor_version": { "type": "string" }
+      }
+    },
+    "retrieval": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["seed_count", "hops", "related_count", "hop_decay"],
+      "properties": {
+        "seed_count": { "type": "integer", "minimum": 1 },
+        "hops": { "type": "integer", "minimum": 1 },
+        "related_count": { "type": "integer", "minimum": 1 },
+        "hop_decay": { "type": "number", "exclusiveMinimum": 0, "maximum": 1 }
+      }
+    },
+    "location": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "start_line", "end_line"],
+      "properties": {
+        "path": { "type": "string", "minLength": 1, "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+$" },
+        "start_line": { "type": "integer", "minimum": 1 },
+        "end_line": { "type": "integer", "minimum": 1 }
+      }
+    },
+    "node": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["node_id", "kind", "name", "qualified_name", "language", "location"],
+      "properties": {
+        "node_id": { "type": "string", "minLength": 1 },
+        "kind": { "type": "string", "minLength": 1 },
+        "name": { "type": "string", "minLength": 1 },
+        "qualified_name": { "type": "string", "minLength": 1 },
+        "language": { "type": "string" },
+        "location": { "$ref": "#/$defs/location" }
+      }
+    },
+    "rankedNode": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rank", "node", "direct_score", "relationship_score", "pagerank_score"],
+      "properties": {
+        "rank": { "type": "integer", "minimum": 1 },
+        "node": { "$ref": "#/$defs/node" },
+        "direct_score": { "type": "number" },
+        "relationship_score": { "type": "number" },
+        "pagerank_score": { "type": "number" }
+      }
+    },
+    "edge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["edge_id", "source_id", "target_id", "kind", "direction", "count", "strength", "confidence", "evidence"],
+      "properties": {
+        "edge_id": { "type": "string" },
+        "source_id": { "type": "string" },
+        "target_id": { "type": "string" },
+        "kind": { "type": "string" },
+        "direction": { "enum": ["directed", "undirected"] },
+        "count": { "type": "integer", "minimum": 1 },
+        "strength": { "type": "number" },
+        "confidence": { "type": "number" },
+        "evidence": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "step": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["from_node_id", "to_node_id", "combined_strength", "contributions"],
+      "properties": {
+        "from_node_id": { "type": "string" },
+        "to_node_id": { "type": "string" },
+        "combined_strength": { "type": "number", "minimum": 0, "maximum": 1 },
+        "contributions": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/pathEdgeContribution" }
+        }
+      }
+    },
+    "pathEdgeContribution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["edge_id", "kind", "traversal_direction", "strength"],
+      "properties": {
+        "edge_id": { "type": "string" },
+        "kind": { "type": "string" },
+        "traversal_direction": { "enum": ["forward", "reverse", "undirected"] },
+        "strength": { "type": "number", "minimum": 0, "maximum": 1 }
+      }
+    },
+    "path": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_id", "target_id", "relationship_score", "node_ids", "steps"],
+      "properties": {
+        "source_id": { "type": "string" },
+        "target_id": { "type": "string" },
+        "relationship_score": { "type": "number" },
+        "node_ids": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "steps": { "type": "array", "items": { "$ref": "#/$defs/step" } }
+      }
+    },
+    "snippet": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["node_id", "location", "text", "reviewed"],
+      "properties": {
+        "node_id": { "type": "string" },
+        "location": { "$ref": "#/$defs/location" },
+        "text": { "type": "string", "maxLength": 800 },
+        "reviewed": { "const": true }
+      }
+    }
+  }
+}
