@@ -166,7 +166,7 @@ direct TF-IDF baseline and graph-expanded retrieval at the same 20-node budget.
 
 Graph expansion improves contextual recall in this reviewed set while answer MRR is tied.
 It also regresses on two queries, `clean-worktree` and `cli-lifecycle`. This is a small,
-illustrative benchmark, not a claim of statistical superiority, and the misses are exposed
+illustrative benchmark—not a claim of statistical superiority—and the misses are exposed
 in the web app for inspection.
 
 The source judgments live in
@@ -205,8 +205,8 @@ uv run python -m http.server 8000 --directory web/public
 ```
 
 Then open `http://localhost:8000`. The app supports recorded-query selection, graph
-pan and zoom, relationship filtering, edge-strength thresholds, node and path inspection,
-concise retrieval evaluation, and pinned provenance.
+pan and zoom, relationship filtering, score thresholds, node and path inspection,
+evaluation drill-down, provenance, and copyable JSON or Markdown context.
 
 ## Validation
 
