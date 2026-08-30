@@ -2,6 +2,8 @@
 
 An explainable, reproducible way to retrieve code context for developers and AI agents.
 
+[Explore the live presentation](https://code-knowledge-graph.vercel.app/)
+
 The project indexes a Git repository into a typed graph, retrieves text-relevant anchors,
 and expands them through the strongest code relationships. Every result explains why a
 node was selected and records the exact source snapshot that produced it.
