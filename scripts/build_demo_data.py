@@ -6,7 +6,6 @@ import argparse
 from pathlib import Path
 
 from code_knowledge_graph.configuration import GraphConfig, RetrievalConfig
-from code_knowledge_graph.context import build_query_bundle
 from code_knowledge_graph.evaluation import (
     Benchmark,
     compare_rankings,
@@ -20,10 +19,11 @@ from code_knowledge_graph.web_export import (
     query_payload,
     repository_payload,
     verify_public_snapshot,
+    write_plotly_javascript,
     write_public_dataset,
 )
 
-EXPECTED_COMMIT = "2fdbb3deab2967a545d8a898a17a380974e6bb17"
+EXPECTED_COMMIT = "b8815be28dbb1f1abb5c744d9ead6b6a8a9ddaf2"
 DEFAULT_BENCHMARK = Path("benchmarks/implicit-decision-gate-v1.json")
 DEFAULT_OUTPUT = Path("web/public/data")
 REPOSITORY_ID = "implicit-decision-gate"
@@ -69,7 +69,6 @@ def build_data(
     lexical_rankings: dict[str, list[str]] = {}
     graph_rankings: dict[str, list[str]] = {}
     entries: list[dict[str, str]] = []
-    bundles = []
     payloads: dict[str, object] = {}
     for benchmark_query in benchmark.queries:
         scores = direct_query_scores(index, benchmark_query.query)
@@ -82,26 +81,12 @@ def build_data(
         lexical_rankings[benchmark_query.id] = lexical
         graph_rankings[benchmark_query.id] = graph
 
-        ranked_ids = set(result.anchors) | set(related_ids)
-        reviewed_answers = tuple(
-            judgment.node_id
-            for judgment in benchmark_query.judgments
-            if judgment.role == "answer" and judgment.node_id in ranked_ids
-        )[:1]
-        bundle = build_query_bundle(
-            knowledge,
-            result,
-            retrieval=retrieval,
-            include_source=bool(reviewed_answers),
-            reviewed_snippet_node_ids=reviewed_answers,
-        )
-        bundles.append(bundle)
         label = benchmark_query.id.replace("-", " ").title()
         file_name = f"queries/{benchmark_query.id}.json"
         entries.append({"id": benchmark_query.id, "label": label, "file": file_name})
         payloads[file_name] = query_payload(
             knowledge,
-            bundle,
+            result,
             query_id=benchmark_query.id,
             label=label,
             description=(
@@ -124,14 +109,19 @@ def build_data(
         "indexed_source_sha256": knowledge.snapshot.indexed_source_sha256,
     }
     payloads["repository.json"] = repository_payload(knowledge, repository_id=REPOSITORY_ID)
-    payloads["evaluation.json"] = evaluation_payload(comparison, provenance=provenance)
+    payloads["evaluation.json"] = evaluation_payload(
+        comparison,
+        provenance=provenance,
+        nodes=knowledge.nodes,
+    )
     payloads["manifest.json"] = manifest_payload(
-        bundles[0],
+        knowledge,
         entries,
         repository_id=REPOSITORY_ID,
         repository_label="Implicit Decision Gate",
     )
     write_public_dataset(output_path, payloads)
+    write_plotly_javascript(output_path.parent / "vendor" / "plotly.min.js")
 
 
 def main() -> int:

@@ -3,117 +3,98 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A recorded Code Knowledge Graph exploration and evaluation viewer.">
+    <meta name="description" content="Explore recorded repository and query knowledge graphs, then compare retrieval quality.">
     <meta name="color-scheme" content="light">
-    <meta name="theme-color" content="#145fe4">
+    <meta name="theme-color" content="#0f172a">
     <title>Code Knowledge Graph</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/styles.css">
+    <script src="/vendor/plotly.min.js" defer></script>
     <script src="/app.js" defer></script>
 </head>
 <body>
     <div class="app-shell">
         <header class="app-header">
-            <a class="app-identity" href="#view=explore" aria-label="Code Knowledge Graph home">
+            <a class="app-identity" href="#view=repository" aria-label="Code Knowledge Graph repository view">
                 <span class="brand-mark" aria-hidden="true">ckg</span>
-                <span>
-                    <strong>Code Knowledge Graph</strong>
-                    <small>Recorded repository exploration</small>
-                </span>
+                <strong>Code Knowledge Graph</strong>
             </a>
-            <nav class="app-tabs" role="tablist" aria-label="Application views">
-                <button id="explore-tab" type="button" role="tab" data-view="explore" aria-selected="true" aria-controls="explore-view">Explore</button>
-                <button id="evaluation-tab" type="button" role="tab" data-view="evaluation" aria-selected="false" aria-controls="evaluation-view">Evaluation</button>
-                <button id="context-tab" type="button" role="tab" data-view="context" aria-selected="false" aria-controls="context-view">Context bundle</button>
+            <nav class="view-switcher" aria-label="Primary views">
+                <button id="repository-control" type="button" data-view="repository" aria-pressed="true" aria-controls="repository-view">Repository</button>
+                <button id="query-control" type="button" data-view="query" aria-pressed="false" aria-controls="query-view">Query</button>
+                <button id="comparison-control" type="button" data-view="comparison" aria-pressed="false" aria-controls="comparison-view">Comparison</button>
             </nav>
         </header>
 
         <main class="app-main" id="app-main">
-            <div id="loading-state" class="loading-state" role="status">Loading recorded graph data…</div>
-            <div id="error-state" class="error-state" role="alert" hidden></div>
+            <p id="loading-state" class="loading-state" role="status">Loading recorded figures…</p>
+            <p id="error-state" class="error-state" role="alert" hidden></p>
 
-            <section id="explore-view" class="app-view" role="tabpanel" aria-labelledby="explore-tab" data-view-panel="explore" hidden>
-                <div class="view-header">
-                    <div>
-                        <p class="eyebrow">Static snapshot</p>
-                        <h1>Explore recorded code relationships</h1>
-                        <p class="view-copy">This view displays precomputed graph results. It doesn't run a live query.</p>
-                    </div>
-                    <div class="picker-row">
-                        <label>Repository <select id="repository-select"></select></label>
-                        <label>Recorded query <select id="query-select" aria-label="Recorded query selector"></select></label>
-                    </div>
+            <section id="repository-view" class="app-view" aria-labelledby="repository-control" data-view-panel="repository" hidden>
+                <div class="plot-frame" role="region" aria-label="Repository file relationship figure" tabindex="0">
+                    <div id="repository-figure" class="plot-host plot-host-repository"></div>
                 </div>
-
-                <div class="explore-layout">
-                    <section class="graph-card" aria-labelledby="graph-heading">
-                        <div class="card-toolbar">
-                            <div>
-                                <h2 id="graph-heading">Relationship graph</h2>
-                                <p id="query-question" class="query-question">Select a recorded query.</p>
-                                <p id="query-description">Precomputed nodes and strongest paths for the selected question.</p>
-                            </div>
-                            <div class="graph-actions">
-                                <button id="zoom-out" type="button" aria-label="Zoom out">−</button>
-                                <button id="zoom-reset" type="button">Reset view</button>
-                                <button id="zoom-in" type="button" aria-label="Zoom in">+</button>
-                            </div>
-                        </div>
-                        <div class="filter-row">
-                            <fieldset id="edge-filters"><legend>Edge types</legend><div id="edge-filter-list" class="filter-list"></div></fieldset>
-                            <label class="score-filter">Minimum score <output id="score-output" for="score-filter">0.00</output><input id="score-filter" type="range" min="0" max="1" step="0.01" value="0"></label>
-                        </div>
-                        <div id="graph-stage" class="graph-stage" tabindex="0" role="region" aria-label="Interactive graph. Drag to pan, use controls to zoom, and select nodes or paths for details.">
-                            <svg id="graph-svg" viewBox="0 0 1000 620" role="group" aria-labelledby="graph-title graph-description">
-                                <title id="graph-title">Recorded code knowledge graph</title>
-                                <desc id="graph-description">Use the accessible tables below to inspect graph contents.</desc>
-                                <g id="graph-viewport"></g>
-                            </svg>
-                        </div>
-                        <section class="path-picker" aria-labelledby="paths-heading">
-                            <h3 id="paths-heading">Recorded paths</h3>
-                            <div id="path-list" class="path-list"></div>
-                        </section>
-                    </section>
-
-                    <aside class="inspector-card" aria-labelledby="inspector-heading">
-                        <p class="eyebrow">Selection inspector</p>
-                        <h2 id="inspector-heading">Nothing selected</h2>
-                        <div id="inspector-content" class="inspector-content">Select a graph node, edge, or recorded path to inspect its attributes.</div>
-                    </aside>
-                </div>
-
-                <section class="table-card" aria-labelledby="nodes-heading">
-                    <div class="table-heading"><div><p class="eyebrow">Accessible graph mirror</p><h2 id="nodes-heading">Nodes</h2></div><span id="node-count" class="count-pill">0</span></div>
-                    <div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable node table"><table><thead><tr><th scope="col">Node</th><th scope="col">Type</th><th scope="col">Score</th><th scope="col">Details</th></tr></thead><tbody id="nodes-table"></tbody></table></div>
-                </section>
-                <section class="table-card" aria-labelledby="edges-heading">
-                    <div class="table-heading"><div><p class="eyebrow">Accessible graph mirror</p><h2 id="edges-heading">Edges</h2></div><span id="edge-count" class="count-pill">0</span></div>
-                    <div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable edge table"><table><thead><tr><th scope="col">From</th><th scope="col">Relationship</th><th scope="col">To</th><th scope="col">Score</th></tr></thead><tbody id="edges-table"></tbody></table></div>
-                </section>
-                <section class="table-card" aria-labelledby="ranked-heading">
-                    <div class="table-heading"><div><p class="eyebrow">Precomputed retrieval</p><h2 id="ranked-heading">Ranked relevant and related results</h2></div></div>
-                    <div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable ranked-results table"><table><thead><tr><th scope="col">Set</th><th scope="col">Rank</th><th scope="col">Result</th><th scope="col">Score</th></tr></thead><tbody id="ranked-table"></tbody></table></div>
-                </section>
-                <div id="explore-provenance" class="provenance-bar"></div>
+                <footer id="repository-provenance" class="provenance"></footer>
             </section>
 
-            <section id="evaluation-view" class="app-view" role="tabpanel" aria-labelledby="evaluation-tab" data-view-panel="evaluation" hidden>
-                <div class="view-header compact-header"><div><p class="eyebrow">Recorded evaluation</p><h1>Lexical and graph retrieval</h1><p class="view-copy">Metrics and misses are preserved from the generated evaluation artifact.</p></div></div>
-                <section id="metric-grid" class="metric-grid" aria-label="Evaluation metrics"></section>
-                <p id="evaluation-conclusion" class="evaluation-conclusion"></p>
-                <section class="table-card" aria-labelledby="comparison-heading"><div class="table-heading"><div><p class="eyebrow">Comparison</p><h2 id="comparison-heading">Per-query answer retrieval</h2></div></div><div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable per-query evaluation table"><table><thead><tr><th scope="col">Recorded query</th><th scope="col">Lexical MRR at 10</th><th scope="col">Graph MRR at 10</th><th scope="col">Judgment change</th></tr></thead><tbody id="evaluation-table"></tbody></table></div></section>
-                <section class="misses-card" aria-labelledby="misses-heading"><div><p class="eyebrow">Review set</p><h2 id="misses-heading">Misses and disagreements</h2></div><div id="misses-list" class="misses-list"></div></section>
-                <div id="evaluation-provenance" class="provenance-bar"></div>
+            <section id="query-view" class="app-view" aria-labelledby="query-control" data-view-panel="query" hidden>
+                <div class="query-toolbar">
+                    <label for="query-select">Query</label>
+                    <select id="query-select" aria-describedby="query-question query-description"></select>
+                    <p id="query-question" class="visually-hidden" aria-live="polite"></p>
+                    <p id="query-description" class="visually-hidden"></p>
+                </div>
+                <div class="plot-frame" role="region" aria-label="Selected query relationship figure" tabindex="0">
+                    <div id="query-figure" class="plot-host plot-host-query"></div>
+                </div>
+                <footer id="query-provenance" class="provenance"></footer>
             </section>
 
-            <section id="context-view" class="app-view" role="tabpanel" aria-labelledby="context-tab" data-view-panel="context" hidden>
-                <div class="view-header compact-header"><div><p class="eyebrow">Recorded query artifact</p><h1>Context bundle</h1><p id="context-description" class="view-copy">Structured context supplied for the selected recorded query.</p></div></div>
-                <section class="context-card" aria-label="Context bundle contents">
-                    <div class="context-toolbar"><div class="context-tabs" role="tablist" aria-label="Context format"><button type="button" id="json-context-tab" role="tab" data-context-format="json" aria-selected="true">JSON</button><button type="button" id="markdown-context-tab" role="tab" data-context-format="markdown" aria-selected="false">Markdown</button></div><button id="copy-context" type="button">Copy JSON</button></div>
-                    <pre id="context-code" tabindex="0" aria-live="polite"></pre>
+            <section id="comparison-view" class="app-view comparison-view" aria-labelledby="comparison-control" data-view-panel="comparison" hidden>
+                <div class="table-frame aggregate-frame" tabindex="0" role="region" aria-label="Scrollable aggregate retrieval comparison">
+                    <table>
+                        <caption>Aggregate retrieval</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Metric</th>
+                                <th scope="col">Lexical</th>
+                                <th scope="col">Graph-expanded</th>
+                                <th scope="col">Change</th>
+                            </tr>
+                        </thead>
+                        <tbody id="aggregate-table-body"></tbody>
+                    </table>
+                </div>
+                <p id="comparison-conclusion" class="comparison-conclusion"></p>
+
+                <div class="table-frame comparison-table-frame" tabindex="0" role="region" aria-label="Scrollable per-query retrieval comparison">
+                    <table>
+                        <caption>Per-query retrieval</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Query</th>
+                                <th scope="col">Answer rank<br><span>L / G</span></th>
+                                <th scope="col">RR at 10<br><span>L / G</span></th>
+                                <th scope="col">Recall at 10<br><span>L / G</span></th>
+                                <th scope="col">Recall at 20<br><span>L / G</span></th>
+                                <th scope="col">Supporting recall at 10<br><span>L / G</span></th>
+                                <th scope="col">Reviewed changes</th>
+                                <th scope="col">Regression</th>
+                            </tr>
+                        </thead>
+                        <tbody id="comparison-table-body"></tbody>
+                    </table>
+                </div>
+
+                <section class="ranking-section" aria-labelledby="ranking-heading">
+                    <div class="ranking-toolbar">
+                        <h2 id="ranking-heading">Ranking detail</h2>
+                        <label for="comparison-query-select">Query</label>
+                        <select id="comparison-query-select"></select>
+                    </div>
+                    <div id="ranking-comparison" class="ranking-comparison" aria-live="polite"></div>
                 </section>
-                <div id="context-provenance" class="provenance-bar"></div>
+                <footer id="comparison-provenance" class="provenance"></footer>
             </section>
         </main>
     </div>

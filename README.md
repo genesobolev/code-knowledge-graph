@@ -134,7 +134,7 @@ uv run code-knowledge-graph index \
     --repo ../implicit-decision-gate \
     --out artifacts/graph.json \
     --mode public \
-    --expected-commit 2fdbb3deab2967a545d8a898a17a380974e6bb17
+    --expected-commit b8815be28dbb1f1abb5c744d9ead6b6a8a9ddaf2
 ```
 
 Each artifact records:
@@ -159,15 +159,15 @@ direct TF-IDF baseline and graph-expanded retrieval at the same 20-node budget.
 
 | Metric | Lexical | Graph-expanded |
 | --- | ---: | ---: |
-| Answer MRR at 10 | 0.524 | 0.524 |
-| Overall recall at 10 | 0.571 | 0.667 |
-| Overall recall at 20 | 0.714 | 0.810 |
-| Supporting-context recall at 10 | 0.464 | 0.607 |
+| Answer MRR at 10 | 0.544 | 0.544 |
+| Overall recall at 10 | 0.619 | 0.738 |
+| Overall recall at 20 | 0.738 | 0.810 |
+| Supporting-context recall at 10 | 0.500 | 0.679 |
 
 Graph expansion improves contextual recall in this reviewed set while answer MRR is tied.
-It also regresses on two queries, `clean-worktree` and `cli-lifecycle`. This is a small,
-illustrative benchmark—not a claim of statistical superiority—and the misses are exposed
-in the web app for inspection.
+It also regresses on `clean-worktree`. This is a small, illustrative benchmark—not a
+claim of statistical superiority—and the misses are exposed in the web app for
+inspection.
 
 The source judgments live in
 [benchmarks/implicit-decision-gate-v1.json](benchmarks/implicit-decision-gate-v1.json).
@@ -204,9 +204,11 @@ Serve the app locally:
 uv run python -m http.server 8000 --directory web/public
 ```
 
-Then open `http://localhost:8000`. The app supports recorded-query selection, graph
-pan and zoom, relationship filtering, score thresholds, node and path inspection,
-evaluation drill-down, provenance, and copyable JSON or Markdown context.
+Then open `http://localhost:8000`. The presentation has three views: the complete
+file-level repository graph, notebook-identical graphs for each recorded query, and an
+equal-budget lexical-versus-graph comparison. Plotly provides hover details, legend
+filtering, pan, zoom, and reset. Every figure and comparison is generated from the same
+pinned source snapshot; the browser makes no repository, model, or backend calls.
 
 ## Validation
 

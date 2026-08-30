@@ -70,6 +70,7 @@ class QueryEvaluation:
 
     id: str
     query: str
+    ranking: tuple[str, ...]
     reciprocal_answer_rank_at_10: float
     recall_at_10: float
     recall_at_20: float
@@ -97,8 +98,8 @@ class QueryComparison:
 
     id: str
     answer_rank_change: int | None
-    newly_retrieved_at_10: tuple[str, ...]
-    newly_missed_at_10: tuple[str, ...]
+    newly_retrieved_judgments_at_10: tuple[str, ...]
+    newly_missed_judgments_at_10: tuple[str, ...]
     regression: bool
 
 
@@ -264,6 +265,7 @@ def evaluate_rankings(
             QueryEvaluation(
                 id=query.id,
                 query=query.query,
+                ranking=ranking,
                 reciprocal_answer_rank_at_10=reciprocal_rank,
                 recall_at_10=sum(result.retrieved_at_10 for result in judgment_results)
                 / len(judgment_results),
@@ -353,18 +355,39 @@ def compare_rankings(
             QueryComparison(
                 id=lexical_query.id,
                 answer_rank_change=rank_change,
-                newly_retrieved_at_10=tuple(sorted(graph_retrieved - lexical_retrieved)),
-                newly_missed_at_10=tuple(sorted(lexical_retrieved - graph_retrieved)),
+                newly_retrieved_judgments_at_10=tuple(sorted(graph_retrieved - lexical_retrieved)),
+                newly_missed_judgments_at_10=tuple(sorted(lexical_retrieved - graph_retrieved)),
                 regression=regression,
             )
         )
-    delta = graph_result.answer_mrr_at_10 - lexical_result.answer_mrr_at_10
-    if delta > 0:
-        conclusion = "Graph expansion has higher answer MRR@10 on this illustrative benchmark."
-    elif delta < 0:
-        conclusion = "Graph expansion has lower answer MRR@10 on this illustrative benchmark."
-    else:
-        conclusion = "Graph expansion and lexical retrieval tie on answer MRR@10."
+
+    def describe_delta(metric: str, lexical_value: float, graph_value: float) -> str:
+        delta = graph_value - lexical_value
+        if abs(delta) < 1e-12:
+            return f"{metric} is unchanged"
+        direction = "increases" if delta > 0 else "decreases"
+        return f"{metric} {direction} by {abs(delta):.3f}"
+
+    conclusion = (
+        "Compared with lexical retrieval, graph expansion "
+        + "; ".join(
+            (
+                describe_delta(
+                    "answer MRR@10",
+                    lexical_result.answer_mrr_at_10,
+                    graph_result.answer_mrr_at_10,
+                ),
+                describe_delta("recall@10", lexical_result.recall_at_10, graph_result.recall_at_10),
+                describe_delta("recall@20", lexical_result.recall_at_20, graph_result.recall_at_20),
+                describe_delta(
+                    "supporting recall@10",
+                    lexical_result.supporting_recall_at_10,
+                    graph_result.supporting_recall_at_10,
+                ),
+            )
+        )
+        + " on this illustrative benchmark."
+    )
     return EvaluationComparison(
         schema_version=1,
         repository=benchmark.repository,
@@ -420,9 +443,10 @@ def evaluation_to_markdown(comparison: EvaluationComparison) -> str:
                 f"### {query_result.id}",
                 "",
                 f"- Answer rank change, positive is better: {change}",
-                "- Newly retrieved at 10: "
-                f"{', '.join(query_result.newly_retrieved_at_10) or 'none'}",
-                f"- Newly missed at 10: {', '.join(query_result.newly_missed_at_10) or 'none'}",
+                "- Newly retrieved judgments at 10: "
+                f"{', '.join(query_result.newly_retrieved_judgments_at_10) or 'none'}",
+                "- Newly missed judgments at 10: "
+                f"{', '.join(query_result.newly_missed_judgments_at_10) or 'none'}",
                 f"- Regression: {'yes' if query_result.regression else 'no'}",
                 "",
             ]

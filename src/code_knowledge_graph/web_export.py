@@ -9,16 +9,17 @@ from collections.abc import Mapping, Sequence
 from dataclasses import asdict
 from pathlib import Path, PurePosixPath, PureWindowsPath
 from tempfile import TemporaryDirectory
-from typing import Any
+from typing import cast
 
-import networkx as nx
+import plotly.graph_objects as go  # type: ignore[import-untyped]
+import plotly.io as pio  # type: ignore[import-untyped]
+from plotly.offline import get_plotlyjs, get_plotlyjs_version  # type: ignore[import-untyped]
 
-from .context import QueryBundle, query_bundle_to_json, query_bundle_to_markdown
-from .evaluation import EvaluationComparison
-from .models import KnowledgeGraph
+from .artifact import PLOTLY_CONFIG, query_result_figure, repository_overview_figure
+from .evaluation import EvaluationComparison, QueryEvaluation, StrategyEvaluation
+from .models import CodeNode, KnowledgeGraph, QueryResult
 
-WEB_DATA_SCHEMA_VERSION = 1
-LAYOUT_SEED = 17
+WEB_DATA_SCHEMA_VERSION = 2
 _CREDENTIAL_ASSIGNMENT = re.compile(
     r"(?ix)"
     r"(?:['\"])?\b(?:api[_-]?key|access[_-]?token|auth[_-]?token|client[_-]?secret|"
@@ -63,59 +64,45 @@ def _require_publishable_snapshot(knowledge: KnowledgeGraph) -> None:
         raise PublicExportError("public export requires complete Git history")
 
 
-def provenance_payload(bundle: QueryBundle) -> dict[str, object]:
+def provenance_payload(knowledge: KnowledgeGraph) -> dict[str, object]:
+    """Return public provenance for the exact graph snapshot being rendered."""
+
+    snapshot = knowledge.snapshot
     return {
-        "repository": bundle.repository.name,
-        "commit": bundle.repository.commit_sha,
-        "tree": bundle.repository.tree_sha,
-        "branch": bundle.repository.branch,
-        "detached": bundle.repository.detached,
-        "clean": bundle.repository.clean,
-        "shallow": bundle.repository.shallow,
-        "schema_version": bundle.repository.graph_schema_version,
-        "extractor_version": bundle.repository.extractor_version,
-        "indexed_source_sha256": bundle.repository.indexed_source_sha256,
-        "retrieval": asdict(bundle.retrieval),
+        "repository": snapshot.repository_name,
+        "commit": snapshot.commit_sha,
+        "tree": snapshot.tree_sha,
+        "branch": snapshot.branch,
+        "detached": snapshot.detached,
+        "clean": not snapshot.dirty,
+        "shallow": snapshot.shallow,
+        "schema_version": snapshot.schema_version,
+        "extractor_version": snapshot.extractor_version,
+        "indexed_source_sha256": snapshot.indexed_source_sha256,
+        "retrieval": asdict(snapshot.retrieval),
     }
 
 
-def _positions(graph: nx.Graph[str], node_ids: Sequence[str]) -> dict[str, tuple[float, float]]:
-    ordered = tuple(sorted(set(node_ids)))
-    if not ordered:
-        return {}
+def _plotly_figure_payload(figure: go.Figure) -> dict[str, object]:
+    """Serialize a notebook Figure without altering its Plotly data or layout."""
 
-    layout_graph: nx.Graph[str] = nx.Graph()
-    layout_graph.add_nodes_from(ordered)
-    edge_records = sorted(
-        (
-            min(str(source), str(target)),
-            max(str(source), str(target)),
-            float(data.get("strength", data.get("weight", 1.0))),
-        )
-        for source, target, data in graph.subgraph(ordered).edges(data=True)
-    )
-    for source, target, strength in edge_records:
-        current = float(layout_graph.get_edge_data(source, target, {}).get("strength", 0.0))
-        combined = 1.0 - (1.0 - current) * (1.0 - strength)
-        layout_graph.add_edge(source, target, strength=combined)
-
-    raw = nx.spring_layout(
-        layout_graph,
-        seed=LAYOUT_SEED,
-        weight="strength",
-        iterations=100,
-    )
+    serialized = json.loads(pio.to_json(figure, validate=True, pretty=False, remove_uids=True))
+    if not isinstance(serialized, dict):
+        raise PublicExportError("Plotly figure serialization must produce an object")
+    data = serialized.get("data")
+    layout = serialized.get("layout")
+    if not isinstance(data, list) or not isinstance(layout, dict):
+        raise PublicExportError("Plotly figure serialization is missing data or layout")
     return {
-        node_id: (
-            round(500.0 + float(raw[node_id][0]) * 400.0, 3),
-            round(300.0 + float(raw[node_id][1]) * 240.0, 3),
-        )
-        for node_id in ordered
+        "plotly_js_version": get_plotlyjs_version(),
+        "data": cast(list[object], data),
+        "layout": cast(dict[str, object], layout),
+        "config": dict(PLOTLY_CONFIG),
     }
 
 
 def repository_payload(knowledge: KnowledgeGraph, *, repository_id: str) -> dict[str, object]:
-    """Build repository counts and sanitized provenance."""
+    """Build repository counts, provenance, and the exact notebook overview figure."""
 
     snapshot = knowledge.snapshot
     _require_publishable_snapshot(knowledge)
@@ -134,184 +121,148 @@ def repository_payload(knowledge: KnowledgeGraph, *, repository_id: str) -> dict
             "nodes": dict(sorted(Counter(node.kind for node in knowledge.nodes.values()).items())),
             "edges": dict(sorted(Counter(edge.kind for edge in knowledge.edges).items())),
         },
-        "provenance": {
-            "repository": snapshot.repository_name,
-            "commit": snapshot.commit_sha,
-            "tree": snapshot.tree_sha,
-            "branch": snapshot.branch,
-            "detached": snapshot.detached,
-            "clean": True,
-            "shallow": snapshot.shallow,
-            "schema_version": snapshot.schema_version,
-            "extractor_version": snapshot.extractor_version,
-            "indexed_source_sha256": snapshot.indexed_source_sha256,
-            "retrieval": asdict(snapshot.retrieval),
-        },
+        "provenance": provenance_payload(knowledge),
+        "figure": _plotly_figure_payload(repository_overview_figure(knowledge)),
     }
 
 
 def query_payload(
     knowledge: KnowledgeGraph,
-    bundle: QueryBundle,
+    result: QueryResult,
     *,
     query_id: str,
     label: str,
     description: str,
 ) -> dict[str, object]:
-    """Build one recorded query graph and both bundle representations."""
+    """Build one recorded query using the exact notebook query Figure."""
 
     _require_publishable_snapshot(knowledge)
-    if not bundle.repository.clean:
-        raise PublicExportError("public query export requires a clean repository snapshot")
-    if bundle.repository.commit_sha != knowledge.snapshot.commit_sha:
-        raise PublicExportError("query bundle commit doesn't match the repository graph")
-    ranked = (*bundle.anchors, *bundle.related_nodes)
-    positions = _positions(knowledge.graph, [item.node.node_id for item in ranked])
-    anchor_ids = {item.node.node_id for item in bundle.anchors}
-    nodes = []
-    for item in ranked:
-        x, y = positions[item.node.node_id]
-        nodes.append(
-            {
-                "id": item.node.node_id,
-                "label": item.node.qualified_name,
-                "kind": item.node.kind,
-                "language": item.node.language,
-                "path": item.node.location.path,
-                "start_line": item.node.location.start_line,
-                "end_line": item.node.location.end_line,
-                "rank_group": "anchor" if item.node.node_id in anchor_ids else "related",
-                "score": max(item.direct_score, item.relationship_score),
-                "direct_score": item.direct_score,
-                "relationship_score": item.relationship_score,
-                "pagerank_score": item.pagerank_score,
-                "x": x,
-                "y": y,
-            }
-        )
-    edges = [
-        asdict(edge) | {"id": edge.edge_id, "type": edge.kind} for edge in bundle.selected_edges
-    ]
-    paths = [
-        {
-            "id": f"path-{index}",
-            "label": (
-                f"{knowledge.nodes[path.source_id].qualified_name} → "
-                f"{knowledge.nodes[path.target_id].qualified_name}"
-            ),
-            "source_id": path.source_id,
-            "target_id": path.target_id,
-            "score": path.relationship_score,
-            "nodes": list(path.node_ids),
-            "steps": [asdict(step) for step in path.steps],
-        }
-        for index, path in enumerate(bundle.strongest_paths, 1)
-    ]
-
-    def ranked_row(item: Any) -> dict[str, object]:
-        return {
-            "rank": item.rank,
-            "node_id": item.node.node_id,
-            "label": item.node.qualified_name,
-            "path": item.node.location.path,
-            "score": item.direct_score
-            if item.node.node_id in anchor_ids
-            else item.relationship_score,
-            "direct_score": item.direct_score,
-            "relationship_score": item.relationship_score,
-            "pagerank_score": item.pagerank_score,
-        }
-
     payload = {
         "schema_version": WEB_DATA_SCHEMA_VERSION,
         "id": query_id,
         "label": label,
-        "query": bundle.query,
+        "query": result.query,
         "description": description,
-        "provenance": provenance_payload(bundle),
-        "nodes": nodes,
-        "edges": edges,
-        "paths": paths,
-        "relevant": [ranked_row(item) for item in bundle.anchors],
-        "related": [ranked_row(item) for item in bundle.related_nodes],
-        "context": {
-            "json": json.loads(query_bundle_to_json(bundle)),
-            "markdown": query_bundle_to_markdown(bundle),
-        },
+        "provenance": provenance_payload(knowledge),
+        "figure": _plotly_figure_payload(query_result_figure(knowledge, result)),
     }
     validate_public_payload(payload)
     return payload
+
+
+def _ranking_rows(
+    result: QueryEvaluation,
+    nodes: Mapping[str, CodeNode],
+) -> list[dict[str, object]]:
+    judgments = {judgment.node_id: judgment for judgment in result.judgments}
+    rows: list[dict[str, object]] = []
+    for rank, node_id in enumerate(result.ranking, start=1):
+        node = nodes.get(node_id)
+        if node is None:
+            raise PublicExportError(f"evaluation ranking references a missing node: {node_id}")
+        judgment = judgments.get(node_id)
+        rows.append(
+            {
+                "rank": rank,
+                "node_id": node_id,
+                "qualified_name": node.qualified_name,
+                "kind": node.kind,
+                "path": node.path,
+                "start_line": node.start_line,
+                "end_line": node.end_line,
+                "judgment_role": judgment.role if judgment is not None else None,
+                "relevance": judgment.relevance if judgment is not None else None,
+            }
+        )
+    return rows
+
+
+def _answer_rank(result: QueryEvaluation) -> int | None:
+    ranks = [
+        judgment.rank
+        for judgment in result.judgments
+        if judgment.role == "answer" and judgment.rank is not None
+    ]
+    return min(ranks, default=None)
+
+
+def _query_strategy_payload(
+    result: QueryEvaluation,
+    nodes: Mapping[str, CodeNode],
+) -> dict[str, object]:
+    return {
+        "answer_rank": _answer_rank(result),
+        "reciprocal_answer_rank_at_10": result.reciprocal_answer_rank_at_10,
+        "recall_at_10": result.recall_at_10,
+        "recall_at_20": result.recall_at_20,
+        "supporting_recall_at_10": result.supporting_recall_at_10,
+        "ranking": _ranking_rows(result, nodes),
+    }
+
+
+def _aggregate_metrics(result: StrategyEvaluation) -> dict[str, float]:
+    return {
+        "answer_mrr_at_10": result.answer_mrr_at_10,
+        "recall_at_10": result.recall_at_10,
+        "recall_at_20": result.recall_at_20,
+        "supporting_recall_at_10": result.supporting_recall_at_10,
+    }
 
 
 def evaluation_payload(
     comparison: EvaluationComparison,
     *,
     provenance: Mapping[str, object],
+    nodes: Mapping[str, CodeNode],
 ) -> dict[str, object]:
-    """Adapt full evaluation detail to the static app's metric contract."""
+    """Build aggregate metrics and auditable per-query ranked results."""
 
-    lexical_by_id = {item.id: item for item in comparison.lexical.queries}
-    graph_by_id = {item.id: item for item in comparison.graph_expanded.queries}
-    comparisons = {item.id: item for item in comparison.queries}
-    rows = []
-    misses = []
-    for query_id in lexical_by_id:
-        lexical = lexical_by_id[query_id]
-        graph = graph_by_id[query_id]
-        change = comparisons[query_id]
+    lexical_metrics = _aggregate_metrics(comparison.lexical)
+    graph_metrics = _aggregate_metrics(comparison.graph_expanded)
+    delta = {metric: graph_metrics[metric] - lexical_metrics[metric] for metric in lexical_metrics}
+    rows: list[dict[str, object]] = []
+    for lexical, graph, change in zip(
+        comparison.lexical.queries,
+        comparison.graph_expanded.queries,
+        comparison.queries,
+        strict=True,
+    ):
+        if lexical.id != graph.id or lexical.id != change.id:
+            raise PublicExportError("evaluation query ids are not aligned")
         rows.append(
             {
-                "id": query_id,
+                "id": lexical.id,
                 "query": lexical.query,
-                "lexical": {"score": lexical.reciprocal_answer_rank_at_10},
-                "graph": {"score": graph.reciprocal_answer_rank_at_10},
-                "lexical_recall_at_10": lexical.recall_at_10,
-                "graph_recall_at_10": graph.recall_at_10,
-                "newly_retrieved_at_10": list(change.newly_retrieved_at_10),
-                "newly_missed_at_10": list(change.newly_missed_at_10),
-                "regression": change.regression,
+                "lexical": _query_strategy_payload(lexical, nodes),
+                "graph_expanded": _query_strategy_payload(graph, nodes),
+                "comparison": {
+                    "answer_rank_change": change.answer_rank_change,
+                    "newly_retrieved_judgments_at_10": list(change.newly_retrieved_judgments_at_10),
+                    "newly_missed_judgments_at_10": list(change.newly_missed_judgments_at_10),
+                    "regression": change.regression,
+                },
             }
         )
-        if lexical.missed_at_10 or graph.missed_at_10 or change.regression:
-            prefix = "Regression: " if change.regression else ""
-            misses.append(
-                {
-                    "id": query_id,
-                    "query": lexical.query,
-                    "reason": prefix
-                    + (
-                        f"Lexical missed {len(lexical.missed_at_10)} and graph-expanded missed "
-                        f"{len(graph.missed_at_10)} reviewed judgments at rank 10."
-                    ),
-                    "lexical_missed_at_10": list(lexical.missed_at_10),
-                    "graph_missed_at_10": list(graph.missed_at_10),
-                    "newly_retrieved_at_10": list(change.newly_retrieved_at_10),
-                    "newly_missed_at_10": list(change.newly_missed_at_10),
-                    "regression": change.regression,
-                }
-            )
     payload = {
         "schema_version": WEB_DATA_SCHEMA_VERSION,
+        "repository": asdict(comparison.repository),
         "provenance": dict(provenance),
         "ranking_budget": comparison.ranking_budget,
         "metric_definition": comparison.metric_definition,
-        "summary": {
-            "lexical": {"score": comparison.lexical.answer_mrr_at_10},
-            "graph": {"score": comparison.graph_expanded.answer_mrr_at_10},
-            "lexical_metrics": asdict(comparison.lexical) | {"queries": []},
-            "graph_metrics": asdict(comparison.graph_expanded) | {"queries": []},
+        "aggregate": {
+            "lexical": lexical_metrics,
+            "graph_expanded": graph_metrics,
+            "delta": delta,
             "conclusion": comparison.conclusion,
         },
         "queries": rows,
-        "misses": misses,
-        "detail": asdict(comparison),
     }
     validate_public_payload(payload)
     return payload
 
 
 def manifest_payload(
-    bundle: QueryBundle,
+    knowledge: KnowledgeGraph,
     query_entries: Sequence[Mapping[str, str]],
     *,
     repository_id: str,
@@ -319,7 +270,7 @@ def manifest_payload(
 ) -> dict[str, object]:
     payload = {
         "schema_version": WEB_DATA_SCHEMA_VERSION,
-        "provenance": provenance_payload(bundle),
+        "provenance": provenance_payload(knowledge),
         "repositories": [
             {"id": repository_id, "label": repository_label, "file": "repository.json"}
         ],
@@ -460,6 +411,14 @@ def write_public_json(path: Path, payload: object) -> None:
     validate_public_payload(payload)
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+
+
+def write_plotly_javascript(path: Path) -> Path:
+    """Write the Plotly.js bundle shipped with the installed Python package."""
+
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(get_plotlyjs(), encoding="utf-8")
+    return path
 
 
 def _managed_output_path(value: str) -> PurePosixPath:

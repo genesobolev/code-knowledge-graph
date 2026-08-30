@@ -60,7 +60,7 @@ def test_versioned_benchmark_has_manually_reviewed_answer_and_supporting_judgmen
     benchmark = load_benchmark(BENCHMARK_PATH)
 
     assert benchmark.schema_version == 1
-    assert benchmark.repository.commit == "2fdbb3deab2967a545d8a898a17a380974e6bb17"
+    assert benchmark.repository.commit == "b8815be28dbb1f1abb5c744d9ead6b6a8a9ddaf2"
     assert 12 <= len(benchmark.queries) <= 15
     assert all(
         any(item.role == "answer" for item in query.judgments) for query in benchmark.queries
@@ -82,6 +82,8 @@ def test_metric_formulas_use_answer_rank_and_macro_recall() -> None:
     assert result.recall_at_10 == pytest.approx(0.75)
     assert result.recall_at_20 == pytest.approx(0.75)
     assert result.supporting_recall_at_10 == pytest.approx(0.5)
+    assert result.queries[0].ranking == tuple(rankings["q1"])
+    assert result.queries[1].ranking == tuple(rankings["q2"])
     assert result.queries[1].missed_at_10 == ("support:two",)
 
 
@@ -117,7 +119,7 @@ def test_comparison_reports_query_regressions_without_overclaiming() -> None:
 
     assert comparison.queries[0].answer_rank_change == -1
     assert comparison.queries[0].regression is True
-    assert "lower answer MRR@10" in comparison.conclusion
+    assert "answer MRR@10 decreases by 0.250" in comparison.conclusion
     assert "illustrative benchmark" in comparison.conclusion
 
 
@@ -134,8 +136,9 @@ def test_evaluation_serialization_is_deterministic_and_shared_with_markdown() ->
 
     assert first_json == second_json
     assert json.loads(first_json)["lexical"]["answer_mrr_at_10"] == 1.0
+    assert json.loads(first_json)["lexical"]["queries"][0]["ranking"] == rankings["q1"]
     assert "| lexical | 1.000 |" in markdown
-    assert "Graph expansion and lexical retrieval tie" in markdown
+    assert "answer MRR@10 is unchanged" in markdown
 
 
 def test_malformed_judgments_and_missing_expected_nodes_are_rejected(tmp_path: Path) -> None:

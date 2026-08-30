@@ -1,12 +1,12 @@
 {
   "evaluation": "evaluation.json",
   "provenance": {
-    "branch": null,
+    "branch": "main",
     "clean": true,
-    "commit": "2fdbb3deab2967a545d8a898a17a380974e6bb17",
-    "detached": true,
+    "commit": "b8815be28dbb1f1abb5c744d9ead6b6a8a9ddaf2",
+    "detached": false,
     "extractor_version": "1.0.0",
-    "indexed_source_sha256": "054eb9ddb72433574992ca595bcf95e2a7747c9fa4a4515fd42681b55d706618",
+    "indexed_source_sha256": "1a23cf792127fcf189bf515678e261053df87aaaa67706d67c327eceeac8746c",
     "repository": "implicit-decision-gate",
     "retrieval": {
       "hop_decay": 0.85,
@@ -16,7 +16,7 @@
     },
     "schema_version": "1.0.0",
     "shallow": false,
-    "tree": "045114ac474171e8044ae179e9808ae4357a5296"
+    "tree": "41028d97be0c3352aa25c56e896bceb065f7facc"
   },
   "queries": [
     {
@@ -97,5 +97,5 @@
       "label": "Implicit Decision Gate"
     }
   ],
-  "schema_version": 1
+  "schema_version": 2
 }

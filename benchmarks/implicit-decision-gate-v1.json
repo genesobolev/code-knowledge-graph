@@ -3,7 +3,7 @@
   "repository": {
     "name": "implicit-decision-gate",
     "url": "https://github.com/genesobolev/implicit-decision-gate",
-    "commit": "2fdbb3deab2967a545d8a898a17a380974e6bb17"
+    "commit": "b8815be28dbb1f1abb5c744d9ead6b6a8a9ddaf2"
   },
   "review_status": "Illustrative benchmark with manually reviewed answer and supporting judgments.",
   "queries": [
