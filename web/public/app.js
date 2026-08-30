@@ -1,6 +1,8 @@
 "use strict";
 
-const VALID_VIEWS = new Set(["repository", "query", "comparison"]);
+const WEB_DATA_SCHEMA_VERSION = 3;
+const REPOSITORY_GRAPH_ID = "repository";
+const VALID_VIEWS = new Set(["graph", "comparison"]);
 const AGGREGATE_METRICS = [
     ["answer_mrr_at_10", "Answer MRR at 10"],
     ["recall_at_10", "Recall at 10"],
@@ -11,17 +13,23 @@ const AGGREGATE_METRICS = [
 const state = {
     manifest: null,
     repository: null,
+    repositoryInspection: null,
     evaluation: null,
     queries: [],
     queryCache: new Map(),
     snapshot: {},
-    view: "repository",
-    queryId: "",
-    repositoryRendered: false,
-    repositoryRenderPromise: null,
-    queryRendered: false,
-    queryPlotQueue: Promise.resolve(),
-    queryRenderToken: 0,
+    view: "graph",
+    graphId: REPOSITORY_GRAPH_ID,
+    comparisonQueryId: "",
+    activeInspection: null,
+    selectedNodeId: "",
+    graphRendered: false,
+    renderedGraphId: "",
+    graphPlotQueue: Promise.resolve(),
+    graphRenderToken: 0,
+    neighborhoodRendered: false,
+    neighborhoodPlotQueue: Promise.resolve(),
+    inspectorRenderToken: 0,
     resizeFrame: 0,
 };
 
@@ -51,10 +59,18 @@ function isObject(value) {
     return value !== null && typeof value === "object" && !Array.isArray(value);
 }
 
+function finiteNumber(value) {
+    if (value === null || value === undefined || value === "" || typeof value === "boolean") {
+        return null;
+    }
+    const parsed = Number(value);
+    return Number.isFinite(parsed) ? parsed : null;
+}
+
 function assetValue(value) {
     if (typeof value === "string") return value;
     if (!isObject(value)) return "";
-    return value.file || value.path || value.url || value.asset || value.asset_path || value.data_file || "";
+    return value.file || value.path || value.url || value.asset || "";
 }
 
 function dataPath(value, fallback = "") {
@@ -80,30 +96,30 @@ async function loadJson(url) {
 }
 
 function normalizeQueries(manifest) {
-    const source = manifest.queries || manifest.recorded_queries;
-    const entries = Array.isArray(source)
-        ? source
-        : isObject(source)
-            ? Object.entries(source).map(([id, value]) => (
-                typeof value === "string" ? { id, file: value } : { id, ...value }
-            ))
-            : [];
+    const entries = safeArray(manifest.queries);
     return entries.map((entry, index) => {
         const value = typeof entry === "string" ? { file: entry } : isObject(entry) ? entry : {};
-        const file = assetValue(value) || assetValue(value.query_asset);
-        const id = String(value.id || value.query_id || value.slug || `query-${index + 1}`);
+        const id = String(value.id || `query-${index + 1}`);
         return {
-            ...value,
             id,
-            label: String(value.label || value.name || value.query || value.text || id),
-            file,
+            label: String(value.label || value.query || id),
+            file: assetValue(value),
         };
     });
 }
 
 function repositoryAsset(manifest) {
-    const candidates = Array.isArray(manifest.repositories) ? manifest.repositories : [];
-    return manifest.repository || manifest.repository_asset || candidates[0] || "repository.json";
+    const candidates = safeArray(manifest.repositories);
+    return manifest.repository || candidates[0] || "repository.json";
+}
+
+function validateSchema(label, payload) {
+    if (!isObject(payload)) throw new Error(`${label} is not an object.`);
+    if (payload.schema_version !== WEB_DATA_SCHEMA_VERSION) {
+        throw new Error(
+            `${label} uses schema ${payload.schema_version}; schema ${WEB_DATA_SCHEMA_VERSION} is required.`,
+        );
+    }
 }
 
 function snapshotFields(payload) {
@@ -129,8 +145,80 @@ function validateSnapshot(label, payload) {
     }
 }
 
-function selectedQueryEntry() {
-    return state.queries.find((entry) => entry.id === state.queryId) || state.queries[0] || null;
+function plotly() {
+    const library = window.Plotly;
+    if (!library || typeof library.newPlot !== "function" || typeof library.react !== "function") {
+        throw new Error("The local Plotly library could not be loaded.");
+    }
+    return library;
+}
+
+function validateFigure(label, figure) {
+    if (
+        !isObject(figure)
+        || !Array.isArray(figure.data)
+        || !isObject(figure.layout)
+        || !isObject(figure.config)
+    ) {
+        throw new Error(`${label} does not contain a complete Plotly figure.`);
+    }
+    if (typeof figure.plotly_js_version !== "string" || !figure.plotly_js_version) {
+        throw new Error(`${label} does not record its Plotly.js version.`);
+    }
+    const loadedVersion = String(plotly().version || "");
+    if (loadedVersion && loadedVersion !== figure.plotly_js_version) {
+        throw new Error(
+            `${label} requires Plotly.js ${figure.plotly_js_version}, but ${loadedVersion} is loaded.`,
+        );
+    }
+}
+
+function validateInspection(label, payload) {
+    const inspection = payload?.inspection;
+    if (!isObject(inspection) || !Array.isArray(inspection.nodes) || !Array.isArray(inspection.edges)) {
+        throw new Error(`${label} does not contain graph inspection data.`);
+    }
+    const nodeById = new Map();
+    for (const node of inspection.nodes) {
+        if (!isObject(node) || typeof node.id !== "string" || !node.id) {
+            throw new Error(`${label} contains an invalid inspection node.`);
+        }
+        if (nodeById.has(node.id)) {
+            throw new Error(`${label} contains duplicate inspection node '${node.id}'.`);
+        }
+        nodeById.set(node.id, node);
+    }
+    if (!nodeById.size) throw new Error(`${label} does not contain any inspectable nodes.`);
+
+    for (const edge of inspection.edges) {
+        if (
+            !isObject(edge)
+            || typeof edge.source_id !== "string"
+            || typeof edge.target_id !== "string"
+            || typeof edge.kind !== "string"
+            || finiteNumber(edge.strength) === null
+        ) {
+            throw new Error(`${label} contains an invalid inspection edge.`);
+        }
+        if (!nodeById.has(edge.source_id) || !nodeById.has(edge.target_id)) {
+            throw new Error(`${label} contains an inspection edge with a missing endpoint.`);
+        }
+    }
+    return { nodes: inspection.nodes, edges: inspection.edges, nodeById };
+}
+
+async function renderFigure(host, figure, label, useReact) {
+    validateFigure(label, figure);
+    const library = plotly();
+    if (useReact) {
+        await library.react(host, figure.data, figure.layout, figure.config);
+    } else {
+        await library.newPlot(host, figure.data, figure.layout, figure.config);
+    }
+}
+
+function selectedGraphEntry() {
+    return state.queries.find((entry) => entry.id === state.graphId) || null;
 }
 
 function evaluationQueries() {
@@ -138,41 +226,68 @@ function evaluationQueries() {
 }
 
 function selectedEvaluationQuery() {
-    return evaluationQueries().find((query) => query.id === state.queryId) || null;
+    return evaluationQueries().find((query) => query.id === state.comparisonQueryId) || null;
 }
 
 function readHash() {
     const parameters = new URLSearchParams(location.hash.slice(1));
     const requestedView = parameters.get("view");
-    const requestedQuery = parameters.get("query");
-    state.view = VALID_VIEWS.has(requestedView) ? requestedView : "repository";
-    state.queryId = state.queries.some((entry) => entry.id === requestedQuery)
-        ? requestedQuery
-        : state.queries[0]?.id || "";
+    const requestedGraph = parameters.get("graph");
+    const requestedComparison = parameters.get("comparison");
+    state.view = VALID_VIEWS.has(requestedView) ? requestedView : "graph";
+    state.graphId = requestedGraph === REPOSITORY_GRAPH_ID
+        || state.queries.some((entry) => entry.id === requestedGraph)
+        ? requestedGraph
+        : REPOSITORY_GRAPH_ID;
+    state.comparisonQueryId = evaluationQueries().some(
+        (query) => query.id === requestedComparison,
+    )
+        ? requestedComparison
+        : evaluationQueries()[0]?.id || "";
 }
 
 function writeHash() {
-    const parameters = new URLSearchParams({ view: state.view });
-    if (state.queryId) parameters.set("query", state.queryId);
+    const parameters = new URLSearchParams({
+        view: state.view,
+        graph: state.graphId,
+    });
+    if (state.comparisonQueryId) parameters.set("comparison", state.comparisonQueryId);
     const nextHash = `#${parameters.toString()}`;
     if (location.hash !== nextHash) history.replaceState(null, "", nextHash);
 }
 
-function populateQuerySelect(select) {
+function populateGraphSelect() {
+    const select = requiredElement("#graph-select");
     const fragment = document.createDocumentFragment();
+    const repositoryOption = createElement("option", null, "Repository overview");
+    repositoryOption.value = REPOSITORY_GRAPH_ID;
+    fragment.append(repositoryOption);
     for (const query of state.queries) {
         const option = createElement("option", null, query.label);
         option.value = query.id;
         fragment.append(option);
     }
     clear(select).append(fragment);
-    select.disabled = state.queries.length === 0;
 }
 
-function syncQueryControls() {
-    for (const selector of ["#query-select", "#comparison-query-select"]) {
-        const select = requiredElement(selector);
-        if (select.value !== state.queryId) select.value = state.queryId;
+function populateComparisonSelect() {
+    const select = requiredElement("#comparison-query-select");
+    const fragment = document.createDocumentFragment();
+    for (const query of evaluationQueries()) {
+        const option = createElement("option", null, query.query || query.id);
+        option.value = query.id;
+        fragment.append(option);
+    }
+    clear(select).append(fragment);
+    select.disabled = !evaluationQueries().length;
+}
+
+function syncControls() {
+    const graphSelect = requiredElement("#graph-select");
+    if (graphSelect.value !== state.graphId) graphSelect.value = state.graphId;
+    const comparisonSelect = requiredElement("#comparison-query-select");
+    if (comparisonSelect.value !== state.comparisonQueryId) {
+        comparisonSelect.value = state.comparisonQueryId;
     }
 }
 
@@ -198,74 +313,21 @@ function clearError() {
     holder.hidden = true;
 }
 
-function plotly() {
-    const library = window.Plotly;
-    if (!library || typeof library.newPlot !== "function" || typeof library.react !== "function") {
-        throw new Error("The local Plotly library could not be loaded.");
-    }
-    return library;
-}
-
-function validateFigure(label, figure) {
-    if (!isObject(figure) || !Array.isArray(figure.data) || !isObject(figure.layout) || !isObject(figure.config)) {
-        throw new Error(`${label} does not contain a complete Plotly figure.`);
-    }
-    if (typeof figure.plotly_js_version !== "string" || !figure.plotly_js_version) {
-        throw new Error(`${label} does not record its Plotly.js version.`);
-    }
-    const loadedVersion = String(plotly().version || "");
-    if (loadedVersion && loadedVersion !== figure.plotly_js_version) {
-        throw new Error(
-            `${label} requires Plotly.js ${figure.plotly_js_version}, but ${loadedVersion} is loaded.`,
-        );
-    }
-}
-
-async function renderFigure(host, figure, label, useReact) {
-    validateFigure(label, figure);
-    const library = plotly();
-    if (useReact) {
-        await library.react(host, figure.data, figure.layout, figure.config);
-    } else {
-        await library.newPlot(host, figure.data, figure.layout, figure.config);
-    }
-}
-
 function schedulePlotResize() {
     window.cancelAnimationFrame(state.resizeFrame);
     state.resizeFrame = window.requestAnimationFrame(() => {
         state.resizeFrame = window.requestAnimationFrame(() => {
             const library = window.Plotly;
             if (!library?.Plots || typeof library.Plots.resize !== "function") return;
-            if (state.view === "repository" && state.repositoryRendered) {
-                library.Plots.resize(requiredElement("#repository-figure"));
+            if (state.view === "graph" && state.graphRendered) {
+                library.Plots.resize(requiredElement("#graph-figure"));
             }
-            if (state.view === "query" && state.queryRendered) {
-                library.Plots.resize(requiredElement("#query-figure"));
+            const inspector = requiredElement("#node-inspector");
+            if (state.view === "graph" && !inspector.hidden && state.neighborhoodRendered) {
+                library.Plots.resize(requiredElement("#neighborhood-figure"));
             }
         });
     });
-}
-
-async function renderRepositoryFigure() {
-    if (state.repositoryRendered) {
-        schedulePlotResize();
-        return;
-    }
-    if (!state.repositoryRenderPromise) {
-        state.repositoryRenderPromise = renderFigure(
-            requiredElement("#repository-figure"),
-            state.repository?.figure,
-            "The repository artifact",
-            false,
-        ).then(() => {
-            state.repositoryRendered = true;
-        }).finally(() => {
-            state.repositoryRenderPromise = null;
-        });
-    }
-    await state.repositoryRenderPromise;
-    schedulePlotResize();
 }
 
 function loadQuery(entry) {
@@ -274,12 +336,16 @@ function loadQuery(entry) {
         return Promise.reject(new Error(`Recorded query '${entry.label}' does not declare a data file.`));
     }
     const promise = loadJson(dataPath(entry.file)).then((payload) => {
-        if (payload.id && payload.id !== entry.id) {
+        validateSchema(`Recorded query '${entry.label}'`, payload);
+        if (payload.id !== entry.id) {
             throw new Error(`Recorded query '${entry.label}' loaded the wrong artifact.`);
         }
         validateSnapshot(`Recorded query '${entry.label}'`, payload);
         validateFigure(`Recorded query '${entry.label}'`, payload.figure);
-        return payload;
+        return {
+            payload,
+            inspection: validateInspection(`Recorded query '${entry.label}'`, payload),
+        };
     }).catch((error) => {
         state.queryCache.delete(entry.id);
         throw error;
@@ -288,74 +354,409 @@ function loadQuery(entry) {
     return promise;
 }
 
-async function renderQueryFigure() {
-    const entry = selectedQueryEntry();
-    const token = ++state.queryRenderToken;
-    const host = requiredElement("#query-figure");
-    if (!entry) {
-        requiredElement("#query-question").textContent = "";
-        requiredElement("#query-description").textContent = "";
-        clear(host);
+function clearInspector() {
+    state.selectedNodeId = "";
+    state.activeInspection = null;
+    state.inspectorRenderToken += 1;
+    for (const selector of [
+        "#inspector-title",
+        "#inspector-location",
+        "#inspector-kind",
+        "#inspector-signature",
+        "#inspector-docstring",
+        "#inspector-direct-score",
+        "#inspector-relationship-score",
+    ]) {
+        requiredElement(selector).textContent = "";
+    }
+    clear(requiredElement("#relationship-list"));
+    requiredElement("#inspector-scores").hidden = true;
+    requiredElement("#inspector-signature-section").hidden = true;
+    requiredElement("#inspector-docstring-section").hidden = true;
+    requiredElement("#node-inspector").hidden = true;
+}
+
+function showGraphQuery(payload, isRepository) {
+    const holder = requiredElement("#graph-query");
+    holder.textContent = isRepository ? "" : String(payload.query || "");
+    holder.hidden = isRepository;
+}
+
+function sizeGraphHost(host, figure) {
+    const recordedHeight = finiteNumber(figure?.layout?.height);
+    const height = recordedHeight === null ? 720 : Math.max(320, Math.min(1200, recordedHeight));
+    host.style.height = `${height}px`;
+    host.style.minHeight = `${height}px`;
+}
+
+function clearGraphQuery() {
+    const holder = requiredElement("#graph-query");
+    holder.textContent = "";
+    holder.hidden = true;
+}
+
+function bindMainNodeClicks() {
+    const host = requiredElement("#graph-figure");
+    if (host.dataset.nodeClicksBound === "true") return;
+    if (typeof host.on !== "function") {
+        throw new Error("The main Plotly figure does not support click events.");
+    }
+    host.on("plotly_click", (event) => {
+        if (host.getAttribute("aria-busy") === "true") return;
+        const point = safeArray(event?.points)[0];
+        const nodeId = typeof point?.customdata === "string" ? point.customdata : "";
+        if (!nodeId || !state.activeInspection?.nodeById.has(nodeId)) return;
+        selectInspectionNode(nodeId, { scroll: true }).catch(showError);
+    });
+    host.dataset.nodeClicksBound = "true";
+}
+
+async function renderActiveGraph() {
+    if (
+        state.graphRendered
+        && state.renderedGraphId === state.graphId
+        && state.activeInspection
+    ) {
+        schedulePlotResize();
         return;
     }
-
+    const token = ++state.graphRenderToken;
+    const graphId = state.graphId;
+    const host = requiredElement("#graph-figure");
+    clearInspector();
+    clearGraphQuery();
     host.setAttribute("aria-busy", "true");
-    try {
-        const payload = await loadQuery(entry);
-        if (token !== state.queryRenderToken || state.view !== "query" || state.queryId !== entry.id) return;
 
-        requiredElement("#query-question").textContent = payload.query || entry.query || entry.label;
-        requiredElement("#query-description").textContent = payload.description || entry.description || "";
-        renderProvenance(requiredElement("#query-provenance"), payload);
-        state.queryPlotQueue = state.queryPlotQueue.catch(() => {}).then(async () => {
-            if (token !== state.queryRenderToken || state.view !== "query" || state.queryId !== entry.id) {
+    try {
+        let payload;
+        let inspection;
+        let label;
+        const isRepository = graphId === REPOSITORY_GRAPH_ID;
+        if (isRepository) {
+            payload = state.repository;
+            inspection = state.repositoryInspection;
+            label = "The repository artifact";
+        } else {
+            const entry = selectedGraphEntry();
+            if (!entry) throw new Error(`Unknown recorded graph '${graphId}'.`);
+            const loaded = await loadQuery(entry);
+            payload = loaded.payload;
+            inspection = loaded.inspection;
+            label = `Recorded query '${entry.label}'`;
+        }
+
+        if (token !== state.graphRenderToken || state.view !== "graph" || state.graphId !== graphId) {
+            return;
+        }
+        showGraphQuery(payload, isRepository);
+        sizeGraphHost(host, payload.figure);
+        state.graphPlotQueue = state.graphPlotQueue.catch(() => {}).then(async () => {
+            if (
+                token !== state.graphRenderToken
+                || state.view !== "graph"
+                || state.graphId !== graphId
+            ) {
                 return false;
             }
-            await renderFigure(
-                host,
-                payload.figure,
-                `Recorded query '${entry.label}'`,
-                state.queryRendered,
-            );
-            state.queryRendered = true;
+            await renderFigure(host, payload.figure, label, state.graphRendered);
+            state.graphRendered = true;
+            state.renderedGraphId = graphId;
+            bindMainNodeClicks();
+            if (
+                token !== state.graphRenderToken
+                || state.view !== "graph"
+                || state.graphId !== graphId
+            ) {
+                return false;
+            }
+            state.activeInspection = inspection;
             return true;
         });
-        const rendered = await state.queryPlotQueue;
-        if (!rendered || token !== state.queryRenderToken || state.view !== "query") return;
+        const rendered = await state.graphPlotQueue;
+        if (!rendered || token !== state.graphRenderToken || state.view !== "graph") return;
         schedulePlotResize();
+    } catch (error) {
+        if (token !== state.graphRenderToken || state.view !== "graph" || state.graphId !== graphId) {
+            return;
+        }
+        throw error;
     } finally {
-        if (token === state.queryRenderToken) host.removeAttribute("aria-busy");
+        if (token === state.graphRenderToken) host.removeAttribute("aria-busy");
     }
 }
 
-function shortHash(value) {
-    const raw = value === undefined || value === null ? "" : String(value);
-    return raw.length > 12 ? raw.slice(0, 12) : raw;
+function compareText(left, right) {
+    if (left < right) return -1;
+    if (left > right) return 1;
+    return 0;
 }
 
-function renderProvenance(holder, payload, extras = []) {
-    const values = snapshotFields(payload);
-    const entries = [
-        ["Repository", values.repository],
-        ["Commit", shortHash(values.commit)],
-        ["Tree", shortHash(values.tree)],
-        ...extras,
-    ];
-    clear(holder);
-    for (const [label, value] of entries) {
-        if (value === undefined || value === null || value === "") continue;
-        const item = createElement("span");
-        item.append(createElement("strong", null, `${label}: `), document.createTextNode(String(value)));
-        holder.append(item);
+function nodeQueryRelevance(node) {
+    return Math.max(
+        finiteNumber(node.direct_relevance) || 0,
+        finiteNumber(node.relationship_strength) || 0,
+    );
+}
+
+function edgePreference(left, right) {
+    const strengthDifference = finiteNumber(right.strength) - finiteNumber(left.strength);
+    if (strengthDifference) return strengthDifference;
+    return compareText(
+        `${left.kind}\u0000${left.source_id}\u0000${left.target_id}`,
+        `${right.kind}\u0000${right.source_id}\u0000${right.target_id}`,
+    );
+}
+
+function neighborhoodFor(nodeId) {
+    const inspection = state.activeInspection;
+    if (!inspection) return [];
+    const strongestByNeighbor = new Map();
+    for (const edge of inspection.edges) {
+        let neighborId = "";
+        let direction = "";
+        if (edge.source_id === nodeId && edge.target_id !== nodeId) {
+            neighborId = edge.target_id;
+            direction = "outgoing";
+        } else if (edge.target_id === nodeId && edge.source_id !== nodeId) {
+            neighborId = edge.source_id;
+            direction = "incoming";
+        }
+        if (!neighborId) continue;
+        const node = inspection.nodeById.get(neighborId);
+        if (!node) continue;
+        const candidate = { node, edge, direction };
+        const current = strongestByNeighbor.get(neighborId);
+        if (!current || edgePreference(edge, current.edge) < 0) {
+            strongestByNeighbor.set(neighborId, candidate);
+        }
+    }
+    return [...strongestByNeighbor.values()].sort((left, right) => {
+        const strengthDifference = finiteNumber(right.edge.strength)
+            - finiteNumber(left.edge.strength);
+        if (strengthDifference) return strengthDifference;
+        const relevanceDifference = nodeQueryRelevance(right.node) - nodeQueryRelevance(left.node);
+        if (relevanceDifference) return relevanceDifference;
+        return compareText(left.node.id, right.node.id);
+    }).slice(0, 8);
+}
+
+function inspectorLocation(node) {
+    if (!node.path) return "Not recorded";
+    const start = finiteNumber(node.start_line);
+    const end = finiteNumber(node.end_line);
+    if (start === null) return String(node.path);
+    if (end !== null && end !== start) return `${node.path}:${start}-${end}`;
+    return `${node.path}:${start}`;
+}
+
+function formatInspectorScore(value) {
+    const score = finiteNumber(value);
+    return score === null ? "Not available" : score.toFixed(4);
+}
+
+function shortNodeLabel(node) {
+    const raw = String(node.label || node.qualified_name || node.id);
+    return raw.length > 28 ? `${raw.slice(0, 25)}...` : raw;
+}
+
+function relationshipDescription(candidate) {
+    const direction = candidate.direction === "outgoing" ? "outgoing" : "incoming";
+    return `${candidate.edge.kind} | strength ${finiteNumber(candidate.edge.strength).toFixed(3)} | ${direction}`;
+}
+
+function renderRelationshipList(candidates) {
+    const holder = clear(requiredElement("#relationship-list"));
+    if (!candidates.length) {
+        holder.append(createElement("p", "relationship-empty", "No displayed relationships."));
+        return;
+    }
+    for (const candidate of candidates) {
+        const button = createElement("button", "relationship-entry");
+        button.type = "button";
+        button.dataset.nodeId = candidate.node.id;
+        button.append(
+            createElement(
+                "strong",
+                "relationship-node",
+                candidate.node.qualified_name || candidate.node.label || candidate.node.id,
+            ),
+            createElement(
+                "span",
+                "relationship-detail",
+                relationshipDescription(candidate),
+            ),
+        );
+        holder.append(button);
     }
 }
 
-function finiteNumber(value) {
-    if (value === null || value === undefined || value === "" || typeof value === "boolean") {
-        return null;
+function neighborhoodFigure(center, candidates) {
+    const positions = new Map([[center.id, [0, 0]]]);
+    const count = candidates.length;
+    candidates.forEach((candidate, index) => {
+        const angle = -Math.PI / 2 + (2 * Math.PI * index) / Math.max(1, count);
+        positions.set(candidate.node.id, [Math.cos(angle), Math.sin(angle)]);
+    });
+
+    const traces = candidates.map((candidate) => {
+        const [x, y] = positions.get(candidate.node.id);
+        const strength = finiteNumber(candidate.edge.strength);
+        return {
+            type: "scatter",
+            mode: "lines",
+            x: [0, x],
+            y: [0, y],
+            line: { color: "#94a3b8", width: 1 + 3 * strength },
+            hoverinfo: "skip",
+            showlegend: false,
+        };
+    });
+
+    if (candidates.length) {
+        traces.push({
+            type: "scatter",
+            mode: "markers+text",
+            x: candidates.map((candidate) => positions.get(candidate.node.id)[0]),
+            y: candidates.map((candidate) => positions.get(candidate.node.id)[1]),
+            text: candidates.map((candidate) => shortNodeLabel(candidate.node)),
+            textposition: "top center",
+            textfont: { color: "#334155", size: 10 },
+            customdata: candidates.map((candidate) => candidate.node.id),
+            marker: {
+                color: candidates.map((candidate) => candidate.node.color || "#38bdf8"),
+                line: { color: "#ffffff", width: 1.5 },
+                size: candidates.map((candidate) => Math.max(
+                    13,
+                    Math.min(24, finiteNumber(candidate.node.size) || 16),
+                )),
+            },
+            hovertext: candidates.map(
+                (candidate) => candidate.node.qualified_name || candidate.node.id,
+            ),
+            hovertemplate: "%{hovertext}<extra></extra>",
+            showlegend: false,
+        });
     }
-    const parsed = Number(value);
-    return Number.isFinite(parsed) ? parsed : null;
+    traces.push({
+        type: "scatter",
+        mode: "markers+text",
+        x: [0],
+        y: [0],
+        text: [shortNodeLabel(center)],
+        textposition: "bottom center",
+        textfont: { color: "#0f172a", size: 11 },
+        customdata: [center.id],
+        marker: {
+            color: center.color || "#fb7185",
+            line: { color: "#0f172a", width: 2 },
+            size: 24,
+        },
+        hovertext: [center.qualified_name || center.id],
+        hovertemplate: "%{hovertext}<extra></extra>",
+        showlegend: false,
+    });
+
+    return {
+        data: traces,
+        layout: {
+            height: 340,
+            margin: { b: 28, l: 28, r: 28, t: 28 },
+            paper_bgcolor: "#ffffff",
+            plot_bgcolor: "#ffffff",
+            hovermode: "closest",
+            dragmode: false,
+            showlegend: false,
+            xaxis: {
+                fixedrange: true,
+                range: [-1.35, 1.35],
+                showgrid: false,
+                showticklabels: false,
+                zeroline: false,
+            },
+            yaxis: {
+                fixedrange: true,
+                range: [-1.35, 1.35],
+                scaleanchor: "x",
+                scaleratio: 1,
+                showgrid: false,
+                showticklabels: false,
+                zeroline: false,
+            },
+            uirevision: `neighborhood:${center.id}`,
+        },
+        config: { displaylogo: false, displayModeBar: false, responsive: true },
+    };
+}
+
+function bindNeighborhoodNodeClicks() {
+    const host = requiredElement("#neighborhood-figure");
+    if (host.dataset.nodeClicksBound === "true") return;
+    if (typeof host.on !== "function") {
+        throw new Error("The neighborhood Plotly figure does not support click events.");
+    }
+    host.on("plotly_click", (event) => {
+        const point = safeArray(event?.points)[0];
+        const nodeId = typeof point?.customdata === "string" ? point.customdata : "";
+        if (!nodeId || !state.activeInspection?.nodeById.has(nodeId)) return;
+        selectInspectionNode(nodeId, { scroll: false }).catch(showError);
+    });
+    host.dataset.nodeClicksBound = "true";
+}
+
+async function renderNeighborhood(center, candidates, token) {
+    const figure = neighborhoodFigure(center, candidates);
+    const host = requiredElement("#neighborhood-figure");
+    state.neighborhoodPlotQueue = state.neighborhoodPlotQueue.catch(() => {}).then(async () => {
+        if (token !== state.inspectorRenderToken || state.selectedNodeId !== center.id) return false;
+        if (state.neighborhoodRendered) {
+            await plotly().react(host, figure.data, figure.layout, figure.config);
+        } else {
+            await plotly().newPlot(host, figure.data, figure.layout, figure.config);
+            state.neighborhoodRendered = true;
+            bindNeighborhoodNodeClicks();
+        }
+        return token === state.inspectorRenderToken && state.selectedNodeId === center.id;
+    });
+    try {
+        const rendered = await state.neighborhoodPlotQueue;
+        if (rendered) schedulePlotResize();
+    } catch (error) {
+        if (token !== state.inspectorRenderToken || state.selectedNodeId !== center.id) return;
+        throw error;
+    }
+}
+
+async function selectInspectionNode(nodeId, options) {
+    const node = state.activeInspection?.nodeById.get(nodeId);
+    if (!node) return;
+    const signature = typeof node.signature === "string" ? node.signature.trim() : "";
+    const docstring = typeof node.docstring === "string" ? node.docstring.trim() : "";
+    state.selectedNodeId = nodeId;
+    const token = ++state.inspectorRenderToken;
+    requiredElement("#inspector-title").textContent = node.qualified_name || node.label || node.id;
+    requiredElement("#inspector-location").textContent = inspectorLocation(node);
+    requiredElement("#inspector-kind").textContent = node.kind || "Not recorded";
+    requiredElement("#inspector-signature").textContent = signature;
+    requiredElement("#inspector-docstring").textContent = docstring;
+    requiredElement("#inspector-scores").hidden = state.graphId === REPOSITORY_GRAPH_ID;
+    requiredElement("#inspector-signature-section").hidden = !signature;
+    requiredElement("#inspector-docstring-section").hidden = !docstring;
+    requiredElement("#inspector-direct-score").textContent = formatInspectorScore(
+        node.direct_relevance,
+    );
+    requiredElement("#inspector-relationship-score").textContent = formatInspectorScore(
+        node.relationship_strength,
+    );
+    const candidates = neighborhoodFor(nodeId);
+    renderRelationshipList(candidates);
+    const inspector = requiredElement("#node-inspector");
+    inspector.hidden = false;
+    if (options.scroll) {
+        window.requestAnimationFrame(() => {
+            inspector.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+    }
+    await renderNeighborhood(node, candidates, token);
 }
 
 function formatMetric(value) {
@@ -408,7 +809,6 @@ function renderAggregate() {
         cell.colSpan = 4;
         holder.append(row);
     }
-    requiredElement("#comparison-conclusion").textContent = aggregate.conclusion || "";
 }
 
 function formatRank(value) {
@@ -442,15 +842,20 @@ function renderPerQueryComparison() {
         const row = createElement("tr");
         const queryCell = createElement("th");
         queryCell.scope = "row";
-        const button = createElement("button", null, query.query || query.text || query.id);
+        const button = createElement("button", null, query.query || query.id);
         button.type = "button";
         button.dataset.comparisonQuery = query.id;
         queryCell.append(button);
         row.append(queryCell);
 
-        const rankCell = appendCell(row, formatPair(lexical.answer_rank, graph.answer_rank, formatRank));
-        if (finiteNumber(comparison.answer_rank_change) !== null) {
-            rankCell.title = `Answer rank change: ${comparison.answer_rank_change > 0 ? "+" : ""}${comparison.answer_rank_change}`;
+        const rankCell = appendCell(row, formatPair(
+            lexical.answer_rank,
+            graph.answer_rank,
+            formatRank,
+        ));
+        const rankChange = finiteNumber(comparison.answer_rank_change);
+        if (rankChange !== null) {
+            rankCell.title = `Answer rank change: ${rankChange > 0 ? "+" : ""}${rankChange}`;
         }
         appendCell(row, formatPair(
             lexical.reciprocal_answer_rank_at_10,
@@ -463,11 +868,12 @@ function renderPerQueryComparison() {
             graph.supporting_recall_at_10,
         ));
         reviewedChangesCell(row, comparison);
-        const regression = comparison.regression;
         appendCell(
             row,
-            typeof regression === "boolean" ? (regression ? "Yes" : "No") : "Not available",
-            regression === true ? "regression" : "",
+            typeof comparison.regression === "boolean"
+                ? comparison.regression ? "Yes" : "No"
+                : "Not available",
+            comparison.regression === true ? "regression" : "",
         );
         holder.append(row);
     }
@@ -524,13 +930,12 @@ function renderRankingComparison() {
     const wrapper = createElement("div", "ranking-table-wrap");
     wrapper.tabIndex = 0;
     wrapper.setAttribute("role", "region");
-    wrapper.setAttribute("aria-label", `Full lexical and graph-expanded rankings for ${query.query || query.id}`);
+    wrapper.setAttribute(
+        "aria-label",
+        `Full lexical and graph-expanded rankings for ${query.query || query.id}`,
+    );
     const table = createElement("table", "ranking-table");
-    table.append(createElement(
-        "caption",
-        "ranking-caption",
-        `Full rankings: ${query.query || query.id}`,
-    ));
+    table.append(createElement("caption", "ranking-caption", `Full rankings: ${query.query || query.id}`));
     const head = createElement("thead");
     const headRow = createElement("tr");
     for (const label of ["Rank", "Lexical", "Graph-expanded"]) {
@@ -569,27 +974,38 @@ function renderComparison() {
     renderAggregate();
     renderPerQueryComparison();
     renderRankingComparison();
-    renderProvenance(
-        requiredElement("#comparison-provenance"),
-        state.evaluation,
-        [["Ranking budget", state.evaluation?.ranking_budget]],
-    );
 }
 
 async function activateView() {
     setViewControls();
-    syncQueryControls();
-    if (state.view === "repository") await renderRepositoryFigure();
-    if (state.view === "query") await renderQueryFigure();
+    syncControls();
+    if (state.view === "graph") await renderActiveGraph();
     if (state.view === "comparison") renderComparison();
     schedulePlotResize();
 }
 
-function setQuery(queryId) {
-    if (!state.queries.some((entry) => entry.id === queryId)) return;
-    state.queryId = queryId;
-    syncQueryControls();
+function setGraph(graphId) {
+    if (
+        graphId !== REPOSITORY_GRAPH_ID
+        && !state.queries.some((entry) => entry.id === graphId)
+    ) {
+        return;
+    }
+    state.graphId = graphId;
+    clearInspector();
+    syncControls();
     writeHash();
+}
+
+function setComparisonQuery(queryId) {
+    if (!evaluationQueries().some((query) => query.id === queryId)) return;
+    state.comparisonQueryId = queryId;
+    syncControls();
+    writeHash();
+}
+
+function closestButton(event, selector) {
+    return event.target instanceof Element ? event.target.closest(selector) : null;
 }
 
 function bindEvents() {
@@ -597,31 +1013,42 @@ function bindEvents() {
         button.addEventListener("click", () => {
             const nextView = button.dataset.view;
             if (!VALID_VIEWS.has(nextView)) return;
+            const viewChanged = state.view !== nextView;
             state.view = nextView;
+            if (viewChanged) requiredElement("#app-main").scrollTop = 0;
             writeHash();
             clearError();
             activateView().catch(showError);
         });
     });
 
-    requiredElement("#query-select").addEventListener("change", (event) => {
-        setQuery(event.currentTarget.value);
+    requiredElement("#graph-select").addEventListener("change", (event) => {
+        setGraph(event.currentTarget.value);
         clearError();
-        renderQueryFigure().catch(showError);
+        renderActiveGraph().catch(showError);
     });
     requiredElement("#comparison-query-select").addEventListener("change", (event) => {
-        setQuery(event.currentTarget.value);
+        setComparisonQuery(event.currentTarget.value);
         renderRankingComparison();
     });
     requiredElement("#comparison-table-body").addEventListener("click", (event) => {
-        const button = event.target.closest("button[data-comparison-query]");
+        const button = closestButton(event, "button[data-comparison-query]");
         if (!button) return;
-        setQuery(button.dataset.comparisonQuery);
+        setComparisonQuery(button.dataset.comparisonQuery);
         renderRankingComparison();
         requiredElement("#ranking-comparison").scrollIntoView({ block: "nearest" });
     });
+    requiredElement("#relationship-list").addEventListener("click", (event) => {
+        const button = closestButton(event, "button[data-node-id]");
+        if (!button || !requiredElement("#relationship-list").contains(button)) return;
+        selectInspectionNode(button.dataset.nodeId, { scroll: false }).catch(showError);
+    });
     window.addEventListener("hashchange", () => {
+        const previousView = state.view;
+        const previousGraph = state.graphId;
         readHash();
+        if (state.view !== previousView) requiredElement("#app-main").scrollTop = 0;
+        if (state.graphId !== previousGraph) clearInspector();
         writeHash();
         clearError();
         activateView().catch(showError);
@@ -629,34 +1056,50 @@ function bindEvents() {
     window.addEventListener("resize", schedulePlotResize);
 }
 
+function validateEvaluationQueries() {
+    const expectedIds = new Set(state.queries.map((query) => query.id));
+    const actual = evaluationQueries();
+    if (actual.length !== state.queries.length) {
+        throw new Error("The evaluation artifact does not cover every recorded query.");
+    }
+    for (const query of actual) {
+        if (!isObject(query) || typeof query.id !== "string" || !expectedIds.delete(query.id)) {
+            throw new Error("The evaluation artifact contains an unknown or duplicate query.");
+        }
+    }
+    if (expectedIds.size) throw new Error("The evaluation artifact is missing recorded queries.");
+}
+
 async function initialize() {
     try {
         state.manifest = await loadJson("/data/manifest.json");
-        if (!isObject(state.manifest)) throw new Error("The data manifest is not an object.");
-        state.queries = normalizeQueries(state.manifest);
-        if (!state.queries.length) throw new Error("The data manifest does not declare any queries.");
+        validateSchema("The data manifest", state.manifest);
         validateSnapshot("The data manifest", state.manifest);
-
-        populateQuerySelect(requiredElement("#query-select"));
-        populateQuerySelect(requiredElement("#comparison-query-select"));
-        readHash();
-        writeHash();
-        syncQueryControls();
+        state.queries = normalizeQueries(state.manifest);
+        if (state.queries.length !== 14) {
+            throw new Error(`The data manifest declares ${state.queries.length} queries; 14 are required.`);
+        }
 
         const repositoryUrl = dataPath(repositoryAsset(state.manifest), "repository.json");
-        const evaluationUrl = dataPath(
-            state.manifest.evaluation || state.manifest.evaluation_asset || state.manifest.evaluation_file,
-            "evaluation.json",
-        );
+        const evaluationUrl = dataPath(state.manifest.evaluation, "evaluation.json");
         [state.repository, state.evaluation] = await Promise.all([
             loadJson(repositoryUrl),
             loadJson(evaluationUrl),
         ]);
+        validateSchema("The repository artifact", state.repository);
+        validateSchema("The evaluation artifact", state.evaluation);
         validateSnapshot("The repository artifact", state.repository);
         validateSnapshot("The evaluation artifact", state.evaluation);
-        validateFigure("The repository artifact", state.repository?.figure);
+        validateFigure("The repository artifact", state.repository.figure);
+        state.repositoryInspection = validateInspection("The repository artifact", state.repository);
+        validateEvaluationQueries();
 
-        renderProvenance(requiredElement("#repository-provenance"), state.repository);
+        populateGraphSelect();
+        populateComparisonSelect();
+        readHash();
+        writeHash();
+        syncControls();
+        clearInspector();
         renderComparison();
         bindEvents();
         await activateView();

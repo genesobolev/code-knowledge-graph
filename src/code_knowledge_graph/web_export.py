@@ -15,11 +15,24 @@ import plotly.graph_objects as go  # type: ignore[import-untyped]
 import plotly.io as pio  # type: ignore[import-untyped]
 from plotly.offline import get_plotlyjs, get_plotlyjs_version  # type: ignore[import-untyped]
 
-from .artifact import PLOTLY_CONFIG, query_result_figure, repository_overview_figure
+from .artifact import (
+    PLOTLY_CONFIG,
+    VisualizationEdge,
+    VisualizationNode,
+    query_result_elements,
+    query_result_figure_from_elements,
+    repository_overview_elements,
+    repository_overview_figure_from_elements,
+)
 from .evaluation import EvaluationComparison, QueryEvaluation, StrategyEvaluation
 from .models import CodeNode, KnowledgeGraph, QueryResult
 
-WEB_DATA_SCHEMA_VERSION = 2
+WEB_DATA_SCHEMA_VERSION = 3
+WEB_PLOTLY_CONFIG: Mapping[str, object] = {
+    **PLOTLY_CONFIG,
+    "displayModeBar": True,
+    "modeBarButtonsToRemove": ["select2d", "lasso2d"],
+}
 _CREDENTIAL_ASSIGNMENT = re.compile(
     r"(?ix)"
     r"(?:['\"])?\b(?:api[_-]?key|access[_-]?token|auth[_-]?token|client[_-]?secret|"
@@ -84,7 +97,7 @@ def provenance_payload(knowledge: KnowledgeGraph) -> dict[str, object]:
 
 
 def _plotly_figure_payload(figure: go.Figure) -> dict[str, object]:
-    """Serialize a notebook Figure without altering its Plotly data or layout."""
+    """Serialize notebook graph geometry with the web canvas presentation."""
 
     serialized = json.loads(pio.to_json(figure, validate=True, pretty=False, remove_uids=True))
     if not isinstance(serialized, dict):
@@ -93,20 +106,133 @@ def _plotly_figure_payload(figure: go.Figure) -> dict[str, object]:
     layout = serialized.get("layout")
     if not isinstance(data, list) or not isinstance(layout, dict):
         raise PublicExportError("Plotly figure serialization is missing data or layout")
+
+    for raw_trace in data:
+        if not isinstance(raw_trace, dict):
+            raise PublicExportError("Plotly figure traces must be objects")
+        legend_group = raw_trace.get("legendgroup")
+        if not isinstance(legend_group, str) or not legend_group.startswith("node:"):
+            continue
+        text_font = raw_trace.get("textfont", {})
+        if not isinstance(text_font, dict):
+            raise PublicExportError("Plotly node text style must be an object")
+        raw_trace["textfont"] = {**text_font, "color": "#1e293b"}
+        marker = raw_trace.get("marker", {})
+        if not isinstance(marker, dict):
+            raise PublicExportError("Plotly node marker style must be an object")
+        line = marker.get("line", {})
+        if not isinstance(line, dict):
+            raise PublicExportError("Plotly node outline style must be an object")
+        raw_trace["marker"] = {
+            **marker,
+            "line": {**line, "color": "#f8fafc", "width": 1.25},
+        }
+
+    layout.pop("title", None)
+    font = layout.get("font", {})
+    margin = layout.get("margin", {})
+    legend = layout.get("legend", {})
+    if not isinstance(font, dict) or not isinstance(margin, dict) or not isinstance(legend, dict):
+        raise PublicExportError("Plotly figure layout styles must be objects")
+    layout.update(
+        {
+            "paper_bgcolor": "rgba(0,0,0,0)",
+            "plot_bgcolor": "rgba(0,0,0,0)",
+            "font": {**font, "color": "#1e293b"},
+            "hoverlabel": {
+                "bgcolor": "#ffffff",
+                "bordercolor": "#cbd5e1",
+                "font": {"color": "#0f172a"},
+            },
+            "legend": {
+                **legend,
+                "bgcolor": "rgba(255,255,255,0.88)",
+                "bordercolor": "rgba(203,213,225,0.9)",
+                "borderwidth": 1,
+                "font": {"color": "#334155", "size": 11},
+                "orientation": "h",
+                "x": 0.0,
+                "xanchor": "left",
+                "y": 1.02,
+                "yanchor": "bottom",
+            },
+            "margin": {**margin, "t": 96},
+            "modebar": {
+                "activecolor": "#0f172a",
+                "bgcolor": "rgba(255,255,255,0.88)",
+                "color": "#64748b",
+            },
+        }
+    )
     return {
         "plotly_js_version": get_plotlyjs_version(),
         "data": cast(list[object], data),
         "layout": cast(dict[str, object], layout),
-        "config": dict(PLOTLY_CONFIG),
+        "config": dict(WEB_PLOTLY_CONFIG),
+    }
+
+
+def _inspection_payload(
+    knowledge: KnowledgeGraph,
+    nodes: Sequence[VisualizationNode],
+    edges: Sequence[VisualizationEdge],
+    *,
+    result: QueryResult | None = None,
+) -> dict[str, object]:
+    node_records: list[dict[str, object]] = []
+    for visualization_node in nodes:
+        node = knowledge.nodes.get(visualization_node.id)
+        if node is None:
+            raise PublicExportError(
+                f"visualization references a missing node: {visualization_node.id}"
+            )
+        node_records.append(
+            {
+                "id": visualization_node.id,
+                "label": visualization_node.label,
+                "group": visualization_node.group,
+                "color": visualization_node.color,
+                "size": visualization_node.size,
+                "qualified_name": node.qualified_name,
+                "kind": node.kind,
+                "path": node.path,
+                "start_line": node.start_line,
+                "end_line": node.end_line,
+                "signature": node.signature,
+                "docstring": node.docstring,
+                "direct_relevance": (
+                    None
+                    if result is None
+                    else float(result.direct_scores.get(visualization_node.id, 0.0))
+                ),
+                "relationship_strength": (
+                    None
+                    if result is None
+                    else float(result.relationship_scores.get(visualization_node.id, 0.0))
+                ),
+            }
+        )
+    return {
+        "nodes": node_records,
+        "edges": [
+            {
+                "source_id": edge.source_id,
+                "target_id": edge.target_id,
+                "kind": edge.kind,
+                "strength": edge.strength,
+            }
+            for edge in edges
+        ],
     }
 
 
 def repository_payload(knowledge: KnowledgeGraph, *, repository_id: str) -> dict[str, object]:
-    """Build repository counts, provenance, and the exact notebook overview figure."""
+    """Build the repository overview and aligned node inspection data."""
 
     snapshot = knowledge.snapshot
     _require_publishable_snapshot(knowledge)
-    return {
+    nodes, edges = repository_overview_elements(knowledge)
+    payload = {
         "schema_version": WEB_DATA_SCHEMA_VERSION,
         "id": repository_id,
         "name": snapshot.repository_name,
@@ -122,8 +248,11 @@ def repository_payload(knowledge: KnowledgeGraph, *, repository_id: str) -> dict
             "edges": dict(sorted(Counter(edge.kind for edge in knowledge.edges).items())),
         },
         "provenance": provenance_payload(knowledge),
-        "figure": _plotly_figure_payload(repository_overview_figure(knowledge)),
+        "figure": _plotly_figure_payload(repository_overview_figure_from_elements(nodes, edges)),
+        "inspection": _inspection_payload(knowledge, nodes, edges),
     }
+    validate_public_payload(payload)
+    return payload
 
 
 def query_payload(
@@ -134,9 +263,10 @@ def query_payload(
     label: str,
     description: str,
 ) -> dict[str, object]:
-    """Build one recorded query using the exact notebook query Figure."""
+    """Build one recorded query and aligned node inspection data."""
 
     _require_publishable_snapshot(knowledge)
+    nodes, edges = query_result_elements(knowledge, result)
     payload = {
         "schema_version": WEB_DATA_SCHEMA_VERSION,
         "id": query_id,
@@ -144,7 +274,10 @@ def query_payload(
         "query": result.query,
         "description": description,
         "provenance": provenance_payload(knowledge),
-        "figure": _plotly_figure_payload(query_result_figure(knowledge, result)),
+        "figure": _plotly_figure_payload(
+            query_result_figure_from_elements(nodes, edges, query=result.query)
+        ),
+        "inspection": _inspection_payload(knowledge, nodes, edges, result=result),
     }
     validate_public_payload(payload)
     return payload

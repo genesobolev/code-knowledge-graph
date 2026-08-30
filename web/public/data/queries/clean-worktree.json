@@ -2,7 +2,12 @@
   "description": "Recorded retrieval for a manually reviewed benchmark question with answer and supporting-context judgments.",
   "figure": {
     "config": {
+      "displayModeBar": true,
       "displaylogo": false,
+      "modeBarButtonsToRemove": [
+        "select2d",
+        "lasso2d"
+      ],
       "responsive": true,
       "scrollZoom": true
     },
@@ -88,10 +93,7 @@
         "type": "scatter",
         "x": [
           -0.19639326529386472,
-          -0.23564200382137232,
-          null,
-          -0.19639326529386472,
-          -0.3203495061482803,
+          -0.35709226277608996,
           null,
           0.1482366554943678,
           0.4513806717372899,
@@ -106,24 +108,24 @@
           -0.45314319902396083,
           null,
           -0.19639326529386472,
-          -0.35709226277608996,
-          null,
           -0.23564200382137232,
-          -0.40618001606243725,
           null,
           -0.23564200382137232,
           -0.45265749702483526,
           null,
           -0.23564200382137232,
           -0.31483478594699854,
+          null,
+          -0.23564200382137232,
+          -0.40618001606243725,
+          null,
+          -0.19639326529386472,
+          -0.3203495061482803,
           null
         ],
         "y": [
           0.2896630382457921,
-          0.7265625349655024,
-          null,
-          0.2896630382457921,
-          0.6573733382211244,
+          0.5667774358461213,
           null,
           -0.2486725140499361,
           -0.3894596758343036,
@@ -138,16 +140,19 @@
           0.45403285948161426,
           null,
           0.2896630382457921,
-          0.5667774358461213,
-          null,
           0.7265625349655024,
-          0.7828271452358379,
           null,
           0.7265625349655024,
           0.6544984875014391,
           null,
           0.7265625349655024,
           0.8945659429950437,
+          null,
+          0.7265625349655024,
+          0.7828271452358379,
+          null,
+          0.2896630382457921,
+          0.6573733382211244,
           null
         ]
       },
@@ -178,6 +183,12 @@
           0.09759776215436315,
           -0.16480980289498845,
           null,
+          -0.07915955672394048,
+          -0.07335938733206153,
+          null,
+          -0.07915955672394048,
+          -0.04919523905073955,
+          null,
           -0.10106157134531638,
           0.02734819673707818,
           null,
@@ -193,17 +204,14 @@
           -0.004264599104383028,
           -0.013067763286144398,
           null,
+          -0.07335938733206153,
+          -0.04919523905073955,
+          null,
+          0.02734819673707818,
+          -0.16480980289498845,
+          null,
           -0.004264599104383028,
           -0.19639326529386472,
-          null,
-          -0.07915955672394048,
-          -0.07335938733206153,
-          null,
-          -0.07915955672394048,
-          -0.04919523905073955,
-          null,
-          -0.07335938733206153,
-          -0.04919523905073955,
           null,
           -0.19639326529386472,
           -0.009898514391577367,
@@ -215,9 +223,6 @@
           -0.009898514391577367,
           null,
           -0.009898514391577367,
-          -0.16480980289498845,
-          null,
-          0.02734819673707818,
           -0.16480980289498845,
           null,
           0.02734819673707818,
@@ -249,6 +254,12 @@
           -0.08944433056449615,
           -0.1955499122281117,
           null,
+          -0.1932082122341631,
+          -0.09272288256153718,
+          null,
+          -0.1932082122341631,
+          -0.2427158852461659,
+          null,
           -0.020697947303498433,
           -0.2697364101962892,
           null,
@@ -264,17 +275,14 @@
           -0.15132604577693898,
           -0.20765588094131507,
           null,
+          -0.09272288256153718,
+          -0.2427158852461659,
+          null,
+          -0.2697364101962892,
+          -0.1955499122281117,
+          null,
           -0.15132604577693898,
           0.2896630382457921,
-          null,
-          -0.1932082122341631,
-          -0.09272288256153718,
-          null,
-          -0.1932082122341631,
-          -0.2427158852461659,
-          null,
-          -0.09272288256153718,
-          -0.2427158852461659,
           null,
           0.2896630382457921,
           -0.07051535269485633,
@@ -286,9 +294,6 @@
           -0.07051535269485633,
           null,
           -0.07051535269485633,
-          -0.1955499122281117,
-          null,
-          -0.2697364101962892,
           -0.1955499122281117,
           null,
           -0.2697364101962892,
@@ -329,10 +334,10 @@
           0.08954587924690366,
           -0.07335938733206153,
           null,
-          -0.07335938733206153,
+          0.08954587924690366,
           -0.009898514391577367,
           null,
-          0.08954587924690366,
+          -0.07335938733206153,
           -0.009898514391577367,
           null,
           -0.009898514391577367,
@@ -364,10 +369,10 @@
           0.010337625818415406,
           -0.09272288256153718,
           null,
-          -0.09272288256153718,
+          0.010337625818415406,
           -0.07051535269485633,
           null,
-          0.010337625818415406,
+          -0.09272288256153718,
           -0.07051535269485633,
           null,
           -0.07051535269485633,
@@ -425,7 +430,13 @@
           -0.07915955672394048,
           null,
           -0.06251138863856494,
+          -0.004264599104383028,
+          null,
+          -0.06251138863856494,
           -0.07335938733206153,
+          null,
+          -0.06251138863856494,
+          -0.04919523905073955,
           null,
           -0.06251138863856494,
           0.02734819673707818,
@@ -435,6 +446,9 @@
           null,
           0.08954587924690366,
           0.09759776215436315,
+          null,
+          0.09759776215436315,
+          -0.004264599104383028,
           null,
           -0.07335938733206153,
           0.09759776215436315,
@@ -446,12 +460,12 @@
           0.09759776215436315,
           null,
           -0.07915955672394048,
-          -0.1402338737009283,
-          null,
-          -0.07915955672394048,
           0.02734819673707818,
           null,
           -0.013067763286144398,
+          -0.07915955672394048,
+          null,
+          -0.009898514391577367,
           -0.07915955672394048,
           null,
           -0.16480980289498845,
@@ -484,11 +498,8 @@
           -0.009898514391577367,
           -0.10106157134531638,
           null,
-          -0.06251138863856494,
-          -0.004264599104383028,
-          null,
-          0.09759776215436315,
-          -0.004264599104383028,
+          0.04075188813884479,
+          0.08954587924690366,
           null,
           0.08954587924690366,
           -0.004264599104383028,
@@ -497,9 +508,6 @@
           -0.004264599104383028,
           null,
           -0.004264599104383028,
-          -0.1402338737009283,
-          null,
-          -0.004264599104383028,
           0.02734819673707818,
           null,
           -0.009898514391577367,
@@ -512,9 +520,6 @@
           -0.004264599104383028,
           null,
           -0.07335938733206153,
-          -0.1402338737009283,
-          null,
-          -0.07335938733206153,
           0.02734819673707818,
           null,
           -0.07335938733206153,
@@ -526,53 +531,53 @@
           0.04075188813884479,
           -0.07335938733206153,
           null,
-          -0.1402338737009283,
-          0.02734819673707818,
-          null,
-          -0.06251138863856494,
-          -0.04919523905073955,
-          null,
-          -0.04919523905073955,
+          -0.07915955672394048,
           -0.1402338737009283,
           null,
+          -0.004264599104383028,
+          -0.1402338737009283,
+          null,
+          -0.07335938733206153,
+          -0.1402338737009283,
+          null,
           -0.04919523905073955,
+          -0.1402338737009283,
+          null,
+          -0.1402338737009283,
           0.02734819673707818,
           null,
           -0.013067763286144398,
-          -0.04919523905073955,
-          null,
-          -0.009898514391577367,
-          -0.04919523905073955,
+          -0.1402338737009283,
           null,
           -0.16480980289498845,
           -0.04919523905073955,
           null,
-          0.04075188813884479,
           -0.04919523905073955,
-          null,
-          -0.013067763286144398,
-          -0.1402338737009283,
+          0.02734819673707818,
           null,
           -0.013067763286144398,
           0.02734819673707818,
           null,
-          -0.16480980289498845,
           -0.013067763286144398,
+          -0.04919523905073955,
           null,
-          0.04075188813884479,
+          -0.16480980289498845,
           -0.013067763286144398,
           null,
           -0.07335938733206153,
           -0.19639326529386472,
           null,
           -0.009898514391577367,
-          -0.07915955672394048,
+          -0.04919523905073955,
           null,
           -0.009898514391577367,
           -0.013067763286144398,
           null,
           0.04075188813884479,
-          0.08954587924690366,
+          -0.04919523905073955,
+          null,
+          0.04075188813884479,
+          -0.013067763286144398,
           null,
           0.1482366554943678,
           -0.07915955672394048,
@@ -598,7 +603,13 @@
           -0.1932082122341631,
           null,
           -0.3336098540466516,
+          -0.15132604577693898,
+          null,
+          -0.3336098540466516,
           -0.09272288256153718,
+          null,
+          -0.3336098540466516,
+          -0.2427158852461659,
           null,
           -0.3336098540466516,
           -0.2697364101962892,
@@ -608,6 +619,9 @@
           null,
           0.010337625818415406,
           -0.08944433056449615,
+          null,
+          -0.08944433056449615,
+          -0.15132604577693898,
           null,
           -0.09272288256153718,
           -0.08944433056449615,
@@ -619,12 +633,12 @@
           -0.08944433056449615,
           null,
           -0.1932082122341631,
-          -0.2922896198375342,
-          null,
-          -0.1932082122341631,
           -0.2697364101962892,
           null,
           -0.20765588094131507,
+          -0.1932082122341631,
+          null,
+          -0.07051535269485633,
           -0.1932082122341631,
           null,
           -0.1955499122281117,
@@ -657,11 +671,8 @@
           -0.07051535269485633,
           -0.020697947303498433,
           null,
-          -0.3336098540466516,
-          -0.15132604577693898,
-          null,
-          -0.08944433056449615,
-          -0.15132604577693898,
+          -0.09072275084280781,
+          0.010337625818415406,
           null,
           0.010337625818415406,
           -0.15132604577693898,
@@ -670,9 +681,6 @@
           -0.15132604577693898,
           null,
           -0.15132604577693898,
-          -0.2922896198375342,
-          null,
-          -0.15132604577693898,
           -0.2697364101962892,
           null,
           -0.07051535269485633,
@@ -685,9 +693,6 @@
           -0.15132604577693898,
           null,
           -0.09272288256153718,
-          -0.2922896198375342,
-          null,
-          -0.09272288256153718,
           -0.2697364101962892,
           null,
           -0.09272288256153718,
@@ -699,53 +704,53 @@
           -0.09072275084280781,
           -0.09272288256153718,
           null,
-          -0.2922896198375342,
-          -0.2697364101962892,
-          null,
-          -0.3336098540466516,
-          -0.2427158852461659,
-          null,
-          -0.2427158852461659,
+          -0.1932082122341631,
           -0.2922896198375342,
           null,
+          -0.15132604577693898,
+          -0.2922896198375342,
+          null,
+          -0.09272288256153718,
+          -0.2922896198375342,
+          null,
           -0.2427158852461659,
+          -0.2922896198375342,
+          null,
+          -0.2922896198375342,
           -0.2697364101962892,
           null,
           -0.20765588094131507,
-          -0.2427158852461659,
-          null,
-          -0.07051535269485633,
-          -0.2427158852461659,
+          -0.2922896198375342,
           null,
           -0.1955499122281117,
           -0.2427158852461659,
           null,
-          -0.09072275084280781,
           -0.2427158852461659,
-          null,
-          -0.20765588094131507,
-          -0.2922896198375342,
+          -0.2697364101962892,
           null,
           -0.20765588094131507,
           -0.2697364101962892,
           null,
-          -0.1955499122281117,
           -0.20765588094131507,
+          -0.2427158852461659,
           null,
-          -0.09072275084280781,
+          -0.1955499122281117,
           -0.20765588094131507,
           null,
           -0.09272288256153718,
           0.2896630382457921,
           null,
           -0.07051535269485633,
-          -0.1932082122341631,
+          -0.2427158852461659,
           null,
           -0.07051535269485633,
           -0.20765588094131507,
           null,
           -0.09072275084280781,
-          0.010337625818415406,
+          -0.2427158852461659,
+          null,
+          -0.09072275084280781,
+          -0.20765588094131507,
           null,
           -0.2486725140499361,
           -0.1932082122341631,
@@ -779,19 +784,19 @@
         "showlegend": true,
         "type": "scatter",
         "x": [
+          -0.45265749702483526,
+          -0.45314319902396083,
+          null,
           -0.15469698685482233,
           -0.23564200382137232,
           null,
           -0.45265749702483526,
-          -0.45314319902396083,
+          -0.35709226277608996,
           null,
           -0.40618001606243725,
           -0.35709226277608996,
           null,
           -0.3203495061482803,
-          -0.35709226277608996,
-          null,
-          -0.45265749702483526,
           -0.35709226277608996,
           null,
           0.5412395197400288,
@@ -805,19 +810,19 @@
           null
         ],
         "y": [
+          0.6544984875014391,
+          0.45403285948161426,
+          null,
           0.9999999999999999,
           0.7265625349655024,
           null,
           0.6544984875014391,
-          0.45403285948161426,
+          0.5667774358461213,
           null,
           0.7828271452358379,
           0.5667774358461213,
           null,
           0.6573733382211244,
-          0.5667774358461213,
-          null,
-          0.6544984875014391,
           0.5667774358461213,
           null,
           -0.5485967042408246,
@@ -835,11 +840,14 @@
         "hovertemplate": "%{hovertext}<extra></extra>",
         "hovertext": [
           "<b>IMPORTS</b><br>notebooks.walkthrough_helpers -> implicit_decision_gate.api_probe<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>notebooks/walkthrough_helpers.py:15",
+          "<b>IMPORTS</b><br>notebooks.walkthrough_helpers -> implicit_decision_gate.gate<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>notebooks/walkthrough_helpers.py:24",
           "<b>IMPORTS</b><br>notebooks.walkthrough_helpers -> implicit_decision_gate.orchestrator<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>notebooks/walkthrough_helpers.py:25",
+          "<b>IMPORTS</b><br>notebooks.walkthrough_helpers -> implicit_decision_gate.probe<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>notebooks/walkthrough_helpers.py:33",
           "<b>IMPORTS</b><br>notebooks.walkthrough_helpers -> implicit_decision_gate.scenario<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>notebooks/walkthrough_helpers.py:40",
           "<b>IMPORTS</b><br>notebooks.walkthrough_helpers -> implicit_decision_gate.scenarios<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>notebooks/walkthrough_helpers.py:45",
           "<b>CO_CHANGES</b><br>implicit_decision_gate.agent -- implicit_decision_gate.api_probe<br>strength: 0.066<br>confidence: 0.115<br>evidence count: 2<br>2 non-merge commits; Jaccard=0.182; commits=b12be241, 295f5b6f",
           "<b>IMPORTS</b><br>implicit_decision_gate.codex_client -> implicit_decision_gate.agent<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/codex_client.py:15",
+          "<b>IMPORTS</b><br>implicit_decision_gate.agent -> implicit_decision_gate.gate<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/agent.py:7",
           "<b>IMPORTS</b><br>implicit_decision_gate.orchestrator -> implicit_decision_gate.agent<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/orchestrator.py:8",
           "<b>CO_CHANGES</b><br>implicit_decision_gate.agent -- implicit_decision_gate.probe<br>strength: 0.110<br>confidence: 0.179<br>evidence count: 3<br>3 non-merge commits; Jaccard=0.231; commits=b12be241, 295f5b6f, 10c641b5",
           "<b>IMPORTS</b><br>implicit_decision_gate.agent -> implicit_decision_gate.scenario<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/agent.py:12",
@@ -848,9 +856,11 @@
           "<b>CO_CHANGES</b><br>implicit_decision_gate.agent -- tests.test_cli<br>strength: 0.520<br>confidence: 0.685<br>evidence count: 9<br>9 non-merge commits; Jaccard=0.692; commits=b12be241, 295f5b6f, ab65e7b1, 49701cf8, 518e2570, ea18151b, 625d771e, f05fa645, 10c641b5",
           "<b>CO_CHANGES</b><br>implicit_decision_gate.agent -- tests.test_evaluation<br>strength: 0.066<br>confidence: 0.115<br>evidence count: 2<br>2 non-merge commits; Jaccard=0.182; commits=b12be241, 295f5b6f",
           "<b>IMPORTS</b><br>tests.test_live -> implicit_decision_gate.agent<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>tests/test_live.py:11",
-          "<b>IMPORTS</b><br>implicit_decision_gate.api_probe -> implicit_decision_gate.policy<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/api_probe.py:13",
+          "<b>CO_CHANGES</b><br>implicit_decision_gate.api_probe -- implicit_decision_gate.orchestrator<br>strength: 0.060<br>confidence: 0.105<br>evidence count: 2<br>2 non-merge commits; Jaccard=0.167; commits=b12be241, 295f5b6f",
+          "<b>CO_CHANGES</b><br>implicit_decision_gate.api_probe -- implicit_decision_gate.probe<br>strength: 0.103<br>confidence: 0.181<br>evidence count: 2<br>2 non-merge commits; Jaccard=0.286; commits=b12be241, 295f5b6f",
           "<b>IMPORTS</b><br>implicit_decision_gate.api_probe -> implicit_decision_gate.scenario<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/api_probe.py:14",
           "<b>IMPORTS</b><br>implicit_decision_gate.scenarios -> implicit_decision_gate.api_probe<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/scenarios.py:7",
+          "<b>IMPORTS</b><br>tests.test_cli -> implicit_decision_gate.api_probe<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>tests/test_cli.py:10",
           "<b>IMPORTS</b><br>tests.test_evaluation -> implicit_decision_gate.api_probe<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>tests/test_evaluation.py:10",
           "<b>IMPORTS</b><br>tests.test_live -> implicit_decision_gate.api_probe<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>tests/test_live.py:12",
           "<b>CO_CHANGES</b><br>implicit_decision_gate.agent -- implicit_decision_gate.cli<br>strength: 0.486<br>confidence: 0.654<br>evidence count: 8<br>8 non-merge commits; Jaccard=0.667; commits=b12be241, 295f5b6f, 518e2570, ea18151b, 171c5863, 625d771e, f05fa645, 10c641b5",
@@ -866,56 +876,49 @@
           "<b>CO_CHANGES</b><br>implicit_decision_gate.cli -- tests.test_evaluation<br>strength: 0.066<br>confidence: 0.115<br>evidence count: 2<br>2 non-merge commits; Jaccard=0.182; commits=b12be241, 295f5b6f",
           "<b>CO_CHANGES</b><br>implicit_decision_gate.cli -- tests.test_live<br>strength: 0.378<br>confidence: 0.522<br>evidence count: 7<br>7 non-merge commits; Jaccard=0.538; commits=b12be241, 295f5b6f, 43c97f53, ea18151b, 625d771e, f05fa645, 10c641b5",
           "<b>CO_CHANGES</b><br>implicit_decision_gate.cli -- tests.test_orchestrator<br>strength: 0.267<br>confidence: 0.380<br>evidence count: 6<br>6 non-merge commits; Jaccard=0.400; commits=b12be241, 295f5b6f, ea18151b, 625d771e, f05fa645, 10c641b5",
-          "<b>CALLS</b><br>implicit_decision_gate.cli -> main<br>strength: 0.618<br>confidence: 0.950<br>evidence count: 1<br>src/implicit_decision_gate/cli.py:114",
-          "<b>IMPORTS</b><br>notebooks.walkthrough_helpers -> implicit_decision_gate.gate<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>notebooks/walkthrough_helpers.py:24",
-          "<b>IMPORTS</b><br>implicit_decision_gate.agent -> implicit_decision_gate.gate<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/agent.py:7",
+          "<b>CO_CHANGES</b><br>implicit_decision_gate.codex_client -- implicit_decision_gate.orchestrator<br>strength: 0.283<br>confidence: 0.417<br>evidence count: 5<br>5 non-merge commits; Jaccard=0.455; commits=295f5b6f, ab65e7b1, ea18151b, 625d771e, f05fa645",
+          "<b>CO_CHANGES</b><br>implicit_decision_gate.codex_client -- tests.test_cli<br>strength: 0.260<br>confidence: 0.382<br>evidence count: 5<br>5 non-merge commits; Jaccard=0.417; commits=295f5b6f, ab65e7b1, ea18151b, 625d771e, f05fa645",
+          "<b>IMPORTS</b><br>tests.test_live -> implicit_decision_gate.codex_client<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>tests/test_live.py:13",
           "<b>CO_CHANGES</b><br>implicit_decision_gate.api_probe -- implicit_decision_gate.gate<br>strength: 0.060<br>confidence: 0.105<br>evidence count: 2<br>2 non-merge commits; Jaccard=0.167; commits=b12be241, 295f5b6f",
           "<b>IMPORTS</b><br>implicit_decision_gate.codex_client -> implicit_decision_gate.gate<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/codex_client.py:16",
           "<b>IMPORTS</b><br>implicit_decision_gate.orchestrator -> implicit_decision_gate.gate<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/orchestrator.py:15",
-          "<b>IMPORTS</b><br>implicit_decision_gate.gate -> implicit_decision_gate.policy<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/gate.py:18",
           "<b>CO_CHANGES</b><br>implicit_decision_gate.gate -- implicit_decision_gate.probe<br>strength: 0.103<br>confidence: 0.166<br>evidence count: 3<br>3 non-merge commits; Jaccard=0.214; commits=b12be241, 295f5b6f, 10c641b5",
           "<b>IMPORTS</b><br>implicit_decision_gate.gate -> implicit_decision_gate.scenario<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/gate.py:19",
           "<b>CO_CHANGES</b><br>implicit_decision_gate.gate -- implicit_decision_gate.scenarios<br>strength: 0.060<br>confidence: 0.105<br>evidence count: 2<br>2 non-merge commits; Jaccard=0.167; commits=b12be241, 295f5b6f",
-          "<b>CO_CHANGES</b><br>implicit_decision_gate.gate -- implicit_decision_gate.worktree<br>strength: 0.066<br>confidence: 0.115<br>evidence count: 2<br>2 non-merge commits; Jaccard=0.182; commits=625d771e, 10c641b5",
           "<b>IMPORTS</b><br>tests.test_cli -> implicit_decision_gate.gate<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>tests/test_cli.py:19",
           "<b>IMPORTS</b><br>tests.test_evaluation -> implicit_decision_gate.gate<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>tests/test_evaluation.py:18",
           "<b>IMPORTS</b><br>tests.test_live -> implicit_decision_gate.gate<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>tests/test_live.py:18",
-          "<b>CO_CHANGES</b><br>implicit_decision_gate.api_probe -- implicit_decision_gate.orchestrator<br>strength: 0.060<br>confidence: 0.105<br>evidence count: 2<br>2 non-merge commits; Jaccard=0.167; commits=b12be241, 295f5b6f",
-          "<b>CO_CHANGES</b><br>implicit_decision_gate.codex_client -- implicit_decision_gate.orchestrator<br>strength: 0.283<br>confidence: 0.417<br>evidence count: 5<br>5 non-merge commits; Jaccard=0.455; commits=295f5b6f, ab65e7b1, ea18151b, 625d771e, f05fa645",
-          "<b>IMPORTS</b><br>implicit_decision_gate.orchestrator -> implicit_decision_gate.policy<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/orchestrator.py:34",
+          "<b>CO_CHANGES</b><br>implicit_decision_gate.orchestrator -- implicit_decision_gate.probe<br>strength: 0.103<br>confidence: 0.166<br>evidence count: 3<br>3 non-merge commits; Jaccard=0.214; commits=b12be241, 295f5b6f, 10c641b5",
           "<b>IMPORTS</b><br>implicit_decision_gate.orchestrator -> implicit_decision_gate.scenario<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/orchestrator.py:39",
           "<b>IMPORTS</b><br>implicit_decision_gate.orchestrator -> implicit_decision_gate.scenarios<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/orchestrator.py:51",
-          "<b>CO_CHANGES</b><br>implicit_decision_gate.orchestrator -- tests.test_cli<br>strength: 0.389<br>confidence: 0.524<br>evidence count: 8<br>8 non-merge commits; Jaccard=0.533; commits=1f83830a, b12be241, 295f5b6f, ab65e7b1, ea18151b, 625d771e, f05fa645, 10c641b5",
           "<b>IMPORTS</b><br>tests.test_evaluation -> implicit_decision_gate.orchestrator<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>tests/test_evaluation.py:19",
           "<b>IMPORTS</b><br>tests.test_live -> implicit_decision_gate.orchestrator<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>tests/test_live.py:19",
-          "<b>IMPORTS</b><br>implicit_decision_gate.policy -> implicit_decision_gate.scenario<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/policy.py:14",
-          "<b>IMPORTS</b><br>notebooks.walkthrough_helpers -> implicit_decision_gate.probe<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>notebooks/walkthrough_helpers.py:33",
-          "<b>CO_CHANGES</b><br>implicit_decision_gate.api_probe -- implicit_decision_gate.probe<br>strength: 0.103<br>confidence: 0.181<br>evidence count: 2<br>2 non-merge commits; Jaccard=0.286; commits=b12be241, 295f5b6f",
-          "<b>CO_CHANGES</b><br>implicit_decision_gate.orchestrator -- implicit_decision_gate.probe<br>strength: 0.103<br>confidence: 0.166<br>evidence count: 3<br>3 non-merge commits; Jaccard=0.214; commits=b12be241, 295f5b6f, 10c641b5",
+          "<b>IMPORTS</b><br>implicit_decision_gate.api_probe -> implicit_decision_gate.policy<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/api_probe.py:13",
+          "<b>IMPORTS</b><br>implicit_decision_gate.gate -> implicit_decision_gate.policy<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/gate.py:18",
+          "<b>IMPORTS</b><br>implicit_decision_gate.orchestrator -> implicit_decision_gate.policy<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/orchestrator.py:34",
           "<b>IMPORTS</b><br>implicit_decision_gate.probe -> implicit_decision_gate.policy<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/probe.py:16",
-          "<b>IMPORTS</b><br>implicit_decision_gate.probe -> implicit_decision_gate.scenario<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/probe.py:25",
-          "<b>IMPORTS</b><br>implicit_decision_gate.scenarios -> implicit_decision_gate.probe<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/scenarios.py:24",
-          "<b>IMPORTS</b><br>tests.test_cli -> implicit_decision_gate.probe<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>tests/test_cli.py:25",
-          "<b>IMPORTS</b><br>tests.test_evaluation -> implicit_decision_gate.probe<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>tests/test_evaluation.py:20",
-          "<b>IMPORTS</b><br>tests.test_live -> implicit_decision_gate.probe<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>tests/test_live.py:20",
+          "<b>IMPORTS</b><br>implicit_decision_gate.policy -> implicit_decision_gate.scenario<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/policy.py:14",
           "<b>IMPORTS</b><br>implicit_decision_gate.scenarios -> implicit_decision_gate.policy<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/scenarios.py:23",
+          "<b>IMPORTS</b><br>tests.test_evaluation -> implicit_decision_gate.probe<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>tests/test_evaluation.py:20",
+          "<b>IMPORTS</b><br>implicit_decision_gate.probe -> implicit_decision_gate.scenario<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/probe.py:25",
           "<b>IMPORTS</b><br>implicit_decision_gate.scenarios -> implicit_decision_gate.scenario<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/scenarios.py:41",
+          "<b>CO_CHANGES</b><br>implicit_decision_gate.scenario -- tests.test_evaluation<br>strength: 0.144<br>confidence: 0.253<br>evidence count: 2<br>2 non-merge commits; Jaccard=0.400; commits=b12be241, 295f5b6f",
+          "<b>IMPORTS</b><br>implicit_decision_gate.scenarios -> implicit_decision_gate.probe<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/scenarios.py:24",
           "<b>IMPORTS</b><br>tests.test_evaluation -> implicit_decision_gate.scenarios<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>tests/test_evaluation.py:25",
-          "<b>IMPORTS</b><br>tests.test_live -> implicit_decision_gate.scenarios<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>tests/test_live.py:27",
+          "<b>CO_CHANGES</b><br>implicit_decision_gate.gate -- implicit_decision_gate.worktree<br>strength: 0.066<br>confidence: 0.115<br>evidence count: 2<br>2 non-merge commits; Jaccard=0.182; commits=625d771e, 10c641b5",
           "<b>IMPORTS</b><br>implicit_decision_gate.orchestrator -> implicit_decision_gate.worktree<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/orchestrator.py:52",
           "<b>CO_CHANGES</b><br>implicit_decision_gate.worktree -- tests.test_cli<br>strength: 0.060<br>confidence: 0.105<br>evidence count: 2<br>2 non-merge commits; Jaccard=0.167; commits=625d771e, 10c641b5",
           "<b>CO_CHANGES</b><br>implicit_decision_gate.worktree -- tests.test_live<br>strength: 0.072<br>confidence: 0.126<br>evidence count: 2<br>2 non-merge commits; Jaccard=0.200; commits=625d771e, 10c641b5",
-          "<b>CONTAINS</b><br>implicit_decision_gate.worktree -> WorktreeManager<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/worktree.py:35",
-          "<b>CONTAINS</b><br>implicit_decision_gate.worktree -> _git<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/worktree.py:22",
-          "<b>IMPORTS</b><br>tests.test_cli -> implicit_decision_gate.api_probe<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>tests/test_cli.py:10",
-          "<b>CO_CHANGES</b><br>implicit_decision_gate.codex_client -- tests.test_cli<br>strength: 0.260<br>confidence: 0.382<br>evidence count: 5<br>5 non-merge commits; Jaccard=0.417; commits=295f5b6f, ab65e7b1, ea18151b, 625d771e, f05fa645",
+          "<b>CONTAINS</b><br>implicit_decision_gate.worktree -> WorktreeError<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/worktree.py:10",
+          "<b>CO_CHANGES</b><br>implicit_decision_gate.orchestrator -- tests.test_cli<br>strength: 0.389<br>confidence: 0.524<br>evidence count: 8<br>8 non-merge commits; Jaccard=0.533; commits=1f83830a, b12be241, 295f5b6f, ab65e7b1, ea18151b, 625d771e, f05fa645, 10c641b5",
+          "<b>IMPORTS</b><br>tests.test_cli -> implicit_decision_gate.probe<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>tests/test_cli.py:25",
           "<b>CO_CHANGES</b><br>implicit_decision_gate.scenario -- tests.test_cli<br>strength: 0.052<br>confidence: 0.090<br>evidence count: 2<br>2 non-merge commits; Jaccard=0.143; commits=b12be241, 295f5b6f",
           "<b>IMPORTS</b><br>tests.test_cli -> implicit_decision_gate.scenarios<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>tests/test_cli.py:30",
           "<b>CO_CHANGES</b><br>tests.test_cli -- tests.test_evaluation<br>strength: 0.120<br>confidence: 0.194<br>evidence count: 3<br>3 non-merge commits; Jaccard=0.250; commits=1f83830a, b12be241, 295f5b6f",
           "<b>CO_CHANGES</b><br>tests.test_cli -- tests.test_live<br>strength: 0.417<br>confidence: 0.561<br>evidence count: 8<br>8 non-merge commits; Jaccard=0.571; commits=b12be241, 295f5b6f, 43c97f53, ab65e7b1, ea18151b, 625d771e, f05fa645, 10c641b5",
-          "<b>CO_CHANGES</b><br>implicit_decision_gate.scenario -- tests.test_evaluation<br>strength: 0.144<br>confidence: 0.253<br>evidence count: 2<br>2 non-merge commits; Jaccard=0.400; commits=b12be241, 295f5b6f",
-          "<b>IMPORTS</b><br>tests.test_live -> implicit_decision_gate.codex_client<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>tests/test_live.py:13",
+          "<b>IMPORTS</b><br>tests.test_live -> implicit_decision_gate.probe<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>tests/test_live.py:20",
           "<b>CO_CHANGES</b><br>implicit_decision_gate.scenario -- tests.test_live<br>strength: 0.060<br>confidence: 0.105<br>evidence count: 2<br>2 non-merge commits; Jaccard=0.167; commits=b12be241, 295f5b6f",
+          "<b>IMPORTS</b><br>tests.test_live -> implicit_decision_gate.scenarios<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>tests/test_live.py:27",
           "<b>CO_CHANGES</b><br>tests.test_evaluation -- tests.test_live<br>strength: 0.066<br>confidence: 0.115<br>evidence count: 2<br>2 non-merge commits; Jaccard=0.182; commits=b12be241, 295f5b6f",
           "<b>CO_CHANGES</b><br>implicit_decision_gate.agent -- tests.test_orchestrator<br>strength: 0.449<br>confidence: 0.604<br>evidence count: 8<br>8 non-merge commits; Jaccard=0.615; commits=b12be241, 295f5b6f, ab65e7b1, 49701cf8, ea18151b, 625d771e, f05fa645, 10c641b5",
           "<b>IMPORTS</b><br>tests.test_orchestrator -> implicit_decision_gate.api_probe<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>tests/test_orchestrator.py:14",
@@ -932,17 +935,19 @@
           "<b>CONTAINS</b><br>tests.test_orchestrator -> not_evidenced<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>tests/test_orchestrator.py:91",
           "<b>CONTAINS</b><br>tests.test_orchestrator -> orchestrator<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>tests/test_orchestrator.py:146",
           "<b>CONTAINS</b><br>tests.test_orchestrator -> test_start_reads_the_brief_from_the_pinned_commit<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>tests/test_orchestrator.py:242",
-          "<b>INSTANTIATES</b><br>Orchestrator.__init__ -> WorktreeManager<br>strength: 0.547<br>confidence: 0.950<br>evidence count: 1<br>src/implicit_decision_gate/orchestrator.py:73",
+          "<b>CALLS</b><br>implicit_decision_gate.cli -> main<br>strength: 0.618<br>confidence: 0.950<br>evidence count: 1<br>src/implicit_decision_gate/cli.py:114",
           "<b>CONTAINS</b><br>implicit_decision_gate.worktree -> Worktree<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/worktree.py:15",
           "<b>INSTANTIATES</b><br>WorktreeManager.create -> Worktree<br>strength: 0.547<br>confidence: 0.950<br>evidence count: 1<br>src/implicit_decision_gate/worktree.py:88",
-          "<b>CONTAINS</b><br>implicit_decision_gate.worktree -> WorktreeError<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/worktree.py:10",
-          "<b>INSTANTIATES</b><br>WorktreeManager.read_file_at_commit -> WorktreeError<br>strength: 0.547<br>confidence: 0.950<br>evidence count: 1<br>src/implicit_decision_gate/worktree.py:55",
-          "<b>INSTANTIATES</b><br>_git -> WorktreeError<br>strength: 0.547<br>confidence: 0.950<br>evidence count: 1<br>src/implicit_decision_gate/worktree.py:31",
+          "<b>CONTAINS</b><br>implicit_decision_gate.worktree -> WorktreeManager<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/worktree.py:35",
+          "<b>INSTANTIATES</b><br>Orchestrator.__init__ -> WorktreeManager<br>strength: 0.547<br>confidence: 0.950<br>evidence count: 1<br>src/implicit_decision_gate/orchestrator.py:73",
+          "<b>CONTAINS</b><br>WorktreeManager -> WorktreeManager.create<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/worktree.py:63",
+          "<b>CONTAINS</b><br>WorktreeManager -> WorktreeManager.current_commit<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/worktree.py:46",
           "<b>CONTAINS</b><br>WorktreeManager -> WorktreeManager.read_file_at_commit<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/worktree.py:51",
           "<b>INSTANTIATES</b><br>WorktreeManager.create -> WorktreeError<br>strength: 0.666<br>confidence: 0.950<br>evidence count: 3<br>src/implicit_decision_gate/worktree.py:70<br>src/implicit_decision_gate/worktree.py:81<br>src/implicit_decision_gate/worktree.py:87",
-          "<b>CONTAINS</b><br>WorktreeManager -> WorktreeManager.create<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/worktree.py:63",
+          "<b>INSTANTIATES</b><br>WorktreeManager.read_file_at_commit -> WorktreeError<br>strength: 0.547<br>confidence: 0.950<br>evidence count: 1<br>src/implicit_decision_gate/worktree.py:55",
+          "<b>CONTAINS</b><br>implicit_decision_gate.worktree -> _git<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/worktree.py:22",
+          "<b>INSTANTIATES</b><br>_git -> WorktreeError<br>strength: 0.547<br>confidence: 0.950<br>evidence count: 1<br>src/implicit_decision_gate/worktree.py:31",
           "<b>CALLS</b><br>WorktreeManager.create -> _git<br>strength: 0.761<br>confidence: 0.950<br>evidence count: 3<br>src/implicit_decision_gate/worktree.py:71<br>src/implicit_decision_gate/worktree.py:79<br>src/implicit_decision_gate/worktree.py:84",
-          "<b>CONTAINS</b><br>WorktreeManager -> WorktreeManager.current_commit<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/worktree.py:46",
           "<b>CALLS</b><br>WorktreeManager.current_commit -> _git<br>strength: 0.618<br>confidence: 0.950<br>evidence count: 1<br>src/implicit_decision_gate/worktree.py:49",
           "<b>CALLS</b><br>WorktreeManager.read_file_at_commit -> _git<br>strength: 0.618<br>confidence: 0.950<br>evidence count: 1<br>src/implicit_decision_gate/worktree.py:56",
           "<b>INSTANTIATES</b><br>test_start_reads_the_brief_from_the_pinned_commit -> ScriptMarkerProbe<br>strength: 0.547<br>confidence: 0.950<br>evidence count: 1<br>tests/test_orchestrator.py:255",
@@ -961,11 +966,14 @@
         "type": "scatter",
         "x": [
           -0.0708354726812527,
+          -0.03338799387147398,
           -0.06793538798531323,
+          -0.055853313844652246,
           -0.01758159595074338,
           -0.03778957596235467,
           0.009219102715211334,
           0.09357182070063341,
+          0.046666581524990064,
           0.012119187411150811,
           0.0242012615518118,
           0.06247297944572067,
@@ -974,9 +982,11 @@
           0.04384962388139289,
           -0.03360602037031265,
           0.06917482514660397,
-          -0.10969671521243439,
+          -0.07625947202800101,
+          -0.06417739788734002,
           -0.02590567999343115,
           -0.04611366000504244,
+          -0.044529035557758924,
           -0.12198467980946447,
           -0.019203834292547847,
           -0.0017319045954766119,
@@ -992,56 +1002,49 @@
           -0.1329356871201524,
           -0.030154841603235793,
           0.023587542074525708,
-          -0.2435023349663879,
-          -0.03338799387147398,
-          0.046666581524990064,
+          0.008093245957421065,
+          0.03982368242766315,
+          0.06514888369287422,
           -0.04171207791416175,
           0.04264064007126032,
           -0.03881199321822228,
-          -0.07224923640265567,
           -0.026729919077561292,
           0.011541798816347577,
           -0.008666181195263713,
-          -0.10032893219912388,
           -0.007081556747980198,
           -0.08453720099968574,
           0.01824364451723088,
-          -0.07625947202800101,
-          0.008093245957421065,
-          -0.1067966305164949,
+          -0.06127731319140054,
           -0.023005595297491674,
           -0.04321357530910296,
-          -0.04162895086181945,
           -0.11908459511352498,
           -0.01630374959660837,
-          -0.05644283848192506,
-          -0.055853313844652246,
-          -0.06417739788734002,
-          -0.06127731319140054,
+          -0.10969671521243439,
+          -0.07224923640265567,
+          -0.1067966305164949,
           -0.09471455637583392,
-          -0.010923521156830686,
-          -0.031131501168441975,
-          -0.02954687672115846,
-          -0.107002520972864,
-          -0.004221675455947382,
+          -0.05644283848192506,
           -0.07665081849353635,
+          -0.107002520972864,
+          -0.010923521156830686,
           0.007140216725466892,
+          -0.06873080307895513,
+          -0.031131501168441975,
           -0.08893878309056642,
-          0.013842062426350197,
+          -0.10032893219912388,
           -0.13487632631296312,
           -0.10314588984272105,
           -0.07782068857750997,
-          -0.21601763455761852,
-          -0.2583713857210725,
-          -0.044529035557758924,
-          0.03982368242766315,
+          -0.27674276403497733,
+          -0.04162895086181945,
+          -0.02954687672115846,
           0.008724841172750408,
           -0.011483138838860882,
           -0.08735415864328291,
           0.015426686873633712,
-          -0.06873080307895513,
-          0.06514888369287422,
+          -0.004221675455947382,
           0.03405004243796149,
+          0.013842062426350197,
           -0.06202895737807183,
           0.12291720882436546,
           0.034538549385213654,
@@ -1058,17 +1061,19 @@
           0.29980866361582886,
           0.25791906019776173,
           0.3447380876171983,
-          -0.19516949533809733,
+          -0.2435023349663879,
           -0.32476823215891276,
           -0.45290034802439805,
-          -0.27674276403497733,
-          -0.3816361394192636,
-          -0.3387208844621851,
+          -0.21601763455761852,
+          -0.19516949533809733,
+          -0.3441497504231038,
+          -0.27523839488418544,
           -0.3209110099419048,
           -0.4048748799004626,
-          -0.3441497504231038,
+          -0.3816361394192636,
+          -0.2583713857210725,
+          -0.3387208844621851,
           -0.3865035015865578,
-          -0.27523839488418544,
           -0.3175921460476394,
           -0.36326476110535877,
           0.590117057989986,
@@ -1079,11 +1084,14 @@
         ],
         "y": [
           -0.26340903314040737,
+          -0.2424679499117953,
           -0.2131663683040944,
+          -0.28816286964640875,
           -0.3016731321214704,
           -0.27063286749398335,
           -0.14132627139932963,
           -0.03955335237304037,
+          -0.12038518817071756,
           -0.09108360656301667,
           -0.16608010790533104,
           -0.17959037038039266,
@@ -1092,9 +1100,11 @@
           -0.07997984162967624,
           -0.1424971213963039,
           -0.09008354070365199,
-          -0.24274891603584864,
+          -0.14296554739785014,
+          -0.2179620487401645,
           -0.23147231121522616,
           -0.20043204658773908,
+          -0.13186178246450972,
           -0.19437906223113738,
           -0.14196548153848546,
           -0.05507113893399729,
@@ -1110,56 +1120,49 @@
           -0.10812392976580507,
           -0.05571034907315312,
           -0.13468523067671725,
-          -0.00771770397224691,
-          -0.2424679499117953,
-          -0.12038518817071756,
+          -0.04119262837156089,
+          -0.03008886343822046,
+          -0.0401925625121962,
           -0.17226712900555102,
           -0.07049420997926178,
           -0.12202446416923808,
-          -0.2218078328072366,
           -0.19702096551155246,
           -0.21053122798661408,
           -0.179490963359127,
-          0.06916849623442656,
           -0.11092069923589765,
           -0.17343797900252533,
           -0.1210243983098734,
-          -0.14296554739785014,
-          -0.04119262837156089,
-          -0.19250625119953568,
+          -0.16771938390385155,
           -0.1812296463789132,
           -0.15018938175142613,
-          -0.08161911762819676,
           -0.14413639739482442,
           -0.0917228167021725,
-          -0.28101301501691167,
-          -0.28816286964640875,
-          -0.2179620487401645,
-          -0.16771938390385155,
+          -0.24274891603584864,
+          -0.2218078328072366,
+          -0.19250625119953568,
           -0.2675027525418501,
-          -0.25622614772122754,
-          -0.2251858830937405,
-          -0.15661561897051113,
-          -0.21913289873713881,
-          -0.16671931804448686,
+          -0.28101301501691167,
           -0.24997275038942462,
+          -0.21913289873713881,
+          -0.25622614772122754,
           -0.23869614556880214,
+          -0.23264316121220044,
+          -0.2251858830937405,
           -0.20160289658471336,
-          -0.14918931589206144,
+          0.06916849623442656,
           0.09847007784212745,
           0.10957384277546789,
           0.09947014370149214,
-          0.5081127866056472,
-          0.47351818823345826,
-          -0.13186178246450972,
-          -0.03008886343822046,
+          0.4282202370459567,
+          -0.08161911762819676,
+          -0.15661561897051113,
           -0.17012588144557275,
           -0.1390856168180857,
           -0.133032632461484,
           -0.08061905176883208,
-          -0.23264316121220044,
-          -0.0401925625121962,
+          -0.16671931804448686,
           -0.18022958051954852,
+          -0.14918931589206144,
           -0.14313633153545974,
           -0.16905842230721613,
           -0.2209403631420496,
@@ -1176,17 +1179,19 @@
           -0.31906609494211985,
           -0.375512531267662,
           -0.39863460914538035,
-          0.8632812674827511,
+          -0.00771770397224691,
           0.3718479488637032,
           0.5542656734915267,
-          0.4282202370459567,
-          0.6748022905409796,
-          0.6120753870336229,
+          0.5081127866056472,
+          0.8632812674827511,
+          0.6905305112334708,
+          0.810564238980273,
           0.7546948401006701,
           0.6106379616737803,
-          0.6905305112334708,
+          0.6748022905409796,
+          0.47351818823345826,
+          0.6120753870336229,
           0.6559359128612818,
-          0.810564238980273,
           0.775969640608084,
           0.7201002417284812,
           -0.6756236303713097,
@@ -1197,6 +1202,13 @@
         ]
       },
       {
+        "customdata": [
+          "file:src/implicit_decision_gate/worktree.py",
+          "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager",
+          "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager.create",
+          "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager.read_file_at_commit",
+          "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit"
+        ],
         "hovertemplate": "%{hovertext}<extra></extra>",
         "hovertext": [
           "<b>implicit_decision_gate.worktree</b><br>src/implicit_decision_gate/worktree.py:1<br>kind: file<br>Creation of clean detached Git worktrees.<br>direct relevance: 0.1601<br>relationship strength: 0.0000",
@@ -1215,8 +1227,8 @@
             "#f59e0b"
           ],
           "line": {
-            "color": "#e2e8f0",
-            "width": 0.75
+            "color": "#f8fafc",
+            "width": 1.25
           },
           "size": [
             17.84257380636539,
@@ -1236,7 +1248,7 @@
           "test_start_reads_the_brief_from_the_pinned_commit"
         ],
         "textfont": {
-          "color": "#e2e8f0",
+          "color": "#1e293b",
           "size": 10
         },
         "textposition": "top center",
@@ -1257,6 +1269,12 @@
         ]
       },
       {
+        "customdata": [
+          "symbol:src/implicit_decision_gate/worktree.py::WorktreeError",
+          "symbol:tests/conftest.py::ScriptMarkerProbe",
+          "symbol:tests/conftest.py::ScriptedCodingClient",
+          "symbol:tests/conftest.py::ScriptedReviewerClient"
+        ],
         "hovertemplate": "%{hovertext}<extra></extra>",
         "hovertext": [
           "<b>class WorktreeError(RuntimeError)</b><br>src/implicit_decision_gate/worktree.py:10<br>kind: class<br>Raised when Git cannot create an isolated attempt checkout.<br>direct relevance: 0.0561<br>relationship strength: 0.3700",
@@ -1273,8 +1291,8 @@
             "#a78bfa"
           ],
           "line": {
-            "color": "#e2e8f0",
-            "width": 0.75
+            "color": "#f8fafc",
+            "width": 1.25
           },
           "size": [
             22.880986325879945,
@@ -1292,7 +1310,7 @@
           "ScriptedReviewerClient"
         ],
         "textfont": {
-          "color": "#e2e8f0",
+          "color": "#1e293b",
           "size": 10
         },
         "textposition": "top center",
@@ -1311,6 +1329,23 @@
         ]
       },
       {
+        "customdata": [
+          "file:notebooks/walkthrough_helpers.py",
+          "file:src/implicit_decision_gate/agent.py",
+          "file:src/implicit_decision_gate/api_probe.py",
+          "file:src/implicit_decision_gate/cli.py",
+          "file:src/implicit_decision_gate/codex_client.py",
+          "file:src/implicit_decision_gate/gate.py",
+          "file:src/implicit_decision_gate/orchestrator.py",
+          "file:src/implicit_decision_gate/policy.py",
+          "file:src/implicit_decision_gate/probe.py",
+          "file:src/implicit_decision_gate/scenario.py",
+          "file:src/implicit_decision_gate/scenarios.py",
+          "file:tests/test_cli.py",
+          "file:tests/test_evaluation.py",
+          "file:tests/test_live.py",
+          "file:tests/test_orchestrator.py"
+        ],
         "hovertemplate": "%{hovertext}<extra></extra>",
         "hovertext": [
           "<b>notebooks.walkthrough_helpers</b><br>notebooks/walkthrough_helpers.py:1<br>kind: file<br>Execution and display helpers for the guided notebook.<br>direct relevance: 0.0315<br>relationship strength: 0.2197",
@@ -1349,8 +1384,8 @@
             "#64748b"
           ],
           "line": {
-            "color": "#e2e8f0",
-            "width": 0.75
+            "color": "#f8fafc",
+            "width": 1.25
           },
           "size": [
             19.27347050095078,
@@ -1390,7 +1425,7 @@
           "tests.test_orchestrator"
         ],
         "textfont": {
-          "color": "#e2e8f0",
+          "color": "#1e293b",
           "size": 10
         },
         "textposition": "top center",
@@ -1431,6 +1466,12 @@
         ]
       },
       {
+        "customdata": [
+          "symbol:src/implicit_decision_gate/cli.py::main",
+          "symbol:src/implicit_decision_gate/worktree.py::_git",
+          "symbol:tests/test_orchestrator.py::not_evidenced",
+          "symbol:tests/test_orchestrator.py::orchestrator"
+        ],
         "hovertemplate": "%{hovertext}<extra></extra>",
         "hovertext": [
           "<b>main(argv: Sequence[str] | None=None) -&gt; int</b><br>src/implicit_decision_gate/cli.py:78<br>kind: function<br>Execute one CLI command and return its process status.<br>direct relevance: 0.0083<br>relationship strength: 0.2679",
@@ -1447,8 +1488,8 @@
             "#34d399"
           ],
           "line": {
-            "color": "#e2e8f0",
-            "width": 0.75
+            "color": "#f8fafc",
+            "width": 1.25
           },
           "size": [
             20.430320228955843,
@@ -1466,7 +1507,7 @@
           "orchestrator"
         ],
         "textfont": {
-          "color": "#e2e8f0",
+          "color": "#1e293b",
           "size": 10
         },
         "textposition": "top center",
@@ -1485,6 +1526,10 @@
         ]
       },
       {
+        "customdata": [
+          "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.__init__",
+          "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager.current_commit"
+        ],
         "hovertemplate": "%{hovertext}<extra></extra>",
         "hovertext": [
           "<b>__init__(self, *, repo_path: Path, scenarios: dict[str, Scenario], coding_client: CodingClient | None=None, reviewer_client: ReviewerClient | None=None, worktree_root: Path | None=None) -&gt; None</b><br>src/implicit_decision_gate/orchestrator.py:58<br>kind: method<br><br>direct relevance: 0.0355<br>relationship strength: 0.2157",
@@ -1497,8 +1542,8 @@
             "#60a5fa"
           ],
           "line": {
-            "color": "#e2e8f0",
-            "width": 0.75
+            "color": "#f8fafc",
+            "width": 1.25
           },
           "size": [
             19.176613128889336,
@@ -1512,7 +1557,7 @@
           "WorktreeManager.current_commit"
         ],
         "textfont": {
-          "color": "#e2e8f0",
+          "color": "#1e293b",
           "size": 10
         },
         "textposition": "top center",
@@ -1527,6 +1572,9 @@
         ]
       },
       {
+        "customdata": [
+          "symbol:src/implicit_decision_gate/worktree.py::Worktree"
+        ],
         "hovertemplate": "%{hovertext}<extra></extra>",
         "hovertext": [
           "<b>class Worktree</b><br>src/implicit_decision_gate/worktree.py:15<br>kind: class<br>A verified detached worktree.<br>direct relevance: 0.2303<br>relationship strength: 0.0000"
@@ -1537,8 +1585,8 @@
             "#fb7185"
           ],
           "line": {
-            "color": "#e2e8f0",
-            "width": 0.75
+            "color": "#f8fafc",
+            "width": 1.25
           },
           "size": [
             19.52702805032242
@@ -1550,7 +1598,7 @@
           "Worktree"
         ],
         "textfont": {
-          "color": "#e2e8f0",
+          "color": "#1e293b",
           "size": 10
         },
         "textposition": "top center",
@@ -1566,22 +1614,44 @@
     "layout": {
       "dragmode": "pan",
       "font": {
-        "color": "#e2e8f0"
+        "color": "#1e293b"
       },
       "height": 760,
+      "hoverlabel": {
+        "bgcolor": "#ffffff",
+        "bordercolor": "#cbd5e1",
+        "font": {
+          "color": "#0f172a"
+        }
+      },
       "hovermode": "closest",
       "legend": {
-        "bgcolor": "rgba(15,23,42,0.75)",
-        "orientation": "h"
+        "bgcolor": "rgba(255,255,255,0.88)",
+        "bordercolor": "rgba(203,213,225,0.9)",
+        "borderwidth": 1,
+        "font": {
+          "color": "#334155",
+          "size": 11
+        },
+        "orientation": "h",
+        "x": 0.0,
+        "xanchor": "left",
+        "y": 1.02,
+        "yanchor": "bottom"
       },
       "margin": {
         "b": 20,
         "l": 20,
         "r": 20,
-        "t": 60
+        "t": 96
       },
-      "paper_bgcolor": "#0f172a",
-      "plot_bgcolor": "#0f172a",
+      "modebar": {
+        "activecolor": "#0f172a",
+        "bgcolor": "rgba(255,255,255,0.88)",
+        "color": "#64748b"
+      },
+      "paper_bgcolor": "rgba(0,0,0,0)",
+      "plot_bgcolor": "rgba(0,0,0,0)",
       "template": {
         "data": {
           "bar": [
@@ -2358,10 +2428,6 @@
           }
         }
       },
-      "title": {
-        "text": "Query relationships: Where is each coding attempt placed in a clean detached worktree at the pinned commit?",
-        "x": 0.02
-      },
       "uirevision": "Query relationships: Where is each coding attempt placed in a clean detached worktree at the pinned commit?",
       "xaxis": {
         "showgrid": false,
@@ -2377,6 +2443,1204 @@
     "plotly_js_version": "3.7.0"
   },
   "id": "clean-worktree",
+  "inspection": {
+    "edges": [
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:notebooks/walkthrough_helpers.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/api_probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:notebooks/walkthrough_helpers.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:notebooks/walkthrough_helpers.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:notebooks/walkthrough_helpers.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:notebooks/walkthrough_helpers.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:notebooks/walkthrough_helpers.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.06566318223980253,
+        "target_id": "file:src/implicit_decision_gate/api_probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/codex_client.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/agent.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/agent.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.11046919230969618,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.06566318223980253,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.07222950046378278,
+        "target_id": "file:src/implicit_decision_gate/worktree.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.5196821661975614,
+        "target_id": "file:tests/test_cli.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.06566318223980253,
+        "target_id": "file:tests/test_evaluation.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/agent.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/api_probe.py",
+        "strength": 0.060191250386485644,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/api_probe.py",
+        "strength": 0.10318500066254681,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/api_probe.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/scenarios.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/api_probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_cli.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/api_probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_evaluation.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/api_probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/api_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.486034461780754,
+        "target_id": "file:src/implicit_decision_gate/cli.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/api_probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/codex_client.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.060191250386485644,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/worktree.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_cli.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/cli.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.06566318223980253,
+        "target_id": "file:tests/test_evaluation.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.3782230575557315,
+        "target_id": "file:tests/test_live.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.26737538647453585,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/codex_client.py",
+        "strength": 0.2834781036275218,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/codex_client.py",
+        "strength": 0.2598549283252284,
+        "target_id": "file:tests/test_cli.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/codex_client.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/api_probe.py",
+        "strength": 0.060191250386485644,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/codex_client.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/gate.py",
+        "strength": 0.10257853571614645,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/gate.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/gate.py",
+        "strength": 0.060191250386485644,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_cli.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_evaluation.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.10257853571614645,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_evaluation.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/api_probe.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/policy.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/gate.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/policy.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/policy.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/probe.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/policy.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/policy.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/scenarios.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/policy.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_evaluation.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/probe.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/scenarios.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/scenario.py",
+        "strength": 0.14445900092756556,
+        "target_id": "file:tests/test_evaluation.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/scenarios.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_evaluation.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/gate.py",
+        "strength": 0.06566318223980253,
+        "target_id": "file:src/implicit_decision_gate/worktree.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/worktree.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/worktree.py",
+        "strength": 0.060191250386485644,
+        "target_id": "file:tests/test_cli.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/worktree.py",
+        "strength": 0.07222950046378278,
+        "target_id": "file:tests/test_live.py"
+      },
+      {
+        "kind": "CONTAINS",
+        "source_id": "file:src/implicit_decision_gate/worktree.py",
+        "strength": 0.45,
+        "target_id": "symbol:src/implicit_decision_gate/worktree.py::WorktreeError"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.3888275694246032,
+        "target_id": "file:tests/test_cli.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_cli.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/scenario.py",
+        "strength": 0.051592500331273404,
+        "target_id": "file:tests/test_cli.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_cli.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_cli.py",
+        "strength": 0.11967495833550419,
+        "target_id": "file:tests/test_evaluation.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_cli.py",
+        "strength": 0.41660096724064627,
+        "target_id": "file:tests/test_live.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/scenario.py",
+        "strength": 0.060191250386485644,
+        "target_id": "file:tests/test_live.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_evaluation.py",
+        "strength": 0.06566318223980253,
+        "target_id": "file:tests/test_live.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.44864719548992676,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/api_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/codex_client.py",
+        "strength": 0.2834781036275218,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/worktree.py",
+        "strength": 0.06566318223980253,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_cli.py",
+        "strength": 0.48256201146916416,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_evaluation.py",
+        "strength": 0.1305545000023682,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.3512071248731793,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "CONTAINS",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.45,
+        "target_id": "symbol:tests/test_orchestrator.py::not_evidenced"
+      },
+      {
+        "kind": "CONTAINS",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.45,
+        "target_id": "symbol:tests/test_orchestrator.py::orchestrator"
+      },
+      {
+        "kind": "CONTAINS",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.45,
+        "target_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.6179892479403911,
+        "target_id": "symbol:src/implicit_decision_gate/cli.py::main"
+      },
+      {
+        "kind": "CONTAINS",
+        "source_id": "file:src/implicit_decision_gate/worktree.py",
+        "strength": 0.45,
+        "target_id": "symbol:src/implicit_decision_gate/worktree.py::Worktree"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager.create",
+        "strength": 0.546748109265858,
+        "target_id": "symbol:src/implicit_decision_gate/worktree.py::Worktree"
+      },
+      {
+        "kind": "CONTAINS",
+        "source_id": "file:src/implicit_decision_gate/worktree.py",
+        "strength": 0.45,
+        "target_id": "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.__init__",
+        "strength": 0.546748109265858,
+        "target_id": "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager"
+      },
+      {
+        "kind": "CONTAINS",
+        "source_id": "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager",
+        "strength": 0.45,
+        "target_id": "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager.create"
+      },
+      {
+        "kind": "CONTAINS",
+        "source_id": "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager",
+        "strength": 0.45,
+        "target_id": "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager.current_commit"
+      },
+      {
+        "kind": "CONTAINS",
+        "source_id": "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager",
+        "strength": 0.45,
+        "target_id": "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager.read_file_at_commit"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager.create",
+        "strength": 0.665996218531716,
+        "target_id": "symbol:src/implicit_decision_gate/worktree.py::WorktreeError"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager.read_file_at_commit",
+        "strength": 0.546748109265858,
+        "target_id": "symbol:src/implicit_decision_gate/worktree.py::WorktreeError"
+      },
+      {
+        "kind": "CONTAINS",
+        "source_id": "file:src/implicit_decision_gate/worktree.py",
+        "strength": 0.45,
+        "target_id": "symbol:src/implicit_decision_gate/worktree.py::_git"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "symbol:src/implicit_decision_gate/worktree.py::_git",
+        "strength": 0.546748109265858,
+        "target_id": "symbol:src/implicit_decision_gate/worktree.py::WorktreeError"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager.create",
+        "strength": 0.7609784958807819,
+        "target_id": "symbol:src/implicit_decision_gate/worktree.py::_git"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager.current_commit",
+        "strength": 0.6179892479403911,
+        "target_id": "symbol:src/implicit_decision_gate/worktree.py::_git"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager.read_file_at_commit",
+        "strength": 0.6179892479403911,
+        "target_id": "symbol:src/implicit_decision_gate/worktree.py::_git"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+        "strength": 0.546748109265858,
+        "target_id": "symbol:tests/conftest.py::ScriptMarkerProbe"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+        "strength": 0.546748109265858,
+        "target_id": "symbol:tests/conftest.py::ScriptedCodingClient"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+        "strength": 0.546748109265858,
+        "target_id": "symbol:tests/conftest.py::ScriptedReviewerClient"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+        "strength": 0.6179892479403911,
+        "target_id": "symbol:tests/test_orchestrator.py::not_evidenced"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+        "strength": 0.6179892479403911,
+        "target_id": "symbol:tests/test_orchestrator.py::orchestrator"
+      }
+    ],
+    "nodes": [
+      {
+        "color": "#64748b",
+        "direct_relevance": 0.03150208165940141,
+        "docstring": "Execution and display helpers for the guided notebook.",
+        "end_line": 595,
+        "group": "file",
+        "id": "file:notebooks/walkthrough_helpers.py",
+        "kind": "file",
+        "label": "notebooks.walkthrough_helpers",
+        "path": "notebooks/walkthrough_helpers.py",
+        "qualified_name": "notebooks.walkthrough_helpers",
+        "relationship_strength": 0.21972793753961573,
+        "signature": "",
+        "size": 19.27347050095078,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": 0.04583549501651153,
+        "docstring": "Purpose-specific coding and evidence-review model interfaces.",
+        "end_line": 106,
+        "group": "file",
+        "id": "file:src/implicit_decision_gate/agent.py",
+        "kind": "file",
+        "label": "implicit_decision_gate.agent",
+        "path": "src/implicit_decision_gate/agent.py",
+        "qualified_name": "implicit_decision_gate.agent",
+        "relationship_strength": 0.27280964989619577,
+        "signature": "",
+        "size": 20.547431597508698,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": 0.021424336477487788,
+        "docstring": "Disposable execution and normalization for the authorization scenario.",
+        "end_line": 302,
+        "group": "file",
+        "id": "file:src/implicit_decision_gate/api_probe.py",
+        "kind": "file",
+        "label": "implicit_decision_gate.api_probe",
+        "path": "src/implicit_decision_gate/api_probe.py",
+        "qualified_name": "implicit_decision_gate.api_probe",
+        "relationship_strength": 0.2282737740138439,
+        "signature": "",
+        "size": 19.478570576332253,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": 0.01887941006436358,
+        "docstring": "Command-line interface for implicit-decision-gate.",
+        "end_line": 114,
+        "group": "file",
+        "id": "file:src/implicit_decision_gate/cli.py",
+        "kind": "file",
+        "label": "implicit_decision_gate.cli",
+        "path": "src/implicit_decision_gate/cli.py",
+        "qualified_name": "implicit_decision_gate.cli",
+        "relationship_strength": 0.3990557485737001,
+        "signature": "",
+        "size": 23.577337965768802,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": 0.036776897934064294,
+        "docstring": "Local Codex CLI adapter for one-shot structured model calls.",
+        "end_line": 193,
+        "group": "file",
+        "id": "file:src/implicit_decision_gate/codex_client.py",
+        "kind": "file",
+        "label": "implicit_decision_gate.codex_client",
+        "path": "src/implicit_decision_gate/codex_client.py",
+        "qualified_name": "implicit_decision_gate.codex_client",
+        "relationship_strength": 0.24477848268601868,
+        "signature": "",
+        "size": 19.87468358446445,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": 0.030869167843298493,
+        "docstring": "Persisted run types and pure gate transitions.",
+        "end_line": 482,
+        "group": "file",
+        "id": "file:src/implicit_decision_gate/gate.py",
+        "kind": "file",
+        "label": "implicit_decision_gate.gate",
+        "path": "src/implicit_decision_gate/gate.py",
+        "qualified_name": "implicit_decision_gate.gate",
+        "relationship_strength": 0.2812141555306134,
+        "signature": "",
+        "size": 20.749139732734722,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": 0.035941832245532,
+        "docstring": "Run orchestration across model, worktree, observer, review, and gate components.",
+        "end_line": 540,
+        "group": "file",
+        "id": "file:src/implicit_decision_gate/orchestrator.py",
+        "kind": "file",
+        "label": "implicit_decision_gate.orchestrator",
+        "path": "src/implicit_decision_gate/orchestrator.py",
+        "qualified_name": "implicit_decision_gate.orchestrator",
+        "relationship_strength": 0.3976976245060918,
+        "signature": "",
+        "size": 23.544742988146204,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": 0.017189916067768846,
+        "docstring": "Pure coverage-manifest and effect-policy evaluation.",
+        "end_line": 205,
+        "group": "file",
+        "id": "file:src/implicit_decision_gate/policy.py",
+        "kind": "file",
+        "label": "implicit_decision_gate.policy",
+        "path": "src/implicit_decision_gate/policy.py",
+        "qualified_name": "implicit_decision_gate.policy",
+        "relationship_strength": 0.21972793753961573,
+        "signature": "",
+        "size": 19.27347050095078,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": 0.02707543904896848,
+        "docstring": "Disposable PostgreSQL migration execution and behavior normalization.",
+        "end_line": 406,
+        "group": "file",
+        "id": "file:src/implicit_decision_gate/probe.py",
+        "kind": "file",
+        "label": "implicit_decision_gate.probe",
+        "path": "src/implicit_decision_gate/probe.py",
+        "qualified_name": "implicit_decision_gate.probe",
+        "relationship_strength": 0.24275346755276456,
+        "signature": "",
+        "size": 19.82608322126635,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": 0.017034850643149153,
+        "docstring": "Scenario-neutral policy, decision, and observation types.",
+        "end_line": 297,
+        "group": "file",
+        "id": "file:src/implicit_decision_gate/scenario.py",
+        "kind": "file",
+        "label": "implicit_decision_gate.scenario",
+        "path": "src/implicit_decision_gate/scenario.py",
+        "qualified_name": "implicit_decision_gate.scenario",
+        "relationship_strength": 0.2263016579044066,
+        "signature": "",
+        "size": 19.431239789705756,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": 0.014402398924344948,
+        "docstring": "The two fixed demonstration scenarios.",
+        "end_line": 288,
+        "group": "file",
+        "id": "file:src/implicit_decision_gate/scenarios.py",
+        "kind": "file",
+        "label": "implicit_decision_gate.scenarios",
+        "path": "src/implicit_decision_gate/scenarios.py",
+        "qualified_name": "implicit_decision_gate.scenarios",
+        "relationship_strength": 0.2282737740138439,
+        "signature": "",
+        "size": 19.478570576332253,
+        "start_line": 1
+      },
+      {
+        "color": "#f59e0b",
+        "direct_relevance": 0.16010724193189121,
+        "docstring": "Creation of clean detached Git worktrees.",
+        "end_line": 88,
+        "group": "anchor",
+        "id": "file:src/implicit_decision_gate/worktree.py",
+        "kind": "file",
+        "label": "implicit_decision_gate.worktree",
+        "path": "src/implicit_decision_gate/worktree.py",
+        "qualified_name": "implicit_decision_gate.worktree",
+        "relationship_strength": 0.0,
+        "signature": "",
+        "size": 17.84257380636539,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": 0.036293400443884946,
+        "docstring": "Public CLI contract test.",
+        "end_line": 283,
+        "group": "file",
+        "id": "file:tests/test_cli.py",
+        "kind": "file",
+        "label": "tests.test_cli",
+        "path": "tests/test_cli.py",
+        "qualified_name": "tests.test_cli",
+        "relationship_strength": 0.2699367868114955,
+        "signature": "",
+        "size": 20.47848288347589,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": 0.02225824985672451,
+        "docstring": "Small deterministic adversarial matrix for the shared gate.",
+        "end_line": 167,
+        "group": "file",
+        "id": "file:tests/test_evaluation.py",
+        "kind": "file",
+        "label": "tests.test_evaluation",
+        "path": "tests/test_evaluation.py",
+        "qualified_name": "tests.test_evaluation",
+        "relationship_strength": 0.23517449885917366,
+        "signature": "",
+        "size": 19.644187972620166,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": 0.016270428537445456,
+        "docstring": "Opt-in real-model and PostgreSQL end-to-end test.",
+        "end_line": 108,
+        "group": "file",
+        "id": "file:tests/test_live.py",
+        "kind": "file",
+        "label": "tests.test_live",
+        "path": "tests/test_live.py",
+        "qualified_name": "tests.test_live",
+        "relationship_strength": 0.2612810237229398,
+        "signature": "",
+        "size": 20.270744569350555,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": 0.031530031743939396,
+        "docstring": "Durable gate behavior across isolated coding attempts.",
+        "end_line": 841,
+        "group": "file",
+        "id": "file:tests/test_orchestrator.py",
+        "kind": "file",
+        "label": "tests.test_orchestrator",
+        "path": "tests/test_orchestrator.py",
+        "qualified_name": "tests.test_orchestrator",
+        "relationship_strength": 0.2812141555306134,
+        "signature": "",
+        "size": 20.749139732734722,
+        "start_line": 1
+      },
+      {
+        "color": "#34d399",
+        "direct_relevance": 0.00828887318114897,
+        "docstring": "Execute one CLI command and return its process status.",
+        "end_line": 110,
+        "group": "function",
+        "id": "symbol:src/implicit_decision_gate/cli.py::main",
+        "kind": "function",
+        "label": "main",
+        "path": "src/implicit_decision_gate/cli.py",
+        "qualified_name": "main",
+        "relationship_strength": 0.2679300095398267,
+        "signature": "main(argv: Sequence[str] | None=None) -> int",
+        "size": 20.430320228955843,
+        "start_line": 78
+      },
+      {
+        "color": "#60a5fa",
+        "direct_relevance": 0.035453224948620916,
+        "docstring": "",
+        "end_line": 73,
+        "group": "method",
+        "id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator.__init__",
+        "kind": "method",
+        "label": "Orchestrator.__init__",
+        "path": "src/implicit_decision_gate/orchestrator.py",
+        "qualified_name": "Orchestrator.__init__",
+        "relationship_strength": 0.21569221370372232,
+        "signature": "__init__(self, *, repo_path: Path, scenarios: dict[str, Scenario], coding_client: CodingClient | None=None, reviewer_client: ReviewerClient | None=None, worktree_root: Path | None=None) -> None",
+        "size": 19.176613128889336,
+        "start_line": 58
+      },
+      {
+        "color": "#fb7185",
+        "direct_relevance": 0.2302928354301009,
+        "docstring": "A verified detached worktree.",
+        "end_line": 19,
+        "group": "top anchor",
+        "id": "symbol:src/implicit_decision_gate/worktree.py::Worktree",
+        "kind": "class",
+        "label": "Worktree",
+        "path": "src/implicit_decision_gate/worktree.py",
+        "qualified_name": "Worktree",
+        "relationship_strength": 0.0,
+        "signature": "class Worktree",
+        "size": 19.52702805032242,
+        "start_line": 15
+      },
+      {
+        "color": "#a78bfa",
+        "direct_relevance": 0.056143340800819,
+        "docstring": "Raised when Git cannot create an isolated attempt checkout.",
+        "end_line": 11,
+        "group": "class",
+        "id": "symbol:src/implicit_decision_gate/worktree.py::WorktreeError",
+        "kind": "class",
+        "label": "WorktreeError",
+        "path": "src/implicit_decision_gate/worktree.py",
+        "qualified_name": "WorktreeError",
+        "relationship_strength": 0.37004109691166437,
+        "signature": "class WorktreeError(RuntimeError)",
+        "size": 22.880986325879945,
+        "start_line": 10
+      },
+      {
+        "color": "#f59e0b",
+        "direct_relevance": 0.10688301083575048,
+        "docstring": "Manage worktrees below a configurable path outside the checkout.",
+        "end_line": 88,
+        "group": "anchor",
+        "id": "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager",
+        "kind": "class",
+        "label": "WorktreeManager",
+        "path": "src/implicit_decision_gate/worktree.py",
+        "qualified_name": "WorktreeManager",
+        "relationship_strength": 0.0,
+        "signature": "class WorktreeManager",
+        "size": 16.565192260058012,
+        "start_line": 35
+      },
+      {
+        "color": "#f59e0b",
+        "direct_relevance": 0.15053576628288973,
+        "docstring": "Create a new detached checkout of the exact base commit.",
+        "end_line": 88,
+        "group": "anchor",
+        "id": "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager.create",
+        "kind": "method",
+        "label": "WorktreeManager.create",
+        "path": "src/implicit_decision_gate/worktree.py",
+        "qualified_name": "WorktreeManager.create",
+        "relationship_strength": 0.0,
+        "signature": "create(self, run_id: str, attempt_number: int, base_commit: str) -> Worktree",
+        "size": 17.612858390789352,
+        "start_line": 63
+      },
+      {
+        "color": "#60a5fa",
+        "direct_relevance": 0.08027404898881473,
+        "docstring": "Resolve the repository's current commit.",
+        "end_line": 49,
+        "group": "method",
+        "id": "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager.current_commit",
+        "kind": "method",
+        "label": "WorktreeManager.current_commit",
+        "path": "src/implicit_decision_gate/worktree.py",
+        "qualified_name": "WorktreeManager.current_commit",
+        "relationship_strength": 0.22210095482809297,
+        "signature": "current_commit(self) -> str",
+        "size": 19.33042291587423,
+        "start_line": 46
+      },
+      {
+        "color": "#f59e0b",
+        "direct_relevance": 0.08857988522648257,
+        "docstring": "Read one repository file from an exact commit without using checkout state.",
+        "end_line": 61,
+        "group": "anchor",
+        "id": "symbol:src/implicit_decision_gate/worktree.py::WorktreeManager.read_file_at_commit",
+        "kind": "method",
+        "label": "WorktreeManager.read_file_at_commit",
+        "path": "src/implicit_decision_gate/worktree.py",
+        "qualified_name": "WorktreeManager.read_file_at_commit",
+        "relationship_strength": 0.0,
+        "signature": "read_file_at_commit(self, commit: str, relative_path: Path) -> str",
+        "size": 16.12591724543558,
+        "start_line": 51
+      },
+      {
+        "color": "#34d399",
+        "direct_relevance": 0.012244049429809648,
+        "docstring": "",
+        "end_line": 32,
+        "group": "function",
+        "id": "symbol:src/implicit_decision_gate/worktree.py::_git",
+        "kind": "function",
+        "label": "_git",
+        "path": "src/implicit_decision_gate/worktree.py",
+        "qualified_name": "_git",
+        "relationship_strength": 0.4228151894957088,
+        "signature": "_git(repo_path: Path, *arguments: str, strip: bool=True) -> str",
+        "size": 24.147564547897012,
+        "start_line": 22
+      },
+      {
+        "color": "#a78bfa",
+        "direct_relevance": 0.009881061193568257,
+        "docstring": "Classify explicit artifact markers without external execution.",
+        "end_line": 264,
+        "group": "class",
+        "id": "symbol:tests/conftest.py::ScriptMarkerProbe",
+        "kind": "class",
+        "label": "ScriptMarkerProbe",
+        "path": "tests/conftest.py",
+        "qualified_name": "ScriptMarkerProbe",
+        "relationship_strength": 0.3175784095197761,
+        "signature": "class ScriptMarkerProbe",
+        "size": 21.621881828474628,
+        "start_line": 189
+      },
+      {
+        "color": "#a78bfa",
+        "direct_relevance": 0.03686280696748865,
+        "docstring": "Return deterministic artifacts while recording coding context.",
+        "end_line": 107,
+        "group": "class",
+        "id": "symbol:tests/conftest.py::ScriptedCodingClient",
+        "kind": "class",
+        "label": "ScriptedCodingClient",
+        "path": "tests/conftest.py",
+        "qualified_name": "ScriptedCodingClient",
+        "relationship_strength": 0.3175784095197761,
+        "signature": "class ScriptedCodingClient",
+        "size": 21.621881828474628,
+        "start_line": 77
+      },
+      {
+        "color": "#a78bfa",
+        "direct_relevance": 0.014076249007086764,
+        "docstring": "Return deterministic reviews while recording reviewer context.",
+        "end_line": 140,
+        "group": "class",
+        "id": "symbol:tests/conftest.py::ScriptedReviewerClient",
+        "kind": "class",
+        "label": "ScriptedReviewerClient",
+        "path": "tests/conftest.py",
+        "qualified_name": "ScriptedReviewerClient",
+        "relationship_strength": 0.3175784095197761,
+        "signature": "class ScriptedReviewerClient",
+        "size": 21.621881828474628,
+        "start_line": 110
+      },
+      {
+        "color": "#34d399",
+        "direct_relevance": 0.01428676782254672,
+        "docstring": "Return the expected result for the intentionally incomplete brief.",
+        "end_line": 97,
+        "group": "function",
+        "id": "symbol:tests/test_orchestrator.py::not_evidenced",
+        "kind": "function",
+        "label": "not_evidenced",
+        "path": "tests/test_orchestrator.py",
+        "qualified_name": "not_evidenced",
+        "relationship_strength": 0.3589587949828646,
+        "signature": "not_evidenced() -> ReviewerResult",
+        "size": 22.61501107958875,
+        "start_line": 91
+      },
+      {
+        "color": "#34d399",
+        "direct_relevance": 0.04413373235370808,
+        "docstring": "Build a fully scripted controller.",
+        "end_line": 161,
+        "group": "function",
+        "id": "symbol:tests/test_orchestrator.py::orchestrator",
+        "kind": "function",
+        "label": "orchestrator",
+        "path": "tests/test_orchestrator.py",
+        "qualified_name": "orchestrator",
+        "relationship_strength": 0.3589587949828646,
+        "signature": "orchestrator(repo: Path, worktree_root: Path, coding_client: ScriptedCodingClient, reviewer_client: ScriptedReviewerClient, probe: ScriptMarkerProbe) -> Orchestrator",
+        "size": 22.61501107958875,
+        "start_line": 146
+      },
+      {
+        "color": "#f59e0b",
+        "direct_relevance": 0.15737117257523353,
+        "docstring": "",
+        "end_line": 259,
+        "group": "anchor",
+        "id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+        "kind": "test",
+        "label": "test_start_reads_the_brief_from_the_pinned_commit",
+        "path": "tests/test_orchestrator.py",
+        "qualified_name": "test_start_reads_the_brief_from_the_pinned_commit",
+        "relationship_strength": 0.0,
+        "signature": "test_start_reads_the_brief_from_the_pinned_commit(reference_repo: Path, tmp_path: Path) -> None",
+        "size": 17.776908141805606,
+        "start_line": 242
+      }
+    ]
+  },
   "label": "Clean Worktree",
   "provenance": {
     "branch": "main",
@@ -2397,5 +3661,5 @@
     "tree": "41028d97be0c3352aa25c56e896bceb065f7facc"
   },
   "query": "Where is each coding attempt placed in a clean detached worktree at the pinned commit?",
-  "schema_version": 2
+  "schema_version": 3
 }

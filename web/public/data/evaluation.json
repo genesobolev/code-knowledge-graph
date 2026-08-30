@@ -6607,5 +6607,5 @@
     "name": "implicit-decision-gate",
     "url": "https://github.com/genesobolev/implicit-decision-gate"
   },
-  "schema_version": 2
+  "schema_version": 3
 }

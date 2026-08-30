@@ -21,7 +21,12 @@
   },
   "figure": {
     "config": {
+      "displayModeBar": true,
       "displaylogo": false,
+      "modeBarButtonsToRemove": [
+        "select2d",
+        "lasso2d"
+      ],
       "responsive": true,
       "scrollZoom": true
     },
@@ -3935,6 +3940,49 @@
         ]
       },
       {
+        "customdata": [
+          "file:compose.yaml",
+          "file:docker/postgres-init.sql",
+          "file:examples/share-link-expiration/schema.sql",
+          "file:examples/workspace-export-authorization/handler.py",
+          "file:notebooks/walkthrough_helpers.py",
+          "file:pyproject.toml",
+          "file:scripts/export_demo_runs.py",
+          "file:src/implicit_decision_gate/__init__.py",
+          "file:src/implicit_decision_gate/agent.py",
+          "file:src/implicit_decision_gate/api_probe.py",
+          "file:src/implicit_decision_gate/cli.py",
+          "file:src/implicit_decision_gate/codex_client.py",
+          "file:src/implicit_decision_gate/gate.py",
+          "file:src/implicit_decision_gate/orchestrator.py",
+          "file:src/implicit_decision_gate/policy.py",
+          "file:src/implicit_decision_gate/postgres_surface.py",
+          "file:src/implicit_decision_gate/probe.py",
+          "file:src/implicit_decision_gate/scenario.py",
+          "file:src/implicit_decision_gate/scenarios.py",
+          "file:src/implicit_decision_gate/web_export.py",
+          "file:src/implicit_decision_gate/worktree.py",
+          "file:tests/__init__.py",
+          "file:tests/conftest.py",
+          "file:tests/test_api_probe.py",
+          "file:tests/test_cli.py",
+          "file:tests/test_codex_client.py",
+          "file:tests/test_context.py",
+          "file:tests/test_evaluation.py",
+          "file:tests/test_live.py",
+          "file:tests/test_orchestrator.py",
+          "file:tests/test_policy.py",
+          "file:tests/test_postgres_surface.py",
+          "file:tests/test_presentation.py",
+          "file:tests/test_probe.py",
+          "file:tests/test_reviewer.py",
+          "file:tests/test_web_export.py",
+          "file:web/public/app.js",
+          "file:web/public/demo-runs.json",
+          "file:web/public/index.html",
+          "file:web/public/styles.css",
+          "file:web/vercel.json"
+        ],
         "hovertemplate": "%{hovertext}<extra></extra>",
         "hovertext": [
           "<b>compose</b><br>compose.yaml:1<br>kind: file<br>",
@@ -4025,8 +4073,8 @@
             "#64748b"
           ],
           "line": {
-            "color": "#e2e8f0",
-            "width": 0.75
+            "color": "#f8fafc",
+            "width": 1.25
           },
           "size": [
             15.0,
@@ -4118,7 +4166,7 @@
           "web/vercel.json"
         ],
         "textfont": {
-          "color": "#e2e8f0",
+          "color": "#1e293b",
           "size": 10
         },
         "textposition": "top center",
@@ -4214,22 +4262,44 @@
     "layout": {
       "dragmode": "pan",
       "font": {
-        "color": "#e2e8f0"
+        "color": "#1e293b"
       },
       "height": 720,
+      "hoverlabel": {
+        "bgcolor": "#ffffff",
+        "bordercolor": "#cbd5e1",
+        "font": {
+          "color": "#0f172a"
+        }
+      },
       "hovermode": "closest",
       "legend": {
-        "bgcolor": "rgba(15,23,42,0.75)",
-        "orientation": "h"
+        "bgcolor": "rgba(255,255,255,0.88)",
+        "bordercolor": "rgba(203,213,225,0.9)",
+        "borderwidth": 1,
+        "font": {
+          "color": "#334155",
+          "size": 11
+        },
+        "orientation": "h",
+        "x": 0.0,
+        "xanchor": "left",
+        "y": 1.02,
+        "yanchor": "bottom"
       },
       "margin": {
         "b": 20,
         "l": 20,
         "r": 20,
-        "t": 60
+        "t": 96
       },
-      "paper_bgcolor": "#0f172a",
-      "plot_bgcolor": "#0f172a",
+      "modebar": {
+        "activecolor": "#0f172a",
+        "bgcolor": "rgba(255,255,255,0.88)",
+        "color": "#64748b"
+      },
+      "paper_bgcolor": "rgba(0,0,0,0)",
+      "plot_bgcolor": "rgba(0,0,0,0)",
       "template": {
         "data": {
           "bar": [
@@ -5006,10 +5076,6 @@
           }
         }
       },
-      "title": {
-        "text": "Repository file relationships",
-        "x": 0.02
-      },
       "uirevision": "Repository file relationships",
       "xaxis": {
         "showgrid": false,
@@ -5025,6 +5091,3134 @@
     "plotly_js_version": "3.7.0"
   },
   "id": "implicit-decision-gate",
+  "inspection": {
+    "edges": [
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:examples/workspace-export-authorization/handler.py",
+        "strength": 0.07222950046378274,
+        "target_id": "file:src/implicit_decision_gate/agent.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:examples/workspace-export-authorization/handler.py",
+        "strength": 0.2407650015459426,
+        "target_id": "file:src/implicit_decision_gate/api_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:examples/workspace-export-authorization/handler.py",
+        "strength": 0.07222950046378274,
+        "target_id": "file:src/implicit_decision_gate/cli.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:examples/workspace-export-authorization/handler.py",
+        "strength": 0.0656631822398025,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:examples/workspace-export-authorization/handler.py",
+        "strength": 0.0656631822398025,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:examples/workspace-export-authorization/handler.py",
+        "strength": 0.1203825007729713,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:examples/workspace-export-authorization/handler.py",
+        "strength": 0.18057375115945695,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:examples/workspace-export-authorization/handler.py",
+        "strength": 0.2407650015459426,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:examples/workspace-export-authorization/handler.py",
+        "strength": 0.10318500066254677,
+        "target_id": "file:tests/conftest.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:examples/workspace-export-authorization/handler.py",
+        "strength": 0.2407650015459426,
+        "target_id": "file:tests/test_api_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:examples/workspace-export-authorization/handler.py",
+        "strength": 0.06019125038648565,
+        "target_id": "file:tests/test_cli.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:examples/workspace-export-authorization/handler.py",
+        "strength": 0.10318500066254677,
+        "target_id": "file:tests/test_context.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:examples/workspace-export-authorization/handler.py",
+        "strength": 0.2407650015459426,
+        "target_id": "file:tests/test_evaluation.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:examples/workspace-export-authorization/handler.py",
+        "strength": 0.07222950046378274,
+        "target_id": "file:tests/test_live.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:examples/workspace-export-authorization/handler.py",
+        "strength": 0.0656631822398025,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:examples/workspace-export-authorization/handler.py",
+        "strength": 0.1203825007729713,
+        "target_id": "file:tests/test_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:examples/workspace-export-authorization/handler.py",
+        "strength": 0.14445900092756558,
+        "target_id": "file:tests/test_reviewer.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:notebooks/walkthrough_helpers.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/api_probe.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:notebooks/walkthrough_helpers.py",
+        "strength": 0.7945627235459254,
+        "target_id": "file:src/implicit_decision_gate/api_probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:notebooks/walkthrough_helpers.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:notebooks/walkthrough_helpers.py",
+        "strength": 0.546748109265858,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "file:notebooks/walkthrough_helpers.py",
+        "strength": 0.39030899869919433,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:notebooks/walkthrough_helpers.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:notebooks/walkthrough_helpers.py",
+        "strength": 0.546748109265858,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "file:notebooks/walkthrough_helpers.py",
+        "strength": 0.8860204436047695,
+        "target_id": "file:src/implicit_decision_gate/postgres_surface.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:notebooks/walkthrough_helpers.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/postgres_surface.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:notebooks/walkthrough_helpers.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:notebooks/walkthrough_helpers.py",
+        "strength": 0.7945627235459254,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:notebooks/walkthrough_helpers.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "file:notebooks/walkthrough_helpers.py",
+        "strength": 0.6179892479403911,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:notebooks/walkthrough_helpers.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:pyproject.toml",
+        "strength": 0.18057375115945695,
+        "target_id": "file:src/implicit_decision_gate/__init__.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:pyproject.toml",
+        "strength": 0.13055450000236823,
+        "target_id": "file:src/implicit_decision_gate/agent.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:pyproject.toml",
+        "strength": 0.13055450000236823,
+        "target_id": "file:src/implicit_decision_gate/cli.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:pyproject.toml",
+        "strength": 0.10318500066254677,
+        "target_id": "file:src/implicit_decision_gate/codex_client.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:pyproject.toml",
+        "strength": 0.11967495833550423,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:pyproject.toml",
+        "strength": 0.11967495833550423,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:pyproject.toml",
+        "strength": 0.18057375115945695,
+        "target_id": "file:src/implicit_decision_gate/worktree.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:pyproject.toml",
+        "strength": 0.0802550005153142,
+        "target_id": "file:tests/conftest.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:pyproject.toml",
+        "strength": 0.11046919230969621,
+        "target_id": "file:tests/test_cli.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:pyproject.toml",
+        "strength": 0.10318500066254677,
+        "target_id": "file:tests/test_codex_client.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:pyproject.toml",
+        "strength": 0.1795124375032563,
+        "target_id": "file:tests/test_context.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:pyproject.toml",
+        "strength": 0.13055450000236823,
+        "target_id": "file:tests/test_live.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:pyproject.toml",
+        "strength": 0.11967495833550423,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:pyproject.toml",
+        "strength": 0.23934991667100836,
+        "target_id": "file:tests/test_reviewer.py"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "file:scripts/export_demo_runs.py",
+        "strength": 0.854067785310852,
+        "target_id": "file:src/implicit_decision_gate/web_export.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:scripts/export_demo_runs.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/web_export.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/__init__.py",
+        "strength": 0.07222950046378274,
+        "target_id": "file:src/implicit_decision_gate/agent.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/__init__.py",
+        "strength": 0.07222950046378274,
+        "target_id": "file:src/implicit_decision_gate/cli.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/__init__.py",
+        "strength": 0.0656631822398025,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/__init__.py",
+        "strength": 0.0656631822398025,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/__init__.py",
+        "strength": 0.3611475023189139,
+        "target_id": "file:src/implicit_decision_gate/worktree.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/__init__.py",
+        "strength": 0.10318500066254677,
+        "target_id": "file:tests/conftest.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/__init__.py",
+        "strength": 0.06019125038648565,
+        "target_id": "file:tests/test_cli.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/__init__.py",
+        "strength": 0.10318500066254677,
+        "target_id": "file:tests/test_context.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/__init__.py",
+        "strength": 0.07222950046378274,
+        "target_id": "file:tests/test_live.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/__init__.py",
+        "strength": 0.0656631822398025,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/__init__.py",
+        "strength": 0.14445900092756558,
+        "target_id": "file:tests/test_reviewer.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.0656631822398025,
+        "target_id": "file:src/implicit_decision_gate/api_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.48603446178075393,
+        "target_id": "file:src/implicit_decision_gate/cli.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.31182591399027393,
+        "target_id": "file:src/implicit_decision_gate/codex_client.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.4486471954899267,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.4486471954899267,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.11046919230969621,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.6179892479403911,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.06019125038648565,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.0656631822398025,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.07222950046378274,
+        "target_id": "file:src/implicit_decision_gate/worktree.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.36460279973800325,
+        "target_id": "file:tests/conftest.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.0656631822398025,
+        "target_id": "file:tests/test_api_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.5196821661975614,
+        "target_id": "file:tests/test_cli.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.31182591399027393,
+        "target_id": "file:tests/test_codex_client.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.491689974822451,
+        "target_id": "file:tests/test_context.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.0656631822398025,
+        "target_id": "file:tests/test_evaluation.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.3782230575557315,
+        "target_id": "file:tests/test_live.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.4486471954899267,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.11046919230969621,
+        "target_id": "file:tests/test_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.31182591399027393,
+        "target_id": "file:tests/test_reviewer.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/api_probe.py",
+        "strength": 0.0656631822398025,
+        "target_id": "file:src/implicit_decision_gate/cli.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/api_probe.py",
+        "strength": 0.06019125038648565,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/api_probe.py",
+        "strength": 0.06019125038648565,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "file:src/implicit_decision_gate/api_probe.py",
+        "strength": 0.6179892479403911,
+        "target_id": "file:src/implicit_decision_gate/policy.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/api_probe.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/policy.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/api_probe.py",
+        "strength": 0.10318500066254677,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/api_probe.py",
+        "strength": 0.14445900092756558,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/api_probe.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:src/implicit_decision_gate/api_probe.py",
+        "strength": 0.9910684444923332,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/api_probe.py",
+        "strength": 0.18057375115945695,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/api_probe.py",
+        "strength": 0.09028687557972848,
+        "target_id": "file:tests/conftest.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/api_probe.py",
+        "strength": 0.18057375115945695,
+        "target_id": "file:tests/test_api_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/api_probe.py",
+        "strength": 0.05556115420290986,
+        "target_id": "file:tests/test_cli.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/api_probe.py",
+        "strength": 0.09028687557972848,
+        "target_id": "file:tests/test_context.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/api_probe.py",
+        "strength": 0.18057375115945695,
+        "target_id": "file:tests/test_evaluation.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/api_probe.py",
+        "strength": 0.0656631822398025,
+        "target_id": "file:tests/test_live.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/api_probe.py",
+        "strength": 0.06019125038648565,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/api_probe.py",
+        "strength": 0.10318500066254677,
+        "target_id": "file:tests/test_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/api_probe.py",
+        "strength": 0.1203825007729713,
+        "target_id": "file:tests/test_reviewer.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/api_probe.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.7945627235459254,
+        "target_id": "file:src/implicit_decision_gate/api_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.20468639526638666,
+        "target_id": "file:src/implicit_decision_gate/codex_client.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/codex_client.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.546748109265858,
+        "target_id": "file:src/implicit_decision_gate/codex_client.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.3512071248731793,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.546748109265858,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.9157540706307624,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.3512071248731793,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.7945627235459254,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.18762919566085445,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.7945627235459254,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.06019125038648565,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.854067785310852,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.0656631822398025,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.07222950046378274,
+        "target_id": "file:src/implicit_decision_gate/worktree.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/worktree.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.2598549283252284,
+        "target_id": "file:tests/conftest.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.0656631822398025,
+        "target_id": "file:tests/test_api_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.4166009672406463,
+        "target_id": "file:tests/test_cli.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.20468639526638666,
+        "target_id": "file:tests/test_codex_client.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.2598549283252284,
+        "target_id": "file:tests/test_context.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.0656631822398025,
+        "target_id": "file:tests/test_evaluation.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.3782230575557315,
+        "target_id": "file:tests/test_live.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.26737538647453585,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.18762919566085445,
+        "target_id": "file:tests/test_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.31182591399027393,
+        "target_id": "file:tests/test_reviewer.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/codex_client.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/agent.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:src/implicit_decision_gate/codex_client.py",
+        "strength": 0.9938457107484912,
+        "target_id": "file:src/implicit_decision_gate/agent.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/codex_client.py",
+        "strength": 0.2834781036275218,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/codex_client.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:src/implicit_decision_gate/codex_client.py",
+        "strength": 0.546748109265858,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/codex_client.py",
+        "strength": 0.2834781036275218,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/codex_client.py",
+        "strength": 0.1595666111140056,
+        "target_id": "file:tests/conftest.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/codex_client.py",
+        "strength": 0.2598549283252284,
+        "target_id": "file:tests/test_cli.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/codex_client.py",
+        "strength": 0.623651827980548,
+        "target_id": "file:tests/test_codex_client.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/codex_client.py",
+        "strength": 0.2814437934912817,
+        "target_id": "file:tests/test_context.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/codex_client.py",
+        "strength": 0.31182591399027393,
+        "target_id": "file:tests/test_live.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/codex_client.py",
+        "strength": 0.2834781036275218,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/codex_client.py",
+        "strength": 0.2051570714322929,
+        "target_id": "file:tests/test_reviewer.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/gate.py",
+        "strength": 0.5196821661975614,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/gate.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/policy.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/gate.py",
+        "strength": 0.10257853571614639,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "file:src/implicit_decision_gate/gate.py",
+        "strength": 0.9787037887159205,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/gate.py",
+        "strength": 0.05556115420290986,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/gate.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/gate.py",
+        "strength": 0.06019125038648565,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/gate.py",
+        "strength": 0.0656631822398025,
+        "target_id": "file:src/implicit_decision_gate/worktree.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/gate.py",
+        "strength": 0.2398660876848262,
+        "target_id": "file:tests/conftest.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/gate.py",
+        "strength": 0.06019125038648565,
+        "target_id": "file:tests/test_api_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/gate.py",
+        "strength": 0.4825620114691642,
+        "target_id": "file:tests/test_cli.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/gate.py",
+        "strength": 0.2834781036275218,
+        "target_id": "file:tests/test_codex_client.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/gate.py",
+        "strength": 0.3342192330931697,
+        "target_id": "file:tests/test_context.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/gate.py",
+        "strength": 0.13055450000236823,
+        "target_id": "file:tests/test_evaluation.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/gate.py",
+        "strength": 0.3512071248731793,
+        "target_id": "file:tests/test_live.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/gate.py",
+        "strength": 0.5196821661975614,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/gate.py",
+        "strength": 0.10257853571614639,
+        "target_id": "file:tests/test_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/gate.py",
+        "strength": 0.2834781036275218,
+        "target_id": "file:tests/test_reviewer.py"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.854067785310852,
+        "target_id": "file:src/implicit_decision_gate/agent.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/agent.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.546748109265858,
+        "target_id": "file:src/implicit_decision_gate/agent.py"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.9999862402180361,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.9999998479379707,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.854067785310852,
+        "target_id": "file:src/implicit_decision_gate/policy.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/policy.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.10257853571614639,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.9918646183113484,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.05556115420290986,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.06019125038648565,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.6282768829328209,
+        "target_id": "file:src/implicit_decision_gate/worktree.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.0656631822398025,
+        "target_id": "file:src/implicit_decision_gate/worktree.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/worktree.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.546748109265858,
+        "target_id": "file:src/implicit_decision_gate/worktree.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.3342192330931697,
+        "target_id": "file:tests/conftest.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.06019125038648565,
+        "target_id": "file:tests/test_api_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.3888275694246033,
+        "target_id": "file:tests/test_cli.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.2834781036275218,
+        "target_id": "file:tests/test_codex_client.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.3342192330931697,
+        "target_id": "file:tests/test_context.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.13055450000236823,
+        "target_id": "file:tests/test_evaluation.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.3512071248731793,
+        "target_id": "file:tests/test_live.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.5196821661975614,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.10257853571614639,
+        "target_id": "file:tests/test_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.2834781036275218,
+        "target_id": "file:tests/test_reviewer.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/policy.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/postgres_surface.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/policy.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:src/implicit_decision_gate/policy.py",
+        "strength": 0.9333405392120114,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/postgres_surface.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:src/implicit_decision_gate/postgres_surface.py",
+        "strength": 0.546748109265858,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "file:src/implicit_decision_gate/probe.py",
+        "strength": 0.6179892479403911,
+        "target_id": "file:src/implicit_decision_gate/policy.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/probe.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/policy.py"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "file:src/implicit_decision_gate/probe.py",
+        "strength": 0.9564585839420374,
+        "target_id": "file:src/implicit_decision_gate/postgres_surface.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/probe.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/postgres_surface.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/probe.py",
+        "strength": 0.2051570714322929,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/probe.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:src/implicit_decision_gate/probe.py",
+        "strength": 0.9937930153755247,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/probe.py",
+        "strength": 0.10318500066254677,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/probe.py",
+        "strength": 0.143609950002605,
+        "target_id": "file:tests/conftest.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/probe.py",
+        "strength": 0.10318500066254677,
+        "target_id": "file:tests/test_api_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/probe.py",
+        "strength": 0.160825024852161,
+        "target_id": "file:tests/test_cli.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/probe.py",
+        "strength": 0.143609950002605,
+        "target_id": "file:tests/test_context.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/probe.py",
+        "strength": 0.10318500066254677,
+        "target_id": "file:tests/test_evaluation.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/probe.py",
+        "strength": 0.18762919566085445,
+        "target_id": "file:tests/test_live.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/probe.py",
+        "strength": 0.10257853571614639,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/probe.py",
+        "strength": 0.445465591414677,
+        "target_id": "file:tests/test_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/probe.py",
+        "strength": 0.1795124375032563,
+        "target_id": "file:tests/test_reviewer.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/scenario.py",
+        "strength": 0.14445900092756558,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/scenario.py",
+        "strength": 0.0802550005153142,
+        "target_id": "file:tests/conftest.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/scenario.py",
+        "strength": 0.14445900092756558,
+        "target_id": "file:tests/test_api_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/scenario.py",
+        "strength": 0.05159250033127338,
+        "target_id": "file:tests/test_cli.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/scenario.py",
+        "strength": 0.0802550005153142,
+        "target_id": "file:tests/test_context.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/scenario.py",
+        "strength": 0.14445900092756558,
+        "target_id": "file:tests/test_evaluation.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/scenario.py",
+        "strength": 0.06019125038648565,
+        "target_id": "file:tests/test_live.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/scenario.py",
+        "strength": 0.05556115420290986,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/scenario.py",
+        "strength": 0.2051570714322929,
+        "target_id": "file:tests/test_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/scenario.py",
+        "strength": 0.10318500066254677,
+        "target_id": "file:tests/test_reviewer.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/scenarios.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/api_probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/scenarios.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/policy.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:src/implicit_decision_gate/scenarios.py",
+        "strength": 0.546748109265858,
+        "target_id": "file:src/implicit_decision_gate/policy.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/scenarios.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/scenarios.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:src/implicit_decision_gate/scenarios.py",
+        "strength": 0.9955846896514621,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/scenarios.py",
+        "strength": 0.09028687557972848,
+        "target_id": "file:tests/conftest.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/scenarios.py",
+        "strength": 0.18057375115945695,
+        "target_id": "file:tests/test_api_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/scenarios.py",
+        "strength": 0.05556115420290986,
+        "target_id": "file:tests/test_cli.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/scenarios.py",
+        "strength": 0.09028687557972848,
+        "target_id": "file:tests/test_context.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/scenarios.py",
+        "strength": 0.18057375115945695,
+        "target_id": "file:tests/test_evaluation.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/scenarios.py",
+        "strength": 0.0656631822398025,
+        "target_id": "file:tests/test_live.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/scenarios.py",
+        "strength": 0.06019125038648565,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/scenarios.py",
+        "strength": 0.10318500066254677,
+        "target_id": "file:tests/test_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/scenarios.py",
+        "strength": 0.1203825007729713,
+        "target_id": "file:tests/test_reviewer.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/web_export.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/web_export.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/worktree.py",
+        "strength": 0.10318500066254677,
+        "target_id": "file:tests/conftest.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/worktree.py",
+        "strength": 0.06019125038648565,
+        "target_id": "file:tests/test_cli.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/worktree.py",
+        "strength": 0.10318500066254677,
+        "target_id": "file:tests/test_context.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/worktree.py",
+        "strength": 0.07222950046378274,
+        "target_id": "file:tests/test_live.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/worktree.py",
+        "strength": 0.0656631822398025,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/worktree.py",
+        "strength": 0.14445900092756558,
+        "target_id": "file:tests/test_reviewer.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/conftest.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/agent.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:tests/conftest.py",
+        "strength": 0.7945627235459254,
+        "target_id": "file:src/implicit_decision_gate/agent.py"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "file:tests/conftest.py",
+        "strength": 0.6179892479403911,
+        "target_id": "file:src/implicit_decision_gate/api_probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/conftest.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/api_probe.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:tests/conftest.py",
+        "strength": 0.9118459351675083,
+        "target_id": "file:src/implicit_decision_gate/api_probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/conftest.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:tests/conftest.py",
+        "strength": 0.7945627235459254,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "file:tests/conftest.py",
+        "strength": 0.6179892479403911,
+        "target_id": "file:src/implicit_decision_gate/policy.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/conftest.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/policy.py"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "file:tests/conftest.py",
+        "strength": 0.6179892479403911,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/conftest.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:tests/conftest.py",
+        "strength": 0.546748109265858,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/conftest.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:tests/conftest.py",
+        "strength": 0.7945627235459254,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "file:tests/conftest.py",
+        "strength": 0.6179892479403911,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/conftest.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/conftest.py",
+        "strength": 0.09028687557972848,
+        "target_id": "file:tests/test_api_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/conftest.py",
+        "strength": 0.2227327957073385,
+        "target_id": "file:tests/test_cli.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/conftest.py",
+        "strength": 0.1595666111140056,
+        "target_id": "file:tests/test_codex_client.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/conftest.py",
+        "strength": 0.34647323776697125,
+        "target_id": "file:tests/test_context.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/conftest.py",
+        "strength": 0.09028687557972848,
+        "target_id": "file:tests/test_evaluation.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/conftest.py",
+        "strength": 0.2598549283252284,
+        "target_id": "file:tests/test_live.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/conftest.py",
+        "strength": 0.2398660876848262,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/conftest.py",
+        "strength": 0.143609950002605,
+        "target_id": "file:tests/test_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/conftest.py",
+        "strength": 0.2814437934912817,
+        "target_id": "file:tests/test_reviewer.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_api_probe.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/api_probe.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:tests/test_api_probe.py",
+        "strength": 0.9739403833016536,
+        "target_id": "file:src/implicit_decision_gate/api_probe.py"
+      },
+      {
+        "kind": "TESTS",
+        "source_id": "file:tests/test_api_probe.py",
+        "strength": 0.5599418209209461,
+        "target_id": "file:src/implicit_decision_gate/api_probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_api_probe.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_api_probe.py",
+        "strength": 0.05556115420290986,
+        "target_id": "file:tests/test_cli.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_api_probe.py",
+        "strength": 0.09028687557972848,
+        "target_id": "file:tests/test_context.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_api_probe.py",
+        "strength": 0.18057375115945695,
+        "target_id": "file:tests/test_evaluation.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_api_probe.py",
+        "strength": 0.0656631822398025,
+        "target_id": "file:tests/test_live.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_api_probe.py",
+        "strength": 0.06019125038648565,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_api_probe.py",
+        "strength": 0.10318500066254677,
+        "target_id": "file:tests/test_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_api_probe.py",
+        "strength": 0.1203825007729713,
+        "target_id": "file:tests/test_reviewer.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_cli.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/api_probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_cli.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/cli.py"
+      },
+      {
+        "kind": "TESTS",
+        "source_id": "file:tests/test_cli.py",
+        "strength": 0.9912924958454707,
+        "target_id": "file:src/implicit_decision_gate/cli.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_cli.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:tests/test_cli.py",
+        "strength": 0.7945627235459254,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_cli.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_cli.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_cli.py",
+        "strength": 0.65,
+        "target_id": "file:tests/conftest.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:tests/test_cli.py",
+        "strength": 0.7945627235459254,
+        "target_id": "file:tests/conftest.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_cli.py",
+        "strength": 0.2598549283252284,
+        "target_id": "file:tests/test_codex_client.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_cli.py",
+        "strength": 0.40974164568537574,
+        "target_id": "file:tests/test_context.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_cli.py",
+        "strength": 0.11967495833550423,
+        "target_id": "file:tests/test_evaluation.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_cli.py",
+        "strength": 0.4166009672406463,
+        "target_id": "file:tests/test_live.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_cli.py",
+        "strength": 0.4825620114691642,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_cli.py",
+        "strength": 0.160825024852161,
+        "target_id": "file:tests/test_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_cli.py",
+        "strength": 0.2598549283252284,
+        "target_id": "file:tests/test_reviewer.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_codex_client.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/agent.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_codex_client.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/codex_client.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:tests/test_codex_client.py",
+        "strength": 0.9913296276928618,
+        "target_id": "file:src/implicit_decision_gate/codex_client.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_codex_client.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_codex_client.py",
+        "strength": 0.2814437934912817,
+        "target_id": "file:tests/test_context.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_codex_client.py",
+        "strength": 0.31182591399027393,
+        "target_id": "file:tests/test_live.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_codex_client.py",
+        "strength": 0.2834781036275218,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_codex_client.py",
+        "strength": 0.2051570714322929,
+        "target_id": "file:tests/test_reviewer.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_context.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/agent.py"
+      },
+      {
+        "kind": "TESTS",
+        "source_id": "file:tests/test_context.py",
+        "strength": 0.9834974716776319,
+        "target_id": "file:src/implicit_decision_gate/agent.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_context.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/api_probe.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:tests/test_context.py",
+        "strength": 0.546748109265858,
+        "target_id": "file:src/implicit_decision_gate/api_probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_context.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:tests/test_context.py",
+        "strength": 0.546748109265858,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_context.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "file:tests/test_context.py",
+        "strength": 0.6179892479403911,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_context.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_context.py",
+        "strength": 0.09028687557972848,
+        "target_id": "file:tests/test_evaluation.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_context.py",
+        "strength": 0.36460279973800325,
+        "target_id": "file:tests/test_live.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_context.py",
+        "strength": 0.44699088620222804,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_context.py",
+        "strength": 0.143609950002605,
+        "target_id": "file:tests/test_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_context.py",
+        "strength": 0.445465591414677,
+        "target_id": "file:tests/test_reviewer.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_evaluation.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/api_probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_evaluation.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:tests/test_evaluation.py",
+        "strength": 0.546748109265858,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_evaluation.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:tests/test_evaluation.py",
+        "strength": 0.546748109265858,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "TESTS",
+        "source_id": "file:tests/test_evaluation.py",
+        "strength": 0.7299722686703821,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_evaluation.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_evaluation.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "file:tests/test_evaluation.py",
+        "strength": 0.6179892479403911,
+        "target_id": "file:tests/conftest.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_evaluation.py",
+        "strength": 0.65,
+        "target_id": "file:tests/conftest.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:tests/test_evaluation.py",
+        "strength": 0.9068851660199181,
+        "target_id": "file:tests/conftest.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_evaluation.py",
+        "strength": 0.0656631822398025,
+        "target_id": "file:tests/test_live.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_evaluation.py",
+        "strength": 0.13055450000236823,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_evaluation.py",
+        "strength": 0.10318500066254677,
+        "target_id": "file:tests/test_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_evaluation.py",
+        "strength": 0.1203825007729713,
+        "target_id": "file:tests/test_reviewer.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/agent.py"
+      },
+      {
+        "kind": "TESTS",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.5599418209209461,
+        "target_id": "file:src/implicit_decision_gate/agent.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/api_probe.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.546748109265858,
+        "target_id": "file:src/implicit_decision_gate/api_probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/codex_client.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.866012184885897,
+        "target_id": "file:src/implicit_decision_gate/codex_client.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.665996218531716,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "TESTS",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.7299722686703821,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.7945627235459254,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.6179892479403911,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.65,
+        "target_id": "file:tests/conftest.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.3512071248731793,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.854067785310852,
+        "target_id": "file:tests/test_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.18762919566085445,
+        "target_id": "file:tests/test_probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.65,
+        "target_id": "file:tests/test_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.31182591399027393,
+        "target_id": "file:tests/test_reviewer.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/api_probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.9913296276928618,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "TESTS",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.9606641046469402,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.9998596678011457,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "TESTS",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.9999990637279,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.9577955254431322,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "TESTS",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.9968042655712598,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.9950371687128933,
+        "target_id": "file:tests/conftest.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.65,
+        "target_id": "file:tests/conftest.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 1.0,
+        "target_id": "file:tests/conftest.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.10257853571614639,
+        "target_id": "file:tests/test_probe.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.2834781036275218,
+        "target_id": "file:tests/test_reviewer.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_policy.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/policy.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:tests/test_policy.py",
+        "strength": 0.7945627235459254,
+        "target_id": "file:src/implicit_decision_gate/policy.py"
+      },
+      {
+        "kind": "TESTS",
+        "source_id": "file:tests/test_policy.py",
+        "strength": 0.9834974716776319,
+        "target_id": "file:src/implicit_decision_gate/policy.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_policy.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:tests/test_policy.py",
+        "strength": 0.9954260392985183,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "file:tests/test_postgres_surface.py",
+        "strength": 0.8860204436047695,
+        "target_id": "file:src/implicit_decision_gate/postgres_surface.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_postgres_surface.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/postgres_surface.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:tests/test_postgres_surface.py",
+        "strength": 0.7043855351665936,
+        "target_id": "file:src/implicit_decision_gate/postgres_surface.py"
+      },
+      {
+        "kind": "TESTS",
+        "source_id": "file:tests/test_postgres_surface.py",
+        "strength": 0.5599418209209461,
+        "target_id": "file:src/implicit_decision_gate/postgres_surface.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_postgres_surface.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_postgres_surface.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "file:tests/test_postgres_surface.py",
+        "strength": 0.854067785310852,
+        "target_id": "file:tests/test_probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_postgres_surface.py",
+        "strength": 0.65,
+        "target_id": "file:tests/test_probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_probe.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:tests/test_probe.py",
+        "strength": 0.7945627235459254,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "TESTS",
+        "source_id": "file:tests/test_probe.py",
+        "strength": 0.5599418209209461,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_probe.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_probe.py",
+        "strength": 0.65,
+        "target_id": "file:tests/conftest.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_probe.py",
+        "strength": 0.1795124375032563,
+        "target_id": "file:tests/test_reviewer.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_reviewer.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/agent.py"
+      },
+      {
+        "kind": "TESTS",
+        "source_id": "file:tests/test_reviewer.py",
+        "strength": 0.5599418209209461,
+        "target_id": "file:src/implicit_decision_gate/agent.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_reviewer.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/api_probe.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:tests/test_reviewer.py",
+        "strength": 0.546748109265858,
+        "target_id": "file:src/implicit_decision_gate/api_probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_reviewer.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:tests/test_reviewer.py",
+        "strength": 0.616503781468284,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "TESTS",
+        "source_id": "file:tests/test_reviewer.py",
+        "strength": 0.9324754101087179,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_reviewer.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:tests/test_reviewer.py",
+        "strength": 0.546748109265858,
+        "target_id": "file:src/implicit_decision_gate/probe.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_reviewer.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "file:tests/test_reviewer.py",
+        "strength": 0.6179892479403911,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_reviewer.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_reviewer.py",
+        "strength": 0.65,
+        "target_id": "file:tests/conftest.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_web_export.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_web_export.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "file:tests/test_web_export.py",
+        "strength": 0.546748109265858,
+        "target_id": "file:src/implicit_decision_gate/scenario.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_web_export.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "TESTS",
+        "source_id": "file:tests/test_web_export.py",
+        "strength": 0.5599418209209461,
+        "target_id": "file:src/implicit_decision_gate/scenarios.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_web_export.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/web_export.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:web/public/app.js",
+        "strength": 0.5124888964466754,
+        "target_id": "file:web/public/index.html"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:web/public/app.js",
+        "strength": 0.6384135986069336,
+        "target_id": "file:web/public/styles.css"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:web/public/index.html",
+        "strength": 0.5751526411339721,
+        "target_id": "file:web/public/styles.css"
+      }
+    ],
+    "nodes": [
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "",
+        "end_line": 18,
+        "group": "file",
+        "id": "file:compose.yaml",
+        "kind": "file",
+        "label": "compose.yaml",
+        "path": "compose.yaml",
+        "qualified_name": "compose",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 15.0,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "",
+        "end_line": 2,
+        "group": "file",
+        "id": "file:docker/postgres-init.sql",
+        "kind": "file",
+        "label": "docker/postgres-init.sql",
+        "path": "docker/postgres-init.sql",
+        "qualified_name": "docker.postgres-init",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 15.0,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "",
+        "end_line": 7,
+        "group": "file",
+        "id": "file:examples/share-link-expiration/schema.sql",
+        "kind": "file",
+        "label": "examples/share-link-expiration/schema.sql",
+        "path": "examples/share-link-expiration/schema.sql",
+        "qualified_name": "examples.share-link-expiration.schema",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 15.0,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "Baseline contract for workspace export creation.",
+        "end_line": 6,
+        "group": "file",
+        "id": "file:examples/workspace-export-authorization/handler.py",
+        "kind": "file",
+        "label": "examples/workspace-export-authorization/handler.py",
+        "path": "examples/workspace-export-authorization/handler.py",
+        "qualified_name": "examples.workspace-export-authorization.handler",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 22.22592939474041,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "Execution and display helpers for the guided notebook.",
+        "end_line": 595,
+        "group": "file",
+        "id": "file:notebooks/walkthrough_helpers.py",
+        "kind": "file",
+        "label": "notebooks/walkthrough_helpers.py",
+        "path": "notebooks/walkthrough_helpers.py",
+        "qualified_name": "notebooks.walkthrough_helpers",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 21.770125502755526,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "",
+        "end_line": 46,
+        "group": "file",
+        "id": "file:pyproject.toml",
+        "kind": "file",
+        "label": "pyproject.toml",
+        "path": "pyproject.toml",
+        "qualified_name": "pyproject",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 21.770125502755526,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "Export persisted gate runs for presentation clients.",
+        "end_line": 27,
+        "group": "file",
+        "id": "file:scripts/export_demo_runs.py",
+        "kind": "file",
+        "label": "scripts/export_demo_runs.py",
+        "path": "scripts/export_demo_runs.py",
+        "qualified_name": "scripts.export_demo_runs",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 17.746530721670275,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "Implicit Decision Gate.",
+        "end_line": 1,
+        "group": "file",
+        "id": "file:src/implicit_decision_gate/__init__.py",
+        "kind": "file",
+        "label": "src/implicit_decision_gate/__init__.py",
+        "path": "src/implicit_decision_gate/__init__.py",
+        "qualified_name": "implicit_decision_gate",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 21.41237339365384,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "Purpose-specific coding and evidence-review model interfaces.",
+        "end_line": 106,
+        "group": "file",
+        "id": "file:src/implicit_decision_gate/agent.py",
+        "kind": "file",
+        "label": "src/implicit_decision_gate/agent.py",
+        "path": "src/implicit_decision_gate/agent.py",
+        "qualified_name": "implicit_decision_gate.agent",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 24.22219863528484,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "Disposable execution and normalization for the authorization scenario.",
+        "end_line": 302,
+        "group": "file",
+        "id": "file:src/implicit_decision_gate/api_probe.py",
+        "kind": "file",
+        "label": "src/implicit_decision_gate/api_probe.py",
+        "path": "src/implicit_decision_gate/api_probe.py",
+        "qualified_name": "implicit_decision_gate.api_probe",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 24.34417404570842,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "Command-line interface for implicit-decision-gate.",
+        "end_line": 114,
+        "group": "file",
+        "id": "file:src/implicit_decision_gate/cli.py",
+        "kind": "file",
+        "label": "src/implicit_decision_gate/cli.py",
+        "path": "src/implicit_decision_gate/cli.py",
+        "qualified_name": "implicit_decision_gate.cli",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 24.158904115324116,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "Local Codex CLI adapter for one-shot structured model calls.",
+        "end_line": 193,
+        "group": "file",
+        "id": "file:src/implicit_decision_gate/codex_client.py",
+        "kind": "file",
+        "label": "src/implicit_decision_gate/codex_client.py",
+        "path": "src/implicit_decision_gate/codex_client.py",
+        "qualified_name": "implicit_decision_gate.codex_client",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 22.838735539822874,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "Persisted run types and pure gate transitions.",
+        "end_line": 482,
+        "group": "file",
+        "id": "file:src/implicit_decision_gate/gate.py",
+        "kind": "file",
+        "label": "src/implicit_decision_gate/gate.py",
+        "path": "src/implicit_decision_gate/gate.py",
+        "qualified_name": "implicit_decision_gate.gate",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 24.87810929645357,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "Run orchestration across model, worktree, observer, review, and gate components.",
+        "end_line": 540,
+        "group": "file",
+        "id": "file:src/implicit_decision_gate/orchestrator.py",
+        "kind": "file",
+        "label": "src/implicit_decision_gate/orchestrator.py",
+        "path": "src/implicit_decision_gate/orchestrator.py",
+        "qualified_name": "implicit_decision_gate.orchestrator",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 24.87810929645357,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "Pure coverage-manifest and effect-policy evaluation.",
+        "end_line": 205,
+        "group": "file",
+        "id": "file:src/implicit_decision_gate/policy.py",
+        "kind": "file",
+        "label": "src/implicit_decision_gate/policy.py",
+        "path": "src/implicit_decision_gate/policy.py",
+        "qualified_name": "implicit_decision_gate.policy",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 22.22592939474041,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "Normalized PostgreSQL structural effects from one small catalog surface.",
+        "end_line": 212,
+        "group": "file",
+        "id": "file:src/implicit_decision_gate/postgres_surface.py",
+        "kind": "file",
+        "label": "src/implicit_decision_gate/postgres_surface.py",
+        "path": "src/implicit_decision_gate/postgres_surface.py",
+        "qualified_name": "implicit_decision_gate.postgres_surface",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 21.21226662447,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "Disposable PostgreSQL migration execution and behavior normalization.",
+        "end_line": 406,
+        "group": "file",
+        "id": "file:src/implicit_decision_gate/probe.py",
+        "kind": "file",
+        "label": "src/implicit_decision_gate/probe.py",
+        "path": "src/implicit_decision_gate/probe.py",
+        "qualified_name": "implicit_decision_gate.probe",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 24.516656224425798,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "Scenario-neutral policy, decision, and observation types.",
+        "end_line": 297,
+        "group": "file",
+        "id": "file:src/implicit_decision_gate/scenario.py",
+        "kind": "file",
+        "label": "src/implicit_decision_gate/scenario.py",
+        "path": "src/implicit_decision_gate/scenario.py",
+        "qualified_name": "implicit_decision_gate.scenario",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 24.729550745276565,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "The two fixed demonstration scenarios.",
+        "end_line": 288,
+        "group": "file",
+        "id": "file:src/implicit_decision_gate/scenarios.py",
+        "kind": "file",
+        "label": "src/implicit_decision_gate/scenarios.py",
+        "path": "src/implicit_decision_gate/scenarios.py",
+        "qualified_name": "implicit_decision_gate.scenarios",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 24.40300028923391,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "Stable presentation contract for exported gate run snapshots.",
+        "end_line": 106,
+        "group": "file",
+        "id": "file:src/implicit_decision_gate/web_export.py",
+        "kind": "file",
+        "label": "src/implicit_decision_gate/web_export.py",
+        "path": "src/implicit_decision_gate/web_export.py",
+        "qualified_name": "implicit_decision_gate.web_export",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 19.479398673070136,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "Creation of clean detached Git worktrees.",
+        "end_line": 88,
+        "group": "file",
+        "id": "file:src/implicit_decision_gate/worktree.py",
+        "kind": "file",
+        "label": "src/implicit_decision_gate/worktree.py",
+        "path": "src/implicit_decision_gate/worktree.py",
+        "qualified_name": "implicit_decision_gate.worktree",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 22.08303336014054,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "Implicit Decision Gate test suite.",
+        "end_line": 1,
+        "group": "file",
+        "id": "file:tests/__init__.py",
+        "kind": "file",
+        "label": "tests/__init__.py",
+        "path": "tests/__init__.py",
+        "qualified_name": "tests",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 15.0,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "Shared fixtures for isolated repository orchestration tests.",
+        "end_line": 270,
+        "group": "file",
+        "id": "file:tests/conftest.py",
+        "kind": "file",
+        "label": "tests/conftest.py",
+        "path": "tests/conftest.py",
+        "qualified_name": "tests.conftest",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 24.780057513570362,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "Deterministic authorization observer tests.",
+        "end_line": 178,
+        "group": "file",
+        "id": "file:tests/test_api_probe.py",
+        "kind": "file",
+        "label": "tests/test_api_probe.py",
+        "path": "tests/test_api_probe.py",
+        "qualified_name": "tests.test_api_probe",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 22.72760613339579,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "Public CLI contract test.",
+        "end_line": 283,
+        "group": "file",
+        "id": "file:tests/test_cli.py",
+        "kind": "file",
+        "label": "tests/test_cli.py",
+        "path": "tests/test_cli.py",
+        "qualified_name": "tests.test_cli",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 23.66433975699932,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "Local Codex CLI adapter tests.",
+        "end_line": 192,
+        "group": "file",
+        "id": "file:tests/test_codex_client.py",
+        "kind": "file",
+        "label": "tests/test_codex_client.py",
+        "path": "tests/test_codex_client.py",
+        "qualified_name": "tests.test_codex_client",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 22.08303336014054,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "Coding-context isolation tests.",
+        "end_line": 97,
+        "group": "file",
+        "id": "file:tests/test_context.py",
+        "kind": "file",
+        "label": "tests/test_context.py",
+        "path": "tests/test_context.py",
+        "qualified_name": "tests.test_context",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 23.66433975699932,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "Small deterministic adversarial matrix for the shared gate.",
+        "end_line": 167,
+        "group": "file",
+        "id": "file:tests/test_evaluation.py",
+        "kind": "file",
+        "label": "tests/test_evaluation.py",
+        "path": "tests/test_evaluation.py",
+        "qualified_name": "tests.test_evaluation",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 23.418239574966186,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "Opt-in real-model and PostgreSQL end-to-end test.",
+        "end_line": 108,
+        "group": "file",
+        "id": "file:tests/test_live.py",
+        "kind": "file",
+        "label": "tests/test_live.py",
+        "path": "tests/test_live.py",
+        "qualified_name": "tests.test_live",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 24.22219863528484,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "Durable gate behavior across isolated coding attempts.",
+        "end_line": 841,
+        "group": "file",
+        "id": "file:tests/test_orchestrator.py",
+        "kind": "file",
+        "label": "tests/test_orchestrator.py",
+        "path": "tests/test_orchestrator.py",
+        "qualified_name": "tests.test_orchestrator",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 24.093965399315962,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "Effect-policy and coverage-manifest tests.",
+        "end_line": 135,
+        "group": "file",
+        "id": "file:tests/test_policy.py",
+        "kind": "file",
+        "label": "tests/test_policy.py",
+        "path": "tests/test_policy.py",
+        "qualified_name": "tests.test_policy",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 19.479398673070136,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "Tests for the reusable PostgreSQL structural surface.",
+        "end_line": 185,
+        "group": "file",
+        "id": "file:tests/test_postgres_surface.py",
+        "kind": "file",
+        "label": "tests/test_postgres_surface.py",
+        "path": "tests/test_postgres_surface.py",
+        "qualified_name": "tests.test_postgres_surface",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 20.49306144334055,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "",
+        "end_line": 100,
+        "group": "file",
+        "id": "file:tests/test_presentation.py",
+        "kind": "file",
+        "label": "tests/test_presentation.py",
+        "path": "tests/test_presentation.py",
+        "qualified_name": "tests.test_presentation",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 15.0,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "PostgreSQL observation and integration tests.",
+        "end_line": 107,
+        "group": "file",
+        "id": "file:tests/test_probe.py",
+        "kind": "file",
+        "label": "tests/test_probe.py",
+        "path": "tests/test_probe.py",
+        "qualified_name": "tests.test_probe",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 23.239592165010823,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "Evidence-review and quote-validation tests.",
+        "end_line": 107,
+        "group": "file",
+        "id": "file:tests/test_reviewer.py",
+        "kind": "file",
+        "label": "tests/test_reviewer.py",
+        "path": "tests/test_reviewer.py",
+        "qualified_name": "tests.test_reviewer",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 23.958797346140273,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "",
+        "end_line": 48,
+        "group": "file",
+        "id": "file:tests/test_web_export.py",
+        "kind": "file",
+        "label": "tests/test_web_export.py",
+        "path": "tests/test_web_export.py",
+        "qualified_name": "tests.test_web_export",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 19.864775372638285,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "",
+        "end_line": 1663,
+        "group": "file",
+        "id": "file:web/public/app.js",
+        "kind": "file",
+        "label": "web/public/app.js",
+        "path": "web/public/app.js",
+        "qualified_name": "web.public.app",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 17.746530721670275,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "",
+        "end_line": 249,
+        "group": "file",
+        "id": "file:web/public/demo-runs.json",
+        "kind": "file",
+        "label": "web/public/demo-runs.json",
+        "path": "web/public/demo-runs.json",
+        "qualified_name": "web.public.demo-runs",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 15.0,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "",
+        "end_line": 113,
+        "group": "file",
+        "id": "file:web/public/index.html",
+        "kind": "file",
+        "label": "web/public/index.html",
+        "path": "web/public/index.html",
+        "qualified_name": "web.public.index",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 17.746530721670275,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "",
+        "end_line": 2761,
+        "group": "file",
+        "id": "file:web/public/styles.css",
+        "kind": "file",
+        "label": "web/public/styles.css",
+        "path": "web/public/styles.css",
+        "qualified_name": "web.public.styles",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 17.746530721670275,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": null,
+        "docstring": "",
+        "end_line": 24,
+        "group": "file",
+        "id": "file:web/vercel.json",
+        "kind": "file",
+        "label": "web/vercel.json",
+        "path": "web/vercel.json",
+        "qualified_name": "web.vercel",
+        "relationship_strength": null,
+        "signature": "",
+        "size": 15.0,
+        "start_line": 1
+      }
+    ]
+  },
   "name": "implicit-decision-gate",
   "provenance": {
     "branch": "main",
@@ -5044,7 +8238,7 @@
     "shallow": false,
     "tree": "41028d97be0c3352aa25c56e896bceb065f7facc"
   },
-  "schema_version": 2,
+  "schema_version": 3,
   "summary": {
     "edge_count": 1084,
     "issue_count": 0,

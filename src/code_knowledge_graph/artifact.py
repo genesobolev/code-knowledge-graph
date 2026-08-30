@@ -277,6 +277,7 @@ def build_plotly_network(
                     "line": {"color": "#e2e8f0", "width": 0.75},
                     "size": [node.size for node in grouped_nodes],
                 },
+                customdata=[node.id for node in grouped_nodes],
                 hovertext=[node.tooltip for node in grouped_nodes],
                 hovertemplate="%{hovertext}<extra></extra>",
                 name=group,
@@ -313,7 +314,11 @@ def node_tooltip(node: CodeNode) -> str:
     )
 
 
-def repository_overview_figure(knowledge: KnowledgeGraph) -> go.Figure:
+def repository_overview_elements(
+    knowledge: KnowledgeGraph,
+) -> tuple[tuple[VisualizationNode, ...], tuple[VisualizationEdge, ...]]:
+    """Return the file nodes and aggregated edges displayed in the overview."""
+
     file_nodes = {node.id: node for node in knowledge.nodes.values() if node.kind == "file"}
     path_to_file = {node.path: node.id for node in file_nodes.values()}
     aggregated: dict[tuple[str, str, str], float] = {}
@@ -345,7 +350,7 @@ def repository_overview_figure(knowledge: KnowledgeGraph) -> go.Figure:
                 ),
             )
         )
-    overview_nodes = [
+    overview_nodes = tuple(
         VisualizationNode(
             id=node.id,
             label=node.path,
@@ -355,13 +360,26 @@ def repository_overview_figure(knowledge: KnowledgeGraph) -> go.Figure:
             tooltip=node_tooltip(node),
         )
         for node in sorted(file_nodes.values(), key=lambda item: item.id)
-    ]
+    )
+    return overview_nodes, tuple(overview_edges)
+
+
+def repository_overview_figure_from_elements(
+    nodes: Sequence[VisualizationNode],
+    edges: Sequence[VisualizationEdge],
+) -> go.Figure:
+    """Render a repository overview from its canonical visualization elements."""
+
     return build_plotly_network(
-        overview_nodes,
-        overview_edges,
+        nodes,
+        edges,
         title="Repository file relationships",
         height=720,
     )
+
+
+def repository_overview_figure(knowledge: KnowledgeGraph) -> go.Figure:
+    return repository_overview_figure_from_elements(*repository_overview_elements(knowledge))
 
 
 def strongest_edge_between(
@@ -373,7 +391,12 @@ def strongest_edge_between(
     return max(matches, key=lambda edge: edge.strength, default=None)
 
 
-def query_result_figure(knowledge: KnowledgeGraph, result: QueryResult) -> go.Figure:
+def query_result_elements(
+    knowledge: KnowledgeGraph,
+    result: QueryResult,
+) -> tuple[tuple[VisualizationNode, ...], tuple[VisualizationEdge, ...]]:
+    """Return the nodes and strongest edges displayed for one query result."""
+
     selected: set[str] = set(result.anchors)
     related_ids = set(result.related["node_id"].tolist()) if not result.related.empty else set()
     selected.update(related_ids)
@@ -438,11 +461,29 @@ def query_result_figure(knowledge: KnowledgeGraph, result: QueryResult) -> go.Fi
                 ),
             )
         )
+    return tuple(query_nodes), tuple(query_edges)
+
+
+def query_result_figure_from_elements(
+    nodes: Sequence[VisualizationNode],
+    edges: Sequence[VisualizationEdge],
+    *,
+    query: str,
+) -> go.Figure:
+    """Render a query graph from its canonical visualization elements."""
+
     return build_plotly_network(
-        query_nodes,
-        query_edges,
-        title=f"Query relationships: {result.query}",
+        nodes,
+        edges,
+        title=f"Query relationships: {query}",
         height=760,
+    )
+
+
+def query_result_figure(knowledge: KnowledgeGraph, result: QueryResult) -> go.Figure:
+    return query_result_figure_from_elements(
+        *query_result_elements(knowledge, result),
+        query=result.query,
     )
 
 

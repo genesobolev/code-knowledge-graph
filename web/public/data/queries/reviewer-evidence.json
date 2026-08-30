@@ -2,7 +2,12 @@
   "description": "Recorded retrieval for a manually reviewed benchmark question with answer and supporting-context judgments.",
   "figure": {
     "config": {
+      "displayModeBar": true,
       "displaylogo": false,
+      "modeBarButtonsToRemove": [
+        "select2d",
+        "lasso2d"
+      ],
       "responsive": true,
       "scrollZoom": true
     },
@@ -28,6 +33,9 @@
           0.28391450114874056,
           0.20640871027909533,
           null,
+          0.28391450114874056,
+          0.4951544227825297,
+          null,
           0.46413591804376364,
           0.28391450114874056,
           null,
@@ -35,13 +43,10 @@
           0.5207079482504235,
           null,
           0.28391450114874056,
-          0.4951544227825297,
+          0.3744921502683086,
           null,
           0.28391450114874056,
           0.3818732846830464,
-          null,
-          0.28391450114874056,
-          0.3744921502683086,
           null,
           -0.14159349915179353,
           -0.005197456331610905,
@@ -60,6 +65,9 @@
           -0.40733126544310677,
           -0.07235983672433635,
           null,
+          -0.40733126544310677,
+          -0.4249258725323042,
+          null,
           -0.32098127383666564,
           -0.40733126544310677,
           null,
@@ -67,13 +75,10 @@
           -0.5413083424052129,
           null,
           -0.40733126544310677,
-          -0.4249258725323042,
+          -0.681526778048306,
           null,
           -0.40733126544310677,
           -0.49758827818337703,
-          null,
-          -0.40733126544310677,
-          -0.681526778048306,
           null,
           0.7284558493401324,
           0.4933151823613527,
@@ -121,16 +126,10 @@
           -0.027043350512046104,
           null,
           -0.05266356806687137,
-          -0.41055245899531206,
-          null,
-          -0.05266356806687137,
-          0.30560601897789685,
-          null,
-          -0.05266356806687137,
           0.13305120056254807,
           null,
           -0.05266356806687137,
-          0.005087862449831829,
+          0.20640871027909533,
           null,
           -0.14954839236071965,
           -0.005197456331610905,
@@ -142,7 +141,13 @@
           -0.14159349915179353,
           null,
           -0.05266356806687137,
-          0.20640871027909533,
+          -0.41055245899531206,
+          null,
+          -0.05266356806687137,
+          0.30560601897789685,
+          null,
+          -0.05266356806687137,
+          0.005087862449831829,
           null,
           -0.15377158973395563,
           0.12636264034914066,
@@ -162,16 +167,10 @@
           -0.43182038900730696,
           null,
           0.014329796229011947,
-          -0.006622132094483805,
-          null,
-          0.014329796229011947,
-          -0.27609264923555815,
-          null,
-          0.014329796229011947,
           0.20173165003330373,
           null,
           0.014329796229011947,
-          -0.29041441006657265,
+          -0.07235983672433635,
           null,
           0.29577377872310806,
           0.4933151823613527,
@@ -183,7 +182,13 @@
           0.7284558493401324,
           null,
           0.014329796229011947,
-          -0.07235983672433635,
+          -0.006622132094483805,
+          null,
+          0.014329796229011947,
+          -0.27609264923555815,
+          null,
+          0.014329796229011947,
+          -0.29041441006657265,
           null,
           -0.08511823739919305,
           0.04703603567952029,
@@ -224,10 +229,19 @@
           -0.15377158973395563,
           null,
           -0.16961976026422732,
+          -0.15377158973395563,
+          null,
+          -0.16961976026422732,
           -0.22752930321120277,
           null,
           -0.22752930321120277,
           -0.24016268447443012,
+          null,
+          -0.22752930321120277,
+          -0.15377158973395563,
+          null,
+          -0.24016268447443012,
+          -0.15377158973395563,
           null,
           -0.15221684684683526,
           -0.14954839236071965,
@@ -239,15 +253,6 @@
           -0.14954839236071965,
           null,
           -0.14954839236071965,
-          -0.15377158973395563,
-          null,
-          -0.16961976026422732,
-          -0.15377158973395563,
-          null,
-          -0.22752930321120277,
-          -0.15377158973395563,
-          null,
-          -0.24016268447443012,
           -0.15377158973395563,
           null
         ],
@@ -265,10 +270,19 @@
           -0.08511823739919305,
           null,
           0.13108745841993177,
+          -0.08511823739919305,
+          null,
+          0.13108745841993177,
           0.15437534988650245,
           null,
           0.15437534988650245,
           0.07571756078860731,
+          null,
+          0.15437534988650245,
+          -0.08511823739919305,
+          null,
+          0.07571756078860731,
+          -0.08511823739919305,
           null,
           -0.0124268310936512,
           0.29577377872310806,
@@ -280,15 +294,6 @@
           0.29577377872310806,
           null,
           0.29577377872310806,
-          -0.08511823739919305,
-          null,
-          0.13108745841993177,
-          -0.08511823739919305,
-          null,
-          0.15437534988650245,
-          -0.08511823739919305,
-          null,
-          0.07571756078860731,
           -0.08511823739919305,
           null
         ]
@@ -327,6 +332,9 @@
         "showlegend": true,
         "type": "scatter",
         "x": [
+          -0.15221684684683526,
+          -0.05266356806687137,
+          null,
           -0.16961976026422732,
           -0.15221684684683526,
           null,
@@ -344,9 +352,6 @@
           null,
           -0.22752930321120277,
           -0.10705955860391872,
-          null,
-          -0.15221684684683526,
-          -0.05266356806687137,
           null,
           -0.16961976026422732,
           -0.05266356806687137,
@@ -371,6 +376,9 @@
           null
         ],
         "y": [
+          -0.0124268310936512,
+          0.014329796229011947,
+          null,
           0.13108745841993177,
           -0.0124268310936512,
           null,
@@ -388,9 +396,6 @@
           null,
           0.15437534988650245,
           0.13510927420932728,
-          null,
-          -0.0124268310936512,
-          0.014329796229011947,
           null,
           0.13108745841993177,
           0.014329796229011947,
@@ -427,22 +432,19 @@
         "showlegend": true,
         "type": "scatter",
         "x": [
-          0.4951544227825297,
+          0.46413591804376364,
           0.30560601897789685,
           null,
           0.28391450114874056,
           0.30560601897789685,
           null,
-          -0.005197456331610905,
-          0.13305120056254807,
+          0.3818732846830464,
+          0.30560601897789685,
           null,
           0.20640871027909533,
           0.13305120056254807,
           null,
-          0.46413591804376364,
-          0.30560601897789685,
-          null,
-          0.3818732846830464,
+          0.4951544227825297,
           0.30560601897789685,
           null,
           -0.14159349915179353,
@@ -454,27 +456,27 @@
           -0.14159349915179353,
           -0.028997133151621043,
           null,
+          -0.005197456331610905,
+          0.13305120056254807,
+          null,
           0.12636264034914066,
           0.13305120056254807,
           null
         ],
         "y": [
-          -0.4249258725323042,
+          -0.32098127383666564,
           -0.27609264923555815,
           null,
           -0.40733126544310677,
           -0.27609264923555815,
           null,
-          0.4933151823613527,
-          0.20173165003330373,
+          -0.49758827818337703,
+          -0.27609264923555815,
           null,
           -0.07235983672433635,
           0.20173165003330373,
           null,
-          -0.32098127383666564,
-          -0.27609264923555815,
-          null,
-          -0.49758827818337703,
+          -0.4249258725323042,
           -0.27609264923555815,
           null,
           0.7284558493401324,
@@ -485,6 +487,9 @@
           null,
           0.7284558493401324,
           0.9670754621488957,
+          null,
+          0.4933151823613527,
+          0.20173165003330373,
           null,
           0.04703603567952029,
           0.20173165003330373,
@@ -506,8 +511,8 @@
           -0.09532846690867147,
           -0.027043350512046104,
           null,
-          0.12636264034914066,
-          0.20640871027909533,
+          -0.23258185053800473,
+          -0.027043350512046104,
           null,
           -0.25240775626199213,
           0.005087862449831829,
@@ -515,16 +520,16 @@
           -0.1471273043687611,
           0.005087862449831829,
           null,
-          -0.23258185053800473,
-          -0.027043350512046104,
+          0.12636264034914066,
+          0.20640871027909533,
           null
         ],
         "y": [
           -0.7126385612559143,
           -0.43182038900730696,
           null,
-          0.04703603567952029,
-          -0.07235983672433635,
+          -0.41294933539750855,
+          -0.43182038900730696,
           null,
           -0.2867216350907453,
           -0.29041441006657265,
@@ -532,14 +537,15 @@
           -0.3144303253954225,
           -0.29041441006657265,
           null,
-          -0.41294933539750855,
-          -0.43182038900730696,
+          0.04703603567952029,
+          -0.07235983672433635,
           null
         ]
       },
       {
         "hovertemplate": "%{hovertext}<extra></extra>",
         "hovertext": [
+          "<b>IMPORTS</b><br>implicit_decision_gate.agent -> implicit_decision_gate.gate<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/agent.py:7",
           "<b>IMPORTS</b><br>implicit_decision_gate.orchestrator -> implicit_decision_gate.agent<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/orchestrator.py:8",
           "<b>CO_CHANGES</b><br>implicit_decision_gate.agent -- tests.test_cli<br>strength: 0.520<br>confidence: 0.685<br>evidence count: 9<br>9 non-merge commits; Jaccard=0.692; commits=b12be241, 295f5b6f, ab65e7b1, 49701cf8, 518e2570, ea18151b, 625d771e, f05fa645, 10c641b5",
           "<b>IMPORTS</b><br>tests.test_live -> implicit_decision_gate.agent<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>tests/test_live.py:11",
@@ -552,18 +558,18 @@
           "<b>CO_CHANGES</b><br>implicit_decision_gate.cli -- tests.test_live<br>strength: 0.378<br>confidence: 0.522<br>evidence count: 7<br>7 non-merge commits; Jaccard=0.538; commits=b12be241, 295f5b6f, 43c97f53, ea18151b, 625d771e, f05fa645, 10c641b5",
           "<b>CO_CHANGES</b><br>implicit_decision_gate.cli -- tests.test_orchestrator<br>strength: 0.267<br>confidence: 0.380<br>evidence count: 6<br>6 non-merge commits; Jaccard=0.400; commits=b12be241, 295f5b6f, ea18151b, 625d771e, f05fa645, 10c641b5",
           "<b>CO_CHANGES</b><br>implicit_decision_gate.cli -- tests.test_reviewer<br>strength: 0.312<br>confidence: 0.459<br>evidence count: 5<br>5 non-merge commits; Jaccard=0.500; commits=b12be241, 295f5b6f, 625d771e, f05fa645, 10c641b5",
-          "<b>IMPORTS</b><br>implicit_decision_gate.agent -> implicit_decision_gate.gate<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/agent.py:7",
           "<b>IMPORTS</b><br>implicit_decision_gate.orchestrator -> implicit_decision_gate.gate<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/orchestrator.py:15",
           "<b>IMPORTS</b><br>tests.test_cli -> implicit_decision_gate.gate<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>tests/test_cli.py:19",
           "<b>IMPORTS</b><br>tests.test_live -> implicit_decision_gate.gate<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>tests/test_live.py:18",
           "<b>IMPORTS</b><br>tests.test_reviewer -> implicit_decision_gate.gate<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>tests/test_reviewer.py:9",
-          "<b>CONTAINS</b><br>implicit_decision_gate.gate -> EvidenceClassification<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/gate.py:40",
-          "<b>CONTAINS</b><br>implicit_decision_gate.gate -> GateError<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/gate.py:172",
           "<b>CONTAINS</b><br>implicit_decision_gate.gate -> ReviewerResult<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/gate.py:86",
-          "<b>CONTAINS</b><br>implicit_decision_gate.gate -> state_after_reviews<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/gate.py:283",
-          "<b>CO_CHANGES</b><br>implicit_decision_gate.orchestrator -- tests.test_cli<br>strength: 0.389<br>confidence: 0.524<br>evidence count: 8<br>8 non-merge commits; Jaccard=0.533; commits=1f83830a, b12be241, 295f5b6f, ab65e7b1, ea18151b, 625d771e, f05fa645, 10c641b5",
+          "<b>CONTAINS</b><br>implicit_decision_gate.gate -> validate_reviewer_result<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/gate.py:261",
           "<b>IMPORTS</b><br>tests.test_live -> implicit_decision_gate.orchestrator<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>tests/test_live.py:19",
+          "<b>CO_CHANGES</b><br>implicit_decision_gate.orchestrator -- tests.test_reviewer<br>strength: 0.283<br>confidence: 0.417<br>evidence count: 5<br>5 non-merge commits; Jaccard=0.455; commits=b12be241, 295f5b6f, 625d771e, f05fa645, 10c641b5",
+          "<b>CO_CHANGES</b><br>implicit_decision_gate.orchestrator -- tests.test_cli<br>strength: 0.389<br>confidence: 0.524<br>evidence count: 8<br>8 non-merge commits; Jaccard=0.533; commits=1f83830a, b12be241, 295f5b6f, ab65e7b1, ea18151b, 625d771e, f05fa645, 10c641b5",
           "<b>CO_CHANGES</b><br>tests.test_cli -- tests.test_live<br>strength: 0.417<br>confidence: 0.561<br>evidence count: 8<br>8 non-merge commits; Jaccard=0.571; commits=b12be241, 295f5b6f, 43c97f53, ab65e7b1, ea18151b, 625d771e, f05fa645, 10c641b5",
+          "<b>CO_CHANGES</b><br>tests.test_cli -- tests.test_reviewer<br>strength: 0.260<br>confidence: 0.382<br>evidence count: 5<br>5 non-merge commits; Jaccard=0.417; commits=b12be241, 295f5b6f, 625d771e, f05fa645, 10c641b5",
+          "<b>CO_CHANGES</b><br>tests.test_live -- tests.test_reviewer<br>strength: 0.312<br>confidence: 0.459<br>evidence count: 5<br>5 non-merge commits; Jaccard=0.500; commits=b12be241, 295f5b6f, 625d771e, f05fa645, 10c641b5",
           "<b>CO_CHANGES</b><br>implicit_decision_gate.agent -- tests.test_orchestrator<br>strength: 0.449<br>confidence: 0.604<br>evidence count: 8<br>8 non-merge commits; Jaccard=0.615; commits=b12be241, 295f5b6f, ab65e7b1, 49701cf8, ea18151b, 625d771e, f05fa645, 10c641b5",
           "<b>IMPORTS</b><br>tests.test_orchestrator -> implicit_decision_gate.gate<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>tests/test_orchestrator.py:25",
           "<b>IMPORTS</b><br>tests.test_orchestrator -> implicit_decision_gate.orchestrator<br>strength: 0.650<br>confidence: 1.000<br>evidence count: 1<br>tests/test_orchestrator.py:36",
@@ -573,40 +579,39 @@
           "<b>CONTAINS</b><br>tests.test_orchestrator -> not_evidenced<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>tests/test_orchestrator.py:91",
           "<b>CONTAINS</b><br>tests.test_orchestrator -> orchestrator<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>tests/test_orchestrator.py:146",
           "<b>CONTAINS</b><br>tests.test_orchestrator -> test_start_reads_the_brief_from_the_pinned_commit<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>tests/test_orchestrator.py:242",
-          "<b>CO_CHANGES</b><br>implicit_decision_gate.orchestrator -- tests.test_reviewer<br>strength: 0.283<br>confidence: 0.417<br>evidence count: 5<br>5 non-merge commits; Jaccard=0.455; commits=b12be241, 295f5b6f, 625d771e, f05fa645, 10c641b5",
-          "<b>CO_CHANGES</b><br>tests.test_cli -- tests.test_reviewer<br>strength: 0.260<br>confidence: 0.382<br>evidence count: 5<br>5 non-merge commits; Jaccard=0.417; commits=b12be241, 295f5b6f, 625d771e, f05fa645, 10c641b5",
-          "<b>CO_CHANGES</b><br>tests.test_live -- tests.test_reviewer<br>strength: 0.312<br>confidence: 0.459<br>evidence count: 5<br>5 non-merge commits; Jaccard=0.500; commits=b12be241, 295f5b6f, 625d771e, f05fa645, 10c641b5",
           "<b>CALLS</b><br>Orchestrator._finish_first_attempt -> build_reviewer_prompt<br>strength: 0.618<br>confidence: 0.950<br>evidence count: 1<br>src/implicit_decision_gate/orchestrator.py:260",
           "<b>TESTS</b><br>test_attempt_two_prompt_contains_only_allowed_fresh_context -> build_reviewer_prompt<br>strength: 0.560<br>confidence: 0.950<br>evidence count: 1<br>tests/test_context.py:66",
-          "<b>INSTANTIATES</b><br>Orchestrator._finish_common_evaluation -> GateError<br>strength: 0.547<br>confidence: 0.950<br>evidence count: 1<br>src/implicit_decision_gate/orchestrator.py:353",
+          "<b>TESTS</b><br>test_reviewer_prompt_contains_brief_and_observed_policy -> build_reviewer_prompt<br>strength: 0.560<br>confidence: 0.950<br>evidence count: 1<br>tests/test_reviewer.py:40",
+          "<b>CONTAINS</b><br>implicit_decision_gate.gate -> EvidenceClassification<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/gate.py:40",
+          "<b>CONTAINS</b><br>implicit_decision_gate.gate -> GateError<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/gate.py:172",
+          "<b>INSTANTIATES</b><br>Orchestrator._execute_attempt -> GateError<br>strength: 0.666<br>confidence: 0.950<br>evidence count: 3<br>src/implicit_decision_gate/orchestrator.py:147<br>src/implicit_decision_gate/orchestrator.py:151<br>src/implicit_decision_gate/orchestrator.py:167",
           "<b>INSTANTIATES</b><br>Orchestrator._finish_first_attempt -> GateError<br>strength: 0.547<br>confidence: 0.950<br>evidence count: 1<br>src/implicit_decision_gate/orchestrator.py:236",
-          "<b>INSTANTIATES</b><br>not_evidenced -> ReviewerResult<br>strength: 0.547<br>confidence: 0.950<br>evidence count: 1<br>tests/test_orchestrator.py:94",
+          "<b>INSTANTIATES</b><br>Orchestrator._reviewer_client -> GateError<br>strength: 0.547<br>confidence: 0.950<br>evidence count: 1<br>src/implicit_decision_gate/orchestrator.py:539",
+          "<b>CONTAINS</b><br>implicit_decision_gate.gate -> state_after_reviews<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/gate.py:283",
           "<b>CALLS</b><br>Orchestrator._finish_first_attempt -> state_after_reviews<br>strength: 0.618<br>confidence: 0.950<br>evidence count: 1<br>src/implicit_decision_gate/orchestrator.py:285",
-          "<b>CONTAINS</b><br>implicit_decision_gate.gate -> validate_reviewer_result<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>src/implicit_decision_gate/gate.py:261",
+          "<b>TESTS</b><br>test_review_classification_drives_gate_state -> state_after_reviews<br>strength: 0.560<br>confidence: 0.950<br>evidence count: 1<br>tests/test_reviewer.py:77",
+          "<b>TESTS</b><br>test_review_classifications_are_aggregated -> state_after_reviews<br>strength: 0.651<br>confidence: 0.950<br>evidence count: 2<br>tests/test_reviewer.py:82<br>tests/test_reviewer.py:88",
           "<b>INSTANTIATES</b><br>validate_reviewer_result -> ReviewerResult<br>strength: 0.617<br>confidence: 0.950<br>evidence count: 2<br>src/implicit_decision_gate/gate.py:268<br>src/implicit_decision_gate/gate.py:276",
           "<b>CALLS</b><br>Orchestrator._finish_first_attempt -> validate_reviewer_result<br>strength: 0.618<br>confidence: 0.950<br>evidence count: 1<br>src/implicit_decision_gate/orchestrator.py:278",
           "<b>TESTS</b><br>test_fabricated_evidence_quote_becomes_uncertain -> validate_reviewer_result<br>strength: 0.560<br>confidence: 0.950<br>evidence count: 1<br>tests/test_reviewer.py:96",
-          "<b>INSTANTIATES</b><br>Orchestrator._execute_attempt -> GateError<br>strength: 0.666<br>confidence: 0.950<br>evidence count: 3<br>src/implicit_decision_gate/orchestrator.py:147<br>src/implicit_decision_gate/orchestrator.py:151<br>src/implicit_decision_gate/orchestrator.py:167",
-          "<b>CALLS</b><br>Orchestrator._execute_attempt -> Orchestrator._finish_first_attempt<br>strength: 0.618<br>confidence: 0.950<br>evidence count: 1<br>src/implicit_decision_gate/orchestrator.py:228",
+          "<b>INSTANTIATES</b><br>Orchestrator._finish_common_evaluation -> GateError<br>strength: 0.547<br>confidence: 0.950<br>evidence count: 1<br>src/implicit_decision_gate/orchestrator.py:353",
           "<b>CALLS</b><br>Orchestrator._finish_common_evaluation -> Orchestrator._fail<br>strength: 0.761<br>confidence: 0.950<br>evidence count: 3<br>src/implicit_decision_gate/orchestrator.py:362<br>src/implicit_decision_gate/orchestrator.py:376<br>src/implicit_decision_gate/orchestrator.py:389",
-          "<b>CALLS</b><br>Orchestrator._finish_first_attempt -> Orchestrator._fail<br>strength: 0.702<br>confidence: 0.950<br>evidence count: 2<br>src/implicit_decision_gate/orchestrator.py:248<br>src/implicit_decision_gate/orchestrator.py:293",
           "<b>CALLS</b><br>Orchestrator._finish_first_attempt -> Orchestrator._finish_common_evaluation<br>strength: 0.618<br>confidence: 0.950<br>evidence count: 1<br>src/implicit_decision_gate/orchestrator.py:237",
-          "<b>INSTANTIATES</b><br>Orchestrator._reviewer_client -> GateError<br>strength: 0.547<br>confidence: 0.950<br>evidence count: 1<br>src/implicit_decision_gate/orchestrator.py:539",
-          "<b>CALLS</b><br>Orchestrator._finish_first_attempt -> Orchestrator._reviewer_client<br>strength: 0.618<br>confidence: 0.950<br>evidence count: 1<br>src/implicit_decision_gate/orchestrator.py:258",
+          "<b>CALLS</b><br>Orchestrator._execute_attempt -> Orchestrator._finish_first_attempt<br>strength: 0.618<br>confidence: 0.950<br>evidence count: 1<br>src/implicit_decision_gate/orchestrator.py:228",
+          "<b>CALLS</b><br>Orchestrator._finish_first_attempt -> Orchestrator._fail<br>strength: 0.702<br>confidence: 0.950<br>evidence count: 2<br>src/implicit_decision_gate/orchestrator.py:248<br>src/implicit_decision_gate/orchestrator.py:293",
           "<b>CALLS</b><br>Orchestrator._finish_first_attempt -> option_by_id<br>strength: 0.618<br>confidence: 0.950<br>evidence count: 1<br>src/implicit_decision_gate/orchestrator.py:246",
+          "<b>CALLS</b><br>Orchestrator._finish_first_attempt -> Orchestrator._reviewer_client<br>strength: 0.618<br>confidence: 0.950<br>evidence count: 1<br>src/implicit_decision_gate/orchestrator.py:258",
           "<b>INSTANTIATES</b><br>test_start_reads_the_brief_from_the_pinned_commit -> ScriptMarkerProbe<br>strength: 0.547<br>confidence: 0.950<br>evidence count: 1<br>tests/test_orchestrator.py:255",
           "<b>INSTANTIATES</b><br>test_start_reads_the_brief_from_the_pinned_commit -> ScriptedCodingClient<br>strength: 0.547<br>confidence: 0.950<br>evidence count: 1<br>tests/test_orchestrator.py:248",
           "<b>INSTANTIATES</b><br>test_start_reads_the_brief_from_the_pinned_commit -> ScriptedReviewerClient<br>strength: 0.547<br>confidence: 0.950<br>evidence count: 1<br>tests/test_orchestrator.py:254",
+          "<b>INSTANTIATES</b><br>not_evidenced -> ReviewerResult<br>strength: 0.547<br>confidence: 0.950<br>evidence count: 1<br>tests/test_orchestrator.py:94",
           "<b>CALLS</b><br>test_start_reads_the_brief_from_the_pinned_commit -> not_evidenced<br>strength: 0.618<br>confidence: 0.950<br>evidence count: 1<br>tests/test_orchestrator.py:254",
           "<b>CALLS</b><br>test_start_reads_the_brief_from_the_pinned_commit -> orchestrator<br>strength: 0.618<br>confidence: 0.950<br>evidence count: 1<br>tests/test_orchestrator.py:250",
           "<b>CONTAINS</b><br>tests.test_reviewer -> test_fabricated_evidence_quote_becomes_uncertain<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>tests/test_reviewer.py:95",
           "<b>INSTANTIATES</b><br>test_fabricated_evidence_quote_becomes_uncertain -> ReviewerResult<br>strength: 0.617<br>confidence: 0.950<br>evidence count: 2<br>tests/test_reviewer.py:104<br>tests/test_reviewer.py:98",
           "<b>CONTAINS</b><br>tests.test_reviewer -> test_review_classification_drives_gate_state<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>tests/test_reviewer.py:73",
-          "<b>TESTS</b><br>test_review_classification_drives_gate_state -> state_after_reviews<br>strength: 0.560<br>confidence: 0.950<br>evidence count: 1<br>tests/test_reviewer.py:77",
           "<b>CONTAINS</b><br>tests.test_reviewer -> test_review_classifications_are_aggregated<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>tests/test_reviewer.py:80",
-          "<b>TESTS</b><br>test_review_classifications_are_aggregated -> state_after_reviews<br>strength: 0.651<br>confidence: 0.950<br>evidence count: 2<br>tests/test_reviewer.py:82<br>tests/test_reviewer.py:88",
-          "<b>CONTAINS</b><br>tests.test_reviewer -> test_reviewer_prompt_contains_brief_and_observed_policy<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>tests/test_reviewer.py:37",
-          "<b>TESTS</b><br>test_reviewer_prompt_contains_brief_and_observed_policy -> build_reviewer_prompt<br>strength: 0.560<br>confidence: 0.950<br>evidence count: 1<br>tests/test_reviewer.py:40"
+          "<b>CONTAINS</b><br>tests.test_reviewer -> test_reviewer_prompt_contains_brief_and_observed_policy<br>strength: 0.450<br>confidence: 1.000<br>evidence count: 1<br>tests/test_reviewer.py:37"
         ],
         "marker": {
           "color": "rgba(0,0,0,0.01)",
@@ -617,6 +622,7 @@
         "showlegend": false,
         "type": "scatter",
         "x": [
+          -0.10244020745685331,
           -0.16091830355553127,
           -0.189873075029019,
           -0.19618976566063268,
@@ -629,18 +635,18 @@
           -0.1736111215391744,
           -0.1283039754823192,
           -0.13041557416893718,
-          -0.10244020745685331,
           -0.11114166416554934,
           -0.14009643563903706,
           -0.14641312627065076,
           -0.1032175789004135,
-          -0.23160801353109173,
-          0.12647122545551273,
           0.040193816247838354,
-          -0.02378785280851977,
-          -0.19857453173771505,
+          0.07687257110611198,
           -0.20489122236932872,
+          -0.1616956749990915,
+          -0.19857453173771505,
           -0.23384599384281646,
+          -0.1906504464725792,
+          -0.1969671371041929,
           -0.15088261960377747,
           -0.10110598021379551,
           -0.15958407631247348,
@@ -650,42 +656,42 @@
           -0.07737292434616527,
           -0.19020102992200089,
           -0.1455709457562566,
-          -0.1616956749990915,
-          -0.1906504464725792,
-          -0.1969671371041929,
           0.12843557531834723,
           -0.06118590871035879,
-          0.4003802208802133,
+          -0.1298126005250254,
+          -0.23160801353109173,
+          0.12647122545551273,
+          0.38487096851083025,
           0.2947602600633187,
-          0.06392687211546859,
+          0.3437396518304716,
+          -0.02378785280851977,
           0.1445011817992862,
-          0.07687257110611198,
+          -0.12365994690608015,
+          -0.07101972095946463,
           0.1697299554208217,
           0.24516160571391793,
           0.166385675314118,
-          0.38487096851083025,
-          0.3740252095962521,
+          0.4003802208802133,
           0.5079311855164766,
-          0.402311224699582,
           0.3895344619656351,
-          0.3437396518304716,
-          0.33289389291589344,
+          0.3740252095962521,
+          0.402311224699582,
           0.3292033257085246,
+          0.33289389291589344,
           -0.22204489426837895,
           -0.1558186101484499,
           -0.0852953161517073,
+          0.06392687211546859,
           -0.07339547774170221,
           -0.18622358331753783,
           -0.013704474692407487,
           0.12970692045584437,
           -0.20308967299797387,
-          -0.12365994690608015,
           -0.15044944705135838,
-          -0.07101972095946463,
-          -0.1931767201359802,
-          -0.1298126005250254
+          -0.1931767201359802
         ],
         "y": [
+          0.0009514825676803732,
           0.05933031366314029,
           0.07097425939642563,
           0.031645364847478055,
@@ -698,18 +704,18 @@
           0.1054134174989673,
           0.21544152646621767,
           0.024995518405067113,
-          0.0009514825676803732,
           0.07270862732447186,
           0.0843525730577572,
           0.04502367850880963,
           -0.03539422058509055,
-          0.0038538320672640712,
-          -0.1308814265032731,
           0.10803072313115784,
-          -0.13804230691878036,
-          0.1427314041532171,
+          -0.029015020247662202,
           0.10340250960426954,
+          0.02298461051036936,
+          0.1427314041532171,
           0.11504645533755488,
+          0.0346285562436547,
+          -0.004700338305292873,
           0.14167347381472842,
           0.15505178747606,
           0.2134306185715199,
@@ -719,43 +725,49 @@
           0.39454448054223035,
           0.4429178163168914,
           0.5121148140316203,
-          0.02298461051036936,
-          0.0346285562436547,
-          -0.004700338305292873,
           -0.41957582722520687,
           -0.5722294751316106,
-          -0.3505092608839312,
+          -0.4223848622024078,
+          0.0038538320672640712,
+          -0.1308814265032731,
+          -0.29853696153611187,
           -0.34171195733933246,
-          0.3475234161973282,
+          -0.38684046370946756,
+          -0.13804230691878036,
           -0.3488728377548397,
-          -0.029015020247662202,
+          -0.288568022578659,
+          -0.30242236773099757,
           0.06468590665448369,
           -0.23984555108372158,
           -0.01266190052240803,
-          -0.29853696153611187,
-          -0.36415626963988623,
+          -0.3505092608839312,
           -0.4831171074687585,
-          -0.47431980392415984,
           -0.41612856898770545,
-          -0.38684046370946756,
-          -0.45245977181324193,
+          -0.36415626963988623,
+          -0.47431980392415984,
           -0.5444290217457064,
+          -0.45245977181324193,
           0.8348213754097141,
           0.8642279246700661,
           0.8477656557445141,
+          0.3475234161973282,
           0.6108855158507426,
           0.6592588516254037,
           -0.01904110085983638,
           0.12438384285641202,
           -0.18591993624496916,
-          -0.288568022578659,
           -0.19977428139730777,
-          -0.30242236773099757,
-          -0.2490337863983508,
-          -0.4223848622024078
+          -0.2490337863983508
         ]
       },
       {
+        "customdata": [
+          "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+          "symbol:src/implicit_decision_gate/gate.py::EvidenceClassification",
+          "symbol:src/implicit_decision_gate/gate.py::state_after_reviews",
+          "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+          "symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated"
+        ],
         "hovertemplate": "%{hovertext}<extra></extra>",
         "hovertext": [
           "<b>build_reviewer_prompt(*, brief: str, option: DecisionOption) -&gt; str</b><br>src/implicit_decision_gate/agent.py:95<br>kind: function<br>Render the complete evidence-only review context.<br>direct relevance: 0.1231<br>relationship strength: 0.0000",
@@ -774,8 +786,8 @@
             "#f59e0b"
           ],
           "line": {
-            "color": "#e2e8f0",
-            "width": 0.75
+            "color": "#f8fafc",
+            "width": 1.25
           },
           "size": [
             16.95367423663282,
@@ -795,7 +807,7 @@
           "test_review_classifications_are_aggregated"
         ],
         "textfont": {
-          "color": "#e2e8f0",
+          "color": "#1e293b",
           "size": 10
         },
         "textposition": "top center",
@@ -816,6 +828,13 @@
         ]
       },
       {
+        "customdata": [
+          "symbol:src/implicit_decision_gate/gate.py::GateError",
+          "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+          "symbol:tests/conftest.py::ScriptMarkerProbe",
+          "symbol:tests/conftest.py::ScriptedCodingClient",
+          "symbol:tests/conftest.py::ScriptedReviewerClient"
+        ],
         "hovertemplate": "%{hovertext}<extra></extra>",
         "hovertext": [
           "<b>class GateError(RuntimeError)</b><br>src/implicit_decision_gate/gate.py:172<br>kind: class<br>Raised when a command violates the persisted state machine.<br>direct relevance: 0.0146<br>relationship strength: 0.2441",
@@ -834,8 +853,8 @@
             "#a78bfa"
           ],
           "line": {
-            "color": "#e2e8f0",
-            "width": 0.75
+            "color": "#f8fafc",
+            "width": 1.25
           },
           "size": [
             19.858916412558386,
@@ -855,7 +874,7 @@
           "ScriptedReviewerClient"
         ],
         "textfont": {
-          "color": "#e2e8f0",
+          "color": "#1e293b",
           "size": 10
         },
         "textposition": "top center",
@@ -876,6 +895,16 @@
         ]
       },
       {
+        "customdata": [
+          "file:src/implicit_decision_gate/agent.py",
+          "file:src/implicit_decision_gate/cli.py",
+          "file:src/implicit_decision_gate/gate.py",
+          "file:src/implicit_decision_gate/orchestrator.py",
+          "file:tests/test_cli.py",
+          "file:tests/test_live.py",
+          "file:tests/test_orchestrator.py",
+          "file:tests/test_reviewer.py"
+        ],
         "hovertemplate": "%{hovertext}<extra></extra>",
         "hovertext": [
           "<b>implicit_decision_gate.agent</b><br>src/implicit_decision_gate/agent.py:1<br>kind: file<br>Purpose-specific coding and evidence-review model interfaces.<br>direct relevance: 0.0795<br>relationship strength: 0.3123",
@@ -900,8 +929,8 @@
             "#64748b"
           ],
           "line": {
-            "color": "#e2e8f0",
-            "width": 0.75
+            "color": "#f8fafc",
+            "width": 1.25
           },
           "size": [
             21.494999769800966,
@@ -927,7 +956,7 @@
           "tests.test_reviewer"
         ],
         "textfont": {
-          "color": "#e2e8f0",
+          "color": "#1e293b",
           "size": 10
         },
         "textposition": "top center",
@@ -954,6 +983,11 @@
         ]
       },
       {
+        "customdata": [
+          "symbol:src/implicit_decision_gate/scenario.py::option_by_id",
+          "symbol:tests/test_orchestrator.py::not_evidenced",
+          "symbol:tests/test_orchestrator.py::orchestrator"
+        ],
         "hovertemplate": "%{hovertext}<extra></extra>",
         "hovertext": [
           "<b>option_by_id(decision: DecisionSpec, option_id: str) -&gt; DecisionOption | None</b><br>src/implicit_decision_gate/scenario.py:294<br>kind: function<br>Return one declared option by identifier.<br>direct relevance: 0.0040<br>relationship strength: 0.2759",
@@ -968,8 +1002,8 @@
             "#34d399"
           ],
           "line": {
-            "color": "#e2e8f0",
-            "width": 0.75
+            "color": "#f8fafc",
+            "width": 1.25
           },
           "size": [
             20.62233172128259,
@@ -985,7 +1019,7 @@
           "orchestrator"
         ],
         "textfont": {
-          "color": "#e2e8f0",
+          "color": "#1e293b",
           "size": 10
         },
         "textposition": "top center",
@@ -1002,6 +1036,13 @@
         ]
       },
       {
+        "customdata": [
+          "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt",
+          "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._fail",
+          "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_common_evaluation",
+          "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+          "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._reviewer_client"
+        ],
         "hovertemplate": "%{hovertext}<extra></extra>",
         "hovertext": [
           "<b>_execute_attempt(self, run: RunRecord, *, attempt_number: int) -&gt; None</b><br>src/implicit_decision_gate/orchestrator.py:144<br>kind: method<br><br>direct relevance: 0.0189<br>relationship strength: 0.2759",
@@ -1020,8 +1061,8 @@
             "#60a5fa"
           ],
           "line": {
-            "color": "#e2e8f0",
-            "width": 0.75
+            "color": "#f8fafc",
+            "width": 1.25
           },
           "size": [
             20.62233172128259,
@@ -1041,7 +1082,7 @@
           "Orchestrator._reviewer_client"
         ],
         "textfont": {
-          "color": "#e2e8f0",
+          "color": "#1e293b",
           "size": 10
         },
         "textposition": "top center",
@@ -1062,6 +1103,12 @@
         ]
       },
       {
+        "customdata": [
+          "symbol:tests/test_context.py::test_attempt_two_prompt_contains_only_allowed_fresh_context",
+          "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain",
+          "symbol:tests/test_reviewer.py::test_review_classification_drives_gate_state",
+          "symbol:tests/test_reviewer.py::test_reviewer_prompt_contains_brief_and_observed_policy"
+        ],
         "hovertemplate": "%{hovertext}<extra></extra>",
         "hovertext": [
           "<b>test_attempt_two_prompt_contains_only_allowed_fresh_context() -&gt; None</b><br>tests/test_context.py:65<br>kind: test<br><br>direct relevance: 0.0341<br>relationship strength: 0.3886",
@@ -1078,8 +1125,8 @@
             "#f472b6"
           ],
           "line": {
-            "color": "#e2e8f0",
-            "width": 0.75
+            "color": "#f8fafc",
+            "width": 1.25
           },
           "size": [
             23.326141819787612,
@@ -1097,7 +1144,7 @@
           "test_reviewer_prompt_contains_brief_and_observed_policy"
         ],
         "textfont": {
-          "color": "#e2e8f0",
+          "color": "#1e293b",
           "size": 10
         },
         "textposition": "top center",
@@ -1116,6 +1163,9 @@
         ]
       },
       {
+        "customdata": [
+          "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result"
+        ],
         "hovertemplate": "%{hovertext}<extra></extra>",
         "hovertext": [
           "<b>validate_reviewer_result(brief: str, result: ReviewerResult) -&gt; ReviewerResult</b><br>src/implicit_decision_gate/gate.py:261<br>kind: function<br>Validate required evidence quotes as literal brief substrings.<br>direct relevance: 0.1507<br>relationship strength: 0.0000"
@@ -1126,8 +1176,8 @@
             "#fb7185"
           ],
           "line": {
-            "color": "#e2e8f0",
-            "width": 0.75
+            "color": "#f8fafc",
+            "width": 1.25
           },
           "size": [
             17.61770918279953
@@ -1139,7 +1189,7 @@
           "validate_reviewer_result"
         ],
         "textfont": {
-          "color": "#e2e8f0",
+          "color": "#1e293b",
           "size": 10
         },
         "textposition": "top center",
@@ -1155,22 +1205,44 @@
     "layout": {
       "dragmode": "pan",
       "font": {
-        "color": "#e2e8f0"
+        "color": "#1e293b"
       },
       "height": 760,
+      "hoverlabel": {
+        "bgcolor": "#ffffff",
+        "bordercolor": "#cbd5e1",
+        "font": {
+          "color": "#0f172a"
+        }
+      },
       "hovermode": "closest",
       "legend": {
-        "bgcolor": "rgba(15,23,42,0.75)",
-        "orientation": "h"
+        "bgcolor": "rgba(255,255,255,0.88)",
+        "bordercolor": "rgba(203,213,225,0.9)",
+        "borderwidth": 1,
+        "font": {
+          "color": "#334155",
+          "size": 11
+        },
+        "orientation": "h",
+        "x": 0.0,
+        "xanchor": "left",
+        "y": 1.02,
+        "yanchor": "bottom"
       },
       "margin": {
         "b": 20,
         "l": 20,
         "r": 20,
-        "t": 60
+        "t": 96
       },
-      "paper_bgcolor": "#0f172a",
-      "plot_bgcolor": "#0f172a",
+      "modebar": {
+        "activecolor": "#0f172a",
+        "bgcolor": "rgba(255,255,255,0.88)",
+        "color": "#64748b"
+      },
+      "paper_bgcolor": "rgba(0,0,0,0)",
+      "plot_bgcolor": "rgba(0,0,0,0)",
       "template": {
         "data": {
           "bar": [
@@ -1947,10 +2019,6 @@
           }
         }
       },
-      "title": {
-        "text": "Query relationships: How are reviewer classifications checked against literal evidence from the brief?",
-        "x": 0.02
-      },
       "uirevision": "Query relationships: How are reviewer classifications checked against literal evidence from the brief?",
       "xaxis": {
         "showgrid": false,
@@ -1966,6 +2034,910 @@
     "plotly_js_version": "3.7.0"
   },
   "id": "reviewer-evidence",
+  "inspection": {
+    "edges": [
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/agent.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.5196821661975614,
+        "target_id": "file:tests/test_cli.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/agent.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_reviewer.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/agent.py"
+      },
+      {
+        "kind": "CONTAINS",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.45,
+        "target_id": "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.486034461780754,
+        "target_id": "file:src/implicit_decision_gate/cli.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_cli.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/cli.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.3782230575557315,
+        "target_id": "file:tests/test_live.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.26737538647453585,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/cli.py",
+        "strength": 0.311825913990274,
+        "target_id": "file:tests/test_reviewer.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_cli.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_reviewer.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "CONTAINS",
+        "source_id": "file:src/implicit_decision_gate/gate.py",
+        "strength": 0.45,
+        "target_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult"
+      },
+      {
+        "kind": "CONTAINS",
+        "source_id": "file:src/implicit_decision_gate/gate.py",
+        "strength": 0.45,
+        "target_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.2834781036275218,
+        "target_id": "file:tests/test_reviewer.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/orchestrator.py",
+        "strength": 0.3888275694246032,
+        "target_id": "file:tests/test_cli.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_cli.py",
+        "strength": 0.41660096724064627,
+        "target_id": "file:tests/test_live.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_cli.py",
+        "strength": 0.2598549283252284,
+        "target_id": "file:tests/test_reviewer.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.311825913990274,
+        "target_id": "file:tests/test_reviewer.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:src/implicit_decision_gate/agent.py",
+        "strength": 0.44864719548992676,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/gate.py"
+      },
+      {
+        "kind": "IMPORTS",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.65,
+        "target_id": "file:src/implicit_decision_gate/orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_cli.py",
+        "strength": 0.48256201146916416,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_live.py",
+        "strength": 0.3512071248731793,
+        "target_id": "file:tests/test_orchestrator.py"
+      },
+      {
+        "kind": "CO_CHANGES",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.2834781036275218,
+        "target_id": "file:tests/test_reviewer.py"
+      },
+      {
+        "kind": "CONTAINS",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.45,
+        "target_id": "symbol:tests/test_orchestrator.py::not_evidenced"
+      },
+      {
+        "kind": "CONTAINS",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.45,
+        "target_id": "symbol:tests/test_orchestrator.py::orchestrator"
+      },
+      {
+        "kind": "CONTAINS",
+        "source_id": "file:tests/test_orchestrator.py",
+        "strength": 0.45,
+        "target_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+        "strength": 0.6179892479403911,
+        "target_id": "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt"
+      },
+      {
+        "kind": "TESTS",
+        "source_id": "symbol:tests/test_context.py::test_attempt_two_prompt_contains_only_allowed_fresh_context",
+        "strength": 0.5599418209209461,
+        "target_id": "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt"
+      },
+      {
+        "kind": "TESTS",
+        "source_id": "symbol:tests/test_reviewer.py::test_reviewer_prompt_contains_brief_and_observed_policy",
+        "strength": 0.5599418209209461,
+        "target_id": "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt"
+      },
+      {
+        "kind": "CONTAINS",
+        "source_id": "file:src/implicit_decision_gate/gate.py",
+        "strength": 0.45,
+        "target_id": "symbol:src/implicit_decision_gate/gate.py::EvidenceClassification"
+      },
+      {
+        "kind": "CONTAINS",
+        "source_id": "file:src/implicit_decision_gate/gate.py",
+        "strength": 0.45,
+        "target_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt",
+        "strength": 0.665996218531716,
+        "target_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+        "strength": 0.546748109265858,
+        "target_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._reviewer_client",
+        "strength": 0.546748109265858,
+        "target_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+      },
+      {
+        "kind": "CONTAINS",
+        "source_id": "file:src/implicit_decision_gate/gate.py",
+        "strength": 0.45,
+        "target_id": "symbol:src/implicit_decision_gate/gate.py::state_after_reviews"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+        "strength": 0.6179892479403911,
+        "target_id": "symbol:src/implicit_decision_gate/gate.py::state_after_reviews"
+      },
+      {
+        "kind": "TESTS",
+        "source_id": "symbol:tests/test_reviewer.py::test_review_classification_drives_gate_state",
+        "strength": 0.5599418209209461,
+        "target_id": "symbol:src/implicit_decision_gate/gate.py::state_after_reviews"
+      },
+      {
+        "kind": "TESTS",
+        "source_id": "symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated",
+        "strength": 0.6513081790790538,
+        "target_id": "symbol:src/implicit_decision_gate/gate.py::state_after_reviews"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+        "strength": 0.616503781468284,
+        "target_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+        "strength": 0.6179892479403911,
+        "target_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result"
+      },
+      {
+        "kind": "TESTS",
+        "source_id": "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain",
+        "strength": 0.5599418209209461,
+        "target_id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_common_evaluation",
+        "strength": 0.546748109265858,
+        "target_id": "symbol:src/implicit_decision_gate/gate.py::GateError"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_common_evaluation",
+        "strength": 0.7609784958807819,
+        "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._fail"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+        "strength": 0.6179892479403911,
+        "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_common_evaluation"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt",
+        "strength": 0.6179892479403911,
+        "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+        "strength": 0.7016325959918396,
+        "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._fail"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+        "strength": 0.6179892479403911,
+        "target_id": "symbol:src/implicit_decision_gate/scenario.py::option_by_id"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+        "strength": 0.6179892479403911,
+        "target_id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._reviewer_client"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+        "strength": 0.546748109265858,
+        "target_id": "symbol:tests/conftest.py::ScriptMarkerProbe"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+        "strength": 0.546748109265858,
+        "target_id": "symbol:tests/conftest.py::ScriptedCodingClient"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+        "strength": 0.546748109265858,
+        "target_id": "symbol:tests/conftest.py::ScriptedReviewerClient"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "symbol:tests/test_orchestrator.py::not_evidenced",
+        "strength": 0.546748109265858,
+        "target_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+        "strength": 0.6179892479403911,
+        "target_id": "symbol:tests/test_orchestrator.py::not_evidenced"
+      },
+      {
+        "kind": "CALLS",
+        "source_id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+        "strength": 0.6179892479403911,
+        "target_id": "symbol:tests/test_orchestrator.py::orchestrator"
+      },
+      {
+        "kind": "CONTAINS",
+        "source_id": "file:tests/test_reviewer.py",
+        "strength": 0.45,
+        "target_id": "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain"
+      },
+      {
+        "kind": "INSTANTIATES",
+        "source_id": "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain",
+        "strength": 0.616503781468284,
+        "target_id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult"
+      },
+      {
+        "kind": "CONTAINS",
+        "source_id": "file:tests/test_reviewer.py",
+        "strength": 0.45,
+        "target_id": "symbol:tests/test_reviewer.py::test_review_classification_drives_gate_state"
+      },
+      {
+        "kind": "CONTAINS",
+        "source_id": "file:tests/test_reviewer.py",
+        "strength": 0.45,
+        "target_id": "symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated"
+      },
+      {
+        "kind": "CONTAINS",
+        "source_id": "file:tests/test_reviewer.py",
+        "strength": 0.45,
+        "target_id": "symbol:tests/test_reviewer.py::test_reviewer_prompt_contains_brief_and_observed_policy"
+      }
+    ],
+    "nodes": [
+      {
+        "color": "#64748b",
+        "direct_relevance": 0.07953508454263264,
+        "docstring": "Purpose-specific coding and evidence-review model interfaces.",
+        "end_line": 106,
+        "group": "file",
+        "id": "file:src/implicit_decision_gate/agent.py",
+        "kind": "file",
+        "label": "implicit_decision_gate.agent",
+        "path": "src/implicit_decision_gate/agent.py",
+        "qualified_name": "implicit_decision_gate.agent",
+        "relationship_strength": 0.31229165707504025,
+        "signature": "",
+        "size": 21.494999769800966,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": 0.01943007901438158,
+        "docstring": "Command-line interface for implicit-decision-gate.",
+        "end_line": 114,
+        "group": "file",
+        "id": "file:src/implicit_decision_gate/cli.py",
+        "kind": "file",
+        "label": "implicit_decision_gate.cli",
+        "path": "src/implicit_decision_gate/cli.py",
+        "qualified_name": "implicit_decision_gate.cli",
+        "relationship_strength": 0.25129642576603733,
+        "signature": "",
+        "size": 20.031114218384896,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": 0.051450487794687576,
+        "docstring": "Persisted run types and pure gate transitions.",
+        "end_line": 482,
+        "group": "file",
+        "id": "file:src/implicit_decision_gate/gate.py",
+        "kind": "file",
+        "label": "implicit_decision_gate.gate",
+        "path": "src/implicit_decision_gate/gate.py",
+        "qualified_name": "implicit_decision_gate.gate",
+        "relationship_strength": 0.3825,
+        "signature": "",
+        "size": 23.18,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": 0.0412567690349046,
+        "docstring": "Run orchestration across model, worktree, observer, review, and gate components.",
+        "end_line": 540,
+        "group": "file",
+        "id": "file:src/implicit_decision_gate/orchestrator.py",
+        "kind": "file",
+        "label": "implicit_decision_gate.orchestrator",
+        "path": "src/implicit_decision_gate/orchestrator.py",
+        "qualified_name": "implicit_decision_gate.orchestrator",
+        "relationship_strength": 0.27046783249974377,
+        "signature": "",
+        "size": 20.49122797999385,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": 0.025826420104358074,
+        "docstring": "Public CLI contract test.",
+        "end_line": 283,
+        "group": "file",
+        "id": "file:tests/test_cli.py",
+        "kind": "file",
+        "label": "tests.test_cli",
+        "path": "tests/test_cli.py",
+        "qualified_name": "tests.test_cli",
+        "relationship_strength": 0.2662437908926192,
+        "signature": "",
+        "size": 20.38985098142286,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": 0.045006181772336944,
+        "docstring": "Opt-in real-model and PostgreSQL end-to-end test.",
+        "end_line": 108,
+        "group": "file",
+        "id": "file:tests/test_live.py",
+        "kind": "file",
+        "label": "tests.test_live",
+        "path": "tests/test_live.py",
+        "qualified_name": "tests.test_live",
+        "relationship_strength": 0.25129642576603733,
+        "signature": "",
+        "size": 20.031114218384896,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": 0.02992381339523625,
+        "docstring": "Durable gate behavior across isolated coding attempts.",
+        "end_line": 841,
+        "group": "file",
+        "id": "file:tests/test_orchestrator.py",
+        "kind": "file",
+        "label": "tests.test_orchestrator",
+        "path": "tests/test_orchestrator.py",
+        "qualified_name": "tests.test_orchestrator",
+        "relationship_strength": 0.2740700532384133,
+        "signature": "",
+        "size": 20.577681277721922,
+        "start_line": 1
+      },
+      {
+        "color": "#64748b",
+        "direct_relevance": 0.06810251225177337,
+        "docstring": "Evidence-review and quote-validation tests.",
+        "end_line": 107,
+        "group": "file",
+        "id": "file:tests/test_reviewer.py",
+        "kind": "file",
+        "label": "tests.test_reviewer",
+        "path": "tests/test_reviewer.py",
+        "qualified_name": "tests.test_reviewer",
+        "relationship_strength": 0.330841097218604,
+        "signature": "",
+        "size": 21.940186333246494,
+        "start_line": 1
+      },
+      {
+        "color": "#f59e0b",
+        "direct_relevance": 0.12306975985970096,
+        "docstring": "Render the complete evidence-only review context.",
+        "end_line": 106,
+        "group": "anchor",
+        "id": "symbol:src/implicit_decision_gate/agent.py::build_reviewer_prompt",
+        "kind": "function",
+        "label": "build_reviewer_prompt",
+        "path": "src/implicit_decision_gate/agent.py",
+        "qualified_name": "build_reviewer_prompt",
+        "relationship_strength": 0.0,
+        "signature": "build_reviewer_prompt(*, brief: str, option: DecisionOption) -> str",
+        "size": 16.95367423663282,
+        "start_line": 95
+      },
+      {
+        "color": "#f59e0b",
+        "direct_relevance": 0.11017223257909207,
+        "docstring": "Evidence review classifications.",
+        "end_line": 46,
+        "group": "anchor",
+        "id": "symbol:src/implicit_decision_gate/gate.py::EvidenceClassification",
+        "kind": "class",
+        "label": "EvidenceClassification",
+        "path": "src/implicit_decision_gate/gate.py",
+        "qualified_name": "EvidenceClassification",
+        "relationship_strength": 0.0,
+        "signature": "class EvidenceClassification(StrEnum)",
+        "size": 16.64413358189821,
+        "start_line": 40
+      },
+      {
+        "color": "#a78bfa",
+        "direct_relevance": 0.01456143003062099,
+        "docstring": "Raised when a command violates the persisted state machine.",
+        "end_line": 173,
+        "group": "class",
+        "id": "symbol:src/implicit_decision_gate/gate.py::GateError",
+        "kind": "class",
+        "label": "GateError",
+        "path": "src/implicit_decision_gate/gate.py",
+        "qualified_name": "GateError",
+        "relationship_strength": 0.2441215171899327,
+        "signature": "class GateError(RuntimeError)",
+        "size": 19.858916412558386,
+        "start_line": 172
+      },
+      {
+        "color": "#a78bfa",
+        "direct_relevance": 0.07504416944480209,
+        "docstring": "Evidence review result after quote validation.",
+        "end_line": 90,
+        "group": "class",
+        "id": "symbol:src/implicit_decision_gate/gate.py::ReviewerResult",
+        "kind": "class",
+        "label": "ReviewerResult",
+        "path": "src/implicit_decision_gate/gate.py",
+        "qualified_name": "ReviewerResult",
+        "relationship_strength": 0.5240282142480414,
+        "signature": "class ReviewerResult(BaseModel)",
+        "size": 26.57667714195299,
+        "start_line": 86
+      },
+      {
+        "color": "#f59e0b",
+        "direct_relevance": 0.08696177257257713,
+        "docstring": "Aggregate independent evidence reviews into one run state.",
+        "end_line": 293,
+        "group": "anchor",
+        "id": "symbol:src/implicit_decision_gate/gate.py::state_after_reviews",
+        "kind": "function",
+        "label": "state_after_reviews",
+        "path": "src/implicit_decision_gate/gate.py",
+        "qualified_name": "state_after_reviews",
+        "relationship_strength": 0.0,
+        "signature": "state_after_reviews(classifications: Sequence[EvidenceClassification]) -> RunState",
+        "size": 16.08708254174185,
+        "start_line": 283
+      },
+      {
+        "color": "#fb7185",
+        "direct_relevance": 0.15073788261664708,
+        "docstring": "Validate required evidence quotes as literal brief substrings.",
+        "end_line": 280,
+        "group": "top anchor",
+        "id": "symbol:src/implicit_decision_gate/gate.py::validate_reviewer_result",
+        "kind": "function",
+        "label": "validate_reviewer_result",
+        "path": "src/implicit_decision_gate/gate.py",
+        "qualified_name": "validate_reviewer_result",
+        "relationship_strength": 0.0,
+        "signature": "validate_reviewer_result(brief: str, result: ReviewerResult) -> ReviewerResult",
+        "size": 17.61770918279953,
+        "start_line": 261
+      },
+      {
+        "color": "#60a5fa",
+        "direct_relevance": 0.018949162790776044,
+        "docstring": "",
+        "end_line": 231,
+        "group": "method",
+        "id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._execute_attempt",
+        "kind": "method",
+        "label": "Orchestrator._execute_attempt",
+        "path": "src/implicit_decision_gate/orchestrator.py",
+        "qualified_name": "Orchestrator._execute_attempt",
+        "relationship_strength": 0.27593048838677453,
+        "signature": "_execute_attempt(self, run: RunRecord, *, attempt_number: int) -> None",
+        "size": 20.62233172128259,
+        "start_line": 144
+      },
+      {
+        "color": "#60a5fa",
+        "direct_relevance": 0.001308140040036222,
+        "docstring": "",
+        "end_line": 491,
+        "group": "method",
+        "id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._fail",
+        "kind": "method",
+        "label": "Orchestrator._fail",
+        "path": "src/implicit_decision_gate/orchestrator.py",
+        "qualified_name": "Orchestrator._fail",
+        "relationship_strength": 0.31327701173659067,
+        "signature": "_fail(run: RunRecord, category: FailureCategory, stage: str, message: str) -> None",
+        "size": 21.518648281678175,
+        "start_line": 478
+      },
+      {
+        "color": "#60a5fa",
+        "direct_relevance": 0.012268037990077469,
+        "docstring": "Apply invariant, effect, and coverage gates shared by both attempts.",
+        "end_line": 440,
+        "group": "method",
+        "id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_common_evaluation",
+        "kind": "method",
+        "label": "Orchestrator._finish_common_evaluation",
+        "path": "src/implicit_decision_gate/orchestrator.py",
+        "qualified_name": "Orchestrator._finish_common_evaluation",
+        "relationship_strength": 0.27593048838677453,
+        "signature": "_finish_common_evaluation(self, run: RunRecord, scenario: Scenario, *, attempt_number: int) -> bool",
+        "size": 20.62233172128259,
+        "start_line": 340
+      },
+      {
+        "color": "#60a5fa",
+        "direct_relevance": 0.04583982905342402,
+        "docstring": "",
+        "end_line": 298,
+        "group": "method",
+        "id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._finish_first_attempt",
+        "kind": "method",
+        "label": "Orchestrator._finish_first_attempt",
+        "path": "src/implicit_decision_gate/orchestrator.py",
+        "qualified_name": "Orchestrator._finish_first_attempt",
+        "relationship_strength": 0.5252908607493324,
+        "signature": "_finish_first_attempt(self, run: RunRecord, scenario: Scenario) -> None",
+        "size": 26.60698065798398,
+        "start_line": 233
+      },
+      {
+        "color": "#60a5fa",
+        "direct_relevance": 0.05515446962869664,
+        "docstring": "",
+        "end_line": 540,
+        "group": "method",
+        "id": "symbol:src/implicit_decision_gate/orchestrator.py::Orchestrator._reviewer_client",
+        "kind": "method",
+        "label": "Orchestrator._reviewer_client",
+        "path": "src/implicit_decision_gate/orchestrator.py",
+        "qualified_name": "Orchestrator._reviewer_client",
+        "relationship_strength": 0.27593048838677453,
+        "signature": "_reviewer_client(self) -> ReviewerClient",
+        "size": 20.62233172128259,
+        "start_line": 537
+      },
+      {
+        "color": "#34d399",
+        "direct_relevance": 0.004033087188437483,
+        "docstring": "Return one declared option by identifier.",
+        "end_line": 297,
+        "group": "function",
+        "id": "symbol:src/implicit_decision_gate/scenario.py::option_by_id",
+        "kind": "function",
+        "label": "option_by_id",
+        "path": "src/implicit_decision_gate/scenario.py",
+        "qualified_name": "option_by_id",
+        "relationship_strength": 0.27593048838677453,
+        "signature": "option_by_id(decision: DecisionSpec, option_id: str) -> DecisionOption | None",
+        "size": 20.62233172128259,
+        "start_line": 294
+      },
+      {
+        "color": "#a78bfa",
+        "direct_relevance": 0.014593041847758456,
+        "docstring": "Classify explicit artifact markers without external execution.",
+        "end_line": 264,
+        "group": "class",
+        "id": "symbol:tests/conftest.py::ScriptMarkerProbe",
+        "kind": "class",
+        "label": "ScriptMarkerProbe",
+        "path": "tests/conftest.py",
+        "qualified_name": "ScriptMarkerProbe",
+        "relationship_strength": 0.3329939631433234,
+        "signature": "class ScriptMarkerProbe",
+        "size": 21.991855115439762,
+        "start_line": 189
+      },
+      {
+        "color": "#a78bfa",
+        "direct_relevance": 0.012303482693695932,
+        "docstring": "Return deterministic artifacts while recording coding context.",
+        "end_line": 107,
+        "group": "class",
+        "id": "symbol:tests/conftest.py::ScriptedCodingClient",
+        "kind": "class",
+        "label": "ScriptedCodingClient",
+        "path": "tests/conftest.py",
+        "qualified_name": "ScriptedCodingClient",
+        "relationship_strength": 0.3329939631433234,
+        "signature": "class ScriptedCodingClient",
+        "size": 21.991855115439762,
+        "start_line": 77
+      },
+      {
+        "color": "#a78bfa",
+        "direct_relevance": 0.04404428075058453,
+        "docstring": "Return deterministic reviews while recording reviewer context.",
+        "end_line": 140,
+        "group": "class",
+        "id": "symbol:tests/conftest.py::ScriptedReviewerClient",
+        "kind": "class",
+        "label": "ScriptedReviewerClient",
+        "path": "tests/conftest.py",
+        "qualified_name": "ScriptedReviewerClient",
+        "relationship_strength": 0.3329939631433234,
+        "signature": "class ScriptedReviewerClient",
+        "size": 21.991855115439762,
+        "start_line": 110
+      },
+      {
+        "color": "#f472b6",
+        "direct_relevance": 0.03411113287233182,
+        "docstring": "",
+        "end_line": 84,
+        "group": "test",
+        "id": "symbol:tests/test_context.py::test_attempt_two_prompt_contains_only_allowed_fresh_context",
+        "kind": "test",
+        "label": "test_attempt_two_prompt_contains_only_allowed_fresh_context",
+        "path": "tests/test_context.py",
+        "qualified_name": "test_attempt_two_prompt_contains_only_allowed_fresh_context",
+        "relationship_strength": 0.38858924249115046,
+        "signature": "test_attempt_two_prompt_contains_only_allowed_fresh_context() -> None",
+        "size": 23.326141819787612,
+        "start_line": 65
+      },
+      {
+        "color": "#34d399",
+        "direct_relevance": 0.08123453231890117,
+        "docstring": "Return the expected result for the intentionally incomplete brief.",
+        "end_line": 97,
+        "group": "function",
+        "id": "symbol:tests/test_orchestrator.py::not_evidenced",
+        "kind": "function",
+        "label": "not_evidenced",
+        "path": "tests/test_orchestrator.py",
+        "qualified_name": "not_evidenced",
+        "relationship_strength": 0.3763829912973111,
+        "signature": "not_evidenced() -> ReviewerResult",
+        "size": 23.033191791135465,
+        "start_line": 91
+      },
+      {
+        "color": "#34d399",
+        "direct_relevance": 0.023411793638941806,
+        "docstring": "Build a fully scripted controller.",
+        "end_line": 161,
+        "group": "function",
+        "id": "symbol:tests/test_orchestrator.py::orchestrator",
+        "kind": "function",
+        "label": "orchestrator",
+        "path": "tests/test_orchestrator.py",
+        "qualified_name": "orchestrator",
+        "relationship_strength": 0.3763829912973111,
+        "signature": "orchestrator(repo: Path, worktree_root: Path, coding_client: ScriptedCodingClient, reviewer_client: ScriptedReviewerClient, probe: ScriptMarkerProbe) -> Orchestrator",
+        "size": 23.033191791135465,
+        "start_line": 146
+      },
+      {
+        "color": "#f59e0b",
+        "direct_relevance": 0.10800716212755597,
+        "docstring": "",
+        "end_line": 259,
+        "group": "anchor",
+        "id": "symbol:tests/test_orchestrator.py::test_start_reads_the_brief_from_the_pinned_commit",
+        "kind": "test",
+        "label": "test_start_reads_the_brief_from_the_pinned_commit",
+        "path": "tests/test_orchestrator.py",
+        "qualified_name": "test_start_reads_the_brief_from_the_pinned_commit",
+        "relationship_strength": 0.0,
+        "signature": "test_start_reads_the_brief_from_the_pinned_commit(reference_repo: Path, tmp_path: Path) -> None",
+        "size": 16.592171891061344,
+        "start_line": 242
+      },
+      {
+        "color": "#f472b6",
+        "direct_relevance": 0.06596404256446055,
+        "docstring": "",
+        "end_line": 107,
+        "group": "test",
+        "id": "symbol:tests/test_reviewer.py::test_fabricated_evidence_quote_becomes_uncertain",
+        "kind": "test",
+        "label": "test_fabricated_evidence_quote_becomes_uncertain",
+        "path": "tests/test_reviewer.py",
+        "qualified_name": "test_fabricated_evidence_quote_becomes_uncertain",
+        "relationship_strength": 0.4759505477828042,
+        "signature": "test_fabricated_evidence_quote_becomes_uncertain() -> None",
+        "size": 25.422813146787302,
+        "start_line": 95
+      },
+      {
+        "color": "#f472b6",
+        "direct_relevance": 0.053249176293054964,
+        "docstring": "",
+        "end_line": 77,
+        "group": "test",
+        "id": "symbol:tests/test_reviewer.py::test_review_classification_drives_gate_state",
+        "kind": "test",
+        "label": "test_review_classification_drives_gate_state",
+        "path": "tests/test_reviewer.py",
+        "qualified_name": "test_review_classification_drives_gate_state",
+        "relationship_strength": 0.27457930663217883,
+        "signature": "test_review_classification_drives_gate_state(classification: EvidenceClassification, expected_state: RunState) -> None",
+        "size": 20.58990335917229,
+        "start_line": 73
+      },
+      {
+        "color": "#f59e0b",
+        "direct_relevance": 0.13037983392758343,
+        "docstring": "",
+        "end_line": 92,
+        "group": "anchor",
+        "id": "symbol:tests/test_reviewer.py::test_review_classifications_are_aggregated",
+        "kind": "test",
+        "label": "test_review_classifications_are_aggregated",
+        "path": "tests/test_reviewer.py",
+        "qualified_name": "test_review_classifications_are_aggregated",
+        "relationship_strength": 0.0,
+        "signature": "test_review_classifications_are_aggregated() -> None",
+        "size": 17.129116014262003,
+        "start_line": 80
+      },
+      {
+        "color": "#f472b6",
+        "direct_relevance": 0.0693783317721081,
+        "docstring": "",
+        "end_line": 44,
+        "group": "test",
+        "id": "symbol:tests/test_reviewer.py::test_reviewer_prompt_contains_brief_and_observed_policy",
+        "kind": "test",
+        "label": "test_reviewer_prompt_contains_brief_and_observed_policy",
+        "path": "tests/test_reviewer.py",
+        "qualified_name": "test_reviewer_prompt_contains_brief_and_observed_policy",
+        "relationship_strength": 0.38858924249115046,
+        "signature": "test_reviewer_prompt_contains_brief_and_observed_policy(option: DecisionOption) -> None",
+        "size": 23.326141819787612,
+        "start_line": 37
+      }
+    ]
+  },
   "label": "Reviewer Evidence",
   "provenance": {
     "branch": "main",
@@ -1986,5 +2958,5 @@
     "tree": "41028d97be0c3352aa25c56e896bceb065f7facc"
   },
   "query": "How are reviewer classifications checked against literal evidence from the brief?",
-  "schema_version": 2
+  "schema_version": 3
 }

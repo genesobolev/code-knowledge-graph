@@ -204,11 +204,13 @@ Serve the app locally:
 uv run python -m http.server 8000 --directory web/public
 ```
 
-Then open `http://localhost:8000`. The presentation has three views: the complete
-file-level repository graph, notebook-identical graphs for each recorded query, and an
-equal-budget lexical-versus-graph comparison. Plotly provides hover details, legend
-filtering, pan, zoom, and reset. Every figure and comparison is generated from the same
-pinned source snapshot; the browser makes no repository, model, or backend calls.
+Then open `http://localhost:8000`. The presentation has two views: Graph and Comparison.
+The graph selector defaults to the complete file-level repository graph and includes
+each recorded query. Selecting a node opens a local relationship graph and its recorded
+code details. Plotly provides hover details, legend filtering, pan, zoom, and reset. The
+graph geometry still comes from the notebook renderer, while the browser applies the
+presentation canvas theme. Every figure and comparison is generated from the same pinned
+source snapshot; the browser makes no repository, model, or backend calls.
 
 ## Validation
 

@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Explore recorded repository and query knowledge graphs, then compare retrieval quality.">
+    <meta name="description" content="Explore recorded code knowledge graphs and compare retrieval quality.">
     <meta name="color-scheme" content="light">
-    <meta name="theme-color" content="#0f172a">
+    <meta name="theme-color" content="#145fe4">
     <title>Code Knowledge Graph</title>
     <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/styles.css">
@@ -15,42 +15,86 @@
 <body>
     <div class="app-shell">
         <header class="app-header">
-            <a class="app-identity" href="#view=repository" aria-label="Code Knowledge Graph repository view">
+            <a class="app-identity" href="#view=graph" aria-label="Code Knowledge Graph graph view">
                 <span class="brand-mark" aria-hidden="true">ckg</span>
                 <strong>Code Knowledge Graph</strong>
             </a>
             <nav class="view-switcher" aria-label="Primary views">
-                <button id="repository-control" type="button" data-view="repository" aria-pressed="true" aria-controls="repository-view">Repository</button>
-                <button id="query-control" type="button" data-view="query" aria-pressed="false" aria-controls="query-view">Query</button>
+                <button id="graph-control" type="button" data-view="graph" aria-pressed="true" aria-controls="graph-view">Graph</button>
                 <button id="comparison-control" type="button" data-view="comparison" aria-pressed="false" aria-controls="comparison-view">Comparison</button>
             </nav>
         </header>
 
         <main class="app-main" id="app-main">
-            <p id="loading-state" class="loading-state" role="status">Loading recorded figures…</p>
+            <p id="loading-state" class="loading-state" role="status">Loading recorded figures...</p>
             <p id="error-state" class="error-state" role="alert" hidden></p>
 
-            <section id="repository-view" class="app-view" aria-labelledby="repository-control" data-view-panel="repository" hidden>
-                <div class="plot-frame" role="region" aria-label="Repository file relationship figure" tabindex="0">
-                    <div id="repository-figure" class="plot-host plot-host-repository"></div>
-                </div>
-                <footer id="repository-provenance" class="provenance"></footer>
-            </section>
+            <section id="graph-view" class="app-view" aria-labelledby="graph-control" data-view-panel="graph" hidden>
+                <h1 class="visually-hidden">Graph</h1>
+                <div class="graph-shell">
+                    <div class="graph-toolbar">
+                        <label class="graph-picker" for="graph-select">
+                            <span>Graph</span>
+                            <select id="graph-select" aria-describedby="graph-query">
+                                <option value="repository" selected>Repository overview</option>
+                            </select>
+                        </label>
+                    </div>
 
-            <section id="query-view" class="app-view" aria-labelledby="query-control" data-view-panel="query" hidden>
-                <div class="query-toolbar">
-                    <label for="query-select">Query</label>
-                    <select id="query-select" aria-describedby="query-question query-description"></select>
-                    <p id="query-question" class="visually-hidden" aria-live="polite"></p>
-                    <p id="query-description" class="visually-hidden"></p>
+                    <p id="graph-query" class="graph-query" aria-live="polite"></p>
+
+                    <div class="graph-canvas-scroll" role="region" tabindex="0" aria-label="Scrollable code relationship graph">
+                        <div id="graph-figure" class="plot-host graph-figure"></div>
+                    </div>
+
+                    <section id="node-inspector" class="node-inspector" aria-labelledby="inspector-title" hidden>
+                        <header class="inspector-header">
+                            <div>
+                                <p class="section-label">Selected node</p>
+                                <h2 id="inspector-title"></h2>
+                                <p id="inspector-location" class="inspector-location"></p>
+                            </div>
+                            <span id="inspector-kind" class="kind-badge"></span>
+                        </header>
+
+                        <div class="inspector-grid">
+                            <div class="inspector-details">
+                                <dl id="inspector-scores" class="score-grid">
+                                    <div>
+                                        <dt>Direct query score</dt>
+                                        <dd id="inspector-direct-score"></dd>
+                                    </div>
+                                    <div>
+                                        <dt>Relationship score</dt>
+                                        <dd id="inspector-relationship-score"></dd>
+                                    </div>
+                                </dl>
+
+                                <section id="inspector-signature-section" class="detail-section" aria-labelledby="signature-heading">
+                                    <h3 id="signature-heading">Signature</h3>
+                                    <code id="inspector-signature"></code>
+                                </section>
+
+                                <section id="inspector-docstring-section" class="detail-section" aria-labelledby="docstring-heading">
+                                    <h3 id="docstring-heading">Documentation</h3>
+                                    <p id="inspector-docstring"></p>
+                                </section>
+                            </div>
+
+                            <section class="neighborhood-panel" aria-labelledby="neighborhood-heading">
+                                <h3 id="neighborhood-heading">Strongest related nodes</h3>
+                                <div class="neighborhood-canvas-scroll" role="region" tabindex="0" aria-label="Scrollable selected-node neighborhood graph">
+                                    <div id="neighborhood-figure" class="plot-host neighborhood-figure"></div>
+                                </div>
+                                <div id="relationship-list" class="relationship-list" aria-live="polite"></div>
+                            </section>
+                        </div>
+                    </section>
                 </div>
-                <div class="plot-frame" role="region" aria-label="Selected query relationship figure" tabindex="0">
-                    <div id="query-figure" class="plot-host plot-host-query"></div>
-                </div>
-                <footer id="query-provenance" class="provenance"></footer>
             </section>
 
             <section id="comparison-view" class="app-view comparison-view" aria-labelledby="comparison-control" data-view-panel="comparison" hidden>
+                <h1 class="visually-hidden">Comparison</h1>
                 <div class="table-frame aggregate-frame" tabindex="0" role="region" aria-label="Scrollable aggregate retrieval comparison">
                     <table>
                         <caption>Aggregate retrieval</caption>
@@ -65,7 +109,6 @@
                         <tbody id="aggregate-table-body"></tbody>
                     </table>
                 </div>
-                <p id="comparison-conclusion" class="comparison-conclusion"></p>
 
                 <div class="table-frame comparison-table-frame" tabindex="0" role="region" aria-label="Scrollable per-query retrieval comparison">
                     <table>
@@ -94,7 +137,6 @@
                     </div>
                     <div id="ranking-comparison" class="ranking-comparison" aria-live="polite"></div>
                 </section>
-                <footer id="comparison-provenance" class="provenance"></footer>
             </section>
         </main>
     </div>
