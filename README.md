@@ -120,9 +120,10 @@ CODE_GRAPH_TARGET=../implicit-decision-gate \
     uv run jupyter lab knowledge_code_graph.ipynb
 ```
 
-Its Plotly figures use native notebook MIME output, which renders in VS Code and
-JupyterLab without a relative iframe. The notebook is not Jupytext-paired, so changing or
-saving its kernel cannot create a stale paired-file conflict.
+Its Plotly figures use native notebook MIME output in VS Code and JupyterLab, with PNG
+fallbacks that render on GitHub. Regenerating the PNGs uses Kaleido 1.x and requires a
+local Chrome or Chromium installation. The notebook is not Jupytext-paired, so changing
+or saving its kernel cannot create a stale paired-file conflict.
 
 ## Reproducible artifacts
 
