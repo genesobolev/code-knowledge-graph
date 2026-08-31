@@ -294,6 +294,10 @@ select {
     fill: transparent !important;
 }
 
+.plot-host.node-hover .nsewdrag {
+    cursor: pointer !important;
+}
+
 .node-inspector {
     padding: 24px 20px 28px;
     border-top: 1px solid var(--border);

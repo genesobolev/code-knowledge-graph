@@ -2,6 +2,12 @@
 
 const WEB_DATA_SCHEMA_VERSION = 3;
 const REPOSITORY_GRAPH_ID = "repository";
+const DEFAULT_REPOSITORY_NODE_ID = "file:src/implicit_decision_gate/orchestrator.py";
+const NODE_HOVER_ACTION = "<br><u>Click for details</u>";
+const NODE_OUTLINE_COLOR = "#f8fafc";
+const NODE_OUTLINE_WIDTH = 1.25;
+const SELECTED_NODE_OUTLINE_COLOR = "#145fe4";
+const SELECTED_NODE_OUTLINE_WIDTH = 4;
 const VALID_VIEWS = new Set(["graph", "comparison"]);
 const AGGREGATE_METRICS = [
     ["answer_mrr_at_10", "Answer MRR at 10"],
@@ -207,6 +213,46 @@ function validateInspection(label, payload) {
     return { nodes: inspection.nodes, edges: inspection.edges, nodeById };
 }
 
+function isNodeTrace(trace) {
+    return isObject(trace)
+        && typeof trace.legendgroup === "string"
+        && trace.legendgroup.startsWith("node:");
+}
+
+function nodeHoverTemplate(template) {
+    const base = typeof template === "string" && template ? template : "%{hovertext}";
+    if (base.includes("Click for details")) return base;
+    const extraIndex = base.indexOf("<extra");
+    if (extraIndex < 0) return `${base}${NODE_HOVER_ACTION}<extra></extra>`;
+    return `${base.slice(0, extraIndex)}${NODE_HOVER_ACTION}${base.slice(extraIndex)}`;
+}
+
+function interactiveGraphFigure(figure) {
+    return {
+        ...figure,
+        data: figure.data.map((trace) => (
+            isNodeTrace(trace)
+                ? { ...trace, hovertemplate: nodeHoverTemplate(trace.hovertemplate) }
+                : trace
+        )),
+    };
+}
+
+function plotEventNodeId(event) {
+    const point = safeArray(event?.points)[0];
+    const nodeId = typeof point?.customdata === "string" ? point.customdata : "";
+    return nodeId && state.activeInspection?.nodeById.has(nodeId) ? nodeId : "";
+}
+
+function bindNodeHover(host) {
+    if (host.dataset.nodeHoverBound === "true") return;
+    host.on("plotly_hover", (event) => {
+        host.classList.toggle("node-hover", Boolean(plotEventNodeId(event)));
+    });
+    host.on("plotly_unhover", () => host.classList.remove("node-hover"));
+    host.dataset.nodeHoverBound = "true";
+}
+
 async function renderFigure(host, figure, label, useReact) {
     validateFigure(label, figure);
     const library = plotly();
@@ -374,6 +420,8 @@ function clearInspector() {
     requiredElement("#inspector-signature-section").hidden = true;
     requiredElement("#inspector-docstring-section").hidden = true;
     requiredElement("#node-inspector").hidden = true;
+    requiredElement("#graph-figure").classList.remove("node-hover");
+    requiredElement("#neighborhood-figure").classList.remove("node-hover");
 }
 
 function showGraphQuery(payload, isRepository) {
@@ -403,11 +451,11 @@ function bindMainNodeClicks() {
     }
     host.on("plotly_click", (event) => {
         if (host.getAttribute("aria-busy") === "true") return;
-        const point = safeArray(event?.points)[0];
-        const nodeId = typeof point?.customdata === "string" ? point.customdata : "";
-        if (!nodeId || !state.activeInspection?.nodeById.has(nodeId)) return;
+        const nodeId = plotEventNodeId(event);
+        if (!nodeId) return;
         selectInspectionNode(nodeId, { scroll: true }).catch(showError);
     });
+    bindNodeHover(host);
     host.dataset.nodeClicksBound = "true";
 }
 
@@ -458,7 +506,12 @@ async function renderActiveGraph() {
             ) {
                 return false;
             }
-            await renderFigure(host, payload.figure, label, state.graphRendered);
+            await renderFigure(
+                host,
+                interactiveGraphFigure(payload.figure),
+                label,
+                state.graphRendered,
+            );
             state.graphRendered = true;
             state.renderedGraphId = graphId;
             bindMainNodeClicks();
@@ -474,6 +527,9 @@ async function renderActiveGraph() {
         });
         const rendered = await state.graphPlotQueue;
         if (!rendered || token !== state.graphRenderToken || state.view !== "graph") return;
+        const defaultNodeId = defaultInspectionNodeId(payload, inspection, isRepository);
+        if (!defaultNodeId) throw new Error(`${label} does not contain a default inspectable node.`);
+        await selectInspectionNode(defaultNodeId, { scroll: false });
         schedulePlotResize();
     } catch (error) {
         if (token !== state.graphRenderToken || state.view !== "graph" || state.graphId !== graphId) {
@@ -489,6 +545,85 @@ function compareText(left, right) {
     if (left < right) return -1;
     if (left > right) return 1;
     return 0;
+}
+
+function repositoryFallbackNodeId(inspection) {
+    const metrics = new Map(
+        inspection.nodes.map((node) => [node.id, { count: 0, strength: 0 }]),
+    );
+    for (const edge of inspection.edges) {
+        const strength = finiteNumber(edge.strength) || 0;
+        for (const nodeId of new Set([edge.source_id, edge.target_id])) {
+            const metric = metrics.get(nodeId);
+            if (!metric) continue;
+            metric.count += 1;
+            metric.strength += strength;
+        }
+    }
+    return [...inspection.nodes].sort((left, right) => {
+        const leftMetric = metrics.get(left.id);
+        const rightMetric = metrics.get(right.id);
+        const countDifference = rightMetric.count - leftMetric.count;
+        if (countDifference) return countDifference;
+        const strengthDifference = rightMetric.strength - leftMetric.strength;
+        if (strengthDifference) return strengthDifference;
+        return compareText(left.id, right.id);
+    })[0]?.id || "";
+}
+
+function queryDefaultNodeId(payload, inspection) {
+    for (const trace of safeArray(payload?.figure?.data)) {
+        if (!isNodeTrace(trace) || trace.legendgroup !== "node:top anchor") continue;
+        const nodeId = safeArray(trace.customdata).find(
+            (candidate) => typeof candidate === "string" && inspection.nodeById.has(candidate),
+        );
+        if (nodeId) return nodeId;
+    }
+    return [...inspection.nodes].sort((left, right) => {
+        const directDifference = (finiteNumber(right.direct_relevance) || 0)
+            - (finiteNumber(left.direct_relevance) || 0);
+        if (directDifference) return directDifference;
+        const relationshipDifference = (finiteNumber(right.relationship_strength) || 0)
+            - (finiteNumber(left.relationship_strength) || 0);
+        if (relationshipDifference) return relationshipDifference;
+        return compareText(left.id, right.id);
+    })[0]?.id || "";
+}
+
+function defaultInspectionNodeId(payload, inspection, isRepository) {
+    if (!isRepository) return queryDefaultNodeId(payload, inspection);
+    if (inspection.nodeById.has(DEFAULT_REPOSITORY_NODE_ID)) {
+        return DEFAULT_REPOSITORY_NODE_ID;
+    }
+    return repositoryFallbackNodeId(inspection);
+}
+
+async function highlightMainGraphNode(nodeId) {
+    if (!state.graphRendered || state.renderedGraphId !== state.graphId) return;
+    const host = requiredElement("#graph-figure");
+    const updates = [];
+    safeArray(host.data).forEach((trace, traceIndex) => {
+        if (!isNodeTrace(trace)) return;
+        const nodeIds = safeArray(trace.customdata);
+        if (!nodeIds.length) return;
+        updates.push(plotly().restyle(
+            host,
+            {
+                "marker.line.color": [
+                    nodeIds.map((candidate) => (
+                        candidate === nodeId ? SELECTED_NODE_OUTLINE_COLOR : NODE_OUTLINE_COLOR
+                    )),
+                ],
+                "marker.line.width": [
+                    nodeIds.map((candidate) => (
+                        candidate === nodeId ? SELECTED_NODE_OUTLINE_WIDTH : NODE_OUTLINE_WIDTH
+                    )),
+                ],
+            },
+            [traceIndex],
+        ));
+    });
+    await Promise.all(updates);
 }
 
 function nodeQueryRelevance(node) {
@@ -633,7 +768,7 @@ function neighborhoodFigure(center, candidates) {
             hovertext: candidates.map(
                 (candidate) => candidate.node.qualified_name || candidate.node.id,
             ),
-            hovertemplate: "%{hovertext}<extra></extra>",
+            hovertemplate: nodeHoverTemplate("%{hovertext}<extra></extra>"),
             showlegend: false,
         });
     }
@@ -652,7 +787,7 @@ function neighborhoodFigure(center, candidates) {
             size: 24,
         },
         hovertext: [center.qualified_name || center.id],
-        hovertemplate: "%{hovertext}<extra></extra>",
+        hovertemplate: nodeHoverTemplate("%{hovertext}<extra></extra>"),
         showlegend: false,
     });
 
@@ -695,11 +830,11 @@ function bindNeighborhoodNodeClicks() {
         throw new Error("The neighborhood Plotly figure does not support click events.");
     }
     host.on("plotly_click", (event) => {
-        const point = safeArray(event?.points)[0];
-        const nodeId = typeof point?.customdata === "string" ? point.customdata : "";
-        if (!nodeId || !state.activeInspection?.nodeById.has(nodeId)) return;
+        const nodeId = plotEventNodeId(event);
+        if (!nodeId) return;
         selectInspectionNode(nodeId, { scroll: false }).catch(showError);
     });
+    bindNodeHover(host);
     host.dataset.nodeClicksBound = "true";
 }
 
@@ -732,6 +867,7 @@ async function selectInspectionNode(nodeId, options) {
     const signature = typeof node.signature === "string" ? node.signature.trim() : "";
     const docstring = typeof node.docstring === "string" ? node.docstring.trim() : "";
     state.selectedNodeId = nodeId;
+    const highlightPromise = highlightMainGraphNode(nodeId);
     const token = ++state.inspectorRenderToken;
     requiredElement("#inspector-title").textContent = node.qualified_name || node.label || node.id;
     requiredElement("#inspector-location").textContent = inspectorLocation(node);
@@ -756,7 +892,10 @@ async function selectInspectionNode(nodeId, options) {
             inspector.scrollIntoView({ behavior: "smooth", block: "start" });
         });
     }
-    await renderNeighborhood(node, candidates, token);
+    await Promise.all([
+        highlightPromise,
+        renderNeighborhood(node, candidates, token),
+    ]);
 }
 
 function formatMetric(value) {
